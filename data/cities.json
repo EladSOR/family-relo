@@ -1,0 +1,83 @@
+[
+  {
+    "id": "valencia-es",
+    "citySlug": "valencia",
+    "countrySlug": "spain",
+    "name": "Valencia",
+    "country": "Spain",
+    "visas": [
+      { "type": "Digital Nomad Visa" }
+    ],
+    "safetyScore": 92,
+    "nannyCostPerHour": 12,
+    "bestNeighborhood": "Ruzafa"
+  },
+  {
+    "id": "lisbon-pt",
+    "citySlug": "lisbon",
+    "countrySlug": "portugal",
+    "name": "Lisbon",
+    "country": "Portugal",
+    "visas": [
+      { "type": "D8 Nomad Visa" }
+    ],
+    "safetyScore": 90,
+    "nannyCostPerHour": 10,
+    "bestNeighborhood": "Principe Real"
+  },
+  {
+    "id": "dubai-ae",
+    "citySlug": "dubai",
+    "countrySlug": "uae",
+    "name": "Dubai",
+    "country": "UAE",
+    "visas": [
+      { "type": "Remote Work Visa" }
+    ],
+    "safetyScore": 95,
+    "nannyCostPerHour": 15,
+    "bestNeighborhood": "Dubai Marina"
+  },
+  {
+    "id": "chiang-mai-th",
+    "citySlug": "chiang-mai",
+    "countrySlug": "thailand",
+    "name": "Chiang Mai",
+    "country": "Thailand",
+    "visas": [
+      { "type": "Tourist Visa" },
+      { "type": "DTV Nomad Visa" }
+    ],
+    "safetyScore": 88,
+    "nannyCostPerHour": 4,
+    "bestNeighborhood": "Hang Dong"
+  },
+  {
+    "id": "koh-phangan-th",
+    "citySlug": "koh-phangan",
+    "countrySlug": "thailand",
+    "name": "Koh Phangan",
+    "country": "Thailand",
+    "visas": [
+      { "type": "Tourist Visa" },
+      { "type": "DTV Nomad Visa" }
+    ],
+    "safetyScore": 85,
+    "nannyCostPerHour": 5,
+    "bestNeighborhood": "Sri Thanu"
+  },
+  {
+    "id": "koh-samui-th",
+    "citySlug": "koh-samui",
+    "countrySlug": "thailand",
+    "name": "Koh Samui",
+    "country": "Thailand",
+    "visas": [
+      { "type": "Tourist Visa" },
+      { "type": "DTV Nomad Visa" }
+    ],
+    "safetyScore": 82,
+    "nannyCostPerHour": 6,
+    "bestNeighborhood": "Bophut"
+  }
+]

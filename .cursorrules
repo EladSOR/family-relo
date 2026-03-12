@@ -1,0 +1,8 @@
+I am building a Family Relocation Engine.
+Tech Stack: Next.js (App Router), Tailwind CSS.
+
+Rules:
+1. Always prioritize data for families (schools, safety, nanny costs).
+2. Every piece of city data must have a 'Source' link to an official government or school website.
+3. Use a clean, professional UI like Booking.com.
+4. Support both English and Hebrew for all action items.
