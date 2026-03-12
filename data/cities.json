@@ -3,81 +3,706 @@
     "id": "valencia-es",
     "citySlug": "valencia",
     "countrySlug": "spain",
-    "name": "Valencia",
+    "city": "Valencia",
     "country": "Spain",
-    "visas": [
-      { "type": "Digital Nomad Visa" }
+    "tagline": "Sunny, affordable, and beautifully liveable",
+    "summary": "Valencia is one of Europe's best-kept secrets for relocating families. It offers a Mediterranean lifestyle — warm weather, fresh food markets, and beach access — at a fraction of the cost of Barcelona or Madrid. The city has a growing international school scene, reliable public transport, and a welcoming expat community that keeps expanding every year.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+      "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
+      "Arrange private health insurance before submitting your visa application (required document)",
+      "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
+      "Contact international schools 6–12 months before your move — waiting lists are long",
+      "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days",
+      "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)",
+      "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card"
     ],
-    "safetyScore": 92,
-    "nannyCostPerHour": 12,
-    "bestNeighborhood": "Ruzafa"
+    "familyFit": {
+      "bestFor": [
+        "Families who value outdoor and beach lifestyle",
+        "Budget-conscious relocators seeking a European base",
+        "Parents looking for affordable international schools",
+        "Families transitioning from a larger, more expensive European city"
+      ],
+      "watchOutFor": [
+        "English is limited outside expat areas — Spanish is essential day-to-day",
+        "Summer heat can be intense (35°C+), especially in July–August",
+        "Top international schools have waiting lists — apply early"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Non-EU families can apply for Spain's Digital Nomad Visa, which requires a minimum monthly income of ~€2,334 and allows the whole family to reside legally. EU/EEA passport holders can move freely with no visa required.",
+      "options": [
+        {
+          "type": "Schengen Tourist",
+          "duration": "Up to 90 days",
+          "description": "No work rights. Most Western passports qualify for 90 days visa-free within any 180-day period."
+        },
+        {
+          "type": "Digital Nomad Visa (DNV)",
+          "duration": "1 year, renewable up to 5",
+          "description": "For remote workers earning at least 200% of Spain's minimum wage (~€2,334/month). Family members can be included as dependants."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month. Beachside areas like El Cabanyal are growing in popularity with expat families.",
+      "bestAreas": ["Ruzafa", "Campanar", "El Cabanyal", "Patraix", "Benimaclet"]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Valencia has several strong international schools. Top choices for English-speaking families offer US, British, and IB curricula at fees far below comparable schools in the UK or US.",
+      "publicSystem": "Spanish public schools are free, well-funded, and generally high quality — but instruction is entirely in Spanish and Valencian. Not recommended for children without Spanish language skills unless you plan a long-term stay (2+ years) and are willing to invest in language support.",
+      "internationalOptions": "Several English-medium international schools operate in Valencia and the surrounding area. Demand has grown sharply with the expat influx — apply 6–12 months in advance. Schools follow US, British, or IB curricula and typically run from Early Years through Year 13 / Grade 12.",
+      "languageNotes": "Valencian (a Catalan dialect) is co-official with Spanish in the region. Most public schools teach in Valencian and Castilian Spanish. English-medium instruction is only available in private international schools.",
+      "examples": [
+        {
+          "name": "American School of Valencia",
+          "curriculum": "US / IB",
+          "fees": "$10,000 – $13,000 / yr",
+          "url": "https://www.asvalencia.org"
+        },
+        {
+          "name": "Caxton College",
+          "curriculum": "British (IGCSE / A-Level)",
+          "fees": "$8,000 – $11,000 / yr",
+          "url": "https://www.caxtoncollege.com"
+        },
+        {
+          "name": "Cambridge House British International School",
+          "curriculum": "British",
+          "fees": "$7,000 – $10,000 / yr",
+          "url": "https://www.cambridgehouse.es"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Valencia has a good supply of private nurseries (guarderías) for children from 4 months to 3 years. Costs are affordable by European standards, and au pair culture is well established.",
+      "daycareNotes": "Public pre-school (0–3 years) places are subsidised but limited — register on the municipal waiting list immediately on arrival. Private nurseries charge €300–€600/month and are widely available in family neighbourhoods.",
+      "nannyNotes": "Hiring a private nanny (cuidadora) is common and affordable. Many families use live-in or live-out Spanish-speaking nannies. Au pair programmes are also popular — an au pair typically receives board, lodging, and €80–€150/week pocket money.",
+      "typicalCost": "Nanny: €10–€15/hr. Private nursery: €300–€600/month. Au pair: €80–€150/week + room and board.",
+      "howFamiliesFindIt": "Popular platforms: Sitly.es, InfoJobs.es. Community: 'Valencia Expats' Facebook group. For au pairs: aupairworld.com and Au Pair in Spain agencies."
+    },
+    "healthcare": {
+      "status": "estimated",
+      "summary": "Spain's public healthcare is excellent. Registered residents receive a SIP card granting free access to the public system. Private clinics are widely available and affordable — a GP visit typically costs €50–€80 without insurance."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 92,
+      "summary": "Valencia is one of the safest cities in Spain. Violent crime is very rare. The main concern is petty theft in tourist-heavy areas like the Central Market. Family neighbourhoods like Campanar and Benimaclet are extremely safe."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$900 – $2,000 / month",
+      "nannyHourly": 12
+    },
+    "sources": {
+      "visa": [
+        { "label": "Spain Digital Nomad Visa — Official", "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores" }
+      ],
+      "schools": [
+        { "label": "American School of Valencia", "url": "https://www.asvalencia.org" },
+        { "label": "Caxton College", "url": "https://www.caxtoncollege.com" }
+      ],
+      "cost": [
+        { "label": "Valencia Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Valencia" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Valencia Expats — Facebook Community", "url": "https://www.facebook.com/groups/valenciaexpats" }
+    ]
   },
   {
     "id": "lisbon-pt",
     "citySlug": "lisbon",
     "countrySlug": "portugal",
-    "name": "Lisbon",
+    "city": "Lisbon",
     "country": "Portugal",
-    "visas": [
-      { "type": "D8 Nomad Visa" }
+    "tagline": "Cobblestone charm meets modern expat paradise",
+    "summary": "Lisbon has become one of Europe's most sought-after relocation destinations. Families are drawn by its high quality of life, safe streets, mild Atlantic climate, and a thriving English-speaking expat community. The greater Lisbon area — especially the Cascais line — offers excellent international schools and a beachside suburban feel that rivals anywhere in the world.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Confirm you meet the D8 income threshold (€3,480/month) or the passive income / savings alternative",
+      "Prepare your document pack: 3+ months of income statements, criminal record (Apostilled), proof of health insurance, accommodation proof",
+      "Submit D8 Visa application at the Portuguese Consulate in your home country — allow 2–4 months for processing",
+      "Research schools in the Cascais–Estoril corridor before moving — top international schools fill 12–18 months ahead",
+      "Upon arrival, register at your local Junta de Freguesia (parish council) to formalise your address",
+      "Open a Portuguese bank account (Millennium BCP, Caixa Geral, or Revolut Portugal are popular with expats)",
+      "Apply for NHR (Non-Habitual Resident) tax status within the first year of becoming fiscally resident — significant tax benefit",
+      "Register with your local health centre (Centro de Saúde) to access the SNS public health system"
     ],
-    "safetyScore": 90,
-    "nannyCostPerHour": 10,
-    "bestNeighborhood": "Principe Real"
+    "familyFit": {
+      "bestFor": [
+        "Families seeking a safe, walkable European capital",
+        "Parents who prioritise high-quality international schools",
+        "Those looking for a strong English-speaking expat community",
+        "Families moving from the US, UK, or Israel"
+      ],
+      "watchOutFor": [
+        "Cost of living has risen sharply — housing is increasingly competitive",
+        "D8 visa processing can be slow (2–4 months)",
+        "Top international school waitlists can stretch 12–18 months"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Portugal's D8 Digital Nomad Visa is one of the most family-friendly in Europe. It requires a minimum income of €3,480/month and allows the whole family to relocate. Portugal also offers the NHR tax regime, reducing tax on foreign income for the first 10 years.",
+      "options": [
+        {
+          "type": "Schengen Tourist",
+          "duration": "Up to 90 days",
+          "description": "No work rights. Standard Schengen rules apply — 90 days in any 180-day period."
+        },
+        {
+          "type": "D8 Digital Nomad Residency",
+          "duration": "2 years, renewable",
+          "description": "For remote workers earning at least 4× the Portuguese minimum wage (~€3,480/month). Path to permanent residency after 5 years."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Central Lisbon is expensive. The most popular area for expat families is the Cascais–Estoril line (30 min from the city by train), where spacious homes and good schools cluster. Expect €1,800–€3,500/month for a 3-bedroom family home.",
+      "bestAreas": ["Cascais", "Estoril", "Oeiras", "Príncipe Real", "Parede"]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "The greater Lisbon area has excellent international schools. CAISL and St. Julian's are consistently top-rated, but apply well in advance — both have long waitlists.",
+      "publicSystem": "Portugal's public school system is solid, but instruction is in Portuguese. Children without Portuguese will struggle. Public schools are free; bilingual state schools exist in Lisbon but places are very limited.",
+      "internationalOptions": "The Cascais–Estoril corridor is the international school hub. Schools follow US, British, or IB curricula in English. Fees are significant by Portuguese standards but reasonable for families coming from the UK or US. Apply 12–18 months before your intended start date.",
+      "languageNotes": "Portuguese is the sole official language. Most international expat schools teach entirely in English. Some schools offer Portuguese language support for new arrivals. Children who attend public schools will need intensive Portuguese tutoring.",
+      "examples": [
+        {
+          "name": "CAISL — Carlucci American International School of Lisbon",
+          "curriculum": "US / IB",
+          "fees": "$14,000 – $22,000 / yr",
+          "url": "https://www.caislisbon.org"
+        },
+        {
+          "name": "St. Julian's School",
+          "curriculum": "British / IB",
+          "fees": "$12,000 – $18,000 / yr",
+          "url": "https://www.stjulians.com"
+        },
+        {
+          "name": "Nobel International School",
+          "curriculum": "IB",
+          "fees": "$10,000 – $15,000 / yr",
+          "url": "https://www.nobelschool.com"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Lisbon has a good supply of private nurseries, particularly in the Cascais–Oeiras corridor where most expat families live. Costs are moderate by Western European standards.",
+      "daycareNotes": "State-subsidised crèches exist but places are scarce and waiting lists are long. Private nurseries in Cascais and Oeiras charge €500–€900/month and offer good bilingual (Portuguese/English) programmes.",
+      "nannyNotes": "Live-in and live-out nannies are common in the expat community. Many families hire Brazilian or Eastern European nannies who are experienced working with international families. References are easy to get through the expat community.",
+      "typicalCost": "Nanny: €10–€15/hr. Private nursery: €500–€900/month. Au pair: €100–€200/week + room and board.",
+      "howFamiliesFindIt": "Key platforms: Sitly.com, Babysits.com. Community groups: 'Lisbon Expat Families' and 'Americans/Expats in Lisbon' on Facebook. Local agencies (e.g. Ama Perfeita) are popular for vetted nannies."
+    },
+    "healthcare": {
+      "status": "estimated",
+      "summary": "Portugal has a solid public health system (SNS). Many expats use private health insurance for faster access — plans start from around €100/month per adult. English-speaking private clinics are widely available, especially in Lisbon and Cascais."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 90,
+      "summary": "Lisbon is one of the safest capitals in Europe. Violent crime is rare. Petty theft can occur in tourist areas like Alfama and Bairro Alto, but family neighbourhoods and suburbs are very safe. Portugal consistently ranks in the top 5 of the Global Peace Index."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$1,800 – $3,500 / month",
+      "nannyHourly": 10
+    },
+    "sources": {
+      "visa": [
+        { "label": "Portugal D8 Visa — Official", "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency" }
+      ],
+      "schools": [
+        { "label": "CAISL — Carlucci American International School", "url": "https://www.caislisbon.org" },
+        { "label": "St. Julian's School", "url": "https://www.stjulians.com" }
+      ],
+      "cost": [
+        { "label": "Lisbon Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Lisbon" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Lisbon Expat Families — Facebook Group", "url": "https://www.facebook.com/groups/lisbonexpatfamilies" }
+    ]
   },
   {
     "id": "dubai-ae",
     "citySlug": "dubai",
     "countrySlug": "uae",
-    "name": "Dubai",
+    "city": "Dubai",
     "country": "UAE",
-    "visas": [
-      { "type": "Remote Work Visa" }
+    "tagline": "Zero tax, world-class schools, and unmatched safety",
+    "summary": "Dubai offers families an extraordinary quality of life: no income tax, some of the world's best international schools, a crime rate that is virtually zero, and a massive expat community from every corner of the globe. The infrastructure is first-class, the healthcare is excellent, and the sunshine is guaranteed. The main trade-off is cost — Dubai is expensive.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Determine your visa route: employer-sponsored residency, Virtual Working Programme ($3,500/month income), or Golden Visa",
+      "For the Virtual Working Programme: prepare proof of remote employment, income statements, and a valid passport",
+      "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists",
+      "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or ~$100–$200/month privately",
+      "Get all family documents attested and translated into Arabic by a certified legal translation office",
+      "Open a UAE bank account (Emirates NBD, ADIB, or HSBC UAE) — requires Emirates ID which comes after visa approval",
+      "Register with the Roads and Transport Authority (RTA) to convert your driving licence to a UAE licence",
+      "Arrange rental contract and note that most Dubai landlords require 1–3 post-dated cheques for the full year upfront"
     ],
-    "safetyScore": 95,
-    "nannyCostPerHour": 15,
-    "bestNeighborhood": "Dubai Marina"
+    "familyFit": {
+      "bestFor": [
+        "High-earning families who prioritise top-tier schooling",
+        "Families seeking a truly safe, low-crime environment",
+        "Those working remotely or with a UAE-based employer",
+        "Families who enjoy a cosmopolitan, international lifestyle"
+      ],
+      "watchOutFor": [
+        "High cost of living — especially schooling ($10,000–$25,000+/yr) and housing",
+        "Extreme summer heat (45°C+) limits outdoor activity June–September",
+        "Cultural and social norms differ significantly from Western countries",
+        "Alcohol is available but regulated; public conduct laws are strict"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "The UAE offers several visa routes for expat families. The Virtual Working Programme allows a 1-year stay for remote workers earning $3,500+/month. Many expats use employer-sponsored residency visas, which also cover dependants.",
+      "options": [
+        {
+          "type": "Visa on Arrival",
+          "duration": "30–90 days",
+          "description": "Available to most Western passport holders. Extendable from within the UAE."
+        },
+        {
+          "type": "Virtual Working Programme",
+          "duration": "1 year",
+          "description": "Remote work residency for those earning at least $3,500/month. Covers the applicant and immediate family. Cost: ~$550 USD."
+        },
+        {
+          "type": "UAE Golden Visa",
+          "duration": "10 years",
+          "description": "For investors, entrepreneurs, and skilled professionals. Covers the whole family and includes a path to long-term residency."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Dubai Marina and Arabian Ranches are the most popular family areas. Marina offers high-rise apartment living near the beach; Arabian Ranches offers spacious villas with community facilities. Expect $2,000–$5,000+/month for a 3-bedroom family home.",
+      "bestAreas": ["Arabian Ranches", "Dubai Marina", "Jumeirah", "Mirdif", "The Springs"]
+    },
+    "schools": {
+      "status": "verified",
+      "summary": "Dubai has outstanding international schools, many rated 'Outstanding' by the KHDA regulator. Apply early — most popular schools have waitlists and the admissions process requires document attestation.",
+      "publicSystem": "Government schools in Dubai teach in Arabic and are primarily for UAE nationals. Expat families are not eligible and should plan for private international schooling from day one.",
+      "internationalOptions": "Dubai has over 200 private schools following more than 15 different international curricula. KHDA publishes annual inspection ratings (Outstanding / Very Good / Good) that are essential for comparing schools. British and IB schools are the most popular among Western expats.",
+      "languageNotes": "English is the working language of most international schools and the city itself. Arabic is taught as a second language in most private schools. No Arabic is required in day-to-day expat family life.",
+      "examples": [
+        {
+          "name": "Dubai International Academy",
+          "curriculum": "IB (PYP / MYP / DP)",
+          "fees": "$14,000 – $20,000 / yr",
+          "url": "https://www.diadubai.com"
+        },
+        {
+          "name": "Kings' School Dubai",
+          "curriculum": "British (EYFS through GCSE)",
+          "fees": "$12,000 – $18,000 / yr",
+          "url": "https://www.kingsdubai.com"
+        },
+        {
+          "name": "GEMS Wellington International School",
+          "curriculum": "British / IB",
+          "fees": "$13,000 – $20,000 / yr",
+          "url": "https://www.gemswellingtoninternational.com"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Dubai has a large supply of nurseries regulated by the KHDA. Hiring a live-in nanny is very common — domestic workers are part of everyday expat family life in the UAE.",
+      "daycareNotes": "KHDA-licensed nurseries are widely available across all family neighbourhoods. Most offer bilingual (English/Arabic) programmes. Fees range from $500–$1,200/month. Inspection ratings are published by KHDA.",
+      "nannyNotes": "Hiring a live-in domestic worker (often from Philippines, India, or Sri Lanka) is very common in Dubai. Families typically apply through an agency and sponsor the worker's visa. Live-in nannies cost $400–$700/month plus accommodation and food.",
+      "typicalCost": "Live-in nanny: $400–$700/month + visa + accommodation. Hourly nanny: $10–$20/hr. Nursery: $500–$1,200/month.",
+      "howFamiliesFindIt": "Agencies: Domestic Staffing Agency Dubai, FirstCare. Community: 'Dubai Expat Families' and 'Mums in Dubai' Facebook groups. Platforms: Babysits.com and HelperChoice.com."
+    },
+    "healthcare": {
+      "status": "curated",
+      "summary": "Dubai has world-class private hospitals including Cleveland Clinic Abu Dhabi and Dubai Healthcare City. Health insurance is mandatory for all residents and usually provided by employers. Expats consistently rate the quality of care as excellent."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 95,
+      "summary": "Dubai is one of the safest cities in the world. The crime rate is extremely low across all categories. Families with children feel comfortable in all neighbourhoods at any hour. The UAE has a zero-tolerance policy for serious crime."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$2,000 – $5,000 / month",
+      "nannyHourly": 15
+    },
+    "sources": {
+      "visa": [
+        { "label": "UAE Virtual Working Programme — Official", "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae" }
+      ],
+      "schools": [
+        { "label": "KHDA School Ratings — Official", "url": "https://www.khda.gov.ae/en/inspectionreports" },
+        { "label": "Kings' School Dubai", "url": "https://www.kingsdubai.com" }
+      ],
+      "cost": [
+        { "label": "Dubai Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Dubai" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Mums in Dubai — Facebook Community", "url": "https://www.facebook.com/groups/mumsindubai" }
+    ]
   },
   {
     "id": "chiang-mai-th",
     "citySlug": "chiang-mai",
     "countrySlug": "thailand",
-    "name": "Chiang Mai",
+    "city": "Chiang Mai",
     "country": "Thailand",
-    "visas": [
-      { "type": "Tourist Visa" },
-      { "type": "DTV Nomad Visa" }
+    "tagline": "Asia's most affordable family hub, surrounded by mountains",
+    "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month. The city has a large expat community, several strong international schools, fast internet, and excellent private healthcare at a fraction of Western prices.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Decide on your visa strategy: DTV (best for most families), Thailand Elite, or an initial 60-day tourist visa to scout",
+      "Apply for the DTV at a Thai embassy in your home country before travelling — bring income proof and $15,000 in savings documentation",
+      "Research international schools in Hang Dong — apply 3–6 months before your intended start date",
+      "Plan your arrival window: October–January is ideal to avoid the smoke season (February–April)",
+      "Find a short-term rental (1–3 months) through Facebook groups ('Chiang Mai Expat Club') or Airbnb while you search long-term",
+      "Open a Thai bank account (Bangkok Bank or Kasikorn) — requires a valid non-immigrant visa class",
+      "Purchase private health insurance before travelling — domestic Thai plans start from $100/month per adult",
+      "Set up a Thai SIM card (AIS or DTAC) on arrival for affordable mobile internet and local banking OTPs"
     ],
-    "safetyScore": 88,
-    "nannyCostPerHour": 4,
-    "bestNeighborhood": "Hang Dong"
+    "familyFit": {
+      "bestFor": [
+        "Budget-conscious families who want to maximise quality of life",
+        "Families drawn to Thai culture, food, and outdoor adventure",
+        "Parents who work remotely and need reliable infrastructure",
+        "Families seeking a large, established English-speaking expat community"
+      ],
+      "watchOutFor": [
+        "Smoke season (February–April) brings severe air pollution from agricultural burning — a health hazard for children",
+        "Visa situation requires planning — no official permanent long-term nomad residency pathway yet",
+        "Road safety is a serious concern; motorbike accidents are the leading cause of expat injury",
+        "Infrastructure is improving but still lags behind Bangkok in some areas"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Thailand's DTV (Destination Thailand Visa), launched in 2024, is the best option for families — it allows 180-day stays (extendable once) for remote workers. The Thailand Elite Visa offers 5–20 year residency for a fee.",
+      "options": [
+        {
+          "type": "Tourist Visa / Visa Exemption",
+          "duration": "30–60 days",
+          "description": "Most Western passports get 30 days visa-free on arrival, extendable once. A tourist visa from a Thai consulate gives 60 days + one extension."
+        },
+        {
+          "type": "DTV — Destination Thailand Visa",
+          "duration": "180 days per entry (renewable once)",
+          "description": "Designed for remote workers and digital nomads. Requires proof of income and $15,000 in savings. Covers the applicant and immediate family."
+        },
+        {
+          "type": "Thailand Elite Visa",
+          "duration": "5–20 years",
+          "description": "Paid long-stay visa starting from ~$15,000. No income requirements. Good option for families wanting multi-year stability."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Chiang Mai is extremely affordable. A large, modern 3-bedroom house in a gated community rents for $600–$1,200/month. Hang Dong and Nimmanhaemin are the most popular areas for expat families — close to international schools and good infrastructure.",
+      "bestAreas": ["Hang Dong", "Nimmanhaemin", "Santitham", "Doi Saket", "Mae Rim"]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Chiang Mai has several well-regarded international schools with English-medium instruction. Fees are a fraction of comparable schools in Europe or the US.",
+      "publicSystem": "Thai government schools are free but teach entirely in Thai. They are not a viable option for most expat families unless children are young and the family plans a very long stay (3+ years).",
+      "internationalOptions": "Several strong international schools operate in and around the Hang Dong area, convenient to the main expat neighbourhoods. Most follow US or international curricula. Fees are very affordable by international standards ($5,000–$12,000/year). Apply 3–6 months in advance.",
+      "languageNotes": "Thai is the language of instruction in all government schools. International schools teach entirely in English. Some offer Thai language classes as part of the curriculum. Most expat children do not need Thai for day-to-day life in Chiang Mai.",
+      "examples": [
+        {
+          "name": "Chiang Mai International School (CMIS)",
+          "curriculum": "US / ACSI",
+          "fees": "$5,000 – $8,000 / yr",
+          "url": "https://www.cmis.ac.th"
+        },
+        {
+          "name": "American Pacific International School (APIS)",
+          "curriculum": "US",
+          "fees": "$6,000 – $10,000 / yr",
+          "url": "https://www.apis.ac.th"
+        },
+        {
+          "name": "NIST International School Chiang Mai",
+          "curriculum": "IB",
+          "fees": "$8,000 – $12,000 / yr",
+          "url": "https://www.nist.ac.th"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Chiang Mai has an abundance of affordable childcare options. Hiring a full-time nanny is accessible to most expat families at very low cost.",
+      "daycareNotes": "Private nurseries and international pre-schools are widely available, particularly near the expat neighbourhoods of Hang Dong and Nimmanhaemin. Many are bilingual (English/Thai). Costs range from $150–$400/month.",
+      "nannyNotes": "Hiring a full-time live-in or live-out Thai nanny is very common and affordable. Many experienced carers have worked with expat families before. English skills vary — allow time for a settling-in period.",
+      "typicalCost": "Full-time live-in nanny: $300–$500/month. Part-time nanny: $3–$5/hr. International nursery: $150–$400/month.",
+      "howFamiliesFindIt": "Facebook groups are the primary resource: 'Chiang Mai Expat Club', 'Chiang Mai Families', and 'Chiang Mai Mums'. Platforms like ThaiNanny.com and Fazwaz.com also post childcare listings."
+    },
+    "healthcare": {
+      "status": "curated",
+      "summary": "Chiang Mai has excellent private hospitals including Bangkok Hospital Chiang Mai, Chiang Mai Ram, and Rajavej Hospital. Quality is high and costs are very low — a GP consultation is $15–$30, and specialist visits rarely exceed $100."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 88,
+      "summary": "Chiang Mai is generally very safe for families. Violent crime against foreigners is rare. The main concerns are road safety (motorcycle accidents), petty theft in tourist areas, and the annual smoke season which is a health hazard for children and those with respiratory conditions."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$600 – $1,400 / month",
+      "nannyHourly": 4
+    },
+    "sources": {
+      "visa": [
+        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+      ],
+      "schools": [
+        { "label": "Chiang Mai International School (CMIS)", "url": "https://www.cmis.ac.th" },
+        { "label": "American Pacific International School", "url": "https://www.apis.ac.th" }
+      ],
+      "cost": [
+        { "label": "Chiang Mai Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Chiang Mai Expat Club — Facebook", "url": "https://www.facebook.com/groups/chiangmaiexpatclub" }
+    ]
   },
   {
     "id": "koh-phangan-th",
     "citySlug": "koh-phangan",
     "countrySlug": "thailand",
-    "name": "Koh Phangan",
+    "city": "Koh Phangan",
     "country": "Thailand",
-    "visas": [
-      { "type": "Tourist Visa" },
-      { "type": "DTV Nomad Visa" }
+    "tagline": "Island life with a growing, tight-knit family expat scene",
+    "summary": "Koh Phangan has evolved well beyond its Full Moon Party reputation. The north and west coasts — especially Sri Thanu and Haad Yao — now host hundreds of families year-round. Life here is slow, affordable, and deeply connected to nature. The trade-off is infrastructure: schooling options are limited on the island and medical care requires a boat or flight to the mainland for anything serious.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Apply for the DTV at a Thai embassy before travelling — do not rely on visa-on-arrival for a long-term move",
+      "Plan your schooling approach before arrival: online curriculum (Acellus, Khan Academy, Cambridge Home School) or community cooperative groups",
+      "Arrange medical evacuation insurance — essential when living on a remote island without a full-service hospital",
+      "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term",
+      "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families",
+      "Plan your exit strategy for smoke season (Feb–April) if you have children with asthma or respiratory sensitivities",
+      "Bring surge protectors and a UPS — power fluctuations are common; a backup for your work equipment is essential",
+      "Budget for a reliable motorbike or car — the island has no public transport and roads are hilly and winding"
     ],
-    "safetyScore": 85,
-    "nannyCostPerHour": 5,
-    "bestNeighborhood": "Sri Thanu"
+    "familyFit": {
+      "bestFor": [
+        "Families seeking an alternative, nature-immersed lifestyle",
+        "Parents comfortable with online schooling or unschooling",
+        "Families who want a tight-knit, supportive international community",
+        "Those wanting extremely low cost of living with high quality of life"
+      ],
+      "watchOutFor": [
+        "Limited international schooling options on the island — primary concern for school-age children",
+        "Medical care is basic — serious cases require mainland hospital (Koh Samui or Surat Thani, ~1 hour away)",
+        "Infrastructure is improving but still developing — power cuts and water issues are occasional realities",
+        "Island fever is real — some families need more stimulation and city access than the island provides"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "As part of Thailand, Koh Phangan falls under the same visa rules. The DTV is the most practical option for families staying long-term. Many residents do periodic border runs to Malaysia via ferry.",
+      "options": [
+        {
+          "type": "Tourist Visa / Visa Exemption",
+          "duration": "30–60 days",
+          "description": "Most Western passports receive 30 days on arrival. Extendable once at the local immigration office in Thong Sala."
+        },
+        {
+          "type": "DTV — Destination Thailand Visa",
+          "duration": "180 days per entry (renewable once)",
+          "description": "Best option for families. Requires proof of remote income and $15,000 in savings. Apply from your home country or a Thai embassy abroad."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Koh Phangan is one of the most affordable places to live in Southeast Asia. A well-equipped 2–3 bedroom villa with a pool rents for $400–$900/month. Sri Thanu and Haad Yao are the family hubs.",
+      "bestAreas": ["Sri Thanu", "Haad Yao", "Baan Tai", "Thong Nai Pan", "Chaloklum"]
+    },
+    "schools": {
+      "status": "estimated",
+      "summary": "Formal international schooling on Koh Phangan is very limited. Most expat families plan their educational approach carefully before arriving — online schooling and community groups are the norm.",
+      "publicSystem": "Thai government schools exist on the island but teach entirely in Thai. Not a viable option for most expat children.",
+      "internationalOptions": "There is no full international school on Koh Phangan. A few small private and Montessori-style micro-schools exist serving the expat community, but they are not accredited and cater mainly to early years. Families with secondary-school-age children typically move to Koh Samui or Chiang Mai.",
+      "languageNotes": "English is the informal community language among expats. Children in the expat community grow up in a largely English-speaking social environment. Thai language support is available through local tutors.",
+      "examples": [
+        {
+          "name": "Phangan International School (micro-school)",
+          "curriculum": "Mixed / Montessori-inspired",
+          "fees": "$200 – $500 / month",
+          "url": "https://www.facebook.com/phanganis"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Hiring a local Thai nanny is easy, affordable, and very common in the expat community. Formal daycare options are limited but growing.",
+      "daycareNotes": "A small number of private bilingual nurseries serve the expat community in Sri Thanu. Options are limited compared to a city, but the tight-knit community means cooperative childcare (nanny shares, playgroups) is very common.",
+      "nannyNotes": "Full-time Thai nannies are widely available and very affordable. Most expat families in Sri Thanu and Haad Yao hire through community word-of-mouth. Experience with expat families is common in these areas.",
+      "typicalCost": "Full-time nanny: $300–$500/month. Part-time: $4–$6/hr. Community nursery / micro-school: $200–$400/month.",
+      "howFamiliesFindIt": "Almost entirely through Facebook: 'Koh Phangan Expats', 'Koh Phangan Family Community', and 'Phangan Mamas'. Word-of-mouth referrals are standard — post in these groups before you arrive."
+    },
+    "healthcare": {
+      "status": "curated",
+      "summary": "The island has several clinics for minor issues. Bangkok Hospital Koh Phangan provides reliable outpatient care. For anything serious — surgery, emergency, childbirth — Bangkok Hospital Koh Samui is the nearest full-service hospital, about 1 hour away by ferry."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 85,
+      "summary": "Koh Phangan is generally safe for families. The main risks are road accidents on winding island roads, jellyfish stings, and occasional petty theft near the party areas in Haad Rin. The family-oriented north and west coasts are very calm and safe."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$400 – $900 / month",
+      "nannyHourly": 5
+    },
+    "sources": {
+      "visa": [
+        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+      ],
+      "healthcare": [
+        { "label": "Bangkok Hospital Koh Phangan", "url": "https://www.bangkokhospital-kohphangan.com" }
+      ],
+      "cost": [
+        { "label": "Koh Phangan Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Koh Phangan Expats — Facebook", "url": "https://www.facebook.com/groups/kohphanganexpats" }
+    ]
   },
   {
     "id": "koh-samui-th",
     "citySlug": "koh-samui",
     "countrySlug": "thailand",
-    "name": "Koh Samui",
+    "city": "Koh Samui",
     "country": "Thailand",
-    "visas": [
-      { "type": "Tourist Visa" },
-      { "type": "DTV Nomad Visa" }
+    "tagline": "Resort-island living with better infrastructure than you'd expect",
+    "summary": "Koh Samui is the most developed of Thailand's family-friendly islands. It has an international airport, a full-service Bangkok Hospital, several international schools, and a large, established expat community. Bophut and Maenam on the north coast have a relaxed, village feel ideal for families. It costs more than Koh Phangan but offers meaningfully better infrastructure.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      "Apply for the DTV at a Thai embassy before travelling — required for any stay beyond the initial tourist visa period",
+      "Contact international schools (ISS, ACE) directly and apply 2–4 months before your intended start date",
+      "Arrange international health insurance that includes Bangkok Hospital Samui and emergency airlift to Bangkok",
+      "Research neighbourhoods before arrival: Bophut and Maenam are the established family areas on the north coast",
+      "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving",
+      "Open a Thai bank account at Bangkok Bank's Samui branch — required for long stays and local payments",
+      "Arrange transport: Koh Samui has no public transit — a reliable car or motorbike is essential for families",
+      "Plan around the monsoon season (Oct–Dec): the east coast gets the worst weather; Bophut and Maenam are more sheltered"
     ],
-    "safetyScore": 82,
-    "nannyCostPerHour": 6,
-    "bestNeighborhood": "Bophut"
+    "familyFit": {
+      "bestFor": [
+        "Families who want island living without sacrificing infrastructure",
+        "Parents who need reliable international schooling on the island",
+        "Frequent travellers (Samui has a regional airport with direct flights to Bangkok and beyond)",
+        "Families transitioning from a higher-cost Asian city like Singapore or Hong Kong"
+      ],
+      "watchOutFor": [
+        "Higher cost than other Thai islands — housing prices have risen significantly since 2020",
+        "Monsoon season (Oct–Dec) brings heavy rain and rough seas on parts of the island",
+        "Traffic on the ring road can be busy; motorbike safety concerns apply",
+        "Island isolation — for major specialist medical needs, Bangkok remains the destination"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Koh Samui follows Thailand's national visa rules. The DTV is the best long-stay option for families. The island's proximity to Malaysia (ferry to Penang) makes border runs relatively convenient.",
+      "options": [
+        {
+          "type": "Tourist Visa / Visa Exemption",
+          "duration": "30–60 days",
+          "description": "Most Western passports receive 30 days on arrival, extendable once. Koh Samui has its own immigration office."
+        },
+        {
+          "type": "DTV — Destination Thailand Visa",
+          "duration": "180 days per entry (renewable once)",
+          "description": "Recommended for families planning extended stays. Requires proof of remote income and $15,000 in savings."
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Koh Samui is more expensive than Koh Phangan or Chiang Mai, but still very affordable by Western standards. A 3-bedroom villa near Bophut or Maenam rents for $700–$1,800/month. Long-term rentals (6–12 months) often come with significant discounts.",
+      "bestAreas": ["Bophut", "Maenam", "Chaweng Noi", "Nathon", "Lipa Noi"]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Koh Samui has several international schools serving the expat community. Options are limited compared to a major city, but quality is solid and fees are very affordable.",
+      "publicSystem": "Thai government schools on the island teach entirely in Thai. Not suitable for most expat children without extensive Thai language support.",
+      "internationalOptions": "Two main accredited international schools serve the English-speaking expat community on Samui: ISS and ACE. Both cover Early Years through secondary. The schools are small by international standards, which some families see as a positive. For IB or British A-Level, families typically board their children in Bangkok or Chiang Mai.",
+      "languageNotes": "English is the language of instruction at both main international schools. Thai language classes are included in the curriculum. The expat community on the north coast communicates almost entirely in English.",
+      "examples": [
+        {
+          "name": "International School of Samui (ISS)",
+          "curriculum": "British / Cambridge",
+          "fees": "$5,000 – $8,000 / yr",
+          "url": "https://www.isssamui.com"
+        },
+        {
+          "name": "ACE International School",
+          "curriculum": "British",
+          "fees": "$4,000 – $7,000 / yr",
+          "url": "https://www.acesamui.com"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Koh Samui has better childcare infrastructure than Koh Phangan, with licensed nurseries and a large pool of experienced Thai nannies.",
+      "daycareNotes": "Several private nurseries operate in the Bophut and Chaweng areas, offering bilingual (English/Thai) early years programmes. Fees range from $200–$500/month. Quality is good relative to cost.",
+      "nannyNotes": "Hiring a full-time Thai nanny is very common on Samui. Many experienced nannies have worked with expat families for years and come with strong references from the community.",
+      "typicalCost": "Full-time nanny: $350–$600/month. Part-time: $5–$7/hr. Private nursery: $200–$500/month.",
+      "howFamiliesFindIt": "Facebook groups are the primary resource: 'Samui Expats', 'Samui Families', and 'Koh Samui International Community'. Local property and relocation agencies sometimes maintain nanny referral lists."
+    },
+    "healthcare": {
+      "status": "curated",
+      "summary": "Bangkok Hospital Koh Samui is a full-service international hospital with a 24/7 emergency department, specialist clinics, and modern equipment. It is widely regarded as the best hospital in the Gulf of Thailand region. English-speaking staff are standard."
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 82,
+      "summary": "Koh Samui is generally safe for families. Road safety is the primary concern — the ring road is busy and motorbike accidents are common. The family-oriented north coast neighbourhoods (Bophut, Maenam) are calm and low-crime. Water safety awareness is important for families with young children."
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "$700 – $1,800 / month",
+      "nannyHourly": 6
+    },
+    "sources": {
+      "visa": [
+        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+      ],
+      "schools": [
+        { "label": "International School of Samui (ISS)", "url": "https://www.isssamui.com" },
+        { "label": "ACE International School", "url": "https://www.acesamui.com" }
+      ],
+      "healthcare": [
+        { "label": "Bangkok Hospital Koh Samui", "url": "https://www.bangkokhospital-samui.com" }
+      ],
+      "cost": [
+        { "label": "Koh Samui Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui" }
+      ]
+    },
+    "communityLinks": [
+      { "label": "Samui Expats — Facebook", "url": "https://www.facebook.com/groups/samuiexpats" }
+    ]
   }
 ]

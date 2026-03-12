@@ -1,16 +1,21 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Shield, BadgeDollarSign, Home, ArrowLeft } from "lucide-react";
+import {
+  ArrowLeft, MapPin, Shield, BadgeDollarSign, Home,
+  Stethoscope, GraduationCap, FileText, ExternalLink,
+  CheckCircle2, AlertTriangle, Baby, ClipboardList,
+  BookOpen,
+} from "lucide-react";
 import citiesData from "@/data/cities.json";
-import type { City } from "@/lib/types";
+import type { Destination, Source } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 
-// ── Static params — tells Next.js which paths to pre-render ──────────────────
+// ── Static params ─────────────────────────────────────────────────────────────
 
 export function generateStaticParams() {
-  return (citiesData as City[]).map((city) => ({
-    country: city.countrySlug,
-    city:    city.citySlug,
+  return (citiesData as Destination[]).map((d) => ({
+    country: d.countrySlug,
+    city:    d.citySlug,
   }));
 }
 
@@ -23,27 +28,27 @@ interface Props {
 export default async function CityPage({ params }: Props) {
   const { country, city: cityParam } = await params;
 
-  const cityData = (citiesData as City[]).find(
-    (c) => c.countrySlug === country && c.citySlug === cityParam,
+  const dest = (citiesData as Destination[]).find(
+    (d) => d.countrySlug === country && d.citySlug === cityParam,
   );
 
-  if (!cityData) notFound();
+  if (!dest) notFound();
 
-  const image = CITY_IMAGES[cityData.name] ?? FALLBACK_IMAGE;
+  const image = CITY_IMAGES[dest.city] ?? FALLBACK_IMAGE;
+
+  // Flatten all sources into a deduplicated list for the sources footer
+  const allSources: Source[] = Object.values(dest.sources)
+    .flat()
+    .filter((s): s is Source => Boolean(s));
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
 
-      {/* ── Hero banner ─────────────────────────────────────────────────── */}
-      <div className="relative h-72 w-full overflow-hidden md:h-96">
-        <img
-          src={image}
-          alt={cityData.name}
-          className="h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+      {/* ── Hero image ───────────────────────────────────────────────────── */}
+      <div className="relative h-72 w-full overflow-hidden md:h-[420px]">
+        <img src={image} alt={dest.city} className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
-        {/* Back link */}
         <Link
           href="/"
           className="absolute left-6 top-6 flex items-center gap-2 rounded-full bg-black/40 px-4 py-2 text-sm font-semibold text-white backdrop-blur-md transition-colors hover:bg-black/60"
@@ -52,73 +57,340 @@ export default async function CityPage({ params }: Props) {
           All destinations
         </Link>
 
-        {/* City name over image */}
-        <div className="absolute bottom-0 left-0 p-8">
-          <p className="mb-1 flex items-center gap-1.5 text-sm font-medium text-white/70">
+        {/* Last reviewed badge */}
+        <div className="absolute right-6 top-6 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
+          Reviewed {dest.lastReviewed}
+        </div>
+
+        <div className="absolute bottom-0 left-0 p-8 md:p-12">
+          <p className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-white/70">
             <MapPin size={13} strokeWidth={2.5} />
-            {cityData.country}
+            {dest.country}
           </p>
           <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-6xl">
-            {cityData.name}
+            {dest.city}
           </h1>
+          <p className="mt-2 text-lg text-white/80">{dest.tagline}</p>
         </div>
       </div>
 
-      {/* ── Content ─────────────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-3xl px-6 py-14">
+      {/* ── Body ─────────────────────────────────────────────────────────── */}
+      <div className="mx-auto max-w-3xl px-6 py-14 space-y-8">
 
         {/* Summary */}
-        <p className="mb-12 text-lg leading-relaxed text-slate-600">
-          {cityData.name} is one of the world&apos;s top relocation destinations for families.
-          Here&apos;s a quick overview of what you need to know before you move.
-        </p>
+        <p className="text-lg leading-relaxed text-slate-600">{dest.summary}</p>
 
-        {/* Stat cards */}
-        <div className="mb-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl bg-white p-5 shadow-sm">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-green-50">
-              <Shield size={18} className="text-green-600" />
-            </div>
-            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Safety Score</p>
-            <p className="mt-1 text-3xl font-extrabold text-slate-900">
-              {cityData.safetyScore}
-              <span className="text-base font-normal text-slate-400">/100</span>
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-white p-5 shadow-sm">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-orange-50">
-              <BadgeDollarSign size={18} className="text-orange-500" />
-            </div>
-            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Nanny Cost</p>
-            <p className="mt-1 text-3xl font-extrabold text-slate-900">
-              ${cityData.nannyCostPerHour}
-              <span className="text-base font-normal text-slate-400">/hr</span>
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-white p-5 shadow-sm">
-            <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50">
-              <Home size={18} className="text-blue-500" />
-            </div>
-            <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Best Area</p>
-            <p className="mt-1 text-2xl font-extrabold text-slate-900">{cityData.bestNeighborhood}</p>
-          </div>
+        {/* ── Quick stats ───────────────────────────────────────────────── */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <StatCard
+            icon={<Shield size={18} className="text-green-600" />}
+            bg="bg-green-50"
+            label="Safety Score"
+            value={`${dest.safety.score}/100`}
+          />
+          <StatCard
+            icon={<BadgeDollarSign size={18} className="text-orange-500" />}
+            bg="bg-orange-50"
+            label="Nanny Cost"
+            value={`$${dest.cost.nannyHourly}/hr`}
+          />
+          <StatCard
+            icon={<Home size={18} className="text-blue-500" />}
+            bg="bg-blue-50"
+            label="Typical Rent"
+            value={dest.cost.rentRange}
+            small
+          />
         </div>
 
-        {/* Visas */}
-        <div className="rounded-2xl bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-lg font-bold text-slate-900">Visa options</h2>
-          <ul className="space-y-3">
-            {cityData.visas.map((visa, i) => (
-              <li key={i} className="flex items-center gap-3 rounded-xl bg-slate-50 px-4 py-3">
-                <span className="h-2 w-2 shrink-0 rounded-full bg-[#FF5A5F]" />
-                <span className="text-sm font-semibold text-slate-800">{visa.type}</span>
+        {/* ── Action checklist ──────────────────────────────────────────── */}
+        <Section title="Action checklist" icon={<ClipboardList size={16} className="text-slate-500" />}>
+          <p className="mb-4 text-sm text-slate-500">
+            Concrete steps to make this move happen, in order.
+          </p>
+          <ol className="space-y-3">
+            {dest.actionChecklist.map((step, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF5A5F]/10 text-xs font-extrabold text-[#FF5A5F]">
+                  {i + 1}
+                </span>
+                <span className="text-sm leading-relaxed text-slate-700">{step}</span>
               </li>
             ))}
-          </ul>
-        </div>
+          </ol>
+        </Section>
+
+        {/* ── Family fit ────────────────────────────────────────────────── */}
+        <Section title="Family fit">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-wider text-green-700">Great for</p>
+              <ul className="space-y-2">
+                {dest.familyFit.bestFor.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
+                    <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-green-500" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-wider text-amber-700">Watch out for</p>
+              <ul className="space-y-2">
+                {dest.familyFit.watchOutFor.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
+                    <AlertTriangle size={15} className="mt-0.5 shrink-0 text-amber-400" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Section>
+
+        {/* ── Visa ──────────────────────────────────────────────────────── */}
+        <Section
+          title="Visa options"
+          icon={<FileText size={16} className="text-slate-500" />}
+          sources={dest.sources.visa}
+        >
+          <p className="mb-4 text-sm leading-relaxed text-slate-600">{dest.visa.summary}</p>
+          <div className="space-y-3">
+            {dest.visa.options.map((opt, i) => (
+              <div key={i} className="rounded-xl bg-slate-50 px-4 py-3.5">
+                <div className="flex items-center justify-between gap-4">
+                  <p className="font-semibold text-slate-900">{opt.type}</p>
+                  {opt.duration && (
+                    <span className="shrink-0 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
+                      {opt.duration}
+                    </span>
+                  )}
+                </div>
+                {opt.description && (
+                  <p className="mt-1.5 text-sm text-slate-500">{opt.description}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        {/* ── Housing ───────────────────────────────────────────────────── */}
+        <Section
+          title="Housing"
+          icon={<Home size={16} className="text-slate-500" />}
+          sources={dest.sources.housing}
+        >
+          <p className="mb-4 text-sm leading-relaxed text-slate-600">{dest.housing.summary}</p>
+          <div className="flex flex-wrap gap-2">
+            {dest.housing.bestAreas.map((area) => (
+              <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+                {area}
+              </span>
+            ))}
+          </div>
+        </Section>
+
+        {/* ── Schools ───────────────────────────────────────────────────── */}
+        <Section
+          title="Schools"
+          icon={<GraduationCap size={16} className="text-slate-500" />}
+          sources={dest.sources.schools}
+        >
+          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.schools.summary}</p>
+
+          <div className="mb-5 space-y-4">
+            <DetailRow label="Public system" value={dest.schools.publicSystem} />
+            <DetailRow label="International options" value={dest.schools.internationalOptions} />
+            <DetailRow label="Language notes" value={dest.schools.languageNotes} />
+          </div>
+
+          {dest.schools.examples.length > 0 && (
+            <div>
+              <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">
+                Example schools
+              </p>
+              <div className="space-y-2.5">
+                {dest.schools.examples.map((school) => (
+                  <div key={school.name} className="rounded-xl bg-slate-50 px-4 py-3.5">
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        {school.url ? (
+                          <a
+                            href={school.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 font-semibold text-slate-900 hover:text-[#FF5A5F]"
+                          >
+                            {school.name}
+                            <ExternalLink size={12} className="shrink-0" />
+                          </a>
+                        ) : (
+                          <p className="font-semibold text-slate-900">{school.name}</p>
+                        )}
+                        <p className="mt-0.5 text-xs text-slate-500">{school.curriculum}</p>
+                      </div>
+                      {school.fees && (
+                        <span className="shrink-0 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
+                          {school.fees}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </Section>
+
+        {/* ── Childcare ─────────────────────────────────────────────────── */}
+        <Section title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
+          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.childcare.summary}</p>
+          <div className="space-y-4">
+            <DetailRow label="Daycare & nurseries" value={dest.childcare.daycareNotes} />
+            <DetailRow label="Nanny & au pair" value={dest.childcare.nannyNotes} />
+            <DetailRow label="Typical cost" value={dest.childcare.typicalCost} />
+            <DetailRow label="How families find it" value={dest.childcare.howFamiliesFindIt} />
+          </div>
+        </Section>
+
+        {/* ── Healthcare ────────────────────────────────────────────────── */}
+        <Section
+          title="Healthcare"
+          icon={<Stethoscope size={16} className="text-slate-500" />}
+          sources={dest.sources.healthcare}
+        >
+          <p className="text-sm leading-relaxed text-slate-600">{dest.healthcare.summary}</p>
+        </Section>
+
+        {/* ── Safety ────────────────────────────────────────────────────── */}
+        <Section title="Safety" icon={<Shield size={16} className="text-slate-500" />}>
+          <div className="mb-4 flex items-baseline gap-2">
+            <span className="text-4xl font-extrabold text-slate-900">{dest.safety.score}</span>
+            <span className="text-base text-slate-400">/ 100</span>
+          </div>
+          <p className="text-sm leading-relaxed text-slate-600">{dest.safety.summary}</p>
+        </Section>
+
+        {/* ── Official sources ──────────────────────────────────────────── */}
+        {allSources.length > 0 && (
+          <Section title="Sources" icon={<BookOpen size={16} className="text-slate-500" />}>
+            <p className="mb-3 text-xs text-slate-400">
+              Official government, institutional, and public sources.
+            </p>
+            <ul className="space-y-2">
+              {allSources.map((src, i) => (
+                <li key={i}>
+                  <a
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#FF5A5F] underline-offset-2 hover:underline"
+                  >
+                    <ExternalLink size={13} />
+                    {src.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
+
+        {/* ── Community links ───────────────────────────────────────────── */}
+        {dest.communityLinks && dest.communityLinks.length > 0 && (
+          <Section title="Community" icon={<ExternalLink size={16} className="text-slate-500" />}>
+            <p className="mb-3 text-xs text-slate-400">
+              Expat groups and community forums. Useful for on-the-ground advice — not official sources.
+            </p>
+            <ul className="space-y-2">
+              {dest.communityLinks.map((link, i) => (
+                <li key={i}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 underline-offset-2 hover:text-slate-900 hover:underline"
+                  >
+                    <ExternalLink size={13} />
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
+
       </div>
     </main>
+  );
+}
+
+// ── File-local sub-components ─────────────────────────────────────────────────
+
+function Section({
+  title,
+  icon,
+  sources,
+  children,
+}: {
+  title: string;
+  icon?: React.ReactNode;
+  sources?: Source[];
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="rounded-2xl bg-white p-6 shadow-sm">
+      <h2 className="mb-4 flex items-center gap-2 text-base font-bold text-slate-900">
+        {icon}
+        {title}
+      </h2>
+      {children}
+      {sources && sources.length > 0 && (
+        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 pt-4">
+          {sources.map((src, i) => (
+            <a
+              key={i}
+              href={src.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-xs text-slate-400 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
+            >
+              <ExternalLink size={11} />
+              {src.label}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function StatCard({
+  icon, bg, label, value, small = false,
+}: {
+  icon: React.ReactNode;
+  bg: string;
+  label: string;
+  value: string;
+  small?: boolean;
+}) {
+  return (
+    <div className="rounded-2xl bg-white p-5 shadow-sm">
+      <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${bg}`}>
+        {icon}
+      </div>
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{label}</p>
+      <p className={`mt-1 font-extrabold text-slate-900 ${small ? "text-xl" : "text-3xl"}`}>
+        {value}
+      </p>
+    </div>
+  );
+}
+
+function DetailRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="grid gap-1 sm:grid-cols-[160px_1fr]">
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-400 pt-0.5">{label}</p>
+      <p className="text-sm leading-relaxed text-slate-600">{value}</p>
+    </div>
   );
 }

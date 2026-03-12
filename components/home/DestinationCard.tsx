@@ -1,7 +1,7 @@
 // No "use client" needed — all hover effects are pure Tailwind CSS.
 import Link from "next/link";
 import { MapPin, Shield, BadgeDollarSign, ChevronRight, Home } from "lucide-react";
-import type { City } from "@/lib/types";
+import type { Destination } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 
 // Short, human, family-first note shown on every card by default.
@@ -15,12 +15,12 @@ const CITY_NOTES: Record<string, string> = {
 };
 
 interface Props {
-  city: City;
+  city: Destination;
 }
 
 export default function DestinationCard({ city }: Props) {
-  const image = CITY_IMAGES[city.name] ?? FALLBACK_IMAGE;
-  const note  = CITY_NOTES[city.name] ?? "A wonderful destination for relocating families";
+  const image = CITY_IMAGES[city.city] ?? FALLBACK_IMAGE;
+  const note  = CITY_NOTES[city.city] ?? city.tagline;
 
   return (
     <Link href={`/${city.countrySlug}/${city.citySlug}`} className="block">
@@ -30,7 +30,7 @@ export default function DestinationCard({ city }: Props) {
         {/* ── Image ──────────────────────────────────────────────────────── */}
         <img
           src={image}
-          alt={`${city.name}, ${city.country}`}
+          alt={`${city.city}, ${city.country}`}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
         />
@@ -44,7 +44,7 @@ export default function DestinationCard({ city }: Props) {
         {/* ── Safety badge (top-right, always visible) ───────────────────── */}
         <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full bg-black/40 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-md">
           <Shield size={11} strokeWidth={2.5} />
-          {city.safetyScore}
+          {city.safety.score}
           <span className="font-normal text-white/60">/100</span>
         </div>
 
@@ -54,7 +54,7 @@ export default function DestinationCard({ city }: Props) {
           {/* City name + country — always visible */}
           <div className="transition-transform duration-400 ease-out group-hover:-translate-y-2">
             <h3 className="text-[1.75rem] font-extrabold leading-tight tracking-tight text-white">
-              {city.name}
+              {city.city}
             </h3>
             <p className="mt-1.5 flex items-center gap-1.5 text-sm font-medium text-white/70">
               <MapPin size={12} strokeWidth={2.5} />
@@ -76,7 +76,7 @@ export default function DestinationCard({ city }: Props) {
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/45">Nanny</p>
                 <p className="text-sm font-extrabold text-white">
-                  ${city.nannyCostPerHour}
+                  ${city.cost.nannyHourly}
                   <span className="text-[10px] font-normal text-white/50">/hr</span>
                 </p>
               </div>
@@ -85,14 +85,14 @@ export default function DestinationCard({ city }: Props) {
               <Home size={14} className="shrink-0 text-white/60" />
               <div className="min-w-0">
                 <p className="text-[10px] font-bold uppercase tracking-wider text-white/45">Best area</p>
-                <p className="truncate text-sm font-extrabold text-white">{city.bestNeighborhood}</p>
+                <p className="truncate text-sm font-extrabold text-white">{city.housing.bestAreas[0]}</p>
               </div>
             </div>
           </div>
 
           {/* Explore CTA */}
           <button className="mt-3 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5A5F] py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/20 transition-all duration-350 delay-150 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:bg-[#e84a4f] active:scale-[0.98]">
-            Explore {city.name}
+            Explore {city.city}
             <ChevronRight size={15} strokeWidth={2.5} />
           </button>
         </div>

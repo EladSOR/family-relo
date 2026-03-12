@@ -1,8 +1,8 @@
-import type { City } from "@/lib/types";
+import type { Destination } from "@/lib/types";
 import DestinationCard from "./DestinationCard";
 
 interface Props {
-  cities: City[];
+  cities: Destination[];
 }
 
 export default function DestinationsGrid({ cities }: Props) {
