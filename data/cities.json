@@ -9,14 +9,14 @@
     "summary": "Valencia is one of Europe's best-kept secrets for relocating families. It offers a Mediterranean lifestyle — warm weather, fresh food markets, and beach access — at a fraction of the cost of Barcelona or Madrid. The city has a growing international school scene, reliable public transport, and a welcoming expat community that keeps expanding every year.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
-      "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
-      "Arrange private health insurance before submitting your visa application (required document)",
-      "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
-      "Contact international schools 6–12 months before your move — waiting lists are long",
-      "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days",
-      "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)",
-      "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card"
+      { "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)", "targetSection": "visa" },
+      { "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application", "targetSection": "visa" },
+      { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa" },
+      { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa" },
+      { "label": "Contact international schools 6–12 months before your move — waiting lists are long", "targetSection": "schools" },
+      { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days" },
+      { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)" },
+      { "label": "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card", "targetSection": "healthcare" }
     ],
     "familyFit": {
       "bestFor": [
@@ -127,14 +127,14 @@
     "summary": "Lisbon has become one of Europe's most sought-after relocation destinations. Families are drawn by its high quality of life, safe streets, mild Atlantic climate, and a thriving English-speaking expat community. The greater Lisbon area — especially the Cascais line — offers excellent international schools and a beachside suburban feel that rivals anywhere in the world.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Confirm you meet the D8 income threshold (€3,480/month) or the passive income / savings alternative",
-      "Prepare your document pack: 3+ months of income statements, criminal record (Apostilled), proof of health insurance, accommodation proof",
-      "Submit D8 Visa application at the Portuguese Consulate in your home country — allow 2–4 months for processing",
-      "Research schools in the Cascais–Estoril corridor before moving — top international schools fill 12–18 months ahead",
-      "Upon arrival, register at your local Junta de Freguesia (parish council) to formalise your address",
-      "Open a Portuguese bank account (Millennium BCP, Caixa Geral, or Revolut Portugal are popular with expats)",
-      "Apply for NHR (Non-Habitual Resident) tax status within the first year of becoming fiscally resident — significant tax benefit",
-      "Register with your local health centre (Centro de Saúde) to access the SNS public health system"
+      { "label": "Confirm you meet the D8 income threshold (€3,480/month) or the passive income / savings alternative", "targetSection": "visa" },
+      { "label": "Prepare your document pack: 3+ months of income statements, criminal record (Apostilled), proof of health insurance, accommodation proof", "targetSection": "visa" },
+      { "label": "Submit D8 Visa application at the Portuguese Consulate in your home country — allow 2–4 months for processing", "targetSection": "visa" },
+      { "label": "Research schools in the Cascais–Estoril corridor before moving — top international schools fill 12–18 months ahead", "targetSection": "schools" },
+      { "label": "Upon arrival, register at your local Junta de Freguesia (parish council) to formalise your address" },
+      { "label": "Open a Portuguese bank account (Millennium BCP, Caixa Geral, or Revolut Portugal are popular with expats)" },
+      { "label": "Apply for NHR (Non-Habitual Resident) tax status within the first year of becoming fiscally resident — significant tax benefit" },
+      { "label": "Register with your local health centre (Centro de Saúde) to access the SNS public health system", "targetSection": "healthcare" }
     ],
     "familyFit": {
       "bestFor": [
@@ -245,14 +245,14 @@
     "summary": "Dubai offers families an extraordinary quality of life: no income tax, some of the world's best international schools, a crime rate that is virtually zero, and a massive expat community from every corner of the globe. The infrastructure is first-class, the healthcare is excellent, and the sunshine is guaranteed. The main trade-off is cost — Dubai is expensive.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Determine your visa route: employer-sponsored residency, Virtual Working Programme ($3,500/month income), or Golden Visa",
-      "For the Virtual Working Programme: prepare proof of remote employment, income statements, and a valid passport",
-      "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists",
-      "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or ~$100–$200/month privately",
-      "Get all family documents attested and translated into Arabic by a certified legal translation office",
-      "Open a UAE bank account (Emirates NBD, ADIB, or HSBC UAE) — requires Emirates ID which comes after visa approval",
-      "Register with the Roads and Transport Authority (RTA) to convert your driving licence to a UAE licence",
-      "Arrange rental contract and note that most Dubai landlords require 1–3 post-dated cheques for the full year upfront"
+      { "label": "Determine your visa route: employer-sponsored residency, Virtual Working Programme ($3,500/month income), or Golden Visa", "targetSection": "visa" },
+      { "label": "For the Virtual Working Programme: prepare proof of remote employment, income statements, and a valid passport", "targetSection": "visa" },
+      { "label": "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists", "targetSection": "schools" },
+      { "label": "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or ~$100–$200/month privately", "targetSection": "healthcare" },
+      { "label": "Get all family documents attested and translated into Arabic by a certified legal translation office", "targetSection": "visa" },
+      { "label": "Open a UAE bank account (Emirates NBD, ADIB, or HSBC UAE) — requires Emirates ID which comes after visa approval" },
+      { "label": "Register with the Roads and Transport Authority (RTA) to convert your driving licence to a UAE licence" },
+      { "label": "Arrange rental contract and note that most Dubai landlords require 1–3 post-dated cheques for the full year upfront", "targetSection": "housing" }
     ],
     "familyFit": {
       "bestFor": [
@@ -369,14 +369,14 @@
     "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month. The city has a large expat community, several strong international schools, fast internet, and excellent private healthcare at a fraction of Western prices.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Decide on your visa strategy: DTV (best for most families), Thailand Elite, or an initial 60-day tourist visa to scout",
-      "Apply for the DTV at a Thai embassy in your home country before travelling — bring income proof and $15,000 in savings documentation",
-      "Research international schools in Hang Dong — apply 3–6 months before your intended start date",
-      "Plan your arrival window: October–January is ideal to avoid the smoke season (February–April)",
-      "Find a short-term rental (1–3 months) through Facebook groups ('Chiang Mai Expat Club') or Airbnb while you search long-term",
-      "Open a Thai bank account (Bangkok Bank or Kasikorn) — requires a valid non-immigrant visa class",
-      "Purchase private health insurance before travelling — domestic Thai plans start from $100/month per adult",
-      "Set up a Thai SIM card (AIS or DTAC) on arrival for affordable mobile internet and local banking OTPs"
+      { "label": "Decide on your visa strategy: DTV (best for most families), Thailand Elite, or an initial 60-day tourist visa to scout", "targetSection": "visa" },
+      { "label": "Apply for the DTV at a Thai embassy in your home country before travelling — bring income proof and $15,000 in savings documentation", "targetSection": "visa" },
+      { "label": "Research international schools in Hang Dong — apply 3–6 months before your intended start date", "targetSection": "schools" },
+      { "label": "Plan your arrival window: October–January is ideal to avoid the smoke season (February–April)" },
+      { "label": "Find a short-term rental (1–3 months) through Facebook groups ('Chiang Mai Expat Club') or Airbnb while you search long-term", "targetSection": "housing" },
+      { "label": "Open a Thai bank account (Bangkok Bank or Kasikorn) — requires a valid non-immigrant visa class" },
+      { "label": "Purchase private health insurance before travelling — domestic Thai plans start from $100/month per adult", "targetSection": "healthcare" },
+      { "label": "Set up a Thai SIM card (AIS or DTAC) on arrival for affordable mobile internet and local banking OTPs" }
     ],
     "familyFit": {
       "bestFor": [
@@ -493,14 +493,14 @@
     "summary": "Koh Phangan has evolved well beyond its Full Moon Party reputation. The north and west coasts — especially Sri Thanu and Haad Yao — now host hundreds of families year-round. Life here is slow, affordable, and deeply connected to nature. The trade-off is infrastructure: schooling options are limited on the island and medical care requires a boat or flight to the mainland for anything serious.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Apply for the DTV at a Thai embassy before travelling — do not rely on visa-on-arrival for a long-term move",
-      "Plan your schooling approach before arrival: online curriculum (Acellus, Khan Academy, Cambridge Home School) or community cooperative groups",
-      "Arrange medical evacuation insurance — essential when living on a remote island without a full-service hospital",
-      "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term",
-      "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families",
-      "Plan your exit strategy for smoke season (Feb–April) if you have children with asthma or respiratory sensitivities",
-      "Bring surge protectors and a UPS — power fluctuations are common; a backup for your work equipment is essential",
-      "Budget for a reliable motorbike or car — the island has no public transport and roads are hilly and winding"
+      { "label": "Apply for the DTV at a Thai embassy before travelling — do not rely on visa-on-arrival for a long-term move", "targetSection": "visa" },
+      { "label": "Plan your schooling approach before arrival: online curriculum (Acellus, Khan Academy, Cambridge Home School) or community cooperative groups", "targetSection": "schools" },
+      { "label": "Arrange medical evacuation insurance — essential when living on a remote island without a full-service hospital", "targetSection": "healthcare" },
+      { "label": "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term", "targetSection": "housing" },
+      { "label": "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families" },
+      { "label": "Plan your exit strategy for smoke season (Feb–April) if you have children with asthma or respiratory sensitivities", "targetSection": "healthcare" },
+      { "label": "Bring surge protectors and a UPS — power fluctuations are common; a backup for your work equipment is essential" },
+      { "label": "Budget for a reliable motorbike or car — the island has no public transport and roads are hilly and winding" }
     ],
     "familyFit": {
       "bestFor": [
@@ -599,14 +599,14 @@
     "summary": "Koh Samui is the most developed of Thailand's family-friendly islands. It has an international airport, a full-service Bangkok Hospital, several international schools, and a large, established expat community. Bophut and Maenam on the north coast have a relaxed, village feel ideal for families. It costs more than Koh Phangan but offers meaningfully better infrastructure.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      "Apply for the DTV at a Thai embassy before travelling — required for any stay beyond the initial tourist visa period",
-      "Contact international schools (ISS, ACE) directly and apply 2–4 months before your intended start date",
-      "Arrange international health insurance that includes Bangkok Hospital Samui and emergency airlift to Bangkok",
-      "Research neighbourhoods before arrival: Bophut and Maenam are the established family areas on the north coast",
-      "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving",
-      "Open a Thai bank account at Bangkok Bank's Samui branch — required for long stays and local payments",
-      "Arrange transport: Koh Samui has no public transit — a reliable car or motorbike is essential for families",
-      "Plan around the monsoon season (Oct–Dec): the east coast gets the worst weather; Bophut and Maenam are more sheltered"
+      { "label": "Apply for the DTV at a Thai embassy before travelling — required for any stay beyond the initial tourist visa period", "targetSection": "visa" },
+      { "label": "Contact international schools (ISS, ACE) directly and apply 2–4 months before your intended start date", "targetSection": "schools" },
+      { "label": "Arrange international health insurance that includes Bangkok Hospital Samui and emergency airlift to Bangkok", "targetSection": "healthcare" },
+      { "label": "Research neighbourhoods before arrival: Bophut and Maenam are the established family areas on the north coast", "targetSection": "housing" },
+      { "label": "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving", "targetSection": "housing" },
+      { "label": "Open a Thai bank account at Bangkok Bank's Samui branch — required for long stays and local payments" },
+      { "label": "Arrange transport: Koh Samui has no public transit — a reliable car or motorbike is essential for families" },
+      { "label": "Plan around the monsoon season (Oct–Dec): the east coast gets the worst weather; Bophut and Maenam are more sheltered" }
     ],
     "familyFit": {
       "bestFor": [

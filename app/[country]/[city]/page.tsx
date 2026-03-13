@@ -4,7 +4,7 @@ import {
   ArrowLeft, MapPin, Shield, BadgeDollarSign, Home,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen,
+  BookOpen, ChevronRight,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination, Source } from "@/lib/types";
@@ -114,7 +114,20 @@ export default async function CityPage({ params }: Props) {
                 <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF5A5F]/10 text-xs font-extrabold text-[#FF5A5F]">
                   {i + 1}
                 </span>
-                <span className="text-sm leading-relaxed text-slate-700">{step}</span>
+                {step.targetSection ? (
+                  <a
+                    href={`#${step.targetSection}`}
+                    className="group flex flex-1 items-start justify-between gap-2 rounded-md -mx-1 px-1 py-0.5 text-sm leading-relaxed text-slate-700 transition-colors hover:text-[#FF5A5F]"
+                  >
+                    <span>{step.label}</span>
+                    <ChevronRight
+                      size={14}
+                      className="mt-0.5 shrink-0 text-slate-300 opacity-0 transition-opacity group-hover:opacity-100"
+                    />
+                  </a>
+                ) : (
+                  <span className="text-sm leading-relaxed text-slate-700">{step.label}</span>
+                )}
               </li>
             ))}
           </ol>
@@ -150,6 +163,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Visa ──────────────────────────────────────────────────────── */}
         <Section
+          id="visa"
           title="Visa options"
           icon={<FileText size={16} className="text-slate-500" />}
           sources={dest.sources.visa}
@@ -176,6 +190,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Housing ───────────────────────────────────────────────────── */}
         <Section
+          id="housing"
           title="Housing"
           icon={<Home size={16} className="text-slate-500" />}
           sources={dest.sources.housing}
@@ -192,6 +207,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Schools ───────────────────────────────────────────────────── */}
         <Section
+          id="schools"
           title="Schools"
           icon={<GraduationCap size={16} className="text-slate-500" />}
           sources={dest.sources.schools}
@@ -243,7 +259,7 @@ export default async function CityPage({ params }: Props) {
         </Section>
 
         {/* ── Childcare ─────────────────────────────────────────────────── */}
-        <Section title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
+        <Section id="childcare" title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
           <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.childcare.summary}</p>
           <div className="space-y-4">
             <DetailRow label="Daycare & nurseries" value={dest.childcare.daycareNotes} />
@@ -255,6 +271,7 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Healthcare ────────────────────────────────────────────────── */}
         <Section
+          id="healthcare"
           title="Healthcare"
           icon={<Stethoscope size={16} className="text-slate-500" />}
           sources={dest.sources.healthcare}
@@ -327,18 +344,20 @@ export default async function CityPage({ params }: Props) {
 // ── File-local sub-components ─────────────────────────────────────────────────
 
 function Section({
+  id,
   title,
   icon,
   sources,
   children,
 }: {
+  id?: string;
   title: string;
   icon?: React.ReactNode;
   sources?: Source[];
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl bg-white p-6 shadow-sm">
+    <div id={id} className="rounded-2xl bg-white p-6 shadow-sm scroll-mt-6">
       <h2 className="mb-4 flex items-center gap-2 text-base font-bold text-slate-900">
         {icon}
         {title}

@@ -24,8 +24,12 @@ export interface Destination {
   /**
    * Ordered, concrete action steps a family should take to relocate here.
    * Written in plain language. Drives the "Action Checklist" UX.
+   * `targetSection` optionally links the step to the relevant page section.
    */
-  actionChecklist: string[];
+  actionChecklist: {
+    label: string;
+    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare";
+  }[];
 
   familyFit: {
     bestFor: string[];
