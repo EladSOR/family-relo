@@ -62,7 +62,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-stone-50" />
 
       {/* ── NAV ─────────────────────────────────────────────────────────── */}
-      <nav className="relative z-10 flex items-center justify-between px-6 py-5 md:px-10">
+      <nav className="relative z-10 flex items-center px-6 py-5 md:px-10">
         <a href="/" className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
             <MapPin size={16} strokeWidth={2.5} />
@@ -71,16 +71,6 @@ export default function Hero() {
             FamilyRelo
           </span>
         </a>
-
-        <div className="hidden items-center gap-8 md:flex">
-          <a href="#" className="text-sm font-semibold text-white/80 transition-colors hover:text-white">Destinations</a>
-          <a href="#" className="text-sm font-semibold text-white/80 transition-colors hover:text-white">Visa Guide</a>
-          <a href="#" className="text-sm font-semibold text-white/80 transition-colors hover:text-white">Schools</a>
-        </div>
-
-        <button className="rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20">
-          Sign in
-        </button>
       </nav>
 
       {/* ── HERO CONTENT ──────────────────────────────────────────────── */}

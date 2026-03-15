@@ -126,9 +126,9 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
   const whereLabel  = WHERE_OPTIONS.find(o => o.value === destination)?.label ?? "Everywhere";
   const totalKids   = guests.infants + guests.children + guests.teens;
   const whoLabel    = guests.adults === 1 && totalKids === 0
-    ? "Add guests"
+    ? "Family setup"
     : `${guests.adults} adult${guests.adults > 1 ? "s" : ""}${
-        totalKids > 0 ? `, ${totalKids} child${totalKids > 1 ? "ren" : ""}` : ""
+        totalKids > 0 ? `, ${totalKids} kid${totalKids > 1 ? "s" : ""}` : ""
       }`;
   const durationLabel = DURATION_OPTIONS.find(o => o.value === duration)?.label ?? "Add dates";
 
@@ -216,38 +216,40 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
         {/* ── WHO ──────────────────────────────────────────────────────────── */}
         <div className="relative min-w-0 flex-1">
           <button onClick={() => togglePanel("who")} className={sectionBtn("who")}>
-            <span className="mb-0.5 text-[10px] font-extrabold uppercase tracking-widest text-slate-700">Who</span>
+            <span className="mb-0.5 text-[10px] font-extrabold uppercase tracking-widest text-slate-700">Family</span>
             <span className="truncate text-base font-semibold text-slate-800">{whoLabel}</span>
           </button>
 
           {openPanel === "who" && (
-            <div className="absolute left-0 top-full mt-4 w-80 rounded-3xl border border-gray-100 bg-white p-5 shadow-2xl">
-              {GUEST_ROWS.map(({ key, label, sub }) => (
-                <div key={key} className="flex w-full items-center justify-between border-b border-gray-50 py-4 last:border-0">
-                  <div>
-                    <p className="text-sm font-semibold text-gray-900">{label}</p>
-                    <p className="mt-0.5 text-xs text-gray-400">{sub}</p>
+            <div className="absolute left-0 top-full mt-4 w-80 overflow-hidden rounded-3xl border border-gray-100 bg-white p-5 shadow-2xl">
+              <div className="divide-y divide-gray-100">
+                {GUEST_ROWS.map(({ key, label, sub }) => (
+                  <div key={key} className="flex items-center justify-between py-4">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold text-gray-900">{label}</p>
+                      <p className="mt-0.5 text-xs text-gray-400">{sub}</p>
+                    </div>
+                    <div className="flex shrink-0 items-center gap-3">
+                      <button
+                        onClick={() => updateGuest(key, -1)}
+                        disabled={guests[key] <= (key === "adults" ? 1 : 0)}
+                        className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 transition-colors hover:border-gray-700 disabled:cursor-not-allowed disabled:opacity-25"
+                      >
+                        <Minus size={13} className="text-gray-700" />
+                      </button>
+                      <span className="w-5 text-center text-sm font-bold tabular-nums text-gray-900">
+                        {guests[key]}
+                      </span>
+                      <button
+                        onClick={() => updateGuest(key, 1)}
+                        className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 transition-colors hover:border-gray-700"
+                      >
+                        <Plus size={13} className="text-gray-700" />
+                      </button>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => updateGuest(key, -1)}
-                      disabled={guests[key] <= (key === "adults" ? 1 : 0)}
-                      className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 transition-colors hover:border-gray-700 disabled:cursor-not-allowed disabled:opacity-25"
-                    >
-                      <Minus size={13} className="text-gray-700" />
-                    </button>
-                    <span className="w-5 text-center text-sm font-bold tabular-nums text-gray-900">
-                      {guests[key]}
-                    </span>
-                    <button
-                      onClick={() => updateGuest(key, 1)}
-                      className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 transition-colors hover:border-gray-700"
-                    >
-                      <Plus size={13} className="text-gray-700" />
-                    </button>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           )}
         </div>
