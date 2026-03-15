@@ -42,9 +42,8 @@ export default async function CountryPage({ params }: Props) {
 
       <StickySearchHeader />
       <Breadcrumb items={[
-        { label: "Home",         href: "/"             },
-        { label: "Destinations", href: "/destinations" },
-        { label: countryName                           },
+        { label: "Home",       href: "/" },
+        { label: countryName            },
       ]} />
 
       {/* ── Page title ───────────────────────────────────────────────────── */}
