@@ -1,16 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { MapPin } from "lucide-react";
 import SearchBar from "./SearchBar";
+import StickySearchHeader from "@/components/StickySearchHeader";
 
 export default function Hero() {
-  const [videoReady, setVideoReady] = useState(false);
+  const [videoReady,        setVideoReady]        = useState(false);
+  const [showStickySearch,  setShowStickySearch]  = useState(false);
+  const heroSearchRef = useRef<HTMLDivElement>(null);
+
+  // Show the sticky header only once the hero SearchBar scrolls out of view
+  useEffect(() => {
+    const el = heroSearchRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setShowStickySearch(!entry.isIntersecting),
+      { threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    // z-20 so this section (and its search popovers) always paints above the
-    // card grid below (which is z-0).
-    <section className="hero-gradient relative z-20 flex min-h-screen flex-col">
+    <>
+      {/* Scroll-triggered sticky header — slides in from top when hero search leaves viewport */}
+      <div
+        className={`fixed inset-x-0 top-0 z-[100] transition-transform duration-300 ease-in-out ${
+          showStickySearch ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <StickySearchHeader />
+      </div>
+
+      {/* z-20 so this section (and its search popovers) always paints above the
+          card grid below (which is z-0). */}
+      <section className="hero-gradient relative z-20 flex min-h-screen flex-col">
 
       {/* Background video — starts invisible; fades in once the browser can
           play it. The CSS gradient above is always the visible base layer,
@@ -78,8 +103,12 @@ export default function Hero() {
           Visa rules, childcare costs &amp; the world&apos;s best cities for families — in one place.
         </p>
 
-        <SearchBar />
+        {/* Ref target: IntersectionObserver watches this to trigger the sticky header */}
+        <div ref={heroSearchRef} className="w-full">
+          <SearchBar />
+        </div>
       </div>
     </section>
+    </>
   );
 }

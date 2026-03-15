@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
-  ArrowLeft, MapPin, Shield, BadgeDollarSign, Home,
+  MapPin, Shield, BadgeDollarSign, Home,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
   BookOpen, ChevronRight,
@@ -9,6 +9,8 @@ import {
 import citiesData from "@/data/cities.json";
 import type { Destination, Source } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
+import Breadcrumb from "@/components/Breadcrumb";
+import StickySearchHeader from "@/components/StickySearchHeader";
 
 // ── Static params ─────────────────────────────────────────────────────────────
 
@@ -44,18 +46,17 @@ export default async function CityPage({ params }: Props) {
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
 
+      <StickySearchHeader />
+      <Breadcrumb items={[
+        { label: "Home",        href: "/"                            },
+        { label: dest.country,  href: `/${dest.countrySlug}`         },
+        { label: dest.city                                           },
+      ]} />
+
       {/* ── Hero image ───────────────────────────────────────────────────── */}
       <div className="relative h-72 w-full overflow-hidden md:h-[420px]">
         <img src={image} alt={dest.city} className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
-
-        <Link
-          href="/"
-          className="absolute left-6 top-6 flex items-center gap-2 rounded-full bg-black/40 px-4 py-2 text-sm font-semibold text-white backdrop-blur-md transition-colors hover:bg-black/60"
-        >
-          <ArrowLeft size={15} strokeWidth={2.5} />
-          All destinations
-        </Link>
 
         {/* Last reviewed badge */}
         <div className="absolute right-6 top-6 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
@@ -357,7 +358,7 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div id={id} className="rounded-2xl bg-white p-6 shadow-sm scroll-mt-6">
+    <div id={id} className="rounded-2xl bg-white p-6 shadow-sm scroll-mt-24">
       <h2 className="mb-4 flex items-center gap-2 text-base font-bold text-slate-900">
         {icon}
         {title}

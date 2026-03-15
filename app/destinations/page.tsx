@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { ArrowLeft, MapPin } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import DestinationCard from "@/components/home/DestinationCard";
+import Breadcrumb from "@/components/Breadcrumb";
+import StickySearchHeader from "@/components/StickySearchHeader";
 
 export const metadata = {
   title: "All Destinations — Family Relocation Engine",
@@ -15,23 +15,11 @@ export default function DestinationsPage() {
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
 
-      {/* ── Header ─────────────────────────────────────────────────────────── */}
-      <div className="border-b border-stone-200 bg-white/60 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-5">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-sm font-semibold text-slate-500 transition-colors hover:text-slate-900"
-          >
-            <ArrowLeft size={15} strokeWidth={2.5} />
-            Home
-          </Link>
-          <span className="text-slate-300">/</span>
-          <span className="flex items-center gap-2 text-sm font-semibold text-slate-900">
-            <MapPin size={14} className="text-[#FF5A5F]" />
-            All destinations
-          </span>
-        </div>
-      </div>
+      <StickySearchHeader />
+      <Breadcrumb items={[
+        { label: "Home",             href: "/" },
+        { label: "All destinations"            },
+      ]} />
 
       {/* ── Page title ─────────────────────────────────────────────────────── */}
       <div className="mx-auto max-w-6xl px-6 pb-6 pt-14">

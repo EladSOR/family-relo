@@ -2,80 +2,11 @@
 
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import {
-  Search, Plus, Minus,
-  Globe, Building2, Anchor, Mountain, Waves, Umbrella, TreePalm, Sun,
-} from "lucide-react";
-import type { LucideIcon } from "lucide-react";
-import type { GuestCounts, OpenPanel, Destination } from "@/lib/types";
+import { Search, Plus, Minus } from "lucide-react";
+import type { GuestCounts, OpenPanel } from "@/lib/types";
 import { DURATION_OPTIONS, GUEST_ROWS } from "@/lib/constants";
-import citiesData from "@/data/cities.json";
-
-// ── Where option types ────────────────────────────────────────────────────────
-
-type OptionType = "everywhere" | "country" | "city";
-
-interface WhereOption {
-  value: string;
-  label: string;
-  href: string;
-  Icon: LucideIcon;
-  type: OptionType;
-}
-
-// ── Static icon maps ──────────────────────────────────────────────────────────
-
-const COUNTRY_ICONS: Record<string, LucideIcon> = {
-  spain:    Sun,
-  portugal: Anchor,
-  uae:      Building2,
-  thailand: TreePalm,
-};
-
-const CITY_ICONS: Record<string, LucideIcon> = {
-  "valencia-es":    TreePalm,
-  "lisbon-pt":      Anchor,
-  "dubai-ae":       Building2,
-  "chiang-mai-th":  Mountain,
-  "koh-phangan-th": Waves,
-  "koh-samui-th":   Umbrella,
-};
-
-// ── Build options at module level (static data, no component state needed) ───
-
-function buildWhereOptions(): WhereOption[] {
-  const seen = new Set<string>();
-  const countryOpts: WhereOption[] = [];
-
-  for (const d of citiesData as Destination[]) {
-    if (!seen.has(d.countrySlug)) {
-      seen.add(d.countrySlug);
-      countryOpts.push({
-        value: d.countrySlug,
-        label: d.country,
-        href: `/${d.countrySlug}`,
-        Icon: COUNTRY_ICONS[d.countrySlug] ?? Globe,
-        type: "country",
-      });
-    }
-  }
-
-  const cityOpts: WhereOption[] = (citiesData as Destination[]).map(d => ({
-    value: d.id,
-    label: `${d.city}, ${d.country}`,
-    href: `/${d.countrySlug}/${d.citySlug}`,
-    Icon: CITY_ICONS[d.id] ?? Globe,
-    type: "city",
-  }));
-
-  return [
-    { value: "everywhere", label: "Everywhere", href: "/destinations", Icon: Globe, type: "everywhere" },
-    ...countryOpts,
-    ...cityOpts,
-  ];
-}
-
-const WHERE_OPTIONS = buildWhereOptions();
+import { WHERE_OPTIONS } from "@/lib/where-options";
+import type { WhereOption } from "@/lib/where-options";
 
 // ── Sub-component: single dropdown row ───────────────────────────────────────
 
@@ -123,7 +54,7 @@ function OptionRow({
 
 // ── Main component ────────────────────────────────────────────────────────────
 
-export default function SearchBar() {
+export default function SearchBar({ compact = false }: { compact?: boolean }) {
   const router = useRouter();
 
   const [destination, setDestination] = useState("everywhere");
@@ -202,9 +133,9 @@ export default function SearchBar() {
   const durationLabel = DURATION_OPTIONS.find(o => o.value === duration)?.label ?? "Add dates";
 
   const sectionBtn = (panel: OpenPanel) =>
-    `w-full flex flex-col text-left px-6 py-3.5 rounded-full transition-colors ${
-      openPanel === panel ? "bg-white/70" : "hover:bg-white/50"
-    }`;
+    `w-full flex flex-col text-left rounded-full transition-colors ${
+      compact ? "px-4 py-2" : "px-6 py-3.5"
+    } ${openPanel === panel ? "bg-white/70" : "hover:bg-white/50"}`;
 
   // Grouped sections for the ungrouped (no-search) state
   const countryOptions = WHERE_OPTIONS.filter(o => o.type === "country");
@@ -212,8 +143,12 @@ export default function SearchBar() {
   const showGrouped    = !whereSearch.trim();
 
   return (
-    <div ref={ref} className="relative z-50 mx-auto w-full max-w-4xl">
-      <div className="flex items-center rounded-full border border-white/30 bg-white/80 p-2 shadow-2xl backdrop-blur-xl">
+    <div ref={ref} className={`relative z-50 w-full ${compact ? "" : "mx-auto max-w-4xl"}`}>
+      <div className={`flex items-center rounded-full p-2 ${
+        compact
+          ? "border border-slate-200 bg-white shadow-sm"
+          : "border border-white/30 bg-white/80 shadow-2xl backdrop-blur-xl"
+      }`}>
 
         {/* ── WHERE ────────────────────────────────────────────────────────── */}
         <div className="relative min-w-0 flex-1">
@@ -347,9 +282,11 @@ export default function SearchBar() {
         <div className="shrink-0 pl-1 pr-1">
           <button
             onClick={handleExplore}
-            className="flex items-center gap-2 rounded-full bg-[#FF5A5F] px-7 py-4 font-bold text-white shadow-lg shadow-[#FF5A5F]/30 transition-all hover:bg-[#e84a4f] active:scale-95"
+            className={`flex items-center gap-2 rounded-full bg-[#FF5A5F] font-bold text-white shadow-lg shadow-[#FF5A5F]/30 transition-all hover:bg-[#e84a4f] active:scale-95 ${
+              compact ? "px-5 py-2.5 text-sm" : "px-7 py-4"
+            }`}
           >
-            <Search size={17} />
+            <Search size={compact ? 15 : 17} />
             Explore
           </button>
         </div>
