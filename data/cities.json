@@ -14,8 +14,8 @@
       { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa" },
       { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa" },
       { "label": "Contact international schools 6–12 months before your move — waiting lists are long", "targetSection": "schools" },
-      { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days" },
-      { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)" },
+      { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days", "targetSection": "residency" },
+      { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)", "targetSection": "banking" },
       { "label": "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card", "targetSection": "healthcare" }
     ],
     "familyFit": {
