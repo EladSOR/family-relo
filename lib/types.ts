@@ -28,7 +28,7 @@ export interface Destination {
    */
   actionChecklist: {
     label: string;
-    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare";
+    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking";
   }[];
 
   familyFit: {
@@ -123,6 +123,12 @@ export interface VisaOption {
   type: string;
   duration?: string;
   description?: string;
+  /** Scroll-target id for this option, e.g. "visa-dnv". When set the card becomes a clickable anchor. */
+  anchor?: string;
+  /** Heading shown inside the detail section (falls back to `type` if omitted). */
+  detailTitle?: string;
+  /** Bullet-point content rendered in the detail section below the cards. */
+  details?: string[];
 }
 
 export interface SchoolExample {
