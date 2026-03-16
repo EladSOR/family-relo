@@ -4,7 +4,7 @@ import {
   MapPin, Shield, BadgeDollarSign, Home,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, ChevronRight,
+  BookOpen, ChevronRight, Landmark, CreditCard,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination, Source } from "@/lib/types";
@@ -194,6 +194,46 @@ export default async function CityPage({ params }: Props) {
               </div>
             ))}
           </div>
+        </Section>
+
+        {/* ── Residency ─────────────────────────────────────────────────── */}
+        <Section
+          id="residency"
+          title="Residency registration"
+          icon={<Landmark size={16} className="text-slate-500" />}
+        >
+          <ul className="space-y-3">
+            {[
+              "Register on the Padrón Municipal at your local Ayuntamiento after securing housing — bring your passport, rental contract, and proof of address.",
+              "The Padrón certificate is your proof of local residency and is required for most subsequent admin steps (NIE, school enrolment, healthcare card).",
+              "After one year on the Padrón you can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card issued to non-EU nationals.",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
+                <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-emerald-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </Section>
+
+        {/* ── Banking & NIE ─────────────────────────────────────────────── */}
+        <Section
+          id="banking"
+          title="Banking & NIE"
+          icon={<CreditCard size={16} className="text-slate-500" />}
+        >
+          <ul className="space-y-3">
+            {[
+              "Apply for your NIE (Número de Identidad de Extranjero) as soon as possible after arrival — it is required for almost every financial and administrative transaction in Spain.",
+              "Use your NIE to open a Spanish bank account. BBVA, Sabadell, and CaixaBank are popular with expats; N26 and Wise are good digital options while you wait.",
+              "Check each bank's document requirements in advance — most ask for passport, NIE, Padrón certificate, and proof of income.",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
+                <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-emerald-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </Section>
 
         {/* ── Housing ───────────────────────────────────────────────────── */}
