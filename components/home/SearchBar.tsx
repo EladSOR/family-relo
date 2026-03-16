@@ -52,6 +52,48 @@ function OptionRow({
   );
 }
 
+// ── Persistence helpers ───────────────────────────────────────────────────────
+
+/** Encode GuestCounts as "adults-children-infants-teens" */
+function serializeFamily(g: GuestCounts): string {
+  return `${g.adults}-${g.children}-${g.infants}-${g.teens}`;
+}
+
+/** Parse "adults-children-infants-teens"; returns safe defaults on any error */
+function parseFamily(param: string | null): GuestCounts {
+  const defaults: GuestCounts = { adults: 1, infants: 0, children: 0, teens: 0 };
+  if (!param) return defaults;
+  const parts = param.split("-").map(Number);
+  if (parts.length !== 4 || parts.some(isNaN) || parts.some(n => n < 0)) return defaults;
+  const [adults, children, infants, teens] = parts;
+  if (adults < 1) return defaults;
+  return { adults, children, infants, teens };
+}
+
+const STORAGE_KEY = "familyrelo_search";
+
+/** Save the confirmed search state to localStorage so it survives navigation. */
+function saveSearch(where: string, family: string, duration: string): void {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({ where, family, duration }));
+  } catch { /* ignore private-browsing / quota errors */ }
+}
+
+/** Load the last saved search, or null if absent / malformed. */
+function loadSearch(): { where: string; family: string; duration: string } | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const obj = JSON.parse(raw);
+    if (
+      typeof obj?.where    === "string" &&
+      typeof obj?.family   === "string" &&
+      typeof obj?.duration === "string"
+    ) return obj;
+    return null;
+  } catch { return null; }
+}
+
 // ── Main component ────────────────────────────────────────────────────────────
 
 export default function SearchBar({ compact = false }: { compact?: boolean }) {
@@ -64,6 +106,27 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
   const [openPanel,   setOpenPanel]   = useState<OpenPanel>(null);
 
   const ref = useRef<HTMLDivElement>(null);
+
+  // Source-of-truth priority on mount: URL params → localStorage → defaults
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hasUrlState = params.has("where") || params.has("family") || params.has("duration");
+
+    if (hasUrlState) {
+      const where = params.get("where");
+      if (where && WHERE_OPTIONS.some(o => o.value === where)) setDestination(where);
+      setGuests(parseFamily(params.get("family")));
+      const dur = params.get("duration");
+      if (dur && DURATION_OPTIONS.some(o => o.value === dur)) setDuration(dur);
+    } else {
+      const saved = loadSearch();
+      if (saved) {
+        if (WHERE_OPTIONS.some(o => o.value === saved.where)) setDestination(saved.where);
+        setGuests(parseFamily(saved.family));
+        if (DURATION_OPTIONS.some(o => o.value === saved.duration)) setDuration(saved.duration);
+      }
+    }
+  }, []);
 
   // Close all panels + clear search when clicking outside
   useEffect(() => {
@@ -104,22 +167,38 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
     setOpenPanel(null);
   }, []);
 
-  // Explore button: navigate to the selected destination's real page
+  // Build the query string carrying all three search fields
+  const buildQuery = useCallback(
+    (whereValue: string) => {
+      const parts = [
+        `where=${encodeURIComponent(whereValue)}`,
+        `family=${serializeFamily(guests)}`,
+      ];
+      if (duration) parts.push(`duration=${encodeURIComponent(duration)}`);
+      return `?${parts.join("&")}`;
+    },
+    [guests, duration],
+  );
+
+  // Explore button: save search to localStorage and navigate with full URL state
   const handleExplore = useCallback(() => {
     const opt = WHERE_OPTIONS.find(o => o.value === destination);
-    router.push(opt?.href ?? "/destinations");
-  }, [destination, router]);
+    const base = opt?.href ?? "/destinations";
+    saveSearch(destination, serializeFamily(guests), duration);
+    router.push(`${base}${buildQuery(destination)}`);
+  }, [destination, guests, duration, router, buildQuery]);
 
-  // Pressing Enter in the search field navigates to the top match immediately
+  // Pressing Enter: save search and navigate to the top match
   const handleSearchKeyDown = useCallback(
     (e: React.KeyboardEvent<HTMLInputElement>) => {
       if (e.key === "Enter" && filteredOptions.length > 0) {
         const first = filteredOptions[0];
         handleSelect(first);
-        router.push(first.href);
+        saveSearch(first.value, serializeFamily(guests), duration);
+        router.push(`${first.href}${buildQuery(first.value)}`);
       }
     },
-    [filteredOptions, handleSelect, router],
+    [filteredOptions, guests, duration, handleSelect, router, buildQuery],
   );
 
   // ── Derived display labels ──────────────────────────────────────────────────
