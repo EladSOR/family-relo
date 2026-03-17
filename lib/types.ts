@@ -119,6 +119,14 @@ export type DataStatus = "verified" | "curated" | "estimated" | "draft";
 
 // ── Sub-types ─────────────────────────────────────────────────────────────────
 
+/** A named sub-section inside a visa option's detail area, with its own scroll anchor. */
+export interface VisaSection {
+  /** Anchor id, e.g. "visa-income". Rendered as id="..." on the sub-heading. */
+  id: string;
+  heading: string;
+  items: string[];
+}
+
 export interface VisaOption {
   type: string;
   duration?: string;
@@ -127,8 +135,10 @@ export interface VisaOption {
   anchor?: string;
   /** Heading shown inside the detail section (falls back to `type` if omitted). */
   detailTitle?: string;
-  /** Bullet-point content rendered in the detail section below the cards. */
+  /** Flat bullet list. Used when the option does not need named sub-sections. */
   details?: string[];
+  /** Structured sub-sections with individual anchor ids. Takes precedence over `details` when present. */
+  sections?: VisaSection[];
 }
 
 export interface SchoolExample {

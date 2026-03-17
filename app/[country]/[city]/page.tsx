@@ -213,11 +213,11 @@ export default async function CityPage({ params }: Props) {
             })}
           </div>
 
-          {/* Detail sections — one per option that has an anchor + details */}
-          {dest.visa.options.some(o => o.anchor && o.details?.length) && (
+          {/* Detail sections — one per option that has an anchor + content */}
+          {dest.visa.options.some(o => o.anchor && (o.sections?.length || o.details?.length)) && (
             <div className="mt-6 space-y-4">
               {dest.visa.options
-                .filter(o => o.anchor && o.details?.length)
+                .filter(o => o.anchor && (o.sections?.length || o.details?.length))
                 .map((opt, i) => (
                   <div
                     key={i}
@@ -227,14 +227,40 @@ export default async function CityPage({ params }: Props) {
                     <h3 className="mb-3 text-sm font-bold text-slate-800">
                       {opt.detailTitle ?? opt.type}
                     </h3>
-                    <ul className="space-y-2.5">
-                      {opt.details!.map((item, j) => (
-                        <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+
+                    {/* Structured sub-sections with individual anchor ids */}
+                    {opt.sections?.length ? (
+                      <div className="space-y-5">
+                        {opt.sections.map((sec) => (
+                          <div key={sec.id}>
+                            <h4
+                              id={sec.id}
+                              className="mb-2 scroll-mt-24 text-xs font-bold uppercase tracking-wider text-slate-400"
+                            >
+                              {sec.heading}
+                            </h4>
+                            <ul className="space-y-2">
+                              {sec.items.map((item, j) => (
+                                <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
+                                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                                  {item}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      /* Flat bullet list for options without named sub-sections */
+                      <ul className="space-y-2.5">
+                        {opt.details!.map((item, j) => (
+                          <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 ))}
             </div>

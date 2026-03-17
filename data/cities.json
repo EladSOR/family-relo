@@ -69,13 +69,45 @@
           "detailTitle": "Digital Nomad Visa — how to apply",
           "duration": "1 year initial, renewable up to 5 years",
           "description": "For remote workers employed abroad or freelancers with international clients. Apply at the Spanish Consulate in your home country before you travel — not from inside Spain.",
-          "details": [
-            "Who qualifies: remote employees working for a non-Spanish company, or freelancers earning at least 80% of income from foreign clients.",
-            "Income requirement: at least €2,334/month, plus approximately €897/month for each dependent family member you include. Thresholds are tied to Spain's minimum wage and are reviewed annually — confirm the current figure before applying.",
-            "Where to apply: Spanish Consulate in your home country. You cannot apply from inside Spain.",
-            "Allow 20–45 business days for processing after submitting a complete application.",
-            "Documents required: valid passport (6+ months remaining), Apostille-certified criminal record from your home country, proof of remote employment or freelance contracts, 3–6 months of personal bank statements, private health insurance valid in Spain, and proof of accommodation in Valencia.",
-            "Official source: Spain Digital Nomad Visa — Ministerio de Inclusión (link in the Sources section below)."
+          "sections": [
+            {
+              "id": "visa-income",
+              "heading": "Income requirement",
+              "items": [
+                "Who qualifies: remote employees working for a non-Spanish company, or freelancers earning at least 80% of income from foreign clients.",
+                "Minimum: €2,334/month for the primary applicant, plus approximately €897/month for each dependent family member included.",
+                "Thresholds are set at 200% of Spain's minimum wage and are reviewed annually — confirm the current figure before applying."
+              ]
+            },
+            {
+              "id": "visa-documents",
+              "heading": "Required documents",
+              "items": [
+                "Valid passport with at least 6 months remaining.",
+                "Apostille-certified criminal record check from your home country.",
+                "Proof of remote employment (employer letter) or freelance contracts.",
+                "3–6 months of personal bank statements.",
+                "Proof of accommodation in Valencia."
+              ]
+            },
+            {
+              "id": "visa-insurance",
+              "heading": "Health insurance",
+              "items": [
+                "Private health insurance valid in Spain is required before submitting your application.",
+                "The policy must cover all family members included in the visa.",
+                "Travel insurance does not qualify — you need a full private health policy."
+              ]
+            },
+            {
+              "id": "visa-apply",
+              "heading": "Where and how to apply",
+              "items": [
+                "Apply at the Spanish Consulate in your home country — you cannot apply from inside Spain.",
+                "Allow 20–45 business days for processing after submitting a complete application.",
+                "Official source: Spain Digital Nomad Visa — Ministerio de Inclusión (link in the Sources section below)."
+              ]
+            }
           ]
         }
       ]
