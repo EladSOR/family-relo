@@ -1,0 +1,102 @@
+{
+  "spain": {
+    "name": "Spain",
+    "visa": {
+      "status": "verified",
+      "summary": "If you hold a non-EU passport you need to apply for a visa before you leave your home country. EU and EEA passport holders can move freely with no restrictions. For non-EU families who work remotely, the Digital Nomad Visa is the main route.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving",
+          "duration": "No visa required",
+          "description": "Move, live, and work in Spain freely. The only post-arrival step is registering on the Padrón Municipal.",
+          "details": [
+            "No visa, permit, or income threshold required — you can move freely.",
+            "Register on the Padrón Municipal at your local Ayuntamiento within 3 months of arrival.",
+            "Bring your passport and rental contract or proof of address to register.",
+            "The Padrón certificate unlocks public healthcare (SIP card), school enrolment, and most other local services.",
+            "After 5 years of continuous residence you can apply for long-term residency status."
+          ],
+          "officialLink": {
+            "label": "EU Freedom of Movement — Your Europe",
+            "url": "https://europa.eu/youreurope/citizens/residence/documents-formalities/eu-citizens-another-eu-country/index_en.htm"
+          }
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip before committing to the move. No right to work, no extensions, cannot be converted to residency.",
+          "details": [
+            "No right to work — this includes remote work for a foreign employer, which is technically not permitted on a tourist entry.",
+            "Cannot be extended from inside Spain and cannot be converted into residency.",
+            "You must leave before 90 days are up and cannot return until the 180-day window resets.",
+            "Good use: spend 2–4 weeks scouting the city, checking neighbourhoods, schools, and housing before applying for the DNV.",
+            "Do not attempt to live long-term on rolling tourist entries — Spanish immigration enforcement has tightened significantly."
+          ],
+          "officialLink": {
+            "label": "Schengen Area — European Commission",
+            "url": "https://home-affairs.ec.europa.eu/policies/schengen-agreements_en"
+          }
+        },
+        {
+          "type": "Digital Nomad Visa (DNV)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Digital Nomad Visa — how to apply",
+          "duration": "1 year initial, renewable up to 5 years",
+          "description": "For remote workers employed abroad or freelancers with international clients. Apply at the Spanish Consulate in your home country before you travel — not from inside Spain.",
+          "sections": [
+            {
+              "id": "visa-income",
+              "heading": "Income requirement",
+              "items": [
+                "Who qualifies: remote employees working for a non-Spanish company, or freelancers earning at least 80% of income from foreign clients.",
+                "Minimum: €2,334/month for the primary applicant, plus approximately €897/month for each dependent family member included.",
+                "Thresholds are set at 200% of Spain's minimum wage and are reviewed annually — confirm the current figure before applying."
+              ],
+              "officialLink": {
+                "label": "Spain Digital Nomad Visa — Ministerio de Inclusión",
+                "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+              }
+            },
+            {
+              "id": "visa-documents",
+              "heading": "Required documents",
+              "items": [
+                "Valid passport with at least 6 months remaining.",
+                "Apostille-certified criminal record check from your home country.",
+                "Proof of remote employment (employer letter) or freelance contracts.",
+                "3–6 months of personal bank statements.",
+                "Proof of accommodation in Spain."
+              ]
+            },
+            {
+              "id": "visa-insurance",
+              "heading": "Health insurance",
+              "items": [
+                "Private health insurance valid in Spain is required before submitting your application.",
+                "The policy must cover all family members included in the visa.",
+                "Travel insurance does not qualify — you need a full private health policy."
+              ]
+            },
+            {
+              "id": "visa-apply",
+              "heading": "Where and how to apply",
+              "items": [
+                "Apply at the Spanish Consulate in your home country — you cannot apply from inside Spain.",
+                "Allow 20–45 business days for processing after submitting a complete application.",
+                "Book a consulate appointment as soon as your documents are ready; slots often fill weeks in advance."
+              ],
+              "officialLink": {
+                "label": "Spain Digital Nomad Visa — Ministerio de Inclusión",
+                "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

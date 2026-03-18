@@ -37,7 +37,11 @@ export interface Destination {
     watchOutFor: string[];
   };
 
-  visa: {
+  /**
+   * City-specific visa overrides. When absent, the page falls back to
+   * the shared country-level visa data from `data/countries.json`.
+   */
+  visa?: {
     status: DataStatus;
     summary: string;
     options: VisaOption[];
@@ -142,6 +146,25 @@ export interface VisaOption {
   details?: string[];
   /** Structured sub-sections with individual anchor ids. Takes precedence over `details` when present. */
   sections?: VisaSection[];
+  /** Official government link shown inside the option's detail block. */
+  officialLink?: { label: string; url: string };
+}
+
+// ── Country-level shared data ─────────────────────────────────────────────────
+
+/**
+ * Shared country-level data stored in `data/countries.json`.
+ * City pages fall back to this when the city object does not define its own
+ * version of a section (currently: visa). Other countries can be added to
+ * `countries.json` with the same shape and the same fallback logic will apply.
+ */
+export interface CountryData {
+  name: string;
+  visa?: {
+    status: DataStatus;
+    summary: string;
+    options: VisaOption[];
+  };
 }
 
 export interface SchoolExample {

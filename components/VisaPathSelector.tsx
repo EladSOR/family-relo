@@ -126,6 +126,18 @@ export default function VisaPathSelector({ options }: Props) {
               {opt.description && (
                 <p className="mt-1.5 text-sm text-slate-500">{opt.description}</p>
               )}
+              {opt.officialLink && (
+                <a
+                  href={opt.officialLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={e => e.stopPropagation()}
+                  className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 underline-offset-2 hover:text-slate-600 hover:underline"
+                >
+                  <ExternalLink size={11} />
+                  {opt.officialLink.label}
+                </a>
+              )}
             </>
           );
 
@@ -208,14 +220,27 @@ export default function VisaPathSelector({ options }: Props) {
                     </div>
                   ) : (
                     /* Flat list for options without named sub-sections (EU, Tourist) */
-                    <ul className="space-y-2.5">
-                      {opt.details!.map((item, j) => (
-                        <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <ul className="space-y-2.5">
+                        {opt.details!.map((item, j) => (
+                          <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {opt.officialLink && (
+                        <a
+                          href={opt.officialLink.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-[#FF5A5F]/25 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] transition-colors hover:bg-[#FF5A5F]/5"
+                        >
+                          <ExternalLink size={12} />
+                          {opt.officialLink.label}
+                        </a>
+                      )}
+                    </>
                   )}
                 </div>
               );

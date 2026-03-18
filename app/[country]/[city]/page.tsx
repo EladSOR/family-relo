@@ -7,7 +7,8 @@ import {
   BookOpen, ChevronRight, Landmark, CreditCard,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
-import type { Destination, Source } from "@/lib/types";
+import countriesData from "@/data/countries.json";
+import type { Destination, Source, CountryData } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
@@ -38,6 +39,12 @@ export default async function CityPage({ params }: Props) {
   if (!dest) notFound();
 
   const image = CITY_IMAGES[dest.city] ?? FALLBACK_IMAGE;
+
+  // Visa data: city-specific first, then shared country-level fallback.
+  // This lets Spain (and later Portugal, Thailand, UAE) share visa content
+  // without duplicating it in every city object.
+  const countries = countriesData as unknown as Record<string, CountryData>;
+  const visaData = dest.visa ?? countries[dest.countrySlug]?.visa;
 
   // Flatten all sources into a deduplicated list for the sources footer
   const allSources: Source[] = Object.values(dest.sources)
@@ -177,8 +184,12 @@ export default async function CityPage({ params }: Props) {
           icon={<FileText size={16} className="text-slate-500" />}
           sources={dest.sources.visa}
         >
-          <p className="mb-4 text-sm leading-relaxed text-slate-600">{dest.visa.summary}</p>
-          <VisaPathSelector options={dest.visa.options} />
+          {visaData && (
+            <>
+              <p className="mb-4 text-sm leading-relaxed text-slate-600">{visaData.summary}</p>
+              <VisaPathSelector options={visaData.options} />
+            </>
+          )}
         </Section>
 
         {/* ── Residency ─────────────────────────────────────────────────── */}
