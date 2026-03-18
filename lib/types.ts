@@ -28,7 +28,8 @@ export interface Destination {
    */
   actionChecklist: {
     label: string;
-    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking";
+    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking"
+      | "visa-income" | "visa-documents" | "visa-insurance" | "visa-apply";
   }[];
 
   familyFit: {
@@ -125,6 +126,8 @@ export interface VisaSection {
   id: string;
   heading: string;
   items: string[];
+  /** Optional official government link rendered as a button below the bullet list. */
+  officialLink?: { label: string; url: string };
 }
 
 export interface VisaOption {

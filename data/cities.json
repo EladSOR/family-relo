@@ -9,10 +9,10 @@
     "summary": "Valencia is one of Europe's best-kept secrets for relocating families. It offers a Mediterranean lifestyle — warm weather, fresh food markets, and beach access — at a fraction of the cost of Barcelona or Madrid. The city has a growing international school scene, reliable public transport, and a welcoming expat community that keeps expanding every year.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)", "targetSection": "visa" },
-      { "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application", "targetSection": "visa" },
-      { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa" },
-      { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa" },
+      { "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)", "targetSection": "visa-income" },
+      { "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application", "targetSection": "visa-documents" },
+      { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa-insurance" },
+      { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa-apply" },
       { "label": "Contact international schools 6–12 months before your move — waiting lists are long", "targetSection": "schools" },
       { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days", "targetSection": "residency" },
       { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)", "targetSection": "banking" },
@@ -105,8 +105,12 @@
               "items": [
                 "Apply at the Spanish Consulate in your home country — you cannot apply from inside Spain.",
                 "Allow 20–45 business days for processing after submitting a complete application.",
-                "Official source: Spain Digital Nomad Visa — Ministerio de Inclusión (link in the Sources section below)."
-              ]
+                "Book a consulate appointment as soon as your documents are ready; slots often fill weeks in advance."
+              ],
+              "officialLink": {
+                "label": "Spain Digital Nomad Visa — Ministerio de Inclusión",
+                "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+              }
             }
           ]
         }

@@ -11,6 +11,7 @@ import type { Destination, Source } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import VisaPathSelector from "@/components/VisaPathSelector";
 
 // ── Static params ─────────────────────────────────────────────────────────────
 
@@ -177,94 +178,7 @@ export default async function CityPage({ params }: Props) {
           sources={dest.sources.visa}
         >
           <p className="mb-4 text-sm leading-relaxed text-slate-600">{dest.visa.summary}</p>
-
-          {/* Cards — clickable when the option has an anchor */}
-          <div className="space-y-3">
-            {dest.visa.options.map((opt, i) => {
-              const inner = (
-                <>
-                  <div className="flex items-center justify-between gap-4">
-                    <p className="font-semibold text-slate-900">{opt.type}</p>
-                    <div className="flex shrink-0 items-center gap-2">
-                      {opt.duration && (
-                        <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
-                          {opt.duration}
-                        </span>
-                      )}
-                      {opt.anchor && (
-                        <ChevronRight
-                          size={15}
-                          className="text-slate-400 transition-[color,transform] duration-150 group-hover:translate-x-0.5 group-hover:text-slate-600"
-                        />
-                      )}
-                    </div>
-                  </div>
-                  {opt.description && (
-                    <p className="mt-1.5 text-sm text-slate-500">{opt.description}</p>
-                  )}
-                </>
-              );
-              const cls = `block rounded-xl bg-slate-50 px-4 py-3.5${opt.anchor ? " group cursor-pointer transition-colors hover:bg-slate-100" : ""}`;
-              return opt.anchor ? (
-                <a key={i} href={`#${opt.anchor}`} className={cls}>{inner}</a>
-              ) : (
-                <div key={i} className={cls}>{inner}</div>
-              );
-            })}
-          </div>
-
-          {/* Detail sections — one per option that has an anchor + content */}
-          {dest.visa.options.some(o => o.anchor && (o.sections?.length || o.details?.length)) && (
-            <div className="mt-6 space-y-4">
-              {dest.visa.options
-                .filter(o => o.anchor && (o.sections?.length || o.details?.length))
-                .map((opt, i) => (
-                  <div
-                    key={i}
-                    id={opt.anchor}
-                    className="scroll-mt-24 rounded-xl border border-slate-100 bg-white px-4 py-4"
-                  >
-                    <h3 className="mb-3 text-sm font-bold text-slate-800">
-                      {opt.detailTitle ?? opt.type}
-                    </h3>
-
-                    {/* Structured sub-sections with individual anchor ids */}
-                    {opt.sections?.length ? (
-                      <div className="space-y-5">
-                        {opt.sections.map((sec) => (
-                          <div key={sec.id}>
-                            <h4
-                              id={sec.id}
-                              className="mb-2 scroll-mt-24 text-xs font-bold uppercase tracking-wider text-slate-400"
-                            >
-                              {sec.heading}
-                            </h4>
-                            <ul className="space-y-2">
-                              {sec.items.map((item, j) => (
-                                <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                                  {item}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      /* Flat bullet list for options without named sub-sections */
-                      <ul className="space-y-2.5">
-                        {opt.details!.map((item, j) => (
-                          <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
-            </div>
-          )}
+          <VisaPathSelector options={dest.visa.options} />
         </Section>
 
         {/* ── Residency ─────────────────────────────────────────────────── */}
