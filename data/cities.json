@@ -35,12 +35,16 @@
       "status": "estimated",
       "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month.",
       "bestAreas": ["Ruzafa", "Campanar", "El Cabanyal", "Patraix", "Benimaclet"],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Tip: start with a 2–4 week Airbnb or short-term stay — it's much easier to secure a long-term rental once you're in the city."
+      ],
       "searchPortals": [
         { "label": "Idealista — Spain's largest rental portal", "url": "https://www.idealista.com/en/alquiler-viviendas/valencia-provincia/" },
         { "label": "Fotocasa — strong secondary market", "url": "https://www.fotocasa.es/en/rental/" },
         { "label": "Habitaclia — popular in the Valencian region", "url": "https://www.habitaclia.com/alquiler-viviendas-en-valencia.htm" },
         { "label": "Pisos.com — useful for comparing prices", "url": "https://www.pisos.com/alquiler/pisos-valencia/" },
-        { "label": "Facebook: search 'Pisos en Valencia' for direct landlord deals (no agency fee)", "url": "https://www.facebook.com/groups/search/results/?q=pisos+en+valencia" }
+        { "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)" }
       ],
       "typicalPrices": [
         "1-bed flat, city centre: €700–€1,100/month",

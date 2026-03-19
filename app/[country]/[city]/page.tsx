@@ -245,13 +245,24 @@ export default async function CityPage({ params }: Props) {
               {/* Block 1: Where to search */}
               <div>
                 <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to search</h4>
+                {dest.housing.searchPortalsIntro && (
+                  <div className="mb-3 space-y-1">
+                    {dest.housing.searchPortalsIntro.map((line, i) => (
+                      <p key={i} className="text-sm italic text-slate-500">{line}</p>
+                    ))}
+                  </div>
+                )}
                 <ul className="space-y-1.5">
-                  {dest.housing.searchPortals.map((p) => (
-                    <li key={p.url} className="flex items-start gap-2 text-sm text-slate-700">
+                  {dest.housing.searchPortals.map((p, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
                       <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 hover:underline">
-                        {p.label}
-                      </a>
+                      {p.url ? (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-blue-600 underline-offset-2 hover:underline">
+                          {p.label}
+                        </a>
+                      ) : (
+                        <span>{p.label}</span>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -275,7 +286,7 @@ export default async function CityPage({ params }: Props) {
                 <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Best areas for families</h4>
                 <div className="flex flex-wrap gap-2">
                   {dest.housing.bestAreas.map((area) => (
-                    <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+                    <span key={area} className="cursor-default rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
                       {area}
                     </span>
                   ))}
