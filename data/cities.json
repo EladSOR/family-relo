@@ -13,6 +13,7 @@
       { "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application", "targetSection": "visa-documents" },
       { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa-insurance" },
       { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa-apply" },
+      { "label": "Start searching for family housing 6–8 weeks before your move", "targetSection": "housing" },
       { "label": "Contact international schools 6–12 months before your move — waiting lists are long", "targetSection": "schools" },
       { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days", "targetSection": "residency" },
       { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)", "targetSection": "banking" },
