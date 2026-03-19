@@ -19,8 +19,8 @@
             "After 5 years of continuous residence you can apply for long-term residency status."
           ],
           "officialLink": {
-            "label": "EU Freedom of Movement — Your Europe",
-            "url": "https://europa.eu/youreurope/citizens/residence/documents-formalities/eu-citizens-another-eu-country/index_en.htm"
+            "label": "EU Citizens Residence Rights — Your Europe",
+            "url": "https://europa.eu/youreurope/citizens/residence/index_en.htm"
           }
         },
         {
@@ -55,11 +55,7 @@
                 "Who qualifies: remote employees working for a non-Spanish company, or freelancers earning at least 80% of income from foreign clients.",
                 "Minimum: €2,334/month for the primary applicant, plus approximately €897/month for each dependent family member included.",
                 "Thresholds are set at 200% of Spain's minimum wage and are reviewed annually — confirm the current figure before applying."
-              ],
-              "officialLink": {
-                "label": "Spain Digital Nomad Visa — Ministerio de Inclusión",
-                "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
-              }
+              ]
             },
             {
               "id": "visa-documents",
@@ -90,8 +86,8 @@
                 "Book a consulate appointment as soon as your documents are ready; slots often fill weeks in advance."
               ],
               "officialLink": {
-                "label": "Spain Digital Nomad Visa — Ministerio de Inclusión",
-                "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+                "label": "Search: Spain Digital Nomad Visa — how to apply",
+                "url": "https://www.google.com/search?q=Spain+Digital+Nomad+Visa+apply"
               }
             }
           ]

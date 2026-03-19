@@ -33,8 +33,29 @@
     },
     "housing": {
       "status": "estimated",
-      "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month. Beachside areas like El Cabanyal are growing in popularity with expat families.",
-      "bestAreas": ["Ruzafa", "Campanar", "El Cabanyal", "Patraix", "Benimaclet"]
+      "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month.",
+      "bestAreas": ["Ruzafa", "Campanar", "El Cabanyal", "Patraix", "Benimaclet"],
+      "searchPortals": [
+        { "label": "Idealista — Spain's largest rental portal", "url": "https://www.idealista.com/en/alquiler-viviendas/valencia-provincia/" },
+        { "label": "Fotocasa — strong secondary market", "url": "https://www.fotocasa.es/en/rental/" },
+        { "label": "Habitaclia — popular in the Valencian region", "url": "https://www.habitaclia.com/alquiler-viviendas-en-valencia.htm" },
+        { "label": "Pisos.com — useful for comparing prices", "url": "https://www.pisos.com/alquiler/pisos-valencia/" },
+        { "label": "Facebook: search 'Pisos en Valencia' for direct landlord deals (no agency fee)", "url": "https://www.facebook.com/groups/search/results/?q=pisos+en+valencia" }
+      ],
+      "typicalPrices": [
+        "1-bed flat, city centre: €700–€1,100/month",
+        "3-bed flat, family neighbourhoods (Ruzafa, Campanar): €1,000–€1,600/month",
+        "3-bed flat, beachside (El Cabanyal): €1,200–€1,800/month",
+        "House with garden, outskirts (Paterna, Torrent): €1,500–€2,200/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport — NIE if you already have it",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (fianza) — legally required; some landlords ask for more",
+        "Spanish bank account for direct debit (most landlords require a local IBAN)",
+        "Reference letter from a previous landlord — helpful but not always required"
+      ]
     },
     "schools": {
       "status": "curated",

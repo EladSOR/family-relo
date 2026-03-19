@@ -51,6 +51,9 @@ export interface Destination {
     status: DataStatus;
     summary: string;
     bestAreas: string[];
+    searchPortals?: { label: string; url: string }[];
+    typicalPrices?: string[];
+    whatYouNeedToRent?: string[];
   };
 
   schools: {

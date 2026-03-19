@@ -239,14 +239,72 @@ export default async function CityPage({ params }: Props) {
           icon={<Home size={16} className="text-slate-500" />}
           sources={dest.sources.housing}
         >
-          <p className="mb-4 text-sm leading-relaxed text-slate-600">{dest.housing.summary}</p>
-          <div className="flex flex-wrap gap-2">
-            {dest.housing.bestAreas.map((area) => (
-              <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
-                {area}
-              </span>
-            ))}
-          </div>
+          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.housing.summary}</p>
+          {dest.housing.searchPortals ? (
+            <div className="space-y-6">
+              {/* Block 1: Where to search */}
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to search</h4>
+                <ul className="space-y-1.5">
+                  {dest.housing.searchPortals.map((p) => (
+                    <li key={p.url} className="flex items-start gap-2 text-sm text-slate-700">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-700 hover:underline">
+                        {p.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* Block 2: Typical prices */}
+              {dest.housing.typicalPrices && (
+                <div>
+                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
+                  <ul className="space-y-1.5">
+                    {dest.housing.typicalPrices.map((line, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {/* Block 3: Best areas for families */}
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Best areas for families</h4>
+                <div className="flex flex-wrap gap-2">
+                  {dest.housing.bestAreas.map((area) => (
+                    <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+                      {area}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* Block 4: What you need to rent */}
+              {dest.housing.whatYouNeedToRent && (
+                <div>
+                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
+                  <ul className="space-y-1.5">
+                    {dest.housing.whatYouNeedToRent.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-wrap gap-2">
+              {dest.housing.bestAreas.map((area) => (
+                <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+                  {area}
+                </span>
+              ))}
+            </div>
+          )}
         </Section>
 
         {/* ── Schools ───────────────────────────────────────────────────── */}
