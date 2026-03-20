@@ -173,14 +173,15 @@ export default async function CityPage({ params }: Props) {
           title="Residency registration"
           icon={<Landmark size={16} className="text-slate-500" />}
         >
-          <ul className="space-y-3">
+          <ul className="space-y-2">
             {[
-              "Register on the Padrón Municipal at your local Ayuntamiento after securing housing — bring your passport, rental contract, and proof of address.",
-              "The Padrón certificate is your proof of local residency and is required for most subsequent admin steps (NIE, school enrolment, healthcare card).",
-              "After one year on the Padrón you can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card issued to non-EU nationals.",
+              "Register on the Padrón Municipal at your local Ayuntamiento within 30 days of arrival — bring your passport, rental contract, and proof of address.",
+              "The Padrón certificate unlocks everything: school enrolment, SIP healthcare card, NIE appointment, and your future TIE residency card.",
+              "Book your Padrón appointment online via the Valencia Ayuntamiento website — walk-in slots fill up fast.",
+              "After 1 year on the Padrón, non-EU residents can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card.",
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-emerald-500" />
+              <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
                 {item}
               </li>
             ))}
@@ -193,14 +194,16 @@ export default async function CityPage({ params }: Props) {
           title="Banking & NIE"
           icon={<CreditCard size={16} className="text-slate-500" />}
         >
-          <ul className="space-y-3">
+          <ul className="space-y-2">
             {[
-              "Apply for your NIE (Número de Identidad de Extranjero) as soon as possible after arrival — it is required for almost every financial and administrative transaction in Spain.",
-              "Use your NIE to open a Spanish bank account. BBVA, Sabadell, and CaixaBank are popular with expats; N26 and Wise are good digital options while you wait.",
-              "Check each bank's document requirements in advance — most ask for passport, NIE, Padrón certificate, and proof of income.",
+              "Apply for your NIE (Número de Identidad de Extranjero) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
+              "NIE appointments at the Extranjería (foreign police station) can take 4–8 weeks to book — start the process immediately.",
+              "While waiting for your NIE, use N26 or Wise as a temporary account — they open without a Spanish address or NIE.",
+              "Once you have your NIE, open a Spanish account: BBVA, Sabadell, and CaixaBank are popular with expats; most landlords require a local IBAN.",
+              "Documents most banks require: passport, NIE, Padrón certificate, and proof of income or employment contract.",
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-600">
-                <CheckCircle2 size={15} className="mt-0.5 shrink-0 text-emerald-500" />
+              <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
                 {item}
               </li>
             ))}
@@ -349,12 +352,54 @@ export default async function CityPage({ params }: Props) {
         {/* ── Childcare ─────────────────────────────────────────────────── */}
         <Section id="childcare" title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
           <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.childcare.summary}</p>
-          <div className="space-y-4">
-            <DetailRow label="Daycare & nurseries" value={dest.childcare.daycareNotes} />
-            <DetailRow label="Nanny & au pair" value={dest.childcare.nannyNotes} />
-            <DetailRow label="Typical cost" value={dest.childcare.typicalCost} />
-            <DetailRow label="How families find it" value={dest.childcare.howFamiliesFindIt} />
-          </div>
+          {dest.childcare.daycareItems ? (
+            <div className="space-y-6">
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Daycare &amp; nurseries</h4>
+                <ul className="space-y-1.5">
+                  {dest.childcare.daycareItems.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {dest.childcare.nannyItems && (
+                <div>
+                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Nanny &amp; au pair</h4>
+                  <ul className="space-y-1.5">
+                    {dest.childcare.nannyItems.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {dest.childcare.whereToFindItems && (
+                <div>
+                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to find childcare</h4>
+                  <ul className="space-y-1.5">
+                    {dest.childcare.whereToFindItems.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <DetailRow label="Daycare & nurseries" value={dest.childcare.daycareNotes} />
+              <DetailRow label="Nanny & au pair" value={dest.childcare.nannyNotes} />
+              <DetailRow label="Typical cost" value={dest.childcare.typicalCost} />
+              <DetailRow label="How families find it" value={dest.childcare.howFamiliesFindIt} />
+            </div>
+          )}
         </Section>
 
         {/* ── Healthcare ────────────────────────────────────────────────── */}
@@ -364,7 +409,18 @@ export default async function CityPage({ params }: Props) {
           icon={<Stethoscope size={16} className="text-slate-500" />}
           sources={dest.sources.healthcare}
         >
-          <p className="text-sm leading-relaxed text-slate-600">{dest.healthcare.summary}</p>
+          {dest.healthcare.items ? (
+            <ul className="space-y-1.5">
+              {dest.healthcare.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm leading-relaxed text-slate-600">{dest.healthcare.summary}</p>
+          )}
         </Section>
 
         {/* ── Safety ────────────────────────────────────────────────────── */}
@@ -373,7 +429,18 @@ export default async function CityPage({ params }: Props) {
             <span className="text-4xl font-extrabold text-slate-900">{dest.safety.score}</span>
             <span className="text-base text-slate-400">/ 100</span>
           </div>
-          <p className="text-sm leading-relaxed text-slate-600">{dest.safety.summary}</p>
+          {dest.safety.items ? (
+            <ul className="space-y-1.5">
+              {dest.safety.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-sm leading-relaxed text-slate-600">{dest.safety.summary}</p>
+          )}
         </Section>
 
         {/* ── Official sources ──────────────────────────────────────────── */}

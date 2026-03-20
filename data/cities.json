@@ -91,20 +91,51 @@
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Valencia has a good supply of private nurseries (guarderías) for children from 4 months to 3 years. Costs are affordable by European standards, and au pair culture is well established.",
-      "daycareNotes": "Public pre-school (0–3 years) places are subsidised but limited — register on the municipal waiting list immediately on arrival. Private nurseries charge €300–€600/month and are widely available in family neighbourhoods.",
-      "nannyNotes": "Hiring a private nanny (cuidadora) is common and affordable. Many families use live-in or live-out Spanish-speaking nannies. Au pair programmes are also popular — an au pair typically receives board, lodging, and €80–€150/week pocket money.",
+      "summary": "Valencia has a strong childcare market — private nurseries, nannies, and au pairs are all easy to find and affordable by European standards.",
+      "daycareNotes": "Private nurseries (guarderías) accept children from 4 months. Fees: €300–€600/month. Public places are subsidised but scarce.",
+      "nannyNotes": "Live-out nannies charge €10–€15/hr. Au pairs receive board, lodging, and €80–€150/week pocket money.",
       "typicalCost": "Nanny: €10–€15/hr. Private nursery: €300–€600/month. Au pair: €80–€150/week + room and board.",
-      "howFamiliesFindIt": "Popular platforms: Sitly.es, InfoJobs.es. Community: 'Valencia Expats' Facebook group. For au pairs: aupairworld.com and Au Pair in Spain agencies."
+      "howFamiliesFindIt": "Sitly.es, InfoJobs.es, AuPairWorld.com, Valencia Expats Facebook group.",
+      "daycareItems": [
+        "Private nurseries (guarderías) accept children from 4 months — widely available in Ruzafa, Campanar, and most family neighbourhoods",
+        "Typical fees: €300–€600/month depending on hours and location",
+        "Public nursery places (0–3 years) are subsidised but very limited — join the municipal waiting list immediately on arrival",
+        "Tip: visit 2–3 nurseries in person before deciding — quality and staff attentiveness vary significantly"
+      ],
+      "nannyItems": [
+        "Live-out nannies (cuidadoras) charge €10–€15/hr — common among expat families",
+        "Au pairs receive board, lodging, and €80–€150/week pocket money — a popular choice for language immersion",
+        "Most nannies speak Spanish or Valencian only — good for helping your children pick up the language faster"
+      ],
+      "whereToFindItems": [
+        "Sitly.es — most popular nanny-finding platform in Spain",
+        "InfoJobs.es — broad job board, also used for nanny and cuidadora searches",
+        "AuPairWorld.com — for au pair matching",
+        "Valencia Expats Facebook group — best source for personal recommendations"
+      ]
     },
     "healthcare": {
       "status": "estimated",
-      "summary": "Spain's public healthcare is excellent. Registered residents receive a SIP card granting free access to the public system. Private clinics are widely available and affordable — a GP visit typically costs €50–€80 without insurance."
+      "summary": "Spain's public healthcare is excellent. Registered residents receive a SIP card granting free access to the public system.",
+      "items": [
+        "Register at your local Centro de Salud (public health centre) with your Padrón certificate to receive a SIP card — this gives free access to Spain's public healthcare",
+        "The SIP card covers GP visits, specialist referrals, hospital care, and subsidised prescriptions for all registered family members",
+        "Each child must be registered separately at the health centre — bring their passport and your Padrón certificate",
+        "Private clinics are widely available — a GP visit costs €50–€80 out of pocket, less with private insurance",
+        "Popular private insurers for expats: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month"
+      ]
     },
     "safety": {
       "status": "estimated",
       "score": 92,
-      "summary": "Valencia is one of the safest cities in Spain. Violent crime is very rare. The main concern is petty theft in tourist-heavy areas like the Central Market. Family neighbourhoods like Campanar and Benimaclet are extremely safe."
+      "summary": "Valencia is one of the safest cities in Spain. Violent crime is very rare.",
+      "items": [
+        "Violent crime is very rare — Valencia ranks among Spain's safest major cities year after year",
+        "Main risk is petty theft in tourist-heavy areas: the Central Market, old town, and beach — keep bags in front and avoid displaying phones",
+        "Family neighbourhoods (Campanar, Benimaclet, Patraix) are extremely safe day and night",
+        "Public transport is reliable and well-used by families, including late evenings",
+        "Tip: the main beach (Malvarrosa) is lively and safe during the day — exercise normal caution at night"
+      ]
     },
     "cost": {
       "status": "estimated",

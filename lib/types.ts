@@ -73,28 +73,32 @@ export interface Destination {
 
   childcare: {
     status: DataStatus;
-    /** Overall summary of childcare landscape */
     summary: string;
-    /** Notes on nurseries, daycare centres, crèches */
     daycareNotes: string;
-    /** Notes on hiring a private nanny or au pair */
     nannyNotes: string;
-    /** Human-readable typical cost range, e.g. "Nanny: $4–$6/hr. Daycare: $150–$300/month." */
     typicalCost: string;
-    /** Practical notes on how expat families find childcare (platforms, groups, agencies) */
     howFamiliesFindIt: string;
+    /** Structured bullet list for daycare/nurseries (replaces daycareNotes when present) */
+    daycareItems?: string[];
+    /** Structured bullet list for nanny/au pair (replaces nannyNotes when present) */
+    nannyItems?: string[];
+    /** Structured bullet list for where to find childcare (replaces howFamiliesFindIt when present) */
+    whereToFindItems?: string[];
   };
 
   healthcare: {
     status: DataStatus;
     summary: string;
+    /** Structured bullet list (replaces summary paragraph when present) */
+    items?: string[];
   };
 
   safety: {
     status: DataStatus;
-    /** Numeric score out of 100 */
     score: number;
     summary: string;
+    /** Structured bullet list (replaces summary paragraph when present) */
+    items?: string[];
   };
 
   cost: {
