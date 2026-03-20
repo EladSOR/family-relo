@@ -154,6 +154,24 @@
         { "label": "Valencia Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Valencia" }
       ]
     },
+    "residency": {
+      "items": [
+        "Register on the Padrón Municipal at your local Ayuntamiento within 30 days of arrival — bring your passport, rental contract, and proof of address.",
+        "The Padrón certificate unlocks everything: school enrolment, SIP healthcare card, NIE appointment, and your future TIE residency card.",
+        "Book your Padrón appointment online via the Valencia Ayuntamiento website — walk-in slots fill up fast.",
+        "After 1 year on the Padrón, non-EU residents can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIE",
+      "items": [
+        "Apply for your NIE (Número de Identidad de Extranjero) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
+        "NIE appointments at the Extranjería (foreign police station) can take 4–8 weeks to book — start the process immediately.",
+        "While waiting for your NIE, use N26 or Wise as a temporary account — they open without a Spanish address or NIE.",
+        "Once you have your NIE, open a Spanish account: BBVA, Sabadell, and CaixaBank are popular with expats; most landlords require a local IBAN.",
+        "Documents most banks require: passport, NIE, Padrón certificate, and proof of income or employment contract."
+      ]
+    },
     "communityLinks": [
       { "label": "Valencia Expats — Facebook Community", "url": "https://www.facebook.com/groups/valenciaexpats" }
     ]
@@ -168,14 +186,14 @@
     "summary": "Lisbon has become one of Europe's most sought-after relocation destinations. Families are drawn by its high quality of life, safe streets, mild Atlantic climate, and a thriving English-speaking expat community. The greater Lisbon area — especially the Cascais line — offers excellent international schools and a beachside suburban feel that rivals anywhere in the world.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Confirm you meet the D8 income threshold (€3,480/month) or the passive income / savings alternative", "targetSection": "visa" },
-      { "label": "Prepare your document pack: 3+ months of income statements, criminal record (Apostilled), proof of health insurance, accommodation proof", "targetSection": "visa" },
+      { "label": "Confirm you meet the D8 income threshold (min. €3,480/month from remote employment or freelance work for foreign clients)", "targetSection": "visa" },
+      { "label": "Prepare your document pack: Apostilled criminal record, proof of private health insurance valid in Portugal, 3+ months of income statements, accommodation proof", "targetSection": "visa" },
       { "label": "Submit D8 Visa application at the Portuguese Consulate in your home country — allow 2–4 months for processing", "targetSection": "visa" },
-      { "label": "Research schools in the Cascais–Estoril corridor before moving — top international schools fill 12–18 months ahead", "targetSection": "schools" },
-      { "label": "Upon arrival, register at your local Junta de Freguesia (parish council) to formalise your address" },
-      { "label": "Open a Portuguese bank account (Millennium BCP, Caixa Geral, or Revolut Portugal are popular with expats)" },
-      { "label": "Apply for NHR (Non-Habitual Resident) tax status within the first year of becoming fiscally resident — significant tax benefit" },
-      { "label": "Register with your local health centre (Centro de Saúde) to access the SNS public health system", "targetSection": "healthcare" }
+      { "label": "Start searching for family housing 6–8 weeks before your move — the Cascais–Estoril corridor is the top expat family area", "targetSection": "housing" },
+      { "label": "Research international schools in the Cascais–Estoril corridor — top schools fill 12–18 months ahead", "targetSection": "schools" },
+      { "label": "Upon arrival, register at your local Junta de Freguesia and apply for your NIF (Portuguese tax number)", "targetSection": "residency" },
+      { "label": "Open a Portuguese bank account and apply for NHR tax status within your first year of fiscal residence", "targetSection": "banking" },
+      { "label": "Register with your local Centro de Saúde to access the SNS public health system", "targetSection": "healthcare" }
     ],
     "familyFit": {
       "bestFor": [
@@ -192,24 +210,83 @@
     },
     "visa": {
       "status": "verified",
-      "summary": "Portugal's D8 Digital Nomad Visa is one of the most family-friendly in Europe. It requires a minimum income of €3,480/month and allows the whole family to relocate. Portugal also offers the NHR tax regime, reducing tax on foreign income for the first 10 years.",
+      "summary": "Portugal's D8 Digital Nomad Visa is one of the most family-friendly in Europe. EU/EEA citizens move freely with no visa. Non-EU remote workers need the D8, which also qualifies families for the NHR tax regime — reducing tax on foreign income for the first 10 years.",
       "options": [
         {
-          "type": "Schengen Tourist",
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving",
+          "duration": "No visa required",
+          "description": "Move freely to Portugal with no visa. First step after arrival: register at your local Junta de Freguesia.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in Portugal.",
+            "Register at your local Junta de Freguesia within 90 days of arrival — bring your passport and proof of address.",
+            "Apply for your NIF (Número de Identificação Fiscal) at a Finanças office immediately — required for almost every transaction.",
+            "After 5 years of continuous residence, you can apply for a permanent residency certificate."
+          ]
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
           "duration": "Up to 90 days",
-          "description": "No work rights. Standard Schengen rules apply — 90 days in any 180-day period."
+          "description": "Valid for a scouting trip only. No right to work, no extensions, cannot be converted to residency.",
+          "details": [
+            "90 days maximum in any 180-day period across the entire Schengen Area.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Portugal — you must apply at a consulate before travelling.",
+            "Good use: 2–4 weeks scouting the Cascais–Estoril corridor for schools, housing, and neighbourhoods.",
+            "Do not attempt long-term stays on rolling tourist entries — Portuguese immigration enforcement is active."
+          ]
         },
         {
           "type": "D8 Digital Nomad Residency",
+          "anchor": "visa-d8",
+          "detailTitle": "D8 Visa — how to apply",
           "duration": "2 years, renewable",
-          "description": "For remote workers earning at least 4× the Portuguese minimum wage (~€3,480/month). Path to permanent residency after 5 years."
+          "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
+          "details": [
+            "Income requirement: minimum €3,480/month (4× the national minimum wage) from remote employment or freelance work for foreign clients.",
+            "Required documents: valid passport (6+ months remaining), Apostilled criminal record check, proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
+            "Apply at the Portuguese Consulate in your home country — you cannot apply from inside Portugal.",
+            "Allow 2–4 months for processing — book your consulate appointment as early as possible.",
+            "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years you can apply for permanent residency."
+          ],
+          "officialLink": {
+            "label": "Portugal D8 Visa — Official Documentation",
+            "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency"
+          }
         }
       ]
     },
     "housing": {
       "status": "estimated",
-      "summary": "Central Lisbon is expensive. The most popular area for expat families is the Cascais–Estoril line (30 min from the city by train), where spacious homes and good schools cluster. Expect €1,800–€3,500/month for a 3-bedroom family home.",
-      "bestAreas": ["Cascais", "Estoril", "Oeiras", "Príncipe Real", "Parede"]
+      "summary": "Central Lisbon is expensive. The most popular area for expat families is the Cascais–Estoril line (30 min from the city by train), where spacious homes and good schools cluster.",
+      "bestAreas": ["Cascais", "Estoril", "Oeiras", "Príncipe Real", "Parede"],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Tip: start with a 2–4 week short-term stay in the Cascais corridor — it is much easier to secure a long-term rental once you are on the ground."
+      ],
+      "searchPortals": [
+        { "label": "Idealista.pt — most listings in Portugal", "url": "https://www.idealista.pt/arrendar-casas/grande-lisboa/" },
+        { "label": "Imovirtual.com — strong secondary market", "url": "https://www.imovirtual.com/arrendamento/" },
+        { "label": "OLX.pt — direct landlord deals (no agency fee)", "url": "https://www.olx.pt/imoveis/arrendamento/" },
+        { "label": "Remax Portugal — good for family homes in Cascais and Oeiras", "url": "https://www.remax.pt/arrendamento" },
+        { "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals" }
+      ],
+      "typicalPrices": [
+        "1-bed flat, central Lisbon: €1,200–€1,800/month",
+        "3-bed flat, central Lisbon: €2,200–€3,500/month",
+        "3-bed house, Cascais–Estoril corridor: €2,500–€4,500/month",
+        "3-bed flat, Oeiras/Parede (more affordable): €1,800–€2,800/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport (NIF if you already have it)",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (caução) — legally capped at 2 months' rent",
+        "Portuguese bank account for direct debit (most landlords prefer a local IBAN)"
+      ]
     },
     "schools": {
       "status": "curated",
@@ -240,20 +317,51 @@
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Lisbon has a good supply of private nurseries, particularly in the Cascais–Oeiras corridor where most expat families live. Costs are moderate by Western European standards.",
-      "daycareNotes": "State-subsidised crèches exist but places are scarce and waiting lists are long. Private nurseries in Cascais and Oeiras charge €500–€900/month and offer good bilingual (Portuguese/English) programmes.",
-      "nannyNotes": "Live-in and live-out nannies are common in the expat community. Many families hire Brazilian or Eastern European nannies who are experienced working with international families. References are easy to get through the expat community.",
+      "summary": "Lisbon has a strong childcare market, particularly in the Cascais–Oeiras corridor where most expat families live. Costs are moderate by Western European standards.",
+      "daycareNotes": "Private nurseries in Cascais and Oeiras charge €500–€900/month, with bilingual (English/Portuguese) programmes.",
+      "nannyNotes": "Live-out nannies charge €10–€15/hr. Many families hire Brazilian nannies experienced with international families.",
       "typicalCost": "Nanny: €10–€15/hr. Private nursery: €500–€900/month. Au pair: €100–€200/week + room and board.",
-      "howFamiliesFindIt": "Key platforms: Sitly.com, Babysits.com. Community groups: 'Lisbon Expat Families' and 'Americans/Expats in Lisbon' on Facebook. Local agencies (e.g. Ama Perfeita) are popular for vetted nannies."
+      "howFamiliesFindIt": "Sitly.com, Babysits.com, 'Lisbon Expat Families' Facebook group, and local agency Ama Perfeita.",
+      "daycareItems": [
+        "Private nurseries (creches) accept children from 3 months — widely available in Cascais, Oeiras, and Estoril",
+        "Typical fees: €500–€900/month; bilingual (English/Portuguese) programmes are common in expat areas",
+        "State-subsidised crèches exist but places are very limited — join the waiting list immediately on arrival",
+        "Tip: visit at least 2–3 nurseries in person before deciding — quality and English fluency of staff varies"
+      ],
+      "nannyItems": [
+        "Live-out nannies charge €10–€15/hr — common among expat families in the Cascais corridor",
+        "Many expat families hire Brazilian nannies — Portuguese-speaking but familiar with international family life",
+        "References are easy to find through expat Facebook groups before you arrive"
+      ],
+      "whereToFindItems": [
+        "Sitly.com — most popular nanny platform in Portugal",
+        "Babysits.com — good secondary option",
+        "'Lisbon Expat Families' Facebook group — best source for personal recommendations",
+        "Ama Perfeita (local agency) — vetted nannies with references"
+      ]
     },
     "healthcare": {
       "status": "estimated",
-      "summary": "Portugal has a solid public health system (SNS). Many expats use private health insurance for faster access — plans start from around €100/month per adult. English-speaking private clinics are widely available, especially in Lisbon and Cascais."
+      "summary": "Portugal has a solid public health system (SNS). Many expats use private health insurance for faster access.",
+      "items": [
+        "Register at your local Centro de Saúde (public health centre) once you have your Junta de Freguesia certificate — this gives free access to the SNS",
+        "The SNS covers GP visits, specialist referrals, emergency care, and subsidised prescriptions for all registered family members",
+        "Private healthcare is widely used by expats for shorter waiting times — private consultations cost €60–€120 out of pocket",
+        "Popular private health insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €150–€250/month",
+        "English-speaking GPs and paediatricians are widely available in Lisbon and throughout the Cascais corridor"
+      ]
     },
     "safety": {
       "status": "estimated",
       "score": 90,
-      "summary": "Lisbon is one of the safest capitals in Europe. Violent crime is rare. Petty theft can occur in tourist areas like Alfama and Bairro Alto, but family neighbourhoods and suburbs are very safe. Portugal consistently ranks in the top 5 of the Global Peace Index."
+      "summary": "Lisbon is one of the safest capitals in Europe. Violent crime is rare.",
+      "items": [
+        "Violent crime is very rare — Portugal consistently ranks in the top 5 of the Global Peace Index",
+        "Main risk is petty theft in tourist-heavy areas: Alfama, Bairro Alto, and Rossio — keep bags in front and be aware of phone theft",
+        "The Cascais–Estoril line and Oeiras suburbs where most expat families live are extremely safe day and night",
+        "Public transport and taxis are safe and reliable, including late evenings",
+        "Tip: the beaches along the Cascais line are family-friendly and safe in all seasons"
+      ]
     },
     "cost": {
       "status": "estimated",
@@ -270,6 +378,26 @@
       ],
       "cost": [
         { "label": "Lisbon Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Lisbon" }
+      ]
+    },
+    "residency": {
+      "items": [
+        "Register at your local Junta de Freguesia within 90 days of arrival — bring your passport and proof of address.",
+        "Your Junta de Freguesia registration certificate is required for your NIF, bank account, and health centre registration.",
+        "Apply for your NIF (Número de Identificação Fiscal) at any Finanças office — essential for every financial and administrative transaction in Portugal.",
+        "D8 visa holders: AIMA (the immigration authority) may require a check-in appointment — book online as soon as you arrive.",
+        "After 5 years of legal residency, you can apply for permanent residency or Portuguese citizenship."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIF",
+      "items": [
+        "Apply for your NIF (Número de Identificação Fiscal) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
+        "You can get a NIF at any Finanças office — bring your passport and proof of address; appointments are usually available within 1–2 weeks.",
+        "Open a bank account once you have your NIF: Millennium BCP, Caixa Geral de Depósitos, and Novo Banco are popular with expats.",
+        "Digital banks (N26, Revolut Portugal) are a good temporary solution while waiting for an appointment with a traditional bank.",
+        "Apply for NHR (Non-Habitual Resident) tax status within your first year of becoming fiscally resident — can significantly reduce tax on foreign income for 10 years.",
+        "Documents most banks require: passport, NIF, Junta de Freguesia certificate, and proof of income."
       ]
     },
     "communityLinks": [

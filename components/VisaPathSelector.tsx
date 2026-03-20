@@ -20,6 +20,7 @@ const ANCHOR_PATH: Record<string, VisaPath> = {
   "visa-eu":        "eu",
   "visa-tourist":   "tourist",
   "visa-dnv":       "dnv",
+  "visa-d8":        "dnv",   // Portugal D8
   "visa-income":    "dnv",
   "visa-documents": "dnv",
   "visa-insurance": "dnv",

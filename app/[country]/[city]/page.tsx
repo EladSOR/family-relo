@@ -168,47 +168,40 @@ export default async function CityPage({ params }: Props) {
         </Section>
 
         {/* ── Residency ─────────────────────────────────────────────────── */}
-        <Section
-          id="residency"
-          title="Residency registration"
-          icon={<Landmark size={16} className="text-slate-500" />}
-        >
-          <ul className="space-y-2">
-            {[
-              "Register on the Padrón Municipal at your local Ayuntamiento within 30 days of arrival — bring your passport, rental contract, and proof of address.",
-              "The Padrón certificate unlocks everything: school enrolment, SIP healthcare card, NIE appointment, and your future TIE residency card.",
-              "Book your Padrón appointment online via the Valencia Ayuntamiento website — walk-in slots fill up fast.",
-              "After 1 year on the Padrón, non-EU residents can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card.",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </Section>
+        {dest.residency && (
+          <Section
+            id="residency"
+            title={dest.residency.title ?? "Residency registration"}
+            icon={<Landmark size={16} className="text-slate-500" />}
+          >
+            <ul className="space-y-2">
+              {dest.residency.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
 
-        {/* ── Banking & NIE ─────────────────────────────────────────────── */}
-        <Section
-          id="banking"
-          title="Banking & NIE"
-          icon={<CreditCard size={16} className="text-slate-500" />}
-        >
-          <ul className="space-y-2">
-            {[
-              "Apply for your NIE (Número de Identidad de Extranjero) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
-              "NIE appointments at the Extranjería (foreign police station) can take 4–8 weeks to book — start the process immediately.",
-              "While waiting for your NIE, use N26 or Wise as a temporary account — they open without a Spanish address or NIE.",
-              "Once you have your NIE, open a Spanish account: BBVA, Sabadell, and CaixaBank are popular with expats; most landlords require a local IBAN.",
-              "Documents most banks require: passport, NIE, Padrón certificate, and proof of income or employment contract.",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </Section>
+        {/* ── Banking ───────────────────────────────────────────────────── */}
+        {dest.banking && (
+          <Section
+            id="banking"
+            title={dest.banking.title ?? "Banking"}
+            icon={<CreditCard size={16} className="text-slate-500" />}
+          >
+            <ul className="space-y-2">
+              {dest.banking.items.map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
 
         {/* ── Housing ───────────────────────────────────────────────────── */}
         <Section

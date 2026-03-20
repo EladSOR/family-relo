@@ -29,7 +29,7 @@ export interface Destination {
   actionChecklist: {
     label: string;
     targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking"
-      | "visa-income" | "visa-documents" | "visa-insurance" | "visa-apply";
+      | "visa-income" | "visa-documents" | "visa-insurance" | "visa-apply" | "visa-d8";
   }[];
 
   familyFit: {
@@ -99,6 +99,18 @@ export interface Destination {
     summary: string;
     /** Structured bullet list (replaces summary paragraph when present) */
     items?: string[];
+  };
+
+  /** Per-city residency registration guidance. When present, renders as a bullet section. */
+  residency?: {
+    title?: string;
+    items: string[];
+  };
+
+  /** Per-city banking / tax ID guidance. When present, renders as a bullet section. */
+  banking?: {
+    title?: string;
+    items: string[];
   };
 
   cost: {
