@@ -4,7 +4,7 @@ import {
   MapPin, Shield, BadgeDollarSign, Home,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, ChevronRight, Landmark, CreditCard,
+  BookOpen, Landmark, CreditCard,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
@@ -13,6 +13,7 @@ import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import VisaPathSelector from "@/components/VisaPathSelector";
+import { ChecklistItems } from "@/components/ChecklistItems";
 
 // ── Static params ─────────────────────────────────────────────────────────────
 
@@ -114,39 +115,13 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Action checklist ──────────────────────────────────────────── */}
         <Section title="Action checklist" icon={<ClipboardList size={16} className="text-slate-500" />}>
-          <p className="mb-4 text-sm text-slate-500">
+          <p className="mb-1 text-sm text-slate-500">
             Concrete steps to make this move happen, in order.
           </p>
-          <ol className="space-y-2">
-            {dest.actionChecklist.map((step, i) => (
-              <li key={i}>
-                {step.targetSection ? (
-                  <a
-                    href={`#${step.targetSection}`}
-                    className="group flex cursor-pointer items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition-all duration-150 hover:border-emerald-300 hover:bg-emerald-50 hover:shadow"
-                  >
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-bold text-slate-500 transition-colors group-hover:bg-emerald-100 group-hover:text-emerald-700">
-                      {i + 1}
-                    </span>
-                    <span className="flex-1 text-[15px] font-medium leading-snug text-slate-800 transition-colors group-hover:text-emerald-800">
-                      {step.label}
-                    </span>
-                    <ChevronRight
-                      size={16}
-                      className="mt-0.5 shrink-0 text-slate-400 transition-[color,transform] duration-150 group-hover:translate-x-1 group-hover:text-emerald-500"
-                    />
-                  </a>
-                ) : (
-                  <div className="flex items-start gap-3 rounded-xl bg-slate-50 px-4 py-3">
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-200 text-xs font-bold text-slate-400">
-                      {i + 1}
-                    </span>
-                    <span className="text-[15px] leading-snug text-slate-500">{step.label}</span>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ol>
+          <p className="mb-5 text-sm text-slate-500">
+            Click any step to jump to that section ↓
+          </p>
+          <ChecklistItems steps={dest.actionChecklist} />
         </Section>
 
         {/* ── Family fit ────────────────────────────────────────────────── */}
