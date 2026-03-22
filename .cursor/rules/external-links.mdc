@@ -41,16 +41,19 @@ Use the platform root and add a short search hint in the label.
 { "label": "DDproperty.com — search 'Chiang Mai'", "url": "https://www.ddproperty.com" }
 ```
 
-## searchPortalsIntro — add a search hint when portals need it
+## searchPortalsIntro — required format for every city
 
-If portals don't have a city-specific stable URL, add one line to `searchPortalsIntro`:
+Every city's `searchPortalsIntro` must include these three lines in this order:
 
 ```json
 "searchPortalsIntro": [
-  "These are local rental platforms — search your city name inside each one.",
-  "Tip: arrive on a short-stay first — long-term deals are easier to find in person."
+  "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+  "Search '[City Name]' inside each platform to filter local listings.",
+  "Tip: [city-specific short-stay advice]."
 ]
 ```
+
+The search hint (`Search '[City Name]'...`) is always the second line — once above the list, never repeated per portal.
 
 ## Applies to
 
