@@ -4,6 +4,7 @@
     "visa": {
       "status": "verified",
       "summary": "If you hold a non-EU passport you need to apply for a visa before you leave your home country. EU and EEA passport holders can move freely with no restrictions. For non-EU families who work remotely, the Digital Nomad Visa is the main route.",
+      "tip": "Consulate appointments fill weeks in advance — gather all documents before booking your slot, not after.",
       "options": [
         {
           "type": "EU / EEA citizens",

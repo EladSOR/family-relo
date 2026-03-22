@@ -15,6 +15,14 @@ import StickySearchHeader from "@/components/StickySearchHeader";
 import VisaPathSelector from "@/components/VisaPathSelector";
 import { ChecklistItems } from "@/components/ChecklistItems";
 
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function reviewedLabel(raw: string) {
+  const [year, month] = raw.split("-");
+  return `Reviewed ${MONTHS[parseInt(month, 10) - 1]} ${year}`;
+}
+
 // ── Static params ─────────────────────────────────────────────────────────────
 
 export function generateStaticParams() {
@@ -157,12 +165,14 @@ export default async function CityPage({ params }: Props) {
           id="visa"
           title="Visa options"
           icon={<FileText size={16} className="text-slate-500" />}
+          meta={reviewedLabel(dest.lastReviewed)}
           sources={dest.sources.visa}
         >
           {visaData && (
             <>
               <p className="mb-4 text-sm leading-relaxed text-slate-600">{visaData.summary}</p>
               <VisaPathSelector options={visaData.options} />
+              {visaData.tip && <Tip text={visaData.tip} />}
             </>
           )}
         </Section>
@@ -173,6 +183,7 @@ export default async function CityPage({ params }: Props) {
             id="residency"
             title={dest.residency.title ?? "Residency registration"}
             icon={<Landmark size={16} className="text-slate-500" />}
+            meta={reviewedLabel(dest.lastReviewed)}
           >
             <ul className="space-y-2">
               {dest.residency.items.map((item, i) => (
@@ -182,6 +193,7 @@ export default async function CityPage({ params }: Props) {
                 </li>
               ))}
             </ul>
+            {dest.residency.tip && <Tip text={dest.residency.tip} />}
           </Section>
         )}
 
@@ -200,6 +212,7 @@ export default async function CityPage({ params }: Props) {
                 </li>
               ))}
             </ul>
+            {dest.banking.tip && <Tip text={dest.banking.tip} />}
           </Section>
         )}
 
@@ -304,8 +317,10 @@ export default async function CityPage({ params }: Props) {
             <DetailRow label="Language notes" value={dest.schools.languageNotes} />
           </div>
 
+          {dest.schools.tip && <Tip text={dest.schools.tip} />}
+
           {dest.schools.examples.length > 0 && (
-            <div>
+            <div className="mt-5">
               <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">
                 Example schools
               </p>
@@ -319,10 +334,10 @@ export default async function CityPage({ params }: Props) {
                             href={school.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 font-semibold text-slate-900 hover:text-[#FF5A5F]"
+                            className="inline-flex items-center gap-1.5 font-semibold text-slate-800 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
                           >
                             {school.name}
-                            <ExternalLink size={12} className="shrink-0" />
+                            <ExternalLink size={12} className="shrink-0 opacity-60" />
                           </a>
                         ) : (
                           <p className="font-semibold text-slate-900">{school.name}</p>
@@ -400,6 +415,7 @@ export default async function CityPage({ params }: Props) {
           id="healthcare"
           title="Healthcare"
           icon={<Stethoscope size={16} className="text-slate-500" />}
+          meta={reviewedLabel(dest.lastReviewed)}
           sources={dest.sources.healthcare}
         >
           {dest.healthcare.items ? (
@@ -414,6 +430,7 @@ export default async function CityPage({ params }: Props) {
           ) : (
             <p className="text-sm leading-relaxed text-slate-600">{dest.healthcare.summary}</p>
           )}
+          {dest.healthcare.tip && <Tip text={dest.healthcare.tip} />}
         </Section>
 
         {/* ── Safety ────────────────────────────────────────────────────── */}
@@ -495,21 +512,29 @@ function Section({
   id,
   title,
   icon,
+  meta,
   sources,
   children,
 }: {
   id?: string;
   title: string;
   icon?: React.ReactNode;
+  /** Small right-aligned label, e.g. "Reviewed Jan 2026" */
+  meta?: string;
   sources?: Source[];
   children: React.ReactNode;
 }) {
   return (
     <div id={id} className="rounded-2xl bg-white p-6 shadow-sm scroll-mt-24">
-      <h2 className="mb-4 flex items-center gap-2 text-base font-bold text-slate-900">
-        {icon}
-        {title}
-      </h2>
+      <div className="mb-4 flex items-center justify-between gap-3">
+        <h2 className="flex items-center gap-2 text-base font-bold text-slate-900">
+          {icon}
+          {title}
+        </h2>
+        {meta && (
+          <span className="shrink-0 text-[11px] font-normal text-slate-400">{meta}</span>
+        )}
+      </div>
       {children}
       {sources && sources.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 pt-4">
@@ -528,6 +553,14 @@ function Section({
         </div>
       )}
     </div>
+  );
+}
+
+function Tip({ text }: { text: string }) {
+  return (
+    <p className="mt-4 border-l-2 border-emerald-200 pl-3 text-xs leading-relaxed text-slate-500">
+      {text}
+    </p>
   );
 }
 

@@ -45,6 +45,7 @@ export interface Destination {
     status: DataStatus;
     summary: string;
     options: VisaOption[];
+    tip?: string;
   };
 
   housing: {
@@ -59,16 +60,12 @@ export interface Destination {
 
   schools: {
     status: DataStatus;
-    /** Short overview paragraph */
     summary: string;
-    /** Description of the local public / state school system */
     publicSystem: string;
-    /** Overview of international / private English-medium options */
     internationalOptions: string;
-    /** Language of instruction notes, bilingual considerations */
     languageNotes: string;
-    /** Specific schools families can research and contact */
     examples: SchoolExample[];
+    tip?: string;
   };
 
   childcare: {
@@ -89,8 +86,8 @@ export interface Destination {
   healthcare: {
     status: DataStatus;
     summary: string;
-    /** Structured bullet list (replaces summary paragraph when present) */
     items?: string[];
+    tip?: string;
   };
 
   safety: {
@@ -101,16 +98,16 @@ export interface Destination {
     items?: string[];
   };
 
-  /** Per-city residency registration guidance. When present, renders as a bullet section. */
   residency?: {
     title?: string;
     items: string[];
+    tip?: string;
   };
 
-  /** Per-city banking / tax ID guidance. When present, renders as a bullet section. */
   banking?: {
     title?: string;
     items: string[];
+    tip?: string;
   };
 
   cost: {
@@ -184,6 +181,7 @@ export interface CountryData {
     status: DataStatus;
     summary: string;
     options: VisaOption[];
+    tip?: string;
   };
 }
 

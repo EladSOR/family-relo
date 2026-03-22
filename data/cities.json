@@ -68,6 +68,7 @@
       "publicSystem": "Spanish public schools are free, well-funded, and generally high quality — but instruction is entirely in Spanish and Valencian. Not recommended for children without Spanish language skills unless you plan a long-term stay (2+ years) and are willing to invest in language support.",
       "internationalOptions": "Several English-medium international schools operate in Valencia and the surrounding area. Demand has grown sharply with the expat influx — apply 6–12 months in advance. Schools follow US, British, or IB curricula and typically run from Early Years through Year 13 / Grade 12.",
       "languageNotes": "Valencian (a Catalan dialect) is co-official with Spanish in the region. Most public schools teach in Valencian and Castilian Spanish. English-medium instruction is only available in private international schools.",
+      "tip": "Apply 6–12 months before your move — waiting lists at the American School and Caxton College run year-round.",
       "examples": [
         {
           "name": "American School of Valencia",
@@ -117,6 +118,7 @@
     "healthcare": {
       "status": "estimated",
       "summary": "Spain's public healthcare is excellent. Registered residents receive a SIP card granting free access to the public system.",
+      "tip": "Bring your Padrón certificate on your first visit — without it the registration cannot proceed.",
       "items": [
         "Register at your local Centro de Salud (public health centre) with your Padrón certificate to receive a SIP card — this gives free access to Spain's public healthcare",
         "The SIP card covers GP visits, specialist referrals, hospital care, and subsidised prescriptions for all registered family members",
@@ -164,6 +166,7 @@
     },
     "banking": {
       "title": "Banking & NIE",
+      "tip": "Start the NIE process the week you arrive — appointment slots at the Extranjería book out 4–8 weeks.",
       "items": [
         "Apply for your NIE (Número de Identidad de Extranjero) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
         "NIE appointments at the Extranjería (foreign police station) can take 4–8 weeks to book — start the process immediately.",
@@ -211,6 +214,7 @@
     "visa": {
       "status": "verified",
       "summary": "Portugal's D8 Digital Nomad Visa is one of the most family-friendly in Europe. EU/EEA citizens move freely with no visa. Non-EU remote workers need the D8, which also qualifies families for the NHR tax regime — reducing tax on foreign income for the first 10 years.",
+      "tip": "Portuguese consulate slots fill fast in major cities — book your appointment the moment your documents are ready.",
       "options": [
         {
           "type": "EU / EEA citizens",
@@ -294,6 +298,7 @@
       "publicSystem": "Portugal's public school system is solid, but instruction is in Portuguese. Children without Portuguese will struggle. Public schools are free; bilingual state schools exist in Lisbon but places are very limited.",
       "internationalOptions": "The Cascais–Estoril corridor is the international school hub. Schools follow US, British, or IB curricula in English. Fees are significant by Portuguese standards but reasonable for families coming from the UK or US. Apply 12–18 months before your intended start date.",
       "languageNotes": "Portuguese is the sole official language. Most international expat schools teach entirely in English. Some schools offer Portuguese language support for new arrivals. Children who attend public schools will need intensive Portuguese tutoring.",
+      "tip": "Contact CAISL and St. Julian's before booking flights — their waitlists often stretch 12–18 months.",
       "examples": [
         {
           "name": "CAISL — Carlucci American International School of Lisbon",
@@ -343,6 +348,7 @@
     "healthcare": {
       "status": "estimated",
       "summary": "Portugal has a solid public health system (SNS). Many expats use private health insurance for faster access.",
+      "tip": "Register at your Centro de Saúde in the first week — it activates SNS cover for the whole family in one visit.",
       "items": [
         "Register at your local Centro de Saúde (public health centre) once you have your Junta de Freguesia certificate — this gives free access to the SNS",
         "The SNS covers GP visits, specialist referrals, emergency care, and subsidised prescriptions for all registered family members",
@@ -381,6 +387,7 @@
       ]
     },
     "residency": {
+      "tip": "The NIF unlocks everything in Portugal — get it at any Finanças office, usually within 1–2 days.",
       "items": [
         "Register at your local Junta de Freguesia within 90 days of arrival — bring your passport and proof of address.",
         "Your Junta de Freguesia registration certificate is required for your NIF, bank account, and health centre registration.",
@@ -391,6 +398,7 @@
     },
     "banking": {
       "title": "Banking & NIF",
+      "tip": "Apply for NHR status before filing your first Portuguese tax return — it cannot be claimed retroactively.",
       "items": [
         "Apply for your NIF (Número de Identificação Fiscal) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
         "You can get a NIF at any Finanças office — bring your passport and proof of address; appointments are usually available within 1–2 weeks.",

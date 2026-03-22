@@ -133,7 +133,7 @@ export default function VisaPathSelector({ options }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={e => e.stopPropagation()}
-                  className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 underline-offset-2 hover:text-slate-600 hover:underline"
+                  className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 underline-offset-2 hover:text-slate-800 hover:underline"
                 >
                   <ExternalLink size={11} />
                   {opt.officialLink.label}
@@ -209,7 +209,7 @@ export default function VisaPathSelector({ options }: Props) {
                                 href={sec.officialLink.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-[#FF5A5F]/25 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] transition-colors hover:bg-[#FF5A5F]/5"
+                                className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
                               >
                                 <ExternalLink size={12} />
                                 {sec.officialLink.label}
@@ -235,7 +235,7 @@ export default function VisaPathSelector({ options }: Props) {
                           href={opt.officialLink.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-[#FF5A5F]/25 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] transition-colors hover:bg-[#FF5A5F]/5"
+                          className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
                         >
                           <ExternalLink size={12} />
                           {opt.officialLink.label}
