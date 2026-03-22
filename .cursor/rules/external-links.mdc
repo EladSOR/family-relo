@@ -1,0 +1,59 @@
+---
+description: Rules for external links in city data (cities.json, countries.json)
+globs: data/*.json
+alwaysApply: true
+---
+
+# External Link Rules for City Pages
+
+## Rental portal links — use root URLs only
+
+Never link to filtered search results, city-scoped pages, or paginated URLs.
+Always use the stable homepage root.
+
+```
+// ❌ BAD — deep search result URL
+{ "url": "https://www.idealista.com/en/alquiler-viviendas/valencia-provincia/" }
+
+// ✅ GOOD — stable root
+{ "url": "https://www.idealista.com" }
+```
+
+## Facebook — never link, always plain text
+
+Facebook search-result and group URLs are unstable or require login.
+Use plain text guidance instead.
+
+```
+// ❌ BAD
+{ "label": "Expat group", "url": "https://www.facebook.com/groups/..." }
+
+// ✅ GOOD — text only, no url field
+{ "label": "Search on Facebook: 'Valencia Expats' — many direct landlord deals" }
+```
+
+## When no stable city page exists
+
+Use the platform root and add a short search hint in the label.
+
+```
+// ✅ GOOD
+{ "label": "DDproperty.com — search 'Chiang Mai'", "url": "https://www.ddproperty.com" }
+```
+
+## searchPortalsIntro — add a search hint when portals need it
+
+If portals don't have a city-specific stable URL, add one line to `searchPortalsIntro`:
+
+```json
+"searchPortalsIntro": [
+  "These are local rental platforms — search your city name inside each one.",
+  "Tip: arrive on a short-stay first — long-term deals are easier to find in person."
+]
+```
+
+## Applies to
+
+- `data/cities.json` — all `searchPortals[].url` fields
+- `data/countries.json` — any `officialLink.url` fields
+- Any future city pages added to the data layer

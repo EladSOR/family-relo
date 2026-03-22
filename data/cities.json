@@ -637,10 +637,11 @@
       "bestAreas": ["Hang Dong", "Nimmanhaemin", "Santitham", "Doi Saket", "Mae Rim"],
       "searchPortalsIntro": [
         "These are the main platforms locals and expats use for long-term rentals — much cheaper than Airbnb for monthly stays.",
+        "On each platform, search 'Chiang Mai' to filter listings for the area.",
         "Tip: arrive on a 1–3 month short-stay first. It is far easier to negotiate rent and inspect properties in person than remotely."
       ],
       "searchPortals": [
-        { "label": "DDproperty.com — the main Thai property portal", "url": "https://www.ddproperty.com" },
+        { "label": "DDproperty.com — Thailand's main property portal", "url": "https://www.ddproperty.com" },
         { "label": "Hipflat.com — good for condos and serviced apartments", "url": "https://www.hipflat.co.th" },
         { "label": "Fazwaz.com — English-language portal, easy for foreigners", "url": "https://www.fazwaz.com" },
         { "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)" },
