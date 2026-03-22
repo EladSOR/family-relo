@@ -41,10 +41,10 @@
         "Tip: start with a 2–4 week Airbnb or short-term stay — it's much easier to secure a long-term rental once you're in the city."
       ],
       "searchPortals": [
-        { "label": "Idealista — Spain's largest rental portal", "url": "https://www.idealista.com/en/alquiler-viviendas/valencia-provincia/" },
-        { "label": "Fotocasa — strong secondary market", "url": "https://www.fotocasa.es/en/rental/" },
-        { "label": "Habitaclia — popular in the Valencian region", "url": "https://www.habitaclia.com/alquiler-viviendas-en-valencia.htm" },
-        { "label": "Pisos.com — useful for comparing prices", "url": "https://www.pisos.com/alquiler/pisos-valencia/" },
+        { "label": "Idealista — Spain's largest rental portal", "url": "https://www.idealista.com" },
+        { "label": "Fotocasa — strong secondary market", "url": "https://www.fotocasa.es" },
+        { "label": "Habitaclia — popular in the Valencian region", "url": "https://www.habitaclia.com" },
+        { "label": "Pisos.com — useful for comparing prices", "url": "https://www.pisos.com" },
         { "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)" }
       ],
       "typicalPrices": [
@@ -189,14 +189,14 @@
     "summary": "Lisbon has become one of Europe's most sought-after relocation destinations. Families are drawn by its high quality of life, safe streets, mild Atlantic climate, and a thriving English-speaking expat community. The greater Lisbon area — especially the Cascais line — offers excellent international schools and a beachside suburban feel that rivals anywhere in the world.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Confirm you meet the D8 income threshold (min. €3,480/month from remote employment or freelance work for foreign clients)", "targetSection": "visa" },
-      { "label": "Prepare your document pack: Apostilled criminal record, proof of private health insurance valid in Portugal, 3+ months of income statements, accommodation proof", "targetSection": "visa" },
-      { "label": "Submit D8 Visa application at the Portuguese Consulate in your home country — allow 2–4 months for processing", "targetSection": "visa" },
+      { "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients", "targetSection": "visa" },
+      { "label": "Prepare your document pack before applying: Apostilled criminal record, private health insurance, 3+ months of income statements, and proof of accommodation", "targetSection": "visa" },
+      { "label": "Submit your D8 Visa application at the Portuguese Consulate in your home country — book your appointment now, allow 2–4 months for processing", "targetSection": "visa" },
       { "label": "Start searching for family housing 6–8 weeks before your move — the Cascais–Estoril corridor is the top expat family area", "targetSection": "housing" },
-      { "label": "Research international schools in the Cascais–Estoril corridor — top schools fill 12–18 months ahead", "targetSection": "schools" },
-      { "label": "Upon arrival, register at your local Junta de Freguesia and apply for your NIF (Portuguese tax number)", "targetSection": "residency" },
-      { "label": "Open a Portuguese bank account and apply for NHR tax status within your first year of fiscal residence", "targetSection": "banking" },
-      { "label": "Register with your local Centro de Saúde to access the SNS public health system", "targetSection": "healthcare" }
+      { "label": "Apply to international schools (CAISL, St. Julian's) before booking flights — waitlists stretch 12–18 months", "targetSection": "schools" },
+      { "label": "On arrival: register at your local Junta de Freguesia (civil registry) and get your NIF (tax number) at any Finanças office", "targetSection": "residency" },
+      { "label": "Open a Portuguese bank account once you have your NIF — and apply for NHR tax status within your first year", "targetSection": "banking" },
+      { "label": "Register with your local Centro de Saúde (public health clinic) to activate SNS healthcare cover for the whole family", "targetSection": "healthcare" }
     ],
     "familyFit": {
       "bestFor": [
@@ -224,9 +224,9 @@
           "description": "Move freely to Portugal with no visa. First step after arrival: register at your local Junta de Freguesia.",
           "details": [
             "No visa or permit required — EU/EEA passport holders have full freedom of movement in Portugal.",
-            "Register at your local Junta de Freguesia within 90 days of arrival — bring your passport and proof of address.",
-            "Apply for your NIF (Número de Identificação Fiscal) at a Finanças office immediately — required for almost every transaction.",
-            "After 5 years of continuous residence, you can apply for a permanent residency certificate."
+            "Register at your local Junta de Freguesia (the local civil registry office) within 90 days — bring your passport and proof of address (rental contract or utility bill).",
+            "Apply for your NIF (your Portuguese tax and ID number) at any Finanças office (the tax office) — required for almost every transaction, from renting a flat to opening a bank account.",
+            "After 5 years of continuous residence, you can apply for a permanent residency certificate or Portuguese citizenship."
           ]
         },
         {
@@ -250,11 +250,11 @@
           "duration": "2 years, renewable",
           "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
           "details": [
-            "Income requirement: minimum €3,480/month (4× the national minimum wage) from remote employment or freelance work for foreign clients.",
-            "Required documents: valid passport (6+ months remaining), Apostilled criminal record check, proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
-            "Apply at the Portuguese Consulate in your home country — you cannot apply from inside Portugal.",
-            "Allow 2–4 months for processing — book your consulate appointment as early as possible.",
-            "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years you can apply for permanent residency."
+            "Income requirement: minimum €3,480/month (4× the national minimum wage) from remote employment or freelance work — at least 80% must come from foreign clients or an employer based outside Portugal.",
+            "Required documents: valid passport (6+ months remaining), Apostilled criminal record check (an official government stamp from your home country confirming the document is authentic), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
+            "Apply at the Portuguese Consulate in your home country — you cannot apply for the D8 from inside Portugal.",
+            "Allow 2–4 months for processing — book your consulate appointment as early as possible, slots fill quickly in cities like London, New York, and Tel Aviv.",
+            "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years of legal residency you can apply for permanent residency or citizenship."
           ],
           "officialLink": {
             "label": "Portugal D8 Visa — Official Documentation",
@@ -272,10 +272,10 @@
         "Tip: start with a 2–4 week short-term stay in the Cascais corridor — it is much easier to secure a long-term rental once you are on the ground."
       ],
       "searchPortals": [
-        { "label": "Idealista.pt — most listings in Portugal", "url": "https://www.idealista.pt/arrendar-casas/grande-lisboa/" },
-        { "label": "Imovirtual.com — strong secondary market", "url": "https://www.imovirtual.com/arrendamento/" },
-        { "label": "OLX.pt — direct landlord deals (no agency fee)", "url": "https://www.olx.pt/imoveis/arrendamento/" },
-        { "label": "Remax Portugal — good for family homes in Cascais and Oeiras", "url": "https://www.remax.pt/arrendamento" },
+        { "label": "Idealista.pt — most listings in Portugal", "url": "https://www.idealista.pt" },
+        { "label": "Imovirtual.com — strong secondary market", "url": "https://www.imovirtual.com" },
+        { "label": "OLX.pt — direct landlord deals (no agency fee)", "url": "https://www.olx.pt" },
+        { "label": "Remax Portugal — good for family homes in Cascais and Oeiras", "url": "https://www.remax.pt" },
         { "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals" }
       ],
       "typicalPrices": [
@@ -294,11 +294,11 @@
     },
     "schools": {
       "status": "curated",
-      "summary": "The greater Lisbon area has excellent international schools. CAISL and St. Julian's are consistently top-rated, but apply well in advance — both have long waitlists.",
-      "publicSystem": "Portugal's public school system is solid, but instruction is in Portuguese. Children without Portuguese will struggle. Public schools are free; bilingual state schools exist in Lisbon but places are very limited.",
-      "internationalOptions": "The Cascais–Estoril corridor is the international school hub. Schools follow US, British, or IB curricula in English. Fees are significant by Portuguese standards but reasonable for families coming from the UK or US. Apply 12–18 months before your intended start date.",
-      "languageNotes": "Portuguese is the sole official language. Most international expat schools teach entirely in English. Some schools offer Portuguese language support for new arrivals. Children who attend public schools will need intensive Portuguese tutoring.",
-      "tip": "Contact CAISL and St. Julian's before booking flights — their waitlists often stretch 12–18 months.",
+      "summary": "The greater Lisbon area has excellent international schools. CAISL and St. Julian's are consistently top-rated, but both have waitlists that stretch 12–18 months — apply before you book flights.",
+      "publicSystem": "Public schools are free, but all instruction is in Portuguese. Children without Portuguese will struggle to keep up. Bilingual state schools exist in Lisbon but places are very limited — do not count on them. Best for families already planning Portuguese immersion.",
+      "internationalOptions": "The Cascais–Estoril corridor (30 min west of Lisbon by train) is the main hub for international schools. Schools follow US, British, or IB curricula, taught entirely in English. Fees are €10,000–$22,000/year. Apply 12–18 months before your intended start date — CAISL and St. Julian's are the two most competitive.",
+      "languageNotes": "Portuguese is the sole official language. All international schools in the Cascais corridor teach in English. Some offer Portuguese language support for new arrivals. Children who attend public school will need a private Portuguese tutor — budget €30–€60/hr.",
+      "tip": "Contact CAISL and St. Julian's before booking flights — their waitlists often stretch 12–18 months and a spot is not guaranteed.",
       "examples": [
         {
           "name": "CAISL — Carlucci American International School of Lisbon",
@@ -328,15 +328,16 @@
       "typicalCost": "Nanny: €10–€15/hr. Private nursery: €500–€900/month. Au pair: €100–€200/week + room and board.",
       "howFamiliesFindIt": "Sitly.com, Babysits.com, 'Lisbon Expat Families' Facebook group, and local agency Ama Perfeita.",
       "daycareItems": [
-        "Private nurseries (creches) accept children from 3 months — widely available in Cascais, Oeiras, and Estoril",
-        "Typical fees: €500–€900/month; bilingual (English/Portuguese) programmes are common in expat areas",
-        "State-subsidised crèches exist but places are very limited — join the waiting list immediately on arrival",
-        "Tip: visit at least 2–3 nurseries in person before deciding — quality and English fluency of staff varies"
+        "Private creches (nurseries) accept babies from 3 months old — widely available in Cascais, Oeiras, and Estoril where most expat families live",
+        "Typical fees: €500–€900/month; ask specifically about bilingual (English/Portuguese) programmes — they are common in expat areas but not guaranteed",
+        "State-subsidised creches exist but are very limited — register on the waiting list immediately after arriving, even if you plan to go private",
+        "Visit at least 2–3 creches in person before deciding — quality and English fluency of staff varies significantly between them"
       ],
       "nannyItems": [
-        "Live-out nannies charge €10–€15/hr — common among expat families in the Cascais corridor",
-        "Many expat families hire Brazilian nannies — Portuguese-speaking but familiar with international family life",
-        "References are easy to find through expat Facebook groups before you arrive"
+        "Live-out nannies charge €10–€15/hr — common among expat families in Cascais, Oeiras, and Estoril",
+        "Many expat families hire Brazilian nannies — native Portuguese speakers who are very familiar with international family life",
+        "Au pairs cost €100–€200/week plus room and board — a popular option for families wanting full-time coverage",
+        "Start searching 4–6 weeks before arrival — the best nannies in expat areas fill quickly"
       ],
       "whereToFindItems": [
         "Sitly.com — most popular nanny platform in Portugal",
@@ -348,13 +349,13 @@
     "healthcare": {
       "status": "estimated",
       "summary": "Portugal has a solid public health system (SNS). Many expats use private health insurance for faster access.",
-      "tip": "Register at your Centro de Saúde in the first week — it activates SNS cover for the whole family in one visit.",
+      "tip": "Register at your Centro de Saúde in the first week — bring your Junta de Freguesia certificate or the registration cannot proceed.",
       "items": [
-        "Register at your local Centro de Saúde (public health centre) once you have your Junta de Freguesia certificate — this gives free access to the SNS",
-        "The SNS covers GP visits, specialist referrals, emergency care, and subsidised prescriptions for all registered family members",
-        "Private healthcare is widely used by expats for shorter waiting times — private consultations cost €60–€120 out of pocket",
-        "Popular private health insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €150–€250/month",
-        "English-speaking GPs and paediatricians are widely available in Lisbon and throughout the Cascais corridor"
+        "Go to your local Centro de Saúde (public health clinic) with your Junta de Freguesia certificate to register with the SNS — Portugal's free national health system. This activates healthcare cover for your whole family.",
+        "The SNS (Serviço Nacional de Saúde) covers GP visits, specialists, emergency care, and prescriptions at reduced cost — for every family member registered.",
+        "Each child needs to be registered separately — bring their passport and your Junta de Freguesia certificate to the same clinic.",
+        "Private healthcare is widely used by expats because waiting times are shorter — a private GP costs €60–€120 out of pocket, with results usually same-day.",
+        "Popular private health insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €150–€250/month and include English-speaking doctors across Lisbon and Cascais."
       ]
     },
     "safety": {
@@ -387,25 +388,25 @@
       ]
     },
     "residency": {
-      "tip": "The NIF unlocks everything in Portugal — get it at any Finanças office, usually within 1–2 days.",
+      "tip": "Your NIF unlocks everything in Portugal — get it at any Finanças office on your first or second day. Same-day appointments are usually available.",
       "items": [
-        "Register at your local Junta de Freguesia within 90 days of arrival — bring your passport and proof of address.",
-        "Your Junta de Freguesia registration certificate is required for your NIF, bank account, and health centre registration.",
-        "Apply for your NIF (Número de Identificação Fiscal) at any Finanças office — essential for every financial and administrative transaction in Portugal.",
-        "D8 visa holders: AIMA (the immigration authority) may require a check-in appointment — book online as soon as you arrive.",
+        "Register at your local Junta de Freguesia — Portugal's local civil registry office, similar to a city hall branch — within 90 days of arriving. Bring your passport and proof of address (rental contract or utility bill).",
+        "Your Junta de Freguesia certificate is the document that starts everything — you need it to get your NIF, open a bank account, and register at the health centre.",
+        "Apply for your NIF (your Portuguese tax and ID number) at any Finanças office (the tax office) — required for almost every financial and administrative transaction in Portugal.",
+        "D8 visa holders: AIMA — Portugal's immigration authority — may require a check-in appointment after arrival. Book online at aima.gov.pt as soon as you arrive.",
         "After 5 years of legal residency, you can apply for permanent residency or Portuguese citizenship."
       ]
     },
     "banking": {
       "title": "Banking & NIF",
-      "tip": "Apply for NHR status before filing your first Portuguese tax return — it cannot be claimed retroactively.",
+      "tip": "Apply for NHR status before filing your first Portuguese tax return — it cannot be claimed retroactively and most accountants miss the deadline.",
       "items": [
-        "Apply for your NIF (Número de Identificação Fiscal) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
-        "You can get a NIF at any Finanças office — bring your passport and proof of address; appointments are usually available within 1–2 weeks.",
-        "Open a bank account once you have your NIF: Millennium BCP, Caixa Geral de Depósitos, and Novo Banco are popular with expats.",
-        "Digital banks (N26, Revolut Portugal) are a good temporary solution while waiting for an appointment with a traditional bank.",
-        "Apply for NHR (Non-Habitual Resident) tax status within your first year of becoming fiscally resident — can significantly reduce tax on foreign income for 10 years.",
-        "Documents most banks require: passport, NIF, Junta de Freguesia certificate, and proof of income."
+        "Apply for your NIF — Portugal's combined tax and ID number — as soon as you arrive. You need it to open a bank account, sign a lease, and enrol your children in school.",
+        "Get your NIF at any Finanças office (the tax office) — bring your passport and proof of address. Same-day or next-day service is usually available.",
+        "Once you have your NIF, open a Portuguese bank account. Millennium BCP, Caixa Geral, and Novo Banco are popular traditional banks experienced with expats.",
+        "While waiting for a bank appointment, use N26 or Revolut — both open with just your passport and work anywhere in Portugal from day one.",
+        "Apply for NHR (Non-Habitual Resident) status in your first year of fiscal residency — a government scheme that reduces tax on most foreign income to 20% for 10 years. Miss the deadline and you lose access permanently.",
+        "Most banks ask for: passport, NIF, Junta de Freguesia certificate (proof of local address), and a recent payslip or employment contract."
       ]
     },
     "communityLinks": [
@@ -543,71 +544,130 @@
     "city": "Chiang Mai",
     "country": "Thailand",
     "tagline": "Asia's most affordable family hub, surrounded by mountains",
-    "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month. The city has a large expat community, several strong international schools, fast internet, and excellent private healthcare at a fraction of Western prices.",
+    "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month including a nanny and good private school. The city has a large expat community, several strong international schools, fast fibre internet, and excellent private hospitals at a fraction of Western prices. The main planning challenge is the visa — Thailand has no permanent residency path, so most families use the DTV or Thailand Elite.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Decide on your visa strategy: DTV (best for most families), Thailand Elite, or an initial 60-day tourist visa to scout", "targetSection": "visa" },
-      { "label": "Apply for the DTV at a Thai embassy in your home country before travelling — bring income proof and $15,000 in savings documentation", "targetSection": "visa" },
-      { "label": "Research international schools in Hang Dong — apply 3–6 months before your intended start date", "targetSection": "schools" },
-      { "label": "Plan your arrival window: October–January is ideal to avoid the smoke season (February–April)" },
-      { "label": "Find a short-term rental (1–3 months) through Facebook groups ('Chiang Mai Expat Club') or Airbnb while you search long-term", "targetSection": "housing" },
-      { "label": "Open a Thai bank account (Bangkok Bank or Kasikorn) — requires a valid non-immigrant visa class" },
-      { "label": "Purchase private health insurance before travelling — domestic Thai plans start from $100/month per adult", "targetSection": "healthcare" },
-      { "label": "Set up a Thai SIM card (AIS or DTAC) on arrival for affordable mobile internet and local banking OTPs" }
+      { "label": "Choose your visa: DTV (best for most families) or Thailand Elite (multi-year stability, no income requirement)", "targetSection": "visa" },
+      { "label": "Apply for the DTV at a Thai embassy before travelling — bring income proof and $15,000 in savings documentation", "targetSection": "visa" },
+      { "label": "Plan your arrival for October–January to avoid the smoke season (February–April brings hazardous air quality)" },
+      { "label": "Start with a 1–3 month short-term rental on arrival — use Facebook 'Chiang Mai Expat Club' or Airbnb while you find a long-term home", "targetSection": "housing" },
+      { "label": "Research international schools in Hang Dong (APIS, CMIS) — apply 3–6 months before your intended start date", "targetSection": "schools" },
+      { "label": "Buy private health insurance before flying — there is no public healthcare for foreigners in Thailand", "targetSection": "healthcare" },
+      { "label": "On arrival: ask your landlord to file the TM30 address form with immigration within 24 hours of your arrival", "targetSection": "residency" },
+      { "label": "Open a Thai bank account (Bangkok Bank or Kasikorn) once you have a non-immigrant visa — needed for rent and school fees", "targetSection": "banking" },
+      { "label": "Set a 90-day reminder — all visa holders must report their address to immigration every 90 days", "targetSection": "residency" }
     ],
     "familyFit": {
       "bestFor": [
-        "Budget-conscious families who want to maximise quality of life",
-        "Families drawn to Thai culture, food, and outdoor adventure",
-        "Parents who work remotely and need reliable infrastructure",
-        "Families seeking a large, established English-speaking expat community"
+        "Families who want to maximise quality of life on a modest budget",
+        "Remote-working parents who need fast internet and a large expat community",
+        "Families drawn to outdoor adventure, Thai food culture, and a relaxed pace",
+        "Those looking for affordable private schooling and nanny support"
       ],
       "watchOutFor": [
-        "Smoke season (February–April) brings severe air pollution from agricultural burning — a health hazard for children",
-        "Visa situation requires planning — no official permanent long-term nomad residency pathway yet",
-        "Road safety is a serious concern; motorbike accidents are the leading cause of expat injury",
-        "Infrastructure is improving but still lags behind Bangkok in some areas"
+        "Smoke season (February–April) brings severe air pollution — a serious health concern for young children",
+        "No long-term residency path — visa planning and periodic renewals are an ongoing reality",
+        "Road safety is the biggest daily risk — motorbike accidents are the leading cause of expat injury",
+        "Banking and admin can be frustrating without a non-immigrant visa class"
       ]
     },
     "visa": {
       "status": "verified",
-      "summary": "Thailand's DTV (Destination Thailand Visa), launched in 2024, is the best option for families — it allows 180-day stays (extendable once) for remote workers. The Thailand Elite Visa offers 5–20 year residency for a fee.",
+      "summary": "Thailand has no EU-style residency permit. Most expat families choose the DTV (Destination Thailand Visa) launched in 2024 — 180 days per entry, renewable, covers the whole family. The Thailand Elite Privilege Card is the zero-hassle long-term option for families who want 5–20 years of stable stays without periodic reapplication.",
+      "tip": "Apply for the DTV at least 4–6 weeks before your travel date — Thai consulates in major cities can get backed up.",
       "options": [
         {
           "type": "Tourist Visa / Visa Exemption",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist Visa — what it allows and what it does not",
           "duration": "30–60 days",
-          "description": "Most Western passports get 30 days visa-free on arrival, extendable once. A tourist visa from a Thai consulate gives 60 days + one extension."
+          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
+          "details": [
+            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office (fee: about $50).",
+            "A tourist visa (TR) applied at a Thai consulate gives 60 days + one 30-day extension.",
+            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
+            "Do not try to live in Thailand on back-to-back tourist entries — immigration actively monitors this and may deny re-entry.",
+            "Best use: first 1–3 months to scout neighbourhoods, visit schools, and decide on a long-term visa."
+          ]
         },
         {
           "type": "DTV — Destination Thailand Visa",
-          "duration": "180 days per entry (renewable once)",
-          "description": "Designed for remote workers and digital nomads. Requires proof of income and $15,000 in savings. Covers the applicant and immediate family."
+          "anchor": "visa-dtv",
+          "detailTitle": "DTV Visa — how to apply",
+          "duration": "180 days per entry",
+          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
+          "details": [
+            "Launched in 2024 — designed specifically for remote workers, digital nomads, and their families.",
+            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
+            "Requirement: evidence of $15,000 in savings (bank statements) — there is no fixed monthly income threshold.",
+            "Covers the visa holder and dependants (spouse and children) on the same application.",
+            "Apply at a Thai consulate or embassy in your home country — you cannot apply on arrival in Thailand.",
+            "Cost: approximately $50 per person, per entry. Much cheaper to maintain than the Elite over a few years.",
+            "No work permit is included — you are legally a visitor, not a worker. For most remote workers with foreign clients this is low risk in practice."
+          ],
+          "officialLink": {
+            "label": "DTV Visa — Royal Thai Embassy",
+            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+          }
         },
         {
-          "type": "Thailand Elite Visa",
+          "type": "Thailand Elite Privilege Card",
+          "anchor": "visa-elite",
+          "detailTitle": "Thailand Elite — long-stay membership",
           "duration": "5–20 years",
-          "description": "Paid long-stay visa starting from ~$15,000. No income requirements. Good option for families wanting multi-year stability."
+          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
+          "details": [
+            "A government-backed long-stay programme valid for 5 or 10 years. Not a work permit — but widely used by remote workers.",
+            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages are available.",
+            "No income or savings requirement — just the membership fee paid upfront.",
+            "Unlimited entries and stays for the full visa period. No 90-day reapplication, no consulate visits.",
+            "Best for: families wanting maximum stability without periodic visa runs, renewals, or embassy appointments.",
+            "The 5-year package works out to about $3,000/year — compare this to the time and cost of DTV renewals for larger families."
+          ],
+          "officialLink": {
+            "label": "Thailand Privilege Card — Official",
+            "url": "https://www.thailandprivilege.com"
+          }
         }
       ]
     },
     "housing": {
       "status": "estimated",
-      "summary": "Chiang Mai is extremely affordable. A large, modern 3-bedroom house in a gated community rents for $600–$1,200/month. Hang Dong and Nimmanhaemin are the most popular areas for expat families — close to international schools and good infrastructure.",
-      "bestAreas": ["Hang Dong", "Nimmanhaemin", "Santitham", "Doi Saket", "Mae Rim"]
+      "summary": "Chiang Mai is extremely affordable. A spacious 3-bedroom house in a gated village (called a 'moo ban') rents for $600–$1,200/month. Hang Dong is the top family area — close to international schools. Nimmanhaemin is the urban, walkable alternative preferred by digital nomads.",
+      "bestAreas": ["Hang Dong", "Nimmanhaemin", "Santitham", "Doi Saket", "Mae Rim"],
+      "searchPortalsIntro": [
+        "These are the main platforms locals and expats use for long-term rentals — much cheaper than Airbnb for monthly stays.",
+        "Tip: arrive on a 1–3 month short-stay first. It is far easier to negotiate rent and inspect properties in person than remotely."
+      ],
+      "searchPortals": [
+        { "label": "DDproperty.com — the main Thai property portal", "url": "https://www.ddproperty.com" },
+        { "label": "Hipflat.com — good for condos and serviced apartments", "url": "https://www.hipflat.co.th" },
+        { "label": "Fazwaz.com — English-language portal, easy for foreigners", "url": "https://www.fazwaz.com" },
+        { "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)" },
+        { "label": "Search on Facebook: 'Chiang Mai Homes for Rent' — dedicated rental listings group" }
+      ],
+      "typicalPrices": [
+        "1-bed condo, Nimmanhaemin: $300–$600/month",
+        "3-bed house in a moo ban (gated village), Hang Dong: $600–$1,200/month",
+        "3-bed house, Nimmanhaemin area: $700–$1,400/month",
+        "Serviced apartment (short-stay, bills included): $800–$1,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Passport",
+        "1–2 months deposit (negotiable — Thai landlords are generally flexible)",
+        "Current visa stamp as proof of status",
+        "Cash or bank transfer for deposit — most Thai landlords prefer cash or prompt transfer",
+        "Rental contracts are common but often simple 1-page documents in Thai — ask for an English version"
+      ]
     },
     "schools": {
       "status": "curated",
-      "summary": "Chiang Mai has several well-regarded international schools with English-medium instruction. Fees are a fraction of comparable schools in Europe or the US.",
-      "publicSystem": "Thai government schools are free but teach entirely in Thai. They are not a viable option for most expat families unless children are young and the family plans a very long stay (3+ years).",
-      "internationalOptions": "Several strong international schools operate in and around the Hang Dong area, convenient to the main expat neighbourhoods. Most follow US or international curricula. Fees are very affordable by international standards ($5,000–$12,000/year). Apply 3–6 months in advance.",
-      "languageNotes": "Thai is the language of instruction in all government schools. International schools teach entirely in English. Some offer Thai language classes as part of the curriculum. Most expat children do not need Thai for day-to-day life in Chiang Mai.",
+      "summary": "Chiang Mai has several strong international schools with English-medium instruction and affordable fees. Competition for places is far lower than in Europe — you can usually secure a spot 3–6 months in advance.",
+      "publicSystem": "Thai government schools are free but teach entirely in Thai. Not a realistic option for most expat families unless children are very young and the family plans a long stay of 3+ years. Private tutors for Thai language are easy to find and affordable ($10–$20/hr) if you want your child to pick up the language.",
+      "internationalOptions": "Most international schools cluster around the Hang Dong area, 15–20 minutes south of the city centre, close to the main expat neighbourhoods. Schools follow US or IB curricula in English. Fees range from $5,000–$12,000/year — a fraction of comparable schools in the UK or US. Apply 3–6 months before your target start date.",
+      "languageNotes": "International schools teach entirely in English. Most offer some Thai language classes. Expat children generally do not need Thai for daily life in Chiang Mai — the city is highly English-friendly in expat areas.",
+      "tip": "APIS and CMIS rarely have the 12-month waitlists common in European cities — but still apply early. Spaces in specific year groups can fill up.",
       "examples": [
-        {
-          "name": "Chiang Mai International School (CMIS)",
-          "curriculum": "US / ACSI",
-          "fees": "$5,000 – $8,000 / yr",
-          "url": "https://www.cmis.ac.th"
-        },
         {
           "name": "American Pacific International School (APIS)",
           "curriculum": "US",
@@ -615,29 +675,65 @@
           "url": "https://www.apis.ac.th"
         },
         {
-          "name": "NIST International School Chiang Mai",
+          "name": "Chiang Mai International School (CMIS)",
+          "curriculum": "US / ACSI",
+          "fees": "$5,000 – $8,000 / yr",
+          "url": "https://www.cmis.ac.th"
+        },
+        {
+          "name": "Prem Tinsulanonda International School",
           "curriculum": "IB",
-          "fees": "$8,000 – $12,000 / yr",
-          "url": "https://www.nist.ac.th"
+          "fees": "$10,000 – $16,000 / yr",
+          "url": "https://www.ptis.ac.th"
         }
       ]
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Chiang Mai has an abundance of affordable childcare options. Hiring a full-time nanny is accessible to most expat families at very low cost.",
-      "daycareNotes": "Private nurseries and international pre-schools are widely available, particularly near the expat neighbourhoods of Hang Dong and Nimmanhaemin. Many are bilingual (English/Thai). Costs range from $150–$400/month.",
-      "nannyNotes": "Hiring a full-time live-in or live-out Thai nanny is very common and affordable. Many experienced carers have worked with expat families before. English skills vary — allow time for a settling-in period.",
-      "typicalCost": "Full-time live-in nanny: $300–$500/month. Part-time nanny: $3–$5/hr. International nursery: $150–$400/month.",
-      "howFamiliesFindIt": "Facebook groups are the primary resource: 'Chiang Mai Expat Club', 'Chiang Mai Families', and 'Chiang Mai Mums'. Platforms like ThaiNanny.com and Fazwaz.com also post childcare listings."
+      "summary": "Childcare in Chiang Mai is abundant and very affordable. Hiring a full-time nanny — a luxury in most Western cities — is within easy reach for most expat families here.",
+      "daycareItems": [
+        "International nurseries and pre-schools are widely available in Hang Dong and Nimmanhaemin — most are bilingual (English/Thai)",
+        "Typical fees: $150–$400/month — far cheaper than equivalent daycare in Europe or the US",
+        "Most accept children from 18 months old; some from 1 year",
+        "Visit at least 2–3 nurseries in person before enrolling — English fluency of staff varies significantly"
+      ],
+      "nannyItems": [
+        "Full-time live-in nanny: $300–$500/month — one of the most affordable places in the world for this arrangement",
+        "Part-time live-out nanny: $3–$6/hr depending on English level and experience",
+        "Many Thai nannies have prior experience with expat families — ask specifically for this when posting",
+        "English fluency varies — build in a 2–4 week settling-in period and be patient"
+      ],
+      "whereToFindItems": [
+        "Facebook: 'Chiang Mai Expat Club' — the most common way expat families find nannies",
+        "Facebook: 'Chiang Mai Mums' — good for parent-to-parent recommendations",
+        "ThaiNanny.com — dedicated nanny platform with profiles and reviews",
+        "Word of mouth at international school gates — the fastest route to a vetted referral"
+      ]
     },
     "healthcare": {
       "status": "curated",
-      "summary": "Chiang Mai has excellent private hospitals including Bangkok Hospital Chiang Mai, Chiang Mai Ram, and Rajavej Hospital. Quality is high and costs are very low — a GP consultation is $15–$30, and specialist visits rarely exceed $100."
+      "summary": "Chiang Mai has excellent private hospitals used by locals and expats alike. There is no public healthcare system for foreigners — all expat families use private care. The good news: quality is genuinely high and costs are a fraction of the US or Europe.",
+      "tip": "Get international health insurance before you fly — good family plans start around $200–$400/month and cover Thailand fully. Do not rely on travel insurance for long-term healthcare.",
+      "items": [
+        "There is no public healthcare for foreigners in Thailand — all expat families rely entirely on private hospitals.",
+        "Bangkok Hospital Chiang Mai and Chiang Mai Ram Hospital are the two top private hospitals — both have English-speaking doctors and 24-hour emergency care.",
+        "Costs are very low: a GP consultation is $15–$30, specialist visits $40–$80, and even emergency treatment rarely exceeds $500.",
+        "Get international private health insurance (IPMI) before arriving — AXA, Cigna, and Pacific Cross are popular with Chiang Mai expats. Family plans start around $200–$400/month.",
+        "Lower-cost local Thai insurance (BUPA Thailand, Pacific Cross Thailand) starts around $100–$150/month per adult — covers Thai hospitals only but is much cheaper.",
+        "Pharmacy care is excellent and widely available — many medications available over the counter that require a prescription in the West."
+      ]
     },
     "safety": {
       "status": "estimated",
-      "score": 88,
-      "summary": "Chiang Mai is generally very safe for families. Violent crime against foreigners is rare. The main concerns are road safety (motorcycle accidents), petty theft in tourist areas, and the annual smoke season which is a health hazard for children and those with respiratory conditions."
+      "score": 82,
+      "summary": "Chiang Mai is safe for families day to day. Violent crime against foreigners is rare. The two biggest risks are road safety and the annual smoke season.",
+      "items": [
+        "Violent crime against foreigners is rare — Chiang Mai consistently ranks as one of Southeast Asia's safer cities for expats.",
+        "Road safety is the biggest daily risk — motorbike accidents are the leading cause of serious injury among expats. Avoid renting or riding motorbikes, especially with children.",
+        "Smoke season (February–April) brings hazardous air quality from agricultural burning — buy air purifiers for your home and limit outdoor time for children during this period.",
+        "Petty theft (phone snatching, bag theft) occurs around busy night markets — keep valuables secure.",
+        "The main expat areas (Hang Dong, Nimmanhaemin) are quiet, well-lit, and safe at all hours."
+      ]
     },
     "cost": {
       "status": "estimated",
@@ -646,18 +742,43 @@
     },
     "sources": {
       "visa": [
-        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" },
+        { "label": "Thailand Privilege Card — Official", "url": "https://www.thailandprivilege.com" }
       ],
       "schools": [
-        { "label": "Chiang Mai International School (CMIS)", "url": "https://www.cmis.ac.th" },
-        { "label": "American Pacific International School", "url": "https://www.apis.ac.th" }
+        { "label": "American Pacific International School (APIS)", "url": "https://www.apis.ac.th" },
+        { "label": "Chiang Mai International School (CMIS)", "url": "https://www.cmis.ac.th" }
       ],
       "cost": [
         { "label": "Chiang Mai Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai" }
       ]
     },
+    "residency": {
+      "title": "Registration & 90-day report",
+      "tip": "Do your 90-day report online at imm.immigration.go.th — it takes 5 minutes and saves a trip to the immigration office.",
+      "items": [
+        "Thailand has no residency permit or local ID system for foreigners. Your passport and current visa stamp are your only official documents here.",
+        "Your landlord is legally required to file a TM30 form (address registration with Thai immigration) within 24 hours of your arrival at the property — ask them to do this or they may face a fine.",
+        "All visa holders must report their address to immigration every 90 days — this is called the 90-day report. File online at imm.immigration.go.th or in person at the Chiang Mai Immigration Office on Airport Road.",
+        "Keep a copy of every visa stamp, extension approval, and 90-day receipt — immigration officers ask for these when processing renewals.",
+        "No certificate of residence or local ID card is issued. For school enrolment, banking, and admin your passport plus current visa stamp serves as your complete ID."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Open your bank account in the first month — rent, school fees, and utility autopay all work more smoothly with a local account.",
+      "items": [
+        "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks — both have English-language apps and accept non-immigrant visa holders.",
+        "To open an account you generally need: passport, current non-immigrant visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "Some Bangkok Bank branches accept tourist visa holders — worth asking, but not guaranteed.",
+        "Use Wise or Revolut for receiving international income and converting to Thai Baht — fees are much lower than traditional bank wire transfers.",
+        "KBank's K Plus app and Bangkok Bank Mobile both support English and handle QR payments, transfers, and bill pay well.",
+        "Cash is still widely used at markets, small restaurants, and local shops — keep 500–2,000 THB (about $15–$60) on hand at all times."
+      ]
+    },
     "communityLinks": [
-      { "label": "Chiang Mai Expat Club — Facebook", "url": "https://www.facebook.com/groups/chiangmaiexpatclub" }
+      { "label": "Chiang Mai Expat Club — Facebook", "url": "https://www.facebook.com/groups/chiangmaiexpatclub" },
+      { "label": "Chiang Mai Mums — Facebook", "url": "https://www.facebook.com/groups/chiangmaimums" }
     ]
   },
   {
