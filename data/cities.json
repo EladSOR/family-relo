@@ -120,11 +120,11 @@
       "summary": "Spain's public healthcare is excellent. Registered residents receive a SIP card granting free access to the public system.",
       "tip": "Bring your Padrón certificate on your first visit — without it the registration cannot proceed.",
       "items": [
-        "Register at your local Centro de Salud (public health centre) with your Padrón certificate to receive a SIP card — this gives free access to Spain's public healthcare",
-        "The SIP card covers GP visits, specialist referrals, hospital care, and subsidised prescriptions for all registered family members",
-        "Each child must be registered separately at the health centre — bring their passport and your Padrón certificate",
-        "Private clinics are widely available — a GP visit costs €50–€80 out of pocket, less with private insurance",
-        "Popular private insurers for expats: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month"
+        "Go to your local Centro de Salud (public health clinic) with your Padrón certificate to get a SIP card — Spain's free healthcare registration card that activates your access to the public system.",
+        "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every family member who is registered.",
+        "Each child needs their own SIP card — register them separately at the same clinic, bringing their passport and your Padrón certificate.",
+        "Private clinics are fast and affordable — a GP appointment costs €50–€80 without insurance, and results are usually same-day.",
+        "Popular private health insurers for expats: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month and give access to English-speaking doctors."
       ]
     },
     "safety": {
@@ -158,21 +158,21 @@
     },
     "residency": {
       "items": [
-        "Register on the Padrón Municipal at your local Ayuntamiento within 30 days of arrival — bring your passport, rental contract, and proof of address.",
-        "The Padrón certificate unlocks everything: school enrolment, SIP healthcare card, NIE appointment, and your future TIE residency card.",
-        "Book your Padrón appointment online via the Valencia Ayuntamiento website — walk-in slots fill up fast.",
-        "After 1 year on the Padrón, non-EU residents can apply for the TIE (Tarjeta de Identidad de Extranjero), the physical residency card."
+        "Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall) within 30 days of arriving. Bring your passport, rental contract, and proof of address.",
+        "Your Padrón certificate is proof that you live here. Without it you cannot get your healthcare card, book your NIE appointment, or enrol your children in school.",
+        "Book your appointment online at the Valencia Ayuntamiento website (valenciaciudat.com) — walk-in slots are very limited and often unavailable.",
+        "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card that legally proves your right to live here long-term."
       ]
     },
     "banking": {
       "title": "Banking & NIE",
       "tip": "Start the NIE process the week you arrive — appointment slots at the Extranjería book out 4–8 weeks.",
       "items": [
-        "Apply for your NIE (Número de Identidad de Extranjero) as soon as you arrive — required to open a bank account, sign a lease, and enrol children in school.",
-        "NIE appointments at the Extranjería (foreign police station) can take 4–8 weeks to book — start the process immediately.",
-        "While waiting for your NIE, use N26 or Wise as a temporary account — they open without a Spanish address or NIE.",
-        "Once you have your NIE, open a Spanish account: BBVA, Sabadell, and CaixaBank are popular with expats; most landlords require a local IBAN.",
-        "Documents most banks require: passport, NIE, Padrón certificate, and proof of income or employment contract."
+        "Apply for your NIE — your Spanish foreigner ID number — as soon as you arrive. You need it to open a bank account, sign a lease, and enrol your children in school.",
+        "NIE appointments are booked at the Extranjería (the local immigration office). Slots fill up 4–8 weeks in advance — book online on your first week, not when you need it.",
+        "While waiting for your NIE, use N26 or Wise for day-to-day spending. Both open with just your passport — no Spanish address or NIE needed.",
+        "Once you have your NIE, open a Spanish bank account. BBVA, Sabadell, and CaixaBank are popular with expats — most landlords require a local account number (IBAN) for rent payments.",
+        "Most banks ask for: passport, NIE, Padrón certificate (your proof of local address), and a recent payslip or employment contract."
       ]
     },
     "communityLinks": [
