@@ -24,22 +24,28 @@ export interface Destination {
   /**
    * Ordered, concrete action steps a family should take to relocate here.
    * Written in plain language. Drives the "Action Checklist" UX.
-   * `targetSection` optionally links the step to the relevant page section.
+   *
+   * RULE: Every `targetSection` must be one of the approved section ids.
+   * At most 2 items per checklist may omit `targetSection` (general logistics only).
    */
   actionChecklist: {
     label: string;
-    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking" | "safety"
-      | "visa-income" | "visa-documents" | "visa-insurance" | "visa-apply" | "visa-d8";
+    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking" | "safety";
   }[];
 
   familyFit: {
+    /** Exactly 4 items — specific family archetypes */
     bestFor: string[];
+    /** Exactly 4 items — honest, specific trade-offs */
     watchOutFor: string[];
   };
 
   /**
-   * City-specific visa overrides. When absent, the page falls back to
+   * City-specific visa options. When absent, the page falls back to
    * the shared country-level visa data from `data/countries.json`.
+   *
+   * RULE: Every VisaOption must have `anchor`, `detailTitle`, and `details[]`.
+   * New anchors must also be registered in `components/VisaPathSelector.tsx`.
    */
   visa?: {
     status: DataStatus;
@@ -48,13 +54,34 @@ export interface Destination {
     tip?: string;
   };
 
+  /**
+   * Housing section — all four blocks are required.
+   *
+   * RULE: All four content blocks must be populated before shipping a city page.
+   * The renderer displays them in a fixed order: search → prices → areas → requirements.
+   * Use `typicalPrices` and `whatYouNeedToRent` fallbacks only if data is truly unavailable.
+   */
   housing: {
     status: DataStatus;
+    /** 1–2 sentence overview of the housing market */
     summary: string;
+    /** Neighbourhood names — shown as chips in "Best areas for families" block */
     bestAreas: string[];
-    searchPortalsIntro?: string[];
-    searchPortals?: { label: string; url?: string }[];
+    /**
+     * Three-line intro for the "Where to search" block.
+     * Line 1: what these platforms are.
+     * Line 2: "Search '[City Name]' inside each platform…"
+     * Line 3: Tip for arrival/short-stay.
+     */
+    searchPortalsIntro: string[];
+    /**
+     * List of rental platforms. Use root URLs only — no deep/filtered links.
+     * Facebook entries must be text-only (no `url` field).
+     */
+    searchPortals: { label: string; url?: string }[];
+    /** Bullet list of 4–5 typical monthly rent examples in local currency */
     typicalPrices?: string[];
+    /** Bullet list of documents and requirements to rent in this city */
     whatYouNeedToRent?: string[];
   };
 
@@ -65,58 +92,101 @@ export interface Destination {
     internationalOptions: string;
     languageNotes: string;
     examples: SchoolExample[];
+    /** One urgent, specific action — e.g. "Apply to X before booking flights" */
     tip?: string;
   };
 
+  /**
+   * Childcare section — structured three-block format required.
+   *
+   * RULE: Use the three `*Items` arrays. Do not use the deprecated prose fields.
+   */
   childcare: {
     status: DataStatus;
+    /** 1–2 sentence overview */
     summary: string;
-    daycareNotes: string;
-    nannyNotes: string;
-    typicalCost: string;
-    howFamiliesFindIt: string;
-    /** Structured bullet list for daycare/nurseries (replaces daycareNotes when present) */
-    daycareItems?: string[];
-    /** Structured bullet list for nanny/au pair (replaces nannyNotes when present) */
-    nannyItems?: string[];
-    /** Structured bullet list for where to find childcare (replaces howFamiliesFindIt when present) */
-    whereToFindItems?: string[];
+    /** Bullet list: daycare/nursery availability, prices, tips */
+    daycareItems: string[];
+    /** Bullet list: nanny/au pair rates, cultural notes, timing */
+    nannyItems: string[];
+    /** Bullet list: where families actually find childcare in this city */
+    whereToFindItems: string[];
+    /** @deprecated Use `daycareItems` instead */
+    daycareNotes?: string;
+    /** @deprecated Use `nannyItems` instead */
+    nannyNotes?: string;
+    /** @deprecated Use `daycareItems` and `nannyItems` instead */
+    typicalCost?: string;
+    /** @deprecated Use `whereToFindItems` instead */
+    howFamiliesFindIt?: string;
   };
 
+  /**
+   * Healthcare section — structured bullet list required.
+   *
+   * RULE: Use `items[]`. The `summary` prose field is deprecated.
+   */
   healthcare: {
     status: DataStatus;
-    summary: string;
-    items?: string[];
+    /** @deprecated Use `items[]` instead */
+    summary?: string;
+    /** 5 bullets: system access, top facility, cost anchor, insurance, local quirk */
+    items: string[];
+    /** One actionable tip — the single most important thing to do */
     tip?: string;
   };
 
+  /**
+   * Safety section — structured bullet list required.
+   *
+   * RULE: Use `items[]`. Score must be between 75 and 90.
+   */
   safety: {
     status: DataStatus;
+    /** Honest safety score. Range: 75–90. Do not inflate. */
     score: number;
-    summary: string;
-    /** Structured bullet list (replaces summary paragraph when present) */
-    items?: string[];
+    /** @deprecated Use `items[]` instead */
+    summary?: string;
+    /** 5 bullets: crime, #1 daily risk, local hazard, area contrast, norms */
+    items: string[];
   };
 
-  residency?: {
+  /**
+   * Residency registration section — required for all city pages.
+   *
+   * RULE: Must be present. All local terms must be explained inline on first use.
+   */
+  residency: {
     title?: string;
+    /** 4–5 actionable bullets */
+    items: string[];
+    /** One tip — include a URL if a stable official link exists */
+    tip?: string;
+  };
+
+  /**
+   * Banking section — required for all city pages.
+   */
+  banking: {
+    title?: string;
+    /** 4–5 actionable bullets: banks, documents, digital bridge, transfers, cash */
     items: string[];
     tip?: string;
   };
 
-  banking?: {
-    title?: string;
-    items: string[];
-    tip?: string;
-  };
-
+  /**
+   * Quick-stat cost cards shown at the top of the page and on homepage cards.
+   *
+   * RULE: All three fields use a single approximate value with `~` prefix in local currency.
+   * `nannyRate` is hourly. `rentRange` is monthly. Never use ranges.
+   */
   cost: {
     status: DataStatus;
-    /** Approximate monthly rent for a 3-bed family home in local currency, e.g. "~€1,300 / month" */
+    /** e.g. "~€1,300 / month" */
     rentRange: string;
-    /** Approximate cost of a mid-range family dinner (2 adults + kids) in local currency, e.g. "~€45" */
+    /** e.g. "~€45" */
     familyDinner: string;
-    /** Approximate nanny hourly rate in local currency, e.g. "~€12 / hr" */
+    /** e.g. "~€12 / hr" */
     nannyRate: string;
     /** @deprecated */
     childcare?: string;
@@ -126,12 +196,12 @@ export interface Destination {
     nannyHourly?: number;
   };
 
-  /** Sources organised by topic section for credibility and SEO */
+  /** Sources organised by topic section for credibility */
   sources: SectionSources;
 
   /**
-   * Links to community resources (Facebook groups, expat forums, WhatsApp groups).
-   * Kept separate from sources to distinguish community knowledge from official data.
+   * Community links (Facebook groups, expat forums).
+   * Kept separate from `sources` — these are community knowledge, not official data.
    */
   communityLinks?: Source[];
 }
@@ -139,7 +209,6 @@ export interface Destination {
 // ── Trust / verification layer ────────────────────────────────────────────────
 
 /**
- * Indicates the confidence level of a data section:
  * - "verified"  — sourced from an official government or institutional document
  * - "curated"   — editorially researched from reputable secondary sources
  * - "estimated" — ballpark figures based on community data or cost-of-living indices
@@ -151,38 +220,33 @@ export type DataStatus = "verified" | "curated" | "estimated" | "draft";
 
 /** A named sub-section inside a visa option's detail area, with its own scroll anchor. */
 export interface VisaSection {
-  /** Anchor id, e.g. "visa-income". Rendered as id="..." on the sub-heading. */
   id: string;
   heading: string;
   items: string[];
-  /** Optional official government link rendered as a button below the bullet list. */
   officialLink?: { label: string; url: string };
 }
 
+/**
+ * RULE: Every VisaOption that should be interactive must have:
+ * - `anchor`      — unique string like "visa-dtv". Register in VisaPathSelector.tsx.
+ * - `detailTitle` — heading for the detail panel
+ * - `details[]`   — 4–6 flat bullet strings explaining how to apply
+ */
 export interface VisaOption {
   type: string;
   duration?: string;
   description?: string;
-  /** Scroll-target id for this option, e.g. "visa-dnv". When set the card becomes a clickable anchor. */
   anchor?: string;
-  /** Heading shown inside the detail section (falls back to `type` if omitted). */
   detailTitle?: string;
-  /** Flat bullet list. Used when the option does not need named sub-sections. */
+  /** Flat bullet list — used when no named sub-sections are needed */
   details?: string[];
-  /** Structured sub-sections with individual anchor ids. Takes precedence over `details` when present. */
+  /** Structured sub-sections — takes precedence over `details` when present */
   sections?: VisaSection[];
-  /** Official government link shown inside the option's detail block. */
   officialLink?: { label: string; url: string };
 }
 
 // ── Country-level shared data ─────────────────────────────────────────────────
 
-/**
- * Shared country-level data stored in `data/countries.json`.
- * City pages fall back to this when the city object does not define its own
- * version of a section (currently: visa). Other countries can be added to
- * `countries.json` with the same shape and the same fallback logic will apply.
- */
 export interface CountryData {
   name: string;
   visa?: {
@@ -195,9 +259,7 @@ export interface CountryData {
 
 export interface SchoolExample {
   name: string;
-  /** Curriculum type, e.g. "IB", "British", "US / IB" */
   curriculum: string;
-  /** Human-readable annual fee range, e.g. "$10,000 – $13,000 / yr" */
   fees?: string;
   url?: string;
 }
@@ -207,10 +269,6 @@ export interface Source {
   url: string;
 }
 
-/**
- * Sources grouped by topic — only official, institutional, or stable public sources.
- * Community links (Facebook groups, forums) belong in Destination.communityLinks.
- */
 export interface SectionSources {
   visa?: Source[];
   schools?: Source[];

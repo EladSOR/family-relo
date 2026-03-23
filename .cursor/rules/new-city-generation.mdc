@@ -88,23 +88,33 @@ See `external-links.mdc` for full link rules. Summary:
 
 ## RULE 5 — Section structure: all required, correct format
 
-Every city entry must include all of these sections:
+Every city entry must include all of these sections.
+`residency` and `banking` are **required objects**, not optional.
+`housing` must have `searchPortalsIntro` and `searchPortals` populated.
+`childcare` must use the three `*Items` arrays — not the deprecated prose fields.
+`healthcare` and `safety` must use `items[]` arrays — not prose `summary` fields.
 
 | Section | Required format |
 |---|---|
 | `actionChecklist` | 8–10 items, all targeted |
 | `familyFit` | `bestFor` (4 items) + `watchOutFor` (4 items) |
 | `visa` | 2–3 options with `anchor`, `detailTitle`, `details[]`, `officialLink` where stable |
-| `residency` | Object with `title`, `items[]` (4–5 bullets), `tip` |
-| `banking` | Object with `title`, `items[]` (4–5 bullets), `tip` |
-| `housing` | Full 4-block: `searchPortalsIntro`, `searchPortals`, `typicalPrices`, `whatYouNeedToRent` |
+| `residency` | **Required**. `title?`, `items[]` (4–5 bullets), `tip?` |
+| `banking` | **Required**. `title?`, `items[]` (4–5 bullets), `tip?` |
+| `housing` | **Required**: `searchPortalsIntro` (3 lines), `searchPortals[]`. Optional: `typicalPrices[]`, `whatYouNeedToRent[]` |
 | `schools` | `summary`, `publicSystem`, `internationalOptions`, `languageNotes`, `tip`, `examples[]` (min. 3) |
-| `childcare` | `daycareItems[]`, `nannyItems[]`, `whereToFindItems[]` — no prose paragraphs |
-| `healthcare` | `items[]` (5 bullets), `tip` |
-| `safety` | `items[]` (5 bullets), `score` (75–90) |
+| `childcare` | **Required**: `daycareItems[]`, `nannyItems[]`, `whereToFindItems[]` — no prose |
+| `healthcare` | **Required**: `items[]` (5 bullets), `tip?` — no prose `summary` |
+| `safety` | **Required**: `items[]` (5 bullets), `score` (75–90) — no prose `summary` |
 | `cost` | `rentRange`, `familyDinner`, `nannyRate` — see Rule 6 |
 
 **Do not leave any section as a placeholder string.** If data is unavailable, use honest approximations with "typically" — never invent specific figures.
+
+**Deprecated fields** — do not use these in new city entries:
+- `childcare.daycareNotes`, `nannyNotes`, `typicalCost`, `howFamiliesFindIt`
+- `healthcare.summary` (use `items[]` instead)
+- `safety.summary` (use `items[]` instead)
+- `cost.childcare`, `cost.childcareType`, `cost.nannyHourly`
 
 ---
 

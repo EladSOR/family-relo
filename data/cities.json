@@ -224,7 +224,8 @@
         "Your Padrón certificate is proof that you live here. Without it you cannot get your healthcare card, book your NIE appointment, or enrol your children in school.",
         "Book your appointment online at the Valencia Ayuntamiento website (valenciaciudat.com) — walk-in slots are very limited and often unavailable.",
         "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card that legally proves your right to live here long-term."
-      ]
+      ],
+      "tip": "Book your Padrón appointment at valenciaciudat.com on your first week — walk-in slots are rarely available and appointment queues fill 3–5 weeks ahead."
     },
     "banking": {
       "title": "Banking & NIE",
@@ -667,6 +668,42 @@
         "Jumeirah",
         "Mirdif",
         "The Springs"
+      ],
+      "searchPortalsIntro": [
+        "These are local property platforms — this is where residents rent long-term family housing.",
+        "Search 'Dubai' inside each platform to filter local listings.",
+        "Tip: most Dubai leases are annual. Start with a furnished short-term rental for 1–2 months while you scout the right neighbourhood and school zone."
+      ],
+      "searchPortals": [
+        {
+          "label": "Bayut.com — Dubai's most widely used property portal",
+          "url": "https://www.bayut.com"
+        },
+        {
+          "label": "PropertyFinder.ae — strong selection for family villas and apartments",
+          "url": "https://www.propertyfinder.ae"
+        },
+        {
+          "label": "Dubizzle.com — includes direct landlord listings and no-agent deals",
+          "url": "https://www.dubizzle.com"
+        },
+        {
+          "label": "Search on Facebook: 'Dubai Expats' — community group with housing posts and direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Dubai Marina / JBR: ~AED 7,000–9,000 / month",
+        "2-bed apartment, Dubai Marina / Business Bay: ~AED 10,000–14,000 / month",
+        "3-bed apartment, Downtown / DIFC: ~AED 15,000–22,000 / month",
+        "3-bed villa, Arabian Ranches or The Springs: ~AED 15,000–25,000 / month",
+        "4-bed villa, Jumeirah / Mirdif (closer to British schools): ~AED 25,000–45,000 / month"
+      ],
+      "whatYouNeedToRent": [
+        "Passport and UAE residency visa (or proof of application in progress)",
+        "Emirates ID (or Emirates ID application receipt — landlords accept this during the processing period)",
+        "Post-dated cheques: most landlords require 1–4 cheques to cover the full annual rent upfront",
+        "Security deposit: typically 5% of annual rent (refundable on exit in good condition)",
+        "EJARI registration: your landlord must register the tenancy contract on the EJARI system — this is your legal protection as a tenant in Dubai"
       ]
     },
     "schools": {
@@ -1226,6 +1263,40 @@
         "Baan Tai",
         "Thong Nai Pan",
         "Chaloklum"
+      ],
+      "searchPortalsIntro": [
+        "These are the main platforms used to find long-term housing on Koh Phangan.",
+        "Search 'Koh Phangan' inside each platform to filter local listings.",
+        "Tip: the best homes in Sri Thanu and Haad Yao go by word-of-mouth. Join the Facebook groups before arriving and post what you are looking for — many landlords never list online."
+      ],
+      "searchPortals": [
+        {
+          "label": "DDproperty.com — Thailand's main property portal",
+          "url": "https://www.ddproperty.com"
+        },
+        {
+          "label": "Fazwaz.com — English-language portal, island listings available",
+          "url": "https://www.fazwaz.com"
+        },
+        {
+          "label": "Search on Facebook: 'Koh Phangan Expats' — largest community group, direct landlord posts"
+        },
+        {
+          "label": "Search on Facebook: 'Koh Phangan Family Community' — family-specific housing recommendations"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed house or bungalow, Sri Thanu: ฿8,000–15,000 / month",
+        "2-bed house with garden, Sri Thanu / Haad Yao: ฿12,000–22,000 / month",
+        "3-bed house with pool, Sri Thanu: ฿22,000–40,000 / month",
+        "Furnished short-stay option (bills included): ฿15,000–30,000 / month"
+      ],
+      "whatYouNeedToRent": [
+        "Passport and current visa stamp",
+        "1–2 months security deposit in cash",
+        "Rental agreements on the island are often informal — always get a written contract with the monthly rate, deposit terms, and notice period",
+        "Ask your landlord to file the TM30 address form with immigration within 24 hours of arrival — they are legally required to do this",
+        "Check whether the property has a UPS or voltage stabiliser — power fluctuations are common on the island"
       ]
     },
     "schools": {
@@ -1451,6 +1522,40 @@
         "Chaweng Noi",
         "Nathon",
         "Lipa Noi"
+      ],
+      "searchPortalsIntro": [
+        "These are the main platforms used to find long-term housing on Koh Samui.",
+        "Search 'Koh Samui' inside each platform to filter local listings.",
+        "Tip: spend 2–4 weeks in a short-term rental on the north coast (Bophut, Maenam) before committing — it is much easier to find a good deal once you are already on the island."
+      ],
+      "searchPortals": [
+        {
+          "label": "DDproperty.com — Thailand's main property portal",
+          "url": "https://www.ddproperty.com"
+        },
+        {
+          "label": "Fazwaz.com — English-language portal, easier for foreign renters",
+          "url": "https://www.fazwaz.com"
+        },
+        {
+          "label": "Search on Facebook: 'Samui Expats' — the primary community group for housing posts and direct landlord deals"
+        },
+        {
+          "label": "Search on Facebook: 'Koh Samui Property For Rent' — dedicated rental listings group"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed condo or apartment, Bophut / Maenam: ฿12,000–20,000 / month",
+        "2-bed house, north coast family areas: ฿20,000–38,000 / month",
+        "3-bed pool villa, Bophut / Maenam / Plai Laem: ฿40,000–75,000 / month",
+        "Furnished short-stay apartment (bills included): ฿25,000–55,000 / month"
+      ],
+      "whatYouNeedToRent": [
+        "Passport and current visa stamp",
+        "1–2 months security deposit in cash",
+        "Monthly rent is usually paid by cash or Thai bank transfer",
+        "Rental contracts are often bilingual (Thai and English) — read both versions before signing",
+        "Ask your landlord to file the TM30 address registration form with immigration within 24 hours of your arrival — required by Thai law"
       ]
     },
     "schools": {

@@ -50,8 +50,6 @@ export default async function CityPage({ params }: Props) {
   const image = CITY_IMAGES[dest.city] ?? FALLBACK_IMAGE;
 
   // Visa data: city-specific first, then shared country-level fallback.
-  // This lets Spain (and later Portugal, Thailand, UAE) share visa content
-  // without duplicating it in every city object.
   const countries = countriesData as unknown as Record<string, CountryData>;
   const visaData = dest.visa ?? countries[dest.countrySlug]?.visa;
 
@@ -179,43 +177,25 @@ export default async function CityPage({ params }: Props) {
         </Section>
 
         {/* ── Residency ─────────────────────────────────────────────────── */}
-        {dest.residency && (
-          <Section
-            id="residency"
-            title={dest.residency.title ?? "Residency registration"}
-            icon={<Landmark size={16} className="text-slate-500" />}
-            meta={reviewedLabel(dest.lastReviewed)}
-          >
-            <ul className="space-y-2">
-              {dest.residency.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            {dest.residency.tip && <Tip text={dest.residency.tip} />}
-          </Section>
-        )}
+        <Section
+          id="residency"
+          title={dest.residency.title ?? "Residency registration"}
+          icon={<Landmark size={16} className="text-slate-500" />}
+          meta={reviewedLabel(dest.lastReviewed)}
+        >
+          <BulletList items={dest.residency.items} />
+          {dest.residency.tip && <Tip text={dest.residency.tip} />}
+        </Section>
 
         {/* ── Banking ───────────────────────────────────────────────────── */}
-        {dest.banking && (
-          <Section
-            id="banking"
-            title={dest.banking.title ?? "Banking"}
-            icon={<CreditCard size={16} className="text-slate-500" />}
-          >
-            <ul className="space-y-2">
-              {dest.banking.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            {dest.banking.tip && <Tip text={dest.banking.tip} />}
-          </Section>
-        )}
+        <Section
+          id="banking"
+          title={dest.banking.title ?? "Banking"}
+          icon={<CreditCard size={16} className="text-slate-500" />}
+        >
+          <BulletList items={dest.banking.items} />
+          {dest.banking.tip && <Tip text={dest.banking.tip} />}
+        </Section>
 
         {/* ── Housing ───────────────────────────────────────────────────── */}
         <Section
@@ -225,82 +205,78 @@ export default async function CityPage({ params }: Props) {
           sources={dest.sources.housing}
         >
           <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.housing.summary}</p>
-          {dest.housing.searchPortals ? (
-            <div className="space-y-6">
-              {/* Block 1: Where to search */}
-              <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to search</h4>
-                {dest.housing.searchPortalsIntro && (
-                  <div className="mb-3 space-y-1">
-                    {dest.housing.searchPortalsIntro.map((line, i) => (
-                      <p key={i} className="text-sm italic text-slate-500">{line}</p>
-                    ))}
-                  </div>
-                )}
-                <ul className="space-y-1.5">
-                  {dest.housing.searchPortals.map((p, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                      {p.url ? (
-                        <a href={p.url} target="_blank" rel="noopener noreferrer" className="cursor-pointer text-blue-600 underline-offset-2 hover:underline">
-                          {p.label}
-                        </a>
-                      ) : (
-                        <span>{p.label}</span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+
+          <div className="space-y-6">
+
+            {/* Block 1 — Where to search */}
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to search</h4>
+              <div className="mb-3 space-y-1">
+                {dest.housing.searchPortalsIntro.map((line, i) => (
+                  <p key={i} className="text-sm italic text-slate-500">{line}</p>
+                ))}
               </div>
-              {/* Block 2: Typical prices */}
-              {dest.housing.typicalPrices && (
-                <div>
-                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
-                  <ul className="space-y-1.5">
-                    {dest.housing.typicalPrices.map((line, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                        {line}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {/* Block 3: Best areas for families */}
+              <ul className="space-y-1.5">
+                {dest.housing.searchPortals.map((p, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                    {p.url ? (
+                      <a href={p.url} target="_blank" rel="noopener noreferrer"
+                         className="cursor-pointer text-blue-600 underline-offset-2 hover:underline">
+                        {p.label}
+                      </a>
+                    ) : (
+                      <span>{p.label}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Block 2 — Typical monthly rents */}
+            {dest.housing.typicalPrices && dest.housing.typicalPrices.length > 0 ? (
               <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Best areas for families</h4>
-                <div className="flex flex-wrap gap-2">
-                  {dest.housing.bestAreas.map((area) => (
-                    <span key={area} className="cursor-default rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
-                      {area}
-                    </span>
-                  ))}
-                </div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
+                <BulletList items={dest.housing.typicalPrices} />
               </div>
-              {/* Block 4: What you need to rent */}
-              {dest.housing.whatYouNeedToRent && (
-                <div>
-                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
-                  <ul className="space-y-1.5">
-                    {dest.housing.whatYouNeedToRent.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+            ) : (
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
+                <p className="text-sm italic text-slate-400">
+                  Search the portals above for current pricing — rates vary by neighbourhood and season.
+                </p>
+              </div>
+            )}
+
+            {/* Block 3 — Best areas for families */}
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Best areas for families</h4>
+              <div className="flex flex-wrap gap-2">
+                {dest.housing.bestAreas.map((area) => (
+                  <span key={area}
+                        className="cursor-default rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
+                    {area}
+                  </span>
+                ))}
+              </div>
             </div>
-          ) : (
-            <div className="flex flex-wrap gap-2">
-              {dest.housing.bestAreas.map((area) => (
-                <span key={area} className="rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-slate-700 ring-1 ring-slate-200">
-                  {area}
-                </span>
-              ))}
-            </div>
-          )}
+
+            {/* Block 4 — What you need to rent */}
+            {dest.housing.whatYouNeedToRent && dest.housing.whatYouNeedToRent.length > 0 ? (
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
+                <BulletList items={dest.housing.whatYouNeedToRent} />
+              </div>
+            ) : (
+              <div>
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
+                <p className="text-sm italic text-slate-400">
+                  Requirements vary by landlord — check with local agents for current documentation needs.
+                </p>
+              </div>
+            )}
+
+          </div>
         </Section>
 
         {/* ── Schools ───────────────────────────────────────────────────── */}
@@ -361,54 +337,20 @@ export default async function CityPage({ params }: Props) {
         {/* ── Childcare ─────────────────────────────────────────────────── */}
         <Section id="childcare" title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
           <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.childcare.summary}</p>
-          {dest.childcare.daycareItems ? (
-            <div className="space-y-6">
-              <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Daycare &amp; nurseries</h4>
-                <ul className="space-y-1.5">
-                  {dest.childcare.daycareItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              {dest.childcare.nannyItems && (
-                <div>
-                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Nanny &amp; au pair</h4>
-                  <ul className="space-y-1.5">
-                    {dest.childcare.nannyItems.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {dest.childcare.whereToFindItems && (
-                <div>
-                  <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to find childcare</h4>
-                  <ul className="space-y-1.5">
-                    {dest.childcare.whereToFindItems.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+          <div className="space-y-6">
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Daycare &amp; nurseries</h4>
+              <BulletList items={dest.childcare.daycareItems} />
             </div>
-          ) : (
-            <div className="space-y-4">
-              <DetailRow label="Daycare & nurseries" value={dest.childcare.daycareNotes} />
-              <DetailRow label="Nanny & au pair" value={dest.childcare.nannyNotes} />
-              <DetailRow label="Typical cost" value={dest.childcare.typicalCost} />
-              <DetailRow label="How families find it" value={dest.childcare.howFamiliesFindIt} />
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Nanny &amp; au pair</h4>
+              <BulletList items={dest.childcare.nannyItems} />
             </div>
-          )}
+            <div>
+              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to find childcare</h4>
+              <BulletList items={dest.childcare.whereToFindItems} />
+            </div>
+          </div>
         </Section>
 
         {/* ── Healthcare ────────────────────────────────────────────────── */}
@@ -419,18 +361,7 @@ export default async function CityPage({ params }: Props) {
           meta={reviewedLabel(dest.lastReviewed)}
           sources={dest.sources.healthcare}
         >
-          {dest.healthcare.items ? (
-            <ul className="space-y-1.5">
-              {dest.healthcare.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm leading-relaxed text-slate-600">{dest.healthcare.summary}</p>
-          )}
+          <BulletList items={dest.healthcare.items} />
           {dest.healthcare.tip && <Tip text={dest.healthcare.tip} />}
         </Section>
 
@@ -440,18 +371,7 @@ export default async function CityPage({ params }: Props) {
             <span className="text-4xl font-extrabold text-slate-900">{dest.safety.score}</span>
             <span className="text-base text-slate-400">/ 100</span>
           </div>
-          {dest.safety.items ? (
-            <ul className="space-y-1.5">
-              {dest.safety.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm leading-relaxed text-slate-600">{dest.safety.summary}</p>
-          )}
+          <BulletList items={dest.safety.items} />
         </Section>
 
         {/* ── Official sources ──────────────────────────────────────────── */}
@@ -507,7 +427,24 @@ export default async function CityPage({ params }: Props) {
   );
 }
 
-// ── File-local sub-components ─────────────────────────────────────────────────
+// ── Shared sub-components ─────────────────────────────────────────────────────
+
+/**
+ * Standard bullet list used consistently across all sections.
+ * Single rendering path — no conditional logic inside.
+ */
+function BulletList({ items }: { items: string[] }) {
+  return (
+    <ul className="space-y-1.5">
+      {items.map((item, i) => (
+        <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
+          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 function Section({
   id,
@@ -520,7 +457,6 @@ function Section({
   id?: string;
   title: string;
   icon?: React.ReactNode;
-  /** Small right-aligned label, e.g. "Reviewed Jan 2026" */
   meta?: string;
   sources?: Source[];
   children: React.ReactNode;
@@ -566,14 +502,12 @@ function Tip({ text }: { text: string }) {
 }
 
 function StatCard({
-  icon, bg, label, value, sub, small = false,
+  icon, bg, label, value, small = false,
 }: {
   icon: React.ReactNode;
   bg: string;
   label: string;
   value: string;
-  /** Optional sub-label shown below the value, e.g. "daycare" or "nanny" */
-  sub?: string;
   small?: boolean;
 }) {
   return (
@@ -585,9 +519,6 @@ function StatCard({
       <p className={`mt-1 font-extrabold text-slate-900 ${small ? "text-xl" : "text-3xl"}`}>
         {value}
       </p>
-      {sub && (
-        <p className="mt-0.5 text-xs text-slate-400">{sub}</p>
-      )}
     </div>
   );
 }
