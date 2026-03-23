@@ -1,0 +1,189 @@
+---
+description: Mandatory rules to follow every time a new city page is created or edited in cities.json
+globs: data/cities.json
+alwaysApply: true
+---
+
+# New City Generation Rules
+
+Apply every rule below before considering a city entry complete.
+These are derived from Valencia and Lisbon — the reference standard.
+
+---
+
+## RULE 1 — Checklist: every item must be connected
+
+Every item in `actionChecklist` must have a `targetSection`.
+
+Valid values: `"visa"` `"housing"` `"schools"` `"childcare"` `"healthcare"` `"residency"` `"banking"` `"safety"`
+
+```json
+// ❌ BAD — dead item, no scroll target
+{ "label": "Join the local Facebook group before arriving" }
+
+// ✅ GOOD — connected to a real section
+{ "label": "Join the local expat community — ask landlord about TM30 filing", "targetSection": "residency" }
+```
+
+**Allowed exceptions:** at most 2 items per checklist may be general logistics (arrival timing, equipment, SIM). All others must have a target.
+
+**Required order:** visa → housing → schools → healthcare → residency → banking
+
+---
+
+## RULE 2 — Content: no fluff, no risky claims
+
+Every bullet must answer: **what is it / what should I do / why does it matter.**
+
+```
+// ❌ BAD — vague, no action
+"Healthcare is generally good in this city."
+
+// ✅ GOOD — actionable, specific
+"Register at your local clinic with your address certificate to activate public coverage — required for your whole family."
+```
+
+**Do not use:**
+- "world-class", "virtually zero", "best in the region", "top-tier"
+- Exact government fee amounts (they change — use "roughly" or "approximately")
+- Exact processing times in days (use "typically 2–4 weeks")
+- Hard claims about crime being zero or near-zero
+
+**Do use:**
+- "typically", "usually", "often", "many families", "roughly", "approximately"
+- Named specifics: "Bangkok Bank and Kasikorn" not "local banks"
+- One named hospital, one named school, one named bank per section — not a comprehensive list
+
+---
+
+## RULE 3 — Local terms: always explain inline
+
+When a local term appears, define it in the same sentence.
+
+```
+// ❌ BAD
+"Register on the Padrón."
+
+// ✅ GOOD
+"Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall)."
+```
+
+This applies to: Padrón, NIE, NIF, TIE, Junta de Freguesia, Finanças, AIMA, SNS, SIP, TM30, Emirates ID, KHDA, moo ban, and any other local bureaucratic term.
+
+---
+
+## RULE 4 — Links: stable only, no deep URLs
+
+See `external-links.mdc` for full link rules. Summary:
+
+| Link type | Rule |
+|---|---|
+| Rental portals | Root homepage only — never filtered search pages |
+| Facebook groups | Plain text only — no URL |
+| Official gov links | Only if stable (gov domain, not a press release or PDF) |
+| No stable link exists | Use: `"label": "Search Google: '[query]'"` — no `url` field |
+| Legal documents (BOE, Gazette) | Never use as a primary user link |
+
+---
+
+## RULE 5 — Section structure: all required, correct format
+
+Every city entry must include all of these sections:
+
+| Section | Required format |
+|---|---|
+| `actionChecklist` | 8–10 items, all targeted |
+| `familyFit` | `bestFor` (4 items) + `watchOutFor` (4 items) |
+| `visa` | 2–3 options with `anchor`, `detailTitle`, `details[]`, `officialLink` where stable |
+| `residency` | Object with `title`, `items[]` (4–5 bullets), `tip` |
+| `banking` | Object with `title`, `items[]` (4–5 bullets), `tip` |
+| `housing` | Full 4-block: `searchPortalsIntro`, `searchPortals`, `typicalPrices`, `whatYouNeedToRent` |
+| `schools` | `summary`, `publicSystem`, `internationalOptions`, `languageNotes`, `tip`, `examples[]` (min. 3) |
+| `childcare` | `daycareItems[]`, `nannyItems[]`, `whereToFindItems[]` — no prose paragraphs |
+| `healthcare` | `items[]` (5 bullets), `tip` |
+| `safety` | `items[]` (5 bullets), `score` (75–90) |
+| `cost` | `rentRange`, `familyDinner`, `nannyRate` — see Rule 6 |
+
+**Do not leave any section as a placeholder string.** If data is unavailable, use honest approximations with "typically" — never invent specific figures.
+
+---
+
+## RULE 6 — Data: local currency, single values, no fake precision
+
+**`cost` fields:**
+```json
+// ❌ BAD — range, wrong currency context
+{ "rentRange": "$800–$2,000/month", "nannyRate": "$/hr" }
+
+// ✅ GOOD — single approximate, local currency
+{ "rentRange": "~฿30,000 / month", "familyDinner": "~฿500", "nannyRate": "~฿150 / hr" }
+```
+
+Rules:
+- All `cost` card values use a single approximate figure with `~` prefix
+- Use local currency for the country: `€` for Europe, `฿` for Thailand, `AED` for UAE
+- `nannyRate` is always hourly — never monthly, never daycare
+- `typicalPrices` in the housing section may show ranges (they are detail bullets, not cards)
+- Safety `score` must be in the 75–90 range — never above 92
+
+---
+
+## RULE 7 — Visa: all options must be interactive
+
+Every visa option must have:
+- `anchor` — a unique string like `"visa-dtv"`, `"visa-d8"`, `"visa-golden"`
+- `detailTitle` — descriptive heading for the detail panel
+- `details[]` — 4–6 flat bullet strings explaining how to apply
+
+The `anchor` must also be registered in `components/VisaPathSelector.tsx` in the `ANCHOR_PATH` map.
+
+Anchor → path mapping:
+- EU/EEA free movement → `"eu"`
+- Tourist / visa on arrival / short-stay → `"tourist"`
+- Remote work / digital nomad / long-stay / investment visa → `"dnv"`
+
+```typescript
+// Add new anchors to ANCHOR_PATH in VisaPathSelector.tsx
+"visa-my-new-anchor": "dnv",
+```
+
+---
+
+## RULE 8 — Tone: practical, not encyclopedic
+
+Each section should feel like advice from a friend who has lived there — not a Wikipedia article.
+
+```
+// ❌ BAD — encyclopedic, no action
+"Thailand's healthcare system consists of both public and private sectors, with varying levels of quality across different regions."
+
+// ✅ GOOD — tells you what to do
+"There is no public healthcare for foreigners in Thailand — all expat families use private hospitals. Bangkok Hospital Chiang Mai and Chiang Mai Ram are the two best options. Get international health insurance before flying."
+```
+
+One test: if you could remove a sentence without losing any useful guidance, remove it.
+
+---
+
+## Pre-flight checklist (run before saving a new city)
+
+Before completing a new city entry, verify:
+
+- [ ] Every checklist item has a valid `targetSection`
+- [ ] No checklist item targets a section that doesn't exist in the data
+- [ ] All `familyFit` arrays have exactly 4 items each
+- [ ] All visa options have `anchor`, `detailTitle`, and `details[]`
+- [ ] New visa anchors are added to `VisaPathSelector.tsx`
+- [ ] `housing` has all 4 blocks including `searchPortalsIntro` with 3 lines
+- [ ] `childcare` uses 3 structured arrays — no prose paragraphs
+- [ ] `healthcare` and `safety` use `items[]` arrays — no prose `summary`-only entries
+- [ ] `residency` and `banking` are both present with `tip` fields
+- [ ] `schools` has min. 3 examples with real `url` values (or plain text if no stable URL)
+- [ ] All `cost` fields use local currency, single `~` values, `nannyRate` is hourly
+- [ ] No USD in Thai city data; no EUR in UAE data
+- [ ] Safety score is between 75 and 90
+- [ ] No Facebook URLs anywhere — plain text only
+- [ ] No deep/filtered portal URLs — root homepage only
+- [ ] No superlatives without evidence
+- [ ] All local terms explained inline on first use
+- [ ] JSON is valid (run `python3 -c "import json; json.load(open('data/cities.json'))"`)

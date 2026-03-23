@@ -9,15 +9,42 @@
     "summary": "Valencia is one of Europe's best-kept secrets for relocating families. It offers a Mediterranean lifestyle — warm weather, fresh food markets, and beach access — at a fraction of the cost of Barcelona or Madrid. The city has a growing international school scene, reliable public transport, and a welcoming expat community that keeps expanding every year.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)", "targetSection": "visa-income" },
-      { "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application", "targetSection": "visa-documents" },
-      { "label": "Arrange private health insurance before submitting your visa application (required document)", "targetSection": "visa-insurance" },
-      { "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing", "targetSection": "visa-apply" },
-      { "label": "Start searching for family housing 6–8 weeks before your move", "targetSection": "housing" },
-      { "label": "Contact international schools 6–12 months before your move — waiting lists are long", "targetSection": "schools" },
-      { "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days", "targetSection": "residency" },
-      { "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)", "targetSection": "banking" },
-      { "label": "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card", "targetSection": "healthcare" }
+      {
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before submitting your visa application (required document)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Contact international schools 6–12 months before your move — waiting lists are long",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Apply for your NIE (foreigner ID number) and open a Spanish bank account (BBVA, Sabadell, or N26 are popular)",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP public health card",
+        "targetSection": "healthcare"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -29,24 +56,45 @@
       "watchOutFor": [
         "English is limited outside expat areas — Spanish is essential day-to-day",
         "Summer heat can be intense (35°C+), especially in July–August",
-        "Top international schools have waiting lists — apply early"
+        "Top international schools have waiting lists — apply early",
+        "Bureaucracy moves slowly — NIE appointments and bank account opening can take 4–8 weeks"
       ]
     },
     "housing": {
       "status": "estimated",
       "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month.",
-      "bestAreas": ["Ruzafa", "Campanar", "El Cabanyal", "Patraix", "Benimaclet"],
+      "bestAreas": [
+        "Ruzafa",
+        "Campanar",
+        "El Cabanyal",
+        "Patraix",
+        "Benimaclet"
+      ],
       "searchPortalsIntro": [
         "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
         "Search 'Valencia' inside each platform to filter local listings.",
         "Tip: start with a 2–4 week Airbnb or short-term stay — it's much easier to secure a long-term rental once you're in the city."
       ],
       "searchPortals": [
-        { "label": "Idealista — Spain's largest rental portal", "url": "https://www.idealista.com" },
-        { "label": "Fotocasa — strong secondary market", "url": "https://www.fotocasa.es" },
-        { "label": "Habitaclia — popular in the Valencian region", "url": "https://www.habitaclia.com" },
-        { "label": "Pisos.com — useful for comparing prices", "url": "https://www.pisos.com" },
-        { "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)" }
+        {
+          "label": "Idealista — Spain's largest rental portal",
+          "url": "https://www.idealista.com"
+        },
+        {
+          "label": "Fotocasa — strong secondary market",
+          "url": "https://www.fotocasa.es"
+        },
+        {
+          "label": "Habitaclia — popular in the Valencian region",
+          "url": "https://www.habitaclia.com"
+        },
+        {
+          "label": "Pisos.com — useful for comparing prices",
+          "url": "https://www.pisos.com"
+        },
+        {
+          "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)"
+        }
       ],
       "typicalPrices": [
         "1-bed flat, city centre: €700–€1,100/month",
@@ -148,14 +196,26 @@
     },
     "sources": {
       "visa": [
-        { "label": "Spain Digital Nomad Visa — Official", "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores" }
+        {
+          "label": "Spain Digital Nomad Visa — Official",
+          "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+        }
       ],
       "schools": [
-        { "label": "American School of Valencia", "url": "https://www.asvalencia.org" },
-        { "label": "Caxton College", "url": "https://www.caxtoncollege.com" }
+        {
+          "label": "American School of Valencia",
+          "url": "https://www.asvalencia.org"
+        },
+        {
+          "label": "Caxton College",
+          "url": "https://www.caxtoncollege.com"
+        }
       ],
       "cost": [
-        { "label": "Valencia Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Valencia" }
+        {
+          "label": "Valencia Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Valencia"
+        }
       ]
     },
     "residency": {
@@ -178,7 +238,10 @@
       ]
     },
     "communityLinks": [
-      { "label": "Valencia Expats — Facebook Community", "url": "https://www.facebook.com/groups/valenciaexpats" }
+      {
+        "label": "Valencia Expats — Facebook Community",
+        "url": "https://www.facebook.com/groups/valenciaexpats"
+      }
     ]
   },
   {
@@ -191,14 +254,38 @@
     "summary": "Lisbon has become one of Europe's most sought-after relocation destinations. Families are drawn by its high quality of life, safe streets, mild Atlantic climate, and a thriving English-speaking expat community. The greater Lisbon area — especially the Cascais line — offers excellent international schools and a beachside suburban feel that rivals anywhere in the world.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients", "targetSection": "visa" },
-      { "label": "Prepare your document pack before applying: Apostilled criminal record, private health insurance, 3+ months of income statements, and proof of accommodation", "targetSection": "visa" },
-      { "label": "Submit your D8 Visa application at the Portuguese Consulate in your home country — book your appointment now, allow 2–4 months for processing", "targetSection": "visa" },
-      { "label": "Start searching for family housing 6–8 weeks before your move — the Cascais–Estoril corridor is the top expat family area", "targetSection": "housing" },
-      { "label": "Apply to international schools (CAISL, St. Julian's) before booking flights — waitlists stretch 12–18 months", "targetSection": "schools" },
-      { "label": "On arrival: register at your local Junta de Freguesia (civil registry) and get your NIF (tax number) at any Finanças office", "targetSection": "residency" },
-      { "label": "Open a Portuguese bank account once you have your NIF — and apply for NHR tax status within your first year", "targetSection": "banking" },
-      { "label": "Register with your local Centro de Saúde (public health clinic) to activate SNS healthcare cover for the whole family", "targetSection": "healthcare" }
+      {
+        "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Prepare your document pack before applying: Apostilled criminal record, private health insurance, 3+ months of income statements, and proof of accommodation",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Submit your D8 Visa application at the Portuguese Consulate in your home country — book your appointment now, allow 2–4 months for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move — the Cascais–Estoril corridor is the top expat family area",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools (CAISL, St. Julian's) before booking flights — waitlists stretch 12–18 months",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival: register at your local Junta de Freguesia (civil registry) and get your NIF (tax number) at any Finanças office",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Portuguese bank account once you have your NIF — and apply for NHR tax status within your first year",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with your local Centro de Saúde (public health clinic) to activate SNS healthcare cover for the whole family",
+        "targetSection": "healthcare"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -210,7 +297,8 @@
       "watchOutFor": [
         "Cost of living has risen sharply — housing is increasingly competitive",
         "D8 visa processing can be slow (2–4 months)",
-        "Top international school waitlists can stretch 12–18 months"
+        "Top international school waitlists can stretch 12–18 months",
+        "Getting things done — NIF, bank account, and health registration each take a separate in-person visit"
       ]
     },
     "visa": {
@@ -268,18 +356,38 @@
     "housing": {
       "status": "estimated",
       "summary": "Central Lisbon is expensive. The most popular area for expat families is the Cascais–Estoril line (30 min from the city by train), where spacious homes and good schools cluster.",
-      "bestAreas": ["Cascais", "Estoril", "Oeiras", "Príncipe Real", "Parede"],
+      "bestAreas": [
+        "Cascais",
+        "Estoril",
+        "Oeiras",
+        "Príncipe Real",
+        "Parede"
+      ],
       "searchPortalsIntro": [
         "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
         "Search 'Lisbon' inside each platform to filter local listings.",
         "Tip: start with a 2–4 week short-term stay in the Cascais corridor — it is much easier to secure a long-term rental once you are on the ground."
       ],
       "searchPortals": [
-        { "label": "Idealista.pt — most listings in Portugal", "url": "https://www.idealista.pt" },
-        { "label": "Imovirtual.com — strong secondary market", "url": "https://www.imovirtual.com" },
-        { "label": "OLX.pt — direct landlord deals (no agency fee)", "url": "https://www.olx.pt" },
-        { "label": "Remax Portugal — good for family homes in Cascais and Oeiras", "url": "https://www.remax.pt" },
-        { "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals" }
+        {
+          "label": "Idealista.pt — most listings in Portugal",
+          "url": "https://www.idealista.pt"
+        },
+        {
+          "label": "Imovirtual.com — strong secondary market",
+          "url": "https://www.imovirtual.com"
+        },
+        {
+          "label": "OLX.pt — direct landlord deals (no agency fee)",
+          "url": "https://www.olx.pt"
+        },
+        {
+          "label": "Remax Portugal — good for family homes in Cascais and Oeiras",
+          "url": "https://www.remax.pt"
+        },
+        {
+          "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals"
+        }
       ],
       "typicalPrices": [
         "1-bed flat, central Lisbon: €1,200–€1,800/month",
@@ -381,14 +489,26 @@
     },
     "sources": {
       "visa": [
-        { "label": "Portugal D8 Visa — Official", "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency" }
+        {
+          "label": "Portugal D8 Visa — Official",
+          "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency"
+        }
       ],
       "schools": [
-        { "label": "CAISL — Carlucci American International School", "url": "https://www.caislisbon.org" },
-        { "label": "St. Julian's School", "url": "https://www.stjulians.com" }
+        {
+          "label": "CAISL — Carlucci American International School",
+          "url": "https://www.caislisbon.org"
+        },
+        {
+          "label": "St. Julian's School",
+          "url": "https://www.stjulians.com"
+        }
       ],
       "cost": [
-        { "label": "Lisbon Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Lisbon" }
+        {
+          "label": "Lisbon Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Lisbon"
+        }
       ]
     },
     "residency": {
@@ -414,7 +534,10 @@
       ]
     },
     "communityLinks": [
-      { "label": "Lisbon Expat Families — Facebook Group", "url": "https://www.facebook.com/groups/lisbonexpatfamilies" }
+      {
+        "label": "Lisbon Expat Families — Facebook Group",
+        "url": "https://www.facebook.com/groups/lisbonexpatfamilies"
+      }
     ]
   },
   {
@@ -424,17 +547,41 @@
     "city": "Dubai",
     "country": "UAE",
     "tagline": "Zero tax, world-class schools, and unmatched safety",
-    "summary": "Dubai offers families an extraordinary quality of life: no income tax, some of the world's best international schools, a crime rate that is virtually zero, and a massive expat community from every corner of the globe. The infrastructure is first-class, the healthcare is excellent, and the sunshine is guaranteed. The main trade-off is cost — Dubai is expensive.",
+    "summary": "Dubai offers families an extraordinary quality of life: no income tax, some of the world's best international schools, very low crime rates, and a massive expat community from every corner of the globe. The infrastructure is first-class, the healthcare is excellent, and the sunshine is guaranteed. The main trade-off is cost — Dubai is expensive.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Determine your visa route: employer-sponsored residency, Virtual Working Programme ($3,500/month income), or Golden Visa", "targetSection": "visa" },
-      { "label": "For the Virtual Working Programme: prepare proof of remote employment, income statements, and a valid passport", "targetSection": "visa" },
-      { "label": "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists", "targetSection": "schools" },
-      { "label": "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or ~$100–$200/month privately", "targetSection": "healthcare" },
-      { "label": "Get all family documents attested and translated into Arabic by a certified legal translation office", "targetSection": "visa" },
-      { "label": "Open a UAE bank account (Emirates NBD, ADIB, or HSBC UAE) — requires Emirates ID which comes after visa approval" },
-      { "label": "Register with the Roads and Transport Authority (RTA) to convert your driving licence to a UAE licence" },
-      { "label": "Arrange rental contract and note that most Dubai landlords require 1–3 post-dated cheques for the full year upfront", "targetSection": "housing" }
+      {
+        "label": "Determine your visa route: employer-sponsored residency, Virtual Working Programme ($3,500/month income), or Golden Visa",
+        "targetSection": "visa"
+      },
+      {
+        "label": "For the Virtual Working Programme: prepare proof of remote employment, income statements, and a valid passport",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or ~$100–$200/month privately",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Get all family documents attested and translated into Arabic by a certified legal translation office",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for your Emirates ID as soon as your visa is stamped — required for banking, healthcare, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a UAE bank account (Emirates NBD, Mashreq, or HSBC UAE) — you will need your Emirates ID first",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Arrange rental contract and note that most Dubai landlords require 1–3 post-dated cheques upfront",
+        "targetSection": "housing"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -457,24 +604,70 @@
         {
           "type": "Visa on Arrival",
           "duration": "30–90 days",
-          "description": "Available to most Western passport holders. Extendable from within the UAE."
+          "description": "Available to most Western passport holders. Extendable from within the UAE.",
+          "anchor": "visa-arrival",
+          "detailTitle": "Visa on Arrival — what it covers",
+          "details": [
+            "Most Western, EU, and GCC passport holders receive a free 30-day visa on arrival at Dubai International Airport, extendable to 60 days.",
+            "Extensions can be done online via the ICP (Federal Authority for Identity and Citizenship) website — you do not need to leave the UAE.",
+            "Good for a family scouting trip but not suitable for long-term living — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
+            "If you plan to stay long-term, apply for a residency visa as soon as possible — you cannot convert a tourist entry into a residency visa from inside the UAE."
+          ],
+          "officialLink": {
+            "label": "ICP — UAE Visa information",
+            "url": "https://icp.gov.ae"
+          }
         },
         {
           "type": "Virtual Working Programme",
           "duration": "1 year",
-          "description": "Remote work residency for those earning at least $3,500/month. Covers the applicant and immediate family. Cost: ~$550 USD."
+          "description": "Remote work residency for those earning at least $3,500/month. Covers the applicant and immediate family. Cost: ~$550 USD.",
+          "anchor": "visa-vwp",
+          "detailTitle": "Virtual Working Programme — how to apply",
+          "details": [
+            "Officially called the 'Remote Work Visa' — a 1-year renewable residency permit for remote workers and freelancers employed outside the UAE.",
+            "Income requirement: at least $3,500/month (roughly AED 12,850). You must show 3 months of payslips or bank statements.",
+            "Documents required: valid passport, passport-sized photos, proof of remote employment (letter from employer or client contracts), 3 months of income proof, and valid health insurance.",
+            "Application fee: approximately $550 USD. Apply through Dubai Tourism (visitdubai.com/en/visa-information) or through a registered UAE PRO agency.",
+            "Covers the primary applicant and immediate family — your spouse and children will receive dependent visas under your residency.",
+            "After receiving your residency stamp, you must apply for your Emirates ID within 30 days — required for banking, school enrolment, and healthcare."
+          ],
+          "officialLink": {
+            "label": "Dubai Tourism — Remote Work Visa",
+            "url": "https://www.visitdubai.com/en/visa-information"
+          }
         },
         {
           "type": "UAE Golden Visa",
           "duration": "10 years",
-          "description": "For investors, entrepreneurs, and skilled professionals. Covers the whole family and includes a path to long-term residency."
+          "description": "For investors, entrepreneurs, and skilled professionals. Covers the whole family and includes a path to long-term residency.",
+          "anchor": "visa-golden",
+          "detailTitle": "UAE Golden Visa — who it is for",
+          "details": [
+            "A 10-year renewable residency visa. Covers the primary applicant, spouse, and all children — including adult children and one household staff member.",
+            "Eligibility routes include: real estate investment (min. AED 2 million property), business ownership, skilled professionals in select fields (doctors, engineers, scientists), and outstanding students.",
+            "No UAE sponsor required — you are your own sponsor, which gives significantly more stability than an employment-tied residency.",
+            "Holders can stay outside the UAE for extended periods without losing residency (unlike standard residency which lapses after 6 months abroad).",
+            "Apply through the Federal Authority for Identity, Citizenship, Customs and Port Security (ICP) or through an authorised service centre.",
+            "Processing typically takes 2–4 weeks after submitting the full document pack."
+          ],
+          "officialLink": {
+            "label": "ICP — Golden Visa",
+            "url": "https://icp.gov.ae/en/services/golden-visa"
+          }
         }
       ]
     },
     "housing": {
       "status": "estimated",
       "summary": "Dubai Marina and Arabian Ranches are the most popular family areas. Marina offers high-rise apartment living near the beach; Arabian Ranches offers spacious villas with community facilities. Expect $2,000–$5,000+/month for a 3-bedroom family home.",
-      "bestAreas": ["Arabian Ranches", "Dubai Marina", "Jumeirah", "Mirdif", "The Springs"]
+      "bestAreas": [
+        "Arabian Ranches",
+        "Dubai Marina",
+        "Jumeirah",
+        "Mirdif",
+        "The Springs"
+      ]
     },
     "schools": {
       "status": "verified",
@@ -482,6 +675,7 @@
       "publicSystem": "Government schools in Dubai teach in Arabic and are primarily for UAE nationals. Expat families are not eligible and should plan for private international schooling from day one.",
       "internationalOptions": "Dubai has over 200 private schools following more than 15 different international curricula. KHDA publishes annual inspection ratings (Outstanding / Very Good / Good) that are essential for comparing schools. British and IB schools are the most popular among Western expats.",
       "languageNotes": "English is the working language of most international schools and the city itself. Arabic is taught as a second language in most private schools. No Arabic is required in day-to-day expat family life.",
+      "tip": "Check the KHDA inspection portal before applying — ratings are updated annually and can shift. A school rated 'Outstanding' last year may have since changed.",
       "examples": [
         {
           "name": "Dubai International Academy",
@@ -505,20 +699,72 @@
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Dubai has a large supply of nurseries regulated by the KHDA. Hiring a live-in nanny is very common — domestic workers are part of everyday expat family life in the UAE.",
-      "daycareNotes": "KHDA-licensed nurseries are widely available across all family neighbourhoods. Most offer bilingual (English/Arabic) programmes. Fees range from $500–$1,200/month. Inspection ratings are published by KHDA.",
-      "nannyNotes": "Hiring a live-in domestic worker (often from Philippines, India, or Sri Lanka) is very common in Dubai. Families typically apply through an agency and sponsor the worker's visa. Live-in nannies cost $400–$700/month plus accommodation and food.",
-      "typicalCost": "Live-in nanny: $400–$700/month + visa + accommodation. Hourly nanny: $10–$20/hr. Nursery: $500–$1,200/month.",
-      "howFamiliesFindIt": "Agencies: Domestic Staffing Agency Dubai, FirstCare. Community: 'Dubai Expat Families' and 'Mums in Dubai' Facebook groups. Platforms: Babysits.com and HelperChoice.com."
+      "summary": "Dubai has a large supply of KHDA-regulated nurseries. Hiring a live-in nanny is very common — domestic workers are a normal part of expat family life in the UAE.",
+      "daycareItems": [
+        "KHDA-licensed nurseries are widely available across all major family neighbourhoods — most offer bilingual (English/Arabic) programmes",
+        "Typical nursery fees: $500–$1,200/month; KHDA inspection ratings are published online and are the most reliable guide to quality",
+        "Most nurseries accept children from 18 months old",
+        "Apply a few months in advance — popular nurseries in Arabian Ranches and Jumeirah can fill up quickly"
+      ],
+      "nannyItems": [
+        "Hiring a live-in domestic worker is very common in Dubai — most families apply through a licensed agency",
+        "Live-in nannies often come from the Philippines, India, or Sri Lanka and are sponsored on the employer's residence visa",
+        "Typical cost: roughly $400–$700/month plus accommodation and food; agency placement fees are a one-off additional cost",
+        "A live-in arrangement gives around-the-clock coverage — common for dual-income households"
+      ],
+      "whereToFindItems": [
+        "Search on Facebook: 'Mums in Dubai' — community referrals and direct hires",
+        "Search on Facebook: 'Dubai Expat Families' — broader expat community group",
+        "HelperChoice.com — online platform for domestic worker profiles",
+        "Domestic staffing agencies (search 'domestic staffing agency Dubai') — licensed agencies handle visa sponsorship"
+      ]
     },
     "healthcare": {
       "status": "curated",
-      "summary": "Dubai has world-class private hospitals including Cleveland Clinic Abu Dhabi and Dubai Healthcare City. Health insurance is mandatory for all residents and usually provided by employers. Expats consistently rate the quality of care as excellent."
+      "tip": "Check that your policy covers outpatient GP visits, not only hospital stays — some basic plans exclude them.",
+      "summary": "Dubai has a large number of well-equipped private hospitals and clinics. Health insurance is mandatory for all residents and is typically employer-provided. Quality of care is generally high.",
+      "items": [
+        "Health insurance is mandatory for all UAE residents — you must have valid coverage before your visa is issued.",
+        "Employers typically provide health insurance; if relocating independently, budget roughly $150–$350/month per adult for a solid private plan.",
+        "Well-regarded private hospitals include American Hospital Dubai, Mediclinic, and the clinics within Dubai Healthcare City — all have English-speaking staff.",
+        "Emergency care is available around the clock at major private hospitals; waiting times are generally short.",
+        "Specialist care (paediatrics, gynaecology) is widely available in Dubai — no need to travel abroad for most treatment.",
+        "Pharmacies are plentiful and well-stocked; many are open 24 hours."
+      ]
     },
     "safety": {
       "status": "estimated",
-      "score": 95,
-      "summary": "Dubai is one of the safest cities in the world. The crime rate is extremely low across all categories. Families with children feel comfortable in all neighbourhoods at any hour. The UAE has a zero-tolerance policy for serious crime."
+      "score": 92,
+      "summary": "Dubai has very low crime rates and is widely considered one of the safer cities for families.",
+      "items": [
+        "Violent crime is rare — most expat families report feeling safe in all residential neighbourhoods at any hour.",
+        "Road accidents are a genuine risk — driving speeds are high and enforcement varies. Always use seatbelts; avoid driving in sandstorms.",
+        "Summer heat (typically above 43°C June–September) is a practical safety concern for young children — limit outdoor time and ensure constant hydration.",
+        "Public conduct laws are strict — follow local norms in public spaces, during Ramadan, and near religious sites.",
+        "Alcohol is available in licensed venues but not in public spaces — understand the rules before arriving."
+      ]
+    },
+    "residency": {
+      "title": "UAE Residency & Emirates ID",
+      "tip": "Your Emirates ID is your main document in the UAE — prioritise getting it issued in the first week after your visa is stamped.",
+      "items": [
+        "UAE residency is tied directly to your visa type (employer-sponsored, Virtual Working Programme, or Golden Visa) — you do not register separately.",
+        "After your visa is stamped, apply for your Emirates ID — required for banking, healthcare appointments, school enrolment, and signing a lease.",
+        "Add your spouse and children as dependants on your residence visa — this is a separate application handled through GDRFA Dubai.",
+        "All residents must complete a medical fitness test (blood test and X-ray) as part of the residency process — this is standard and arranged through your employer or a PRO service.",
+        "Keep your visa and Emirates ID renewed — most residence visas are valid for 2–3 years. Late renewals incur daily fines."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You cannot open a UAE bank account without an Emirates ID — complete the ID process before going to any bank.",
+      "items": [
+        "Emirates NBD, Mashreq, ADIB, and HSBC UAE are commonly used by expats — all offer English-language apps and good customer service.",
+        "To open an account you typically need: Emirates ID, passport, UAE residence visa, and proof of income (employment contract or payslips).",
+        "Liv. (Emirates NBD's digital bank) is popular for faster account opening — can be started online once you have your Emirates ID.",
+        "Most transactions in Dubai are card or app-based — Apple Pay and contactless are widely accepted. Cash is used less than in most other cities.",
+        "For international transfers, use Wise or similar services — standard UAE bank wire fees are high."
+      ]
     },
     "cost": {
       "status": "estimated",
@@ -528,18 +774,33 @@
     },
     "sources": {
       "visa": [
-        { "label": "UAE Virtual Working Programme — Official", "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae" }
+        {
+          "label": "UAE Virtual Working Programme — Official",
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae"
+        }
       ],
       "schools": [
-        { "label": "KHDA School Ratings — Official", "url": "https://www.khda.gov.ae/en/inspectionreports" },
-        { "label": "Kings' School Dubai", "url": "https://www.kingsdubai.com" }
+        {
+          "label": "KHDA School Ratings — Official",
+          "url": "https://www.khda.gov.ae/en/inspectionreports"
+        },
+        {
+          "label": "Kings' School Dubai",
+          "url": "https://www.kingsdubai.com"
+        }
       ],
       "cost": [
-        { "label": "Dubai Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Dubai" }
+        {
+          "label": "Dubai Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Dubai"
+        }
       ]
     },
     "communityLinks": [
-      { "label": "Mums in Dubai — Facebook Community", "url": "https://www.facebook.com/groups/mumsindubai" }
+      {
+        "label": "Mums in Dubai — Facebook Community",
+        "url": "https://www.facebook.com/groups/mumsindubai"
+      }
     ]
   },
   {
@@ -552,15 +813,41 @@
     "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month including a nanny and good private school. The city has a large expat community, several strong international schools, fast fibre internet, and excellent private hospitals at a fraction of Western prices. The main planning challenge is the visa — Thailand has no permanent residency path, so most families use the DTV or Thailand Elite.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Choose your visa: DTV (best for most families) or Thailand Elite (multi-year stability, no income requirement)", "targetSection": "visa" },
-      { "label": "Apply for the DTV at a Thai embassy before travelling — bring income proof and $15,000 in savings documentation", "targetSection": "visa" },
-      { "label": "Plan your arrival for October–January to avoid the smoke season (February–April brings hazardous air quality)" },
-      { "label": "Start with a 1–3 month short-term rental on arrival — use Facebook 'Chiang Mai Expat Club' or Airbnb while you find a long-term home", "targetSection": "housing" },
-      { "label": "Research international schools in Hang Dong (APIS, CMIS) — apply 3–6 months before your intended start date", "targetSection": "schools" },
-      { "label": "Buy private health insurance before flying — there is no public healthcare for foreigners in Thailand", "targetSection": "healthcare" },
-      { "label": "On arrival: ask your landlord to file the TM30 address form with immigration within 24 hours of your arrival", "targetSection": "residency" },
-      { "label": "Open a Thai bank account (Bangkok Bank or Kasikorn) once you have a non-immigrant visa — needed for rent and school fees", "targetSection": "banking" },
-      { "label": "Set a 90-day reminder — all visa holders must report their address to immigration every 90 days", "targetSection": "residency" }
+      {
+        "label": "Choose your visa: DTV (best for most families) or Thailand Elite (multi-year stability, no income requirement)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for the DTV at a Thai embassy before travelling — bring income proof and $15,000 in savings documentation",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Plan your arrival for October–January to avoid the smoke season (February–April brings hazardous air quality)"
+      },
+      {
+        "label": "Start with a 1–3 month short-term rental on arrival — use Facebook 'Chiang Mai Expat Club' or Airbnb while you find a long-term home",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research international schools in Hang Dong (APIS, CMIS) — apply 3–6 months before your intended start date",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Buy private health insurance before flying — there is no public healthcare for foreigners in Thailand",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "On arrival: ask your landlord to file the TM30 address form with immigration within 24 hours of your arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Thai bank account (Bangkok Bank or Kasikorn) once you have a non-immigrant visa — needed for rent and school fees",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Set a 90-day reminder — all visa holders must report their address to immigration every 90 days",
+        "targetSection": "residency"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -639,18 +926,37 @@
     "housing": {
       "status": "estimated",
       "summary": "Chiang Mai is extremely affordable. A spacious 3-bedroom house in a gated village (called a 'moo ban') rents for $600–$1,200/month. Hang Dong is the top family area — close to international schools. Nimmanhaemin is the urban, walkable alternative preferred by digital nomads.",
-      "bestAreas": ["Hang Dong", "Nimmanhaemin", "Santitham", "Doi Saket", "Mae Rim"],
+      "bestAreas": [
+        "Hang Dong",
+        "Nimmanhaemin",
+        "Santitham",
+        "Doi Saket",
+        "Mae Rim"
+      ],
       "searchPortalsIntro": [
         "These are the main platforms locals and expats use for long-term rentals — much cheaper than Airbnb for monthly stays.",
         "On each platform, search 'Chiang Mai' to filter listings for the area.",
         "Tip: arrive on a 1–3 month short-stay first. It is far easier to negotiate rent and inspect properties in person than remotely."
       ],
       "searchPortals": [
-        { "label": "DDproperty.com — Thailand's main property portal", "url": "https://www.ddproperty.com" },
-        { "label": "Hipflat.com — good for condos and serviced apartments", "url": "https://www.hipflat.co.th" },
-        { "label": "Fazwaz.com — English-language portal, easy for foreigners", "url": "https://www.fazwaz.com" },
-        { "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)" },
-        { "label": "Search on Facebook: 'Chiang Mai Homes for Rent' — dedicated rental listings group" }
+        {
+          "label": "DDproperty.com — Thailand's main property portal",
+          "url": "https://www.ddproperty.com"
+        },
+        {
+          "label": "Hipflat.com — good for condos and serviced apartments",
+          "url": "https://www.hipflat.co.th"
+        },
+        {
+          "label": "Fazwaz.com — English-language portal, easy for foreigners",
+          "url": "https://www.fazwaz.com"
+        },
+        {
+          "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)"
+        },
+        {
+          "label": "Search on Facebook: 'Chiang Mai Homes for Rent' — dedicated rental listings group"
+        }
       ],
       "typicalPrices": [
         "1-bed condo, Nimmanhaemin: $300–$600/month",
@@ -699,13 +1005,13 @@
       "summary": "Childcare in Chiang Mai is abundant and very affordable. Hiring a full-time nanny — a luxury in most Western cities — is within easy reach for most expat families here.",
       "daycareItems": [
         "International nurseries and pre-schools are widely available in Hang Dong and Nimmanhaemin — most are bilingual (English/Thai)",
-        "Typical fees: $150–$400/month — far cheaper than equivalent daycare in Europe or the US",
+        "Typical fees: ฿5,000–฿14,000 / month — far cheaper than equivalent daycare in Europe or the US",
         "Most accept children from 18 months old; some from 1 year",
         "Visit at least 2–3 nurseries in person before enrolling — English fluency of staff varies significantly"
       ],
       "nannyItems": [
-        "Full-time live-in nanny: $300–$500/month — one of the most affordable places in the world for this arrangement",
-        "Part-time live-out nanny: $3–$6/hr depending on English level and experience",
+        "Full-time live-in nanny: ฿10,500–฿18,000 / month — one of the most affordable places in the world for this arrangement",
+        "Part-time live-out nanny: ฿100–฿210 / hr depending on English level and experience",
         "Many Thai nannies have prior experience with expat families — ask specifically for this when posting",
         "English fluency varies — build in a 2–4 week settling-in period and be patient"
       ],
@@ -749,15 +1055,30 @@
     },
     "sources": {
       "visa": [
-        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" },
-        { "label": "Thailand Privilege Card — Official", "url": "https://www.thailandprivilege.com" }
+        {
+          "label": "DTV Visa — Royal Thai Embassy",
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+        },
+        {
+          "label": "Thailand Privilege Card — Official",
+          "url": "https://www.thailandprivilege.com"
+        }
       ],
       "schools": [
-        { "label": "American Pacific International School (APIS)", "url": "https://www.apis.ac.th" },
-        { "label": "Chiang Mai International School (CMIS)", "url": "https://www.cmis.ac.th" }
+        {
+          "label": "American Pacific International School (APIS)",
+          "url": "https://www.apis.ac.th"
+        },
+        {
+          "label": "Chiang Mai International School (CMIS)",
+          "url": "https://www.cmis.ac.th"
+        }
       ],
       "cost": [
-        { "label": "Chiang Mai Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai" }
+        {
+          "label": "Chiang Mai Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+        }
       ]
     },
     "residency": {
@@ -784,8 +1105,14 @@
       ]
     },
     "communityLinks": [
-      { "label": "Chiang Mai Expat Club — Facebook", "url": "https://www.facebook.com/groups/chiangmaiexpatclub" },
-      { "label": "Chiang Mai Mums — Facebook", "url": "https://www.facebook.com/groups/chiangmaimums" }
+      {
+        "label": "Chiang Mai Expat Club — Facebook",
+        "url": "https://www.facebook.com/groups/chiangmaiexpatclub"
+      },
+      {
+        "label": "Chiang Mai Mums — Facebook",
+        "url": "https://www.facebook.com/groups/chiangmaimums"
+      }
     ]
   },
   {
@@ -798,14 +1125,46 @@
     "summary": "Koh Phangan has evolved well beyond its Full Moon Party reputation. The north and west coasts — especially Sri Thanu and Haad Yao — now host hundreds of families year-round. Life here is slow, affordable, and deeply connected to nature. The trade-off is infrastructure: schooling options are limited on the island and medical care requires a boat or flight to the mainland for anything serious.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Apply for the DTV at a Thai embassy before travelling — do not rely on visa-on-arrival for a long-term move", "targetSection": "visa" },
-      { "label": "Plan your schooling approach before arrival: online curriculum (Acellus, Khan Academy, Cambridge Home School) or community cooperative groups", "targetSection": "schools" },
-      { "label": "Arrange medical evacuation insurance — essential when living on a remote island without a full-service hospital", "targetSection": "healthcare" },
-      { "label": "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term", "targetSection": "housing" },
-      { "label": "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families" },
-      { "label": "Plan your exit strategy for smoke season (Feb–April) if you have children with asthma or respiratory sensitivities", "targetSection": "healthcare" },
-      { "label": "Bring surge protectors and a UPS — power fluctuations are common; a backup for your work equipment is essential" },
-      { "label": "Budget for a reliable motorbike or car — the island has no public transport and roads are hilly and winding" }
+      {
+        "label": "Apply for the DTV at a Thai embassy before travelling — do not rely on visa-on-arrival for a long-term move",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Plan your schooling approach before arrival: online curriculum (Acellus, Khan Academy, Cambridge Home School) or community cooperative groups",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Arrange medical evacuation insurance — essential when living on a remote island without a full-service hospital",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term",
+        "targetSection": "housing"
+      },
+      {
+        "label": "On arrival: ask your landlord to file the TM30 address form — required by Thai immigration within 24 hours",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Thai bank account at Bangkok Bank in Thong Sala once you have a non-immigrant visa",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Plan around smoke season (Feb–April) if you have children with asthma or respiratory conditions",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Set up a UPS for your work equipment — power fluctuations are common on the island",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Budget for a reliable car or motorbike — the island has no public transport",
+        "targetSection": "housing"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -823,24 +1182,51 @@
     },
     "visa": {
       "status": "verified",
-      "summary": "As part of Thailand, Koh Phangan falls under the same visa rules. The DTV is the most practical option for families staying long-term. Many residents do periodic border runs to Malaysia via ferry.",
+      "summary": "As part of Thailand, Koh Phangan falls under the same national visa rules. The DTV is the most practical long-term option for families — apply at a Thai embassy before travelling.",
       "options": [
         {
           "type": "Tourist Visa / Visa Exemption",
           "duration": "30–60 days",
-          "description": "Most Western passports receive 30 days on arrival. Extendable once at the local immigration office in Thong Sala."
+          "description": "Most Western passports receive 30 days on arrival. Extendable once at the local immigration office in Thong Sala.",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist Visa — arrival and extension",
+          "details": [
+            "Most Western passport holders enter Thailand on a 30-day visa exemption — no advance application required.",
+            "You can extend once for 30 more days at the Koh Phangan Immigration Office in Thong Sala (cost: ฿1,900).",
+            "Not suitable for long-term stays — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
+            "Use this for an initial scouting visit only. Start your DTV application before arriving if you plan to stay."
+          ]
         },
         {
           "type": "DTV — Destination Thailand Visa",
           "duration": "180 days per entry (renewable once)",
-          "description": "Best option for families. Requires proof of remote income and $15,000 in savings. Apply from your home country or a Thai embassy abroad."
+          "description": "Best option for families. Requires proof of remote income and $15,000 in savings. Apply from your home country or a Thai embassy abroad.",
+          "anchor": "visa-dtv",
+          "detailTitle": "DTV Visa — how to apply for Koh Phangan",
+          "details": [
+            "The DTV (Destination Thailand Visa) is a 5-year multiple-entry visa with 180-day stays, launched in 2024 for remote workers and their families.",
+            "Apply at a Thai embassy or consulate in your home country before travelling — you cannot apply on the island.",
+            "Requirements: valid passport, proof of remote income or business, and evidence of approximately $15,000 USD in savings.",
+            "On arrival, ask your landlord to file the TM30 address registration form with immigration within 24 hours of your arrival.",
+            "File a 90-day address report every 90 days — online at imm.immigration.go.th or in person at the Thong Sala Immigration Office."
+          ],
+          "officialLink": {
+            "label": "Thai e-Visa — DTV application",
+            "url": "https://www.thaievisa.go.th"
+          }
         }
       ]
     },
     "housing": {
       "status": "estimated",
       "summary": "Koh Phangan is one of the most affordable places to live in Southeast Asia. A well-equipped 2–3 bedroom villa with a pool rents for $400–$900/month. Sri Thanu and Haad Yao are the family hubs.",
-      "bestAreas": ["Sri Thanu", "Haad Yao", "Baan Tai", "Thong Nai Pan", "Chaloklum"]
+      "bestAreas": [
+        "Sri Thanu",
+        "Haad Yao",
+        "Baan Tai",
+        "Thong Nai Pan",
+        "Chaloklum"
+      ]
     },
     "schools": {
       "status": "estimated",
@@ -848,31 +1234,82 @@
       "publicSystem": "Thai government schools exist on the island but teach entirely in Thai. Not a viable option for most expat children.",
       "internationalOptions": "There is no full international school on Koh Phangan. A few small private and Montessori-style micro-schools exist serving the expat community, but they are not accredited and cater mainly to early years. Families with secondary-school-age children typically move to Koh Samui or Chiang Mai.",
       "languageNotes": "English is the informal community language among expats. Children in the expat community grow up in a largely English-speaking social environment. Thai language support is available through local tutors.",
+      "tip": "If you have secondary-school-age children (11+), research your options carefully before committing to the island — most expat families with older children move to Koh Samui or Chiang Mai for schooling.",
       "examples": [
         {
           "name": "Phangan International School (micro-school)",
           "curriculum": "Mixed / Montessori-inspired",
-          "fees": "$200 – $500 / month",
-          "url": "https://www.facebook.com/phanganis"
+          "fees": "$200 – $500 / month"
         }
       ]
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Hiring a local Thai nanny is easy, affordable, and very common in the expat community. Formal daycare options are limited but growing.",
-      "daycareNotes": "A small number of private bilingual nurseries serve the expat community in Sri Thanu. Options are limited compared to a city, but the tight-knit community means cooperative childcare (nanny shares, playgroups) is very common.",
-      "nannyNotes": "Full-time Thai nannies are widely available and very affordable. Most expat families in Sri Thanu and Haad Yao hire through community word-of-mouth. Experience with expat families is common in these areas.",
-      "typicalCost": "Full-time nanny: $300–$500/month. Part-time: $4–$6/hr. Community nursery / micro-school: $200–$400/month.",
-      "howFamiliesFindIt": "Almost entirely through Facebook: 'Koh Phangan Expats', 'Koh Phangan Family Community', and 'Phangan Mamas'. Word-of-mouth referrals are standard — post in these groups before you arrive."
+      "summary": "Hiring a Thai nanny is easy, affordable, and very common in the expat community. Formal daycare is limited — cooperative childcare is often the preferred solution.",
+      "daycareItems": [
+        "A small number of private nurseries and community micro-schools serve expat families — mainly in Sri Thanu",
+        "Options are limited compared to a city; cooperative childcare (nanny shares, community playgroups) is very common and often preferred",
+        "Community nursery fees: typically ฿7,000–฿14,000 / month",
+        "Ask in the Facebook groups before arriving — the best current options change as the community evolves"
+      ],
+      "nannyItems": [
+        "Full-time Thai nannies are widely available and affordable — roughly ฿10,500–฿18,000 / month for a live-in arrangement",
+        "Part-time nannies: roughly ฿140–฿210 / hr",
+        "Most families in Sri Thanu and Haad Yao hire through community word-of-mouth — referrals are the most reliable route",
+        "English fluency varies — vetted nannies who speak English are sought-after in this smaller community"
+      ],
+      "whereToFindItems": [
+        "Search on Facebook: 'Koh Phangan Expats' — primary resource for nanny and childcare recommendations",
+        "Search on Facebook: 'Koh Phangan Family Community' — family-focused group with local knowledge",
+        "Search on Facebook: 'Phangan Mamas' — mums-specific group, good for childcare referrals",
+        "Word-of-mouth at community playgroups — often the fastest route to a vetted referral"
+      ]
     },
     "healthcare": {
       "status": "curated",
-      "summary": "The island has several clinics for minor issues. Bangkok Hospital Koh Phangan provides reliable outpatient care. For anything serious — surgery, emergency, childbirth — Bangkok Hospital Koh Samui is the nearest full-service hospital, about 1 hour away by ferry."
+      "tip": "Medical evacuation insurance is not optional here — get a policy that covers airlift to Koh Samui or Surat Thani before you arrive.",
+      "summary": "The island has several walk-in clinics for minor issues. For anything serious, evacuation to Koh Samui or Bangkok is required.",
+      "items": [
+        "Several walk-in clinics on the island handle minor illnesses, children's GP appointments, and basic injuries well.",
+        "Bangkok Hospital Koh Phangan provides outpatient care and basic emergency services — it is a smaller facility than a mainland hospital.",
+        "For serious emergencies — surgery, complicated births, major trauma — you will be evacuated to Bangkok Hospital Koh Samui (~1 hour by boat) or directly to Bangkok. Plan and insure for this.",
+        "Medical evacuation insurance is essential on Koh Phangan — airlift costs without insurance can be very high.",
+        "Keep a basic home medical kit (paediatric medicines, wound care, rehydration salts) — it saves a boat trip for minor issues."
+      ]
     },
     "safety": {
       "status": "estimated",
-      "score": 85,
-      "summary": "Koh Phangan is generally safe for families. The main risks are road accidents on winding island roads, jellyfish stings, and occasional petty theft near the party areas in Haad Rin. The family-oriented north and west coasts are very calm and safe."
+      "score": 82,
+      "summary": "Koh Phangan is generally safe for families in the residential areas. Road safety and medical access are the main considerations.",
+      "items": [
+        "The family areas of Sri Thanu, Haad Yao, and Baan Tai are calm, low-crime, and safe at all hours.",
+        "Road safety is the biggest daily risk — island roads are hilly, narrow, and poorly lit at night. Drive slowly, wear helmets, and avoid riding with children after dark.",
+        "Haad Rin (Full Moon Party area) is a different environment — avoid it on party nights.",
+        "Jellyfish stings are seasonal — check beach conditions and carry vinegar as a first-aid precaution.",
+        "Power cuts and occasional water outages are a reality on the island — not a safety risk but worth preparing for."
+      ]
+    },
+    "residency": {
+      "title": "Registration & 90-day report",
+      "tip": "Do your 90-day report online at imm.immigration.go.th — it saves a trip to the immigration office in Thong Sala.",
+      "items": [
+        "Thailand has no residency permit system for foreigners — your passport and current visa stamp are your ID documents on the island.",
+        "Your landlord must file a TM30 form (address registration with immigration) within 24 hours of your arrival — ask them to confirm they have done this.",
+        "All visa holders must report their address to Thai immigration every 90 days. File online at imm.immigration.go.th or in person at the Koh Phangan Immigration Office in Thong Sala.",
+        "Keep copies of all visa stamps, extension approvals, and 90-day receipts — officers ask for them during renewals.",
+        "For banking, school enrolment, and admin, your passport and current visa stamp serve as your complete identification."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Bangkok Bank in Thong Sala is the most commonly used by expats on the island — bring your passport and DTV visa for the opening appointment.",
+      "items": [
+        "Bangkok Bank in Thong Sala is the main option for expats — generally accepts DTV visa holders.",
+        "Bring your passport, current visa, and a rental contract as proof of address when opening an account.",
+        "Use Wise or Revolut for receiving international income and converting to Thai Baht — Thai bank wire fees are high.",
+        "ATMs are available in Thong Sala and main tourist areas; many island vendors still prefer cash.",
+        "Keep ฿1,000–฿3,000 in cash at home — ATMs can run empty on busy weekends or after weather events."
+      ]
     },
     "cost": {
       "status": "estimated",
@@ -882,17 +1319,29 @@
     },
     "sources": {
       "visa": [
-        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+        {
+          "label": "DTV Visa — Royal Thai Embassy",
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+        }
       ],
       "healthcare": [
-        { "label": "Bangkok Hospital Koh Phangan", "url": "https://www.bangkokhospital-kohphangan.com" }
+        {
+          "label": "Bangkok Hospital Koh Phangan",
+          "url": "https://www.bangkokhospital-kohphangan.com"
+        }
       ],
       "cost": [
-        { "label": "Koh Phangan Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan" }
+        {
+          "label": "Koh Phangan Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan"
+        }
       ]
     },
     "communityLinks": [
-      { "label": "Koh Phangan Expats — Facebook", "url": "https://www.facebook.com/groups/kohphanganexpats" }
+      {
+        "label": "Koh Phangan Expats — Facebook",
+        "url": "https://www.facebook.com/groups/kohphanganexpats"
+      }
     ]
   },
   {
@@ -905,14 +1354,42 @@
     "summary": "Koh Samui is the most developed of Thailand's family-friendly islands. It has an international airport, a full-service Bangkok Hospital, several international schools, and a large, established expat community. Bophut and Maenam on the north coast have a relaxed, village feel ideal for families. It costs more than Koh Phangan but offers meaningfully better infrastructure.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
-      { "label": "Apply for the DTV at a Thai embassy before travelling — required for any stay beyond the initial tourist visa period", "targetSection": "visa" },
-      { "label": "Contact international schools (ISS, ACE) directly and apply 2–4 months before your intended start date", "targetSection": "schools" },
-      { "label": "Arrange international health insurance that includes Bangkok Hospital Samui and emergency airlift to Bangkok", "targetSection": "healthcare" },
-      { "label": "Research neighbourhoods before arrival: Bophut and Maenam are the established family areas on the north coast", "targetSection": "housing" },
-      { "label": "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving", "targetSection": "housing" },
-      { "label": "Open a Thai bank account at Bangkok Bank's Samui branch — required for long stays and local payments" },
-      { "label": "Arrange transport: Koh Samui has no public transit — a reliable car or motorbike is essential for families" },
-      { "label": "Plan around the monsoon season (Oct–Dec): the east coast gets the worst weather; Bophut and Maenam are more sheltered" }
+      {
+        "label": "Apply for the DTV at a Thai embassy before travelling — required for any stay beyond the initial tourist visa period",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Contact international schools (ISS, ACE) directly and apply 2–4 months before your intended start date",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Arrange international health insurance that includes Bangkok Hospital Samui and emergency airlift to Bangkok",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Research neighbourhoods before arrival: Bophut and Maenam are the established family areas on the north coast",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving",
+        "targetSection": "housing"
+      },
+      {
+        "label": "On arrival: ask your landlord to file the TM30 address form with immigration within 24 hours",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Thai bank account at Bangkok Bank's Samui branch — requires a non-immigrant visa and rental contract",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Arrange transport: Koh Samui has no public transit — a reliable car or motorbike is essential for families",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Plan around the monsoon season (Oct–Dec): the east coast gets the worst weather; Bophut and Maenam are more sheltered",
+        "targetSection": "safety"
+      }
     ],
     "familyFit": {
       "bestFor": [
@@ -930,24 +1407,51 @@
     },
     "visa": {
       "status": "verified",
-      "summary": "Koh Samui follows Thailand's national visa rules. The DTV is the best long-stay option for families. The island's proximity to Malaysia (ferry to Penang) makes border runs relatively convenient.",
+      "summary": "Koh Samui follows Thailand's national visa rules. The DTV is the best long-stay option for families — apply at a Thai embassy before travelling.",
       "options": [
         {
           "type": "Tourist Visa / Visa Exemption",
           "duration": "30–60 days",
-          "description": "Most Western passports receive 30 days on arrival, extendable once. Koh Samui has its own immigration office."
+          "description": "Most Western passports receive 30 days on arrival, extendable once. Koh Samui has its own immigration office.",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist Visa — arrival and extension",
+          "details": [
+            "Most Western passport holders enter Koh Samui on a 30-day visa exemption at the airport — no advance application required.",
+            "You can extend once for 30 more days at the Koh Samui Immigration Office in Na Thon (cost: ฿1,900). Queue early — it is busy.",
+            "Not suitable for long-term stays. You cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
+            "For a first scouting trip it works well — but start your DTV application before you arrive if you plan to stay."
+          ]
         },
         {
           "type": "DTV — Destination Thailand Visa",
           "duration": "180 days per entry (renewable once)",
-          "description": "Recommended for families planning extended stays. Requires proof of remote income and $15,000 in savings."
+          "description": "Recommended for families planning extended stays. Requires proof of remote income and $15,000 in savings.",
+          "anchor": "visa-dtv",
+          "detailTitle": "DTV Visa — how to apply for Koh Samui",
+          "details": [
+            "The DTV (Destination Thailand Visa) is a 5-year multiple-entry visa with 180-day stays, launched in 2024 for remote workers and their families.",
+            "Apply at a Thai embassy or consulate in your home country before travelling — you cannot apply on the island.",
+            "Requirements: valid passport, proof of remote income or business, and evidence of approximately $15,000 USD in savings.",
+            "After arriving on Koh Samui, ask your landlord to file the TM30 address registration form with immigration within 24 hours.",
+            "You must file a 90-day address report every 90 days — do this online at imm.immigration.go.th or in person at the Na Thon Immigration Office."
+          ],
+          "officialLink": {
+            "label": "Thai e-Visa — DTV application",
+            "url": "https://www.thaievisa.go.th"
+          }
         }
       ]
     },
     "housing": {
       "status": "estimated",
       "summary": "Koh Samui is more expensive than Koh Phangan or Chiang Mai, but still very affordable by Western standards. A 3-bedroom villa near Bophut or Maenam rents for $700–$1,800/month. Long-term rentals (6–12 months) often come with significant discounts.",
-      "bestAreas": ["Bophut", "Maenam", "Chaweng Noi", "Nathon", "Lipa Noi"]
+      "bestAreas": [
+        "Bophut",
+        "Maenam",
+        "Chaweng Noi",
+        "Nathon",
+        "Lipa Noi"
+      ]
     },
     "schools": {
       "status": "curated",
@@ -955,6 +1459,7 @@
       "publicSystem": "Thai government schools on the island teach entirely in Thai. Not suitable for most expat children without extensive Thai language support.",
       "internationalOptions": "Two main accredited international schools serve the English-speaking expat community on Samui: ISS and ACE. Both cover Early Years through secondary. The schools are small by international standards, which some families see as a positive. For IB or British A-Level, families typically board their children in Bangkok or Chiang Mai.",
       "languageNotes": "English is the language of instruction at both main international schools. Thai language classes are included in the curriculum. The expat community on the north coast communicates almost entirely in English.",
+      "tip": "ISS and ACE are small schools — visit in person and verify current academic standards before enrolling. Class sizes are small, which many families see as a benefit.",
       "examples": [
         {
           "name": "International School of Samui (ISS)",
@@ -972,20 +1477,71 @@
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Koh Samui has better childcare infrastructure than Koh Phangan, with licensed nurseries and a large pool of experienced Thai nannies.",
-      "daycareNotes": "Several private nurseries operate in the Bophut and Chaweng areas, offering bilingual (English/Thai) early years programmes. Fees range from $200–$500/month. Quality is good relative to cost.",
-      "nannyNotes": "Hiring a full-time Thai nanny is very common on Samui. Many experienced nannies have worked with expat families for years and come with strong references from the community.",
-      "typicalCost": "Full-time nanny: $350–$600/month. Part-time: $5–$7/hr. Private nursery: $200–$500/month.",
-      "howFamiliesFindIt": "Facebook groups are the primary resource: 'Samui Expats', 'Samui Families', and 'Koh Samui International Community'. Local property and relocation agencies sometimes maintain nanny referral lists."
+      "summary": "Koh Samui has more childcare options than Koh Phangan, with several licensed nurseries and a large pool of experienced Thai nannies.",
+      "daycareItems": [
+        "Private nurseries operate in the main expat areas on the north coast — a smaller selection than a mainland city but generally sufficient",
+        "Typical fees: roughly ฿7,000–฿18,000 / month; bilingual (English/Thai) programmes are available at most private nurseries",
+        "Most nurseries accept children from 18 months old",
+        "Visit in person — quality and English fluency of staff varies; community recommendations are your best guide"
+      ],
+      "nannyItems": [
+        "Full-time Thai nannies are widely available — typically ฿12,000–฿21,000 / month for a live-in arrangement",
+        "Part-time nannies: roughly ฿180–฿250 / hr",
+        "Many nannies have worked with expat families for years and have community references",
+        "English fluency varies — build in a settling-in period and use vetted community referrals"
+      ],
+      "whereToFindItems": [
+        "Search on Facebook: 'Samui Expats' — most common starting point for nanny referrals on the island",
+        "Search on Facebook: 'Samui Families' — family-specific group with local recommendations",
+        "Search on Facebook: 'Koh Samui International Community' — broader community group",
+        "Local property and relocation agencies sometimes maintain nanny referral lists"
+      ]
     },
     "healthcare": {
       "status": "curated",
-      "summary": "Bangkok Hospital Koh Samui is a full-service international hospital with a 24/7 emergency department, specialist clinics, and modern equipment. It is widely regarded as the best hospital in the Gulf of Thailand region. English-speaking staff are standard."
+      "tip": "Arrange medical evacuation insurance that covers airlift to Bangkok — affordable and removes the biggest healthcare risk of island living.",
+      "summary": "Bangkok Hospital Koh Samui is the island's main private hospital with 24/7 emergency care and English-speaking staff. For complex cases, evacuation to Bangkok is standard.",
+      "items": [
+        "Bangkok Hospital Koh Samui has a 24/7 emergency department, specialist clinics, and English-speaking doctors — the best medical facility on the island.",
+        "For routine GP visits, children's appointments, and minor emergencies it is generally reliable and fast.",
+        "For serious emergencies — complex surgery, major trauma, or difficult births — medical evacuation to Bangkok is typically required. Most expats arrange dedicated medevac insurance.",
+        "Bangkok Hospital Samui can arrange emergency airlift to Bangkok through their partner network — the flight takes roughly 1 hour.",
+        "Pharmacies are well-stocked across the island for everyday medications."
+      ]
     },
     "safety": {
       "status": "estimated",
-      "score": 82,
-      "summary": "Koh Samui is generally safe for families. Road safety is the primary concern — the ring road is busy and motorbike accidents are common. The family-oriented north coast neighbourhoods (Bophut, Maenam) are calm and low-crime. Water safety awareness is important for families with young children."
+      "score": 80,
+      "summary": "Koh Samui is generally safe for families. Road safety and water awareness are the main practical concerns.",
+      "items": [
+        "Violent crime against residents is rare — the family-oriented north coast (Bophut, Maenam) is calm and low-crime.",
+        "Road safety is the biggest daily risk: the ring road is busy, local driving standards vary, and motorbike accidents are common among expats. Use a car where possible, especially with children.",
+        "Water safety matters for families with young children — some beaches have rip currents and seasonal jellyfish. Check local conditions before swimming.",
+        "The Chaweng and Lamai areas are busier and noisier than the north coast — less suited to family daily life.",
+        "Petty theft occurs in tourist-heavy spots — keep bags secure and avoid leaving valuables visible on the beach."
+      ]
+    },
+    "residency": {
+      "title": "Registration & 90-day report",
+      "tip": "Do your 90-day report online at imm.immigration.go.th — saves a trip to the immigration office in Na Thon.",
+      "items": [
+        "Thailand has no residency permit system for foreigners — your passport and current visa stamp are your documents on the island.",
+        "Your landlord must file a TM30 form (address registration with immigration) within 24 hours of your arrival — ask them to confirm this was done.",
+        "All visa holders must report their address to Thai immigration every 90 days. File online at imm.immigration.go.th or in person at the Koh Samui Immigration Office in Na Thon.",
+        "Keep copies of all visa stamps, extension approvals, and 90-day receipts — officers ask for them during renewals.",
+        "For banking, school enrolment, and admin, your passport and current visa stamp serve as your complete identification."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Bangkok Bank's branch on Koh Samui is the most established for expats — bring your passport, DTV visa, and rental contract.",
+      "items": [
+        "Bangkok Bank and Kasikorn Bank (KBank) both have branches on Koh Samui — Bangkok Bank is generally more accommodating for foreign visa holders.",
+        "To open an account you typically need: passport, non-immigrant visa (DTV or similar), and a rental contract as proof of local address.",
+        "Use Wise or Revolut for receiving international income and converting to Thai Baht — bank wire fees are high.",
+        "ATMs are widely available across the island; markets and smaller shops are still largely cash-based.",
+        "Keep ฿500–฿2,000 in cash on hand at all times for local transactions."
+      ]
     },
     "cost": {
       "status": "estimated",
@@ -995,21 +1551,39 @@
     },
     "sources": {
       "visa": [
-        { "label": "DTV Visa — Royal Thai Embassy", "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa" }
+        {
+          "label": "DTV Visa — Royal Thai Embassy",
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+        }
       ],
       "schools": [
-        { "label": "International School of Samui (ISS)", "url": "https://www.isssamui.com" },
-        { "label": "ACE International School", "url": "https://www.acesamui.com" }
+        {
+          "label": "International School of Samui (ISS)",
+          "url": "https://www.isssamui.com"
+        },
+        {
+          "label": "ACE International School",
+          "url": "https://www.acesamui.com"
+        }
       ],
       "healthcare": [
-        { "label": "Bangkok Hospital Koh Samui", "url": "https://www.bangkokhospital-samui.com" }
+        {
+          "label": "Bangkok Hospital Koh Samui",
+          "url": "https://www.bangkokhospital-samui.com"
+        }
       ],
       "cost": [
-        { "label": "Koh Samui Cost of Living — Numbeo", "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui" }
+        {
+          "label": "Koh Samui Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui"
+        }
       ]
     },
     "communityLinks": [
-      { "label": "Samui Expats — Facebook", "url": "https://www.facebook.com/groups/samuiexpats" }
+      {
+        "label": "Samui Expats — Facebook",
+        "url": "https://www.facebook.com/groups/samuiexpats"
+      }
     ]
   }
 ]

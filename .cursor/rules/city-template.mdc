@@ -1,0 +1,288 @@
+---
+description: Reference spec for city page structure and content standards (data/cities.json)
+globs: data/cities.json
+alwaysApply: true
+---
+
+# City Page Template
+
+Extracted from Valencia, Lisbon, and Chiang Mai — the three reference cities.
+Every new city entry must follow this structure exactly.
+
+> For the actionable pre-flight checklist and generation rules, see `new-city-generation.mdc`.
+> For external link rules, see `external-links.mdc`.
+
+---
+
+## 1. Section order (matches page.tsx render order)
+
+```
+id, citySlug, countrySlug, city, country, tagline, summary, lastReviewed
+→ actionChecklist
+→ familyFit
+→ visa          (city-level object OR falls back to countries.json)
+→ residency     (always required)
+→ banking       (always required)
+→ housing       (always required, full 4-block structure)
+→ schools       (always required)
+→ childcare     (always required, structured 3-block format)
+→ healthcare    (always required, items array)
+→ safety        (always required, items array)
+→ cost          (always required, 3 fields)
+→ sources
+→ communityLinks
+```
+
+---
+
+## 2. Required fields and content per section
+
+### Top-level metadata
+```json
+{
+  "id": "cityname-countrycode",
+  "citySlug": "city-name",
+  "countrySlug": "country-name",
+  "city": "City Name",
+  "country": "Country Name",
+  "tagline": "One-line hook — specific, benefit-first, honest",
+  "summary": "2–4 sentences. What makes this city good for families. Main trade-off last.",
+  "lastReviewed": "YYYY-MM"
+}
+```
+
+### actionChecklist
+- 8–10 items
+- Every item must have `targetSection` pointing to one of: `visa`, `housing`, `schools`, `healthcare`, `childcare`, `residency`, `banking`
+- At most 1–2 items can be general advice without a target (e.g. timing/logistics)
+- Labels: imperative verb first, city-specific detail, em-dash for the key reason
+- Cover: visa path → housing → schools → healthcare → residency → banking → 90-day/admin
+
+```json
+{ "label": "Apply for the DTV at a Thai embassy — bring income proof and $15,000 in savings", "targetSection": "visa" }
+```
+
+### familyFit
+- `bestFor`: 4 items — specific family archetypes, not generic praise
+- `watchOutFor`: 4 items — honest, specific trade-offs, not disclaimers
+- Never use "it depends" or vague warnings
+
+### visa
+City-level `visa` object (required unless country already in `data/countries.json`).
+Each option must have:
+- `type`, `duration`, `description`
+- `anchor` (e.g. `"visa-eu"`, `"visa-dtv"`) — enables VisaPathSelector interactivity
+- `detailTitle` and `details[]` — flat bullet list of actionable steps
+- `officialLink` where a stable official URL exists
+
+Anchor → path mapping (must register in VisaPathSelector.tsx if new):
+- `visa-eu` → `"eu"`
+- `visa-tourist` → `"tourist"`
+- `visa-dtv`, `visa-d8`, `visa-dnv`, `visa-elite` → `"dnv"`
+
+Tip: 1 sentence, practical (e.g. "Book your consulate appointment early — slots fill in major cities").
+
+### residency
+Always required. Use local terminology explained in plain words.
+```json
+{
+  "title": "Registration & [local name]",
+  "tip": "One actionable sentence with a URL if possible.",
+  "items": [
+    "What the system is (or isn't) — in plain words",
+    "What you must do first, when, and why it matters",
+    "The document/step that unlocks everything else",
+    "Periodic reporting or renewal if applicable",
+    "What serves as your ID for daily admin"
+  ]
+}
+```
+
+### banking
+Always required.
+```json
+{
+  "title": "Banking",
+  "tip": "The one thing that blocks account opening — state it upfront.",
+  "items": [
+    "Which banks expats actually use and why",
+    "Exact documents needed to open an account",
+    "Digital/neobank bridge option while waiting",
+    "International transfer method (Wise/Revolut)",
+    "Cash culture note — how much to keep on hand"
+  ]
+}
+```
+
+### housing
+Full 4-block structure. No housing section without all four.
+```json
+{
+  "summary": "1–2 sentences: price context + top family area.",
+  "bestAreas": ["Area1", "Area2", "Area3", "Area4", "Area5"],
+  "searchPortalsIntro": [
+    "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+    "Search '[City Name]' inside each platform to filter local listings.",
+    "Tip: [city-specific short-stay arrival advice]."
+  ],
+  "searchPortals": [
+    { "label": "PortalName — brief description", "url": "https://rooturl.com" },
+    { "label": "Search on Facebook: '[Group Name]' — brief description" }
+  ],
+  "typicalPrices": [
+    "1-bed flat, [area]: [local currency range]/month",
+    "3-bed house/flat, [area]: [local currency range]/month",
+    "3-bed [premium area]: [local currency range]/month",
+    "Short-stay serviced option: [local currency range]/month"
+  ],
+  "whatYouNeedToRent": [
+    "Passport",
+    "[Local ID or tax number if required]",
+    "[Bank statements / income proof]",
+    "[Deposit terms — local norm]",
+    "[Contract note — any local quirks]"
+  ]
+}
+```
+
+**Housing link rules** (see external-links.mdc):
+- Portal URLs: root homepage only, never filtered search results
+- Facebook: plain text label only, no URL
+
+### schools
+```json
+{
+  "summary": "1–2 sentences: quality context + key practical warning.",
+  "publicSystem": "Honest 2–3 sentence assessment. Is it viable for expat children? If not, say so clearly.",
+  "internationalOptions": "Where the schools are located, curricula available, rough fee range, application lead time.",
+  "languageNotes": "Language of instruction. English availability. What happens if child attends local school.",
+  "tip": "One urgent, specific action (e.g. 'Apply to X before booking flights — waitlists stretch 12 months').",
+  "examples": [
+    { "name": "School Name", "curriculum": "IB / British / US", "fees": "$X,000 – $Y,000 / yr", "url": "https://schoolwebsite.com" }
+  ]
+}
+```
+- 3 example schools minimum, each with a real URL
+- Fees as approximate ranges, not precise figures
+- Remove URL if only a social media page exists
+
+### childcare
+Three structured blocks — no paragraph format.
+```json
+{
+  "summary": "1–2 sentences: overall availability and standout fact.",
+  "daycareItems": [
+    "What nurseries are called locally, age they accept, where they cluster",
+    "Typical price range (local currency)",
+    "State/subsidised option and whether it's realistic",
+    "Visit-in-person advice"
+  ],
+  "nannyItems": [
+    "Full-time rate (local currency / month)",
+    "Part-time rate (local currency / hr)",
+    "Cultural note (experience with expat families, language, etc.)",
+    "Timing tip (how early to start searching)"
+  ],
+  "whereToFindItems": [
+    "Platform or Facebook group name — why it works here",
+    "Secondary platform",
+    "Community word-of-mouth note"
+  ]
+}
+```
+
+### healthcare
+Items array required. No summary-only entries.
+```json
+{
+  "tip": "The single most important action (e.g. 'Register at your clinic in the first week').",
+  "summary": "1–2 sentences: public vs private split, overall quality.",
+  "items": [
+    "Public system access (or lack of it) — what expats actually use",
+    "Name the top 1–2 hospitals/clinics and what makes them the right choice",
+    "Cost anchor: GP = X, specialist = Y, emergency = Z",
+    "Insurance: what type, which providers, price range for family",
+    "Any practical detail unique to this city (medevac, pharmacy, language)"
+  ]
+}
+```
+
+### safety
+Items array required. No summary-only entries.
+```json
+{
+  "score": 75,
+  "summary": "1 sentence: general verdict.",
+  "items": [
+    "Violent crime assessment — honest, not just reassuring",
+    "The real #1 daily risk (road, weather, petty theft, etc.)",
+    "City/island-specific hazard if one exists (smoke season, jellyfish, heat)",
+    "Area contrast (safe neighbourhoods vs areas to avoid)",
+    "Any legal/social norm that affects family behaviour"
+  ]
+}
+```
+
+### cost
+Exactly 3 fields, single approximate values in local currency.
+```json
+{
+  "status": "estimated",
+  "rentRange": "~€1,300 / month",
+  "familyDinner": "~€45",
+  "nannyRate": "~€12 / hr"
+}
+```
+
+### sources
+Only official, institutional, or stable public URLs.
+- `visa[]`, `schools[]`, `housing[]` (optional), `healthcare[]` (optional), `cost[]`
+- Community links (Facebook groups) go in `communityLinks`, not `sources`
+
+---
+
+## 3. Writing style rules
+
+| Rule | Good | Bad |
+|---|---|---|
+| Verbs first | "Register at your Junta de Freguesia within 90 days" | "The Junta de Freguesia is where you register" |
+| Explain local terms inline | "Padrón Municipal — Spain's official address register" | "Register on the Padrón" |
+| Answer what / when / why | "Get your NIF at any Finanças office (the tax office) — needed for every transaction" | "You need a NIF" |
+| 1–2 lines per bullet | Keep bullets to 1 sentence with one em-dash clause | 3-line bullets |
+| Hedges where appropriate | "typically", "usually", "many families", "roughly" | "always", "guaranteed", "the best" |
+| Local currency | "~฿9,000 / month" | "$265/month" |
+| Named specifics | "Bangkok Bank and Kasikorn (KBank)" | "local banks" |
+
+---
+
+## 4. What NOT to include
+
+- **Superlatives without evidence**: "the safest city in the world", "virtually zero crime", "world-class"
+- **Precise unverifiable numbers**: exact government fee amounts, exact visa processing times in days
+- **Deep search URLs**: filtered/search-result portal URLs (root homepage only)
+- **Facebook URLs for schools or unstable institutions**: use plain text if only a social page exists
+- **Border run encouragement**: do not suggest visa runs as a strategy
+- **USD-only costs for non-USD cities**: use local currency; USD is acceptable as secondary context only
+- **Cleveland Clinic in Dubai**: it's in Abu Dhabi, not Dubai
+- **Score inflation**: safety scores should reflect honest risk, not marketing. Cities with road/medevac risks should be 78–85, not 90+
+
+---
+
+## 5. Checklist structure rules
+
+- Every important item must have `targetSection`
+- `targetSection` must match one of: `"visa"`, `"housing"`, `"schools"`, `"childcare"`, `"healthcare"`, `"residency"`, `"banking"`, `"safety"`
+- General logistics items (timing, SIM card, equipment) may omit `targetSection` — max 2 per checklist
+- Order: visa → housing → schools → healthcare → residency → banking → practical/logistics
+- Label format: `"[Verb] [what] — [why it matters or when]"`
+
+---
+
+## 6. Data rules
+
+- `rentRange`: single approximate value in local currency with `~` prefix — NOT a range
+- `familyDinner`: single approximate value — a mid-range restaurant meal for 2 adults + 1–2 kids
+- `nannyRate`: single approximate hourly rate — NOT monthly, NOT daycare
+- Safety score: use 75–90 range for realistic cities; never above 92
+- All figures marked `"status": "estimated"` unless sourced from an official document
+- Housing `typicalPrices` may use ranges (they are detail bullets, not card metrics)

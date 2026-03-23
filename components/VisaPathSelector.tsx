@@ -27,6 +27,9 @@ const ANCHOR_PATH: Record<string, VisaPath> = {
   "visa-apply":     "dnv",
   "visa-dtv":       "dnv",   // Thailand DTV
   "visa-elite":     "dnv",   // Thailand Elite
+  "visa-arrival":   "tourist", // UAE visa on arrival
+  "visa-vwp":       "dnv",   // UAE Virtual Working Programme
+  "visa-golden":    "dnv",   // UAE Golden Visa
 };
 
 const VISA_ANCHORS = new Set(Object.keys(ANCHOR_PATH));

@@ -435,7 +435,7 @@ export default async function CityPage({ params }: Props) {
         </Section>
 
         {/* ── Safety ────────────────────────────────────────────────────── */}
-        <Section title="Safety" icon={<Shield size={16} className="text-slate-500" />}>
+        <Section id="safety" title="Safety" icon={<Shield size={16} className="text-slate-500" />}>
           <div className="mb-4 flex items-baseline gap-2">
             <span className="text-4xl font-extrabold text-slate-900">{dest.safety.score}</span>
             <span className="text-base text-slate-400">/ 100</span>

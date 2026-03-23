@@ -28,7 +28,7 @@ export interface Destination {
    */
   actionChecklist: {
     label: string;
-    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking"
+    targetSection?: "visa" | "schools" | "housing" | "healthcare" | "childcare" | "residency" | "banking" | "safety"
       | "visa-income" | "visa-documents" | "visa-insurance" | "visa-apply" | "visa-d8";
   }[];
 
