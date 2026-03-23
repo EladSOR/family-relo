@@ -142,8 +142,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$900 – $2,000 / month",
-      "nannyHourly": 12
+      "rentRange": "~€1,300 / month",
+      "familyDinner": "~€45",
+      "nannyRate": "~€12 / hr"
     },
     "sources": {
       "visa": [
@@ -374,8 +375,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$1,800 – $3,500 / month",
-      "nannyHourly": 10
+      "rentRange": "~€2,500 / month",
+      "familyDinner": "~€55",
+      "nannyRate": "~€13 / hr"
     },
     "sources": {
       "visa": [
@@ -520,8 +522,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$2,000 – $5,000 / month",
-      "nannyHourly": 15
+      "rentRange": "~AED 12,000 / month",
+      "familyDinner": "~AED 250",
+      "nannyRate": "~AED 55 / hr"
     },
     "sources": {
       "visa": [
@@ -740,8 +743,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$600 – $1,400 / month",
-      "nannyHourly": 4
+      "rentRange": "~฿30,000 / month",
+      "familyDinner": "~฿500",
+      "nannyRate": "~฿150 / hr"
     },
     "sources": {
       "visa": [
@@ -872,8 +876,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$400 – $900 / month",
-      "nannyHourly": 5
+      "rentRange": "~฿20,000 / month",
+      "familyDinner": "~฿400",
+      "nannyRate": "~฿175 / hr"
     },
     "sources": {
       "visa": [
@@ -984,8 +989,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "$700 – $1,800 / month",
-      "nannyHourly": 6
+      "rentRange": "~฿42,000 / month",
+      "familyDinner": "~฿500",
+      "nannyRate": "~฿210 / hr"
     },
     "sources": {
       "visa": [

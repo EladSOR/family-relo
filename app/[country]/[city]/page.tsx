@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
-  MapPin, Shield, BadgeDollarSign, Home,
+  MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
   BookOpen, Landmark, CreditCard,
@@ -101,22 +101,23 @@ export default async function CityPage({ params }: Props) {
         {/* ── Quick stats ───────────────────────────────────────────────── */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <StatCard
-            icon={<Shield size={18} className="text-green-600" />}
-            bg="bg-green-50"
-            label="Safety Score"
-            value={`${dest.safety.score}/100`}
-          />
-          <StatCard
-            icon={<BadgeDollarSign size={18} className="text-orange-500" />}
-            bg="bg-orange-50"
-            label="Nanny Cost"
-            value={`$${dest.cost.nannyHourly}/hr`}
-          />
-          <StatCard
             icon={<Home size={18} className="text-blue-500" />}
             bg="bg-blue-50"
-            label="Typical Rent"
+            label="3-bed family home"
             value={dest.cost.rentRange}
+            small
+          />
+          <StatCard
+            icon={<Utensils size={18} className="text-orange-500" />}
+            bg="bg-orange-50"
+            label="Dinner out (family)"
+            value={dest.cost.familyDinner}
+          />
+          <StatCard
+            icon={<Baby size={18} className="text-purple-500" />}
+            bg="bg-purple-50"
+            label="Nanny"
+            value={dest.cost.nannyRate}
             small
           />
         </div>
@@ -565,12 +566,14 @@ function Tip({ text }: { text: string }) {
 }
 
 function StatCard({
-  icon, bg, label, value, small = false,
+  icon, bg, label, value, sub, small = false,
 }: {
   icon: React.ReactNode;
   bg: string;
   label: string;
   value: string;
+  /** Optional sub-label shown below the value, e.g. "daycare" or "nanny" */
+  sub?: string;
   small?: boolean;
 }) {
   return (
@@ -582,6 +585,9 @@ function StatCard({
       <p className={`mt-1 font-extrabold text-slate-900 ${small ? "text-xl" : "text-3xl"}`}>
         {value}
       </p>
+      {sub && (
+        <p className="mt-0.5 text-xs text-slate-400">{sub}</p>
+      )}
     </div>
   );
 }

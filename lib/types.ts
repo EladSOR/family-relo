@@ -112,10 +112,18 @@ export interface Destination {
 
   cost: {
     status: DataStatus;
-    /** Human-readable monthly rent range, e.g. "$900 – $2,000 / month" */
+    /** Approximate monthly rent for a 3-bed family home in local currency, e.g. "~€1,300 / month" */
     rentRange: string;
-    /** Quick numeric stat (USD/hr) used on cards */
-    nannyHourly: number;
+    /** Approximate cost of a mid-range family dinner (2 adults + kids) in local currency, e.g. "~€45" */
+    familyDinner: string;
+    /** Approximate nanny hourly rate in local currency, e.g. "~€12 / hr" */
+    nannyRate: string;
+    /** @deprecated */
+    childcare?: string;
+    /** @deprecated */
+    childcareType?: "daycare" | "nanny";
+    /** @deprecated */
+    nannyHourly?: number;
   };
 
   /** Sources organised by topic section for credibility and SEO */

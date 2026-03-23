@@ -1,6 +1,6 @@
 // No "use client" needed — all hover effects are pure Tailwind CSS.
 import Link from "next/link";
-import { MapPin, Shield, BadgeDollarSign, ChevronRight, Home } from "lucide-react";
+import { MapPin, Shield, Home, Utensils, Baby, ChevronRight } from "lucide-react";
 import type { Destination } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
 
@@ -70,23 +70,21 @@ export default function DestinationCard({ city }: Props) {
           {/* ── Hover reveal: stats + CTA ──────────────────────────────── */}
 
           {/* Stats row */}
-          <div className="mt-5 grid grid-cols-2 gap-2.5 translate-y-4 opacity-0 transition-all duration-350 delay-75 group-hover:translate-y-0 group-hover:opacity-100">
-            <div className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/12 px-4 py-3 backdrop-blur-md">
-              <BadgeDollarSign size={14} className="shrink-0 text-white/60" />
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/45">Nanny</p>
-                <p className="text-sm font-extrabold text-white">
-                  ${city.cost.nannyHourly}
-                  <span className="text-[10px] font-normal text-white/50">/hr</span>
-                </p>
-              </div>
+          <div className="mt-5 grid grid-cols-3 gap-2 translate-y-4 opacity-0 transition-all duration-350 delay-75 group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
+              <Home size={12} className="text-white/50" />
+              <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">3-bed home</p>
+              <p className="text-xs font-extrabold text-white leading-tight">{city.cost.rentRange}</p>
             </div>
-            <div className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/12 px-4 py-3 backdrop-blur-md">
-              <Home size={14} className="shrink-0 text-white/60" />
-              <div className="min-w-0">
-                <p className="text-[10px] font-bold uppercase tracking-wider text-white/45">Best area</p>
-                <p className="truncate text-sm font-extrabold text-white">{city.housing.bestAreas[0]}</p>
-              </div>
+            <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
+              <Utensils size={12} className="text-white/50" />
+              <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Dinner out</p>
+              <p className="text-xs font-extrabold text-white leading-tight">{city.cost.familyDinner}</p>
+            </div>
+            <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
+              <Baby size={12} className="text-white/50" />
+              <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Nanny</p>
+              <p className="text-xs font-extrabold text-white leading-tight">{city.cost.nannyRate}</p>
             </div>
           </div>
 
