@@ -24,7 +24,7 @@ export const GUEST_ROWS: GuestRow[] = [
 // Hardcoded stable Unsplash photo IDs — no API key required.
 
 export const CITY_IMAGES: Record<string, string> = {
-  "Valencia":    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
+  "Valencia":    "https://images.unsplash.com/photo-1754403392652-0edc305bce4b?w=900&q=80",
   "Lisbon":      "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?w=900&q=80",
   "Dubai":       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
   "Chiang Mai":  "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=900&q=80",
@@ -37,8 +37,8 @@ export const CITY_IMAGES: Record<string, string> = {
   "Amsterdam":   "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=900&q=80",
   "Prague":      "https://images.unsplash.com/photo-1541849546-216549ae216d?w=900&q=80",
   "Budapest":    "https://images.unsplash.com/photo-1551867633-194f125bddfa?w=900&q=80",
-  "Bangkok":     "https://images.unsplash.com/photo-1508009603885-50cf7c8dd0d5?w=900&q=80",
-  "Phuket":      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80",
+  "Bangkok":     "https://images.unsplash.com/photo-1755251042986-91270ffd76f5?w=800&q=80",
+  "Phuket":      "https://images.unsplash.com/photo-1601225612316-b4733315a717?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =

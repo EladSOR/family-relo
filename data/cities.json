@@ -97,7 +97,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)"
+          "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)",
+          "url": "https://www.google.com/search?q=Pisos+en+Valencia+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -146,7 +148,7 @@
       "daycareNotes": "Private nurseries (guarderías) accept children from 4 months. Fees: €300–€600/month. Public places are subsidised but scarce.",
       "nannyNotes": "Live-out nannies charge €10–€15/hr. Au pairs receive board, lodging, and €80–€150/week pocket money.",
       "typicalCost": "Nanny: €10–€15/hr. Private nursery: €300–€600/month. Au pair: €80–€150/week + room and board.",
-      "howFamiliesFindIt": "Sitly.es, InfoJobs.es, AuPairWorld.com, Valencia Expats Facebook group.",
+      "howFamiliesFindIt": "Sitly.es, InfoJobs.es, AuPairWorld.com.",
       "daycareItems": [
         "Private nurseries (guarderías) accept children from 4 months — widely available in Ruzafa, Campanar, and most family neighbourhoods",
         "Typical fees: €300–€600/month depending on hours and location",
@@ -162,7 +164,7 @@
         "Sitly.es — most popular nanny-finding platform in Spain",
         "InfoJobs.es — broad job board, also used for nanny and cuidadora searches",
         "AuPairWorld.com — for au pair matching",
-        "Valencia Expats Facebook group — best source for personal recommendations"
+        "Search 'Valencia Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -245,8 +247,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Valencia Expats' on Facebook — on-the-ground advice from residents",
-        "searchQuery": "Valencia Expats Facebook group"
+        "label": "Search 'Valencia Expats' on Google — on-the-ground advice from residents",
+        "searchQuery": "Valencia Expats",
+        "url": "https://www.google.com/search?q=Valencia+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -397,7 +401,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals"
+          "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Housing+in+Lisbon+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -445,7 +451,7 @@
       "daycareNotes": "Private nurseries in Cascais and Oeiras charge €500–€900/month, with bilingual (English/Portuguese) programmes.",
       "nannyNotes": "Live-out nannies charge €10–€15/hr. Many families hire Brazilian nannies experienced with international families.",
       "typicalCost": "Nanny: €10–€15/hr. Private nursery: €500–€900/month. Au pair: €100–€200/week + room and board.",
-      "howFamiliesFindIt": "Sitly.com, Babysits.com, 'Lisbon Expat Families' Facebook group, and local agency Ama Perfeita.",
+      "howFamiliesFindIt": "Sitly.com, Babysits.com, and local agency Ama Perfeita.",
       "daycareItems": [
         "Private creches (nurseries) accept babies from 3 months old — widely available in Cascais, Oeiras, and Estoril where most expat families live",
         "Typical fees: €500–€900/month; ask specifically about bilingual (English/Portuguese) programmes — they are common in expat areas but not guaranteed",
@@ -461,7 +467,7 @@
       "whereToFindItems": [
         "Sitly.com — most popular nanny platform in Portugal",
         "Babysits.com — good secondary option",
-        "'Lisbon Expat Families' Facebook group — best source for personal recommendations",
+        "Search 'Lisbon Expat Families' on Google — best source for personal recommendations",
         "Ama Perfeita (local agency) — vetted nannies with references"
       ]
     },
@@ -547,8 +553,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Lisbon Expat Families' on Facebook — family-focused local tips",
-        "searchQuery": "Lisbon Expat Families Facebook group"
+        "label": "Search 'Lisbon Expat Families' on Google — family-focused local tips",
+        "searchQuery": "Lisbon Expat Families",
+        "url": "https://www.google.com/search?q=Lisbon+Expat+Families+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -695,7 +703,9 @@
           "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Dubai Expats' — community group with housing posts and direct landlord deals"
+          "label": "Search on Facebook: 'Dubai Expats' — community group with housing posts and direct landlord deals",
+          "url": "https://www.google.com/search?q=Dubai+Expats+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -754,8 +764,8 @@
         "A live-in arrangement gives around-the-clock coverage — common for dual-income households"
       ],
       "whereToFindItems": [
-        "Search on Facebook: 'Mums in Dubai' — community referrals and direct hires",
-        "Search on Facebook: 'Dubai Expat Families' — broader expat community group",
+        "Search 'Mums in Dubai' on Google — community referrals and direct hires",
+        "Search 'Dubai Expat Families' on Google — broader expat community group",
         "HelperChoice.com — online platform for domestic worker profiles",
         "Domestic staffing agencies (search 'domestic staffing agency Dubai') — licensed agencies handle visa sponsorship"
       ]
@@ -843,8 +853,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Mums in Dubai' on Facebook — family recommendations and school advice",
-        "searchQuery": "Mums in Dubai Facebook group"
+        "label": "Search 'Mums in Dubai' on Google — family recommendations and school advice",
+        "searchQuery": "Mums in Dubai",
+        "url": "https://www.google.com/search?q=Mums+in+Dubai+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -870,7 +882,7 @@
         "label": "Plan your arrival for October–January to avoid the smoke season (February–April brings hazardous air quality)"
       },
       {
-        "label": "Start with a 1–3 month short-term rental on arrival — use Facebook 'Chiang Mai Expat Club' or Airbnb while you find a long-term home",
+        "label": "Start with a 1–3 month short-term rental on arrival — use Airbnb or search online for short-term housing while you find a long-term home",
         "targetSection": "housing"
       },
       {
@@ -992,10 +1004,14 @@
           "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)"
+          "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)",
+          "url": "https://www.google.com/search?q=Chiang+Mai+Expat+Club+Facebook+group",
+          "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Chiang Mai Homes for Rent' — dedicated rental listings group"
+          "label": "Search on Facebook: 'Chiang Mai Homes for Rent' — dedicated rental listings group",
+          "url": "https://www.google.com/search?q=Chiang+Mai+Homes+for+Rent+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -1048,8 +1064,8 @@
         "English fluency varies — build in a 2–4 week settling-in period and be patient"
       ],
       "whereToFindItems": [
-        "Facebook: 'Chiang Mai Expat Club' — the most common way expat families find nannies",
-        "Facebook: 'Chiang Mai Mums' — good for parent-to-parent recommendations",
+        "Search 'Chiang Mai Expat Club' on Google — the most common way expat families find nannies",
+        "Search 'Chiang Mai Mums' on Google — good for parent-to-parent recommendations",
         "ThaiNanny.com — dedicated nanny platform with profiles and reviews",
         "Word of mouth at international school gates — the fastest route to a vetted referral"
       ]
@@ -1143,12 +1159,16 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Chiang Mai Expat Club' on Facebook — general expat tips",
-        "searchQuery": "Chiang Mai Expat Club Facebook group"
+        "label": "Search 'Chiang Mai Expat Club' on Google — general expat tips",
+        "searchQuery": "Chiang Mai Expat Club",
+        "url": "https://www.google.com/search?q=Chiang+Mai+Expat+Club+Facebook+group",
+        "isVerified": true
       },
       {
-        "label": "Search 'Chiang Mai Mums' on Facebook — family and childcare advice",
-        "searchQuery": "Chiang Mai Mums Facebook group"
+        "label": "Search 'Chiang Mai Mums' on Google — family and childcare advice",
+        "searchQuery": "Chiang Mai Mums",
+        "url": "https://www.google.com/search?q=Chiang+Mai+Mums+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -1175,7 +1195,7 @@
         "targetSection": "healthcare"
       },
       {
-        "label": "Find short-term accommodation through Airbnb or Facebook ('Koh Phangan Expats') to scout areas before committing long-term",
+        "label": "Find short-term accommodation through Airbnb to scout areas before committing long-term",
         "targetSection": "housing"
       },
       {
@@ -1187,7 +1207,7 @@
         "targetSection": "banking"
       },
       {
-        "label": "Join the Koh Phangan Family Community and Koh Phangan Expats Facebook groups before you arrive — they are the primary resource for new families",
+        "label": "Search for Koh Phangan expat community groups (such as Koh Phangan Expats) before you arrive — they are the primary resource for new families",
         "targetSection": "residency"
       },
       {
@@ -1268,7 +1288,7 @@
       "searchPortalsIntro": [
         "These are the main platforms used to find long-term housing on Koh Phangan.",
         "Search 'Koh Phangan' inside each platform to filter local listings.",
-        "Tip: the best homes in Sri Thanu and Haad Yao go by word-of-mouth. Join the Facebook groups before arriving and post what you are looking for — many landlords never list online."
+        "Tip: the best homes in Sri Thanu and Haad Yao go by word-of-mouth. Search for expat community groups online before arriving and post what you are looking for — many landlords never list online."
       ],
       "searchPortals": [
         {
@@ -1277,10 +1297,14 @@
           "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Koh Phangan Expats' — largest community group, direct landlord posts"
+          "label": "Search on Facebook: 'Koh Phangan Expats' — largest community group, direct landlord posts",
+          "url": "https://www.google.com/search?q=Koh+Phangan+Expats+Facebook+group",
+          "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Koh Phangan Family Community' — family-specific housing recommendations"
+          "label": "Search on Facebook: 'Koh Phangan Family Community' — family-specific housing recommendations",
+          "url": "https://www.google.com/search?q=Koh+Phangan+Family+Community+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -1319,7 +1343,7 @@
         "A small number of private nurseries and community micro-schools serve expat families — mainly in Sri Thanu",
         "Options are limited compared to a city; cooperative childcare (nanny shares, community playgroups) is very common and often preferred",
         "Community nursery fees: typically ฿7,000–฿14,000 / month",
-        "Ask in the Facebook groups before arriving — the best current options change as the community evolves"
+        "Ask in expat community groups before arriving — the best current options change as the community evolves"
       ],
       "nannyItems": [
         "Full-time Thai nannies are widely available and affordable — roughly ฿10,500–฿18,000 / month for a live-in arrangement",
@@ -1328,9 +1352,9 @@
         "English fluency varies — vetted nannies who speak English are sought-after in this smaller community"
       ],
       "whereToFindItems": [
-        "Search on Facebook: 'Koh Phangan Expats' — primary resource for nanny and childcare recommendations",
-        "Search on Facebook: 'Koh Phangan Family Community' — family-focused group with local knowledge",
-        "Search on Facebook: 'Phangan Mamas' — mums-specific group, good for childcare referrals",
+        "Search 'Koh Phangan Expats' on Google — primary resource for nanny and childcare recommendations",
+        "Search 'Koh Phangan Family Community' on Google — family-focused group with local knowledge",
+        "Search 'Phangan Mamas' on Google — mums-specific group, good for childcare referrals",
         "Word-of-mouth at community playgroups — often the fastest route to a vetted referral"
       ]
     },
@@ -1411,8 +1435,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Koh Phangan Expats' on Facebook — island life and housing tips",
-        "searchQuery": "Koh Phangan Expats Facebook group"
+        "label": "Search 'Koh Phangan Expats' on Google — island life and housing tips",
+        "searchQuery": "Koh Phangan Expats",
+        "url": "https://www.google.com/search?q=Koh+Phangan+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -1443,7 +1469,7 @@
         "targetSection": "housing"
       },
       {
-        "label": "Find accommodation through the Samui Expat Facebook community or a local property agency before arriving",
+        "label": "Find accommodation through a local property agency or online search before arriving",
         "targetSection": "housing"
       },
       {
@@ -1537,10 +1563,14 @@
           "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Samui Expats' — the primary community group for housing posts and direct landlord deals"
+          "label": "Search on Facebook: 'Samui Expats' — the primary community group for housing posts and direct landlord deals",
+          "url": "https://www.google.com/search?q=Samui+Expats+Facebook+group",
+          "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Koh Samui Property For Rent' — dedicated rental listings group"
+          "label": "Search on Facebook: 'Koh Samui Property For Rent' — dedicated rental listings group",
+          "url": "https://www.google.com/search?q=Koh+Samui+Property+For+Rent+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -1588,9 +1618,9 @@
         "English fluency varies — build in a settling-in period and use vetted community referrals"
       ],
       "whereToFindItems": [
-        "Search on Facebook: 'Samui Expats' — most common starting point for nanny referrals on the island",
-        "Search on Facebook: 'Samui Families' — family-specific group with local recommendations",
-        "Search on Facebook: 'Koh Samui International Community' — broader community group",
+        "Search 'Samui Expats' on Google — most common starting point for nanny referrals on the island",
+        "Search 'Samui Families' on Google — family-specific group with local recommendations",
+        "Search 'Koh Samui International Community' on Google — broader community group",
         "Local property and relocation agencies sometimes maintain nanny referral lists"
       ]
     },
@@ -1683,8 +1713,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Samui Expats' on Facebook — local recommendations",
-        "searchQuery": "Samui Expats Facebook group"
+        "label": "Search 'Samui Expats' on Google — local recommendations",
+        "searchQuery": "Samui Expats",
+        "url": "https://www.google.com/search?q=Samui+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -1786,7 +1818,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Pisos en Barcelona' or 'Housing Barcelona Expats' for direct landlord deals"
+          "label": "Facebook groups — search: 'Pisos en Barcelona' or 'Housing Barcelona Expats' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Pisos+en+Barcelona+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -1847,7 +1881,7 @@
         "Sitly.es — most popular nanny-finding platform in Spain",
         "InfoJobs.es — broad job board, also used for nanny searches",
         "AuPairWorld.com — for au pair matching",
-        "Barcelona Expats Facebook groups — best source for personal recommendations"
+        "Search 'Barcelona Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -1912,8 +1946,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Barcelona Expats' on Facebook — on-the-ground advice from residents",
-        "searchQuery": "Barcelona Expats Facebook group"
+        "label": "Search 'Barcelona Expats' on Google — on-the-ground advice from residents",
+        "searchQuery": "Barcelona Expats",
+        "url": "https://www.google.com/search?q=Barcelona+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -2015,7 +2051,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Pisos en Madrid' or 'Madrid Expats Housing' for direct landlord deals"
+          "label": "Facebook groups — search: 'Pisos en Madrid' or 'Madrid Expats Housing' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Pisos+en+Madrid+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -2075,7 +2113,7 @@
         "Sitly.es — most popular nanny platform in Spain",
         "InfoJobs.es — broad job board, also used for nanny and cuidadora searches",
         "AuPairWorld.com — for au pair matching",
-        "Madrid Expats Facebook groups — best source for personal recommendations"
+        "Search 'Madrid Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -2140,8 +2178,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Madrid Expats' on Facebook — on-the-ground advice from residents",
-        "searchQuery": "Madrid Expats Facebook group"
+        "label": "Search 'Madrid Expats' on Google — on-the-ground advice from residents",
+        "searchQuery": "Madrid Expats",
+        "url": "https://www.google.com/search?q=Madrid+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -2291,7 +2331,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing in Porto' or 'Porto Expats' for direct landlord deals"
+          "label": "Facebook groups — search: 'Housing in Porto' or 'Porto Expats' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Housing+in+Porto+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -2350,7 +2392,7 @@
       "whereToFindItems": [
         "Sitly.com — most popular nanny platform in Portugal",
         "Babysits.com — good secondary option",
-        "Porto Expats Facebook groups — best source for personal recommendations"
+        "Search 'Porto Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -2422,8 +2464,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Porto Expats' on Facebook — local advice and housing tips",
-        "searchQuery": "Porto Expats Facebook group"
+        "label": "Search 'Porto Expats' on Google — local advice and housing tips",
+        "searchQuery": "Porto Expats",
+        "url": "https://www.google.com/search?q=Porto+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -2555,7 +2599,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Berlin Wohnungssuche' or 'Apartments Berlin Expats' for direct landlord deals"
+          "label": "Facebook groups — search: 'Berlin Wohnungssuche' or 'Apartments Berlin Expats' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Berlin+Wohnungssuche+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -2616,7 +2662,7 @@
         "Betreut.de — Germany's largest nanny and childcare platform",
         "Kindersitter.de — good secondary platform for Berlin nannies",
         "AuPairWorld.com — for au pair matching",
-        "Berlin Expats Facebook groups — best source for personal recommendations"
+        "Search 'Berlin Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -2688,8 +2734,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Berlin Expats' on Facebook — tips from residents and families",
-        "searchQuery": "Berlin Expats Facebook group"
+        "label": "Search 'Berlin Expats' on Google — tips from residents and families",
+        "searchQuery": "Berlin Expats",
+        "url": "https://www.google.com/search?q=Berlin+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -2816,7 +2864,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing Amsterdam Expats' or 'Amsterdam Rentals' for direct landlord deals"
+          "label": "Facebook groups — search: 'Housing Amsterdam Expats' or 'Amsterdam Rentals' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Housing+Amsterdam+Expats+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -2875,7 +2925,7 @@
       "whereToFindItems": [
         "Sitly.nl — Netherlands' largest nanny and childcare platform",
         "Gastouderbureau.nl — for finding registered gastouder (childminder) placements eligible for subsidy",
-        "Amsterdam Expats Facebook groups — best source for personal nanny recommendations"
+        "Search 'Amsterdam Expats' on Google — best source for personal nanny recommendations"
       ]
     },
     "healthcare": {
@@ -2947,8 +2997,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Amsterdam Expats' on Facebook — tips from residents and families",
-        "searchQuery": "Amsterdam Expats Facebook group"
+        "label": "Search 'Amsterdam Expats' on Google — tips from residents and families",
+        "searchQuery": "Amsterdam Expats",
+        "url": "https://www.google.com/search?q=Amsterdam+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -3079,7 +3131,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Prague Expats Housing' or 'Apartments Prague' for direct deals"
+          "label": "Facebook groups — search: 'Prague Expats Housing' or 'Apartments Prague' for direct deals",
+          "url": "https://www.google.com/search?q=Prague+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -3209,8 +3263,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Prague Expats' on Facebook — housing and local advice from residents",
-        "searchQuery": "Prague Expats Facebook group"
+        "label": "Search 'Prague Expats' on Google — housing and local advice from residents",
+        "searchQuery": "Prague Expats",
+        "url": "https://www.google.com/search?q=Prague+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -3341,7 +3397,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Budapest Expats Housing' or 'Expat Budapest Rentals' for direct landlord deals"
+          "label": "Facebook groups — search: 'Budapest Expats Housing' or 'Expat Budapest Rentals' for direct landlord deals",
+          "url": "https://www.google.com/search?q=Budapest+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -3398,7 +3456,7 @@
       "whereToFindItems": [
         "Babysits.com — used by the Budapest expat community for nanny searches",
         "AuPairWorld.com — for au pair matching",
-        "Budapest Expats Facebook groups — best source for personal recommendations"
+        "Search 'Budapest Expats' on Google — best source for personal recommendations"
       ]
     },
     "healthcare": {
@@ -3470,8 +3528,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Budapest Expats' on Facebook — local tips and advice from residents",
-        "searchQuery": "Budapest Expats Facebook group"
+        "label": "Search 'Budapest Expats' on Google — local tips and advice from residents",
+        "searchQuery": "Budapest Expats",
+        "url": "https://www.google.com/search?q=Budapest+Expats+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -3612,7 +3672,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Bangkok Expats Housing' or 'Condos for Rent Bangkok' for direct deals"
+          "label": "Facebook groups — search: 'Bangkok Expats Housing' or 'Condos for Rent Bangkok' for direct deals",
+          "url": "https://www.google.com/search?q=Bangkok+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -3667,8 +3729,8 @@
         "Most Bangkok caregivers speak basic English; fully bilingual nannies are available at a premium, especially in Sukhumvit and Thonglor"
       ],
       "whereToFindItems": [
-        "Bangkok Expat Families Facebook group — most reliable source for vetted nanny recommendations",
-        "Expat women's Facebook groups (Bangkok) — extensive nanny recommendation threads",
+        "Search 'Bangkok Expat Families' on Google — most reliable source for vetted nanny recommendations",
+        "Search 'Expat Women Bangkok' on Google — extensive nanny recommendation threads",
         "Local agencies: search 'nanny agency Bangkok' for vetted caregiver placements"
       ]
     },
@@ -3747,8 +3809,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Bangkok Expat Families' on Facebook — local advice and school recommendations",
-        "searchQuery": "Bangkok Expat Families Facebook group"
+        "label": "Search 'Bangkok Expat Families' on Google — local advice and school recommendations",
+        "searchQuery": "Bangkok Expat Families",
+        "url": "https://www.google.com/search?q=Bangkok+Expat+Families+Facebook+group",
+        "isVerified": true
       }
     ]
   },
@@ -3887,7 +3951,9 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Phuket Expats Housing' or 'Phuket Rental Villas' for direct deals"
+          "label": "Facebook groups — search: 'Phuket Expats Housing' or 'Phuket Rental Villas' for direct deals",
+          "url": "https://www.google.com/search?q=Phuket+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -3937,8 +4003,8 @@
         "English-speaking nannies are available in the Laguna/Bangtao area — ask for recommendations from other expat families"
       ],
       "whereToFindItems": [
-        "Phuket Expat Families Facebook group — most reliable source for vetted nanny recommendations on the island",
-        "Expat women's Facebook groups (Phuket) — extensive nanny and childcare recommendation threads"
+        "Search 'Phuket Expat Families' on Google — most reliable source for vetted nanny recommendations on the island",
+        "Search 'Expat Women Phuket' on Google — extensive nanny and childcare recommendation threads"
       ]
     },
     "healthcare": {
@@ -4016,8 +4082,10 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Phuket Expat Families' on Facebook — island life advice and school recommendations",
-        "searchQuery": "Phuket Expat Families Facebook group"
+        "label": "Search 'Phuket Expat Families' on Google — island life advice and school recommendations",
+        "searchQuery": "Phuket Expat Families",
+        "url": "https://www.google.com/search?q=Phuket+Expat+Families+Facebook+group",
+        "isVerified": true
       }
     ]
   }
