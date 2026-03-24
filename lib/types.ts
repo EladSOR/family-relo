@@ -77,8 +77,9 @@ export interface Destination {
     /**
      * List of rental platforms. Use root URLs only — no deep/filtered links.
      * Facebook entries must be text-only (no `url` field).
+     * Set `isVerified: true` only after confirming the URL resolves correctly.
      */
-    searchPortals: { label: string; url?: string }[];
+    searchPortals: { label: string; url?: string; isVerified?: boolean }[];
     /** Bullet list of 4–5 typical monthly rent examples in local currency */
     typicalPrices?: string[];
     /** Bullet list of documents and requirements to rent in this city */
@@ -91,8 +92,17 @@ export interface Destination {
     publicSystem: string;
     internationalOptions: string;
     languageNotes: string;
-    examples: SchoolExample[];
-    /** One urgent, specific action — e.g. "Apply to X before booking flights" */
+    /**
+     * RULE: Use `options[]` only. Never use specific school names.
+     * Each entry describes a *type* of school (e.g. "British curriculum international schools"),
+     * not a named institution. The renderer auto-generates a SearchHint from `type + city + country`.
+     *
+     * @deprecated `examples[]` — replaced by `options[]`
+     */
+    examples?: SchoolExample[];
+    /** School-type categories. Required — replaces named `examples[]`. */
+    options?: SchoolOption[];
+    /** One urgent, specific action — e.g. "Apply 12+ months before your move" */
     tip?: string;
   };
 
@@ -200,10 +210,14 @@ export interface Destination {
   sources: SectionSources;
 
   /**
-   * Community links (Facebook groups, expat forums).
-   * Kept separate from `sources` — these are community knowledge, not official data.
+   * Community search guidance (Facebook groups, expat forums).
+   * No URLs — the renderer shows a description + a "Search on Google" button.
+   *
+   * - `label`       — human-readable description of the group / resource
+   * - `searchQuery` — exact string sent to Google search button
+   *                   e.g. "Valencia Expats Facebook group"
    */
-  communityLinks?: Source[];
+  communityLinks?: { label: string; searchQuery?: string }[];
 }
 
 // ── Trust / verification layer ────────────────────────────────────────────────
@@ -223,7 +237,12 @@ export interface VisaSection {
   id: string;
   heading: string;
   items: string[];
-  officialLink?: { label: string; url: string };
+  /**
+   * `officialLink.label` is rendered as a plain-text search hint — NOT a clickable link.
+   * The renderer generates: 'Search "[label]" for official details'
+   * `url` is retained as dormant data only; it is never rendered.
+   */
+  officialLink?: { label: string; url?: string };
 }
 
 /**
@@ -242,7 +261,12 @@ export interface VisaOption {
   details?: string[];
   /** Structured sub-sections — takes precedence over `details` when present */
   sections?: VisaSection[];
-  officialLink?: { label: string; url: string };
+  /**
+   * `officialLink.label` is rendered as a plain-text search hint — NOT a clickable link.
+   * The renderer generates: 'Search "[label]" for official details'
+   * `url` is retained as dormant data only; it is never rendered.
+   */
+  officialLink?: { label: string; url?: string };
 }
 
 // ── Country-level shared data ─────────────────────────────────────────────────
@@ -257,16 +281,41 @@ export interface CountryData {
   };
 }
 
+/** @deprecated Use SchoolOption instead. Never render specific school names. */
 export interface SchoolExample {
   name: string;
   curriculum: string;
   fees?: string;
   url?: string;
+  isVerified?: boolean;
 }
 
+/**
+ * Describes a *type* of school available in the city.
+ * Never name specific schools — institutions close, move, or change.
+ *
+ * RULE:
+ * - `type`        — category label AND the base of the auto-generated search query
+ *                   e.g. "British curriculum international schools"
+ * - `description` — honest availability note, e.g. "Small selection, limited spots"
+ * - `fees`        — detached estimate, NOT tied to any named school
+ */
+export interface SchoolOption {
+  type: string;
+  description: string;
+  fees?: string;
+}
+
+/**
+ * RULE: `isVerified` must be explicitly set to `true` for the link to render as clickable.
+ * Any link without `isVerified: true` (missing or false) renders as plain text fallback.
+ * This prevents unreviewed, broken, or future-added links from silently appearing as dead clicks.
+ */
 export interface Source {
   label: string;
   url: string;
+  /** Set to true only after confirming the URL is stable and resolves correctly. */
+  isVerified?: boolean;
 }
 
 export interface SectionSources {

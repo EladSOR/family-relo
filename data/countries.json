@@ -20,8 +20,9 @@
             "After 5 years of continuous residence you can apply for long-term residency status."
           ],
           "officialLink": {
-            "label": "EU Citizens Residence Rights — Your Europe",
-            "url": "https://europa.eu/youreurope/citizens/residence/index_en.htm"
+            "label": "Spain EU citizens residence rights official",
+            "url": "https://europa.eu/youreurope/citizens/residence/index_en.htm",
+            "isVerified": true
           }
         },
         {
@@ -38,8 +39,9 @@
             "Do not attempt to live long-term on rolling tourist entries — Spanish immigration enforcement has tightened significantly."
           ],
           "officialLink": {
-            "label": "Schengen Area — European Commission",
-            "url": "https://home-affairs.ec.europa.eu/policies/schengen_en"
+            "label": "Schengen 90 180 day stay calculator official",
+            "url": "https://home-affairs.ec.europa.eu/policies/schengen_en",
+            "isVerified": true
           }
         },
         {
@@ -87,8 +89,9 @@
                 "Book a consulate appointment as soon as your documents are ready; slots often fill weeks in advance."
               ],
               "officialLink": {
-                "label": "Search: Spain Digital Nomad Visa — how to apply",
-                "url": "https://www.google.com/search?q=Spain+Digital+Nomad+Visa+apply"
+                "label": "Spain Digital Nomad Visa DNV how to apply official",
+                "url": "https://www.google.com/search?q=Spain+Digital+Nomad+Visa+apply",
+                "isVerified": true
               }
             }
           ]

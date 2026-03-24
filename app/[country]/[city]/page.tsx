@@ -4,12 +4,13 @@ import {
   MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, Landmark, CreditCard,
+  BookOpen, Landmark, CreditCard, Users,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
 import type { Destination, Source, CountryData } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
+import { SearchHint } from "@/components/SearchHint";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import VisaPathSelector from "@/components/VisaPathSelector";
@@ -220,7 +221,7 @@ export default async function CityPage({ params }: Props) {
                 {dest.housing.searchPortals.map((p, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
                     <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                    {p.url ? (
+                    {p.url && p.isVerified === true ? (
                       <a href={p.url} target="_blank" rel="noopener noreferrer"
                          className="cursor-pointer text-blue-600 underline-offset-2 hover:underline">
                         {p.label}
@@ -296,44 +297,23 @@ export default async function CityPage({ params }: Props) {
 
           {dest.schools.tip && <Tip text={dest.schools.tip} />}
 
-          {dest.schools.examples.length > 0 && (
+          {dest.schools.options && dest.schools.options.length > 0 && (
             <div className="mt-5">
               <p className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400">
-                Example schools
+                Education options
               </p>
               <div className="space-y-2.5">
-                {dest.schools.examples.map((school) => (
-                  <div key={school.name} className="rounded-xl bg-slate-50 px-4 py-3.5">
+                {dest.schools.options.map((opt, i) => (
+                  <div key={i} className="rounded-xl bg-slate-50 px-4 py-3.5">
                     <div className="flex items-start justify-between gap-3">
-                      <div className="min-w-0">
-                        {school.url ? (
-                          <a
-                            href={school.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 font-semibold text-slate-800 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
-                          >
-                            {school.name}
-                            <ExternalLink size={12} className="shrink-0 opacity-60" />
-                          </a>
-                        ) : (
-                          /* No direct URL — render a search fallback so every school name is actionable */
-                          <a
-                            href={`https://www.google.com/search?q=${encodeURIComponent(school.name)}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 font-semibold text-slate-800 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
-                            title={`Search for ${school.name}`}
-                          >
-                            {school.name}
-                            <span className="text-[10px] font-normal text-slate-400">search →</span>
-                          </a>
-                        )}
-                        <p className="mt-0.5 text-xs text-slate-500">{school.curriculum}</p>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-semibold text-slate-800">{opt.type}</p>
+                        <p className="mt-0.5 text-sm text-slate-500">{opt.description}</p>
+                        <SearchHint query={`${opt.type} ${dest.city} ${dest.country}`} />
                       </div>
-                      {school.fees && (
+                      {opt.fees && (
                         <span className="shrink-0 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
-                          {school.fees}
+                          {opt.fees}
                         </span>
                       )}
                     </div>
@@ -393,39 +373,41 @@ export default async function CityPage({ params }: Props) {
             <ul className="space-y-2">
               {allSources.map((src, i) => (
                 <li key={i}>
-                  <a
-                    href={src.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-[#FF5A5F] underline-offset-2 hover:underline"
-                  >
-                    <ExternalLink size={13} />
-                    {src.label}
-                  </a>
+                  {src.isVerified === true ? (
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-[#FF5A5F] underline-offset-2 hover:underline"
+                    >
+                      <ExternalLink size={13} />
+                      {src.label}
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-400">
+                      <ExternalLink size={13} className="opacity-40" />
+                      {src.label}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
           </Section>
         )}
 
-        {/* ── Community links ───────────────────────────────────────────── */}
+        {/* ── Community ─────────────────────────────────────────────────── */}
         {dest.communityLinks && dest.communityLinks.length > 0 && (
-          <Section title="Community" icon={<ExternalLink size={16} className="text-slate-500" />}>
+          <Section title="Community" icon={<Users size={16} className="text-slate-500" />}>
             <p className="mb-3 text-xs text-slate-400">
-              Expat groups and community forums. Useful for on-the-ground advice — not official sources.
+              Expat groups and community forums. Use the search buttons below to find them.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               {dest.communityLinks.map((link, i) => (
                 <li key={i}>
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 underline-offset-2 hover:text-slate-900 hover:underline"
-                  >
-                    <ExternalLink size={13} />
-                    {link.label}
-                  </a>
+                  <p className="text-sm text-slate-600">{link.label}</p>
+                  <SearchHint
+                    query={link.searchQuery ?? `${dest.city} expats Facebook group`}
+                  />
                 </li>
               ))}
             </ul>
@@ -485,18 +467,25 @@ function Section({
       {children}
       {sources && sources.length > 0 && (
         <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 pt-4">
-          {sources.map((src, i) => (
-            <a
-              key={i}
-              href={src.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-xs text-slate-400 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
-            >
-              <ExternalLink size={11} />
-              {src.label}
-            </a>
-          ))}
+          {sources.map((src, i) =>
+            src.isVerified === true ? (
+              <a
+                key={i}
+                href={src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs text-slate-400 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
+              >
+                <ExternalLink size={11} />
+                {src.label}
+              </a>
+            ) : (
+              <span key={i} className="inline-flex items-center gap-1 text-xs text-slate-300">
+                <ExternalLink size={11} className="opacity-40" />
+                {src.label}
+              </span>
+            )
+          )}
         </div>
       )}
     </div>

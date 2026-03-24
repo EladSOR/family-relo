@@ -78,19 +78,23 @@
       "searchPortals": [
         {
           "label": "Idealista — Spain's largest rental portal",
-          "url": "https://www.idealista.com"
+          "url": "https://www.idealista.com",
+          "isVerified": true
         },
         {
           "label": "Fotocasa — strong secondary market",
-          "url": "https://www.fotocasa.es"
+          "url": "https://www.fotocasa.es",
+          "isVerified": true
         },
         {
           "label": "Habitaclia — popular in the Valencian region",
-          "url": "https://www.habitaclia.com"
+          "url": "https://www.habitaclia.com",
+          "isVerified": true
         },
         {
           "label": "Pisos.com — useful for comparing prices",
-          "url": "https://www.pisos.com"
+          "url": "https://www.pisos.com",
+          "isVerified": true
         },
         {
           "label": "Facebook groups — search: 'Pisos en Valencia' (many direct landlord deals, no agency fee)"
@@ -117,25 +121,22 @@
       "publicSystem": "Spanish public schools are free, well-funded, and generally high quality — but instruction is entirely in Spanish and Valencian. Not recommended for children without Spanish language skills unless you plan a long-term stay (2+ years) and are willing to invest in language support.",
       "internationalOptions": "Several English-medium international schools operate in Valencia and the surrounding area. Demand has grown sharply with the expat influx — apply 6–12 months in advance. Schools follow US, British, or IB curricula and typically run from Early Years through Year 13 / Grade 12.",
       "languageNotes": "Valencian (a Catalan dialect) is co-official with Spanish in the region. Most public schools teach in Valencian and Castilian Spanish. English-medium instruction is only available in private international schools.",
-      "tip": "Apply 6–12 months before your move — waiting lists at the American School and Caxton College run year-round.",
-      "examples": [
+      "tip": "Waitlists at international schools fill fast — apply 12+ months before your planned move.",
+      "options": [
         {
-          "name": "American School of Valencia",
-          "curriculum": "US / IB",
-          "fees": "$10,000 – $13,000 / yr",
-          "url": "https://www.asvalencia.org"
+          "type": "British curriculum international schools",
+          "description": "IGCSE and A-Level options in and around Valencia. Established expat choice.",
+          "fees": "€7,000–11,000/year typical"
         },
         {
-          "name": "Caxton College",
-          "curriculum": "British (IGCSE / A-Level)",
-          "fees": "$8,000 – $11,000 / yr",
-          "url": "https://www.caxtoncollege.com"
+          "type": "US / IB curriculum international schools",
+          "description": "Several schools offering the International Baccalaureate or US diploma.",
+          "fees": "€9,000–13,000/year typical"
         },
         {
-          "name": "Cambridge House British International School",
-          "curriculum": "British",
-          "fees": "$7,000 – $10,000 / yr",
-          "url": "https://www.cambridgehouse.es"
+          "type": "Concertado schools (subsidized private)",
+          "description": "Part state-funded private schools taught in Spanish and Valencian. Lower cost but require Spanish.",
+          "fees": "Free–€2,000/year"
         }
       ]
     },
@@ -198,23 +199,27 @@
       "visa": [
         {
           "label": "Spain Digital Nomad Visa — Official",
-          "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores"
+          "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+          "isVerified": false
         }
       ],
       "schools": [
         {
           "label": "American School of Valencia",
-          "url": "https://www.asvalencia.org"
+          "url": "https://www.asvalencia.org",
+          "isVerified": true
         },
         {
           "label": "Caxton College",
-          "url": "https://www.caxtoncollege.com"
+          "url": "https://www.caxtoncollege.com",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Valencia Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Valencia"
+          "url": "https://www.numbeo.com/cost-of-living/in/Valencia",
+          "isVerified": true
         }
       ]
     },
@@ -240,8 +245,8 @@
     },
     "communityLinks": [
       {
-        "label": "Valencia Expats — Facebook Community",
-        "url": "https://www.facebook.com/groups/valenciaexpats"
+        "label": "Search 'Valencia Expats' on Facebook — on-the-ground advice from residents",
+        "searchQuery": "Valencia Expats Facebook group"
       }
     ]
   },
@@ -348,8 +353,9 @@
             "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years of legal residency you can apply for permanent residency or citizenship."
           ],
           "officialLink": {
-            "label": "Portugal D8 Visa — Official Documentation",
-            "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency"
+            "label": "Portugal D8 Digital Nomad Visa official requirements",
+            "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
+            "isVerified": true
           }
         }
       ]
@@ -372,19 +378,23 @@
       "searchPortals": [
         {
           "label": "Idealista.pt — most listings in Portugal",
-          "url": "https://www.idealista.pt"
+          "url": "https://www.idealista.pt",
+          "isVerified": true
         },
         {
           "label": "Imovirtual.com — strong secondary market",
-          "url": "https://www.imovirtual.com"
+          "url": "https://www.imovirtual.com",
+          "isVerified": true
         },
         {
           "label": "OLX.pt — direct landlord deals (no agency fee)",
-          "url": "https://www.olx.pt"
+          "url": "https://www.olx.pt",
+          "isVerified": true
         },
         {
           "label": "Remax Portugal — good for family homes in Cascais and Oeiras",
-          "url": "https://www.remax.pt"
+          "url": "https://www.remax.pt",
+          "isVerified": true
         },
         {
           "label": "Facebook groups — search: 'Housing in Lisbon' or 'Expats in Lisbon' for direct landlord deals"
@@ -410,25 +420,22 @@
       "publicSystem": "Public schools are free, but all instruction is in Portuguese. Children without Portuguese will struggle to keep up. Bilingual state schools exist in Lisbon but places are very limited — do not count on them. Best for families already planning Portuguese immersion.",
       "internationalOptions": "The Cascais–Estoril corridor (30 min west of Lisbon by train) is the main hub for international schools. Schools follow US, British, or IB curricula, taught entirely in English. Fees are €10,000–$22,000/year. Apply 12–18 months before your intended start date — CAISL and St. Julian's are the two most competitive.",
       "languageNotes": "Portuguese is the sole official language. All international schools in the Cascais corridor teach in English. Some offer Portuguese language support for new arrivals. Children who attend public school will need a private Portuguese tutor — budget €30–€60/hr.",
-      "tip": "Contact CAISL and St. Julian's before booking flights — their waitlists often stretch 12–18 months and a spot is not guaranteed.",
-      "examples": [
+      "tip": "Popular international schools in the Cascais corridor fill 12–18 months ahead — apply early.",
+      "options": [
         {
-          "name": "CAISL — Carlucci American International School of Lisbon",
-          "curriculum": "US / IB",
-          "fees": "$14,000 – $22,000 / yr",
-          "url": "https://www.caislisbon.org"
+          "type": "American / IB curriculum international schools",
+          "description": "Several established options, mainly in the Cascais–Estoril corridor (30 min west of Lisbon).",
+          "fees": "€14,000–22,000/year typical"
         },
         {
-          "name": "St. Julian's School",
-          "curriculum": "British / IB",
-          "fees": "$12,000 – $18,000 / yr",
-          "url": "https://www.stjulians.com"
+          "type": "British / IB curriculum international schools",
+          "description": "Strong options along the Cascais corridor and some central Lisbon locations.",
+          "fees": "€10,000–18,000/year typical"
         },
         {
-          "name": "Nobel International School",
-          "curriculum": "IB",
-          "fees": "$10,000 – $15,000 / yr",
-          "url": "https://www.nobelschool.com"
+          "type": "Portuguese state schools",
+          "description": "Free, taught in Portuguese. Realistic only if children will learn the language.",
+          "fees": "Free"
         }
       ]
     },
@@ -492,23 +499,27 @@
       "visa": [
         {
           "label": "Portugal D8 Visa — Official",
-          "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency"
+          "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
+          "isVerified": true
         }
       ],
       "schools": [
         {
           "label": "CAISL — Carlucci American International School",
-          "url": "https://www.caislisbon.org"
+          "url": "https://www.caislisbon.org",
+          "isVerified": true
         },
         {
           "label": "St. Julian's School",
-          "url": "https://www.stjulians.com"
+          "url": "https://www.stjulians.com",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Lisbon Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Lisbon"
+          "url": "https://www.numbeo.com/cost-of-living/in/Lisbon",
+          "isVerified": true
         }
       ]
     },
@@ -536,8 +547,8 @@
     },
     "communityLinks": [
       {
-        "label": "Lisbon Expat Families — Facebook Group",
-        "url": "https://www.facebook.com/groups/lisbonexpatfamilies"
+        "label": "Search 'Lisbon Expat Families' on Facebook — family-focused local tips",
+        "searchQuery": "Lisbon Expat Families Facebook group"
       }
     ]
   },
@@ -615,8 +626,9 @@
             "If you plan to stay long-term, apply for a residency visa as soon as possible — you cannot convert a tourist entry into a residency visa from inside the UAE."
           ],
           "officialLink": {
-            "label": "ICP — UAE Visa information",
-            "url": "https://icp.gov.ae"
+            "label": "UAE Dubai visa on arrival official ICP",
+            "url": "https://icp.gov.ae",
+            "isVerified": true
           }
         },
         {
@@ -634,8 +646,9 @@
             "After receiving your residency stamp, you must apply for your Emirates ID within 30 days — required for banking, school enrolment, and healthcare."
           ],
           "officialLink": {
-            "label": "Dubai Tourism — Remote Work Visa",
-            "url": "https://www.visitdubai.com/en/visa-information"
+            "label": "Dubai Virtual Working Programme visa official UAE",
+            "url": "https://www.visitdubai.com/en/visa-information",
+            "isVerified": true
           }
         },
         {
@@ -653,8 +666,9 @@
             "Processing typically takes 2–4 weeks after submitting the full document pack."
           ],
           "officialLink": {
-            "label": "ICP — Golden Visa",
-            "url": "https://icp.gov.ae/en/services/golden-visa"
+            "label": "UAE Golden Visa official ICP requirements",
+            "url": "https://icp.gov.ae/en/services/golden-visa",
+            "isVerified": true
           }
         }
       ]
@@ -677,15 +691,18 @@
       "searchPortals": [
         {
           "label": "Bayut.com — Dubai's most widely used property portal",
-          "url": "https://www.bayut.com"
+          "url": "https://www.bayut.com",
+          "isVerified": true
         },
         {
           "label": "PropertyFinder.ae — strong selection for family villas and apartments",
-          "url": "https://www.propertyfinder.ae"
+          "url": "https://www.propertyfinder.ae",
+          "isVerified": true
         },
         {
           "label": "Dubizzle.com — includes direct landlord listings and no-agent deals",
-          "url": "https://www.dubizzle.com"
+          "url": "https://www.dubizzle.com",
+          "isVerified": true
         },
         {
           "label": "Search on Facebook: 'Dubai Expats' — community group with housing posts and direct landlord deals"
@@ -712,25 +729,22 @@
       "publicSystem": "Government schools in Dubai teach in Arabic and are primarily for UAE nationals. Expat families are not eligible and should plan for private international schooling from day one.",
       "internationalOptions": "Dubai has over 200 private schools following more than 15 different international curricula. KHDA publishes annual inspection ratings (Outstanding / Very Good / Good) that are essential for comparing schools. British and IB schools are the most popular among Western expats.",
       "languageNotes": "English is the working language of most international schools and the city itself. Arabic is taught as a second language in most private schools. No Arabic is required in day-to-day expat family life.",
-      "tip": "Check the KHDA inspection portal before applying — ratings are updated annually and can shift. A school rated 'Outstanding' last year may have since changed.",
-      "examples": [
+      "tip": "Check each school's latest KHDA inspection rating before applying — search 'KHDA school inspection reports Dubai'.",
+      "options": [
         {
-          "name": "Dubai International Academy",
-          "curriculum": "IB (PYP / MYP / DP)",
-          "fees": "$14,000 – $20,000 / yr",
-          "url": "https://www.diadubai.com"
+          "type": "British curriculum international schools (KHDA regulated)",
+          "description": "Largest category — 80+ schools. Most popular choice for expat families in Dubai.",
+          "fees": "AED 30,000–80,000/year typical"
         },
         {
-          "name": "Kings' School Dubai",
-          "curriculum": "British (EYFS through GCSE)",
-          "fees": "$12,000 – $18,000 / yr",
-          "url": "https://www.kingsdubai.com"
+          "type": "American curriculum international schools (KHDA regulated)",
+          "description": "Several strong options across Dubai. All schools are rated by the KHDA (Dubai school regulator).",
+          "fees": "AED 35,000–90,000/year typical"
         },
         {
-          "name": "GEMS Wellington International School",
-          "curriculum": "British / IB",
-          "fees": "$13,000 – $20,000 / yr",
-          "url": "https://www.gemswellingtoninternational.com"
+          "type": "IB curriculum international schools (KHDA regulated)",
+          "description": "International Baccalaureate widely available — good for university-bound students.",
+          "fees": "AED 40,000–100,000/year typical"
         }
       ]
     },
@@ -813,30 +827,34 @@
       "visa": [
         {
           "label": "UAE Virtual Working Programme — Official",
-          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae"
+          "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae",
+          "isVerified": true
         }
       ],
       "schools": [
         {
           "label": "KHDA School Ratings — Official",
-          "url": "https://www.khda.gov.ae/en/inspectionreports"
+          "url": "https://www.khda.gov.ae/en/inspectionreports",
+          "isVerified": true
         },
         {
           "label": "Kings' School Dubai",
-          "url": "https://www.kingsdubai.com"
+          "url": "https://www.kingsdubai.com",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Dubai Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Dubai"
+          "url": "https://www.numbeo.com/cost-of-living/in/Dubai",
+          "isVerified": true
         }
       ]
     },
     "communityLinks": [
       {
-        "label": "Mums in Dubai — Facebook Community",
-        "url": "https://www.facebook.com/groups/mumsindubai"
+        "label": "Search 'Mums in Dubai' on Facebook — family recommendations and school advice",
+        "searchQuery": "Mums in Dubai Facebook group"
       }
     ]
   },
@@ -935,8 +953,9 @@
             "No work permit is included — you are legally a visitor, not a worker. For most remote workers with foreign clients this is low risk in practice."
           ],
           "officialLink": {
-            "label": "DTV Visa — Royal Thai Embassy",
-            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+            "label": "Thailand Destination Thailand Visa DTV official apply",
+            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+            "isVerified": true
           }
         },
         {
@@ -954,8 +973,9 @@
             "The 5-year package works out to about $3,000/year — compare this to the time and cost of DTV renewals for larger families."
           ],
           "officialLink": {
-            "label": "Thailand Privilege Card — Official",
-            "url": "https://www.thailandprivilege.com"
+            "label": "Thailand Privilege Card visa official",
+            "url": "https://www.thailandprivilege.com",
+            "isVerified": true
           }
         }
       ]
@@ -978,15 +998,18 @@
       "searchPortals": [
         {
           "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com"
+          "url": "https://www.ddproperty.com",
+          "isVerified": true
         },
         {
           "label": "Hipflat.com — good for condos and serviced apartments",
-          "url": "https://www.hipflat.co.th"
+          "url": "https://www.hipflat.co.th",
+          "isVerified": true
         },
         {
           "label": "Fazwaz.com — English-language portal, easy for foreigners",
-          "url": "https://www.fazwaz.com"
+          "url": "https://www.fazwaz.com",
+          "isVerified": true
         },
         {
           "label": "Search on Facebook: 'Chiang Mai Expat Club' — largest group, landlords post directly (no agency fee)"
@@ -1015,25 +1038,17 @@
       "publicSystem": "Thai government schools are free but teach entirely in Thai. Not a realistic option for most expat families unless children are very young and the family plans a long stay of 3+ years. Private tutors for Thai language are easy to find and affordable ($10–$20/hr) if you want your child to pick up the language.",
       "internationalOptions": "Most international schools cluster around the Hang Dong area, 15–20 minutes south of the city centre, close to the main expat neighbourhoods. Schools follow US or IB curricula in English. Fees range from $5,000–$12,000/year — a fraction of comparable schools in the UK or US. Apply 3–6 months before your target start date.",
       "languageNotes": "International schools teach entirely in English. Most offer some Thai language classes. Expat children generally do not need Thai for daily life in Chiang Mai — the city is highly English-friendly in expat areas.",
-      "tip": "APIS and CMIS rarely have the 12-month waitlists common in European cities — but still apply early. Spaces in specific year groups can fill up.",
-      "examples": [
+      "tip": "Most international schools are in the Hang Dong / Nong Hoi area — factor in transport or housing near there.",
+      "options": [
         {
-          "name": "American Pacific International School (APIS)",
-          "curriculum": "US",
-          "fees": "$6,000 – $10,000 / yr",
-          "url": "https://www.apis.ac.th"
+          "type": "US / ACSI curriculum international schools",
+          "description": "Established options clustered near Hang Dong, 15–20 min south of the city centre.",
+          "fees": "฿150,000–320,000/year typical"
         },
         {
-          "name": "Chiang Mai International School (CMIS)",
-          "curriculum": "US / ACSI",
-          "fees": "$5,000 – $8,000 / yr",
-          "url": "https://www.cmis.ac.th"
-        },
-        {
-          "name": "Prem Tinsulanonda International School",
-          "curriculum": "IB",
-          "fees": "$10,000 – $16,000 / yr",
-          "url": "https://www.ptis.ac.th"
+          "type": "IB curriculum international schools",
+          "description": "Fewer options available, higher fees. Strong university preparation.",
+          "fees": "฿300,000–550,000/year typical"
         }
       ]
     },
@@ -1094,27 +1109,32 @@
       "visa": [
         {
           "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "isVerified": true
         },
         {
           "label": "Thailand Privilege Card — Official",
-          "url": "https://www.thailandprivilege.com"
+          "url": "https://www.thailandprivilege.com",
+          "isVerified": true
         }
       ],
       "schools": [
         {
           "label": "American Pacific International School (APIS)",
-          "url": "https://www.apis.ac.th"
+          "url": "https://www.apis.ac.th",
+          "isVerified": true
         },
         {
           "label": "Chiang Mai International School (CMIS)",
-          "url": "https://www.cmis.ac.th"
+          "url": "https://www.cmis.ac.th",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Chiang Mai Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai"
+          "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
+          "isVerified": true
         }
       ]
     },
@@ -1143,12 +1163,12 @@
     },
     "communityLinks": [
       {
-        "label": "Chiang Mai Expat Club — Facebook",
-        "url": "https://www.facebook.com/groups/chiangmaiexpatclub"
+        "label": "Search 'Chiang Mai Expat Club' on Facebook — general expat tips",
+        "searchQuery": "Chiang Mai Expat Club Facebook group"
       },
       {
-        "label": "Chiang Mai Mums — Facebook",
-        "url": "https://www.facebook.com/groups/chiangmaimums"
+        "label": "Search 'Chiang Mai Mums' on Facebook — family and childcare advice",
+        "searchQuery": "Chiang Mai Mums Facebook group"
       }
     ]
   },
@@ -1248,8 +1268,9 @@
             "File a 90-day address report every 90 days — online at imm.immigration.go.th or in person at the Thong Sala Immigration Office."
           ],
           "officialLink": {
-            "label": "Thai e-Visa — DTV application",
-            "url": "https://www.thaievisa.go.th"
+            "label": "Thailand DTV e-Visa official application thaievisa",
+            "url": "https://www.thaievisa.go.th",
+            "isVerified": true
           }
         }
       ]
@@ -1272,11 +1293,13 @@
       "searchPortals": [
         {
           "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com"
+          "url": "https://www.ddproperty.com",
+          "isVerified": true
         },
         {
           "label": "Fazwaz.com — English-language portal, island listings available",
-          "url": "https://www.fazwaz.com"
+          "url": "https://www.fazwaz.com",
+          "isVerified": true
         },
         {
           "label": "Search on Facebook: 'Koh Phangan Expats' — largest community group, direct landlord posts"
@@ -1305,12 +1328,12 @@
       "publicSystem": "Thai government schools exist on the island but teach entirely in Thai. Not a viable option for most expat children.",
       "internationalOptions": "There is no full international school on Koh Phangan. A few small private and Montessori-style micro-schools exist serving the expat community, but they are not accredited and cater mainly to early years. Families with secondary-school-age children typically move to Koh Samui or Chiang Mai.",
       "languageNotes": "English is the informal community language among expats. Children in the expat community grow up in a largely English-speaking social environment. Thai language support is available through local tutors.",
-      "tip": "If you have secondary-school-age children (11+), research your options carefully before committing to the island — most expat families with older children move to Koh Samui or Chiang Mai for schooling.",
-      "examples": [
+      "tip": "Most expat families on Koh Phangan homeschool or relocate to Chiang Mai / Bangkok for secondary education. Research this carefully before moving with school-age children.",
+      "options": [
         {
-          "name": "Phangan International School (micro-school)",
-          "curriculum": "Mixed / Montessori-inspired",
-          "fees": "$200 – $500 / month"
+          "type": "Small community schools and micro-schools",
+          "description": "Very limited formal options on the island. Mostly small, informal, or Montessori-style. Not accredited international schools.",
+          "fees": "฿50,000–150,000/year if available"
         }
       ]
     },
@@ -1392,26 +1415,29 @@
       "visa": [
         {
           "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "isVerified": true
         }
       ],
       "healthcare": [
         {
           "label": "Bangkok Hospital Koh Phangan",
-          "url": "https://www.bangkokhospital-kohphangan.com"
+          "url": "https://www.bangkokhospital-kohphangan.com",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Koh Phangan Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan"
+          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan",
+          "isVerified": true
         }
       ]
     },
     "communityLinks": [
       {
-        "label": "Koh Phangan Expats — Facebook",
-        "url": "https://www.facebook.com/groups/kohphanganexpats"
+        "label": "Search 'Koh Phangan Expats' on Facebook — island life and housing tips",
+        "searchQuery": "Koh Phangan Expats Facebook group"
       }
     ]
   },
@@ -1507,8 +1533,9 @@
             "You must file a 90-day address report every 90 days — do this online at imm.immigration.go.th or in person at the Na Thon Immigration Office."
           ],
           "officialLink": {
-            "label": "Thai e-Visa — DTV application",
-            "url": "https://www.thaievisa.go.th"
+            "label": "Thailand DTV e-Visa official application thaievisa",
+            "url": "https://www.thaievisa.go.th",
+            "isVerified": true
           }
         }
       ]
@@ -1531,11 +1558,13 @@
       "searchPortals": [
         {
           "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com"
+          "url": "https://www.ddproperty.com",
+          "isVerified": true
         },
         {
           "label": "Fazwaz.com — English-language portal, easier for foreign renters",
-          "url": "https://www.fazwaz.com"
+          "url": "https://www.fazwaz.com",
+          "isVerified": true
         },
         {
           "label": "Search on Facebook: 'Samui Expats' — the primary community group for housing posts and direct landlord deals"
@@ -1564,19 +1593,12 @@
       "publicSystem": "Thai government schools on the island teach entirely in Thai. Not suitable for most expat children without extensive Thai language support.",
       "internationalOptions": "Two main accredited international schools serve the English-speaking expat community on Samui: ISS and ACE. Both cover Early Years through secondary. The schools are small by international standards, which some families see as a positive. For IB or British A-Level, families typically board their children in Bangkok or Chiang Mai.",
       "languageNotes": "English is the language of instruction at both main international schools. Thai language classes are included in the curriculum. The expat community on the north coast communicates almost entirely in English.",
-      "tip": "ISS and ACE are small schools — visit in person and verify current academic standards before enrolling. Class sizes are small, which many families see as a benefit.",
-      "examples": [
+      "tip": "Options are limited — contact schools early, as class sizes are small and spots fill quickly.",
+      "options": [
         {
-          "name": "International School of Samui (ISS)",
-          "curriculum": "British / Cambridge",
-          "fees": "$5,000 – $8,000 / yr",
-          "url": "https://www.isssamui.com"
-        },
-        {
-          "name": "ACE International School",
-          "curriculum": "British",
-          "fees": "$4,000 – $7,000 / yr",
-          "url": "https://www.acesamui.com"
+          "type": "British / Cambridge curriculum international schools",
+          "description": "Small selection of accredited schools serving the island's expat community. Limited capacity.",
+          "fees": "฿120,000–280,000/year typical"
         }
       ]
     },
@@ -1658,36 +1680,41 @@
       "visa": [
         {
           "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa"
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "isVerified": true
         }
       ],
       "schools": [
         {
           "label": "International School of Samui (ISS)",
-          "url": "https://www.isssamui.com"
+          "url": "https://www.isssamui.com",
+          "isVerified": true
         },
         {
           "label": "ACE International School",
-          "url": "https://www.acesamui.com"
+          "url": "https://www.acesamui.com",
+          "isVerified": true
         }
       ],
       "healthcare": [
         {
           "label": "Bangkok Hospital Koh Samui",
-          "url": "https://www.bangkokhospital-samui.com"
+          "url": "https://www.bangkokhospital-samui.com",
+          "isVerified": true
         }
       ],
       "cost": [
         {
           "label": "Koh Samui Cost of Living — Numbeo",
-          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui"
+          "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui",
+          "isVerified": true
         }
       ]
     },
     "communityLinks": [
       {
-        "label": "Samui Expats — Facebook",
-        "url": "https://www.facebook.com/groups/samuiexpats"
+        "label": "Search 'Samui Expats' on Facebook — local recommendations",
+        "searchQuery": "Samui Expats Facebook group"
       }
     ]
   }

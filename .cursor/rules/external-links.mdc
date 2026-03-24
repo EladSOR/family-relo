@@ -6,44 +6,102 @@ alwaysApply: true
 
 # External Link Rules for City Pages
 
-## Rental portal links — use root URLs only
+## Clickable links — housing portals ONLY
 
-Never link to filtered search results, city-scoped pages, or paginated URLs.
-Always use the stable homepage root.
+The only section that renders clickable links is **Housing → Where to search**.
+All other sections use plain-text search guidance — no clickable links.
 
+| Section | Rendering |
+|---|---|
+| Housing portals | ✅ Clickable link (`isVerified: true` required) |
+| Schools | 🔍 Google search link (system-generated, never a stored URL) |
+| Visa officialLink | 📝 Plain text: `Search "[label]" for official details` |
+| Community | 📝 Plain text: `Search '[name]' on Facebook` |
+| Sources footer | ✅ Clickable link (`isVerified: true` required) |
+
+## SearchHint — universal fallback for non-housing links
+
+Everywhere a link is NOT a verified housing portal root, use `<SearchHint query="..." />` instead of `<a href="...">`.
+
+`SearchHint` renders:
 ```
+Search: "[query]"   [🔍 Search on Google]
+```
+
+The button generates `https://www.google.com/search?q=[encoded query]` at render time — never stored, never stale.
+
+### Query format rules
+
+| Section | Query format |
+|---|---|
+| Schools | `"[School Name] [City] [Country]"` |
+| Visa | `"[visa type] [country] official"` — use the `officialLink.label` |
+| Community | stored in `communityLinks[].searchQuery`, e.g. `"Valencia Expats Facebook group"` |
+
+### isVerified — required on housing and sources links only
+
+Set `"isVerified": true` on housing portal URLs and source URLs before they render as links.
+
+```json
+// ✅ Housing portal — clickable
+{ "label": "Idealista", "url": "https://www.idealista.com", "isVerified": true }
+
+// ✅ Source — clickable
+{ "label": "Numbeo Valencia", "url": "https://www.numbeo.com/cost-of-living/in/Valencia", "isVerified": true }
+```
+
+**Never add `isVerified` to schools, visa officialLinks, or communityLinks** — the renderer ignores URLs in those sections entirely and uses `SearchHint` instead.
+
+## Housing portal links — root URLs only
+
+Never use filtered search results, city-scoped pages, or paginated URLs.
+
+```json
 // ❌ BAD — deep search result URL
-{ "url": "https://www.idealista.com/en/alquiler-viviendas/valencia-provincia/" }
+{ "label": "Idealista Valencia", "url": "https://www.idealista.com/en/alquiler-viviendas/valencia/", "isVerified": true }
 
 // ✅ GOOD — stable root
-{ "url": "https://www.idealista.com" }
+{ "label": "Idealista", "url": "https://www.idealista.com", "isVerified": true }
 ```
 
-## Facebook — never link, always plain text
+## Schools — use category types only, never named institutions
 
-Facebook search-result and group URLs are unstable or require login.
-Use plain text guidance instead.
+School names cannot be trusted. Institutions close, rename, or change. Use `options[]` with category descriptions, not `examples[]` with named schools.
 
+```json
+// ❌ BAD — specific school name that may not exist or may have changed
+{ "name": "ACE International School", "curriculum": "British", "fees": "฿120,000/yr" }
+
+// ✅ GOOD — category description, honest, no entity risk
+{
+  "type": "British curriculum international schools",
+  "description": "Small selection serving expat community. Limited spots.",
+  "fees": "฿120,000–280,000/year typical"
+}
 ```
-// ❌ BAD
-{ "label": "Expat group", "url": "https://www.facebook.com/groups/..." }
 
-// ✅ GOOD — text only, no url field
-{ "label": "Search on Facebook: 'Valencia Expats' — many direct landlord deals" }
-```
+The renderer auto-generates `SearchHint` with query `"[type] [city] [country]"`. No URLs needed.
 
-## When no stable city page exists
+## Visa officialLink — label only, no url required
 
-Use the platform root and add a short search hint in the label.
+The renderer shows `Search "[label]" for official details` as plain text. The `url` field is stored as dormant data but never rendered. Only provide a label.
 
-```
+```json
 // ✅ GOOD
-{ "label": "DDproperty.com — search 'Chiang Mai'", "url": "https://www.ddproperty.com" }
+{ "label": "Spain Digital Nomad Visa official" }
+```
+
+## Community links — text guidance only, no url field
+
+```json
+// ❌ BAD — url ignored, creates confusion
+{ "label": "Valencia Expats", "url": "https://www.facebook.com/groups/..." }
+
+// ✅ GOOD — label IS the search instruction
+{ "label": "Search 'Valencia Expats' on Facebook — on-the-ground advice from residents" }
 ```
 
 ## searchPortalsIntro — required format for every city
-
-Every city's `searchPortalsIntro` must include these three lines in this order:
 
 ```json
 "searchPortalsIntro": [
@@ -53,10 +111,7 @@ Every city's `searchPortalsIntro` must include these three lines in this order:
 ]
 ```
 
-The search hint (`Search '[City Name]'...`) is always the second line — once above the list, never repeated per portal.
-
 ## Applies to
 
-- `data/cities.json` — all `searchPortals[].url` fields
-- `data/countries.json` — any `officialLink.url` fields
-- Any future city pages added to the data layer
+- `data/cities.json` and `data/countries.json`
+- All future city pages

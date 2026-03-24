@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { ChevronRight, ExternalLink } from "lucide-react";
+import { useState, useEffect, useRef, useCallback } from "react";
+import { ChevronRight } from "lucide-react";
+import { SearchHint } from "@/components/SearchHint";
 import type { VisaOption } from "@/lib/types";
 
 // ── Visa path types ───────────────────────────────────────────────────────────
@@ -20,16 +21,16 @@ const ANCHOR_PATH: Record<string, VisaPath> = {
   "visa-eu":        "eu",
   "visa-tourist":   "tourist",
   "visa-dnv":       "dnv",
-  "visa-d8":        "dnv",   // Portugal D8
+  "visa-d8":        "dnv",
   "visa-income":    "dnv",
   "visa-documents": "dnv",
   "visa-insurance": "dnv",
   "visa-apply":     "dnv",
-  "visa-dtv":       "dnv",   // Thailand DTV
-  "visa-elite":     "dnv",   // Thailand Elite
-  "visa-arrival":   "tourist", // UAE visa on arrival
-  "visa-vwp":       "dnv",   // UAE Virtual Working Programme
-  "visa-golden":    "dnv",   // UAE Golden Visa
+  "visa-dtv":       "dnv",
+  "visa-elite":     "dnv",
+  "visa-arrival":   "tourist",
+  "visa-vwp":       "dnv",
+  "visa-golden":    "dnv",
 };
 
 const VISA_ANCHORS = new Set(Object.keys(ANCHOR_PATH));
@@ -50,40 +51,43 @@ export default function VisaPathSelector({ options }: Props) {
   const [highlightId, setHighlightId] = useState<string | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    const highlight = (hash: string) => {
-      if (!VISA_ANCHORS.has(hash)) return;
-      const mapped = ANCHOR_PATH[hash];
-      if (mapped) setPath(mapped);
-      // Always restart the timer so re-clicking the same item re-triggers
-      if (timerRef.current) clearTimeout(timerRef.current);
-      setHighlightId(hash);
-      timerRef.current = setTimeout(() => setHighlightId(null), 2500);
-    };
+  /**
+   * Extracted to useCallback so it is stable across renders.
+   * Called from three places:
+   *   1. hashchange listener (external navigation / URL sharing)
+   *   2. document click listener (any <a href="#..."> elsewhere on the page)
+   *   3. card onClick handlers (the option card divs below)
+   */
+  const highlight = useCallback((hash: string) => {
+    if (!VISA_ANCHORS.has(hash)) return;
+    const mapped = ANCHOR_PATH[hash];
+    if (mapped) setPath(mapped);
+    if (timerRef.current) clearTimeout(timerRef.current);
+    setHighlightId(hash);
+    timerRef.current = setTimeout(() => setHighlightId(null), 2500);
+  }, []);
 
-    // hashchange covers first-click navigation and external/shared links
+  useEffect(() => {
     const onHashChange = () => highlight(window.location.hash.slice(1));
     window.addEventListener("hashchange", onHashChange);
 
-    // click covers re-clicking the same anchor — hashchange does not fire
-    // when the hash is already the same value, so we need this separately
-    const onClick = (e: MouseEvent) => {
+    // Handles <a href="#..."> elements elsewhere on the page (e.g. checklist links)
+    const onDocClick = (e: MouseEvent) => {
       const a = (e.target as HTMLElement).closest("a");
       if (!a) return;
       const href = a.getAttribute("href") ?? "";
       if (href.startsWith("#")) highlight(href.slice(1));
     };
-    document.addEventListener("click", onClick);
+    document.addEventListener("click", onDocClick);
 
-    // Handle page load with a hash already in the URL
     if (window.location.hash) highlight(window.location.hash.slice(1));
 
     return () => {
       window.removeEventListener("hashchange", onHashChange);
-      document.removeEventListener("click", onClick);
+      document.removeEventListener("click", onDocClick);
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, []);
+  }, [highlight]);
 
   // ── Render ──────────────────────────────────────────────────────────────────
 
@@ -107,10 +111,17 @@ export default function VisaPathSelector({ options }: Props) {
         ))}
       </div>
 
-      {/* Option cards */}
+      {/* Option cards
+          ─────────────────────────────────────────────────────────────────────
+          IMPORTANT: These are <div role="button"> NOT <a> elements.
+          SearchHint renders its own <a> (the "Search on Google" button).
+          Using <a> here would create invalid nested anchors → hydration error.
+          Navigation is handled via onClick → highlight() + history.pushState.
+      */}
       <div className="space-y-3">
         {options.map((opt, i) => {
           const relevant = isRelevant(opt.anchor, path);
+
           const inner = (
             <>
               <div className="flex items-center justify-between gap-4">
@@ -132,36 +143,48 @@ export default function VisaPathSelector({ options }: Props) {
               {opt.description && (
                 <p className="mt-1.5 text-sm text-slate-500">{opt.description}</p>
               )}
+              {/* SearchHint renders an <a> — safe here because the outer is a <div> */}
               {opt.officialLink && (
-                <a
-                  href={opt.officialLink.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={e => e.stopPropagation()}
-                  className="mt-2.5 inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 underline-offset-2 hover:text-slate-800 hover:underline"
-                >
-                  <ExternalLink size={11} />
-                  {opt.officialLink.label}
-                </a>
+                <SearchHint query={opt.officialLink.label} />
               )}
             </>
           );
 
           const cls = [
-            "block rounded-xl bg-slate-50 px-4 py-3.5 transition-opacity duration-200",
+            "rounded-xl bg-slate-50 px-4 py-3.5 transition-opacity duration-200",
             relevant ? "" : "opacity-30",
             opt.anchor ? "group cursor-pointer hover:bg-slate-100" : "",
           ].filter(Boolean).join(" ");
 
-          return opt.anchor ? (
-            <a key={i} href={`#${opt.anchor}`} className={cls}>{inner}</a>
-          ) : (
-            <div key={i} className={cls}>{inner}</div>
-          );
+          if (opt.anchor) {
+            return (
+              <div
+                key={i}
+                role="button"
+                tabIndex={0}
+                className={cls}
+                onClick={() => {
+                  highlight(opt.anchor!);
+                  // Update URL hash for sharing/bookmarking without triggering hashchange
+                  history.pushState(null, "", `#${opt.anchor}`);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    highlight(opt.anchor!);
+                    history.pushState(null, "", `#${opt.anchor}`);
+                  }
+                }}
+              >
+                {inner}
+              </div>
+            );
+          }
+
+          return <div key={i} className={cls}>{inner}</div>;
         })}
       </div>
 
-      {/* Detail sections */}
+      {/* Detail sections — these are scroll targets, not clickable wrappers */}
       {options.some(o => o.anchor && (o.sections?.length || o.details?.length)) && (
         <div className="mt-6 space-y-4">
           {options
@@ -209,23 +232,16 @@ export default function VisaPathSelector({ options }: Props) {
                                 </li>
                               ))}
                             </ul>
+                            {/* SearchHint is safe here — parent is a plain <div> */}
                             {sec.officialLink && (
-                              <a
-                                href={sec.officialLink.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
-                              >
-                                <ExternalLink size={12} />
-                                {sec.officialLink.label}
-                              </a>
+                              <SearchHint query={sec.officialLink.label} />
                             )}
                           </div>
                         );
                       })}
                     </div>
                   ) : (
-                    /* Flat list for options without named sub-sections (EU, Tourist) */
+                    /* Flat list for options without named sub-sections */
                     <>
                       <ul className="space-y-2.5">
                         {opt.details!.map((item, j) => (
@@ -235,16 +251,9 @@ export default function VisaPathSelector({ options }: Props) {
                           </li>
                         ))}
                       </ul>
+                      {/* SearchHint is safe here — parent is a plain <div> */}
                       {opt.officialLink && (
-                        <a
-                          href={opt.officialLink.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900"
-                        >
-                          <ExternalLink size={12} />
-                          {opt.officialLink.label}
-                        </a>
+                        <SearchHint query={opt.officialLink.label} />
                       )}
                     </>
                   )}
