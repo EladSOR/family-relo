@@ -690,18 +690,8 @@
       ],
       "searchPortals": [
         {
-          "label": "Bayut.com — Dubai's most widely used property portal",
-          "url": "https://www.bayut.com",
-          "isVerified": true
-        },
-        {
-          "label": "PropertyFinder.ae — strong selection for family villas and apartments",
-          "url": "https://www.propertyfinder.ae",
-          "isVerified": true
-        },
-        {
-          "label": "Dubizzle.com — includes direct landlord listings and no-agent deals",
-          "url": "https://www.dubizzle.com",
+          "label": "Search: \"rent apartment Dubai UAE\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Dubai+UAE",
           "isVerified": true
         },
         {
@@ -997,18 +987,8 @@
       ],
       "searchPortals": [
         {
-          "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com",
-          "isVerified": true
-        },
-        {
-          "label": "Hipflat.com — good for condos and serviced apartments",
-          "url": "https://www.hipflat.co.th",
-          "isVerified": true
-        },
-        {
-          "label": "Fazwaz.com — English-language portal, easy for foreigners",
-          "url": "https://www.fazwaz.com",
+          "label": "Search: \"rent apartment Chiang Mai Thailand\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Chiang+Mai+Thailand",
           "isVerified": true
         },
         {
@@ -1292,13 +1272,8 @@
       ],
       "searchPortals": [
         {
-          "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com",
-          "isVerified": true
-        },
-        {
-          "label": "Fazwaz.com — English-language portal, island listings available",
-          "url": "https://www.fazwaz.com",
+          "label": "Search: \"rent apartment Koh Phangan Thailand\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Koh+Phangan+Thailand",
           "isVerified": true
         },
         {
@@ -1557,13 +1532,8 @@
       ],
       "searchPortals": [
         {
-          "label": "DDproperty.com — Thailand's main property portal",
-          "url": "https://www.ddproperty.com",
-          "isVerified": true
-        },
-        {
-          "label": "Fazwaz.com — English-language portal, easier for foreign renters",
-          "url": "https://www.fazwaz.com",
+          "label": "Search: \"rent apartment Koh Samui Thailand\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Koh+Samui+Thailand",
           "isVerified": true
         },
         {
@@ -1715,6 +1685,2339 @@
       {
         "label": "Search 'Samui Expats' on Facebook — local recommendations",
         "searchQuery": "Samui Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "barcelona-es",
+    "citySlug": "barcelona",
+    "countrySlug": "spain",
+    "city": "Barcelona",
+    "country": "Spain",
+    "tagline": "Cosmopolitan, creative, and one of Europe's great family cities",
+    "summary": "Barcelona is one of the most liveable cities in Europe for international families. It combines a Mediterranean climate, world-class architecture, great food, and a coastline — with a large international school scene and a thriving expat community. The trade-off: it is significantly more expensive than other Spanish cities, and competition for international school places is intense.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before submitting your visa application (required document)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move — Sarrià-Sant Gervasi and Sant Cugat del Vallès are the main expat family areas near international schools",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your move — Barcelona is more competitive than other Spanish cities",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register on the Padrón Municipal at your local Oficina de Padró (city hall branch) within 30 days — needed for healthcare, NIE, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Book your NIE (foreigner ID number) appointment at the Extranjería on your first week — slots fill 4–8 weeks ahead",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Visit your local Centro de Salud with your Padrón certificate to get a SIP public health card for the whole family",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want a cosmopolitan European city with beach access",
+        "Parents who value a wide range of international school options and multilingual education",
+        "Those relocating from the UK, US, or Northern Europe — large established expat community",
+        "Families who value arts, culture, and an outdoor Mediterranean lifestyle"
+      ],
+      "watchOutFor": [
+        "One of Spain's most expensive cities — rents are 30–50% higher than Valencia or Madrid",
+        "Catalan is co-official alongside Spanish — some services and schools use Catalan; expect a language learning curve",
+        "International school places are very competitive — apply 12–18 months before your intended start date",
+        "Petty theft is common in tourist areas: Las Ramblas, Barceloneta beach, and the Gothic Quarter — keep bags secure"
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Barcelona is the most expensive Spanish city for housing. A 3-bedroom flat in a family neighbourhood typically rents for €1,400–€2,500/month. Families often choose Sarrià-Sant Gervasi, Gràcia, or the Sant Cugat del Vallès suburb.",
+      "bestAreas": [
+        "Gràcia",
+        "Eixample",
+        "Sarrià-Sant Gervasi",
+        "Sant Cugat del Vallès",
+        "Les Corts"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Barcelona' inside each platform to filter local listings.",
+        "Tip: start with a 2–4 week Airbnb or short-term stay — it is much easier to find a long-term rental once you are physically on the ground."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista — Spain's largest rental portal",
+          "url": "https://www.idealista.com",
+          "isVerified": true
+        },
+        {
+          "label": "Fotocasa — strong secondary market",
+          "url": "https://www.fotocasa.es",
+          "isVerified": true
+        },
+        {
+          "label": "Habitaclia — popular in Catalonia",
+          "url": "https://www.habitaclia.com",
+          "isVerified": true
+        },
+        {
+          "label": "Pisos.com — useful for price comparison",
+          "url": "https://www.pisos.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Pisos en Barcelona' or 'Housing Barcelona Expats' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, city centre (Eixample): €900–€1,400/month",
+        "3-bed flat, Gràcia or Eixample: €1,400–€2,200/month",
+        "3-bed flat, Sarrià-Sant Gervasi (near international schools): €1,800–€2,800/month",
+        "House with garden, Sant Cugat del Vallès (suburb, 20 min by train): €1,800–€3,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport — NIE if you already have it",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (fianza) — legally required; some landlords ask for more",
+        "Spanish bank account for direct debit (most landlords require a local IBAN)",
+        "Reference letter from a previous landlord — helpful but not always required"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Barcelona has a large and established international school market. Schools follow British, American, or IB curricula. The main cluster is in Sarrià-Sant Gervasi and Sant Cugat del Vallès. Apply at least 12–18 months before your intended start date.",
+      "publicSystem": "Spanish public schools are free and generally well-funded, but instruction is primarily in Catalan and Spanish. Not recommended for children without language skills unless you are committing to a long-term stay with full immersion.",
+      "internationalOptions": "The main international school cluster is in Sarrià-Sant Gervasi and Sant Cugat del Vallès (20 min outside the city). Schools offer British (IGCSE/A-Level), American, and IB curricula. Places fill quickly — early application is essential.",
+      "languageNotes": "Catalan is the co-official language of Catalonia and primary language of instruction in most public schools. English-medium instruction is only available in private international schools.",
+      "tip": "International school places in Barcelona are among the most competitive in Spain — apply 12–18 months ahead, not when you have confirmed your move.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "IGCSE and A-Level options in Sarrià and Sant Cugat area. Strong choice for UK families.",
+          "fees": "€8,000–15,000/year typical"
+        },
+        {
+          "type": "US / IB curriculum international schools",
+          "description": "Several established schools offering IB or US diploma programmes. Well represented in Barcelona.",
+          "fees": "€10,000–18,000/year typical"
+        },
+        {
+          "type": "Concertado schools (subsidized private)",
+          "description": "Part state-funded private schools, taught in Catalan and Spanish. Good value for families with language skills.",
+          "fees": "Free–€2,500/year"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Barcelona has a strong childcare market. Private nurseries are widely available in all family neighbourhoods, and nannies are easy to find — though rates are slightly higher than other Spanish cities.",
+      "daycareItems": [
+        "Private nurseries (guarderías) accept children from 4 months — widely available in Sarrià, Gràcia, Eixample, and Sant Cugat",
+        "Typical fees: €350–€700/month depending on hours and location; bilingual (English/Spanish) nurseries exist in expat areas",
+        "Public nursery places (0–3 years) are subsidised but scarce — register on the municipal waiting list immediately after arrival",
+        "Tip: visit 2–3 nurseries in person before deciding — quality and English fluency of staff varies significantly"
+      ],
+      "nannyItems": [
+        "Live-out nannies (cuidadoras) charge €12–€16/hr — slightly higher rates than other Spanish cities",
+        "Au pairs receive board, lodging, and €80–€150/week pocket money — common among expat families",
+        "Most nannies speak Spanish or Catalan — excellent for children's language development"
+      ],
+      "whereToFindItems": [
+        "Sitly.es — most popular nanny-finding platform in Spain",
+        "InfoJobs.es — broad job board, also used for nanny searches",
+        "AuPairWorld.com — for au pair matching",
+        "Barcelona Expats Facebook groups — best source for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Bring your Padrón certificate to your first Centro de Salud visit — without it the SIP registration cannot proceed.",
+      "items": [
+        "Go to your local Centro de Salud (public health clinic) with your Padrón Municipal certificate to register for a SIP card — Spain's free public healthcare registration card that activates access to the public system.",
+        "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every registered family member.",
+        "Each child needs their own SIP card — register them separately at the same clinic with their passport and your Padrón certificate.",
+        "Private clinics are fast and widely used by expats — a GP appointment costs €50–€90, usually same-day results.",
+        "Popular private health insurers for expats in Barcelona: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 78,
+      "summary": "Barcelona is safe for families but has a notable petty theft problem in tourist zones.",
+      "items": [
+        "Violent crime is rare — Barcelona is safe for day-to-day family life in residential neighbourhoods",
+        "Main risk is petty theft: Las Ramblas, Barceloneta beach, Gothic Quarter, and the Metro are hotspots — keep bags in front and avoid displaying phones",
+        "Family neighbourhoods (Sarrià, Gràcia, Eixample, Sant Cugat) are calm and safe day and night",
+        "Public transport is reliable and widely used by families including evenings",
+        "Tip: consider a cross-body bag or anti-theft backpack — pickpocketing on tourist Metro lines is frequent"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,800 / month",
+      "familyDinner": "~€55",
+      "nannyRate": "~€14 / hr"
+    },
+    "sources": {
+      "visa": [],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Barcelona Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Barcelona",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Book your Padrón appointment at the Ajuntament de Barcelona website on your first week — walk-in queues are very long.",
+      "items": [
+        "Register on the Padrón Municipal at your local Oficina de Padró within 30 days of arriving. Bring your passport, rental contract, and proof of address.",
+        "Your Padrón certificate is the gateway document for everything in Spain: SIP healthcare card, NIE appointment, bank account, and school enrolment all require it.",
+        "Book your Padrón appointment online at the Ajuntament de Barcelona website (ajuntament.barcelona.cat) — walk-in is practically impossible.",
+        "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card that proves your right to live here long-term."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIE",
+      "tip": "Book your NIE appointment at the Extranjería the week you arrive — Barcelona slots fill 4–8 weeks ahead.",
+      "items": [
+        "Apply for your NIE — your Spanish foreigner ID number — as soon as you arrive. Required for a bank account, lease, and school enrolment.",
+        "NIE appointments are booked at the Extranjería (immigration office). Book online on arrival week — slots fill fast.",
+        "While waiting for your NIE, use N26 or Wise for day-to-day spending — both open with just your passport.",
+        "Once you have your NIE, open a Spanish bank account. CaixaBank (headquartered in Barcelona), BBVA, and Sabadell are popular with expats.",
+        "Most banks require: passport, NIE, Padrón certificate (proof of local address), and a recent payslip or employment contract."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Barcelona Expats' on Facebook — on-the-ground advice from residents",
+        "searchQuery": "Barcelona Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "madrid-es",
+    "citySlug": "madrid",
+    "countrySlug": "spain",
+    "city": "Madrid",
+    "country": "Spain",
+    "tagline": "Spain's capital — fast-paced, family-ready, and culturally rich",
+    "summary": "Madrid is a vibrant, well-connected European capital with strong international schools, an excellent public transport network, and a large expatriate community. It is generally more affordable than Barcelona, with a more central Spanish-speaking environment. The main trade-off for families: Madrid is landlocked with no beach, and summers are intensely hot.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before submitting your visa application (required document)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move — the northwest corridor (Pozuelo, Las Rozas) is the main expat family area near schools",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months before your move — the northwest suburbs have the main school clusters",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register on the Padrón Municipal at your local Junta Municipal within 30 days — required for healthcare, NIE, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Book your NIE (foreigner ID number) appointment at the Extranjería on your first week — Madrid slots fill 4–8 weeks out",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Visit your local Centro de Salud with your Padrón certificate to register for a SIP public health card for the whole family",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want a large European capital with strong infrastructure and cultural life",
+        "Parents who prefer a Spanish-speaking environment over Catalan-heavy Barcelona",
+        "Those coming from North or South America — Madrid has a very large Latin American expat community",
+        "Families where one parent works in a Madrid-based company or office"
+      ],
+      "watchOutFor": [
+        "No beach — Madrid is landlocked; summers are very hot and dry (up to 40°C in July–August)",
+        "August is very quiet — many locals leave and services reduce; not ideal for first-month arrivals",
+        "International school clusters in Pozuelo and Las Rozas require a car — factor in commute time",
+        "NIE appointments at the Madrid Extranjería are notoriously slow — book the week you land"
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Madrid is more affordable than Barcelona. Good family housing exists in central districts, with excellent value in the northwest suburbs near international schools.",
+      "bestAreas": [
+        "Chamberí",
+        "Salamanca",
+        "Retiro",
+        "Pozuelo de Alarcón",
+        "Las Rozas"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Madrid' inside each platform to filter local listings.",
+        "Tip: families targeting schools in Pozuelo or Las Rozas should search those suburbs directly — commuting from the city centre adds 30–40 minutes each way."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista — Spain's largest rental portal",
+          "url": "https://www.idealista.com",
+          "isVerified": true
+        },
+        {
+          "label": "Fotocasa — strong secondary market",
+          "url": "https://www.fotocasa.es",
+          "isVerified": true
+        },
+        {
+          "label": "Habitaclia — useful for Madrid listings",
+          "url": "https://www.habitaclia.com",
+          "isVerified": true
+        },
+        {
+          "label": "Pisos.com — good for price comparison",
+          "url": "https://www.pisos.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Pisos en Madrid' or 'Madrid Expats Housing' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, central Madrid: €800–€1,300/month",
+        "3-bed flat, Chamberí or Salamanca: €1,400–€2,400/month",
+        "3-bed flat, Pozuelo de Alarcón (near international schools): €1,500–€2,400/month",
+        "House with garden, Las Rozas or Majadahonda (outer suburbs): €1,800–€3,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport — NIE if you already have it",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (fianza) — legally required; some landlords ask for more",
+        "Spanish bank account for direct debit (most landlords require a local IBAN)"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Madrid has an extensive international school market, particularly in the northwest suburbs (Pozuelo de Alarcón, Las Rozas, Majadahonda). Schools follow British, American, or IB curricula and serve the large expat community in the financial and diplomatic corridor.",
+      "publicSystem": "Spanish public schools are free and well-funded, with instruction entirely in Spanish. A good choice for families committing to a long stay with language immersion, but not practical for newly arrived children without Spanish skills.",
+      "internationalOptions": "The main international school cluster is in the northwest suburbs — Pozuelo de Alarcón, Las Rozas, and Majadahonda — about 20–30 minutes from central Madrid. Several schools also operate within the city itself. Apply 12 months in advance for the most popular schools.",
+      "languageNotes": "Spanish is the sole official language in Madrid — no regional co-official language as in Barcelona. English-medium instruction is available only in private international schools. Bilingual public schools exist but places are limited.",
+      "tip": "Families living centrally and targeting northwest-suburb schools need a car — the daily school run from the city centre adds up quickly.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "IGCSE and A-Level options mainly in the northwest suburbs and some central locations.",
+          "fees": "€8,000–14,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several established schools near the northwest business corridor. Well-regarded for US and international university preparation.",
+          "fees": "€10,000–17,000/year typical"
+        },
+        {
+          "type": "Concertado schools (subsidized private)",
+          "description": "Part state-funded private schools, taught in Spanish. Good quality at lower cost for families with Spanish skills.",
+          "fees": "Free–€2,500/year"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Madrid has a well-developed childcare market with private nurseries, nannies, and au pairs widely available at competitive prices.",
+      "daycareItems": [
+        "Private nurseries (guarderías) accept children from 4 months — available in all major family neighbourhoods and northwest suburbs",
+        "Typical fees: €300–€650/month depending on hours and location",
+        "Public nursery places (0–3 years) are subsidised but limited — register on the municipal waiting list immediately after arrival",
+        "Tip: visit at least 2–3 nurseries before deciding — quality and English fluency of staff varies"
+      ],
+      "nannyItems": [
+        "Live-out nannies (cuidadoras) charge €11–€14/hr — competitive rates compared to Barcelona",
+        "Au pairs receive board, lodging, and €80–€150/week pocket money — popular for full-time coverage",
+        "Most nannies speak Spanish — beneficial for children's language development"
+      ],
+      "whereToFindItems": [
+        "Sitly.es — most popular nanny platform in Spain",
+        "InfoJobs.es — broad job board, also used for nanny and cuidadora searches",
+        "AuPairWorld.com — for au pair matching",
+        "Madrid Expats Facebook groups — best source for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Bring your Padrón certificate on your first Centro de Salud visit — without it the SIP registration cannot proceed.",
+      "items": [
+        "Go to your local Centro de Salud (public health clinic) with your Padrón Municipal certificate to register for a SIP card — Spain's free public healthcare registration card.",
+        "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every registered family member.",
+        "Each child needs their own SIP card — register them separately at the same clinic with their passport and your Padrón certificate.",
+        "Private clinics are widely used by expats for speed — a GP visit costs €50–€80 and results are usually same-day.",
+        "Popular private health insurers for expats in Madrid: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 85,
+      "summary": "Madrid is one of Spain's safest major cities for families.",
+      "items": [
+        "Violent crime is rare — Madrid is generally safe for families, including in central neighbourhoods",
+        "Main risk is petty theft in tourist-heavy areas: Puerta del Sol, Gran Vía, and the Metro — keep bags in front",
+        "Family neighbourhoods (Chamberí, Retiro, Salamanca, and the northwest suburbs) are calm and safe day and night",
+        "Public transport is excellent and widely used by families, including during evenings",
+        "Tip: Retiro park and Casa de Campo are large, very safe outdoor spaces popular with families year-round"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,700 / month",
+      "familyDinner": "~€50",
+      "nannyRate": "~€13 / hr"
+    },
+    "sources": {
+      "visa": [],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Madrid Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Madrid",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Book your Padrón appointment at the Ayuntamiento de Madrid website on your first week — walk-in queues are extremely long.",
+      "items": [
+        "Register on the Padrón Municipal at your local Junta Municipal within 30 days of arriving. Bring your passport, rental contract, and proof of address.",
+        "Your Padrón certificate is required for everything: SIP healthcare card, NIE appointment, bank account, and school enrolment.",
+        "Book your appointment online at the Ayuntamiento de Madrid website (madrid.es) — walk-in is practically impossible in the city.",
+        "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIE",
+      "tip": "Book your NIE at the Extranjería the week you arrive — Madrid slots fill 4–8 weeks ahead.",
+      "items": [
+        "Apply for your NIE — your Spanish foreigner ID number — as soon as you arrive. Required for a bank account, lease, and school enrolment.",
+        "NIE appointments are booked at the Extranjería (local immigration office). Book online on arrival week.",
+        "While waiting for your NIE, use N26 or Wise for day-to-day spending — both open with just your passport.",
+        "Once you have your NIE, open a Spanish bank account. BBVA, CaixaBank, and Santander are popular with expats in Madrid.",
+        "Most banks require: passport, NIE, Padrón certificate, and a recent payslip or employment contract."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Madrid Expats' on Facebook — on-the-ground advice from residents",
+        "searchQuery": "Madrid Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "porto-pt",
+    "citySlug": "porto",
+    "countrySlug": "portugal",
+    "city": "Porto",
+    "country": "Portugal",
+    "tagline": "Atlantic charm and European quality at a lower cost than Lisbon",
+    "summary": "Porto is one of Europe's most liveable cities for families — combining cobblestone streets, Atlantic beaches, excellent safety, and a relaxed quality of life at significantly lower cost than Lisbon. The city has a growing international school scene, a thriving expat community, and a compact size that makes day-to-day family life genuinely pleasant.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Prepare your document pack: Apostilled criminal record (an Apostille is an official government certification that validates the document for use abroad), private health insurance, 3+ months of income statements, proof of accommodation",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Submit your D8 Visa application at the Portuguese Consulate — allow 2–4 months for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for housing 6–8 weeks before your move — Foz do Douro and Matosinhos are the main expat family areas",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12+ months before your move — Porto has fewer options than Lisbon and places fill quickly",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register at your local Junta de Freguesia (civil registry) and get your NIF (tax number) at any Finanças office",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Portuguese bank account once you have your NIF — apply for NHR tax status within your first year if eligible",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with your local Centro de Saúde (public health clinic) to activate SNS healthcare cover for the whole family",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want Portugal lifestyle at significantly lower cost than Lisbon",
+        "Parents who prioritise safety, walkability, and a smaller, manageable city",
+        "Those drawn to coastal Atlantic living — beaches are 10–15 min from the city centre",
+        "Remote workers who want a genuine Portuguese experience without Lisbon's higher prices"
+      ],
+      "watchOutFor": [
+        "Fewer international school options than Lisbon — confirm availability and check places before committing",
+        "Cost of living has risen sharply since 2020 — less of a bargain than it used to be",
+        "D8 visa processing can be slow (2–4 months) — start preparing documents early",
+        "NIF, Junta de Freguesia, and bank account each require a separate in-person visit"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Portugal's D8 Digital Nomad Visa is one of Europe's most family-friendly. EU/EEA citizens move freely with no visa. Non-EU remote workers should apply for the D8 before travelling — it also qualifies for NHR tax status for up to 10 years.",
+      "tip": "Portuguese consulate slots fill fast — book your appointment the moment your documents are ready.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Porto",
+          "duration": "No visa required",
+          "description": "Move freely to Portugal with no visa. First step after arrival: register at your local Junta de Freguesia.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in Portugal.",
+            "Register at your local Junta de Freguesia (the local civil registry office, like a city hall branch) within 90 days — bring your passport and proof of address.",
+            "Apply for your NIF (your Portuguese tax and ID number) at any Finanças office (the tax office) — required for renting, banking, and school enrolment.",
+            "After 5 years of continuous residence, you can apply for permanent residency or Portuguese citizenship."
+          ]
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
+          "duration": "Up to 90 days",
+          "description": "Valid for a scouting trip only. No right to work, no extensions, cannot be converted to residency.",
+          "details": [
+            "90 days maximum in any 180-day period across the entire Schengen Area.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Portugal — apply at a consulate before travelling.",
+            "Good use: 2–4 weeks scouting Foz do Douro, Matosinhos, and Gaia for housing and schools."
+          ]
+        },
+        {
+          "type": "D8 Digital Nomad Residency",
+          "anchor": "visa-d8",
+          "detailTitle": "D8 Visa — how to apply",
+          "duration": "2 years, renewable",
+          "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
+          "details": [
+            "Income requirement: minimum €3,480/month — at least 80% must come from foreign clients or an employer based outside Portugal.",
+            "Required documents: valid passport, Apostilled criminal record check (an Apostille is an official government certification that authenticates the document for international use), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
+            "Apply at the Portuguese Consulate in your home country — you cannot apply for the D8 from inside Portugal.",
+            "Allow 2–4 months for processing — book your consulate appointment as early as possible.",
+            "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years you can apply for permanent residency or citizenship."
+          ],
+          "officialLink": {
+            "label": "Portugal D8 Digital Nomad Visa official requirements",
+            "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
+            "isVerified": true
+          }
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Porto is more affordable than Lisbon. The most popular areas for expat families are Foz do Douro (coastal, upscale), Matosinhos (beach access, more affordable), and Boavista (central, walkable).",
+      "bestAreas": [
+        "Foz do Douro",
+        "Matosinhos",
+        "Boavista",
+        "Bonfim",
+        "Vila Nova de Gaia"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Porto' inside each platform to filter local listings.",
+        "Tip: start with a 2–4 week short-term stay in the Foz do Douro or Matosinhos area — easier to find a long-term rental once you are on the ground."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista.pt — most listings in Portugal",
+          "url": "https://www.idealista.pt",
+          "isVerified": true
+        },
+        {
+          "label": "Imovirtual.com — strong secondary market",
+          "url": "https://www.imovirtual.com",
+          "isVerified": true
+        },
+        {
+          "label": "OLX.pt — direct landlord deals (no agency fee)",
+          "url": "https://www.olx.pt",
+          "isVerified": true
+        },
+        {
+          "label": "Remax Portugal — good for family homes in Foz and Matosinhos",
+          "url": "https://www.remax.pt",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Housing in Porto' or 'Porto Expats' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, city centre (Bonfim/Cedofeita): €900–€1,400/month",
+        "3-bed flat, Boavista: €1,300–€1,900/month",
+        "3-bed flat/house, Foz do Douro: €1,600–€2,500/month",
+        "3-bed flat, Matosinhos (beach access): €1,200–€1,800/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport (NIF if you already have it)",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (caução) — legally capped at 2 months' rent",
+        "Portuguese bank account for direct debit (most landlords prefer a local IBAN)"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Porto has a growing but more limited international school market compared to Lisbon. The main English-medium options are in Foz do Douro and surrounding areas. Apply at least 12 months before your intended start date.",
+      "publicSystem": "Portuguese state schools are free but all instruction is in Portuguese. Not suitable for newly arrived children without language skills. Bilingual state schools are rare in Porto.",
+      "internationalOptions": "A smaller number of English-medium international schools operate in and around Porto, primarily in the Foz do Douro and Matosinhos areas. Schools offer British and IB curricula. Less competitive than Lisbon but still require early application.",
+      "languageNotes": "Portuguese is the sole official language. English-medium instruction is only available in private international schools. Private Portuguese tutors charge €30–€50/hr if children attend state schools.",
+      "tip": "Porto has fewer international school options than Lisbon — confirm availability and current places before committing your move date.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "Main English-medium option in Porto, primarily in the Foz do Douro and Matosinhos areas. Limited spots available.",
+          "fees": "€9,000–15,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Fewer options than Lisbon. Check current availability carefully before relying on this route.",
+          "fees": "€10,000–16,000/year typical"
+        },
+        {
+          "type": "Portuguese state schools",
+          "description": "Free, taught in Portuguese. Good quality but requires genuine language commitment from children.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Porto has a solid childcare market, particularly in the Foz do Douro and Matosinhos expat areas. Costs are lower than Lisbon.",
+      "daycareItems": [
+        "Private creches (nurseries) accept babies from 3 months old — well distributed in Foz do Douro, Matosinhos, and Boavista",
+        "Typical fees: €400–€800/month; bilingual (English/Portuguese) programmes are available in expat areas",
+        "State-subsidised creches exist but have limited places — register on the waiting list immediately after arriving",
+        "Tip: visit 2–3 creches in person — quality and English fluency of staff varies"
+      ],
+      "nannyItems": [
+        "Live-out nannies charge €10–€14/hr — slightly lower rates than Lisbon",
+        "Brazilian nannies are widely available and popular with international families — native Portuguese speakers",
+        "Au pairs cost €100–€200/week plus room and board"
+      ],
+      "whereToFindItems": [
+        "Sitly.com — most popular nanny platform in Portugal",
+        "Babysits.com — good secondary option",
+        "Porto Expats Facebook groups — best source for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register at your Centro de Saúde in the first week — bring your Junta de Freguesia certificate or the registration cannot proceed.",
+      "items": [
+        "Go to your local Centro de Saúde (public health clinic) with your Junta de Freguesia certificate to register with the SNS — Portugal's free national health system.",
+        "The SNS (Serviço Nacional de Saúde) covers GP visits, specialists, emergency care, and prescriptions at reduced cost — for every registered family member.",
+        "Each child must be registered separately — bring their passport and your Junta de Freguesia certificate.",
+        "Private healthcare is widely used by expats for speed — a private GP costs €60–€100 in Porto, with results usually same-day.",
+        "Popular private insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €120–€200/month."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 92,
+      "summary": "Porto is one of the safest cities in Europe. Violent crime is very rare.",
+      "items": [
+        "Violent crime is very rare — Porto consistently ranks among Europe's safest cities",
+        "Main risk is petty theft in the most tourist-heavy areas (Ribeira waterfront) — standard big-city awareness applies",
+        "Foz do Douro, Matosinhos, and Boavista where most expat families live are extremely safe day and night",
+        "Public transport and taxis are safe and reliable",
+        "Tip: the Atlantic beaches in Matosinhos and Foz are safe, clean, and a major quality-of-life benefit year-round"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,400 / month",
+      "familyDinner": "~€40",
+      "nannyRate": "~€12 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Portugal D8 Visa — Official",
+          "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Porto Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Porto",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Your NIF unlocks everything in Portugal — get it at any Finanças office on your first or second day. Same-day appointments are usually available.",
+      "items": [
+        "Register at your local Junta de Freguesia — Portugal's local civil registry office, similar to a city hall branch — within 90 days of arriving. Bring your passport and proof of address.",
+        "Your Junta de Freguesia certificate starts everything: NIF application, bank account, and health centre registration all require it.",
+        "Apply for your NIF (your Portuguese tax and ID number) at any Finanças office (the tax office) — required for almost every financial transaction in Portugal.",
+        "D8 visa holders: AIMA — Portugal's immigration authority — may require a check-in appointment after arrival. Book online at aima.gov.pt as soon as you arrive.",
+        "After 5 years of legal residency, you can apply for permanent residency or Portuguese citizenship."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIF",
+      "tip": "Apply for NHR status before filing your first Portuguese tax return — it cannot be claimed retroactively.",
+      "items": [
+        "Apply for your NIF — Portugal's combined tax and ID number — as soon as you arrive. Required to open a bank account, sign a lease, and enrol in school.",
+        "Get your NIF at any Finanças office (the tax office) — bring your passport and proof of address. Same-day or next-day service is usually available.",
+        "Once you have your NIF, open a Portuguese bank account. Millennium BCP, Caixa Geral, and Novo Banco are popular with expats in Porto.",
+        "While waiting for a bank appointment, use Revolut or N26 — both work from day one in Portugal with no local documents needed.",
+        "Apply for NHR (Non-Habitual Resident) status in your first year of fiscal residency — reduces tax on most foreign income to 20% for 10 years. Miss the deadline and you lose access permanently."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Porto Expats' on Facebook — local advice and housing tips",
+        "searchQuery": "Porto Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "berlin-de",
+    "citySlug": "berlin",
+    "countrySlug": "germany",
+    "city": "Berlin",
+    "country": "Germany",
+    "tagline": "Europe's startup capital — creative, diverse, and surprisingly liveable",
+    "summary": "Berlin is a large, culturally rich European capital with a strong tech sector, an excellent public transport system, and a genuinely international character. For families, the city offers good public parks, a growing international school scene, and an established expat community. Costs are higher than Central European cities but lower than Amsterdam or Paris. The main challenges are bureaucracy and a tight housing market.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Determine your visa route before travelling: EU citizens need only an Anmeldung (address registration); non-EU workers need employer sponsorship; non-EU freelancers need a Freiberufler visa",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU applicants: apply at the German Consulate in your home country before travelling — do not attempt to switch status from inside Germany",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for housing 8–12 weeks before your move — Berlin's rental market is very competitive, especially for 3-bedroom flats",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months or more before your move — British and American curriculum schools in Berlin fill quickly",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, book an Anmeldung appointment (address registration) at your local Bürgeramt — required within 14 days; book immediately as slots fill weeks ahead",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange health insurance before arriving: employed workers are enrolled automatically; self-employed must arrange GKV or PKV in advance",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a German bank account after your Anmeldung — your Meldebescheinigung (registration certificate) is required by most banks",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Tech workers or startup employees — Berlin is Germany's main technology and startup hub",
+        "Families who value cultural diversity, parks, and a progressive city environment",
+        "Parents willing to integrate into German public schools for long-term stays",
+        "Those who enjoy cycling infrastructure and outdoor family life"
+      ],
+      "watchOutFor": [
+        "Public Kita (daycare) waiting lists can be 12–18 months — register your child early, before birth if possible",
+        "Non-EU freelancer visa requires a detailed application — not as simple as Portugal's D8",
+        "German bureaucracy is thorough and slow — Anmeldung and permit appointments fill weeks ahead",
+        "Most administrative offices and landlords operate in German only — bring a translator or German-speaking friend"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU citizens move freely to Germany — only an Anmeldung (address registration) is needed after arrival. Non-EU workers need employer sponsorship. Non-EU freelancers can apply for the Freiberufler visa, which requires a client base and income plan.",
+      "tip": "Book your Anmeldung appointment at the Bürgeramt the day you arrive in Berlin — slots fill 3–6 weeks ahead.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Berlin",
+          "duration": "No visa required",
+          "description": "Move freely to Germany with no visa. First step after arrival: Anmeldung (address registration) at the local Bürgeramt.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement within Germany.",
+            "Complete your Anmeldung (mandatory address registration) at the local Bürgeramt (citizens' office) within 14 days of arriving — you will receive a Meldebescheinigung (registration certificate).",
+            "Your Meldebescheinigung unlocks everything: tax ID (Steuer-ID), bank account, and public health insurance (GKV) enrollment.",
+            "After 5 years of continuous legal residence, you can apply for a permanent residency permit (Niederlassungserlaubnis)."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker",
+          "anchor": "visa-dnv",
+          "detailTitle": "Non-EU employed worker — residence permit",
+          "duration": "Tied to employment contract",
+          "description": "Employer-sponsored. Your employer applies to the Ausländerbehörde (immigration office) on your behalf. Apply at the German Consulate before travelling.",
+          "details": [
+            "Your employer must initiate the process — they file with the German Federal Employment Agency (Bundesagentur für Arbeit) and the Ausländerbehörde.",
+            "Apply for your D-Visa at the German Consulate in your home country before travelling — do not enter Germany and then try to switch.",
+            "After arriving and completing your Anmeldung, visit the Ausländerbehörde (local immigration office) within 90 days to convert to an Aufenthaltserlaubnis (residence permit).",
+            "The Aufenthaltserlaubnis is tied to your employer — a job change requires updating the permit.",
+            "Book your Ausländerbehörde appointment as early as possible — Berlin appointments fill 4–8 weeks ahead."
+          ],
+          "officialLink": {
+            "label": "Germany work permit Aufenthaltserlaubnis official apply",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Non-EU freelancer (Freiberufler)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Freelancer visa — who qualifies and how to apply",
+          "duration": "1–3 years, renewable",
+          "description": "For independent professionals in recognised freelance professions: IT consultants, designers, writers, journalists, artists. Requires a client base and detailed income plan.",
+          "details": [
+            "Applies to recognised Freiberufler professions — IT, design, media, arts, science, teaching. Does not cover general self-employed traders.",
+            "Apply at the German Consulate in your home country — not from inside Germany on a tourist visa.",
+            "Required: evidence of active clients or contracts, a detailed financial projection, savings to cover initial months, and proof of health insurance.",
+            "A German-speaking accountant (Steuerberater) familiar with freelancer registration is strongly recommended.",
+            "After arriving, register your freelance activity with the Finanzamt (tax office) and complete your Anmeldung at the Bürgeramt."
+          ]
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Berlin's rental market is competitive — demand exceeds supply in most family-friendly neighbourhoods. Budget 8–12 weeks for your housing search, and be ready to move quickly when a suitable flat comes up.",
+      "bestAreas": [
+        "Prenzlauer Berg",
+        "Charlottenburg",
+        "Schöneberg",
+        "Zehlendorf",
+        "Steglitz"
+      ],
+      "searchPortalsIntro": [
+        "These are Germany's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Berlin' inside each platform to filter local listings.",
+        "Tip: furnished short-term rentals (Wohnung auf Zeit) are easier to secure remotely — use one as a base for 1–2 months while searching for a long-term unfurnished flat."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Berlin Germany\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Berlin+Germany",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Berlin Wohnungssuche' or 'Apartments Berlin Expats' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, city centre: €1,100–€1,600/month (warm, including utilities)",
+        "3-bed flat, Prenzlauer Berg or Charlottenburg: €1,700–€2,500/month",
+        "3-bed flat, Zehlendorf (near international schools, southwest): €1,800–€2,800/month",
+        "House with garden, outer districts (Dahlem, Zehlendorf): €2,200–€3,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa/residence permit",
+        "Meldebescheinigung (German address registration certificate) — most landlords require this",
+        "SCHUFA credit check (Bonitätsauskunft) — German credit history report; new arrivals can obtain a start SCHUFA from the official SCHUFA website",
+        "3 months of bank statements and last 3 payslips or freelance income evidence",
+        "2–3 months deposit (Kaution) — standard in Germany; legally capped at 3 months' cold rent",
+        "German bank account (IBAN) for direct debit — most landlords require a German IBAN"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Berlin has several international schools, mainly in the southwest (Zehlendorf, Dahlem) and central-west (Charlottenburg) areas. Demand for English-medium places has grown significantly with the city's international workforce. Apply 12+ months ahead.",
+      "publicSystem": "German state schools (Grundschule for ages 6–10, then Gymnasium or other secondary) are free and generally high quality. All instruction is in German. Not recommended for newly arrived children without German language skills unless you plan a multi-year stay with intensive language support.",
+      "internationalOptions": "A growing number of English-medium international schools operate in Berlin, predominantly in the southwest and central-west districts. Schools offer British (IGCSE/A-Level), American, and IB curricula. Places are in high demand due to the large international tech community.",
+      "languageNotes": "German is the sole official language. English-medium instruction is available only in private international schools. State schools in Germany are generally excellent — the language investment is worthwhile for families planning a 3+ year stay.",
+      "tip": "International school waiting lists in Berlin have grown significantly with the tech sector expansion — apply as early as 12–18 months before your move.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "IGCSE and A-Level options, mainly in the southwest and central-west districts.",
+          "fees": "€10,000–18,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several established schools serving the US government and tech expat community in Berlin.",
+          "fees": "€15,000–25,000/year typical"
+        },
+        {
+          "type": "German state schools (Gymnasium)",
+          "description": "Free, high quality, taught entirely in German. Excellent long-term option for families committing to language integration.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Berlin has a well-developed public childcare system (Kita), but public places are in short supply and waiting lists are long. Most expat families use private Kitas or nannies initially.",
+      "daycareItems": [
+        "Kita (Kindertagesstätte) is Germany's publicly subsidised daycare — in Berlin, fees are income-based (€0–€250/month) and widely available for ages 1–6",
+        "Public Kita waiting lists in popular areas (Prenzlauer Berg, Charlottenburg) are often 12–18 months — register your child as soon as you know your move date, before birth if possible",
+        "Private Kitas are easier to access: fees typically €400–€800/month; many offer bilingual (German/English) programmes for expat families",
+        "Tip: register your child at multiple Kitas simultaneously — you only need to accept one offer"
+      ],
+      "nannyItems": [
+        "Kinderfrau (nanny) charge €14–€18/hr — higher than Southern European cities",
+        "Au pairs receive board, lodging, and €280–€350/month pocket money (German au pair minimum) — common among expat families",
+        "Many Berlin nannies speak English, especially in expat-heavy districts like Prenzlauer Berg and Charlottenburg"
+      ],
+      "whereToFindItems": [
+        "Betreut.de — Germany's largest nanny and childcare platform",
+        "Kindersitter.de — good secondary platform for Berlin nannies",
+        "AuPairWorld.com — for au pair matching",
+        "Berlin Expats Facebook groups — best source for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange health insurance before arriving in Germany — GKV enrolment gaps can be costly and difficult to resolve retrospectively.",
+      "items": [
+        "Germany has mandatory health insurance — every resident must be covered. Employed workers are automatically enrolled in the public system (GKV, gesetzliche Krankenversicherung) through their employer.",
+        "GKV covers you, your non-earning spouse, and all children at no extra cost — one of the most family-friendly aspects of the German system.",
+        "Self-employed and freelancers must arrange their own insurance before arrival — either voluntary GKV membership or private insurance (PKV, private Krankenversicherung). Ask a Steuerberater (tax adviser) for guidance, as the choice has long-term implications.",
+        "Major GKV providers: TK (Techniker Krankenkasse), AOK, and Barmer — TK is popular with expats as it offers English-language support.",
+        "Private specialist care (e.g. English-speaking paediatrician, dental) is widely available in Berlin — out-of-pocket costs are manageable with GKV coverage."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 80,
+      "summary": "Berlin is safe for families overall. Normal big-city awareness is recommended.",
+      "items": [
+        "Violent crime is uncommon in family residential areas — Berlin is broadly safe for everyday family life",
+        "Some central and nightlife districts (Friedrichshain, Kreuzberg late at night) are livelier — standard city awareness applies",
+        "Family neighbourhoods (Prenzlauer Berg, Charlottenburg, Zehlendorf) are very safe day and night",
+        "Public transport is extensive and safe to use at all hours, including for children travelling independently",
+        "Tip: Berlin's parks (Tiergarten, Volkspark Friedrichshain) are large, well-maintained, and very safe for families"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,900 / month",
+      "familyDinner": "~€60",
+      "nannyRate": "~€16 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Germany work and freelancer visas — Make it in Germany (official)",
+          "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Berlin Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Berlin",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Book your Anmeldung appointment online at the Berlin service portal (service.berlin.de) the day you arrive — slots fill 3–6 weeks ahead.",
+      "items": [
+        "Complete your Anmeldung (mandatory address registration) at the local Bürgeramt (citizens' office) within 14 days of arriving. Bring your passport, completed Anmeldeformular (registration form), and a landlord confirmation letter (Wohnungsgeberbestätigung).",
+        "You will receive a Meldebescheinigung (registration certificate) — this single document unlocks your tax ID, health insurance enrolment, bank account, and most other admin.",
+        "Your Steuer-ID (tax identification number) is sent by post within 2–4 weeks of your Anmeldung — keep it safe; you need it for every employer and for tax returns.",
+        "Non-EU residents: after completing the Anmeldung, visit the Ausländerbehörde (immigration office) within 90 days to convert your entry visa to an Aufenthaltserlaubnis (residence permit).",
+        "After 5 years of continuous legal residence, you can apply for a Niederlassungserlaubnis (permanent settlement permit)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "N26 (founded in Berlin) opens instantly online with just a passport and Meldebescheinigung — ideal for the first weeks while waiting for a traditional bank appointment.",
+      "items": [
+        "Most German banks require your Meldebescheinigung (address registration certificate) before opening an account — complete your Anmeldung first.",
+        "N26 (digital bank, Berlin-based) opens entirely online with passport and Meldebescheinigung — fast, English-language, and fully functional from day one.",
+        "Traditional banks popular with expats: Deutsche Bank, Commerzbank, and DKB (Deutsche Kreditbank, free account). DKB requires a German address and takes longer to set up.",
+        "Wise and Revolut work immediately from arrival with no German address needed — useful for receiving international transfers before your local account is ready.",
+        "Most landlords and German service providers require payment by German IBAN (SEPA bank transfer) — a local account is essential within the first month."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Berlin Expats' on Facebook — tips from residents and families",
+        "searchQuery": "Berlin Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "amsterdam-nl",
+    "citySlug": "amsterdam",
+    "countrySlug": "netherlands",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "tagline": "Cycling families, great schools, and world-class expat infrastructure",
+    "summary": "Amsterdam is one of the most expat-friendly cities in the world. It offers excellent international schools, a strong English-speaking environment, outstanding cycling infrastructure, and a well-organised public services system. The trade-off is cost: Amsterdam is one of the most expensive cities in this guide, with housing in particular under extreme pressure. The Kennismigrant (Highly Skilled Migrant) employer-sponsored route is the most common path for non-EU families.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Non-EU applicants: confirm your visa route before travelling — most families arrive via employer-sponsored Kennismigrant (Highly Skilled Migrant) permit",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 3–4 months before your move — Amsterdam's rental market is extremely competitive, especially near international schools",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your move — British and American schools in Amsterdam are heavily oversubscribed",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register at your gemeente (municipality office) within 5 days — you will receive your BSN (citizen service number), which unlocks everything",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Purchase your basisverzekering (basic health insurance) within 4 months of arriving — it is mandatory for all residents",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Dutch bank account once you have your BSN — most banks require it before opening an account",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families with an employer-sponsored relocation or Highly Skilled Migrant visa route",
+        "Parents who want excellent international schools and a strong English-speaking expat community",
+        "Cycling families — Amsterdam is built for bikes, including with young children",
+        "Those moving from the US, UK, Israel, or India — very large, established expat communities"
+      ],
+      "watchOutFor": [
+        "Housing is scarce and extremely expensive — competition is intense, especially near international schools in Oud-Zuid and Amstelveen",
+        "Non-EU self-employed route is complex — professional immigration advice is strongly recommended",
+        "Childcare costs are high before government subsidies; register for kinderopvangtoeslag (childcare allowance) as soon as you arrive",
+        "Winters are grey, cold, and wet — psychologically prepare if coming from a sunny climate"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to the Netherlands — only gemeente registration is needed. Non-EU families most commonly arrive via the Kennismigrant (Highly Skilled Migrant) employer-sponsored permit. Self-employed routes are complex and require specialist advice.",
+      "tip": "Register at your gemeente within 5 days of arrival — the BSN you receive is the key to healthcare, banking, and childcare allowance.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Amsterdam",
+          "duration": "No visa required",
+          "description": "Move freely to the Netherlands with no visa. Register at your gemeente within 5 days to get your BSN.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in the Netherlands.",
+            "Register at your local gemeente (municipality office) within 5 days of arrival — you will receive your BSN (Burger Service Nummer), the Dutch citizen service number needed for everything.",
+            "The BSN is required for: health insurance, bank account, school enrolment, tax, and childcare allowance. Get it on day one.",
+            "After 5 years of continuous legal residence, you can apply for permanent residency (duurzame verblijfsvergunning)."
+          ]
+        },
+        {
+          "type": "Kennismigrant (Highly Skilled Migrant)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Kennismigrant — employer-sponsored route",
+          "duration": "Tied to employment, up to 5 years",
+          "description": "Employer-sponsored permit for highly skilled non-EU workers. Employer applies to the IND (Immigration and Naturalisation Service). Most common route for tech and corporate expat families.",
+          "details": [
+            "Your employer must be an IND-recognised sponsor (erkend referent) — large tech companies and multinationals typically qualify.",
+            "Salary threshold (2025): approximately €4,500/month for workers aged 30+; €3,300/month for workers under 30.",
+            "Your employer files the application with the IND — processing typically takes 2–4 weeks for recognised sponsors.",
+            "Your family members (spouse and children) receive a dependent residence permit automatically on the same application.",
+            "After 5 years you can apply for a permanent residence permit. After 5 years of continuous residence and a civic integration exam, you can apply for Dutch citizenship."
+          ],
+          "officialLink": {
+            "label": "Netherlands Highly Skilled Migrant Kennismigrant permit official IND",
+            "url": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — scouting trip only",
+          "duration": "Up to 90 days",
+          "description": "Valid for a scouting trip. No right to work, no extensions.",
+          "details": [
+            "90 days maximum in any 180-day period across the entire Schengen Area.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside the Netherlands — apply for your Kennismigrant permit before travelling.",
+            "Good use: 1–2 weeks scouting Oud-Zuid, Amstelveen, and international school options before your official move."
+          ]
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Amsterdam has one of the most competitive rental markets in Europe. Start searching 3–4 months before your move. The Oud-Zuid and Amstelveen areas are most popular with expat families near international schools.",
+      "bestAreas": [
+        "Oud-Zuid",
+        "De Pijp",
+        "Jordaan",
+        "Amstelveen",
+        "Amsterdam-Zuid"
+      ],
+      "searchPortalsIntro": [
+        "These are the main Dutch long-term rental platforms — this is where residents search, not Airbnb.",
+        "Search 'Amsterdam' inside each platform to filter local listings.",
+        "Tip: many expats arrange housing through a relocatie bureau (relocation agency) — worth considering given how competitive the Amsterdam market is."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Amsterdam Netherlands\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Amsterdam+Netherlands",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Housing Amsterdam Expats' or 'Amsterdam Rentals' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, central Amsterdam: €1,500–€2,200/month",
+        "3-bed flat, Oud-Zuid or De Pijp: €2,200–€3,500/month",
+        "3-bed flat/house, Amstelveen (suburb, near international schools): €1,800–€2,800/month",
+        "4-bed house, outer suburbs (Diemen, Badhoevedorp): €2,500–€4,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and residence permit (for non-EU)",
+        "BSN (citizen service number) — most landlords and agencies require it",
+        "3 months of bank statements and last 3 payslips or income evidence",
+        "1–2 months deposit (typically 1–2 months' rent)",
+        "Dutch bank account (IBAN) — required for rent payments by most landlords"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Amsterdam has an excellent range of international schools, but demand far exceeds supply. The main English-medium options cluster in Oud-Zuid and the nearby suburb of Amstelveen. Apply 12–18 months ahead for the most sought-after schools.",
+      "publicSystem": "Dutch state schools (basisschool) are free and generally excellent, but all instruction is in Dutch. Not recommended for newly arrived children without Dutch language skills. Some state schools offer bilingual programmes (30–50% English), but places are limited and competitive.",
+      "internationalOptions": "The main international school cluster is in Oud-Zuid (Amsterdam) and Amstelveen (15 min south). Schools offer British (IGCSE/A-Level), American, and IB curricula. AICS, the Amsterdam International Community School, and the British School of Amsterdam are among the most established. Apply at least 12 months ahead.",
+      "languageNotes": "Dutch is the official language. English is very widely spoken in Amsterdam — daily life is manageable in English. English-medium instruction is only available in private international schools.",
+      "tip": "International school places in Amsterdam are among the most competitive in Europe — apply before booking flights, not after.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "Well-established options in Oud-Zuid and Amstelveen. Strong IGCSE and A-Level programmes.",
+          "fees": "€12,000–20,000/year typical"
+        },
+        {
+          "type": "American curriculum international schools",
+          "description": "Several established schools serving the US government, tech, and corporate expat community.",
+          "fees": "€15,000–25,000/year typical"
+        },
+        {
+          "type": "Dutch bilingual state schools",
+          "description": "30–50% English instruction. Free, good quality, but places are limited and require Dutch within 2–3 years.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Amsterdam has a well-regulated childcare system. Costs before government subsidy are high, but the kinderopvangtoeslag (childcare allowance) can offset 60–90% depending on income. Register for the allowance as soon as you receive your BSN.",
+      "daycareItems": [
+        "Kinderopvang (licensed daycare) accepts children from 6 weeks old — widely available in Oud-Zuid, Jordaan, and Amstelveen",
+        "Full-time kinderopvang costs €1,200–€1,800/month before subsidy; the kinderopvangtoeslag (childcare allowance) from the Dutch Tax Authority (Belastingdienst) can offset 60–90% of cost depending on income",
+        "Register for kinderopvangtoeslag at belastingdienst.nl as soon as you receive your BSN — the allowance cannot be claimed retroactively",
+        "Tip: English-language daycare centres are widely available in expat-heavy areas; ask specifically at signup"
+      ],
+      "nannyItems": [
+        "Gastouder (state-regulated childminder) are widely available and eligible for the same kinderopvangtoeslag subsidy as formal daycare",
+        "Private nannies (oppas) charge €14–€20/hr — among the highest in Europe",
+        "Au pairs in the Netherlands receive board, lodging, and pocket money under a formal government scheme; specific rules apply — check the IND website for current requirements"
+      ],
+      "whereToFindItems": [
+        "Sitly.nl — Netherlands' largest nanny and childcare platform",
+        "Gastouderbureau.nl — for finding registered gastouder (childminder) placements eligible for subsidy",
+        "Amsterdam Expats Facebook groups — best source for personal nanny recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Purchase your basisverzekering within 4 months of arriving — failure to do so results in back-billing for uncovered periods.",
+      "items": [
+        "The basisverzekering (basic health insurance policy) is mandatory for all residents — you must purchase it yourself from a private insurer within 4 months of arriving. It is retroactive to your first day of residence.",
+        "Cost: approximately €130–€160/month per adult; all children under 18 are free under a parent's policy.",
+        "Choose your insurer from the regulated market: Zilveren Kruis, VGZ, CZ, and Menzis are the largest. All cover the same basic package — compare on price and supplementary options.",
+        "Most expats add an aanvullende verzekering (supplementary insurance) covering dental, physiotherapy, and specialist referrals — adds €20–€60/month.",
+        "The mandatory annual deductible (eigen risico) is €385/year per adult — budget for this when estimating healthcare costs."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 83,
+      "summary": "Amsterdam is safe for families. Normal big-city awareness applies in the city centre.",
+      "items": [
+        "Violent crime is rare in family residential areas — Amsterdam is broadly safe for day-to-day family life",
+        "Main risk is petty theft in the tourist-heavy city centre: Red Light District, Centraal Station, and Leidseplein — keep bags secure",
+        "Family neighbourhoods (Oud-Zuid, Jordaan, Amstelveen) are very safe day and night",
+        "Cycling is the primary transport for families — roads are safe and fully equipped with separated cycling infrastructure",
+        "Tip: equip all children with bike helmets and teach them Dutch cycling road rules before their first school commute"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€2,300 / month",
+      "familyDinner": "~€65",
+      "nannyRate": "~€17 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Netherlands Highly Skilled Migrant — IND official",
+          "url": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Amsterdam Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Amsterdam",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Register at your gemeente within 5 days of arrival — your BSN is the key to everything in the Netherlands and you cannot open a bank account, enrol in school, or claim childcare allowance without it.",
+      "items": [
+        "Register at your local gemeente (municipality office) within 5 days of arrival — bring your passport, residence permit (if non-EU), and rental contract or proof of address.",
+        "You will receive your BSN (Burger Service Nummer) — the Dutch citizen service number used for tax, healthcare, banking, school enrolment, and childcare allowance.",
+        "Your DigiD (Dutch government digital ID) is issued separately after registration — apply online at digid.nl. It is required for filing taxes, accessing the Belastingdienst (tax authority) portal, and most government services.",
+        "EU residents: no additional permit needed beyond gemeente registration. Non-EU Kennismigrant permit holders: your permit is handled by your employer and the IND before arrival.",
+        "After 5 years of continuous legal residence, you can apply for a permanent residence permit."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your BSN before most Dutch banks will open a full account — complete your gemeente registration on day one.",
+      "items": [
+        "Most Dutch banks require your BSN before opening a full current account — complete your gemeente registration first.",
+        "ABN AMRO and ING are the most expat-friendly traditional banks; both have English-language apps and expat onboarding support.",
+        "Bunq (Dutch digital bank) opens more quickly with just a BSN and passport — popular with expats for its flexibility.",
+        "N26 and Revolut work from day one without a Dutch address or BSN — useful for the first 1–2 weeks while waiting for registration.",
+        "Dutch utilities, rent, and school fees all require a Dutch IBAN (SEPA transfer) — a local account is essential within the first month."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Amsterdam Expats' on Facebook — tips from residents and families",
+        "searchQuery": "Amsterdam Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "prague-cz",
+    "citySlug": "prague",
+    "countrySlug": "czech-republic",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "tagline": "Beautiful, safe, and affordable — Central Europe's most underrated family city",
+    "summary": "Prague is one of the most beautiful and liveable cities in Central Europe. For families, it offers excellent safety, a compact walkable centre, affordable living costs, and a growing international school scene. The expat community is well-established, particularly in Vinohrady and Prague 6 near the international school cluster. Cost of living is meaningfully lower than Western European capitals — but Czech bureaucracy requires patience.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "EU citizens: no visa needed — plan your Ohlášení pobytu (address registration) at the City Hall within 30 days of arrival",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU applicants: apply for your Employee Card (Zaměstnanecká karta) or long-stay visa at the Czech Embassy before travelling",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for housing 6–8 weeks before your move — Prague 2 (Vinohrady) and Prague 6 are the main expat family areas",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months before your move — English-medium schools in Prague 6 fill quickly",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register your address at the Ohlašovna (civil registration office) within 30 days — required for most admin",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Get private health insurance if not employed locally — required for non-EU visa holders and useful as a supplement for EU citizens",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Czech bank account after your address registration — your proof of Czech address is required",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want an affordable, beautiful Central European city with European quality of life",
+        "Parents who value safety and a walkable, compact city environment",
+        "Remote workers who want a lower cost of living without sacrificing European infrastructure",
+        "Families open to Czech language integration — public schools are excellent quality"
+      ],
+      "watchOutFor": [
+        "Czech language is required for public schools and most daily life outside central expat areas",
+        "Housing near the best international schools (Prague 6, Dejvice) commands a premium",
+        "Non-EU visa applications are processed slowly — Czech embassies can take 2–4 months",
+        "Czech bureaucracy requires patience — most government offices operate only in Czech"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to the Czech Republic — only address registration is needed. Non-EU employees need an Employee Card (Zaměstnanecká karta). Non-EU self-employed need a Trade Licence (Živnostenský list) plus a long-stay visa.",
+      "tip": "Non-EU applicants: Czech Embassy processing can take 2–4 months — apply at least 3 months before your intended move date.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Prague",
+          "duration": "No visa required",
+          "description": "Move freely to the Czech Republic with no visa. Register your address within 30 days of arrival.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in the Czech Republic.",
+            "Register your address at the Ohlašovna (civil registration counter at your local City Hall/Úřad) within 30 days of arrival — bring your passport and rental contract.",
+            "Your address registration certificate is required for banking, school enrolment, and most local services.",
+            "After 5 years of continuous residence, you can apply for permanent residency (trvalý pobyt)."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker (Employee Card)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Employee Card (Zaměstnanecká karta) — how to apply",
+          "duration": "Tied to employment contract",
+          "description": "Single permit combining work and residence rights. Apply at the Czech Embassy in your home country before travelling.",
+          "details": [
+            "The Zaměstnanecká karta (Employee Card) is a combined work and residence permit — one document covers both.",
+            "Apply at the Czech Embassy in your home country — you cannot switch status from inside the Czech Republic on a tourist visa.",
+            "Your employer must have a registered vacancy listed in the Czech job vacancy register (Informační systém o volných místech) — your HR department handles this.",
+            "Processing time: typically 2–4 months at most Czech embassies. Prepare and submit your documents as early as possible.",
+            "After arriving, visit the Cizinecká policie (foreign police) in Prague to complete your registration and receive your biometric residence card."
+          ],
+          "officialLink": {
+            "label": "Czech Employee Card Zaměstnanecká karta official requirements",
+            "url": "https://www.mvcr.cz/mvcren/article/employee-card.aspx",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Non-EU self-employed (Trade Licence)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Trade Licence (Živnostenský list) — self-employed route",
+          "duration": "Long-stay visa + Trade Licence",
+          "description": "For independent contractors and freelancers. Requires a Trade Licence and a long-stay visa from the Czech Embassy. More complex than Portugal's D8.",
+          "details": [
+            "Obtain a Živnostenský list (Trade Licence) — this registers you as self-employed with the Czech authorities.",
+            "Apply for a long-stay visa for the purpose of business at the Czech Embassy in your home country — provide the Trade Licence, proof of accommodation, financial proof, and health insurance.",
+            "Processing is slow (2–4 months) and the required documentation is extensive — professional immigration advice is recommended.",
+            "After arriving, register with the Tax Authority (Finanční úřad) and the Social Security Administration (ČSSZ) for self-employed contributions."
+          ]
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Prague has a competitive rental market by Central European standards, but rents are significantly lower than Western European capitals. Vinohrady (Prague 2) and Dejvice/Prague 6 are the main expat family neighbourhoods.",
+      "bestAreas": [
+        "Vinohrady (Prague 2)",
+        "Dejvice / Prague 6",
+        "Smíchov (Prague 5)",
+        "Letná (Prague 7)",
+        "Prague 10"
+      ],
+      "searchPortalsIntro": [
+        "These are the main Czech rental platforms — this is where residents search, not Airbnb.",
+        "Search 'Praha' inside each platform to filter Prague listings.",
+        "Tip: start with a 2–4 week furnished short-term stay — Prague 2 and Prague 6 long-term flats move quickly and are easier to secure in person."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Prague Czech Republic\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Prague+Czech+Republic",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Prague Expats Housing' or 'Apartments Prague' for direct deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, city centre (Prague 1/2): Kč 18,000–28,000/month",
+        "3-bed flat, Vinohrady (Prague 2): Kč 38,000–58,000/month",
+        "3-bed flat, Dejvice / Prague 6 (near international schools): Kč 42,000–68,000/month",
+        "3-bed flat, Prague 5 (more affordable): Kč 32,000–50,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa/residence permit",
+        "2–3 months of bank statements and proof of income",
+        "1–3 months deposit (standard varies; typically 2 months' rent)",
+        "Czech bank account is preferred for rent payment by most landlords"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Prague has a well-established international school market, predominantly in Prague 6 (Dejvice/Bubeneč area), near the embassies and diplomatic community. Schools offer British, American, and IB curricula. Apply 12 months ahead for the most established schools.",
+      "publicSystem": "Czech state schools (Základní škola) are free and generally excellent in quality. All instruction is in Czech. Not suitable for newly arrived children without Czech language skills — but a strong long-term option for families planning a multi-year stay.",
+      "internationalOptions": "The main international school cluster is in Prague 6 (Dejvice/Bubeneč) near the embassies and diplomatic quarter — about 15–20 minutes from Vinohrady. Schools offer British and American/IB curricula. Prague has a well-established diplomatic and corporate expat school market.",
+      "languageNotes": "Czech is the sole official language. English is widely spoken in the international community and central Prague. English-medium instruction is available only in private international schools.",
+      "tip": "Prague 6 international schools are consistently the most sought-after — apply 12 months ahead, especially for younger year groups.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "IGCSE and A-Level options, mainly in Prague 6 (Dejvice/Bubeneč area) near the diplomatic quarter.",
+          "fees": "Kč 250,000–500,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several established schools serving the diplomatic and corporate expat community in Prague.",
+          "fees": "Kč 220,000–480,000/year typical"
+        },
+        {
+          "type": "Czech state schools (Základní škola)",
+          "description": "Free, excellent quality, taught entirely in Czech. A strong long-term option for families committing to language integration.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Prague has a well-developed childcare market. State kindergartens are affordable but have waitlists in central areas. Private nurseries with English are available in expat neighbourhoods.",
+      "daycareItems": [
+        "Státní školka (state kindergarten, ages 3–6) is very affordable — fees are nominal (a few hundred Kč/month) — but places in Prague 2 and Prague 6 are limited and often waitlisted",
+        "Soukromá schulka (private nursery, typically bilingual Czech/English): Kč 10,000–22,000/month — widely available in Vinohrady and Prague 6",
+        "Jesle (private creche for under-3s): Kč 12,000–20,000/month — less common but available in expat areas",
+        "Tip: register for state školka as soon as you arrive — even if you plan private initially, the waiting list for state places starts running from registration"
+      ],
+      "nannyItems": [
+        "Chůva (nanny) charge Kč 200–350/hr — significantly more affordable than Western European cities",
+        "Many Prague nannies speak English, especially those registered on expat-facing platforms",
+        "Au pairs are widely available — board, lodging, and pocket money of Kč 5,000–8,000/month is typical"
+      ],
+      "whereToFindItems": [
+        "Babysits.cz — Czech platform for nanny and babysitter searches",
+        "AuPairWorld.com — for au pair matching",
+        "Expats.cz community board — best source for personal recommendations in Prague"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Private English-speaking clinics are affordable and efficient in Prague — even expats with public health cover often use them for convenience.",
+      "items": [
+        "Employed workers in the Czech Republic are enrolled in the public health insurance system (VZP — Všeobecná zdravotní pojišťovna, or one of the other national insurers) via their employer — covers the employee and dependent family members.",
+        "Non-EU visa holders not employed locally must arrange commercial health insurance — this is required as part of the initial visa application.",
+        "EU citizens who are not locally employed and do not hold an EHIC (European Health Insurance Card) from their home country should arrange private health insurance on arrival.",
+        "Private English-speaking clinics are widely available in central Prague and affordable by Western standards — a private GP appointment costs Kč 1,500–3,000 (about €60–€120).",
+        "For children: expat families typically use a private paediatrician for routine check-ups — bilingual clinics are available in Prague 2 and Prague 6."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 88,
+      "summary": "Prague is one of the safest capital cities in Central Europe. An excellent environment for families.",
+      "items": [
+        "Violent crime is very rare — Prague consistently ranks among the safest European capitals",
+        "Main risk is petty theft in the most tourist-heavy areas: Old Town Square, Charles Bridge, and Wenceslas Square — standard tourist-area awareness applies",
+        "Family neighbourhoods (Vinohrady, Dejvice, Prague 6, Prague 5) are very safe at all hours",
+        "Public transport is excellent — trams, metro, and bus run frequently and are safe day and night",
+        "Tip: Prague's parks (Stromovka, Divoká Šárka, Riegrovy sady) are large, clean, and very popular with families"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~Kč 45,000 / month",
+      "familyDinner": "~Kč 1,400",
+      "nannyRate": "~Kč 280 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Czech Employee Card — Ministry of Interior official",
+          "url": "https://www.mvcr.cz/mvcren/article/employee-card.aspx",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Prague Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Prague",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Register your address at the Ohlašovna as soon as possible — many services including banking and school enrolment require proof of Czech address.",
+      "items": [
+        "Register your address at the Ohlašovna (civil registration counter at your local City Hall/Úřad Městské Části) within 30 days of arriving. Bring your passport and rental contract.",
+        "EU citizens: address registration at the Ohlašovna is your primary step — no additional permit is needed.",
+        "Non-EU residents: after completing the Ohlašovna registration, visit the Ředitelství služby cizinecké policie (Foreign Police Directorate) in Prague to register with immigration. Bring your passport, rental contract, and visa.",
+        "You will receive a registration confirmation that proves your Czech address — required for banking, school enrolment, and healthcare registration.",
+        "After 5 years of continuous legal residence, EU citizens can apply for permanent residency (trvalý pobyt)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Revolut and Wise work from day one in Czech Republic — useful for the first weeks before your Czech bank account is open.",
+      "items": [
+        "Most Czech banks require proof of a Czech address (from your Ohlašovna registration) before opening a current account — complete your address registration first.",
+        "Česká spořitelna, ČSOB, and Komerční banka are the main traditional banks — all have some English-language support at central Prague branches.",
+        "Revolut and Wise work from day one without a Czech address — useful for receiving international transfers and converting to CZK while setting up your local account.",
+        "Most landlords expect rent paid by Czech bank transfer (CZK IBAN) from the second month onward — a local account is expected within the first 4–6 weeks.",
+        "Self-employed residents: register with the Finanční úřad (tax office) after getting your Trade Licence — you will receive a Czech tax number (DIČ)."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Prague Expats' on Facebook — housing and local advice from residents",
+        "searchQuery": "Prague Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "budapest-hu",
+    "citySlug": "budapest",
+    "countrySlug": "hungary",
+    "city": "Budapest",
+    "country": "Hungary",
+    "tagline": "Grand architecture, affordable living, and a surprisingly strong expat community",
+    "summary": "Budapest is one of Europe's most beautiful and most underrated cities for families. It combines grand 19th-century architecture, thermal baths, a vibrant food scene, and genuinely affordable living — with good international schools, excellent private healthcare, and an established expat community. The main challenges are the Hungarian language (very difficult) and a government administration that is bureaucratic and mostly monolingual.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "EU citizens: plan your lakcím bejelentés (address registration) at the kormányablak (government office) within 90 days of arrival",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU applicants: apply for Hungary's White Card (remote worker visa) or employer-sponsored residence permit at the Hungarian Consulate before travelling",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move — District II (Buda hills) and District XII are the most popular expat family areas near international schools",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months before your move — confirmed places are important before committing to your move date",
+        "targetSection": "schools"
+      },
+      {
+        "label": "On arrival, register your address at the local kormányablak (government one-stop office) — required for TAJ szám, bank account, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Set up private health insurance on arrival — public system waiting times are long; most expat families use private clinics as primary care",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Hungarian bank account after your address registration — your lakcím bejelentés certificate is typically required",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want a beautiful, affordable Central European city at significantly lower cost than Vienna or Prague",
+        "Those coming from the US, UK, or Israel — Budapest has established and well-connected expat communities",
+        "Budget-conscious families who want European quality of life with more financial breathing room",
+        "Parents open to a city where local language matters but international schools are good quality"
+      ],
+      "watchOutFor": [
+        "Hungarian is a very difficult language — daily life without it often means staying in expat-bubble neighbourhoods",
+        "International school fees are high relative to local cost of living — factor this in carefully",
+        "Non-EU White Card (remote worker visa) is relatively new and processing may still be inconsistent at some consulates",
+        "Public healthcare waiting times are long — budget for private clinic use from day one"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to Hungary — only lakcím bejelentés (address registration) is needed. Non-EU remote workers can apply for Hungary's White Card. Non-EU employed workers need an employer-sponsored residence permit.",
+      "tip": "Non-EU applicants: Hungary's White Card is relatively new — confirm current requirements with the Hungarian Consulate in your home country before applying.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Budapest",
+          "duration": "No visa required",
+          "description": "Move freely to Hungary with no visa. Register your address at the kormányablak within 90 days of arrival.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in Hungary.",
+            "Complete your lakcím bejelentés (address registration) at the local kormányablak (government one-stop-shop office) within 90 days — bring your passport and rental contract.",
+            "Your lakcím bejelentés certificate (proof of registered address) is required for banking, TAJ szám (health insurance number), and school enrolment.",
+            "After 5 years of continuous residence, EU citizens can apply for permanent residency (tartózkodási engedély)."
+          ]
+        },
+        {
+          "type": "White Card (remote worker visa)",
+          "anchor": "visa-dnv",
+          "detailTitle": "White Card — Hungary's remote worker visa",
+          "duration": "1 year, renewable",
+          "description": "Hungary's visa for remote workers and digital nomads. Apply at the Hungarian Consulate in your home country before travelling.",
+          "details": [
+            "Introduced in 2024 — designed for remote workers and digital nomads earning income from outside Hungary.",
+            "Requirement: minimum income of approximately €2,000/month (gross) from remote employment or freelance work outside Hungary.",
+            "Required documents: valid passport, proof of income (employment contract or 3+ months of payslips), valid health insurance, and proof of accommodation.",
+            "Apply at the Hungarian Consulate in your home country — processing timelines vary; allow 4–8 weeks.",
+            "After arriving, complete your lakcím bejelentés at the kormányablak — this is required even with the White Card."
+          ],
+          "officialLink": {
+            "label": "Hungary White Card remote worker visa official",
+            "url": "https://www.gov.hu/en",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — scouting trip only",
+          "duration": "Up to 90 days",
+          "description": "Valid for a scouting trip. No right to work, no extensions.",
+          "details": [
+            "90 days maximum in any 180-day period across the entire Schengen Area.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Hungary — apply for the White Card or work permit at a consulate before travelling.",
+            "Good use: 1–2 weeks scouting District II, District XII, and international school options."
+          ]
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Budapest is significantly more affordable than Western European capitals. The Buda side (Districts II and XII) is the most popular area for expat families, offering hillside residential calm and proximity to international schools.",
+      "bestAreas": [
+        "District II (Buda hills)",
+        "District XII",
+        "District V (central Pest)",
+        "District XIII",
+        "Rózsadomb"
+      ],
+      "searchPortalsIntro": [
+        "These are the main Hungarian rental platforms — this is where residents search for long-term housing.",
+        "Search 'Budapest' inside each platform to filter local listings.",
+        "Tip: many Buda-side family flats are listed only in Hungarian — using a local real estate agent with English skills saves significant time."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Budapest Hungary\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Budapest+Hungary",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Budapest Expats Housing' or 'Expat Budapest Rentals' for direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, central Pest (District V/VII): Ft 280,000–420,000/month",
+        "3-bed flat, District II (Buda hills, near schools): Ft 550,000–900,000/month",
+        "3-bed flat, District XII (leafy residential): Ft 500,000–850,000/month",
+        "House with garden, outer Buda (Districts II/III): Ft 700,000–1,200,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa/residence permit",
+        "2–3 months of bank statements and proof of income",
+        "1–3 months deposit (typically 2 months' rent)",
+        "Hungarian bank account (HUF) is preferred by most landlords for rent payment"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Budapest has a growing international school market, mainly on the Buda side (Districts II and XII). Schools offer British and American/IB curricula. Apply at least 12 months before your intended start date.",
+      "publicSystem": "Hungarian state schools (Általános iskola for ages 6–14) are free and generally decent in quality, but all instruction is in Hungarian. Not suitable for newly arrived children without language skills.",
+      "internationalOptions": "The main international school cluster is on the Buda side — Districts II and XII. Schools offer British (IGCSE/A-Level) and American/IB curricula. Less competitive than Prague or Amsterdam but still require early application as places are limited.",
+      "languageNotes": "Hungarian is the official language. English is spoken in international school communities and central expat areas. Day-to-day Hungarian is difficult to avoid outside the expat bubble — plan for limited English in daily services.",
+      "tip": "Confirm current school availability for your children's age groups before committing to your move date — Budapest has fewer options than Prague or Lisbon.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "IGCSE and A-Level options, mainly in District II and XII on the Buda side.",
+          "fees": "Ft 2,500,000–5,500,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several schools serving the diplomatic and corporate expat community in Budapest.",
+          "fees": "Ft 3,000,000–5,500,000/year typical"
+        },
+        {
+          "type": "Hungarian state schools (Általános iskola)",
+          "description": "Free, taught entirely in Hungarian. Good quality for families committing to language immersion over 2+ years.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Budapest has a solid childcare market. State bölcsödék (creches) are very affordable but have waitlists. Private nurseries with English are available in expat areas.",
+      "daycareItems": [
+        "Állami bölcsöde (state creche/nursery, ages 0–3) has very low fees (Ft 5,000–15,000/month) but waitlists are common in Districts II and XII — register immediately after arriving",
+        "Magánbölcsöde (private nursery): Ft 100,000–200,000/month — widely available in District II, XII, and central Pest; bilingual (Hungarian/English) options exist in expat areas",
+        "Tip: visit at least 2–3 nurseries before deciding — staff English fluency and care quality varies significantly"
+      ],
+      "nannyItems": [
+        "Dadus (nanny) charge Ft 2,500–4,000/hr — very affordable by European standards",
+        "Au pairs are available — board, lodging, and pocket money of Ft 80,000–120,000/month is typical",
+        "English-speaking nannies are available in expat-heavy districts but require active searching"
+      ],
+      "whereToFindItems": [
+        "Babysits.com — used by the Budapest expat community for nanny searches",
+        "AuPairWorld.com — for au pair matching",
+        "Budapest Expats Facebook groups — best source for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Do not rely solely on the public system — set up private health insurance on arrival to ensure fast, English-language access to care.",
+      "items": [
+        "Hungarian residents are covered by the public health system (OEP/NEAK) after completing their address registration and paying social insurance contributions — but waiting times for specialists can be very long.",
+        "Most expat families use private clinics as their primary healthcare — English-speaking GPs and paediatricians are widely available in central Buda and Pest.",
+        "A private GP appointment costs approximately Ft 10,000–25,000 (about €25–€65) — much more affordable than Western Europe.",
+        "International private health insurance is strongly recommended, especially for specialist care — plans from Cigna, AXA, or Allianz International cover English-speaking private hospitals in Budapest.",
+        "Get your TAJ szám (Hungarian social insurance number) from the National Health Insurance Fund (NEAK) after your lakcím bejelentés — it is your proof of public health coverage."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 84,
+      "summary": "Budapest is safe for families overall. Normal big-city awareness is recommended in tourist-heavy areas.",
+      "items": [
+        "Violent crime is uncommon — Budapest is generally safe for families in residential areas",
+        "Main risk is petty theft in tourist-heavy areas: Váci utca, Vörösmarty tér, and the ruin bar district in District VII — keep bags secure",
+        "Buda-side family neighbourhoods (Districts II and XII) are very safe and quiet day and night",
+        "Public transport (metro, tram, bus) is reliable and safe at all hours",
+        "Tip: Budapest's outdoor baths, parks, and riverside walks are popular with families and very safe — a major quality-of-life benefit"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~Ft 650,000 / month",
+      "familyDinner": "~Ft 17,000",
+      "nannyRate": "~Ft 3,200 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Hungary government official portal",
+          "url": "https://www.gov.hu/en",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Budapest Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Budapest",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "tip": "Complete your lakcím bejelentés (address registration) at the kormányablak on your first or second day — your registered address unlocks banking, health insurance, and school enrolment.",
+      "items": [
+        "Complete your lakcím bejelentés (address registration) at the local kormányablak (government one-stop-shop office) within 90 days of arriving — bring your passport, rental contract, and visa/permit if non-EU.",
+        "The kormányablak (literally 'government window') is Hungary's centralised local government office where you handle most admin tasks in one place.",
+        "You will receive a lakcímkártya (address card) — this is your proof of registered Hungarian address, required for banking, TAJ szám, and school enrolment.",
+        "Apply for your TAJ szám (társadalombiztosítási azonosító jel — social insurance number) at the NEAK office after your address registration — it activates your public health insurance entitlement.",
+        "Non-EU residents: ensure your residence permit is in order before completing the address registration — the Bevándorlási és Menekültügyi Hivatal (Immigration Office) handles permit queries."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Revolut works from day one without a Hungarian address — use it for the first weeks while setting up your local account.",
+      "items": [
+        "Most Hungarian banks require your lakcímkártya (registered address card) before opening a full current account — complete your lakcím bejelentés first.",
+        "OTP Bank is Hungary's largest bank and the most expat-experienced — bring passport, lakcímkártya, and TAJ szám. English service is available at central Budapest branches.",
+        "K&H Bank and Erste Bank are good alternatives with English-language service in central Pest branches.",
+        "Revolut works from day one without local documents — useful for receiving international transfers while waiting for your bank account.",
+        "Most landlords expect rent paid in HUF by Hungarian bank transfer from the second month — a local HUF account is expected within the first 4–6 weeks."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Budapest Expats' on Facebook — local tips and advice from residents",
+        "searchQuery": "Budapest Expats Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "bangkok-th",
+    "citySlug": "bangkok",
+    "countrySlug": "thailand",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "tagline": "Megacity infrastructure, top-tier private healthcare, and Southeast Asia's best school choice",
+    "summary": "Bangkok is the most internationally connected city in Southeast Asia and offers families an exceptional combination: world-class private hospitals, the widest selection of international schools in the region, modern infrastructure, and a cost of living well below comparable European cities. The trade-offs are traffic (plan school commutes carefully), air quality in the dry season, and intense heat and humidity. The expat family community is large, well-organised, and welcoming.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Choose your visa route before travelling: DTV (Destination Thailand Visa, 180 days, $15,000 savings required) or Thailand Elite Privilege Card (5–20 year membership, one-time fee)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for the DTV at a Thai consulate or embassy in your home country at least 4–6 weeks before your travel date",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for housing 6–8 weeks before your move — choose your area based on your children's school location to minimise traffic commute time",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research and apply to international schools at least 12 months before your move — Bangkok has many options but the top British and American schools fill quickly",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Arrange comprehensive private health insurance before arriving — expats in Bangkok rely entirely on private hospitals for healthcare",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Ask your landlord to file the TM30 form (address registration with Thai immigration) within 24 hours of your arrival at the property",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Bangkok Bank or KBank account within the first month — needed for school fee payments, rent autopay, and daily banking",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want megacity infrastructure at Southeast Asian cost",
+        "Parents who want the widest selection of international schools in the region — Bangkok has more options than any other Southeast Asian city",
+        "Those who value world-class private healthcare at a fraction of Western prices",
+        "Families coming from the Middle East, US, UK, or Australia — large, established expat communities"
+      ],
+      "watchOutFor": [
+        "Traffic is very heavy — school runs can take 45–90 minutes during peak hours; choose housing close to your children's school",
+        "Air quality (AQI) can be poor from November to March — invest in home air purifiers and check AQI daily in peak season",
+        "Private schools and hospitals are excellent but costs can accumulate quickly — budget carefully",
+        "Extreme heat and humidity June–October — budget for air conditioning everywhere"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Thailand has no EU-style residency permit for foreigners. Most expat families choose the DTV (Destination Thailand Visa, launched 2024) — 180 days per entry, renewable, covers the whole family. The Thailand Elite Privilege Card is the zero-hassle long-term option for families wanting 5–20 years of stable stays.",
+      "tip": "Apply for the DTV at least 4–6 weeks before your travel date — Thai consulates in major cities can get backed up.",
+      "options": [
+        {
+          "type": "Tourist Visa / Visa Exemption",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist Visa — what it allows and what it does not",
+          "duration": "30–60 days",
+          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
+          "details": [
+            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office (fee: about $50).",
+            "A tourist visa (TR) applied at a Thai consulate gives 60 days plus one 30-day extension.",
+            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
+            "Do not attempt to live in Thailand on back-to-back tourist entries — Thai immigration actively monitors this pattern and may deny re-entry.",
+            "Best use: first 1–3 months to scout neighbourhoods, visit schools, and decide on a long-term visa."
+          ]
+        },
+        {
+          "type": "DTV — Destination Thailand Visa",
+          "anchor": "visa-dtv",
+          "detailTitle": "DTV Visa — how to apply",
+          "duration": "180 days per entry",
+          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
+          "details": [
+            "Launched in 2024 — designed specifically for remote workers, digital nomads, and their families.",
+            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
+            "Requirement: evidence of $15,000 in savings (bank statements) — there is no fixed monthly income threshold.",
+            "Covers the visa holder and dependants (spouse and children) on the same application.",
+            "Apply at a Thai consulate or embassy in your home country — you cannot apply on arrival in Thailand.",
+            "Cost: approximately $50 per person, per entry.",
+            "No work permit included — you are legally a visitor, not a worker. For most remote workers with foreign clients this is low practical risk."
+          ],
+          "officialLink": {
+            "label": "Thailand Destination Thailand Visa DTV official apply",
+            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Thailand Elite Privilege Card",
+          "anchor": "visa-elite",
+          "detailTitle": "Thailand Elite — long-stay membership",
+          "duration": "5–20 years",
+          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
+          "details": [
+            "A government-backed long-stay programme valid for 5, 10, or 20 years. Not a work permit — but widely used by remote workers.",
+            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages are available.",
+            "No income or savings requirement — just the membership fee paid upfront.",
+            "Unlimited entries and stays for the full visa period. No 90-day reapplication or consulate visits.",
+            "Best for families wanting maximum stability without periodic visa runs or embassy appointments.",
+            "The 5-year package works out to about $3,000/year — compare this to the time and cost of DTV renewals for larger families."
+          ],
+          "officialLink": {
+            "label": "Thailand Privilege Card visa official",
+            "url": "https://www.thailandprivilege.com",
+            "isVerified": true
+          }
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Bangkok offers a wide range of housing, from modern high-rise condos in central Sukhumvit to family houses in the quieter Bang Na corridor near international schools. Choose your area based on your school — traffic makes long commutes genuinely painful.",
+      "bestAreas": [
+        "Sukhumvit (sois 49–63)",
+        "Thonglor / Ekamai",
+        "Sathorn",
+        "Bang Na (near school corridor)",
+        "Bearing"
+      ],
+      "searchPortalsIntro": [
+        "These are the main Thailand rental platforms — this is where residents search for long-term housing.",
+        "Search 'Bangkok' inside each platform to filter local listings.",
+        "Tip: condos in central Bangkok are very easy to rent online from abroad — but family houses in Bang Na (near school corridor) are harder to find remotely; use a local agent."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Bangkok Thailand\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Bangkok+Thailand",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Bangkok Expats Housing' or 'Condos for Rent Bangkok' for direct deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed condo, central Sukhumvit: ฿20,000–40,000/month",
+        "3-bed condo, Sukhumvit / Thonglor: ฿50,000–90,000/month",
+        "3-bed house, Bang Na (near school corridor): ฿45,000–80,000/month",
+        "4-bed house with pool, outer area (Bang Na, Bearing): ฿60,000–120,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and current visa stamp",
+        "1–2 months deposit (standard in Bangkok; typically 2 months' rent)",
+        "First month rent in advance",
+        "Thai bank account is expected for monthly rent payments by most landlords after the first month"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Bangkok has the widest selection of international schools in Southeast Asia, covering British, American, IB, French, German, and many other curricula. Schools are distributed across the city — choose your area of residence based on your school's location. Apply 12 months ahead for top-tier schools.",
+      "publicSystem": "Thai state schools are free but all instruction is in Thai. Not recommended for children without Thai language skills. International families in Bangkok rely entirely on private international schools.",
+      "internationalOptions": "International schools are spread across Bangkok, with key clusters in: Sukhumvit (central/east, good for condo living), Bang Na (east, near the highway corridor with several large campus schools), and Silom/Sathorn (central). Schools follow British, American, IB, and other curricula. Fees vary widely — shop around and confirm waiting list status early.",
+      "languageNotes": "Thai is the official language. English is widely spoken in international school communities and major expat areas. For everyday markets, drivers, and local services, Thai or basic Thai phrases are helpful.",
+      "tip": "Choose your housing area based on your school first — Bangkok traffic makes a 15-minute commute versus a 60-minute commute a daily quality-of-life difference.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "Strong British curriculum and IB options across central Bangkok and the Bang Na corridor.",
+          "fees": "฿400,000–800,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several well-established American-curriculum schools serving the US expat and international community.",
+          "fees": "฿450,000–1,000,000/year typical"
+        },
+        {
+          "type": "Thai-international bilingual schools",
+          "description": "Lower cost, Thai-heavy curriculum with English instruction. Good for families planning a long-term Thailand stay.",
+          "fees": "฿150,000–400,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Bangkok has an excellent childcare market — international nurseries, live-in caregivers (yai liang), and daycare options are all widely available and affordable by Western standards.",
+      "daycareItems": [
+        "International nurseries (English-medium toddler programmes) are widely available in Sukhumvit, Thonglor, and Silom — fees: ฿20,000–40,000/month",
+        "Thai private daycare centres are much cheaper (฿5,000–15,000/month) but instruction is in Thai",
+        "Tip: many international nurseries run wait lists — register early if you are arriving with a young child"
+      ],
+      "nannyItems": [
+        "Yai liang (live-in caregiver) is extremely common among expat families in Bangkok — typically ฿12,000–25,000/month for live-in",
+        "Live-out nannies charge ฿180–280/hr",
+        "Most Bangkok caregivers speak basic English; fully bilingual nannies are available at a premium, especially in Sukhumvit and Thonglor"
+      ],
+      "whereToFindItems": [
+        "Bangkok Expat Families Facebook group — most reliable source for vetted nanny recommendations",
+        "Expat women's Facebook groups (Bangkok) — extensive nanny recommendation threads",
+        "Local agencies: search 'nanny agency Bangkok' for vetted caregiver placements"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange comprehensive private health insurance before arriving — expats do not use the Thai public system and good private insurance is essential.",
+      "items": [
+        "Expats in Bangkok rely entirely on private hospitals — public hospitals are available but operate in Thai and have very long waits.",
+        "Bangkok's private hospitals are world-class: BDMS (Bangkok Dusit Medical Services) and Bangkok Hospital networks are the two main private hospital groups, with English-speaking staff and international standard care.",
+        "A comprehensive family private health insurance plan typically costs ฿60,000–150,000/year — budget for this before arrival as it is non-negotiable.",
+        "Routine care (GP, paediatrician) at a private hospital costs ฿500–2,500 per visit without insurance — affordable, but with insurance it is essentially free at point of use.",
+        "Popular private health insurance providers for expats in Bangkok: Cigna International, AXA, Allianz Care, and Pacific Cross — compare plans for hospital network coverage before buying."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 76,
+      "summary": "Bangkok is safe for day-to-day family life in expat residential areas. Normal big-city awareness is recommended.",
+      "items": [
+        "Violent crime is uncommon in expat residential areas — Bangkok is broadly safe for families in Sukhumvit, Thonglor, and Bang Na",
+        "Main risks are traffic accidents and petty theft in crowded areas — keep bags secure and be very cautious crossing roads",
+        "Expat family areas are calm and monitored; most residential compounds and condominium buildings have 24-hour security",
+        "Avoid motorcycle taxis and tuk-tuks for family travel — use BTS Skytrain, Grab (ride-hailing), or a private car",
+        "Tip: install the AirVisual or IQAir app — Bangkok air quality can deteriorate significantly in November–March; plan outdoor activity around AQI levels"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~฿55,000 / month",
+      "familyDinner": "~฿900",
+      "nannyRate": "~฿220 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Thailand DTV Visa official",
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "isVerified": true
+        },
+        {
+          "label": "Thailand Elite Privilege Card official",
+          "url": "https://www.thailandprivilege.com",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Bangkok Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Bangkok",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & 90-day report",
+      "tip": "File your 90-day report online at imm.immigration.go.th — it takes 5 minutes and saves a trip to the immigration office.",
+      "items": [
+        "Thailand has no residency permit or local ID system for foreigners. Your passport and current visa stamp are your only official documents here.",
+        "Your landlord is legally required to file a TM30 form (address registration with Thai immigration) within 24 hours of your arrival at the property — ask them to do this or they may face a fine.",
+        "All visa holders must report their address to immigration every 90 days — this is called the 90-day report. File online at imm.immigration.go.th or in person at the Bangkok Immigration Bureau.",
+        "Keep a copy of every visa stamp, extension approval, and 90-day report receipt — immigration officers ask for these when processing renewals.",
+        "No certificate of residence or local ID card is issued. For school enrolment, banking, and admin your passport plus current visa stamp serves as your complete ID."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Open your bank account in the first month — rent, school fees, and utility autopay all work more smoothly with a local Thai account.",
+      "items": [
+        "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks — both have full English-language apps and accept DTV and non-immigrant visa holders.",
+        "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "Some Bangkok Bank branches accept tourist visa holders — worth asking, but not guaranteed.",
+        "Use Wise or Revolut for receiving international income and converting to Thai Baht — significantly lower fees than traditional international bank wire transfers.",
+        "Cash is still widely used at markets, small restaurants, and local shops — keep ฿1,000–3,000 (about $30–$90) on hand at all times."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Bangkok Expat Families' on Facebook — local advice and school recommendations",
+        "searchQuery": "Bangkok Expat Families Facebook group"
+      }
+    ]
+  },
+  {
+    "id": "phuket-th",
+    "citySlug": "phuket",
+    "countrySlug": "thailand",
+    "city": "Phuket",
+    "country": "Thailand",
+    "tagline": "Tropical island life with expat-grade infrastructure and stunning beaches",
+    "summary": "Phuket is a large tropical island in southern Thailand that has evolved well beyond a beach resort destination. The north of the island (Laguna/Bangtao area) now has a well-established expat family community with international schools, international-standard private hospitals, and a relaxed but comfortable lifestyle. Costs are lower than Bangkok, but infrastructure — particularly transport and school choice — is more limited. The trade-off for island life: no public transport, a smaller school market, and heavy rains from May to October.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Choose your visa route: DTV (180 days, $15,000 savings required) or Thailand Elite Privilege Card (5–20 year membership)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for the DTV at a Thai consulate in your home country at least 4–6 weeks before your travel date",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Choose your area first: Laguna/Bangtao (north) is the main expat family hub near schools — start housing search 6–8 weeks out",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research and contact international schools at least 12 months before your move — Phuket has fewer options than Bangkok and places are limited",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Arrange comprehensive private health insurance before arriving — Phuket expats rely on private hospitals",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Ask your landlord to file the TM30 form (address registration with Thai immigration) within 24 hours of your arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Plan transport on arrival: Phuket has no public transit — arrange a car rental or long-term vehicle lease before or shortly after arriving",
+        "targetSection": "housing"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want island lifestyle with modern expat infrastructure",
+        "Those who prioritise beaches, outdoor life, and a close-knit international community",
+        "Families with school-age children who have confirmed school availability in the Laguna/Bangtao area",
+        "Families coming from Bangkok or other cities who want a quieter pace of life"
+      ],
+      "watchOutFor": [
+        "School selection is limited compared to Bangkok — confirm school availability before committing to Phuket",
+        "There is no public transport — a car or motorbike is essential for all daily movement",
+        "Monsoon season (May–October) brings heavy rain, flooding in some areas, and limited outdoor access",
+        "Peak tourist season (December–April) drives up prices for food, services, and some housing"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Thailand has no EU-style residency permit for foreigners. Expat families in Phuket most commonly use the DTV (Destination Thailand Visa, launched 2024) or the Thailand Elite Privilege Card for long-term stable stays.",
+      "tip": "Apply for the DTV at a Thai consulate at least 4–6 weeks before your travel date — processing can be slow in some countries.",
+      "options": [
+        {
+          "type": "Tourist Visa / Visa Exemption",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist Visa — what it allows and what it does not",
+          "duration": "30–60 days",
+          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
+          "details": [
+            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office.",
+            "A tourist visa (TR) applied at a Thai consulate gives 60 days plus one 30-day extension.",
+            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
+            "Do not attempt to live in Phuket on back-to-back tourist entries — Thai immigration monitors this actively.",
+            "Best use: 2–4 weeks scouting the Laguna/Bangtao area for housing and schools before applying for the DTV."
+          ]
+        },
+        {
+          "type": "DTV — Destination Thailand Visa",
+          "anchor": "visa-dtv",
+          "detailTitle": "DTV Visa — how to apply",
+          "duration": "180 days per entry",
+          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
+          "details": [
+            "Launched in 2024 — designed for remote workers, digital nomads, and their families.",
+            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
+            "Requirement: evidence of $15,000 in savings (bank statements).",
+            "Covers the visa holder and dependants (spouse and children) on the same application.",
+            "Apply at a Thai consulate in your home country — you cannot apply on arrival in Thailand.",
+            "Cost: approximately $50 per person, per entry."
+          ],
+          "officialLink": {
+            "label": "Thailand Destination Thailand Visa DTV official apply",
+            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Thailand Elite Privilege Card",
+          "anchor": "visa-elite",
+          "detailTitle": "Thailand Elite — long-stay membership",
+          "duration": "5–20 years",
+          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
+          "details": [
+            "A government-backed long-stay programme valid for 5, 10, or 20 years.",
+            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages available.",
+            "No income or savings requirement — just the membership fee paid upfront.",
+            "Unlimited entries and stays for the full visa period. No 90-day reapplication or consulate visits.",
+            "Best for families wanting long-term stability without periodic visa renewals."
+          ],
+          "officialLink": {
+            "label": "Thailand Privilege Card visa official",
+            "url": "https://www.thailandprivilege.com",
+            "isVerified": true
+          }
+        }
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "The Laguna/Bangtao area in the north of Phuket is the main expat family hub — it has the highest concentration of international schools, international shops, and family infrastructure. Rawai (south) is quieter and popular with longer-term residents.",
+      "bestAreas": [
+        "Laguna / Bangtao",
+        "Cherng Talay",
+        "Rawai / Nai Harn",
+        "Kamala",
+        "Mai Khao"
+      ],
+      "searchPortalsIntro": [
+        "These are the main Thailand rental platforms — this is where residents search for long-term housing.",
+        "Search 'Phuket' inside each platform to filter local listings.",
+        "Tip: villas and pool houses in Laguna and Rawai are much easier to find on the ground — a 1–2 week scouting trip before signing a long lease is strongly recommended."
+      ],
+      "searchPortals": [
+        {
+          "label": "Search: \"rent apartment Phuket Thailand\"",
+          "url": "https://www.google.com/search?q=rent+apartment+Phuket+Thailand",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Phuket Expats Housing' or 'Phuket Rental Villas' for direct deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed condo, Bangtao: ฿15,000–30,000/month",
+        "3-bed villa/house, Laguna area: ฿40,000–90,000/month",
+        "3-bed house, Rawai/Nai Harn: ฿30,000–60,000/month",
+        "4-bed pool villa, Cherng Talay: ฿60,000–120,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and current visa stamp",
+        "1–2 months deposit (standard; typically 2 months' rent)",
+        "First month rent in advance",
+        "Thai bank account is expected for monthly rent payments by most landlords after the first month"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Phuket has a limited but growing international school market, concentrated in the Laguna/Bangtao area. School selection is significantly smaller than Bangkok — confirm availability and waiting list status before committing to Phuket as your destination.",
+      "publicSystem": "Thai state schools are free but all instruction is in Thai. Not suitable for newly arrived children without Thai language skills. International families in Phuket use private international schools.",
+      "internationalOptions": "International schools in Phuket are concentrated in the north of the island (Laguna/Bangtao area), with a smaller number in the central and southern zones. Schools primarily offer British and IB curricula. Phuket has significantly fewer options than Bangkok — confirm school availability for your children's age groups before booking your move.",
+      "languageNotes": "Thai is the official language. English is widely spoken in the international school community and tourist areas. For daily life outside expat zones, Thai is essential.",
+      "tip": "Phuket has fewer international school options than Bangkok — research and confirm places before committing to the island.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "Main English-medium option in Phuket, concentrated in the Laguna/Bangtao area. Limited total capacity.",
+          "fees": "฿250,000–600,000/year typical"
+        },
+        {
+          "type": "Thai-international bilingual schools",
+          "description": "Lower cost, available across the island. Good for families planning a longer-term Thai immersion.",
+          "fees": "฿100,000–250,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Phuket has a solid childcare market in the expat-heavy north of the island. International nurseries, live-in caregivers, and local nannies are all available.",
+      "daycareItems": [
+        "International nurseries (English-medium) are concentrated in the Laguna/Bangtao and Cherng Talay area — fees: ฿15,000–30,000/month",
+        "Local Thai nurseries are available island-wide at lower cost (฿3,000–8,000/month) but operate in Thai",
+        "Tip: register with international nurseries early — places in the Laguna area fill up, especially for the school year start"
+      ],
+      "nannyItems": [
+        "Yai liang (live-in caregiver) is widely available — typically ฿10,000–20,000/month for live-in",
+        "Live-out nannies charge ฿150–220/hr",
+        "English-speaking nannies are available in the Laguna/Bangtao area — ask for recommendations from other expat families"
+      ],
+      "whereToFindItems": [
+        "Phuket Expat Families Facebook group — most reliable source for vetted nanny recommendations on the island",
+        "Expat women's Facebook groups (Phuket) — extensive nanny and childcare recommendation threads"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange comprehensive private health insurance before arriving — Phuket expats rely on private hospitals for all significant healthcare.",
+      "items": [
+        "Expats in Phuket rely entirely on private hospitals — the public Vachira Hospital in Phuket Town is available but operates in Thai with long waits.",
+        "Bangkok Hospital Phuket (part of the Bangkok Dusit Medical Services group) is the main international-standard private hospital for expats — English-speaking staff and international standard care.",
+        "A comprehensive family private health insurance plan is strongly recommended — budget ฿60,000–150,000/year for good international coverage.",
+        "Routine GP visits at private clinics cost ฿500–2,000 per visit without insurance — affordable for occasional visits but not for regular family healthcare.",
+        "Popular private health insurance providers: Cigna International, AXA, Allianz Care — ensure your plan covers Bangkok Hospital Phuket and other major private hospitals on the island."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 76,
+      "summary": "Phuket is safe for families in expat residential areas. Specific hazards are traffic and sea conditions.",
+      "items": [
+        "Violent crime is rare in expat residential areas — Laguna, Rawai, and Cherng Talay are calm and safe for families",
+        "Traffic is the main safety risk — roads are used by high volumes of motorbikes and rental scooters; avoid scooters with young children",
+        "Sea safety: red flag days (strong currents and waves) on Phuket's west coast beaches must be respected — rip currents are the primary cause of tourist fatalities",
+        "Expat residential compounds in Laguna typically have 24-hour security",
+        "Tip: familiarise yourself with beach flag colours on arrival — red flag means do not enter the water, regardless of how calm it looks from the shore"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~฿45,000 / month",
+      "familyDinner": "~฿750",
+      "nannyRate": "~฿185 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Thailand DTV Visa official",
+          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "isVerified": true
+        },
+        {
+          "label": "Thailand Elite Privilege Card official",
+          "url": "https://www.thailandprivilege.com",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Phuket Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Phuket",
+          "isVerified": true
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & 90-day report",
+      "tip": "File your 90-day report online at imm.immigration.go.th — it takes 5 minutes and saves a trip to the Phuket Immigration Office.",
+      "items": [
+        "Thailand has no residency permit or local ID system for foreigners. Your passport and current visa stamp are your only official documents.",
+        "Your landlord must file a TM30 form (address registration with Thai immigration) within 24 hours of your arrival at the property — ask them to confirm this has been done.",
+        "All visa holders must report their address to immigration every 90 days — called the 90-day report. File online at imm.immigration.go.th or in person at the Phuket Immigration Office (Central Festival area).",
+        "Keep a copy of every visa stamp, extension approval, and 90-day receipt — immigration officers ask for these when processing renewals.",
+        "No certificate of residence or local ID card is issued. Your passport plus current visa stamp serves as your complete ID for banking, schools, and admin."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Open your bank account in the first month — school fees and rent autopay work more smoothly with a local Thai account.",
+      "items": [
+        "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks in Phuket — both have branches in the Laguna area and English-speaking staff.",
+        "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "Wise is widely used by Phuket expats for receiving foreign income and converting to Thai Baht — significantly lower fees than traditional bank wire transfers.",
+        "Cash is essential in Phuket — many local markets, food stalls, and small shops are cash-only. Keep ฿1,000–3,000 (about $30–$90) on hand at all times.",
+        "ATMs are widely available in Laguna, Patong, and Phuket Town — most charge a ฿220 withdrawal fee for foreign cards; Wise and Revolut reduce this impact."
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Phuket Expat Families' on Facebook — island life advice and school recommendations",
+        "searchQuery": "Phuket Expat Families Facebook group"
       }
     ]
   }

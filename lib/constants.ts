@@ -30,6 +30,15 @@ export const CITY_IMAGES: Record<string, string> = {
   "Chiang Mai":  "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=900&q=80",
   "Koh Phangan": "https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=900&q=80",
   "Koh Samui":   "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=900&q=80",
+  "Barcelona":   "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=900&q=80",
+  "Madrid":      "https://images.unsplash.com/photo-1543785734-4b6e564642f8?w=900&q=80",
+  "Porto":       "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=900&q=80",
+  "Berlin":      "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=900&q=80",
+  "Amsterdam":   "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=900&q=80",
+  "Prague":      "https://images.unsplash.com/photo-1541849546-216549ae216d?w=900&q=80",
+  "Budapest":    "https://images.unsplash.com/photo-1551867633-194f125bddfa?w=900&q=80",
+  "Bangkok":     "https://images.unsplash.com/photo-1508009603885-50cf7c8dd0d5?w=900&q=80",
+  "Phuket":      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =
