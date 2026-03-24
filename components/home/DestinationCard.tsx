@@ -124,7 +124,7 @@ export default function DestinationCard({ city }: Props) {
               </div>
               <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
                 <Utensils size={12} className="text-white/50" />
-                <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Dinner out</p>
+                <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Dinner for 2</p>
                 <p className="text-xs font-extrabold text-white leading-tight">{city.cost.familyDinner}</p>
               </div>
               <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">

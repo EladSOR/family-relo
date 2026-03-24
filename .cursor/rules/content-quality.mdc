@@ -1,0 +1,157 @@
+---
+description: Global content quality rules for all city pages — link reliability, jargon explanation, and actionability
+globs: data/cities.json,data/countries.json
+alwaysApply: true
+---
+
+# Content Quality Rules — applies to all city pages, current and future
+
+---
+
+## RULE 1 — Link reliability
+
+A link is only useful if it reliably takes the user somewhere helpful.
+
+### Keep a link if it is:
+- A stable root homepage (`https://www.idealista.com`)
+- A stable official government or institutional page (`https://icp.gov.ae`, `https://aima.gov.pt`)
+- A stable school or hospital website root (`https://www.apis.ac.th`)
+- A Facebook **group** URL with a slug (`https://www.facebook.com/groups/chiangmaiexpatclub`) — groups with named slugs are stable
+- A Numbeo cost-of-living page — these are stable reference URLs
+
+### Replace with fallback text if it is:
+- Missing entirely — use `"label": "Search '[name]' on Google"`
+- A Facebook **search** URL (`facebook.com/search/…`) — unstable, requires login
+- A deep filtered/search-result URL from a rental portal
+- A government PDF or press release (not a stable page)
+- A link to a company that may not exist or has been rebranded
+- An empty `url` field (`""`)
+
+### Fallback format by section:
+
+```json
+// Schools — no stable URL
+{ "name": "School Name", "curriculum": "IB", "fees": "$X,000 / yr" }
+// Do NOT add a url field. The renderer generates a Google search fallback automatically.
+
+// Housing portal — no stable city page
+{ "label": "DDproperty.com — search 'Chiang Mai'", "url": "https://www.ddproperty.com" }
+
+// Facebook community
+{ "label": "Search on Facebook: 'Group Name' — brief description of what it's for" }
+// Do NOT add a url field for Facebook search guidance.
+
+// Visa — no stable official link
+// Omit the officialLink field entirely. The details[] content is the action.
+```
+
+---
+
+## RULE 2 — Jargon dictionary (always explain inline on first use)
+
+When a jargon term appears in any section, explain it inline in the same sentence on first use.
+Format: `"[TERM] ([plain English explanation])"`
+
+### Spain / Portugal
+
+| Term | Plain explanation |
+|---|---|
+| Padrón / Padrón Municipal | Spain's official address register |
+| NIE | Spanish foreigner ID number |
+| TIE | Spain's physical residency card |
+| Ayuntamiento | city hall |
+| Extranjería | local immigration office |
+| SIP | Spain's free public healthcare registration card |
+| guardería | nursery / daycare (Spanish) |
+| cuidadora | nanny (Spanish) |
+| NIF | Portugal's combined tax and ID number |
+| Junta de Freguesia | Portugal's local civil registry office |
+| Finanças | Portugal's tax office |
+| AIMA | Portugal's immigration authority |
+| SNS | Portugal's free national health system |
+| NHR | Portugal's Non-Habitual Resident tax scheme — reduces foreign income tax to 20% for 10 years |
+| creche | nursery (Portuguese) |
+
+### UAE / Dubai
+
+| Term | Plain explanation |
+|---|---|
+| Emirates ID | UAE's national identity card — required for banking, healthcare, and school enrolment |
+| EJARI | Dubai's mandatory tenancy registration system — your legal protection as a tenant |
+| KHDA | Dubai's official nursery and school quality regulator |
+| GDRFA | Dubai's General Directorate of Residency and Foreigners Affairs — handles residency visas |
+| ICP | UAE's Federal Authority for Identity, Citizenship, Customs and Port Security — issues Emirates ID |
+
+### Thailand
+
+| Term | Plain explanation |
+|---|---|
+| TM30 | Address registration form that your landlord must file with immigration within 24 hours of your arrival |
+| 90-day report | Required address check-in to Thai immigration every 90 days — can be done online |
+| DTV | Destination Thailand Visa — 5-year multiple-entry visa for remote workers |
+| moo ban | Thai term for a gated residential village |
+
+### General
+
+| Term | Plain explanation |
+|---|---|
+| Apostille | An official government certification that authenticates a document for use in another country |
+| medevac | Medical evacuation — emergency transport to a higher-level hospital |
+| IPMI | International Private Medical Insurance |
+| IBAN | International Bank Account Number — required for international transfers |
+
+---
+
+## RULE 3 — Actionability test
+
+Before writing or accepting any bullet point or checklist item, ask:
+
+1. **What is this?** — Is the concept clear to someone with zero prior knowledge?
+2. **What should I do?** — Does the bullet tell them the next action?
+3. **Where do I go?** — Is there a link, search query, or named place they can act on?
+
+If a bullet fails any of these, rewrite it.
+
+```
+// ❌ FAILS all three
+"You will need to register locally."
+
+// ✅ PASSES all three
+"Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall) within 30 days. Bring your passport, rental contract, and proof of address."
+```
+
+---
+
+## RULE 4 — School URLs
+
+- Every school example should have a direct website URL (`url` field).
+- If no stable website exists (only a Facebook page or no web presence): omit the `url` field entirely.
+- The renderer automatically generates a Google search fallback for schools without a `url`.
+- Do NOT add a Facebook URL as a school's `url`.
+
+---
+
+## RULE 5 — Community links
+
+- Facebook group URLs with named slugs (`/groups/groupname`) are allowed and stable.
+- Facebook search URLs (`/search/...`) are not stable — use plain text guidance instead.
+- Every community link must have a clear `label` that describes what the group is for.
+
+```json
+// ✅ GOOD — named group slug
+{ "label": "Chiang Mai Expat Club — largest expat community group", "url": "https://www.facebook.com/groups/chiangmaiexpatclub" }
+
+// ❌ BAD — search URL
+{ "label": "Find expat groups", "url": "https://www.facebook.com/search/groups/?q=chiang+mai+expat" }
+
+// ✅ GOOD — no URL needed when providing search guidance
+{ "label": "Search on Facebook: 'Samui Expats' — primary community group for housing posts and direct landlord deals" }
+```
+
+---
+
+## Applies to
+
+- All entries in `data/cities.json`
+- All entries in `data/countries.json`
+- All future city pages generated from the template

@@ -14,7 +14,7 @@
         "targetSection": "visa"
       },
       {
-        "label": "Obtain an Apostille-certified criminal record check from your home country — required for the DNV application",
+        "label": "Obtain an Apostille-certified criminal record check (an Apostille is an official government certification that authenticates the document for use abroad) from your home country — required for the DNV application",
         "targetSection": "visa"
       },
       {
@@ -34,7 +34,7 @@
         "targetSection": "schools"
       },
       {
-        "label": "Upon arrival, register on the Padrón Municipal at your local Ayuntamiento within 30 days",
+        "label": "Upon arrival, register on the Padrón Municipal (Spain's address register) at your local Ayuntamiento (city hall) within 30 days",
         "targetSection": "residency"
       },
       {
@@ -221,7 +221,7 @@
     "residency": {
       "items": [
         "Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall) within 30 days of arriving. Bring your passport, rental contract, and proof of address.",
-        "Your Padrón certificate is proof that you live here. Without it you cannot get your healthcare card, book your NIE appointment, or enrol your children in school.",
+        "Your Padrón certificate is proof that you live here. Without it you cannot get your healthcare card, book your NIE (your Spanish foreigner ID number) appointment, or enrol your children in school.",
         "Book your appointment online at the Valencia Ayuntamiento website (valenciaciudat.com) — walk-in slots are very limited and often unavailable.",
         "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card that legally proves your right to live here long-term."
       ],
@@ -260,7 +260,7 @@
         "targetSection": "visa"
       },
       {
-        "label": "Prepare your document pack before applying: Apostilled criminal record, private health insurance, 3+ months of income statements, and proof of accommodation",
+        "label": "Prepare your document pack before applying: Apostilled criminal record (an Apostille is an official government certification that validates the document for use abroad), private health insurance, 3+ months of income statements, and proof of accommodation",
         "targetSection": "visa"
       },
       {
@@ -342,7 +342,7 @@
           "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
           "details": [
             "Income requirement: minimum €3,480/month (4× the national minimum wage) from remote employment or freelance work — at least 80% must come from foreign clients or an employer based outside Portugal.",
-            "Required documents: valid passport (6+ months remaining), Apostilled criminal record check (an official government stamp from your home country confirming the document is authentic), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
+            "Required documents: valid passport (6+ months remaining), Apostilled criminal record check (an Apostille is an official government certification that authenticates the document for use abroad), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
             "Apply at the Portuguese Consulate in your home country — you cannot apply for the D8 from inside Portugal.",
             "Allow 2–4 months for processing — book your consulate appointment as early as possible, slots fill quickly in cities like London, New York, and Tel Aviv.",
             "Once in Portugal, your permit runs for 2 years and is renewable; after 5 years of legal residency you can apply for permanent residency or citizenship."
@@ -560,7 +560,7 @@
         "targetSection": "visa"
       },
       {
-        "label": "Arrange KHDA-approved school applications before relocating — top schools have 12–18 month waitlists",
+        "label": "Arrange KHDA-approved school applications (KHDA is Dubai's official school quality regulator) before relocating — top schools have 12–18 month waitlists",
         "targetSection": "schools"
       },
       {
@@ -738,15 +738,15 @@
       "status": "estimated",
       "summary": "Dubai has a large supply of KHDA-regulated nurseries. Hiring a live-in nanny is very common — domestic workers are a normal part of expat family life in the UAE.",
       "daycareItems": [
-        "KHDA-licensed nurseries are widely available across all major family neighbourhoods — most offer bilingual (English/Arabic) programmes",
-        "Typical nursery fees: $500–$1,200/month; KHDA inspection ratings are published online and are the most reliable guide to quality",
+        "KHDA-licensed nurseries are widely available (KHDA is Dubai's official nursery and school quality regulator) across all major family neighbourhoods — most offer bilingual (English/Arabic) programmes",
+        "Typical nursery fees: ~AED 1,800–4,400 / month; KHDA inspection ratings (published at khda.gov.ae) are the most reliable guide to nursery quality",
         "Most nurseries accept children from 18 months old",
         "Apply a few months in advance — popular nurseries in Arabian Ranches and Jumeirah can fill up quickly"
       ],
       "nannyItems": [
         "Hiring a live-in domestic worker is very common in Dubai — most families apply through a licensed agency",
         "Live-in nannies often come from the Philippines, India, or Sri Lanka and are sponsored on the employer's residence visa",
-        "Typical cost: roughly $400–$700/month plus accommodation and food; agency placement fees are a one-off additional cost",
+        "Typical cost: roughly AED 1,500–2,600 / month plus accommodation and food; agency placement fees are a one-off additional cost",
         "A live-in arrangement gives around-the-clock coverage — common for dual-income households"
       ],
       "whereToFindItems": [
@@ -787,7 +787,7 @@
       "items": [
         "UAE residency is tied directly to your visa type (employer-sponsored, Virtual Working Programme, or Golden Visa) — you do not register separately.",
         "After your visa is stamped, apply for your Emirates ID — required for banking, healthcare appointments, school enrolment, and signing a lease.",
-        "Add your spouse and children as dependants on your residence visa — this is a separate application handled through GDRFA Dubai.",
+        "Add your spouse and children as dependants on your residence visa — this is a separate application handled through GDRFA — Dubai's General Directorate of Residency and Foreigners Affairs.",
         "All residents must complete a medical fitness test (blood test and X-ray) as part of the residency process — this is standard and arranged through your employer or a PRO service.",
         "Keep your visa and Emirates ID renewed — most residence visas are valid for 2–3 years. Late renewals incur daily fines."
       ]
@@ -1609,7 +1609,7 @@
       "items": [
         "Bangkok Hospital Koh Samui has a 24/7 emergency department, specialist clinics, and English-speaking doctors — the best medical facility on the island.",
         "For routine GP visits, children's appointments, and minor emergencies it is generally reliable and fast.",
-        "For serious emergencies — complex surgery, major trauma, or difficult births — medical evacuation to Bangkok is typically required. Most expats arrange dedicated medevac insurance.",
+        "For serious emergencies — complex surgery, major trauma, or difficult births — medical evacuation to Bangkok is typically required. Most expats arrange dedicated medevac (medical evacuation) insurance.",
         "Bangkok Hospital Samui can arrange emergency airlift to Bangkok through their partner network — the flight takes roughly 1 hour.",
         "Pharmacies are well-stocked across the island for everyday medications."
       ]

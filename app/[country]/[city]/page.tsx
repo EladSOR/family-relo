@@ -108,7 +108,7 @@ export default async function CityPage({ params }: Props) {
           <StatCard
             icon={<Utensils size={18} className="text-orange-500" />}
             bg="bg-orange-50"
-            label="Dinner out (family)"
+            label="Dinner for 2 (mid-range)"
             value={dest.cost.familyDinner}
           />
           <StatCard
@@ -317,7 +317,17 @@ export default async function CityPage({ params }: Props) {
                             <ExternalLink size={12} className="shrink-0 opacity-60" />
                           </a>
                         ) : (
-                          <p className="font-semibold text-slate-900">{school.name}</p>
+                          /* No direct URL — render a search fallback so every school name is actionable */
+                          <a
+                            href={`https://www.google.com/search?q=${encodeURIComponent(school.name)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 font-semibold text-slate-800 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
+                            title={`Search for ${school.name}`}
+                          >
+                            {school.name}
+                            <span className="text-[10px] font-normal text-slate-400">search →</span>
+                          </a>
                         )}
                         <p className="mt-0.5 text-xs text-slate-500">{school.curriculum}</p>
                       </div>
