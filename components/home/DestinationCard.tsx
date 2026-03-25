@@ -82,7 +82,7 @@ export default function DestinationCard({ city }: Props) {
           />
 
           {/* ── Base gradient (always on) ───────────────────────────── */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/10" />
 
           {/* ── Deep gradient (hover / tap) ─────────────────────────── */}
           <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-transparent transition-opacity duration-500 ${
@@ -93,7 +93,7 @@ export default function DestinationCard({ city }: Props) {
           <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full bg-black/40 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-md">
             <Shield size={11} strokeWidth={2.5} />
             {city.safety.score}
-            <span className="font-normal text-white/60">/100</span>
+            <span className="font-normal text-white/60">Safety</span>
           </div>
 
           {/* ── Bottom content ──────────────────────────────────────── */}
@@ -110,7 +110,7 @@ export default function DestinationCard({ city }: Props) {
                 <MapPin size={12} strokeWidth={2.5} />
                 {city.country}
               </p>
-              <p className="mt-3 text-sm font-medium leading-snug text-white/85">
+              <p className="mt-3 line-clamp-2 text-sm font-medium leading-snug text-white/90">
                 {note}
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function DestinationCard({ city }: Props) {
             {/* ── CTA ───────────────────────────────────────────────── */}
             <button
               onClick={handleCTAClick}
-              className={`mt-3 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#FF5A5F] py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/20 transition-all duration-300 delay-150 hover:bg-[#e84a4f] active:scale-[0.98] ${revealed}`}
+              className={`mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-[#FF5A5F] py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/20 transition-all duration-300 delay-150 hover:bg-[#e84a4f] active:scale-[0.98] ${revealed}`}
             >
               Explore {city.city}
               <ChevronRight size={15} strokeWidth={2.5} />
