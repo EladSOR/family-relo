@@ -22,7 +22,7 @@ export default function DestinationsPage() {
       ]} />
 
       {/* ── Page title ─────────────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-6xl px-6 pb-6 pt-14">
+      <div className="mx-auto max-w-[1400px] px-6 pb-6 pt-14 lg:px-12 xl:px-16">
         <div className="mb-4 flex items-center gap-3">
           <span className="h-px w-8 bg-[#FF5A5F]" />
           <p className="text-sm font-bold uppercase tracking-widest text-[#FF5A5F]">
@@ -39,7 +39,7 @@ export default function DestinationsPage() {
       </div>
 
       {/* ── Grid ───────────────────────────────────────────────────────────── */}
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 pb-20 sm:gap-6 sm:px-6 sm:pb-32 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 px-4 pb-20 sm:gap-6 sm:px-6 sm:pb-32 lg:grid-cols-3 lg:px-12 xl:grid-cols-4 xl:px-16 2xl:grid-cols-5">
         {cities.map(city => (
           <DestinationCard key={city.id} city={city} />
         ))}

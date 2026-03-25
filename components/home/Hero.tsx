@@ -53,15 +53,25 @@ export default function Hero() {
           mobileScrolled ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="border-b border-slate-200 bg-white px-4 py-3 shadow-sm">
-          <MobileSearchPanel />
+        <div className="flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3 shadow-sm">
+          <a href="/" aria-label="Home" className="flex shrink-0 items-center gap-1.5">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
+              <MapPin size={13} strokeWidth={2.5} />
+            </span>
+            <span className="text-sm font-extrabold tracking-tight text-slate-900">
+              FamilyRelo
+            </span>
+          </a>
+          <div className="min-w-0 flex-1">
+            <MobileSearchPanel />
+          </div>
         </div>
       </div>
 
       {/* ── Hero section ──────────────────────────────────────────────────
           z-20 keeps this section and its search dropdowns above the card
           grid below (z-0). Desktop sticky header is z-[100]. */}
-      <section className="hero-gradient relative z-20 flex min-h-screen flex-col">
+      <section className="hero-gradient relative z-20 flex min-h-screen flex-col lg:min-h-0">
 
         {/* Background video */}
         <video
@@ -97,27 +107,27 @@ export default function Hero() {
         </nav>
 
         {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
-        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-16 pt-4 text-center md:pb-32">
+        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-16 pt-4 text-center md:pb-32 lg:pb-20 lg:pt-16">
 
           {/* Trust badge */}
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm lg:mb-10 lg:px-6 lg:py-2.5 lg:text-base">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
             Trusted by 2,000+ relocating families
           </div>
 
           {/* Headline */}
-          <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl">
+          <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl lg:mb-7 lg:max-w-none lg:text-8xl">
             Plan your family&apos;s move.<br />
             <span className="text-white/90">Without the chaos.</span>
           </h1>
 
           {/* Sub-headline */}
-          <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+          <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/75 md:text-lg lg:mb-4 lg:max-w-3xl lg:text-xl">
             Everything families need to relocate — visas, schools, real costs — finally in one place.
           </p>
 
           {/* Trust line */}
-          <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/50">
+          <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/50 lg:mb-14 lg:text-base">
             Built for families, by a family.
           </p>
 

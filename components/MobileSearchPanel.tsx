@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Search, X } from "lucide-react";
+import { Search, X, MapPin } from "lucide-react";
+import Link from "next/link";
 import SearchBar from "@/components/home/SearchBar";
 
 /**
@@ -46,11 +47,16 @@ export default function MobileSearchPanel() {
           {/* Panel: fixed at top-0, auto height (never blanks the whole screen) */}
           <div className="fixed inset-x-0 top-0 z-[300] bg-white shadow-xl">
 
-            {/* Header row */}
+            {/* Header row — logo links home, X closes the panel */}
             <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3.5">
-              <span className="text-base font-extrabold text-slate-900">
-                Search destinations
-              </span>
+              <Link href="/" aria-label="Home" className="flex items-center gap-1.5">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
+                  <MapPin size={13} strokeWidth={2.5} />
+                </span>
+                <span className="text-sm font-extrabold tracking-tight text-slate-900">
+                  FamilyRelo
+                </span>
+              </Link>
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close search"

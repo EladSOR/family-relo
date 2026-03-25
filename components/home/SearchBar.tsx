@@ -180,8 +180,9 @@ export default function SearchBar({ compact = false, inlineDropdowns = false }: 
     [guests, duration],
   );
 
-  // Explore button: save search to localStorage and navigate with full URL state
+  // Explore button: close any open picker, save search, then navigate
   const handleExplore = useCallback(() => {
+    setOpenPanel(null);
     const opt = WHERE_OPTIONS.find(o => o.value === destination);
     const base = opt?.href ?? "/destinations";
     saveSearch(destination, serializeFamily(guests), duration);
@@ -215,7 +216,7 @@ export default function SearchBar({ compact = false, inlineDropdowns = false }: 
     const base = "w-full flex flex-col text-left rounded-xl transition-colors";
     if (compact)         return `${base} px-4 py-2 ${openPanel === panel ? "bg-white/70" : "hover:bg-white/50"}`;
     if (inlineDropdowns) return `${base} px-4 py-3 border ${openPanel === panel ? "border-[#FF5A5F]/30 bg-[#FF5A5F]/5" : "border-gray-200 bg-white hover:bg-gray-50"}`;
-    return `${base} md:rounded-full px-5 py-3.5 md:px-6 ${openPanel === panel ? "bg-white/70" : "hover:bg-white/50"}`;
+    return `${base} md:rounded-full px-5 py-3.5 md:px-6 lg:px-8 lg:py-5 ${openPanel === panel ? "bg-white/70" : "hover:bg-white/50"}`;
   };
 
   // Grouped sections for the ungrouped (no-search) state
@@ -224,13 +225,13 @@ export default function SearchBar({ compact = false, inlineDropdowns = false }: 
   const showGrouped    = !whereSearch.trim();
 
   return (
-    <div ref={ref} className={`relative z-50 w-full ${compact ? "" : "mx-auto max-w-4xl"}`}>
+    <div ref={ref} className={`relative z-50 w-full ${compact ? "" : "mx-auto max-w-4xl lg:max-w-6xl"}`}>
       <div className={`flex ${
         compact
           ? "flex-row items-center p-2 rounded-full border border-slate-200 bg-white shadow-sm"
           : inlineDropdowns
             ? "flex-col gap-2"
-            : "flex-col p-2 rounded-2xl border border-white/30 bg-white/80 shadow-2xl backdrop-blur-xl md:flex-row md:items-center md:rounded-full"
+            : "flex-col p-2 rounded-2xl border border-white/30 bg-white/80 shadow-2xl backdrop-blur-xl md:flex-row md:items-center md:rounded-full lg:p-3"
       }`}>
 
         {/* ── WHERE ────────────────────────────────────────────────────────── */}
@@ -377,7 +378,7 @@ export default function SearchBar({ compact = false, inlineDropdowns = false }: 
           <button
             onClick={handleExplore}
             className={`flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#FF5A5F] font-bold text-white shadow-lg shadow-[#FF5A5F]/30 transition-all hover:bg-[#e84a4f] active:scale-95 ${
-              compact ? "px-5 py-2.5 text-sm" : "w-full px-7 py-4 md:w-auto"
+              compact ? "px-5 py-2.5 text-sm" : "w-full px-7 py-4 md:w-auto lg:px-10 lg:py-5 lg:text-base"
             }`}
           >
             <Search size={compact ? 15 : 17} />

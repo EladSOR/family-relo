@@ -24,9 +24,19 @@ export default function StickySearchHeader() {
         </div>
       </div>
 
-      {/* ── Mobile layout (<md): compact bar → contained panel overlay ───── */}
-      <div className="px-4 py-3 md:hidden">
-        <MobileSearchPanel />
+      {/* ── Mobile layout (<md): logo + compact bar ──────────────────────── */}
+      <div className="flex items-center gap-3 px-4 py-3 md:hidden">
+        <Link href="/" aria-label="Home" className="flex shrink-0 items-center gap-1.5">
+          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
+            <MapPin size={13} strokeWidth={2.5} />
+          </span>
+          <span className="text-sm font-extrabold tracking-tight text-slate-900">
+            FamilyRelo
+          </span>
+        </Link>
+        <div className="min-w-0 flex-1">
+          <MobileSearchPanel />
+        </div>
       </div>
 
     </header>
