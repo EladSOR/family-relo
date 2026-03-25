@@ -22,14 +22,14 @@ export default function DestinationsPage() {
       ]} />
 
       {/* ── Page title ─────────────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-[1400px] px-6 pb-6 pt-14 lg:px-12 xl:px-16">
-        <div className="mb-4 flex items-center gap-3">
+      <div className="mx-auto max-w-[1400px] px-4 pb-5 pt-8 sm:px-6 md:pb-6 md:pt-14 lg:px-12 xl:px-16">
+        <div className="mb-3 flex items-center gap-3 md:mb-4">
           <span className="h-px w-8 bg-[#FF5A5F]" />
           <p className="text-sm font-bold uppercase tracking-widest text-[#FF5A5F]">
             {cities.length} destinations
           </p>
         </div>
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-5xl">
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
           Explore the world{" "}
           <span className="text-slate-400">with your family.</span>
         </h1>

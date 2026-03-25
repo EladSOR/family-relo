@@ -17,6 +17,12 @@ export function ChecklistItems({ steps }: { steps: Step[] }) {
     const el = document.getElementById(sectionId);
     if (!el) return;
 
+    // On mobile, section targets are <details> elements (collapsed by default).
+    // Open before scrolling so the content is visible when the scroll lands.
+    if (el instanceof HTMLDetailsElement) {
+      el.open = true;
+    }
+
     // Scroll with extra breathing room below the sticky header
     const top = el.getBoundingClientRect().top + window.scrollY - 120;
     window.scrollTo({ top, behavior: "smooth" });
@@ -36,19 +42,19 @@ export function ChecklistItems({ steps }: { steps: Step[] }) {
   }
 
   return (
-    <ol className="space-y-2">
+    <ol className="space-y-2.5">
       {steps.map((step, i) => (
         <li key={i}>
           {step.targetSection ? (
             <a
               href={`#${step.targetSection}`}
               onClick={(e) => handleClick(e, step.targetSection!)}
-              className="group flex cursor-pointer items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition-all duration-150 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-md"
+              className="group flex cursor-pointer items-start gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3.5 shadow-sm transition-all duration-150 hover:border-emerald-400 hover:bg-emerald-50 hover:shadow-md"
             >
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-bold text-slate-500 transition-colors group-hover:bg-emerald-100 group-hover:text-emerald-700">
                 {i + 1}
               </span>
-              <span className="flex-1 text-[15px] font-medium leading-snug text-slate-800 transition-colors group-hover:text-emerald-800">
+              <span className="flex-1 text-sm font-medium leading-relaxed text-slate-800 transition-colors group-hover:text-emerald-800 md:text-[15px]">
                 {step.label}
               </span>
               <ChevronRight
@@ -57,11 +63,11 @@ export function ChecklistItems({ steps }: { steps: Step[] }) {
               />
             </a>
           ) : (
-            <div className="flex items-start gap-3 rounded-xl bg-slate-50 px-4 py-3">
+            <div className="flex items-start gap-3 rounded-xl bg-slate-50 px-4 py-3.5">
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-200 text-xs font-bold text-slate-400">
                 {i + 1}
               </span>
-              <span className="text-[15px] leading-snug text-slate-500">{step.label}</span>
+              <span className="text-sm leading-relaxed text-slate-500 md:text-[15px]">{step.label}</span>
             </div>
           )}
         </li>

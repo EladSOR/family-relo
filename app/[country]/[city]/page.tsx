@@ -4,7 +4,7 @@ import {
   MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, Landmark, CreditCard, Users,
+  BookOpen, Landmark, CreditCard, Users, ChevronDown,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
@@ -79,26 +79,26 @@ export default async function CityPage({ params }: Props) {
           Reviewed {dest.lastReviewed}
         </div>
 
-        <div className="absolute bottom-0 left-0 p-8 md:p-12">
-          <p className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-white/70">
-            <MapPin size={13} strokeWidth={2.5} />
+        <div className="absolute bottom-0 left-0 p-5 md:p-8 lg:p-12">
+          <p className="mb-1 flex items-center gap-1.5 text-xs font-medium text-white/70 md:mb-1.5 md:text-sm">
+            <MapPin size={12} strokeWidth={2.5} />
             {dest.country}
           </p>
-          <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-6xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
             {dest.city}
           </h1>
-          <p className="mt-2 text-lg text-white/80">{dest.tagline}</p>
+          <p className="mt-1.5 text-sm text-white/80 md:mt-2 md:text-lg">{dest.tagline}</p>
         </div>
       </div>
 
       {/* ── Body ─────────────────────────────────────────────────────────── */}
-      <div className="mx-auto max-w-3xl px-6 py-14 space-y-8">
+      <div className="mx-auto max-w-3xl px-4 py-8 space-y-4 sm:px-6 md:py-14 md:space-y-8">
 
         {/* Summary */}
-        <p className="text-lg leading-relaxed text-slate-600">{dest.summary}</p>
+        <p className="text-base leading-relaxed text-slate-700 md:text-lg">{dest.summary}</p>
 
         {/* ── Quick stats ───────────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
           <StatCard
             icon={<Home size={18} className="text-blue-500" />}
             bg="bg-blue-50"
@@ -170,7 +170,7 @@ export default async function CityPage({ params }: Props) {
         >
           {visaData && (
             <>
-              <p className="mb-4 text-sm leading-relaxed text-slate-600">{visaData.summary}</p>
+              <p className="mb-4 text-sm leading-relaxed text-slate-700">{visaData.summary}</p>
               <VisaPathSelector options={visaData.options} />
               {visaData.tip && <Tip text={visaData.tip} />}
             </>
@@ -205,29 +205,29 @@ export default async function CityPage({ params }: Props) {
           icon={<Home size={16} className="text-slate-500" />}
           sources={dest.sources.housing}
         >
-          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.housing.summary}</p>
+          <p className="mb-4 text-sm leading-relaxed text-slate-700">{dest.housing.summary}</p>
 
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
 
             {/* Block 1 — Where to search */}
             <div>
-              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to search</h4>
+              <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Where to search</h4>
               <div className="mb-3 space-y-1">
                 {dest.housing.searchPortalsIntro.map((line, i) => (
                   <p key={i} className="text-sm italic text-slate-500">{line}</p>
                 ))}
               </div>
-              <ul className="space-y-1.5">
+              <ul className="space-y-2.5">
                 {dest.housing.searchPortals.map((p, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                  <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
                     {p.url && p.isVerified === true ? (
                       <a href={p.url} target="_blank" rel="noopener noreferrer"
-                         className="cursor-pointer text-blue-600 underline-offset-2 hover:underline">
+                         className="cursor-pointer break-words text-blue-600 underline-offset-2 hover:underline">
                         {p.label}
                       </a>
                     ) : (
-                      <span>{p.label}</span>
+                      <span className="break-words">{p.label}</span>
                     )}
                   </li>
                 ))}
@@ -237,12 +237,12 @@ export default async function CityPage({ params }: Props) {
             {/* Block 2 — Typical monthly rents */}
             {dest.housing.typicalPrices && dest.housing.typicalPrices.length > 0 ? (
               <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
+                <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Typical monthly rents</h4>
                 <BulletList items={dest.housing.typicalPrices} />
               </div>
             ) : (
               <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Typical monthly rents</h4>
+                <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Typical monthly rents</h4>
                 <p className="text-sm italic text-slate-400">
                   Search the portals above for current pricing — rates vary by neighbourhood and season.
                 </p>
@@ -251,7 +251,7 @@ export default async function CityPage({ params }: Props) {
 
             {/* Block 3 — Best areas for families */}
             <div>
-              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Best areas for families</h4>
+              <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Best areas for families</h4>
               <div className="flex flex-wrap gap-2">
                 {dest.housing.bestAreas.map((area) => (
                   <span key={area}
@@ -265,12 +265,12 @@ export default async function CityPage({ params }: Props) {
             {/* Block 4 — What you need to rent */}
             {dest.housing.whatYouNeedToRent && dest.housing.whatYouNeedToRent.length > 0 ? (
               <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
+                <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">What you need to rent</h4>
                 <BulletList items={dest.housing.whatYouNeedToRent} />
               </div>
             ) : (
               <div>
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">What you need to rent</h4>
+                <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">What you need to rent</h4>
                 <p className="text-sm italic text-slate-400">
                   Requirements vary by landlord — check with local agents for current documentation needs.
                 </p>
@@ -287,7 +287,7 @@ export default async function CityPage({ params }: Props) {
           icon={<GraduationCap size={16} className="text-slate-500" />}
           sources={dest.sources.schools}
         >
-          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.schools.summary}</p>
+          <p className="mb-4 text-sm leading-relaxed text-slate-700">{dest.schools.summary}</p>
 
           <div className="mb-5 space-y-4">
             <DetailRow label="Public system" value={dest.schools.publicSystem} />
@@ -304,15 +304,17 @@ export default async function CityPage({ params }: Props) {
               </p>
               <div className="space-y-2.5">
                 {dest.schools.options.map((opt, i) => (
-                  <div key={i} className="rounded-xl bg-slate-50 px-4 py-3.5">
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="min-w-0 flex-1">
+                  <div key={i} className="rounded-xl bg-slate-50 px-3 py-3 md:px-4 md:py-3.5">
+                    {/* Mobile: stack vertically so the fee chip never squeezes the content */}
+                    {/* Desktop: side-by-side with fee chip aligned to the top-right */}
+                    <div className="flex flex-col gap-2 md:flex-row md:flex-wrap md:items-start md:justify-between md:gap-3">
+                      <div className="min-w-0 break-words">
                         <p className="font-semibold text-slate-800">{opt.type}</p>
-                        <p className="mt-0.5 text-sm text-slate-500">{opt.description}</p>
+                        <p className="mt-0.5 text-sm leading-relaxed text-slate-600">{opt.description}</p>
                         <SearchHint query={`${opt.type} ${dest.city} ${dest.country}`} />
                       </div>
                       {opt.fees && (
-                        <span className="shrink-0 rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
+                        <span className="self-start break-words rounded-lg bg-white px-2.5 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200 md:rounded-full">
                           {opt.fees}
                         </span>
                       )}
@@ -326,18 +328,18 @@ export default async function CityPage({ params }: Props) {
 
         {/* ── Childcare ─────────────────────────────────────────────────── */}
         <Section id="childcare" title="Childcare" icon={<Baby size={16} className="text-slate-500" />}>
-          <p className="mb-5 text-sm leading-relaxed text-slate-600">{dest.childcare.summary}</p>
-          <div className="space-y-6">
+          <p className="mb-4 text-sm leading-relaxed text-slate-700">{dest.childcare.summary}</p>
+          <div className="space-y-4 md:space-y-6">
             <div>
-              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Daycare &amp; nurseries</h4>
+              <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Daycare &amp; nurseries</h4>
               <BulletList items={dest.childcare.daycareItems} />
             </div>
             <div>
-              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Nanny &amp; au pair</h4>
+              <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Nanny &amp; au pair</h4>
               <BulletList items={dest.childcare.nannyItems} />
             </div>
             <div>
-              <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Where to find childcare</h4>
+              <h4 className="mb-2.5 text-[10px] font-semibold uppercase tracking-wide text-slate-400 md:text-xs">Where to find childcare</h4>
               <BulletList items={dest.childcare.whereToFindItems} />
             </div>
           </div>
@@ -358,8 +360,8 @@ export default async function CityPage({ params }: Props) {
         {/* ── Safety ────────────────────────────────────────────────────── */}
         <Section id="safety" title="Safety" icon={<Shield size={16} className="text-slate-500" />}>
           <div className="mb-4 flex items-baseline gap-2">
-            <span className="text-4xl font-extrabold text-slate-900">{dest.safety.score}</span>
-            <span className="text-base text-slate-400">/ 100</span>
+            <span className="text-3xl font-extrabold text-slate-900 md:text-4xl">{dest.safety.score}</span>
+            <span className="text-sm text-slate-400 md:text-base">/ 100</span>
           </div>
           <BulletList items={dest.safety.items} />
         </Section>
@@ -370,7 +372,7 @@ export default async function CityPage({ params }: Props) {
             <p className="mb-3 text-xs text-slate-400">
               Official government, institutional, and public sources.
             </p>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {allSources.map((src, i) => (
                 <li key={i}>
                   {src.isVerified === true ? (
@@ -378,15 +380,15 @@ export default async function CityPage({ params }: Props) {
                       href={src.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-[#FF5A5F] underline-offset-2 hover:underline"
+                      className="inline-flex items-center gap-2 py-0.5 text-sm font-medium text-[#FF5A5F] underline-offset-2 hover:underline"
                     >
-                      <ExternalLink size={13} />
-                      {src.label}
+                      <ExternalLink size={13} className="shrink-0" />
+                      <span className="break-words">{src.label}</span>
                     </a>
                   ) : (
-                    <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-400">
-                      <ExternalLink size={13} className="opacity-40" />
-                      {src.label}
+                    <span className="inline-flex items-center gap-2 py-0.5 text-sm font-medium text-slate-400">
+                      <ExternalLink size={13} className="shrink-0 opacity-40" />
+                      <span className="break-words">{src.label}</span>
                     </span>
                   )}
                 </li>
@@ -401,10 +403,10 @@ export default async function CityPage({ params }: Props) {
             <p className="mb-3 text-xs text-slate-400">
               Expat groups and community forums. Use the search buttons below to find them.
             </p>
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               {dest.communityLinks.map((link, i) => (
                 <li key={i}>
-                  <p className="text-sm text-slate-600">{link.label}</p>
+                  <p className="text-sm leading-relaxed text-slate-700">{link.label}</p>
                   <SearchHint
                     query={link.searchQuery ?? `${dest.city} expats Facebook group`}
                   />
@@ -427,11 +429,11 @@ export default async function CityPage({ params }: Props) {
  */
 function BulletList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-1.5">
+    <ul className="space-y-2.5">
       {items.map((item, i) => (
-        <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-          {item}
+        <li key={i} className="flex min-w-0 items-start gap-2.5 text-sm leading-relaxed text-slate-700">
+          <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+          <span className="min-w-0 break-words">{item}</span>
         </li>
       ))}
     </ul>
@@ -454,47 +456,69 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div id={id} className="rounded-2xl bg-white p-6 shadow-sm scroll-mt-24">
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <h2 className="flex items-center gap-2 text-base font-bold text-slate-900">
+    // <details> collapses on mobile, always open on desktop via `md:block` on body.
+    // id is on the outer element so checklist hash-links (#housing etc.) still work.
+    <details id={id} className="group rounded-2xl bg-white shadow-sm scroll-mt-24">
+
+      {/* ── Header — always visible, acts as tap target on mobile ──────── */}
+      <summary className="flex cursor-pointer select-none list-none items-center gap-3 p-3.5 [&::-webkit-details-marker]:hidden md:cursor-default md:p-6">
+        <h2 className="flex min-w-0 flex-1 items-center gap-2 text-base font-bold text-slate-900">
           {icon}
-          {title}
+          <span className="min-w-0">{title}</span>
         </h2>
-        {meta && (
-          <span className="shrink-0 text-[11px] font-normal text-slate-400">{meta}</span>
+        <div className="flex shrink-0 items-center gap-2">
+          {meta && (
+            <span className="hidden text-[11px] font-normal text-slate-400 md:inline">{meta}</span>
+          )}
+          {/* Chevron visible on mobile only — rotates when open */}
+          <ChevronDown
+            size={16}
+            className="shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180 md:hidden"
+          />
+        </div>
+      </summary>
+
+      {/* ── Body — always in DOM for SEO; hidden on mobile until tapped ── */}
+      <div className="hidden group-open:block md:block">
+        <div className="px-4 pb-3 pt-0.5 md:px-6 md:pb-6 md:pt-0">
+          {/* meta shown inline inside body on mobile (hidden from summary row) */}
+          {meta && (
+            <p className="mb-3 text-[11px] text-slate-400 md:hidden">{meta}</p>
+          )}
+          {children}
+        </div>
+        {sources && sources.length > 0 && (
+          <div className="flex flex-wrap gap-x-4 gap-y-2 border-t border-slate-100 px-4 pb-3 pt-2.5 md:px-6 md:pb-6 md:pt-4">
+            {sources.map((src, i) =>
+              src.isVerified === true ? (
+                <a
+                  key={i}
+                  href={src.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-slate-400 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
+                >
+                  <ExternalLink size={11} />
+                  {src.label}
+                </a>
+              ) : (
+                <span key={i} className="inline-flex items-center gap-1 text-xs text-slate-300">
+                  <ExternalLink size={11} className="opacity-40" />
+                  {src.label}
+                </span>
+              )
+            )}
+          </div>
         )}
       </div>
-      {children}
-      {sources && sources.length > 0 && (
-        <div className="mt-5 flex flex-wrap gap-x-4 gap-y-1 border-t border-slate-100 pt-4">
-          {sources.map((src, i) =>
-            src.isVerified === true ? (
-              <a
-                key={i}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs text-slate-400 underline-offset-2 hover:text-[#FF5A5F] hover:underline"
-              >
-                <ExternalLink size={11} />
-                {src.label}
-              </a>
-            ) : (
-              <span key={i} className="inline-flex items-center gap-1 text-xs text-slate-300">
-                <ExternalLink size={11} className="opacity-40" />
-                {src.label}
-              </span>
-            )
-          )}
-        </div>
-      )}
-    </div>
+
+    </details>
   );
 }
 
 function Tip({ text }: { text: string }) {
   return (
-    <p className="mt-4 border-l-2 border-emerald-200 pl-3 text-xs leading-relaxed text-slate-500">
+    <p className="mt-4 border-l-2 border-emerald-300 pl-3 text-xs leading-relaxed text-slate-500 md:border-emerald-200">
       {text}
     </p>
   );
@@ -510,12 +534,12 @@ function StatCard({
   small?: boolean;
 }) {
   return (
-    <div className="rounded-2xl bg-white p-5 shadow-sm">
-      <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${bg}`}>
+    <div className="overflow-hidden rounded-2xl bg-white p-4 shadow-sm md:p-5">
+      <div className={`mb-3 flex h-9 w-9 items-center justify-center rounded-xl md:h-10 md:w-10 ${bg}`}>
         {icon}
       </div>
-      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{label}</p>
-      <p className={`mt-1 font-extrabold text-slate-900 ${small ? "text-xl" : "text-3xl"}`}>
+      <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500 md:text-xs">{label}</p>
+      <p className={`mt-1 font-extrabold leading-tight text-slate-900 md:mt-1 ${small ? "text-xl md:text-xl" : "text-2xl md:text-3xl"}`}>
         {value}
       </p>
     </div>
@@ -524,9 +548,9 @@ function StatCard({
 
 function DetailRow({ label, value }: { label: string; value: string }) {
   return (
-    <div className="grid gap-1 sm:grid-cols-[160px_1fr]">
-      <p className="text-xs font-bold uppercase tracking-wider text-slate-400 pt-0.5">{label}</p>
-      <p className="text-sm leading-relaxed text-slate-600">{value}</p>
+    <div className="grid gap-0.5 sm:grid-cols-[160px_1fr] sm:gap-1">
+      <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{label}</p>
+      <p className="text-sm leading-relaxed text-slate-700">{value}</p>
     </div>
   );
 }

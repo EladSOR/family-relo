@@ -44,11 +44,11 @@ export default function MobileSearchPanel() {
             aria-hidden="true"
           />
 
-          {/* Panel: fixed at top-0, auto height (never blanks the whole screen) */}
-          <div className="fixed inset-x-0 top-0 z-[300] bg-white shadow-xl">
+          {/* Panel: capped at 100dvh so it never overflows; header is fixed, form scrolls */}
+          <div className="fixed inset-x-0 top-0 z-[300] flex max-h-[100dvh] flex-col bg-white shadow-xl">
 
-            {/* Header row — logo links home, X closes the panel */}
-            <div className="flex items-center justify-between border-b border-slate-100 px-4 py-3.5">
+            {/* Header row — always visible, never scrolls away */}
+            <div className="flex shrink-0 items-center justify-between border-b border-slate-100 px-4 py-3.5">
               <Link href="/" aria-label="Home" className="flex items-center gap-1.5">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
                   <MapPin size={13} strokeWidth={2.5} />
@@ -66,8 +66,8 @@ export default function MobileSearchPanel() {
               </button>
             </div>
 
-            {/* Search form — inline dropdowns stay inside the panel */}
-            <div className="px-4 py-4">
+            {/* Scrollable form area — grows to fill remaining height, scrolls if needed */}
+            <div className="overflow-y-auto px-4 py-4">
               <SearchBar inlineDropdowns />
             </div>
 

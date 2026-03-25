@@ -100,7 +100,7 @@ export default function VisaPathSelector({ options }: Props) {
           <button
             key={id}
             onClick={() => setPath(id)}
-            className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition-colors ${
+            className={`rounded-full px-4 py-2 text-xs font-semibold transition-colors md:px-3.5 md:py-1.5 ${
               path === id
                 ? "bg-slate-900 text-white"
                 : "border border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700"
@@ -124,18 +124,18 @@ export default function VisaPathSelector({ options }: Props) {
 
           const inner = (
             <>
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-2">
                 <p className="font-semibold text-slate-900">{opt.type}</p>
-                <div className="flex shrink-0 items-center gap-2">
+                <div className="flex items-center gap-2">
                   {opt.duration && (
-                    <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200">
+                    <span className="break-words rounded-lg bg-white px-2.5 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200 md:rounded-full">
                       {opt.duration}
                     </span>
                   )}
                   {opt.anchor && (
                     <ChevronRight
                       size={15}
-                      className="text-slate-400 transition-[color,transform] duration-150 group-hover:translate-x-0.5 group-hover:text-slate-600"
+                      className="shrink-0 text-slate-400 transition-[color,transform] duration-150 group-hover:translate-x-0.5 group-hover:text-slate-600"
                     />
                   )}
                 </div>

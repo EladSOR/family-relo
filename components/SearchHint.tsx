@@ -15,15 +15,15 @@ import { Search } from "lucide-react";
 export function SearchHint({ query }: { query: string }) {
   const href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
   return (
-    <div className="mt-1.5 flex flex-wrap items-center gap-2">
-      <span className="text-xs text-slate-400">
+    <div className="mt-2 flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1.5">
+      <span className="min-w-0 break-words text-xs text-slate-400">
         Search: &ldquo;{query}&rdquo;
       </span>
       <a
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-1 rounded-md bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-600 transition-colors hover:bg-blue-100"
+        className="inline-flex shrink-0 items-center gap-1 rounded-md bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-600 transition-colors hover:bg-blue-100"
       >
         <Search size={10} />
         Search on Google
