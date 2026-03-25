@@ -84,13 +84,18 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl">
-          Find your family&apos;s<br />
-          <span className="text-white/90">next chapter.</span>
+          Plan your family&apos;s move.<br />
+          <span className="text-white/90">Without the chaos.</span>
         </h1>
 
         {/* Sub-headline */}
-        <p className="mx-auto mb-14 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
-          Visa rules, childcare costs &amp; the world&apos;s best cities for families — in one place.
+        <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
+          Everything families need to relocate — visas, schools, real costs — finally in one place.
+        </p>
+
+        {/* Trust line */}
+        <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/50">
+          Built for families, by a family.
         </p>
 
         {/* Ref target: IntersectionObserver watches this to trigger the sticky header */}

@@ -30,8 +30,7 @@ export default function DestinationsGrid({ cities }: Props) {
 
         {/* Body */}
         <p className="mt-5 max-w-lg text-base leading-relaxed text-slate-500">
-          Every city is hand-picked for safety, schools, and childcare costs.
-          Hover any card to see the key numbers.
+          Tap or hover for quick insights — click any city to open the full relocation guide.
         </p>
       </div>
 
