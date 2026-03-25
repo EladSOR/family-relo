@@ -1,6 +1,4 @@
-import {
-  Globe, Building2, Anchor, Mountain, Waves, Umbrella, TreePalm, Sun,
-} from "lucide-react";
+import { Globe, MapPin } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "./types";
@@ -17,23 +15,9 @@ export interface WhereOption {
   type: OptionType;
 }
 
-// ── Icon maps ─────────────────────────────────────────────────────────────────
-
-const COUNTRY_ICONS: Record<string, LucideIcon> = {
-  spain:    Sun,
-  portugal: Anchor,
-  uae:      Building2,
-  thailand: TreePalm,
-};
-
-const CITY_ICONS: Record<string, LucideIcon> = {
-  "valencia-es":    TreePalm,
-  "lisbon-pt":      Anchor,
-  "dubai-ae":       Building2,
-  "chiang-mai-th":  Mountain,
-  "koh-phangan-th": Waves,
-  "koh-samui-th":   Umbrella,
-};
+// One consistent icon per type: Globe for countries, MapPin for cities.
+const COUNTRY_ICON: LucideIcon = Globe;
+const CITY_ICON:    LucideIcon = MapPin;
 
 // ── Builder ───────────────────────────────────────────────────────────────────
 
@@ -48,7 +32,7 @@ function buildWhereOptions(): WhereOption[] {
         value: d.countrySlug,
         label: d.country,
         href: `/${d.countrySlug}`,
-        Icon: COUNTRY_ICONS[d.countrySlug] ?? Globe,
+        Icon: COUNTRY_ICON,
         type: "country",
       });
     }
@@ -58,7 +42,7 @@ function buildWhereOptions(): WhereOption[] {
     value: d.id,
     label: `${d.city}, ${d.country}`,
     href: `/${d.countrySlug}/${d.citySlug}`,
-    Icon: CITY_ICONS[d.id] ?? Globe,
+    Icon: CITY_ICON,
     type: "city",
   }));
 

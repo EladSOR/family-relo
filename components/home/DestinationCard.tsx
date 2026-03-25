@@ -3,147 +3,138 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MapPin, Shield, Home, Utensils, Baby, ChevronRight } from "lucide-react";
+import { MapPin, Shield } from "lucide-react";
 import type { Destination } from "@/lib/types";
 import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
-
-// Short, human, family-first note shown on every card by default.
-const CITY_NOTES: Record<string, string> = {
-  "Valencia":    "Affordable beach life with great international schools",
-  "Lisbon":      "Europe's most walkable, family-friendly capital",
-  "Dubai":       "World-class schools & one of the safest cities on earth",
-  "Chiang Mai":  "Asia's most affordable family hub, surrounded by nature",
-  "Koh Phangan": "Tight-knit expat community on a stunning island",
-  "Koh Samui":   "Resort-island living with growing international schools",
-};
 
 interface Props {
   city: Destination;
 }
 
+// Stats block spans the full card below the safety badge on ALL screen sizes.
+// Mobile : top-10 (40px clears badge at ~34px, extra breathing room below).
+// Desktop: top-14 (56px, slightly more clearance) → bottom-0.
+const STATS_POS = "inset-x-0 top-10 bottom-0 md:top-14";
+
+const STATS = (city: Destination) => [
+  { label: "3-bed family home", value: city.cost.rentRange },
+  { label: "Dinner for 2",      value: city.cost.familyDinner },
+  { label: "Nanny hourly cost", value: city.cost.nannyRate },
+];
+
 export default function DestinationCard({ city }: Props) {
   const [tapped, setTapped] = useState(false);
   const cardRef = useRef<HTMLElement>(null);
-  const router   = useRouter();
+  const router  = useRouter();
 
   const href  = `/${city.countrySlug}/${city.citySlug}`;
   const image = CITY_IMAGES[city.city] ?? FALLBACK_IMAGE;
-  const note  = CITY_NOTES[city.city] ?? city.tagline;
 
-  // ── Close when tapping outside the card (mobile) ──────────────────────────
+  // Close on outside tap (mobile)
   useEffect(() => {
     if (!tapped) return;
-    const onOutsideTap = (e: TouchEvent) => {
+    const onOutside = (e: TouchEvent) => {
       if (cardRef.current && !cardRef.current.contains(e.target as Node)) {
         setTapped(false);
       }
     };
-    document.addEventListener("touchstart", onOutsideTap, { passive: true });
-    return () => document.removeEventListener("touchstart", onOutsideTap);
+    document.addEventListener("touchstart", onOutside, { passive: true });
+    return () => document.removeEventListener("touchstart", onOutside);
   }, [tapped]);
 
-  // ── Mobile: first tap expands, second tap collapses. Desktop: no-op. ──────
+  // Mobile (<768px): tap toggles reveal. Desktop: CSS group-hover handles it.
   const handleCardClick = (e: React.MouseEvent) => {
     if (typeof window === "undefined" || window.innerWidth >= 768) return;
     e.preventDefault();
     setTapped(prev => !prev);
   };
 
-  // ── CTA: navigate on mobile, let Link handle on desktop ───────────────────
+  // CTA navigates on mobile; Link handles desktop.
   const handleCTAClick = (e: React.MouseEvent) => {
     if (typeof window === "undefined" || window.innerWidth >= 768) return;
-    e.stopPropagation(); // don't toggle card state
+    e.stopPropagation();
     router.push(href);
   };
-
-  // ── Shared reveal classes ─────────────────────────────────────────────────
-  // Mobile:  driven by `tapped` React state
-  // Desktop: driven by CSS group-hover (md: prefix keeps it desktop-only)
-  const revealed = tapped
-    ? "translate-y-0 opacity-100"
-    : "translate-y-4 opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100";
 
   return (
     <Link href={href} onClick={handleCardClick} className="block">
       <article
         ref={cardRef}
-        className="group relative cursor-pointer overflow-hidden rounded-[1.75rem] shadow-lg transition-all duration-500 ease-out md:hover:-translate-y-2 md:hover:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.28)]"
+        className="group relative cursor-pointer overflow-hidden rounded-2xl shadow-md"
       >
-        <div className="aspect-[2/3] relative">
+        <div className="relative aspect-[3/4]">
 
-          {/* ── Image ──────────────────────────────────────────────────── */}
+          {/* Image */}
           <img
             src={image}
             alt={`${city.city}, ${city.country}`}
             loading="lazy"
-            className={`absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out ${
-              tapped ? "scale-[1.07]" : "md:group-hover:scale-[1.07]"
-            }`}
+            className="absolute inset-0 h-full w-full object-cover"
           />
 
-          {/* ── Base gradient (always on) ───────────────────────────── */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/10" />
+          {/* Base gradient — always on */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
 
-          {/* ── Deep gradient (hover / tap) ─────────────────────────── */}
-          <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-transparent transition-opacity duration-500 ${
+          {/* Deeper gradient — revealed state only */}
+          <div className={`absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20 transition-opacity duration-300 ${
             tapped ? "opacity-100" : "opacity-0 md:group-hover:opacity-100"
           }`} />
 
-          {/* ── Safety badge ────────────────────────────────────────── */}
-          <div className="absolute right-4 top-4 flex items-center gap-1.5 rounded-full bg-black/40 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-md">
+          {/* Safety badge — top right, always visible */}
+          <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black/50 px-2.5 py-1 text-xs font-bold text-white backdrop-blur-sm">
             <Shield size={11} strokeWidth={2.5} />
-            {city.safety.score}
-            <span className="font-normal text-white/60">Safety</span>
+            {city.safety.score}/100
+            <span className="font-normal text-white/70">Safety</span>
           </div>
 
-          {/* ── Bottom content ──────────────────────────────────────── */}
-          <div className="absolute inset-x-0 bottom-0 p-7">
-
-            {/* City name + note — always visible, lifts on hover/tap */}
-            <div className={`transition-transform duration-500 ease-out ${
-              tapped ? "-translate-y-2" : "md:group-hover:-translate-y-2"
-            }`}>
-              <h3 className="text-[1.75rem] font-extrabold leading-tight tracking-tight text-white">
-                {city.city}
-              </h3>
-              <p className="mt-1.5 flex items-center gap-1.5 text-sm font-medium text-white/70">
-                <MapPin size={12} strokeWidth={2.5} />
-                {city.country}
-              </p>
-              <p className="mt-3 line-clamp-2 text-sm font-medium leading-snug text-white/90">
-                {note}
-              </p>
+          {/* ── Revealed: stats + button ─────────────────────────────────
+              Spans full card below the badge. flex-col + justify-between
+              pins stats to the top and Explore button to the bottom. */}
+          <div className={`absolute flex flex-col justify-between px-4 py-3 md:px-6 md:py-5 ${STATS_POS} transition-all duration-300 ${
+            tapped
+              ? "pointer-events-auto translate-y-0 opacity-100"
+              : "pointer-events-none translate-y-3 opacity-0 md:group-hover:pointer-events-auto md:group-hover:translate-y-0 md:group-hover:opacity-100"
+          }`}>
+            {/* Stacked label-above-value on all screen sizes */}
+            <div className="space-y-1.5 md:space-y-5">
+              {STATS(city).map(({ label, value }) => (
+                <div key={label} className="flex flex-col gap-0 md:gap-1">
+                  <span className="text-xs font-semibold text-white/90 md:text-sm md:text-white/80">
+                    {label}
+                  </span>
+                  {/* whitespace-nowrap: values never break mid-number */}
+                  <span className="whitespace-nowrap text-xs font-bold text-white md:text-xl md:font-extrabold">
+                    {value}
+                  </span>
+                </div>
+              ))}
             </div>
 
-            {/* ── Stats row ─────────────────────────────────────────── */}
-            <div className={`mt-5 grid grid-cols-3 gap-2 transition-all duration-300 delay-75 ${revealed}`}>
-              <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
-                <Home size={12} className="text-white/50" />
-                <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">3-bed home</p>
-                <p className="text-xs font-extrabold text-white leading-tight">{city.cost.rentRange}</p>
-              </div>
-              <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
-                <Utensils size={12} className="text-white/50" />
-                <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Dinner for 2</p>
-                <p className="text-xs font-extrabold text-white leading-tight">{city.cost.familyDinner}</p>
-              </div>
-              <div className="flex flex-col gap-1 rounded-2xl border border-white/10 bg-white/12 px-3 py-2.5 backdrop-blur-md">
-                <Baby size={12} className="text-white/50" />
-                <p className="text-[9px] font-bold uppercase tracking-wider text-white/45 leading-tight">Nanny</p>
-                <p className="text-xs font-extrabold text-white leading-tight">{city.cost.nannyRate}</p>
-              </div>
-            </div>
-
-            {/* ── CTA ───────────────────────────────────────────────── */}
             <button
               onClick={handleCTAClick}
-              className={`mt-3 flex w-full cursor-pointer items-center justify-center gap-2 rounded-2xl bg-[#FF5A5F] py-3.5 text-sm font-bold text-white shadow-lg shadow-[#FF5A5F]/20 transition-all duration-300 delay-150 hover:bg-[#e84a4f] active:scale-[0.98] ${revealed}`}
+              className="w-full cursor-pointer overflow-hidden rounded-xl bg-[#FF5A5F] py-1.5 text-xs font-bold text-white hover:bg-[#e84a4f] active:scale-[0.98] md:rounded-2xl md:py-3 md:text-sm"
             >
-              Explore {city.city}
-              <ChevronRight size={15} strokeWidth={2.5} />
+              {/* Mobile: short label always fits. Desktop: full city name. */}
+              <span className="block md:hidden">Explore</span>
+              <span className="hidden md:block truncate">Explore {city.city}</span>
             </button>
-
           </div>
+
+          {/* ── Default: city name + country ──────────────────────────────
+              Always visible on mobile.
+              On desktop (md+): fades out on hover to hand off to stats. */}
+          <div className={`absolute inset-x-0 bottom-0 p-4 transition-opacity duration-300 md:group-hover:opacity-0 md:group-hover:pointer-events-none ${
+            tapped ? "opacity-0 pointer-events-none" : ""
+          }`}>
+            <h3 className="text-xl font-extrabold leading-tight text-white">
+              {city.city}
+            </h3>
+            <p className="mt-1 flex items-center gap-1 text-sm font-medium text-white/80">
+              <MapPin size={12} strokeWidth={2.5} />
+              {city.country}
+            </p>
+          </div>
+
         </div>
       </article>
     </Link>

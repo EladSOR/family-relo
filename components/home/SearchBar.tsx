@@ -212,8 +212,8 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
   const durationLabel = DURATION_OPTIONS.find(o => o.value === duration)?.label ?? "Add dates";
 
   const sectionBtn = (panel: OpenPanel) =>
-    `w-full flex flex-col text-left rounded-full transition-colors ${
-      compact ? "px-4 py-2" : "px-6 py-3.5"
+    `w-full flex flex-col text-left rounded-xl md:rounded-full transition-colors ${
+      compact ? "px-4 py-2" : "px-5 py-3.5 md:px-6"
     } ${openPanel === panel ? "bg-white/70" : "hover:bg-white/50"}`;
 
   // Grouped sections for the ungrouped (no-search) state
@@ -223,10 +223,10 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
 
   return (
     <div ref={ref} className={`relative z-50 w-full ${compact ? "" : "mx-auto max-w-4xl"}`}>
-      <div className={`flex items-center rounded-full p-2 ${
+      <div className={`flex p-2 ${
         compact
-          ? "border border-slate-200 bg-white shadow-sm"
-          : "border border-white/30 bg-white/80 shadow-2xl backdrop-blur-xl"
+          ? "flex-row items-center rounded-full border border-slate-200 bg-white shadow-sm"
+          : "flex-col rounded-2xl border border-white/30 bg-white/80 shadow-2xl backdrop-blur-xl md:flex-row md:items-center md:rounded-full"
       }`}>
 
         {/* ── WHERE ────────────────────────────────────────────────────────── */}
@@ -237,7 +237,7 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
           </button>
 
           {openPanel === "where" && (
-            <div className="absolute left-0 top-full mt-4 w-80 rounded-3xl border border-gray-100 bg-white p-3 shadow-2xl">
+            <div className="absolute left-0 top-full mt-2 w-full rounded-2xl border border-gray-100 bg-white p-3 shadow-2xl md:mt-4 md:w-80 md:rounded-3xl">
 
               {/* Search input */}
               <div className="px-1 pb-2">
@@ -290,7 +290,7 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
           )}
         </div>
 
-        <div className="mx-1 h-10 w-px shrink-0 bg-gray-300/70" />
+        <div className="mx-1 hidden h-10 w-px shrink-0 bg-gray-300/70 md:block" />
 
         {/* ── WHO ──────────────────────────────────────────────────────────── */}
         <div className="relative min-w-0 flex-1">
@@ -300,7 +300,7 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
           </button>
 
           {openPanel === "who" && (
-            <div className="absolute left-0 top-full mt-4 w-80 overflow-hidden rounded-3xl border border-gray-100 bg-white p-5 shadow-2xl">
+            <div className="absolute left-0 top-full mt-2 w-full overflow-hidden rounded-2xl border border-gray-100 bg-white p-5 shadow-2xl md:mt-4 md:w-80 md:rounded-3xl">
               <div className="divide-y divide-gray-100">
                 {GUEST_ROWS.map(({ key, label, sub }) => (
                   <div key={key} className="flex items-center justify-between py-4">
@@ -333,7 +333,7 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
           )}
         </div>
 
-        <div className="mx-1 h-10 w-px shrink-0 bg-gray-300/70" />
+        <div className="mx-1 hidden h-10 w-px shrink-0 bg-gray-300/70 md:block" />
 
         {/* ── DURATION ─────────────────────────────────────────────────────── */}
         <div className="relative min-w-0 flex-1">
@@ -343,7 +343,7 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
           </button>
 
           {openPanel === "duration" && (
-            <div className="absolute right-0 top-full mt-4 w-52 rounded-3xl border border-gray-100 bg-white p-3 shadow-2xl">
+            <div className="absolute left-0 top-full mt-2 w-full rounded-2xl border border-gray-100 bg-white p-3 shadow-2xl md:left-auto md:right-0 md:mt-4 md:w-52 md:rounded-3xl">
               {DURATION_OPTIONS.map(({ value, label }) => (
                 <button
                   key={value}
@@ -360,11 +360,11 @@ export default function SearchBar({ compact = false }: { compact?: boolean }) {
         </div>
 
         {/* ── EXPLORE — navigates to the selected destination's real page ───── */}
-        <div className="shrink-0 pl-1 pr-1">
+        <div className={compact ? "shrink-0 pl-1 pr-1" : "pl-1 pr-1 md:shrink-0"}>
           <button
             onClick={handleExplore}
-            className={`flex items-center gap-2 rounded-full bg-[#FF5A5F] font-bold text-white shadow-lg shadow-[#FF5A5F]/30 transition-all hover:bg-[#e84a4f] active:scale-95 ${
-              compact ? "px-5 py-2.5 text-sm" : "px-7 py-4"
+            className={`flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#FF5A5F] font-bold text-white shadow-lg shadow-[#FF5A5F]/30 transition-all hover:bg-[#e84a4f] active:scale-95 ${
+              compact ? "px-5 py-2.5 text-sm" : "w-full px-7 py-4 md:w-auto"
             }`}
           >
             <Search size={compact ? 15 : 17} />

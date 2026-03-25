@@ -74,7 +74,7 @@ export default function Hero() {
       </nav>
 
       {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-32 pt-4 text-center">
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-16 pt-4 text-center md:pb-32">
 
         {/* Trust badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm">

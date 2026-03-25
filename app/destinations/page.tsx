@@ -39,7 +39,7 @@ export default function DestinationsPage() {
       </div>
 
       {/* ── Grid ───────────────────────────────────────────────────────────── */}
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 pb-32 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 pb-20 sm:gap-6 sm:px-6 sm:pb-32 lg:grid-cols-3 xl:grid-cols-4">
         {cities.map(city => (
           <DestinationCard key={city.id} city={city} />
         ))}
