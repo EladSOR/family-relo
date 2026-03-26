@@ -470,10 +470,10 @@ function Section({
           {meta && (
             <span className="hidden text-[11px] font-normal text-slate-400 md:inline">{meta}</span>
           )}
-          {/* Chevron visible on mobile only — rotates when open */}
+          {/* Chevron — rotates when open */}
           <ChevronDown
             size={16}
-            className="shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180 md:hidden"
+            className="shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
           />
         </div>
       </summary>
