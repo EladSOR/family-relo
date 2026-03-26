@@ -4085,5 +4085,1344 @@
         "isVerified": true
       }
     ]
+  },
+  {
+    "id": "athens-gr",
+    "citySlug": "athens",
+    "countrySlug": "greece",
+    "city": "Athens",
+    "country": "Greece",
+    "tagline": "Ancient city, modern livability, EU-quality schools at lower cost",
+    "summary": "Athens is increasingly on families' radar as a low-cost EU base with reliable infrastructure, good private international schools, and a Mediterranean quality of life. The city is not as polished as Lisbon or Barcelona, but it offers genuine value — lower rents, accessible healthcare, and a growing expat community. The main trade-offs are traffic, bureaucratic complexity, and a public school system that requires patience to navigate.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA families: register at your local KEP (Citizens' Service Centre) within 3 months and apply for your AMKA (Greek social security number)",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU remote workers: apply for Greece's Digital Nomad Visa — minimum €3,500/month income required — at a Greek consulate before travelling",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at a local Εφορία (tax office) — required for renting, banking, and most formal transactions",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Start searching for housing 6–8 weeks before your move — family suburbs like Kifissia and Glyfada have limited long-term rental inventory",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools before booking flights — waitlists in Athens fill 12 months in advance",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Arrange international private health insurance before arriving — public healthcare access for new arrivals is limited until AMKA is registered",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Greek bank account (Piraeus Bank, Alpha Bank, or Eurobank) once you have your AFM and AMKA",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with EOPYY (Greece's national health fund) after receiving your AMKA — activates subsidised GP and specialist access",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "EU families seeking an affordable Mediterranean base without Western European pricing",
+        "Remote-working families who want a warm, relaxed lifestyle with genuine cultural immersion",
+        "Families comfortable navigating a less polished bureaucratic system in exchange for lower costs",
+        "Parents who want both international schooling and direct access to ancient history and outdoor life"
+      ],
+      "watchOutFor": [
+        "Traffic and air quality — Athens has some of the worst road congestion in the EU, especially in summer",
+        "Public school quality varies widely — most expat families use private or international schools",
+        "Bureaucracy is slow and often in Greek only — AFM, AMKA, and bank account each require separate in-person visits",
+        "Summer heat is intense (38°C+) — many expat families leave the city in July–August"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA families move freely to Greece with no visa. Greece launched a Digital Nomad Visa in 2021 for non-EU remote workers earning at least €3,500/month. A Golden Visa programme for property investors (€250,000+) is also available for those seeking long-term residency.",
+      "tip": "Secure your AFM (Greek tax ID) and AMKA (social security number) in the first week — they are the two IDs that unlock everything else in Greece.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving",
+          "duration": "No visa required",
+          "description": "Move freely to Greece. Register at your local KEP (Citizens' Service Centre) within 3 months and obtain your AMKA and AFM.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Greece.",
+            "Register at your local KEP (Citizens' Service Centre — Greece's equivalent of a public services office) within 3 months. Bring your passport and proof of address (rental contract or utility bill).",
+            "Apply for your AMKA — Greece's social security and healthcare registration number — at any AMKA office. Required to access public healthcare, enrol children in school, and apply for health coverage.",
+            "Apply for your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at any local Εφορία (tax office). Required to rent a flat, open a bank account, or sign any formal contract.",
+            "After 5 years of continuous legal residence, you can apply for a permanent residency certificate."
+          ]
+        },
+        {
+          "type": "Schengen Tourist",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it covers",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip. No right to work, no extensions, cannot be converted to residency from inside Greece.",
+          "details": [
+            "90 days maximum across the entire Schengen Area in any 180-day period.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Greece — you must apply for a long-stay visa at a Greek consulate before travelling.",
+            "Good use: 2–4 weeks scouting the northern suburbs (Kifissia, Psychiko, Ekali) and southern coast (Glyfada, Vouliagmeni) for housing and schools.",
+            "Do not attempt long-term stays on rolling tourist entries — Greek immigration actively enforces Schengen limits."
+          ]
+        },
+        {
+          "type": "Greece Digital Nomad Visa",
+          "anchor": "visa-gr-dnv",
+          "detailTitle": "Greece Digital Nomad Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "For remote workers earning at least €3,500/month employed by or contracting with a non-Greek entity. Apply at a Greek consulate before travelling.",
+          "details": [
+            "Income requirement: at least €3,500/month from remote employment or freelancing for non-Greek clients. You cannot provide services to Greek clients on this visa.",
+            "Required documents: valid passport, proof of remote employment or client contracts, 3 months of bank statements, private health insurance valid in Greece, and a recent CV.",
+            "Apply at the Greek consulate in your home country — you cannot switch to this visa from inside Greece on a tourist entry.",
+            "Once in Greece, obtain your AMKA (social security number) and AFM (tax ID) to access services and open a bank account.",
+            "After 1 year, the visa can be renewed. After 5 years of legal residence, you can apply for long-term residency."
+          ],
+          "officialLink": {
+            "label": "Greece Digital Nomad Visa official Enterprise Greece"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & AFM registration",
+      "tip": "Book your AFM appointment online at taxisnet.gr — walk-in slots are limited and queues at major tax offices are long.",
+      "items": [
+        "Apply for your AFM — Arithmos Forologikou Mitroou (your Greek tax ID number) — at any local Εφορία (tax office). This is the most important first step: you cannot rent a flat, open a bank account, or sign any contract without it.",
+        "Register for your AMKA — Greece's social security and healthcare registration number — at any IKA (Social Insurance Institute) branch or AMKA office. Required to access public healthcare and enrol children in school.",
+        "EU/EEA residents: register at your local KEP (Citizens' Service Centre) within 3 months of arrival to formalise your right to reside in Greece.",
+        "Non-EU residents (Digital Nomad Visa holders): obtain your residence permit sticker from the local immigration office (Υπηρεσία Αλλοδαπών) within 30 days of visa activation.",
+        "Your AFM and AMKA together serve as your administrative identity in Greece — keep both documents accessible for banking, school enrolment, and healthcare registration."
+      ]
+    },
+    "banking": {
+      "title": "Banking & AFM",
+      "tip": "No Greek bank will open an account without your AFM — make this your first admin task on arrival, not when you need it.",
+      "items": [
+        "You need your AFM (Greek tax ID) before any bank will open an account for you — no exceptions. Make it your first priority.",
+        "Piraeus Bank, Alpha Bank, and Eurobank are the three banks most experienced with expats and international clients. All have English-speaking staff at major branches in Kifissia, Glyfada, and central Athens.",
+        "To open an account you will typically need: passport, AFM, AMKA, proof of address (rental contract or utility bill), and a recent payslip or income statement.",
+        "While waiting for your AFM, use Revolut or Wise — both work in Greece from day one with just a passport and support EUR and international transfers.",
+        "Cash is still widely used in Athens — keep €200–€400 on hand for markets, taxis, and smaller local transactions."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Athens is significantly cheaper than other European capitals. Family-friendly suburbs cluster in the north (Kifissia, Psychiko, Ekali) and along the southern coast (Glyfada, Vouliagmeni).",
+      "bestAreas": [
+        "Kifissia",
+        "Psychiko",
+        "Glyfada",
+        "Ekali",
+        "Vouliagmeni"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Athens' or the suburb name inside each platform to filter local listings.",
+        "Tip: start with a 2–4 week short-term stay in Kifissia or Glyfada — it is much easier to view flats and negotiate leases once you are on the ground."
+      ],
+      "searchPortals": [
+        {
+          "label": "Spitogatos.gr — Greece's largest property portal",
+          "url": "https://www.spitogatos.gr",
+          "isVerified": true
+        },
+        {
+          "label": "XE.gr — strong Athens rental and sales inventory",
+          "url": "https://www.xe.gr",
+          "isVerified": true
+        },
+        {
+          "label": "Tospitimou.gr — popular for family homes in the suburbs",
+          "url": "https://www.tospitimou.gr",
+          "isVerified": true
+        },
+        {
+          "label": "Search 'Athens Expats Housing' on Facebook — direct landlord deals, no agency fee"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, central Athens: €600–€900/month",
+        "3-bed flat, Kifissia or Psychiko (north suburbs): €1,200–€2,000/month",
+        "3-bed house with garden, Ekali or Kifissia: €1,800–€3,000/month",
+        "3-bed flat, Glyfada (southern coast): €1,100–€1,800/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "AFM (Greek tax ID) — most landlords require it for the rental contract",
+        "2–3 months of personal bank statements",
+        "Proof of income or remote employment contract",
+        "2 months deposit — standard across Athens",
+        "Greek bank account (most landlords expect a local IBAN for rent payments)"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Athens has a limited but established international school scene, concentrated in the northern and southern suburbs. Apply at least 12 months in advance for the top English-medium schools.",
+      "publicSystem": "Greek public schools are free and cover all residents, but instruction is entirely in Greek. Not viable for children without Greek unless you plan a multi-year stay and invest heavily in language support. Quality varies widely between schools and districts.",
+      "internationalOptions": "International schools are clustered in the northern suburbs (Kifissia, Psychiko, Ekali) and the southern coastal area (Glyfada). Most offer IB or British curricula taught in English, covering Early Years through secondary. Fees range from €8,000 to €18,000 per year. Apply 12 months in advance — popular schools regularly run waiting lists.",
+      "languageNotes": "All instruction in Greek public schools is in Greek. English-medium instruction is only available in private international schools. Greek tutoring support for newly arrived children costs roughly €30–€60/hr.",
+      "tip": "Apply to international schools before your housing search — school location determines which suburb makes sense for your family.",
+      "options": [
+        {
+          "type": "IB curriculum international schools",
+          "description": "Several IB Diploma and Primary Years Programme schools in the northern and southern suburbs. Small classes, established expat community.",
+          "fees": "€10,000–18,000/year typical"
+        },
+        {
+          "type": "British curriculum international schools",
+          "description": "British IGCSE and A-Level pathway schools, mainly in the northern Athens suburbs.",
+          "fees": "€8,000–14,000/year typical"
+        },
+        {
+          "type": "Greek private bilingual schools",
+          "description": "Greek private schools with significant English-medium content. Lower cost than full international schools but require some Greek.",
+          "fees": "€4,000–9,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Childcare in Athens is affordable by European standards. Private nurseries and nannies are widely available, particularly in family-oriented northern and coastal suburbs.",
+      "daycareItems": [
+        "Private nurseries (παιδικοί σταθμοί — paidikoi stathmoi) accept children from 2–3 months old — widely available in Kifissia, Glyfada, and Psychiko",
+        "Typical fees: €350–€700/month depending on hours and suburb",
+        "Municipal nurseries are free or subsidised but have extremely limited places — join the waiting list as soon as you arrive, even if you plan to go private",
+        "Visit at least 2–3 nurseries in person before deciding — quality and English-language availability vary significantly between providers"
+      ],
+      "nannyItems": [
+        "Full-time live-out nannies charge €800–€1,300/month — considerably lower than Western European equivalents",
+        "Hourly nannies charge €8–€14/hr — Filipino and Albanian nannies are common among expat families in Athens",
+        "Most nannies speak Greek — English-speaking nannies are available but cost more, especially in expat suburbs",
+        "Start your search 4–6 weeks before arrival — the best nannies in expat areas fill quickly via word of mouth"
+      ],
+      "whereToFindItems": [
+        "Babysits.gr — growing platform for nanny and babysitter listings in Greece",
+        "Search 'Athens Expats' or 'Athens Families' on Google — the main Facebook communities for personal recommendations",
+        "School referrals — many international schools in Athens maintain a vetted nanny list for newly arrived families"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "International private health insurance is essential for expat families in Athens — arrange it before flying, not after arriving.",
+      "items": [
+        "Public healthcare (EOPYY — Greece's national health fund) covers residents with an AMKA number, but waiting times are long and the system is under-resourced — most expat families use private hospitals for routine and specialist care.",
+        "Athens has several strong private hospitals: Hygeia Hospital (northern suburbs), Metropolitan Hospital (Faliro), and Henry Dunant Hospital (central Athens) are the three most recommended for English-speaking expat families.",
+        "Private GP visit: roughly €60–€120. Specialist: €80–€150. Emergency private: €150–€300+.",
+        "Arrange IPMI (International Private Medical Insurance) before arriving — family plans from global providers (Cigna Global, AXA-PPP, Allianz Care) typically run €200–€500/month depending on age and coverage level.",
+        "Pharmacies (φαρμακεία) are widely available in every neighbourhood and can dispense many medications without a prescription — a useful first point of contact for minor illness."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 80,
+      "summary": "Athens is generally safe for families, particularly in the northern and coastal suburbs.",
+      "items": [
+        "Violent crime against expats is rare — Athens is broadly safe for everyday family life in residential areas",
+        "Main risk is petty theft and pickpocketing in the historic centre: Monastiraki, Omonia, and the Acropolis area — keep bags in front and avoid displaying phones on busy tourist streets",
+        "Traffic is the most consistent daily hazard — Athens has some of the worst road congestion and driving standards in the EU; pedestrian crossings are not always respected",
+        "Family suburbs (Kifissia, Psychiko, Glyfada) are calm, low-crime residential areas that are safe day and night",
+        "Occasional civil protests and strikes in the city centre are common — they are usually peaceful but can disrupt public transport; monitor local news during major events"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,500 / month",
+      "familyDinner": "~€55",
+      "nannyRate": "~€10 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Greece Digital Nomad Visa — Enterprise Greece",
+          "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Athens Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Athens",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Athens Expats' on Google — large community with housing, school, and local advice threads",
+        "searchQuery": "Athens Expats Facebook group",
+        "url": "https://www.google.com/search?q=Athens+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "malaga-es",
+    "citySlug": "malaga",
+    "countrySlug": "spain",
+    "city": "Malaga",
+    "country": "Spain",
+    "tagline": "Sun-drenched coast with one of Europe's fastest-growing expat scenes",
+    "summary": "Malaga and the Costa del Sol have transformed into a serious relocation destination for families seeking sun, lower costs, and a large English-speaking community — without the price tag of Barcelona or Madrid. Year-round warmth, beaches 20 minutes from the city, and a growing selection of international schools make it compelling. The trade-off is a smaller city with fewer top-tier urban facilities, and a coastal layout that makes a car essential.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Verify income eligibility for Spain's Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Obtain an Apostille-certified criminal record check (an Apostille is an official government certification that authenticates the document for use abroad) from your home country — required for the DNV application",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before submitting your visa application — required document for the DNV",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply at the Spanish Consulate in your home country — allow 20–45 business days for processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start searching for family housing 6–8 weeks before your move — Benalmadena, Mijas, and Alhaurin de la Torre are popular family areas",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Contact international schools 6–12 months before your move — many have waiting lists, especially British curriculum schools along the Costa del Sol",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Register on the Padrón Municipal (Spain's official address register) at your local Ayuntamiento (city hall) within 30 days of arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Apply for your NIE (Spanish foreigner ID number) and open a Spanish bank account — BBVA, Sabadell, or Unicaja are popular locally",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Visit your local Centro de Salud with your Padrón certificate to apply for your SIP public health card",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families seeking year-round warm weather without Barcelona or Madrid price levels",
+        "Parents moving from the UK, Ireland, or Northern Europe looking for a slower, sunnier pace of life",
+        "Remote-working families who want a beach lifestyle with access to good international schooling",
+        "Budget-conscious families who want southern Spain without the cost of a major capital city"
+      ],
+      "watchOutFor": [
+        "Summer crowds — July–August brings intense heat (38°C+) and tourist saturation along the coast",
+        "A car is essential for families in coastal towns — public transport outside Malaga city is limited",
+        "International schools are spread across a 60km coastal strip — choose housing based on school location",
+        "English is widespread in expat areas but Spanish is essential for daily life outside the tourist corridor"
+      ]
+    },
+    "residency": {
+      "title": "Registration & Padrón",
+      "tip": "Book your Padrón appointment at the Malaga Ayuntamiento (malaga.eu) in your first week — walk-in queues are long.",
+      "items": [
+        "Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall) within 30 days of arriving. Bring your passport, rental contract, and proof of address.",
+        "Your Padrón certificate is the document that starts everything — without it you cannot get your SIP healthcare card, book your NIE appointment, or enrol children in school.",
+        "Book your appointment online at malaga.eu — the Malaga Ayuntamiento processes thousands of registrations and walk-in queues are long.",
+        "After 1 year on the Padrón, non-EU residents can apply for the TIE — Spain's physical residency card that legally proves your right to live here long-term."
+      ]
+    },
+    "banking": {
+      "title": "Banking & NIE",
+      "tip": "Start the NIE process the week you arrive — appointment slots at the Malaga Extranjería (local immigration office) book out 4–6 weeks.",
+      "items": [
+        "Apply for your NIE — your Spanish foreigner ID number — as soon as you arrive. You need it to open a bank account, sign a lease, and enrol children in school.",
+        "NIE appointments are booked at the Extranjería (the local immigration office). Slots in Malaga fill 4–6 weeks in advance — book online on your first week.",
+        "While waiting for your NIE, use N26 or Wise for day-to-day spending — both open with just your passport and work anywhere in Spain from day one.",
+        "Once you have your NIE, open a Spanish bank account. BBVA, Sabadell, and Unicaja (a regional bank strong in Malaga and Andalucia) are popular with local expats.",
+        "Most banks ask for: passport, NIE, Padrón certificate (your proof of local address), and a recent payslip or employment contract."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Malaga and the Costa del Sol are considerably cheaper than Barcelona or Madrid. Family-friendly towns cluster along the coast west of Malaga city and in the hills above.",
+      "bestAreas": [
+        "Benalmadena",
+        "Mijas Costa",
+        "Alhaurin de la Torre",
+        "La Cala de Mijas",
+        "Torremolinos"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Malaga' or the coastal town name inside each platform to filter local listings.",
+        "Tip: start with a 2–4 week Airbnb or short-term stay near your chosen school — it is much easier to view properties and negotiate once you are on the ground."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista — Spain's largest rental portal",
+          "url": "https://www.idealista.com",
+          "isVerified": true
+        },
+        {
+          "label": "Fotocasa — strong secondary market",
+          "url": "https://www.fotocasa.es",
+          "isVerified": true
+        },
+        {
+          "label": "Pisos.com — good for comparing prices across Costa del Sol towns",
+          "url": "https://www.pisos.com",
+          "isVerified": true
+        },
+        {
+          "label": "Search 'Costa del Sol Expat Housing' or 'Malaga Expat Property' on Facebook — many direct landlord deals, no agency fee"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed flat, Malaga city centre: €700–€1,000/month",
+        "3-bed flat, Benalmadena or Torremolinos: €900–€1,400/month",
+        "3-bed villa or townhouse, Mijas or Alhaurin de la Torre: €1,200–€2,000/month",
+        "3-bed beachfront apartment, Malaga or Fuengirola: €1,400–€2,200/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport — NIE if you already have it",
+        "2–3 months of personal bank statements",
+        "Proof of income: employment contract or last 3 payslips",
+        "1–2 months deposit (fianza) — legally required; some landlords ask for more",
+        "Spanish bank account for direct debit (most landlords require a local IBAN)",
+        "Reference letter from a previous landlord — helpful but not always required"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "The Malaga province has a well-established international school scene, particularly along the Costa del Sol. Most English-medium schools are near Marbella, Benalmadena, and Malaga city — apply well in advance.",
+      "publicSystem": "Spanish public schools are free and reasonably well-funded in Malaga, but all instruction is in Spanish. Not recommended for children without Spanish unless you plan a long-term stay with strong language support. Andalucian public schools generally have lower results than other Spanish regions.",
+      "internationalOptions": "British, IB, and US curriculum schools are spread across the Costa del Sol — primarily near Marbella, Benalmadena, and the eastern approach to Malaga city. Fees are somewhat lower than equivalent schools in Barcelona or Madrid. Apply 6–12 months ahead; popular schools fill quickly with British and Northern European expat families.",
+      "languageNotes": "Spanish is the language of instruction in all public schools. English-medium international schools are private only. Many expat children attend international schools in coastal towns — school location should guide your housing search.",
+      "tip": "Choose your housing based on school location — the Costa del Sol spans 60km and commuting between towns without a car is difficult.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "Several established British GCSE and A-Level schools along the Costa del Sol, particularly near Marbella and Benalmadena.",
+          "fees": "€6,000–11,000/year typical"
+        },
+        {
+          "type": "IB and US curriculum international schools",
+          "description": "IB Diploma and Middle Years Programme schools serving the broader international expat community.",
+          "fees": "€8,000–13,000/year typical"
+        },
+        {
+          "type": "Concertado schools (subsidised private)",
+          "description": "Part state-funded private schools taught in Spanish. Lower cost, but require solid Spanish language skills.",
+          "fees": "Free–€2,500/year"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Childcare in Malaga and the Costa del Sol is affordable and well-supplied, with private nurseries and a healthy nanny market throughout the expat towns.",
+      "daycareItems": [
+        "Private nurseries (guarderías) accept children from 4 months old — widely available in Malaga city, Benalmadena, Torremolinos, and other expat towns",
+        "Typical fees: €300–€600/month depending on hours and location",
+        "Public nursery places (0–3 years) are subsidised but very limited — join the municipal waiting list immediately on arrival",
+        "Visit 2–3 nurseries in person before deciding — quality varies significantly between providers"
+      ],
+      "nannyItems": [
+        "Live-out nannies (cuidadoras) charge €9–€14/hr — comparable to or slightly below Valencia and Barcelona",
+        "Au pairs receive board, lodging, and €80–€150/week pocket money — popular among British and German expat families",
+        "English-speaking nannies are easier to find along the Costa del Sol than in inland Spain, due to the large British expat community"
+      ],
+      "whereToFindItems": [
+        "Sitly.es — most popular nanny platform in Spain",
+        "InfoJobs.es — broad job board, also used for nanny and cuidadora searches",
+        "Search 'Malaga Expat Families' or 'Costa del Sol Mums' on Google — active communities for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Bring your Padrón certificate on your first visit to the Centro de Salud — without it the SIP card registration cannot proceed.",
+      "items": [
+        "Go to your local Centro de Salud (public health clinic) with your Padrón certificate to get a SIP card — Spain's free healthcare registration card that activates your access to Spain's public health system.",
+        "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every family member registered.",
+        "Each child needs their own SIP card — register them separately at the same clinic, bringing their passport and your Padrón certificate.",
+        "Private clinics are fast and affordable — a GP appointment costs €50–€80 without insurance, and results are usually same-day. Several private hospitals operate in Malaga city.",
+        "Popular private health insurers: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month and include English-speaking doctors across the province."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 83,
+      "summary": "Malaga and the Costa del Sol are safe for families. Violent crime is rare.",
+      "items": [
+        "Violent crime is rare — the Costa del Sol is one of the safer coastal regions in Southern Europe for families",
+        "Main risk is petty theft and bag snatching in tourist-heavy areas: the Old Town (Centro Histórico), La Malagueta beach, and the port promenade — keep bags in front when sightseeing",
+        "Residential expat towns (Benalmadena, Mijas, Alhaurin de la Torre) are extremely calm with very low crime rates",
+        "Traffic can be heavy on the coastal motorway (A-7 and AP-7) in summer — plan school runs using quieter inland routes where possible",
+        "Beach towns are lively and safe during the day — exercise normal caution at night, particularly around bars and beachfront areas"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~€1,200 / month",
+      "familyDinner": "~€50",
+      "nannyRate": "~€11 / hr"
+    },
+    "sources": {
+      "visa": [],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Malaga Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Malaga",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Malaga Expats' or 'Costa del Sol Expats' on Google — large communities with housing, school, and local tips",
+        "searchQuery": "Malaga Expats Facebook group",
+        "url": "https://www.google.com/search?q=Malaga+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "abu-dhabi-ae",
+    "citySlug": "abu-dhabi",
+    "countrySlug": "uae",
+    "city": "Abu Dhabi",
+    "country": "UAE",
+    "tagline": "The UAE's quieter capital — safe, family-oriented, and tax-free",
+    "summary": "Abu Dhabi offers much of what Dubai does — zero income tax, excellent international schools, and world-class safety — but with a calmer, more community-focused feel. The city is less commercial than Dubai, more spacious, and significantly less frenetic. Families who want a quieter UAE lifestyle without sacrificing quality consistently choose Abu Dhabi over Dubai. The trade-off is cost — Abu Dhabi is expensive — and an extreme summer climate that drives most outdoor life indoors from May to September.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Determine your visa route: employer-sponsored residency, UAE Virtual Working Programme ($3,500+/month income required), or UAE Golden Visa",
+        "targetSection": "visa"
+      },
+      {
+        "label": "For the Virtual Working Programme: prepare proof of remote employment, 3 months of income statements, and valid health insurance",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Research ADEK-approved school applications (ADEK is Abu Dhabi's official Department of Education and Knowledge) before relocating — top schools fill 12–18 months out",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or roughly AED 400–800/month privately",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Get all family documents attested and translated into Arabic by a certified legal translation office in Abu Dhabi",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for your Emirates ID — UAE's national identity card — within 30 days of visa stamping; required for banking, healthcare, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a UAE bank account (First Abu Dhabi Bank, ADCB, or HSBC UAE) once you have your Emirates ID",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register your tenancy contract on DARI (Abu Dhabi's official tenancy registration system) — required by Abu Dhabi law and your legal protection as a tenant",
+        "targetSection": "housing"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want the UAE lifestyle but prefer a quieter, less commercial city than Dubai",
+        "Government, oil sector, or large international company employees with full relocation packages",
+        "Families who prioritise beach access, outdoor space, and a structured community environment",
+        "Those seeking long-term UAE residency via the Golden Visa through real estate or business investment"
+      ],
+      "watchOutFor": [
+        "Summer heat is extreme — May to September averages 40–45°C; outdoor life comes to a near-stop",
+        "Car dependency is high — Abu Dhabi's spread-out layout makes a car essential for most families",
+        "Cost of living is high — international school fees, housing, and healthcare are among the most expensive in the region",
+        "Cultural norms are more conservative than Dubai — dress codes and public behaviour standards apply in public spaces"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "The UAE operates a federal visa system that applies equally to Abu Dhabi and Dubai. The Virtual Working Programme allows 1-year residency for remote workers earning $3,500+/month. Many expat families come on employer-sponsored residency visas. The UAE Golden Visa offers 10-year residency for investors and high earners.",
+      "tip": "Process your Emirates ID — UAE's national identity card — within 30 days of your visa being stamped. It is required for virtually every formal transaction in Abu Dhabi.",
+      "options": [
+        {
+          "type": "Visa on Arrival",
+          "anchor": "visa-arrival",
+          "detailTitle": "Visa on Arrival — what it covers",
+          "duration": "30–90 days",
+          "description": "Available to most Western passport holders. Useful for a family scouting trip — not for long-term living.",
+          "details": [
+            "Most Western, EU, and GCC passport holders receive a free 30-day visa on arrival at Abu Dhabi International Airport, extendable to 60 days.",
+            "Extensions can be done online via the ICP portal (icp.gov.ae) — the ICP is the Federal Authority for Identity, Citizenship, Customs and Port Security, the UAE's federal authority for identity documents.",
+            "Good for a family scouting trip but not suitable for long-term living — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
+            "If you plan to stay long-term, apply for a residency visa as early as possible — you cannot convert a tourist entry into residency from inside the UAE."
+          ],
+          "officialLink": {
+            "label": "UAE ICP visa on arrival official icp.gov.ae"
+          }
+        },
+        {
+          "type": "UAE Virtual Working Programme",
+          "anchor": "visa-vwp",
+          "detailTitle": "UAE Virtual Working Programme — how to apply",
+          "duration": "1 year, renewable",
+          "description": "Remote work residency for those earning at least $3,500/month. Covers primary applicant and immediate family.",
+          "details": [
+            "Income requirement: at least $3,500/month (roughly AED 12,850) from remote employment or freelancing outside the UAE.",
+            "Documents required: valid passport, passport-sized photo, proof of remote employment (employer letter or client contracts), 3 months of income proof, and valid health insurance.",
+            "Application fee: approximately $550 USD. Apply through the ICP portal (icp.gov.ae) or via an authorised PRO agency in Abu Dhabi.",
+            "Covers the primary applicant and immediate family — spouse and children receive dependent visas under your residency.",
+            "After receiving your residency stamp, apply for your Emirates ID — UAE's national identity card required for banking, healthcare, and school enrolment — within 30 days."
+          ],
+          "officialLink": {
+            "label": "UAE Virtual Working Programme visa official ICP"
+          }
+        },
+        {
+          "type": "UAE Golden Visa",
+          "anchor": "visa-golden",
+          "detailTitle": "UAE Golden Visa — who qualifies",
+          "duration": "10 years",
+          "description": "Long-term residency for property investors (AED 2 million+), skilled professionals, and entrepreneurs.",
+          "details": [
+            "Property investment of at least AED 2 million (roughly $545,000 USD) in registered UAE real estate qualifies for the 10-year Golden Visa.",
+            "Other qualifying routes: UAE-listed company investments of at least AED 2 million, approved entrepreneurs, scientists, or exceptional talent in education, technology, and the arts.",
+            "Covers the primary applicant and immediate family for the full 10-year term.",
+            "Golden Visa holders are not required to spend a minimum number of days in the UAE — making it flexible for families who travel frequently.",
+            "Apply through the ICP portal (icp.gov.ae) or via an authorised PRO agency. Processing typically takes 2–4 weeks after document submission."
+          ],
+          "officialLink": {
+            "label": "UAE Golden Visa official ICP requirements"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Emirates ID",
+      "tip": "Book your Emirates ID biometrics appointment via the ICP portal (icp.gov.ae) within your first week — slots fill quickly and the ID is required for almost everything.",
+      "items": [
+        "Apply for your Emirates ID — UAE's national identity card — within 30 days of your visa being stamped. Required for banking, healthcare registration, school enrolment, and most formal services in Abu Dhabi.",
+        "Book your biometrics appointment (fingerprinting and photo) through the ICP portal (icp.gov.ae). After the appointment, the card is typically issued within 5–10 business days.",
+        "Register your tenancy contract on the DARI system — Abu Dhabi's official tenancy registration platform — within 30 days of signing your lease. This is your legal protection as a tenant and is required by Abu Dhabi law.",
+        "All family members require their own Emirates ID — including children. Dependants are registered under the primary visa holder's residency.",
+        "Keep scanned copies of your Emirates ID, visa page, and entry stamp — Abu Dhabi healthcare providers, schools, and government offices frequently request all three."
+      ]
+    },
+    "banking": {
+      "title": "Banking & Emirates ID",
+      "tip": "No bank in the UAE will open an account without your Emirates ID — get it within your first 30 days to avoid being cut off from local banking.",
+      "items": [
+        "You need your Emirates ID before any UAE bank will open a personal account — this is a hard requirement with no workaround.",
+        "First Abu Dhabi Bank (FAB) and Abu Dhabi Commercial Bank (ADCB) are the two banks most experienced with expat account opening in Abu Dhabi. HSBC UAE is a strong option if you already have an HSBC relationship internationally.",
+        "To open an account you will typically need: passport, Emirates ID, visa page, DARI-registered tenancy agreement, and a payslip or income letter.",
+        "While waiting for your Emirates ID, use Wise or Revolut for international transfers and day-to-day spending — both work immediately with just your passport.",
+        "Cash is accepted widely in Abu Dhabi — keep AED 500–1,000 on hand for local markets, smaller restaurants, and taxis."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Abu Dhabi is spread across islands and mainland districts. Saadiyat Island and Al Reem Island are the most popular areas for expat families, offering modern apartments, beach access, and proximity to top international schools.",
+      "bestAreas": [
+        "Saadiyat Island",
+        "Al Reem Island",
+        "Khalifa City",
+        "Al Khalidiyah",
+        "Yas Island"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Abu Dhabi' inside each platform to filter local listings by area.",
+        "Tip: short-term serviced apartments are widely available in Abu Dhabi — a 2–4 week stay on Saadiyat Island or Al Reem Island is the best way to assess neighbourhoods and proximity to schools before committing to a long lease."
+      ],
+      "searchPortals": [
+        {
+          "label": "Bayut.com — UAE's most used property portal",
+          "url": "https://www.bayut.com",
+          "isVerified": true
+        },
+        {
+          "label": "Property Finder UAE — strong Abu Dhabi inventory",
+          "url": "https://www.propertyfinder.ae",
+          "isVerified": true
+        },
+        {
+          "label": "Dubizzle Abu Dhabi — local classifieds including direct landlord deals",
+          "url": "https://www.dubizzle.com",
+          "isVerified": true
+        },
+        {
+          "label": "Search 'Abu Dhabi Expats Housing' on Facebook — direct landlord and community deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Al Reem Island: AED 5,000–7,500/month",
+        "3-bed apartment, Saadiyat Island: AED 12,000–18,000/month",
+        "3-bed villa, Khalifa City: AED 9,000–14,000/month",
+        "3-bed apartment, Yas Island: AED 8,500–13,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Emirates ID (required for contract signing)",
+        "Residency visa page",
+        "DARI tenancy registration — landlords are required to register the lease on the Abu Dhabi platform",
+        "1–3 months deposit — typically around 5% of annual rent, negotiable",
+        "Post-dated cheques for rent — most Abu Dhabi landlords require 1–4 post-dated cheques per year",
+        "No-objection letter from employer (NOC) — sometimes required for certain residential compounds"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Abu Dhabi has an excellent selection of international schools, all regulated and inspected by ADEK — the Abu Dhabi Department of Education and Knowledge. Saadiyat Island and Khalifa City are the main school hubs for expat families.",
+      "publicSystem": "UAE public schools are for Emirati citizens and teach in Arabic. They are not an option for expat families. All expat families use private international schools.",
+      "internationalOptions": "Abu Dhabi has a wide range of ADEK-inspected international schools offering British, American, IB, and Indian curricula in English. Schools are concentrated on Saadiyat Island, Khalifa City, and Al Reef. Fees range from AED 30,000 to AED 90,000 per year. Apply 12–18 months before your intended start date — the most popular schools fill very quickly.",
+      "languageNotes": "All international schools in Abu Dhabi teach primarily in English. Arabic is a compulsory additional subject in all private schools under UAE regulations. Most schools offer Arabic as a first or second language depending on the pupil's background.",
+      "tip": "ADEK publishes annual school inspection reports — search 'ADEK school inspection report Abu Dhabi' to compare schools before applying.",
+      "options": [
+        {
+          "type": "British curriculum international schools (IGCSE and A-Level)",
+          "description": "The most common choice for UK and Commonwealth expat families. Widely available and consistently inspected by ADEK.",
+          "fees": "AED 35,000–75,000/year typical"
+        },
+        {
+          "type": "American curriculum international schools",
+          "description": "Serving the US expat community and international families seeking a US diploma pathway.",
+          "fees": "AED 40,000–80,000/year typical"
+        },
+        {
+          "type": "IB (International Baccalaureate) schools",
+          "description": "Several IB Diploma and Primary Years Programme schools, particularly on Saadiyat Island.",
+          "fees": "AED 50,000–90,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Childcare in Abu Dhabi is expensive by global standards. Live-in domestic helpers and nannies are extremely common, with a large Filipino and Indonesian workforce experienced with international families.",
+      "daycareItems": [
+        "Private nurseries and daycare centres are the only option — no subsidised public childcare exists for expat families in Abu Dhabi",
+        "ADEK-licensed nurseries accept children from 45 days old — popular nurseries on Saadiyat Island and Al Reem Island frequently have waiting lists",
+        "Typical fees: AED 2,500–5,000/month depending on hours and school reputation",
+        "Visit at least 2–3 nurseries before deciding — ADEK inspection reports are publicly available and worth reviewing before your visit"
+      ],
+      "nannyItems": [
+        "Live-out nannies charge AED 25–45/hr — Filipino and Indonesian nannies are most common and very experienced with expat families",
+        "Live-in domestic helpers (under a sponsorship arrangement) are legal in the UAE — typically cost AED 1,500–2,500/month plus accommodation and food",
+        "Many expat families combine nursery in the morning with a part-time nanny in the afternoon",
+        "Start your search before arriving — the most experienced English-speaking nannies fill quickly through word of mouth in expat communities"
+      ],
+      "whereToFindItems": [
+        "Dubizzle Abu Dhabi — the primary platform for domestic worker listings in Abu Dhabi",
+        "Search 'Abu Dhabi Expat Mums' or 'Abu Dhabi Families' on Google — the main Facebook communities for personal nanny recommendations",
+        "Relocation agency referrals — most Abu Dhabi relocation companies maintain a vetted nanny and domestic worker referral list"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Health insurance is mandatory for all Abu Dhabi residents — your visa cannot be processed without it. Confirm your policy covers the whole family before submitting any visa application.",
+      "items": [
+        "Health insurance is legally mandatory in Abu Dhabi for all residents — employers are required to provide it for their employees. If self-sponsored or on the Virtual Working Programme, arrange private insurance before visa issuance.",
+        "Abu Dhabi has excellent private hospitals. Cleveland Clinic Abu Dhabi (on Al Maryah Island) is one of the most advanced hospitals in the region and widely used by expat families. Burjeel Hospital and Sheikh Khalifa Medical City are strong alternatives.",
+        "Cost with insurance is manageable — GP visits are typically AED 200–400 with a standard corporate insurance plan. Out-of-pocket emergency treatment can exceed AED 5,000–10,000.",
+        "Children under 3 are required to complete the UAE vaccination schedule — bring your home country vaccination records for review at registration.",
+        "IPMI (International Private Medical Insurance) from Cigna Global, AXA-PPP, or Allianz Care gives broader international coverage and direct billing at Cleveland Clinic Abu Dhabi — family plans typically start around AED 15,000–25,000/year."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 90,
+      "summary": "Abu Dhabi is one of the safest cities in the world for families. Violent crime is extremely rare.",
+      "items": [
+        "Violent crime against expats is exceptionally rare — Abu Dhabi consistently ranks among the safest cities globally in major indices",
+        "The main daily risk is road traffic — Abu Dhabi has high-speed roads and aggressive driving standards; defensive driving and correct use of child car seats is essential",
+        "Heat is a health risk from May to September — limit outdoor exposure during midday, ensure children stay hydrated, and recognise heat-related illness symptoms",
+        "Family-friendly residential areas (Saadiyat Island, Al Reem Island, Khalifa City) are calm, well-patrolled communities with very low crime",
+        "Public behaviour standards apply — dress modestly in public spaces, respect prayer times in commercial areas, and avoid public displays of affection"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~AED 13,000 / month",
+      "familyDinner": "~AED 250",
+      "nannyRate": "~AED 35 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "UAE ICP — Federal Authority for Identity and Citizenship",
+          "url": "https://icp.gov.ae",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Abu Dhabi Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Abu-Dhabi",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Abu Dhabi Expat Families' on Google — active community with school, housing, and relocation advice",
+        "searchQuery": "Abu Dhabi Expat Families Facebook group",
+        "url": "https://www.google.com/search?q=Abu+Dhabi+Expat+Families+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "sydney-au",
+    "citySlug": "sydney",
+    "countrySlug": "australia",
+    "city": "Sydney",
+    "country": "Australia",
+    "tagline": "English-speaking, world-class schools, and a lifestyle families rarely leave",
+    "summary": "Sydney offers a combination that is hard to match: excellent public and private schools, safe streets, a world-class healthcare system, and an outdoor lifestyle built around beaches, national parks, and year-round sunshine. The trade-off is cost — Sydney is one of the most expensive cities in the world for housing — and the skilled migration visa process can be lengthy and employer-dependent.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Confirm your visa pathway: employer-sponsored Subclass 482 (Temporary Skill Shortage) or skilled independent 189/190 — start the employer sponsorship process as early as possible",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before arrival if your visa class is not eligible for Medicare — coverage depends on visa subclass and bilateral health agreement",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Sydney's rental market is competitive and properties are let within days of listing",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to independent selective or private schools 12–18 months before your planned start date — the most popular schools have long waiting lists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for a Tax File Number (TFN) at ato.gov.au immediately on arrival — required for employment and banking",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open an Australian bank account (Commonwealth Bank or ANZ allow pre-arrival applications)",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register your children with Medicare (if eligible under your visa class) and with a local GP practice in your first week",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "English-speaking families seeking a world-class lifestyle without a language barrier",
+        "Families who prioritise outdoor living — beaches, national parks, and year-round activities for children",
+        "Parents looking for both excellent public selective schools and established private school options",
+        "Families on employer-sponsored or permanent residency pathways"
+      ],
+      "watchOutFor": [
+        "Housing costs are extremely high — Sydney is among the world's most expensive rental markets",
+        "The skilled visa process is employer-dependent and can take 6–12 months from offer to arrival",
+        "Distance from Europe and the Middle East — long-haul flights home are a real emotional and financial cost",
+        "The rental market moves fast — expect to attend multiple inspections and submit applications the same day"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Australia operates a points-based and employer-sponsored migration system. Most working families relocate on the Subclass 482 Temporary Skill Shortage visa sponsored by an employer. Permanent residency pathways include the 186 ENS and the 189/190 skilled independent visas. An Electronic Travel Authority (ETA) is sufficient for scouting trips.",
+      "tip": "Engage a registered Australian migration agent — the visa subclasses are complex and the cost of an error (wrong subclass, incomplete sponsorship documents) can delay your move by months.",
+      "options": [
+        {
+          "type": "eVisitor / Electronic Travel Authority (ETA)",
+          "anchor": "visa-tourist",
+          "detailTitle": "ETA / eVisitor — scouting visit rules",
+          "duration": "Up to 3 months",
+          "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
+          "details": [
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an eVisitor (Subclass 651) or ETA (Subclass 601) online — typically free to AUD 20 and approved within minutes.",
+            "Maximum stay: 3 months per entry. Cannot be extended or converted into a work visa from inside Australia.",
+            "No right to work — this includes remote work for a non-Australian employer, which sits in a legal grey area under Australian immigration rules.",
+            "Good use: 2–4 weeks scouting the Northern Beaches, North Shore, Eastern Suburbs, and Inner West for schools, housing, and neighbourhoods.",
+            "Apply online at immi.homeaffairs.gov.au — the Australian Government's immigration portal."
+          ],
+          "officialLink": {
+            "label": "Australia ETA eVisitor visa official immi.homeaffairs.gov.au"
+          }
+        },
+        {
+          "type": "Subclass 482 — Temporary Skill Shortage (Employer-Sponsored)",
+          "anchor": "visa-au-482",
+          "detailTitle": "Subclass 482 TSS Visa — employer-sponsored pathway",
+          "duration": "2–4 years, with pathway to permanent residency",
+          "description": "Requires a sponsoring Australian employer. The primary route for most expat families moving to Sydney for work.",
+          "details": [
+            "Requires an approved Australian employer to sponsor you — your occupation must appear on the relevant skills list (Medium and Long-term Strategic Skills List or Short-term Skilled Occupation List).",
+            "Your employer must apply for Standard Business Sponsorship (SBS) before nominating you — your HR team or a registered migration agent handles this step.",
+            "Required documents: passport, skills assessment (occupation-specific), English language test result (if required by your occupation), police clearance, and health examination from an approved panel physician.",
+            "Processing time: typically 2–6 months from submission of a complete application — engage a registered migration agent to avoid common delays.",
+            "Dependants (spouse and children) receive secondary visas allowing full work and school rights in Australia for the visa duration."
+          ],
+          "officialLink": {
+            "label": "Australia Subclass 482 TSS visa official immi.homeaffairs.gov.au"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Tax File Number",
+      "tip": "Apply for your TFN online at ato.gov.au on your first day — it takes 2–4 weeks to arrive by post and you will need it before your first payslip.",
+      "items": [
+        "Apply for your TFN (Tax File Number) at ato.gov.au — Australia's equivalent of a tax ID. Required for employment, banking, and government services. Apply online from anywhere in the world; no in-person visit required.",
+        "There is no mandatory address registration system in Australia — but update your address with Medicare, your employer, and your bank as soon as you move in.",
+        "If eligible for Medicare (Australia's public healthcare system), enrol at a Medicare Service Centre — bring your passport, visa grant notice, and proof of address. Medicare eligibility depends on your visa subclass and your home country's bilateral health agreement with Australia.",
+        "Permanent residents and citizens automatically receive full Medicare coverage. Subclass 482 holders from reciprocal health agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden, and others) are also eligible — check your entitlement at servicesaustralia.gov.au.",
+        "After meeting the residency requirements for your visa pathway, many routes allow an application for permanent residency — typically after 2–5 years depending on the subclass."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Commonwealth Bank and ANZ allow you to open an account from overseas before you arrive — use this to transfer funds ahead of your first rent payment.",
+      "items": [
+        "Commonwealth Bank, ANZ, Westpac, and NAB (the Big Four Australian banks) all serve expats well. All have full English-language online banking and widely available branches.",
+        "Commonwealth Bank and ANZ offer pre-arrival account opening — you can apply online from your home country and activate the account when you land with proof of identity.",
+        "To open an account you will typically need: passport, visa grant notice, and an Australian address (a temporary short-term address works for the initial application).",
+        "Apply for your TFN (Tax File Number) immediately after arrival — without it, banks will withhold tax at the highest marginal rate on any interest earned.",
+        "Wise and Revolut work well for international transfers and foreign currency spending while your Australian banking is being set up — both are widely used by incoming expats."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Sydney has one of the most expensive and competitive rental markets in the world. Family-friendly areas cluster in the Northern Beaches, Upper North Shore, Inner West, and Eastern Suburbs — all command premium pricing.",
+      "bestAreas": [
+        "Northern Beaches",
+        "Upper North Shore",
+        "Inner West",
+        "Eastern Suburbs",
+        "Hills District"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Sydney' or the suburb name inside each platform to filter local listings.",
+        "Tip: the Sydney rental market is highly competitive — applications are submitted on the same day as inspections. Arrive with references, proof of income, and ID documents ready before your first viewing."
+      ],
+      "searchPortals": [
+        {
+          "label": "Domain.com.au — one of Australia's two largest property portals",
+          "url": "https://www.domain.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Realestate.com.au — Australia's largest property platform",
+          "url": "https://www.realestate.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Flatmates.com.au — useful for furnished short-term rooms while searching for a full family property",
+          "url": "https://www.flatmates.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Search 'Sydney Expats Housing' on Facebook — community listings and occasional direct landlord deals"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Inner West or Eastern Suburbs: AUD 2,500–3,200/month",
+        "3-bed house, Northern Beaches: AUD 4,500–7,000/month",
+        "3-bed house, Upper North Shore: AUD 4,000–6,500/month",
+        "3-bed apartment, Inner West (Leichhardt or Balmain): AUD 3,500–5,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa grant notice",
+        "Two most recent payslips or employment contract",
+        "3 months of personal bank statements",
+        "Reference from a previous landlord — very important in the Sydney market",
+        "Cover letter explaining your family situation — standard practice in Sydney rental applications",
+        "4 weeks bond plus 2 weeks rent in advance — standard for most NSW properties"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Sydney has one of the most respected school systems in the world. Both public selective schools and established private schools offer excellent outcomes — but the most sought-after schools require early planning.",
+      "publicSystem": "Australian public schools are free and open to all residents. Many of Sydney's selective public high schools rank among the best schools in Australia and are genuinely competitive. The state system is strong — many expat families use it successfully without going private, particularly in high-performing public school zones.",
+      "internationalOptions": "Sydney has a large and well-established private school sector including Anglican, Catholic, and independent schools with strong academic and extracurricular programmes. Fees range from AUD 15,000 to AUD 45,000+ per year. Enrolment at the most popular private schools in the Northern Beaches and North Shore can require applications very soon after arrival.",
+      "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families — this is one of Sydney's key advantages for families relocating from other English-speaking countries.",
+      "tip": "For private schools, contact the school registrar within the first month of arrival — the most popular schools in the Northern Beaches and North Shore have multi-year waiting lists.",
+      "options": [
+        {
+          "type": "NSW selective public high schools",
+          "description": "Entry via competitive academic exam (ACER). Free to attend. Consistently among the top academic schools in Australia.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Independent private schools (Anglican and Catholic)",
+          "description": "The traditional choice for expat families. Strong academic results, extensive extracurricular programmes, and long-established reputations.",
+          "fees": "AUD 20,000–45,000+/year typical"
+        },
+        {
+          "type": "IB curriculum international schools",
+          "description": "Several IB Diploma and Primary Years Programme schools in Sydney, particularly in the Eastern Suburbs and Inner West.",
+          "fees": "AUD 25,000–40,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Sydney childcare is expensive but partially subsidised via the Child Care Subsidy (CCS) for eligible residents and visa holders. Long day care centres are the main childcare form for under-5s.",
+      "daycareItems": [
+        "Long day care centres accept children from 6 weeks old — the main childcare form in Sydney for working parents",
+        "Typical fees before subsidy: AUD 150–220/day. After the Child Care Subsidy (CCS) for eligible families, out-of-pocket costs can reduce significantly",
+        "The CCS (Child Care Subsidy) is income-tested and available to permanent residents and eligible visa holders — check your entitlement at servicesaustralia.gov.au",
+        "Popular long day care centres in family suburbs have 6–12 month waiting lists — register before or immediately on arrival"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge AUD 25–40/hr — Sydney nanny rates are among the highest in the world due to the city's cost of living",
+        "Nanny-sharing (two families sharing one nanny) is common among expat families in the Northern Beaches and North Shore — reduces the hourly cost significantly",
+        "Au pairs are a popular budget-friendly alternative — typically AUD 250–350/week plus a private room and board",
+        "Start your nanny search at least 8 weeks before your arrival — Sydney's nanny market is tight"
+      ],
+      "whereToFindItems": [
+        "Care.com Australia — the primary platform for nanny and babysitter listings in Sydney",
+        "Gumtree Australia — broad classifieds, widely used for nanny listings and short-term childcare arrangements",
+        "Search 'Sydney Expat Parents' or 'Northern Beaches Mums' on Google — large communities for personal recommendations and nanny-sharing arrangements"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Check your Medicare eligibility at servicesaustralia.gov.au before arriving — it depends on your visa subclass and your home country's bilateral health agreement with Australia.",
+      "items": [
+        "Australia has an excellent public healthcare system called Medicare. Permanent residents and citizens have full access. Temporary skilled visa holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden, Belgium, Finland, Norway, and Slovenia) are also eligible.",
+        "Register with Medicare at a Services Australia centre — bring your passport, visa grant notice, and proof of address. Medicare covers GP visits (often bulk-billed, meaning free at the point of service), public hospital care, and most specialist referrals.",
+        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost AUD 400–900/month.",
+        "Private GP visit without bulk billing: roughly AUD 80–180 per consultation. Out-of-pocket specialist costs exist even with Medicare depending on the provider's billing policy.",
+        "Sydney has world-class hospitals — Royal North Shore, Sydney Children's Hospital (Randwick), and Westmead Hospital are the most recommended for families in different parts of the city."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 88,
+      "summary": "Sydney is one of the safest large cities in the world for families. Violent crime is rare.",
+      "items": [
+        "Violent crime is very rare — Sydney consistently ranks among the world's safest major cities",
+        "Main risk is opportunistic petty theft — keep bags secure in busy areas like the CBD, Bondi Beach, and Circular Quay",
+        "Traffic and road conditions are the main daily hazard — the road network in Sydney is complex and congested; pedestrian awareness is important with children",
+        "Sun safety is a genuine health risk — Sydney's UV index is extremely high year-round. SPF 50+ sunscreen, hats, and limited midday sun exposure are important for children",
+        "Family suburbs (Northern Beaches, Upper North Shore, Inner West) are extremely safe with very low crime rates and active community networks"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~AUD 5,000 / month",
+      "familyDinner": "~AUD 120",
+      "nannyRate": "~AUD 32 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Australia Subclass 482 TSS Visa — immi.homeaffairs.gov.au",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "Medicare eligibility — Services Australia",
+          "url": "https://www.servicesaustralia.gov.au/who-can-get-medicare",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Sydney Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Sydney",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Sydney Expats' or 'Expat Family Sydney' on Google — active community with housing, school, and settlement advice",
+        "searchQuery": "Sydney Expats Facebook group",
+        "url": "https://www.google.com/search?q=Sydney+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "tel-aviv-il",
+    "citySlug": "tel-aviv",
+    "countrySlug": "israel",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "tagline": "Vibrant tech hub with a Mediterranean beach lifestyle and a unique security context",
+    "summary": "Tel Aviv is one of the world's most dynamic cities — a startup ecosystem, a Mediterranean beach lifestyle, a food scene that draws global chefs, and a warm, social culture. For families with roots or connections to Israel, or those drawn to its energy and tech scene, it is a deeply rewarding place to live. The trade-offs are high housing costs, a demanding bureaucratic system, and a regional security situation that requires ongoing awareness.",
+    "lastReviewed": "2026-01",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — most Western passport holders enter Israel visa-free for 90 days; a B/1 work visa requires Israeli employer sponsorship",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search before arriving — Tel Aviv's rental market is extremely competitive and properties are taken within 24–48 hours of listing",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply for your Mispar Zehut (מספר זהות — Israeli ID number) at the Ministry of Interior — required for banking, healthcare, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Contact English-medium international schools at least 12 months before your move — capacity in Tel Aviv is limited",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Join a Kupat Holim (קופת חולים — health fund) once you have your Israeli ID number — Israel's public healthcare system covering GP, specialists, and hospital care",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Arrange private international health insurance as a bridge until your Kupat Holim membership is activated",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open an Israeli bank account (Hapoalim, Leumi, or Discount) once you have your residency number — the process takes time so start early",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Review your government's current travel advisory before moving and keep your family's emergency plan current",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families with Israeli roots, Jewish diaspora families, or those drawn to Israel's culture and community",
+        "Tech and startup professionals relocating with employer sponsorship in a global innovation hub",
+        "Families who want a Mediterranean urban lifestyle with a strong and welcoming local identity",
+        "Parents comfortable navigating a complex administrative system in exchange for a unique, vibrant city"
+      ],
+      "watchOutFor": [
+        "Housing costs are among the highest in the world relative to city size — budget carefully",
+        "The regional security situation is ongoing — research your government's current travel advisory and have a family emergency plan in place",
+        "Bureaucracy is complex and often only in Hebrew — a local relocation agent or fixer saves significant time in the first weeks",
+        "Summers are hot and humid (35°C+ with high humidity in July–August) — air conditioning is essential"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Most Western passport holders enter Israel visa-free for up to 90 days. Long-term residence requires either a B/1 work visa (employer-sponsored) or oleh status (available under the Law of Return). Non-resident expats typically arrive on a B/1 work visa sponsored by their Israeli employer.",
+      "tip": "Start the B/1 work visa process well in advance — the Israeli Ministry of Interior processing typically takes 2–4 months from a complete submission.",
+      "options": [
+        {
+          "type": "Visa-free entry (tourist)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Visa-free tourist entry — what it covers",
+          "duration": "Up to 90 days",
+          "description": "Most Western passport holders enter Israel visa-free. Good for a scouting trip — no right to work or long-term residency.",
+          "details": [
+            "Citizens of the US, UK, EU, Australia, Canada, and most other Western countries enter Israel visa-free for up to 90 days.",
+            "No right to work on visa-free entry — working for an Israeli employer without a B/1 visa is not permitted.",
+            "Cannot be converted to residency from inside Israel — you must apply at the Israeli Ministry of Interior or consulate before arriving.",
+            "Good use: spend 2–4 weeks exploring Tel Aviv neighbourhoods (Neve Tzedek, Florentin, Ramat Aviv), visiting schools, and assessing housing before committing.",
+            "Check your government's current travel advisory before booking — conditions change and entry requirements should always be confirmed ahead of travel."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Foreign Affairs visa information official"
+          }
+        },
+        {
+          "type": "B/1 Work Visa (employer-sponsored)",
+          "anchor": "visa-il-work",
+          "detailTitle": "B/1 Work Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "Requires sponsorship by a licensed Israeli employer. The primary long-term route for tech and corporate expats.",
+          "details": [
+            "Your Israeli employer must apply to the Israeli Population and Immigration Authority for a work permit on your behalf before you can apply for the B/1 visa.",
+            "Required documents: valid passport, employer sponsorship letter, employment contract, and private health insurance valid in Israel.",
+            "Apply at the Israeli consulate or embassy in your home country. Processing typically takes 2–4 months from a complete submission.",
+            "The B/1 visa is tied to your specific employer — if you change jobs, the new employer must apply for a new work permit.",
+            "Family members (spouse and children) receive a B/2 dependent visa under your B/1, allowing residence in Israel but not independent employment."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Interior work visa B1 official requirements"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Mispar Zehut",
+      "tip": "Engage a relocation agent or an Israeli notary for your first month — Hebrew-only government systems and complex bureaucracy are the biggest barriers for newly arrived expat families.",
+      "items": [
+        "Temporary residents receive a Mispar Zehut (מספר זהות — Israeli ID number) from the Ministry of Interior (Misrad HaPnim — משרד הפנים). This number is required for almost every formal transaction: banking, healthcare, school enrolment, and contracts.",
+        "Apply for your Mispar Zehut at your nearest Ministry of Interior office. Bring your passport, visa page, employment contract, and rental agreement. Expect to wait several weeks for the physical ID document.",
+        "Families eligible under the Law of Return (Jewish heritage) can apply for Aliyah — full Israeli citizenship — which immediately grants full residency rights, access to Kupat Holim, and government absorption benefits.",
+        "Non-citizen temporary residents must renew their B/1 visa annually through their employer — make sure your employer's HR team manages this renewal calendar.",
+        "Your Israeli ID number also serves as your tax ID for all local financial and government purposes."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Israeli banks are slow to open accounts for new arrivals — start the process in your first week and expect 2–4 weeks before the account is fully active.",
+      "items": [
+        "Bank Hapoalim (בנק הפועלים) and Bank Leumi (בנק לאומי) are the two largest banks in Israel and the most commonly used by expat families. Discount Bank (בנק דיסקונט) is a strong alternative with a more modern digital experience.",
+        "You need your Mispar Zehut (Israeli ID number), passport, visa, rental contract, and employment contract to open an account. Some banks additionally require an introductory letter from your employer.",
+        "The process is slow — expect multiple visits and 2–4 weeks from first application to a fully working account. Use Wise or Revolut as a bridge while waiting.",
+        "Most financial transactions in Tel Aviv are done by bank transfer or direct debit (הוראת קבע) — rent, school fees, and utilities typically require a local Israeli bank account within 4–6 weeks of arrival.",
+        "Wise is widely used by expats for receiving foreign income in USD or EUR and converting into ILS (Israeli New Shekel — ₪) at a competitive rate."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Tel Aviv has one of the most expensive rental markets in the world. Neve Tzedek, Ramat Aviv, and Florentin command premium prices. Herzliya Pituach (20 minutes north) offers larger homes with lower density and is popular with tech families.",
+      "bestAreas": [
+        "Neve Tzedek",
+        "Ramat Aviv",
+        "Herzliya Pituach",
+        "Florentin",
+        "Lev HaIr"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Tel Aviv' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: Israeli rental listings move extremely fast — properties are often taken within 24–48 hours of listing. Have your documents, budget, and decision criteria ready before starting your search."
+      ],
+      "searchPortals": [
+        {
+          "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+          "url": "https://www.yad2.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Madlan.co.il — Israeli property portal with map-based search",
+          "url": "https://www.madlan.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Homely.co.il — English-language listings popular with the expat community",
+          "url": "https://www.homely.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Search 'Tel Aviv Expat Housing' or 'Olim Housing Tel Aviv' on Facebook — active communities with direct landlord listings"
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Florentin or Lev HaIr: ₪7,000–10,000/month",
+        "3-bed apartment, Neve Tzedek: ₪12,000–18,000/month",
+        "3-bed apartment, Ramat Aviv: ₪11,000–16,000/month",
+        "3-bed house or large apartment, Herzliya Pituach: ₪12,000–20,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Israeli ID number (Mispar Zehut)",
+        "2–3 months of personal bank statements",
+        "Employment contract or income proof",
+        "Israeli guarantor or bank guarantee — most landlords require a local guarantor; a bank guarantee is accepted as an alternative",
+        "2–3 months deposit — standard in the Tel Aviv market",
+        "Rental contracts are in Hebrew — use a registered translator or relocation agent to review before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Tel Aviv's international school options are limited but improving. Most English-speaking expat families use English-medium international schools or Israeli state schools with private Hebrew tutoring support.",
+      "publicSystem": "Israeli public schools are free and open to all residents. Instruction is in Hebrew — not viable for children without Hebrew unless you invest in intensive language support. Children aged 3–8 typically acquire Hebrew quickly with good tutoring. Ulpan (intensive Hebrew language programmes) exist for older children and adults.",
+      "internationalOptions": "Tel Aviv has a small number of English-medium international schools, primarily serving the diplomatic and tech-industry expat community. Places are limited and demand is high — apply 12 months in advance. Herzliya has additional international school options popular with tech families based in that corridor.",
+      "languageNotes": "Hebrew is the language of instruction in all Israeli public schools. English is widely spoken in Tel Aviv, particularly in business and tech. International schools teach in English, often with Hebrew as a compulsory second language. Private Hebrew tutoring for newly arrived children costs roughly ₪150–250/hr.",
+      "tip": "Apply for international school places before your housing search — school location should guide which neighbourhood you choose.",
+      "options": [
+        {
+          "type": "English-medium international schools",
+          "description": "Limited capacity in Tel Aviv proper. Serving diplomatic and corporate expat families. Apply 12+ months ahead.",
+          "fees": "$15,000–28,000/year typical"
+        },
+        {
+          "type": "Israeli private schools with bilingual tracks",
+          "description": "Israeli private schools with Hebrew-English bilingual tracks. Growing in number in the Tel Aviv–Herzliya corridor.",
+          "fees": "₪40,000–80,000/year typical"
+        },
+        {
+          "type": "Israeli public schools with Hebrew integration",
+          "description": "Free state schools — realistic for young children (ages 3–8) who acquire Hebrew quickly. Requires private Hebrew tutoring support alongside.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Israel has a structured early childhood system. Children aged 3–6 attend gan (גן — preschool), which is free or subsidised. Under-3s typically use a licensed metapelet (home daycare) or a private nursery.",
+      "daycareItems": [
+        "Gan (גן — preschool) is mandatory and free for ages 3–6 under Israeli law — the local authority allocates a place based on your registered address",
+        "For under-3s, a metapelet (מטפלת — a licensed home daycare provider) is the most common option. Licensed metaplot accept up to 5 children in a home setting. Typical cost: ₪2,000–3,500/month",
+        "Private nurseries (maon — מעון) accept children from 3 months old. Fees: ₪3,000–5,500/month. Higher-quality private nurseries in Tel Aviv frequently have waiting lists",
+        "The Israeli government provides a subsidised daycare voucher (Shal) for children aged 3 months to 3 years — eligibility and amount vary by family income; check your entitlement at btl.gov.il"
+      ],
+      "nannyItems": [
+        "Nannies (metapelet prat or babysitter) typically charge ₪40–80/hr — rates vary by experience and English fluency",
+        "Full-time nannies in Tel Aviv charge roughly ₪7,000–12,000/month — English-speaking nannies from abroad command a premium",
+        "Filipino nannies are common in the Tel Aviv tech community — many are experienced with international families and English is their working language",
+        "Start your search 4–6 weeks before arrival — good nannies in the Neve Tzedek and Ramat Aviv expat areas book up quickly through word of mouth"
+      ],
+      "whereToFindItems": [
+        "Yad2.co.il — has a domestic services section used for nanny and babysitter listings across Israel",
+        "Search 'Tel Aviv Expat Parents' or 'Olim Families Tel Aviv' on Google — the most active English-language communities for personal nanny referrals",
+        "Israeli relocation agencies — many maintain a vetted childcare referral list specifically for incoming expat families"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Kupat Holim membership requires a Mispar Zehut (Israeli ID number) — arrange private insurance as a bridge until your residency documents are in place.",
+      "items": [
+        "Israel has a universal public healthcare system operated through four competing Kupat Holim (קופת חולים — health funds): Clalit, Maccabi, Meuhedet, and Leumit. All provide GP, specialist, hospital, and prescription coverage under the national health basket.",
+        "Kupat Holim membership requires a Mispar Zehut (Israeli ID number) and formal residency status — new arrivals on a B/1 work visa typically become eligible after registering with the Ministry of Interior.",
+        "Until you have Kupat Holim access, arrange private IPMI (International Private Medical Insurance) — plans from Cigna Global, AXA, or Allianz Care are standard for newly arrived expats.",
+        "Private medical care in Tel Aviv is high quality — Assuta Medical Centre, Ichilov (Sourasky Medical Centre), and Herzliya Medical Centre are the main private hospitals used by expat families.",
+        "Monthly Kupat Holim contributions are income-tested and collected via Bituach Leumi (ביטוח לאומי — National Insurance Institute) — roughly ₪200–600/month for a family depending on income."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 75,
+      "summary": "Tel Aviv is generally safe for day-to-day urban life, but the broader regional security context requires ongoing awareness and preparation.",
+      "items": [
+        "Day-to-day urban crime in Tel Aviv is low — petty theft and violent street crime are uncommon by the standards of a major city. Families in Neve Tzedek, Florentin, and Ramat Aviv report feeling safe going about their daily lives.",
+        "The regional security situation is the primary risk factor for families considering Tel Aviv — rocket alerts, periodic escalation, and the proximity of conflict zones are realities of life in Israel that every family must research, understand, and plan for before moving.",
+        "Israel has a nationwide rocket alert system (Red Alert / Tzeva Adom — צבע אדום) and mandatory building shelters (mamad — ממ\"ד) in most modern apartments. New arrivals should download the Home Front Command app (Pikud HaOref) immediately on arrival.",
+        "Check your home government's current travel advisory before any decision — many Western governments maintain updated guidance on specific areas of risk within Israel.",
+        "Outside security concerns, Tel Aviv is lively and family-friendly — the beach, parks, and city neighbourhoods are busy with families day and night, and the city has a strong community culture"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~₪14,000 / month",
+      "familyDinner": "~₪300",
+      "nannyRate": "~₪55 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Israel Ministry of Foreign Affairs — Visa information",
+          "url": "https://www.gov.il/en/departments/ministry_of_foreign_affairs",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Tel Aviv Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Tel-Aviv",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Tel Aviv Expats' or 'Olim Communities Tel Aviv' on Google — active English-speaking communities for families relocating to Tel Aviv",
+        "searchQuery": "Tel Aviv Expats Facebook group",
+        "url": "https://www.google.com/search?q=Tel+Aviv+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
   }
 ]

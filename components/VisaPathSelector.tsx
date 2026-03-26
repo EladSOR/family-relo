@@ -31,6 +31,9 @@ const ANCHOR_PATH: Record<string, VisaPath> = {
   "visa-arrival":   "tourist",
   "visa-vwp":       "dnv",
   "visa-golden":    "dnv",
+  "visa-gr-dnv":    "dnv",
+  "visa-au-482":    "dnv",
+  "visa-il-work":   "dnv",
 };
 
 const VISA_ANCHORS = new Set(Object.keys(ANCHOR_PATH));

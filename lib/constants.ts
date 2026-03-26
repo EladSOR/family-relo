@@ -39,6 +39,11 @@ export const CITY_IMAGES: Record<string, string> = {
   "Budapest":    "https://images.unsplash.com/photo-1551867633-194f125bddfa?w=900&q=80",
   "Bangkok":     "https://images.unsplash.com/photo-1755251042986-91270ffd76f5?w=800&q=80",
   "Phuket":      "https://images.unsplash.com/photo-1601225612316-b4733315a717?w=900&q=80",
+  "Athens":      "https://images.unsplash.com/photo-1555993539-1732b0258235?w=900&q=80",
+  "Malaga":      "https://images.unsplash.com/photo-1765152554171-6cf12086ab9b?w=900&q=80",
+  "Abu Dhabi":   "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=900&q=80",
+  "Sydney":      "https://images.unsplash.com/photo-1759234895763-5343cf59a4bd?w=900&q=80",
+  "Tel Aviv":    "https://images.unsplash.com/photo-1561992022-6d47c991fdd3?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =
