@@ -4097,12 +4097,12 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "EU/EEA families: register at your local KEP (Citizens' Service Centre) within 3 months and apply for your AMKA (Greek social security number)",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU remote workers: apply for Greece's Digital Nomad Visa — minimum €3,500/month income required — at a Greek consulate before travelling",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA families: register at your local KEP (Citizens' Service Centre) within 3 months and apply for your AMKA (Greek social security number)",
+        "targetSection": "residency"
       },
       {
         "label": "Apply for your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at a local Εφορία (tax office) — required for renting, banking, and most formal transactions",
