@@ -5057,10 +5057,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Inner West or Eastern Suburbs: $1,575–$2,020/month",
-        "3-bed house, Northern Beaches: $2,835–$4,410/month",
-        "3-bed house, Upper North Shore: $2,520–$4,095/month",
-        "3-bed apartment, Inner West (Leichhardt or Balmain): $2,205–$3,150/month"
+        "1-bed apartment, Inner West or Eastern Suburbs: $990–$1,275/month",
+        "3-bed house, Northern Beaches: $1,785–$2,780/month",
+        "3-bed house, Upper North Shore: $1,590–$2,580/month",
+        "3-bed apartment, Inner West (Leichhardt or Balmain): $1,390–$1,985/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and visa grant notice",
@@ -5075,7 +5075,7 @@
       "status": "curated",
       "summary": "Sydney has one of the most respected school systems in the world. Both public selective schools and established private schools offer excellent outcomes — but the most sought-after schools require early planning.",
       "publicSystem": "Australian public schools are free and open to all residents. Many of Sydney's selective public high schools rank among the best schools in Australia and are genuinely competitive. The state system is strong — many expat families use it successfully without going private, particularly in high-performing public school zones.",
-      "internationalOptions": "Sydney has a large and well-established private school sector including Anglican, Catholic, and independent schools with strong academic and extracurricular programmes. Fees range from $9,450 to $28,350+ per year. Enrolment at the most popular private schools in the Northern Beaches and North Shore can require applications very soon after arrival.",
+      "internationalOptions": "Sydney has a large and well-established private school sector including Anglican, Catholic, and independent schools with strong academic and extracurricular programmes. Fees range from $5,950 to $17,860+ per year. Enrolment at the most popular private schools in the Northern Beaches and North Shore can require applications very soon after arrival.",
       "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families — this is one of Sydney's key advantages for families relocating from other English-speaking countries.",
       "tip": "For private schools, contact the school registrar within the first month of arrival — the most popular schools in the Northern Beaches and North Shore have multi-year waiting lists.",
       "options": [
@@ -5087,12 +5087,12 @@
         {
           "type": "Independent private schools (Anglican and Catholic)",
           "description": "The traditional choice for expat families. Strong academic results, extensive extracurricular programmes, and long-established reputations.",
-          "fees": "$12,600–$28,350+/year typical"
+          "fees": "$7,940–$17,860+/year typical"
         },
         {
           "type": "IB curriculum international schools",
           "description": "Several IB Diploma and Primary Years Programme schools in Sydney, particularly in the Eastern Suburbs and Inner West.",
-          "fees": "$15,750–$25,200/year typical"
+          "fees": "$9,920–$15,880/year typical"
         }
       ]
     },
@@ -5101,14 +5101,14 @@
       "summary": "Sydney childcare is expensive but partially subsidised via the Child Care Subsidy (CCS) for eligible residents and visa holders. Long day care centres are the main childcare form for under-5s.",
       "daycareItems": [
         "Long day care centres accept children from 6 weeks old — the main childcare form in Sydney for working parents",
-        "Typical fees before subsidy: $95–$139/day. After the Child Care Subsidy (CCS) for eligible families, out-of-pocket costs can reduce significantly",
+        "Typical fees before subsidy: $60–$88/day. After the Child Care Subsidy (CCS) for eligible families, out-of-pocket costs can reduce significantly",
         "The CCS (Child Care Subsidy) is income-tested and available to permanent residents and eligible visa holders — check your entitlement at servicesaustralia.gov.au",
         "Popular long day care centres in family suburbs have 6–12 month waiting lists — register before or immediately on arrival"
       ],
       "nannyItems": [
-        "Full-time nannies charge $16–$25/hr — Sydney nanny rates are among the highest in the world due to the city's cost of living",
+        "Full-time nannies charge $10–$16/hr — Sydney nanny rates are among the highest in the world due to the city's cost of living",
         "Nanny-sharing (two families sharing one nanny) is common among expat families in the Northern Beaches and North Shore — reduces the hourly cost significantly",
-        "Au pairs are a popular budget-friendly alternative — typically $158–$221/week plus a private room and board",
+        "Au pairs are a popular budget-friendly alternative — typically $99–$139/week plus a private room and board",
         "Start your nanny search at least 8 weeks before your arrival — Sydney's nanny market is tight"
       ],
       "whereToFindItems": [
@@ -5123,8 +5123,8 @@
       "items": [
         "Australia has an excellent public healthcare system called Medicare. Permanent residents and citizens have full access. Temporary skilled visa holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden, Belgium, Finland, Norway, and Slovenia) are also eligible.",
         "Register with Medicare at a Services Australia centre — bring your passport, visa grant notice, and proof of address. Medicare covers GP visits (often bulk-billed, meaning free at the point of service), public hospital care, and most specialist referrals.",
-        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost $252–$567/month.",
-        "Private GP visit without bulk billing: roughly $50–$113 per consultation. Out-of-pocket specialist costs exist even with Medicare depending on the provider's billing policy.",
+        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost $159–$357/month.",
+        "Private GP visit without bulk billing: roughly $32–$71 per consultation. Out-of-pocket specialist costs exist even with Medicare depending on the provider's billing policy.",
         "Sydney has world-class hospitals — Royal North Shore, Sydney Children's Hospital (Randwick), and Westmead Hospital are the most recommended for families in different parts of the city."
       ]
     },
@@ -5142,9 +5142,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~$3,150 / month",
-      "familyDinner": "~$76",
-      "nannyRate": "~$20 / hr"
+      "rentRange": "~$1,985 / month",
+      "familyDinner": "~$48",
+      "nannyRate": "~$13 / hr"
     },
     "sources": {
       "visa": [
@@ -5447,6 +5447,2701 @@
         "label": "Search 'Tel Aviv Expats' or 'Olim Communities Tel Aviv' on Google — active English-speaking communities for families relocating to Tel Aviv",
         "searchQuery": "Tel Aviv Expats Facebook group",
         "url": "https://www.google.com/search?q=Tel+Aviv+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "melbourne-au",
+    "citySlug": "melbourne",
+    "countrySlug": "australia",
+    "city": "Melbourne",
+    "country": "Australia",
+    "tagline": "Culture, schools, and liveable outdoor lifestyle — at a lower price than Sydney",
+    "summary": "Melbourne consistently ranks among the world's most liveable cities. It offers excellent public and private schools, a thriving food and arts scene, and an outdoor lifestyle centred on parks, beaches, and sport. Housing is expensive by global standards but meaningfully more affordable than Sydney. The main challenge is Australia's employer-dependent visa system and a competitive rental market.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Confirm your visa pathway: employer-sponsored Subclass 482 (Temporary Skill Shortage) or skilled independent 189/190 — start the employer sponsorship process as early as possible",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before arrival if your visa class is not eligible for Medicare — eligibility depends on visa subclass and bilateral health agreement",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Melbourne's rental market is competitive and properties are let within days of listing",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to independent or private schools 12–18 months before your planned start date — popular schools in Brighton and Kew have multi-year waiting lists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for a Tax File Number (TFN) at ato.gov.au on arrival — required for employment and banking",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open an Australian bank account — Commonwealth Bank and ANZ allow pre-arrival account opening",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register your children with Medicare (if eligible under your visa class) and with a local GP practice in your first week",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Register for childcare as early as possible — popular centres in Brighton and Kew have 6–12 month waiting lists",
+        "targetSection": "childcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want a Sydney-quality lifestyle at meaningfully lower cost",
+        "Parents seeking a wide choice of both excellent public selective schools and established private schools",
+        "Families from the UK or Europe who prefer a cooler, more temperate city",
+        "Families on employer-sponsored or permanent residency pathways"
+      ],
+      "watchOutFor": [
+        "Housing is still expensive — Melbourne is among the world's priciest rental markets",
+        "The employer-sponsored visa process is lengthy — allow 6–12 months from job offer to arrival",
+        "Weather is famously unpredictable — cold winters and very hot summers require wardrobe planning",
+        "Distance from Europe and the Middle East means long-haul flights home are a significant time and cost commitment"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Australia operates a points-based and employer-sponsored migration system. Most working families relocate on the Subclass 482 Temporary Skill Shortage visa sponsored by an employer. Permanent residency pathways include the 186 ENS and the 189/190 skilled independent visas. An ETA (Electronic Travel Authority) is sufficient for scouting trips.",
+      "tip": "Engage a registered Australian migration agent — the visa subclasses are complex and the cost of an error can delay your move by months.",
+      "options": [
+        {
+          "type": "eVisitor / Electronic Travel Authority (ETA)",
+          "anchor": "visa-tourist",
+          "detailTitle": "ETA / eVisitor — scouting visit rules",
+          "duration": "Up to 3 months",
+          "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
+          "details": [
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an eVisitor (Subclass 651) or ETA (Subclass 601) online — typically free to ~$13 and approved within minutes.",
+            "Maximum stay: 3 months per entry. Cannot be extended or converted into a work visa from inside Australia.",
+            "No right to work — this includes remote work for a non-Australian employer, which sits in a legal grey area under Australian immigration rules.",
+            "Good use: 2–4 weeks scouting Brighton, Kew, Hawthorn, and the inner north (Fitzroy, Carlton) for schools, housing, and neighbourhoods.",
+            "Apply online at immi.homeaffairs.gov.au — the Australian Government's official immigration portal."
+          ],
+          "officialLink": {
+            "label": "Australia ETA eVisitor visa official immi.homeaffairs.gov.au"
+          }
+        },
+        {
+          "type": "Subclass 482 — Temporary Skill Shortage (Employer-Sponsored)",
+          "anchor": "visa-au-482",
+          "detailTitle": "Subclass 482 TSS Visa — employer-sponsored pathway",
+          "duration": "2–4 years, with pathway to permanent residency",
+          "description": "Requires a sponsoring Australian employer. The primary route for most expat families moving to Melbourne for work.",
+          "details": [
+            "Requires an approved Australian employer to sponsor you — your occupation must appear on the MLTSSL or STSOL (Medium and Long-term, or Short-term Skilled Occupation List).",
+            "Your employer must apply for Standard Business Sponsorship (SBS) before nominating you — your HR team or a registered migration agent handles this.",
+            "Required documents: passport, occupation-specific skills assessment, police clearance, and health examination from an approved panel physician.",
+            "Processing time: typically 2–6 months from submission of a complete application.",
+            "Dependants (spouse and children) receive secondary visas with full work and school rights in Australia for the visa duration."
+          ],
+          "officialLink": {
+            "label": "Australia Subclass 482 TSS visa official immi.homeaffairs.gov.au"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Tax File Number",
+      "tip": "Apply for your TFN online at ato.gov.au on your first day — it takes 2–4 weeks to arrive by post and you need it before your first payslip.",
+      "items": [
+        "Apply for your TFN (Tax File Number) at ato.gov.au — Australia's equivalent of a tax ID. Required for employment, banking, and government services. Apply online from anywhere; no in-person visit required.",
+        "There is no mandatory address registration in Australia — update your address with Medicare, your employer, and your bank as soon as you move in.",
+        "If eligible for Medicare (Australia's public healthcare system), enrol at a Medicare Service Centre with your passport, visa grant notice, and proof of address.",
+        "Permanent residents and citizens have full Medicare coverage. Subclass 482 holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden) are also eligible — check at servicesaustralia.gov.au.",
+        "After meeting residency requirements for your visa pathway, many routes allow an application for permanent residency — typically after 2–5 years depending on the subclass."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Commonwealth Bank and ANZ allow pre-arrival account opening — transfer funds before you land so you have rent money ready from day one.",
+      "items": [
+        "Commonwealth Bank, ANZ, Westpac, and NAB (the Big Four Australian banks) all serve expats well. All have English-language banking and widespread Melbourne branches.",
+        "Commonwealth Bank and ANZ offer pre-arrival account opening — apply online from your home country and activate the account when you land.",
+        "To open an account you need: passport, visa grant notice, and an Australian address (a temporary address works for the initial application).",
+        "Apply for your TFN (Tax File Number) immediately after arrival — without it, banks withhold tax at the highest marginal rate on any interest.",
+        "Wise and Revolut work well for international transfers and foreign currency spending while your Australian account is being set up."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Melbourne's rental market is competitive and expensive, though more affordable than Sydney. Family-friendly areas cluster in the bayside suburbs (Brighton, Sandringham), inner south-east (Kew, Hawthorn), and inner north (Fitzroy, Carlton).",
+      "bestAreas": [
+        "Brighton",
+        "Kew",
+        "Hawthorn",
+        "Fitzroy / Carlton",
+        "Sandringham"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Melbourne' or the suburb name inside each platform to filter local listings.",
+        "Tip: Melbourne's rental market moves fast — have references, proof of income, and ID documents ready before your first inspection."
+      ],
+      "searchPortals": [
+        {
+          "label": "Domain.com.au — one of Australia's two largest property portals",
+          "url": "https://www.domain.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Realestate.com.au — Australia's largest property platform",
+          "url": "https://www.realestate.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Flatmates.com.au — useful for furnished short-term rooms while searching for a full family property",
+          "url": "https://www.flatmates.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Melbourne Expats Housing' (direct landlord deals and community listings)",
+          "url": "https://www.google.com/search?q=Melbourne+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Fitzroy or Richmond: $910–$1,190/month",
+        "3-bed house, Brighton: $1,590–$2,385/month",
+        "3-bed house, Kew or Hawthorn: $1,385–$1,985/month",
+        "3-bed apartment, Carlton or Collingwood: $1,190–$1,785/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa grant notice",
+        "Two most recent payslips or employment contract",
+        "3 months of personal bank statements",
+        "Reference from a previous landlord — important in the Melbourne market",
+        "Cover letter explaining your family situation — standard practice in Melbourne rental applications",
+        "4 weeks bond plus 2 weeks rent in advance — standard for most Victorian properties"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Melbourne has one of the strongest school systems in Australia. Victorian state selective schools are genuinely excellent and many expat families use them without going private.",
+      "publicSystem": "Victorian public schools are free and open to all residents. Several selective public high schools consistently rank among the top schools in Australia. The state system is strong — many expat families use it successfully, particularly in well-regarded school zones in Brighton, Kew, and Hawthorn.",
+      "internationalOptions": "Melbourne has a wide choice of independent Anglican, Catholic, and IB schools in the inner suburbs and bayside areas. Fees range from roughly $5,670 to $17,640+ per year. The most popular schools in Brighton and Kew have multi-year waiting lists — contact registrars as soon as your arrival date is confirmed.",
+      "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families.",
+      "tip": "Contact private school registrars within the first month of arrival — the most popular bayside and inner south-east schools have waiting lists stretching 1–3 years.",
+      "options": [
+        {
+          "type": "Victorian selective public high schools",
+          "description": "Entry via competitive academic exam. Free to attend. Consistently among the top academic schools in Australia.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Independent private schools (Anglican and Catholic)",
+          "description": "Traditional choice for expat families. Strong academic results, extensive extracurricular programmes, long-established reputations. Concentrated in Brighton, Kew, and Hawthorn.",
+          "fees": "$6,930–$17,640+/year typical"
+        },
+        {
+          "type": "IB curriculum international schools",
+          "description": "Several IB Diploma and PYP (Primary Years Programme) schools in Melbourne, particularly in the inner suburbs and CBD fringe.",
+          "fees": "$8,820–$15,120/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Melbourne childcare is expensive but partially subsidised via the CCS (Child Care Subsidy) for eligible residents and visa holders. Long day care centres are the main form for under-5s.",
+      "daycareItems": [
+        "Long day care centres accept children from 6 weeks old — the main childcare form in Melbourne for working parents",
+        "Typical fees before subsidy: $57–$82/day. After the CCS (Child Care Subsidy — Australia's income-tested childcare rebate), out-of-pocket costs can reduce significantly",
+        "The CCS is available to permanent residents and eligible visa holders — check your entitlement at servicesaustralia.gov.au",
+        "Popular centres in Brighton, Kew, and Hawthorn have 6–12 month waiting lists — register before or immediately on arrival"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge $9–$14/hr — Melbourne nanny rates reflect the city's cost of living",
+        "Nanny-sharing (two families sharing one nanny) is common among expat families in Brighton and Kew — reduces hourly cost significantly",
+        "Au pairs are a popular budget-friendly alternative — typically $95–$132/week plus a private room and meals",
+        "Start your nanny search at least 8 weeks before arrival — Melbourne's nanny market is competitive"
+      ],
+      "whereToFindItems": [
+        "Care.com Australia — the primary platform for nanny and babysitter listings in Melbourne",
+        "Gumtree Australia — widely used for nanny listings and short-term childcare arrangements",
+        "Search 'Melbourne Expat Parents' or 'Brighton Melbourne Mums' on Google — communities for personal recommendations and nanny-sharing"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Check your Medicare eligibility at servicesaustralia.gov.au before arriving — it depends on your visa subclass and your home country's bilateral health agreement with Australia.",
+      "items": [
+        "Australia has an excellent public healthcare system called Medicare. Permanent residents and citizens have full access. Temporary skilled visa holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden) are also eligible.",
+        "Register with Medicare at a Services Australia centre with your passport, visa grant notice, and proof of address. Medicare covers GP visits (often bulk-billed — free at point of service) and public hospital care.",
+        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost $158–$353/month.",
+        "Private GP visit without bulk billing: roughly $32–$69. Out-of-pocket specialist costs exist even with Medicare depending on provider billing policy.",
+        "Royal Children's Hospital Melbourne and The Royal Melbourne Hospital are the two most recommended public hospitals for families in different parts of the city."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 87,
+      "summary": "Melbourne is one of the safest large cities in the world for families.",
+      "items": [
+        "Violent crime is rare — Melbourne consistently ranks among the world's safest major cities",
+        "Main daily risk is opportunistic petty theft — keep bags secure in the CBD, Flinders Street, and busy tram corridors",
+        "Traffic and trams are the primary daily hazard — Melbourne's tram network requires particular attention with children near roads",
+        "Sun safety is a genuine health risk — Victoria's UV index is very high in summer; SPF 50+ sunscreen and hats are essential for children outdoors",
+        "Family suburbs (Brighton, Kew, Hawthorn, Fitzroy) are extremely safe with very low crime rates and active community networks"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,785 / month",
+      "familyDinner": "~$41",
+      "nannyRate": "~$12 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Australia Subclass 482 TSS Visa — immi.homeaffairs.gov.au",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "Medicare eligibility — Services Australia",
+          "url": "https://www.servicesaustralia.gov.au/who-can-get-medicare",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Melbourne Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Melbourne",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Melbourne Expats' or 'Expat Family Melbourne' on Google — active community with housing, school, and settlement advice",
+        "searchQuery": "Melbourne Expats Facebook group",
+        "url": "https://www.google.com/search?q=Melbourne+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "brisbane-au",
+    "citySlug": "brisbane",
+    "countrySlug": "australia",
+    "city": "Brisbane",
+    "country": "Australia",
+    "tagline": "Subtropical, affordable, and fast-growing — Australia's best-value major city for families",
+    "summary": "Brisbane is Australia's most affordable major city for families. It has a subtropical climate, strong public and private schools, and housing costs well below Sydney or Melbourne. The city is in a period of rapid growth following the 2032 Olympics announcement. The trade-off is fewer international school options than Sydney or Melbourne and a smaller established expat network.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Confirm your visa pathway: employer-sponsored Subclass 482 (Temporary Skill Shortage) or skilled independent 189/190 — start the employer sponsorship process as early as possible",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Arrange private health insurance before arrival if your visa class is not eligible for Medicare",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — Brisbane's vacancy rate is very low and properties are let quickly",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to private schools 12–18 months before your planned start date — the most sought-after GPS (Great Public Schools — Brisbane's network of elite independent and grammar schools) fill early",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for a Tax File Number (TFN) at ato.gov.au immediately on arrival — required for employment and banking",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open an Australian bank account — Commonwealth Bank and ANZ allow pre-arrival applications",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register your children with Medicare (if eligible) and with a local GP in your first week",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Register for childcare as soon as you have a confirmed arrival date — popular centres in New Farm and Ascot have 6–12 month waiting lists",
+        "targetSection": "childcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families seeking a warm outdoor Australian lifestyle at a lower price than Sydney or Melbourne",
+        "Parents who value direct beach and national park access without long drives",
+        "Families on employer-sponsored visas in growth sectors: energy, construction, health, and tech",
+        "Families who want a rapidly growing city with an integrating expat community"
+      ],
+      "watchOutFor": [
+        "Fewer international school options than Sydney or Melbourne — research before committing to Brisbane",
+        "Subtropical summer (December–March) is very hot and humid — not for every family",
+        "The employer-sponsored visa process is lengthy regardless of which Australian city you choose",
+        "A smaller established expat network means less community support infrastructure than Sydney or Melbourne"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Australia operates a points-based and employer-sponsored migration system. Most working families relocate on the Subclass 482 Temporary Skill Shortage visa sponsored by an employer. Permanent residency pathways include the 186 ENS and the 189/190 skilled independent visas. An ETA is sufficient for scouting trips.",
+      "tip": "Engage a registered Australian migration agent — the visa subclasses are complex and errors delay moves by months.",
+      "options": [
+        {
+          "type": "eVisitor / Electronic Travel Authority (ETA)",
+          "anchor": "visa-tourist",
+          "detailTitle": "ETA / eVisitor — scouting visit rules",
+          "duration": "Up to 3 months",
+          "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
+          "details": [
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an eVisitor (Subclass 651) or ETA (Subclass 601) online — typically free to ~$13 and approved within minutes.",
+            "Maximum stay: 3 months per entry. Cannot be extended or converted into a work visa from inside Australia.",
+            "Good use: 2–4 weeks scouting New Farm, Paddington, Ascot, and Hamilton for schools, housing, and neighbourhoods.",
+            "Apply online at immi.homeaffairs.gov.au — the Australian Government's official immigration portal."
+          ],
+          "officialLink": {
+            "label": "Australia ETA eVisitor visa official immi.homeaffairs.gov.au"
+          }
+        },
+        {
+          "type": "Subclass 482 — Temporary Skill Shortage (Employer-Sponsored)",
+          "anchor": "visa-au-482",
+          "detailTitle": "Subclass 482 TSS Visa — employer-sponsored pathway",
+          "duration": "2–4 years, with pathway to permanent residency",
+          "description": "Requires a sponsoring Australian employer. The primary route for most expat families moving to Brisbane for work.",
+          "details": [
+            "Requires an approved Australian employer to sponsor you — your occupation must appear on the MLTSSL or STSOL (Medium and Long-term, or Short-term Skilled Occupation List).",
+            "Your employer must apply for Standard Business Sponsorship (SBS) before nominating you.",
+            "Required documents: passport, occupation-specific skills assessment, police clearance, and health examination from an approved panel physician.",
+            "Processing time: typically 2–6 months from submission of a complete application.",
+            "Dependants (spouse and children) receive secondary visas with full work and school rights in Australia."
+          ],
+          "officialLink": {
+            "label": "Australia Subclass 482 TSS visa official immi.homeaffairs.gov.au"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Tax File Number",
+      "tip": "Apply for your TFN online at ato.gov.au on your first day — it takes 2–4 weeks to arrive and you need it before your first payslip.",
+      "items": [
+        "Apply for your TFN (Tax File Number) at ato.gov.au — Australia's equivalent of a tax ID. Required for employment, banking, and government services.",
+        "There is no mandatory address registration in Australia — update your address with Medicare, your employer, and your bank when you move in.",
+        "If eligible for Medicare (Australia's public healthcare system), enrol at a Services Australia centre with your passport, visa grant notice, and proof of address.",
+        "Permanent residents and citizens have full Medicare coverage. Subclass 482 holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden) are also eligible — check at servicesaustralia.gov.au.",
+        "Many visa pathways lead to permanent residency after 2–5 years — your migration agent can advise on the right timing to apply."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Commonwealth Bank and ANZ allow pre-arrival account opening — transfer funds before you land so rent money is ready from day one.",
+      "items": [
+        "Commonwealth Bank, ANZ, Westpac, and NAB (the Big Four Australian banks) all operate widely in Brisbane with English-language banking and plentiful branches.",
+        "Commonwealth Bank and ANZ offer pre-arrival account opening — apply online and activate the account when you land.",
+        "To open an account you need: passport, visa grant notice, and an Australian address.",
+        "Apply for your TFN (Tax File Number) immediately after arrival — without it, banks withhold tax at the highest marginal rate.",
+        "Wise and Revolut work well for international transfers while your Australian account is being set up."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Brisbane is the most affordable of Australia's three major cities for housing. Rents are significantly lower than Sydney or Melbourne. Family-friendly areas cluster in the inner north-west (New Farm, Paddington) and eastern prestige suburbs (Ascot, Hamilton).",
+      "bestAreas": [
+        "New Farm",
+        "Paddington",
+        "Ascot",
+        "Hamilton",
+        "Toowong"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Brisbane' or the suburb name inside each platform to filter local listings.",
+        "Tip: Brisbane's vacancy rate is very low — have references and income documents ready before your first inspection."
+      ],
+      "searchPortals": [
+        {
+          "label": "Domain.com.au — one of Australia's two largest property portals",
+          "url": "https://www.domain.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Realestate.com.au — Australia's largest property platform",
+          "url": "https://www.realestate.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Flatmates.com.au — useful for furnished short-term rooms while searching for a full family property",
+          "url": "https://www.flatmates.com.au",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Brisbane Expats Housing' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Brisbane+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, inner city or New Farm: $850–$1,080/month",
+        "3-bed house, Ascot or Hamilton: $1,385–$1,985/month",
+        "3-bed house, Paddington or Toowong: $1,190–$1,785/month",
+        "3-bed apartment, inner suburbs: $990–$1,385/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa grant notice",
+        "Two most recent payslips or employment contract",
+        "3 months of personal bank statements",
+        "Reference from a previous landlord",
+        "4 weeks bond plus 2 weeks rent in advance — standard for most Queensland properties"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Brisbane has a solid school system with strong public and private options. Queensland state schools are free and reliable, and the GPS network of elite independents is Brisbane's most prestigious school circuit.",
+      "publicSystem": "Queensland state schools are free and open to all residents. Quality is strong in Ascot, Hamilton, and Paddington zones. Many expat families use state schools successfully and find the community welcoming.",
+      "internationalOptions": "Brisbane's private school sector includes the GPS (Great Public Schools — Brisbane's network of elite independent and grammar schools), Catholic schools, and a small number of IB schools. Fees range from roughly $6,300 to $16,380+ per year. GPS schools fill well in advance.",
+      "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families.",
+      "tip": "Contact GPS school registrars 12–18 months before your arrival — the most popular schools do not keep extended waiting lists and give priority to early enquiries.",
+      "options": [
+        {
+          "type": "Queensland state schools (public, zoned)",
+          "description": "Free, open to all residents. Quality is strong in Ascot, Hamilton, Paddington, and Toowong zones.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "GPS network — elite independent and grammar schools",
+          "description": "Brisbane's most prestigious private schools, known for strong academic and sports programmes. Competitive entry, early application required.",
+          "fees": "$8,820–$16,380+/year typical"
+        },
+        {
+          "type": "IB curriculum international schools",
+          "description": "A small but growing number of IB Diploma and PYP schools in Brisbane — fewer options than Sydney or Melbourne.",
+          "fees": "$8,820–$13,860/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Brisbane childcare is more affordable than Sydney or Melbourne and follows the same national CCS (Child Care Subsidy) structure. Long day care centres are the main form for under-5s.",
+      "daycareItems": [
+        "Long day care centres accept children from 6 weeks old — the main childcare form in Brisbane for working parents",
+        "Typical fees before subsidy: $50–$76/day. After the CCS (Child Care Subsidy) for eligible families, out-of-pocket costs reduce significantly",
+        "The CCS is income-tested and available to permanent residents and eligible visa holders — check at servicesaustralia.gov.au",
+        "Popular centres in New Farm and Ascot have 6–12 month waiting lists — register before or immediately on arrival"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge $9–$13/hr — more affordable than Sydney or Melbourne",
+        "Nanny-sharing is practised among expat families in Ascot and New Farm — reduces hourly cost significantly",
+        "Au pairs are popular for families with outdoor-oriented lifestyles — typically $88–$126/week plus a private room and board",
+        "Start your nanny search 6–8 weeks before arrival"
+      ],
+      "whereToFindItems": [
+        "Care.com Australia — the primary platform for nanny and babysitter listings in Brisbane",
+        "Gumtree Australia — widely used for nanny listings and short-term childcare in Brisbane",
+        "Search 'Brisbane Expat Parents' or 'New Farm Mums Brisbane' on Google — community groups for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Check Medicare eligibility at servicesaustralia.gov.au before arriving — eligibility depends on your visa subclass and home country's bilateral health agreement with Australia.",
+      "items": [
+        "Australia's public healthcare system (Medicare) is free for eligible residents. Permanent residents, citizens, and Subclass 482 holders from reciprocal agreement countries have access.",
+        "Register with Medicare at a Services Australia centre with your passport, visa grant notice, and proof of address.",
+        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans typically cost $158–$353/month.",
+        "Private GP visit without bulk billing: roughly $32–$63. Most bulk-billing GPs in Brisbane are accessible for families.",
+        "Queensland Children's Hospital in South Brisbane and Royal Brisbane and Women's Hospital are the two most recommended hospitals for families in the city."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 86,
+      "summary": "Brisbane is a very safe city for families with low violent crime rates.",
+      "items": [
+        "Violent crime is rare — Brisbane is one of Australia's safest major cities for day-to-day family life",
+        "Main risk is opportunistic petty theft — keep bags secure in the CBD and at large public events",
+        "Traffic safety is the primary daily concern — Brisbane is a car-dependent city; active transport infrastructure is improving but limited",
+        "Sun and heat are genuine health risks — Queensland's UV index is extreme year-round; SPF 50+, hats, and shade are essential for children",
+        "Family suburbs (New Farm, Ascot, Paddington, Hamilton) are very safe with strong community networks"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,385 / month",
+      "familyDinner": "~$38",
+      "nannyRate": "~$11 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Australia Subclass 482 TSS Visa — immi.homeaffairs.gov.au",
+          "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-skill-shortage-482",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "Medicare eligibility — Services Australia",
+          "url": "https://www.servicesaustralia.gov.au/who-can-get-medicare",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Brisbane Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Brisbane",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Brisbane Expats' or 'Expat Family Brisbane' on Google — community with housing, school, and settlement advice",
+        "searchQuery": "Brisbane Expats Facebook group",
+        "url": "https://www.google.com/search?q=Brisbane+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "auckland-nz",
+    "citySlug": "auckland",
+    "countrySlug": "new-zealand",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "tagline": "English-speaking, safe, and beautifully positioned between city and nature",
+    "summary": "Auckland is New Zealand's largest city and the entry point for most relocating families. It offers excellent public and private schools, low crime, and a stunning natural setting of harbours, beaches, and volcanic parks. The trade-off is cost — Auckland is the most expensive city in New Zealand — and the AEWV (Accredited Employer Work Visa) requires a confirmed employer before you move.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Secure a job offer from an AEWV-accredited employer before applying — the AEWV (Accredited Employer Work Visa — New Zealand's main employer-sponsored work visa) cannot be applied for without one",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — Auckland's rental market is tight, particularly in Ponsonby, Remuera, and Takapuna",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to private or integrated schools 12–18 months before your start date — popular schools in Remuera and the North Shore have long waiting lists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your IRD number (New Zealand tax ID from Inland Revenue) at ird.govt.nz immediately on arrival — required for employment and banking",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a New Zealand bank account — ANZ NZ and ASB allow applications before or shortly after arrival",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with a local GP in your first week — New Zealand's public health system (Te Whatu Ora — Health New Zealand) covers most work visa holders of 2 years or longer",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Register for long day care or kindergarten as soon as your arrival date is confirmed — popular centres have 6–12 month waiting lists",
+        "targetSection": "childcare"
+      },
+      {
+        "label": "Arrange comprehensive vehicle and contents insurance on arrival — New Zealand has no mandatory third-party liability insurance for vehicles",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "English-speaking families seeking a safe, outdoors-focused city without a language barrier",
+        "Families who prioritise beaches, national parks, and a genuine outdoor lifestyle for children",
+        "Parents looking for a strong public and private school system with English as the sole language of instruction",
+        "Families able to secure employer sponsorship before moving"
+      ],
+      "watchOutFor": [
+        "Auckland is expensive — housing costs are high relative to salaries and have risen sharply in recent years",
+        "The AEWV requires a confirmed accredited employer before you can apply — job-hunting from abroad is essential",
+        "Auckland traffic is genuinely congested — the city's road network has not kept pace with population growth",
+        "Distance from the rest of the world — long-haul flights to Europe or North America are expensive and time-consuming"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "New Zealand operates an employer-accreditation system for most skilled migrants. The AEWV (Accredited Employer Work Visa) is the main work visa and requires a confirmed job with an accredited employer. An NZeTA (New Zealand Electronic Travel Authority) is sufficient for short scouting trips.",
+      "tip": "Confirm your employer's AEWV accreditation status before accepting a job offer — not all employers are accredited and gaining new accreditation adds months to the timeline.",
+      "options": [
+        {
+          "type": "NZeTA — New Zealand Electronic Travel Authority",
+          "anchor": "visa-tourist",
+          "detailTitle": "NZeTA — scouting trip rules",
+          "duration": "Up to 3 months",
+          "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
+          "details": [
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an NZeTA online — costs ~$14 and is typically approved within minutes to a few days.",
+            "Maximum stay: 3 months. Cannot be extended or converted into a work visa from inside New Zealand.",
+            "No right to work — this includes remote work for a non-NZ employer, which is not permitted on a visitor entry.",
+            "Good use: 2–4 weeks scouting Ponsonby, Remuera, Takapuna, and the North Shore for schools, housing, and neighbourhoods.",
+            "Apply via immigration.govt.nz — the official Immigration New Zealand portal."
+          ],
+          "officialLink": {
+            "label": "New Zealand NZeTA visitor visa official immigration.govt.nz"
+          }
+        },
+        {
+          "type": "AEWV — Accredited Employer Work Visa",
+          "anchor": "visa-dnv",
+          "detailTitle": "AEWV — employer-sponsored work visa",
+          "duration": "Up to 3 years, renewable",
+          "description": "The main work visa for skilled migrants. Requires a job offer from an AEWV-accredited employer paying at or above the median wage.",
+          "details": [
+            "Your employer must be AEWV-accredited by Immigration New Zealand before they can sponsor you — confirm their accreditation status before accepting any offer.",
+            "The job must be paid at or above the median NZ wage — verify the current threshold at immigration.govt.nz before applying, as it is reviewed regularly.",
+            "Required documents: passport, job offer letter, proof of relevant qualifications or work experience, and health and police clearance.",
+            "Apply online at immigration.govt.nz — processing typically takes 3–8 weeks for a complete application.",
+            "Dependants (spouse and children) can be included as secondary applicants with full work and school rights in New Zealand."
+          ],
+          "officialLink": {
+            "label": "New Zealand Accredited Employer Work Visa official immigration.govt.nz"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & IRD Number",
+      "tip": "Apply for your IRD number at ird.govt.nz within your first week — you need it before your first payslip and for opening a bank account.",
+      "items": [
+        "Apply for your IRD number (Inland Revenue Department number — New Zealand's equivalent of a tax ID) at ird.govt.nz as soon as you arrive. Required for employment, banking, and most government services.",
+        "There is no mandatory address registration system in New Zealand — update your address with your employer, bank, and GP when you move in.",
+        "Work visa holders on a visa of 2 years or more are eligible to enrol with a GP and access most public health services under Te Whatu Ora (Health New Zealand — the public health authority).",
+        "ACC (Accident Compensation Corporation — New Zealand's no-fault accident compensation scheme) covers all residents and visitors for injury costs, regardless of visa status.",
+        "After 5 years of continuous lawful residence, you can apply for New Zealand Permanent Residence under the Skilled Migrant Category."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "ANZ NZ and ASB allow account applications before or shortly after arrival — bring your passport and visa approval letter to activate the account.",
+      "items": [
+        "ANZ New Zealand, ASB, Westpac NZ, BNZ (Bank of New Zealand), and Kiwibank are the main banks serving expats. All have English-language banking and plentiful Auckland branches.",
+        "ANZ NZ and ASB are most commonly used by incoming expat families — both have streamlined online application processes.",
+        "To open an account you need: passport, visa approval letter, and a New Zealand address (temporary accommodation is acceptable initially).",
+        "Apply for your IRD number (tax ID) immediately — without it, banks withhold tax at the non-declaration rate on any interest earned.",
+        "Wise and Revolut work well for international transfers while your New Zealand account is being set up."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Auckland is New Zealand's most expensive city for housing. Family-friendly areas cluster in the inner suburbs (Ponsonby, Parnell), eastern bays (Remuera, Mission Bay), and the North Shore (Takapuna, Devonport).",
+      "bestAreas": [
+        "Ponsonby",
+        "Remuera",
+        "Takapuna",
+        "Devonport",
+        "Parnell"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Auckland' or the suburb name inside each platform to filter local listings.",
+        "Tip: the Auckland rental market is tight — be ready to apply on the same day as your viewing with all documents prepared."
+      ],
+      "searchPortals": [
+        {
+          "label": "TradeMe Property — New Zealand's largest property rental platform",
+          "url": "https://www.trademe.co.nz/property",
+          "isVerified": true
+        },
+        {
+          "label": "Realestate.co.nz — New Zealand's second largest property portal",
+          "url": "https://www.realestate.co.nz",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Auckland Expats Housing' (direct landlord listings and community advice)",
+          "url": "https://www.google.com/search?q=Auckland+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Ponsonby or Parnell: $1,060–$1,415/month",
+        "3-bed house, Remuera: $1,890–$2,655/month",
+        "3-bed house, Takapuna (North Shore): $1,650–$2,240/month",
+        "3-bed house, Devonport: $1,535–$2,125/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa approval letter",
+        "Two most recent payslips or employment contract",
+        "3 months of personal bank statements",
+        "Reference from a previous landlord — important in the Auckland market",
+        "Bond of up to 4 weeks rent — lodged with Tenancy Services (the government bond-holding service)"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Auckland has a strong school system with well-regarded public schools and an established private sector. Public school quality is indicated by decile ratings — higher decile schools are in more affluent suburbs.",
+      "publicSystem": "New Zealand public schools are free and open to all residents. Schools are rated by decile (1–10, with 10 indicating least socioeconomic deprivation). High-decile public schools in Remuera, Takapuna, and Devonport are genuinely excellent — many expat families use them without going private.",
+      "internationalOptions": "Auckland has a well-established private school sector including IB, British curriculum, and traditional NZ independent schools. Fees range from $7,080 to $20,650+ per year. Popular schools in Remuera and the North Shore have long waiting lists — apply early.",
+      "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families. Te reo Māori (New Zealand's indigenous language) is present in school culture; many schools offer bilingual or immersion options.",
+      "tip": "For private schools, contact the registrar within the first month of arrival — the most popular Auckland schools have multi-year waiting lists and give priority to early applications.",
+      "options": [
+        {
+          "type": "High-decile New Zealand state schools (public, zoned)",
+          "description": "Free, open to all residents. High-decile zones in Remuera, Takapuna, and Devonport produce strong academic outcomes — many expat families choose these over private.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Independent private schools (NZ curriculum and integrated)",
+          "description": "Traditional choice for expat families seeking structured environments. Strong academic records and established reputations.",
+          "fees": "$7,080–$17,700+/year typical"
+        },
+        {
+          "type": "IB curriculum international schools",
+          "description": "A small number of IB Diploma and PYP (Primary Years Programme) schools in Auckland, particularly in the inner suburbs.",
+          "fees": "$11,800–$20,650+/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Auckland has a mix of licensed early childhood education (ECE) centres and home-based care. The government subsidises 20 hours/week of ECE for children aged 3–5.",
+      "daycareItems": [
+        "Licensed ECE (Early Childhood Education) centres accept children from 3 months old — the main form of childcare in Auckland for working parents",
+        "Typical fees: $35–$59/day. Children aged 3–5 receive 20 hours/week of government-funded ECE (Early Childhood Education subsidy) — this significantly reduces costs for that age group",
+        "Funded ECE hours can be used at any licensed centre — confirm your child's eligibility at education.govt.nz",
+        "Popular centres in Ponsonby, Remuera, and the North Shore have 3–9 month waiting lists — register as soon as your arrival date is confirmed"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge $12–$17/hr — Auckland nanny rates reflect the city's cost of living",
+        "Nanny-sharing is common among expat families in Remuera and Takapuna — reduces the hourly cost significantly",
+        "Au pairs are a popular option for families with outdoor lifestyles — typically $118–$165/week plus a private room and board",
+        "Start your nanny search at least 6–8 weeks before arrival — Auckland's nanny market is competitive"
+      ],
+      "whereToFindItems": [
+        "Seek.co.nz — New Zealand's main job platform, widely used for nanny and childcare listings",
+        "TradeMe Jobs — also used for nanny and au pair listings in Auckland",
+        "Search 'Auckland Expat Parents' or 'Remuera Mums Auckland' on Google — community groups for personal recommendations and nanny-sharing"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register with a GP as soon as you arrive — publicly funded GP visits are subsidised for eligible visa holders and enrolling early reduces your out-of-pocket costs.",
+      "items": [
+        "New Zealand's public healthcare system (Te Whatu Ora — Health New Zealand) covers permanent residents and work visa holders on visas of 2 years or more. Enrol with a local GP within the first week.",
+        "Enrolled GP visits are subsidised — typically $9–$24 per consultation for adults, free for children under 14. Walk-in and non-enrolled visits cost $47–$89.",
+        "ACC (Accident Compensation Corporation) covers all accident-related injuries for everyone in New Zealand — including visitors — regardless of visa status. No-fault scheme, no excess.",
+        "For visa holders not yet eligible for public funding, arrange IPMI (International Private Medical Insurance) before arrival — family plans typically cost $177–$354/month.",
+        "Auckland City Hospital and Starship Children's Hospital (New Zealand's national children's hospital, on the same campus) are the top public hospitals for families in Auckland."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 82,
+      "summary": "Auckland is a safe city overall, though petty property crime and occasional youth crime exist in some suburbs.",
+      "items": [
+        "Violent crime is relatively rare in family suburbs — Remuera, Takapuna, Devonport, and Ponsonby are consistently low-crime areas",
+        "Vehicle break-ins and opportunistic property theft are the main daily risk — don't leave valuables visible in parked cars",
+        "Traffic is the primary daily safety concern — Auckland has high rates of road accidents relative to its population; take care at pedestrian crossings",
+        "No mandatory third-party liability insurance for vehicles — arrange comprehensive cover before driving, as an accident with an uninsured driver leaves you without recourse",
+        "Natural hazard awareness: Auckland sits on a volcanic field — earthquakes and volcanic activity are low-probability but real risks; familiarise yourself with Civil Defence NZ guidance"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,890 / month",
+      "familyDinner": "~$53",
+      "nannyRate": "~$14 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "New Zealand Accredited Employer Work Visa — immigration.govt.nz",
+          "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "Te Whatu Ora — Health New Zealand eligibility",
+          "url": "https://www.tewhatuora.govt.nz",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Auckland Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Auckland",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Auckland Expats' or 'Expat Family Auckland NZ' on Google — active community with housing, school, and settlement advice",
+        "searchQuery": "Auckland Expats Facebook group",
+        "url": "https://www.google.com/search?q=Auckland+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "wellington-nz",
+    "citySlug": "wellington",
+    "countrySlug": "new-zealand",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "tagline": "New Zealand's compact, walkable capital — strong schools and a tight-knit expat community",
+    "summary": "Wellington is New Zealand's capital and a favourite of families who want a smaller, more walkable city without sacrificing school quality or safety. It has a thriving public service and tech sector, a lively cultural scene, and lower housing costs than Auckland. The main trade-offs are an exposed, often very windy climate and a smaller choice of international schools than Auckland.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Secure a job offer from an AEWV-accredited employer before applying — the AEWV (Accredited Employer Work Visa — New Zealand's main employer-sponsored work visa) requires a confirmed accredited employer",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — Wellington's rental market is tight, particularly in Kelburn, Wadestown, and Thorndon",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to private or integrated schools 12 months before your start date — popular schools in Kelburn and the eastern suburbs fill early",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your IRD number (New Zealand tax ID from Inland Revenue) at ird.govt.nz immediately on arrival — required for employment and banking",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a New Zealand bank account — ANZ NZ and Kiwibank branches are accessible across Wellington",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with a local GP in your first week — New Zealand's public health system (Te Whatu Ora — Health New Zealand) covers most work visa holders of 2 years or longer",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Register for early childhood education as soon as your arrival date is confirmed — popular ECE centres in Kelburn and Karori have waiting lists",
+        "targetSection": "childcare"
+      },
+      {
+        "label": "Arrange comprehensive vehicle and contents insurance on arrival — New Zealand has no mandatory third-party liability insurance for vehicles",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who prefer a compact, walkable city over a sprawling car-dependent one",
+        "Parents working in New Zealand's public service, tech, or creative sectors — Wellington is the hub for all three",
+        "Families who want strong public schools without paying private school fees",
+        "Families who value a tight-knit expat community where new arrivals integrate quickly"
+      ],
+      "watchOutFor": [
+        "Wellington's wind is genuinely strong — the city is famously exposed and the weather changes rapidly",
+        "A smaller choice of international schools than Auckland — research options before committing",
+        "The AEWV requires a confirmed accredited employer — Wellington's job market is smaller than Auckland's",
+        "Wellington is earthquake-prone — the city sits on an active fault; familiarise yourself with Civil Defence NZ guidance"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "New Zealand operates an employer-accreditation system for most skilled migrants. The AEWV (Accredited Employer Work Visa) is the main work visa and requires a confirmed job with an accredited employer. An NZeTA (New Zealand Electronic Travel Authority) is sufficient for short scouting trips.",
+      "tip": "Confirm your employer's AEWV accreditation status before accepting a job offer — not all employers are accredited and gaining new accreditation adds months to the timeline.",
+      "options": [
+        {
+          "type": "NZeTA — New Zealand Electronic Travel Authority",
+          "anchor": "visa-tourist",
+          "detailTitle": "NZeTA — scouting trip rules",
+          "duration": "Up to 3 months",
+          "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
+          "details": [
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an NZeTA online — costs ~$14 and is typically approved within minutes to a few days.",
+            "Maximum stay: 3 months. Cannot be extended or converted into a work visa from inside New Zealand.",
+            "Good use: 2–3 weeks scouting Kelburn, Wadestown, Karori, and Thorndon for schools, housing, and neighbourhoods.",
+            "Apply via immigration.govt.nz — the official Immigration New Zealand portal."
+          ],
+          "officialLink": {
+            "label": "New Zealand NZeTA visitor visa official immigration.govt.nz"
+          }
+        },
+        {
+          "type": "AEWV — Accredited Employer Work Visa",
+          "anchor": "visa-dnv",
+          "detailTitle": "AEWV — employer-sponsored work visa",
+          "duration": "Up to 3 years, renewable",
+          "description": "The main work visa for skilled migrants. Requires a job offer from an AEWV-accredited employer paying at or above the median wage.",
+          "details": [
+            "Your employer must be AEWV-accredited by Immigration New Zealand before they can sponsor you — confirm their accreditation status before accepting any offer.",
+            "The job must be paid at or above the median NZ wage — verify the current threshold at immigration.govt.nz before applying.",
+            "Required documents: passport, job offer letter, proof of qualifications or work experience, and health and police clearance.",
+            "Apply online at immigration.govt.nz — processing typically takes 3–8 weeks for a complete application.",
+            "Dependants (spouse and children) can be included as secondary applicants with full work and school rights in New Zealand."
+          ],
+          "officialLink": {
+            "label": "New Zealand Accredited Employer Work Visa official immigration.govt.nz"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & IRD Number",
+      "tip": "Apply for your IRD number at ird.govt.nz within your first week — you need it before your first payslip and for opening a bank account.",
+      "items": [
+        "Apply for your IRD number (Inland Revenue Department number — New Zealand's equivalent of a tax ID) at ird.govt.nz as soon as you arrive. Required for employment, banking, and most government services.",
+        "There is no mandatory address registration system in New Zealand — update your address with your employer, bank, and GP when you move in.",
+        "Work visa holders on a visa of 2 years or more are eligible to enrol with a GP and access most public health services under Te Whatu Ora (Health New Zealand).",
+        "ACC (Accident Compensation Corporation — New Zealand's no-fault accident compensation scheme) covers all residents and visitors for injury costs, regardless of visa status.",
+        "After 5 years of continuous lawful residence, you can apply for New Zealand Permanent Residence under the Skilled Migrant Category."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "ANZ NZ and Kiwibank are the most accessible banks for new arrivals in Wellington — bring your passport and visa approval letter to open an account.",
+      "items": [
+        "ANZ New Zealand, ASB, BNZ (Bank of New Zealand), Westpac NZ, and Kiwibank are the main banks in Wellington. All have English-language banking and central Wellington branches.",
+        "ANZ NZ and ASB allow online applications before or shortly after arrival — activate the account in-branch with your passport and visa letter.",
+        "To open an account you need: passport, visa approval letter, and a New Zealand address.",
+        "Apply for your IRD number (tax ID) immediately — without it, banks withhold tax at the non-declaration rate on any interest.",
+        "Wise and Revolut work well for international transfers while your New Zealand account is being set up."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Wellington is more affordable than Auckland. Family-friendly areas include the inner suburbs (Kelburn, Wadestown), the eastern suburbs (Karori, Khandallah), and the waterfront area (Thorndon).",
+      "bestAreas": [
+        "Kelburn",
+        "Wadestown",
+        "Karori",
+        "Khandallah",
+        "Thorndon"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Wellington' or the suburb name inside each platform to filter local listings.",
+        "Tip: Wellington's rental market is small and moves fast — be ready to apply immediately after viewing with all documents prepared."
+      ],
+      "searchPortals": [
+        {
+          "label": "TradeMe Property — New Zealand's largest property rental platform",
+          "url": "https://www.trademe.co.nz/property",
+          "isVerified": true
+        },
+        {
+          "label": "Realestate.co.nz — New Zealand's second largest property portal",
+          "url": "https://www.realestate.co.nz",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Wellington Expats Housing' (direct landlord listings and community advice)",
+          "url": "https://www.google.com/search?q=Wellington+Expats+Housing+New+Zealand+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Thorndon or Te Aro: $945–$1,240/month",
+        "3-bed house, Kelburn or Wadestown: $1,535–$2,125/month",
+        "3-bed house, Karori: $1,300–$1,770/month",
+        "3-bed house, Khandallah: $1,180–$1,650/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and visa approval letter",
+        "Two most recent payslips or employment contract",
+        "3 months of personal bank statements",
+        "Reference from a previous landlord",
+        "Bond of up to 4 weeks rent — lodged with Tenancy Services"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Wellington has a strong public school system well suited to expat families. International school options are limited — most expat families use the state system successfully.",
+      "publicSystem": "New Zealand public schools are free and open to all residents. Wellington's high-decile state schools in Kelburn, Karori, and Khandallah are among the best in the country and are used successfully by most expat families. The state system is the default choice here — not a fallback.",
+      "internationalOptions": "Wellington has a very small number of private and integrated schools. There are no dedicated full-fee international curriculum schools in central Wellington — families seeking IB or British curriculum programmes typically look at Auckland or consider the state system.",
+      "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families. Te reo Māori immersion schools (kura kaupapa) are available for families interested in bilingual education.",
+      "tip": "Start the school enrolment process as soon as your arrival date is confirmed — high-decile state schools have zoned enrolment and out-of-zone applications may be limited.",
+      "options": [
+        {
+          "type": "High-decile New Zealand state schools (public, zoned)",
+          "description": "Free, open to all residents in zone. Kelburn, Karori, and Khandallah zones produce strong academic outcomes — the standard choice for expat families in Wellington.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Integrated private schools (faith-based and independent)",
+          "description": "A small number of private and Catholic integrated schools in Wellington. Offer NZ curriculum with a different character or ethos.",
+          "fees": "$1,770–$8,850+/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Wellington has a good supply of licensed ECE (Early Childhood Education) centres. The government funds 20 hours/week of ECE for children aged 3–5, reducing costs significantly.",
+      "daycareItems": [
+        "Licensed ECE (Early Childhood Education) centres accept children from 3 months old — the main childcare form in Wellington for working parents",
+        "Typical fees: $32–$53/day. Children aged 3–5 receive 20 hours/week of government-funded ECE — this significantly reduces out-of-pocket costs for that age group",
+        "Funded ECE hours can be used at any licensed centre — confirm your child's eligibility at education.govt.nz",
+        "Popular centres in Kelburn and Karori have 2–6 month waiting lists — register as soon as your arrival date is confirmed"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge $11–$15/hr — slightly lower than Auckland but still reflecting Wellington's cost of living",
+        "Nanny-sharing is common among expat families in Kelburn and Wadestown — reduces hourly cost significantly",
+        "Au pairs are a popular option — typically $106–$148/week plus a private room and board",
+        "Start your nanny search 6–8 weeks before arrival — Wellington's nanny market is small"
+      ],
+      "whereToFindItems": [
+        "Seek.co.nz — New Zealand's main job platform, used for nanny and childcare listings in Wellington",
+        "TradeMe Jobs — also used for nanny and au pair listings",
+        "Search 'Wellington Expat Parents' or 'Kelburn Wellington Parents' on Google — local community groups for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register with a GP as soon as you arrive — subsidised GP visits for eligible visa holders require enrolment; walk-in rates are significantly higher.",
+      "items": [
+        "New Zealand's public healthcare system (Te Whatu Ora — Health New Zealand) covers permanent residents and work visa holders on visas of 2 years or more. Enrol with a local GP within the first week.",
+        "Enrolled GP visits are subsidised — typically $9–$24 for adults, free for children under 14. Walk-in and non-enrolled visits cost $47–$89.",
+        "ACC (Accident Compensation Corporation) covers all accident-related injuries for everyone in New Zealand regardless of visa status — no excess, no-fault scheme.",
+        "For visa holders not yet eligible for public funding, arrange IPMI (International Private Medical Insurance) before arrival — family plans typically cost $165–$325/month.",
+        "Wellington Regional Hospital and Starship-affiliated Wellington Children's Hospital provide public hospital care — both are well-regarded for family health services."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 84,
+      "summary": "Wellington is one of New Zealand's safest cities for families, with very low violent crime rates.",
+      "items": [
+        "Violent crime is rare — Wellington is consistently one of New Zealand's safest cities for families",
+        "Petty theft and vehicle break-ins are the main daily risk — keep valuables out of parked cars",
+        "Earthquake risk is real — Wellington sits on an active fault line; familiarise yourself with Civil Defence NZ guidance and have a household emergency kit",
+        "Wind is a genuine daily hazard for children — Wellington's gusts can be sudden and strong; cycle helmets and outdoor clothing are essential year-round",
+        "Family suburbs (Kelburn, Karori, Wadestown, Khandallah) are very safe with active community networks"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,590 / month",
+      "familyDinner": "~$47",
+      "nannyRate": "~$12 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "New Zealand Accredited Employer Work Visa — immigration.govt.nz",
+          "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "Te Whatu Ora — Health New Zealand",
+          "url": "https://www.tewhatuora.govt.nz",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Wellington Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Wellington",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Wellington Expats' or 'Expat Family Wellington NZ' on Google — community with housing, school, and settlement advice",
+        "searchQuery": "Wellington Expats Facebook group",
+        "url": "https://www.google.com/search?q=Wellington+Expats+Facebook+group+New+Zealand",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "milan-it",
+    "citySlug": "milan",
+    "countrySlug": "italy",
+    "city": "Milan",
+    "country": "Italy",
+    "tagline": "Italy's business capital — cosmopolitan, well-connected, and increasingly expat-friendly",
+    "summary": "Milan is Italy's economic engine and the most international city in the country. It offers excellent connectivity, a growing international school scene, and access to world-class healthcare. The trade-off is cost — Milan is one of the most expensive Italian cities — and a complex bureaucracy that requires patience and often a local accountant or lawyer to navigate.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival — bring your passport, visa, and accommodation details",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Get your Codice Fiscale (Italian tax code — required for everything: renting, banking, school enrolment, and healthcare) at any Agenzia delle Entrate (tax authority) office",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Milan's rental market is competitive, especially for family-sized apartments",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your planned start date — Milan's international schools have limited places and long waiting lists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to access Italy's SSN (Servizio Sanitario Nazionale — public health system)",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open an Italian bank account — Intesa Sanpaolo and UniCredit are the two largest banks with good English-language service",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Find a nanny or nursery as soon as your arrival date is confirmed — asili nido (public nurseries) have long waiting lists in Milan",
+        "targetSection": "childcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families relocating for corporate roles in finance, fashion, design, or consulting",
+        "EU/EEA families who want straightforward residency registration without a visa process",
+        "Parents who want access to an established international school circuit in a major European city",
+        "Families who value proximity to the Alps, Lake Como, and easy access to the rest of Europe"
+      ],
+      "watchOutFor": [
+        "Milan is expensive — rent and international school fees are high relative to most of Italy",
+        "Italian bureaucracy is genuinely slow — the Permesso di Soggiorno and school registration processes require patience and preparation",
+        "Summer in Milan (July–August) is very hot and humid and the city largely empties — not the best time to arrive",
+        "Air quality can be poor in winter — the Po Valley traps pollution; families with asthma or young children should factor this in"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move to Italy freely — only a Codice Fiscale and address registration are needed after arrival. Non-EU families need a D visa before travelling. Italy launched a Digital Nomad Visa in 2024 for non-EU remote workers earning at least $30,240/year.",
+      "tip": "Book your Questura appointment to apply for your Permesso di Soggiorno (residence permit) immediately on arrival — slots in Milan fill quickly and delays risk overstaying your entry stamp.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Milan",
+          "duration": "No visa required",
+          "description": "Move freely to Italy with no visa. First steps after arrival: Codice Fiscale and dichiarazione di residenza.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Italy.",
+            "Get your Codice Fiscale (Italian tax code — a personal ID number required for every transaction: renting, banking, school enrolment, healthcare) at any Agenzia delle Entrate (tax authority) office within your first week. Bring your passport.",
+            "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office, part of your local Comune — city hall) within 90 days of arrival. Bring your passport, Codice Fiscale, and rental contract.",
+            "After registering, apply for your SPID (Sistema Pubblico di Identità Digitale — Italy's digital identity for accessing government services online) — required for school registration and many public services.",
+            "After 5 years of continuous legal residence, you can apply for a permanent EU residency permit."
+          ]
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip before committing to the move. No right to work, no extensions, cannot be converted to residency.",
+          "details": [
+            "90 days maximum across the entire Schengen Area in any 180-day period.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Italy — you must apply for a long-stay D visa at an Italian consulate in your home country before travelling.",
+            "Good use: 2–3 weeks scouting Porta Venezia, Isola, Brera, and Navigli for schools, housing, and neighbourhoods.",
+            "Do not attempt long-term stays on rolling tourist entries — Italian immigration enforces Schengen limits."
+          ]
+        },
+        {
+          "type": "Italy Digital Nomad Visa (non-EU remote workers)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Italy Digital Nomad Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "For non-EU remote workers earning at least $30,240/year from non-Italian employers or clients. Apply at an Italian consulate before travelling.",
+          "details": [
+            "Income requirement: at least $30,240/year from remote employment or freelance work for non-Italian clients.",
+            "Required documents: valid passport, proof of remote employment or freelance contracts, 3 months of bank statements, and private health insurance valid in Italy.",
+            "Apply at the Italian consulate in your home country before travelling — you cannot switch to this visa from inside Italy on a tourist entry.",
+            "After arriving, apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days — bring your passport, visa, and rental contract.",
+            "Get your Codice Fiscale (Italian tax code) at any Agenzia delle Entrate office immediately — required before you can rent a flat, open a bank account, or register children in school."
+          ],
+          "officialLink": {
+            "label": "Italy Digital Nomad Visa official Ministero degli Affari Esteri"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Codice Fiscale",
+      "tip": "Get your Codice Fiscale within the first week — without it you cannot sign a rental contract, open a bank account, or register children in school.",
+      "items": [
+        "Get your Codice Fiscale (Italian tax code — a personal ID number required for every transaction in Italy) at any Agenzia delle Entrate (tax authority) office. Bring your passport. Takes about 20 minutes and is issued on the spot.",
+        "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your Comune — city hall) within 90 days of arrival if you are EU/EEA. Bring your passport, Codice Fiscale, and rental contract.",
+        "Non-EU residents must apply for a Permesso di Soggiorno (residence permit) at the local Questura (police headquarters) within 8 working days of arrival. Book an appointment immediately — slots in Milan fill up.",
+        "Apply for your SPID (Sistema Pubblico di Identità Digitale — Italy's digital identity platform for public services) after registration — required for school enrolment, healthcare registration, and many online government services.",
+        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to get your tessera sanitaria (health card) and access Italy's SSN (Servizio Sanitario Nazionale — public health system)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your Codice Fiscale and proof of address before any Italian bank will open an account — get both sorted in week one.",
+      "items": [
+        "Intesa Sanpaolo and UniCredit are Italy's two largest banks and have the most accessible English-language service in Milan. Both are standard choices for expat families.",
+        "To open an account you need: passport, Codice Fiscale, and proof of Italian address (rental contract or utility bill). Some branches require an appointment.",
+        "N26 (Germany-based neobank) operates in Italy and is a good bridge option while waiting for a traditional account — open online with just a passport, no Italian address required initially.",
+        "Wise and Revolut are widely used for international transfers and foreign currency spending while your Italian banking is being set up.",
+        "Italy is more cash-reliant than northern European cities — keep $160–$215 in cash for markets, small restaurants, and taxis that do not accept cards."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Milan is Italy's most expensive city for housing. Family-friendly areas cluster in Porta Venezia, Isola, Brera, Navigli, and Sempione — all within easy reach of international schools and the city centre.",
+      "bestAreas": [
+        "Porta Venezia",
+        "Isola",
+        "Brera",
+        "Navigli",
+        "Sempione / De Angeli"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Milano' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: arrive in Milan with a short-stay Airbnb or serviced apartment booked for the first 2–4 weeks — the rental market moves fast and you need time to view properties in person."
+      ],
+      "searchPortals": [
+        {
+          "label": "Immobiliare.it — Italy's largest property rental platform",
+          "url": "https://www.immobiliare.it",
+          "isVerified": true
+        },
+        {
+          "label": "Idealista.it — major Italian and European property portal",
+          "url": "https://www.idealista.it",
+          "isVerified": true
+        },
+        {
+          "label": "Casa.it — Italian property portal with strong Milan listings",
+          "url": "https://www.casa.it",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Milan Expats Housing' or 'Appartamenti Milano' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Milan+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Porta Venezia or Isola: $1,510–$2,050/month",
+        "2-bed apartment, Brera or Navigli: $2,160–$3,025/month",
+        "3-bed apartment, Sempione or De Angeli: $2,590–$3,780/month",
+        "3-bed apartment, Porta Venezia: $2,375–$3,455/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "Codice Fiscale (Italian tax code — required on all rental contracts)",
+        "3 months of bank statements or employment contract",
+        "2–3 months deposit is standard in Milan",
+        "Rental contracts are typically 4+4 years (standard) or 3+2 years (transitional) — confirm the contract type before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Milan has the widest choice of international schools in Italy. Most have limited places and require applications well in advance — plan 12–18 months ahead.",
+      "publicSystem": "Italian state schools are free and well structured but all instruction is in Italian. State schools are a realistic option only if your children already speak Italian or you are willing to enrol them in an intensive Italian language programme first. Most expat families with English-speaking children use the international school circuit.",
+      "internationalOptions": "Milan has a small but well-established international school sector with IB, British, and American curriculum schools, mostly located in the Porta Venezia, Brera, and northern suburban areas. Fees range from roughly $10,800 to $27,000+ per year. Places are limited — apply early.",
+      "languageNotes": "Italian state schools teach entirely in Italian. International schools teach in English. Children who attend state schools without prior Italian typically need 1–2 years to reach full academic fluency.",
+      "tip": "Apply to international schools before booking your flights — most Milan international schools have waitlists and do not reserve places without a completed application.",
+      "options": [
+        {
+          "type": "IB curriculum international schools",
+          "description": "The primary choice for English-speaking expat families. IB Diploma and Primary Years Programme available. Limited places per year group.",
+          "fees": "$15,120–$27,000+/year typical"
+        },
+        {
+          "type": "British curriculum international schools",
+          "description": "British A-Level and GCSE pathway schools. Smaller in number than IB options in Milan but well regarded.",
+          "fees": "$12,960–$23,760/year typical"
+        },
+        {
+          "type": "Italian state schools",
+          "description": "Free for all residents. All instruction is in Italian. A realistic option for families with children who already speak Italian or who plan a long-term stay and prioritise language integration.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Milan has both public and private nursery options. Public asili nido (nurseries) are subsidised but heavily oversubscribed. Private nurseries are more accessible but expensive.",
+      "daycareItems": [
+        "Asilo nido (nursery/daycare — Italian term for state-run or authorised nursery for children 0–3) accept children from 3 months old. Public asili nido are subsidised but have long waiting lists — apply as soon as your arrival date is confirmed",
+        "Private asilo nido fees: roughly $755–$1,295/month. Public asili nido fees are income-tested and significantly lower — but availability is limited",
+        "Scuola dell'infanzia (Italian preschool for children 3–6) is free or very low cost in the state system — enrolment requires residency registration and a Codice Fiscale",
+        "Visit nurseries in person before committing — quality varies significantly between private providers"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge roughly $13–$19/hr — rates in Milan are higher than elsewhere in Italy",
+        "Many nannies in Milan speak English, particularly those who have worked with expat families previously — ask specifically when searching",
+        "Part-time nannies and after-school childcare (for school-age children) are common arrangements among expat families",
+        "Start your nanny search at least 6–8 weeks before arrival — good candidates go quickly in Milan's expat community"
+      ],
+      "whereToFindItems": [
+        "Babysits.com — Italian childcare platform used by expat families in Milan for nanny and babysitter listings",
+        "Gumtree Italy and Bakeca.it — Italian classifieds widely used for nanny listings in Milan",
+        "Search 'Milan Expat Families' or 'Milano Mamme Expat' on Google — community groups for personal recommendations and nanny introductions"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register with your local ASL (Azienda Sanitaria Locale) within the first month — this activates your access to Italy's SSN (public health system) and assigns you a GP.",
+      "items": [
+        "Italy's SSN (Servizio Sanitario Nazionale — public national health system) covers all registered residents including EU/EEA citizens and non-EU residents with a valid Permesso di Soggiorno.",
+        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) after completing your residency registration. Bring your passport, Codice Fiscale, and proof of address. You will receive a tessera sanitaria (health card) and be assigned a GP.",
+        "GP and specialist visits through the SSN require a small co-payment (called a ticket) of roughly $16–$43 per visit. Emergency care and hospitalisation are covered at no cost.",
+        "Private healthcare is widely used in Milan for faster access and English-speaking doctors. A private GP consultation costs roughly $86–$162. International health insurance (IPMI) is recommended for non-EU residents while awaiting SSN registration.",
+        "Ospedale San Raffaele and Ospedale Fatebenefratelli are among the most recommended hospitals for families in Milan, offering both public and private patient services."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 78,
+      "summary": "Milan is a generally safe city for families but pickpocketing and petty theft in tourist and transport areas are common.",
+      "items": [
+        "Violent crime is relatively rare in family residential areas — Porta Venezia, Isola, Brera, and Sempione are low-risk neighbourhoods",
+        "Pickpocketing is the main risk — particularly around Milano Centrale train station, the Duomo, and busy Metro lines 2 and 3. Keep bags in front and phones out of back pockets",
+        "Milan's air quality can be poor in winter — the Po Valley geography traps pollution; invest in air purifiers for the home if you have young children or family members with respiratory conditions",
+        "Traffic is the primary daily hazard — Milan's driving culture is aggressive by northern European standards; teach children road awareness early",
+        "Family residential neighbourhoods (Porta Venezia, Brera, De Angeli) are well-lit, active, and safe for evening walks with children"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$2,375 / month",
+      "familyDinner": "~$65",
+      "nannyRate": "~$15 / hr"
+    },
+    "sources": {
+      "cost": [
+        {
+          "label": "Milan Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Milan",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Milan Expats' or 'Expat Family Milan Italy' on Google — active community with housing, school, and settlement advice",
+        "searchQuery": "Milan Expats Facebook group",
+        "url": "https://www.google.com/search?q=Milan+Expats+Facebook+group+Italy",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "florence-it",
+    "citySlug": "florence",
+    "countrySlug": "italy",
+    "city": "Florence",
+    "country": "Italy",
+    "tagline": "Renaissance beauty, slower pace, and a genuine quality of life — at a lower price than Milan",
+    "summary": "Florence offers an extraordinary quality of life for families who want authentic Italian living without Milan's cost or pace. It has excellent food, outdoor space, proximity to Tuscany, and a growing international community. The trade-off is a very limited international school choice and a tourist-heavy city centre — most expat families with children live in quieter residential outer neighbourhoods.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Get your Codice Fiscale (Italian tax code — required for renting, banking, and school enrolment) at any Agenzia delle Entrate (tax authority) office",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Research international school options carefully — Florence has very limited English-medium school choice; apply at least 12 months ahead",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — look beyond the historic centre for family-friendly neighbourhoods with more space",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to access Italy's SSN (Servizio Sanitario Nazionale — public health system)",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open an Italian bank account — Intesa Sanpaolo and UniCredit operate in Florence",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Find a nanny or nursery as early as possible — asili nido (public nurseries) in Florence have waiting lists",
+        "targetSection": "childcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families seeking an authentic Italian lifestyle in one of Europe's most beautiful cities",
+        "EU/EEA families who can use the Italian state school system or are homeschooling",
+        "Parents working remotely or in Florence's fashion, design, education, or tourism sectors",
+        "Families who want Tuscany on the doorstep — countryside, hiking, wine country, and coastal access within 1–2 hours"
+      ],
+      "watchOutFor": [
+        "International school choice is very limited — there are only a handful of English-medium schools and places fill quickly",
+        "The historic city centre is crowded with tourists year-round — most expat families with children live in the quieter outer neighbourhoods",
+        "Summer (June–August) is very hot and humid — the city is at its least liveable for families with young children",
+        "Italian bureaucracy applies here as everywhere — the Permesso di Soggiorno and school registration processes require patience"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move to Italy freely — only a Codice Fiscale and address registration are needed after arrival. Non-EU families need a D visa before travelling. Italy's Digital Nomad Visa (launched 2024) covers non-EU remote workers earning at least $30,240/year.",
+      "tip": "Get your Codice Fiscale within the first week — without it you cannot sign a rental contract, open a bank account, or register children in school.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Florence",
+          "duration": "No visa required",
+          "description": "Move freely to Italy with no visa. First steps after arrival: Codice Fiscale and dichiarazione di residenza.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Italy.",
+            "Get your Codice Fiscale (Italian tax code — required for every transaction) at any Agenzia delle Entrate (tax authority) office within your first week. Bring your passport.",
+            "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office, part of your Comune — city hall) within 90 days. Bring your passport, Codice Fiscale, and rental contract.",
+            "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to access the SSN (Servizio Sanitario Nazionale — public health system).",
+            "After 5 years of continuous legal residence, you can apply for a permanent EU residency permit."
+          ]
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip. No right to work, no extensions, cannot be converted to residency from inside Italy.",
+          "details": [
+            "90 days maximum across the entire Schengen Area in any 180-day period.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Italy — you must apply for a long-stay D visa at an Italian consulate before travelling.",
+            "Good use: 2–3 weeks scouting Oltrarno, Gavinana, and the areas around Campo di Marte and Rifredi for family housing.",
+            "Do not attempt long-term stays on rolling tourist entries — Italian immigration enforces Schengen limits."
+          ]
+        },
+        {
+          "type": "Italy Digital Nomad Visa (non-EU remote workers)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Italy Digital Nomad Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "For non-EU remote workers earning at least $30,240/year from non-Italian employers or clients. Apply at an Italian consulate before travelling.",
+          "details": [
+            "Income requirement: at least $30,240/year from remote employment or freelance work for non-Italian clients.",
+            "Required documents: passport, proof of remote employment or freelance contracts, 3 months of bank statements, and private health insurance valid in Italy.",
+            "Apply at the Italian consulate in your home country before travelling — you cannot switch to this visa from inside Italy on a tourist entry.",
+            "After arriving, apply for your Permesso di Soggiorno (residence permit) at the local Questura (police headquarters) within 8 working days.",
+            "Get your Codice Fiscale at any Agenzia delle Entrate office immediately — required before renting, banking, or enrolling children in school."
+          ],
+          "officialLink": {
+            "label": "Italy Digital Nomad Visa official Ministero degli Affari Esteri"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Codice Fiscale",
+      "tip": "Get your Codice Fiscale within the first week — without it you cannot sign a rental contract, open a bank account, or register children in school.",
+      "items": [
+        "Get your Codice Fiscale (Italian tax code — a personal ID number required for every transaction in Italy) at any Agenzia delle Entrate (tax authority) office. Bring your passport. Issued on the spot.",
+        "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your Comune — city hall) within 90 days if you are EU/EEA. Bring your passport, Codice Fiscale, and rental contract.",
+        "Non-EU residents must apply for a Permesso di Soggiorno (residence permit) at the local Questura (police headquarters) within 8 working days of arrival.",
+        "Apply for your SPID (Sistema Pubblico di Identità Digitale — Italy's digital identity for accessing government services online) after registration.",
+        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to activate your tessera sanitaria (health card) and SSN (public health system) access."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your Codice Fiscale and proof of address before any Italian bank will open an account — get both in week one.",
+      "items": [
+        "Intesa Sanpaolo and UniCredit are Italy's two largest banks and operate in Florence. Both are suitable for expat families with English-language service available at larger branches.",
+        "To open an account you need: passport, Codice Fiscale, and proof of Italian address (rental contract or utility bill).",
+        "N26 (Germany-based neobank) operates in Italy and is a good bridge option while waiting for a traditional account — open online with just a passport.",
+        "Wise and Revolut are widely used for international transfers and currency exchange while your Italian account is being set up.",
+        "Florence is more cash-reliant than northern European cities — keep $110–$215 in cash for markets, small restaurants, and services."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Florence is significantly more affordable than Milan. Most expat families with children live outside the tourist-heavy historic centre in the quieter residential neighbourhoods of Oltrarno, Gavinana, and the areas around Campo di Marte.",
+      "bestAreas": [
+        "Oltrarno",
+        "Gavinana",
+        "Campo di Marte",
+        "Rifredi",
+        "Fiesole (nearby hills)"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Firenze' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: arrive with a short-stay Airbnb booked for the first 2–3 weeks — Florence's long-term rental market requires in-person viewings and a Codice Fiscale before you can sign a contract."
+      ],
+      "searchPortals": [
+        {
+          "label": "Immobiliare.it — Italy's largest property rental platform",
+          "url": "https://www.immobiliare.it",
+          "isVerified": true
+        },
+        {
+          "label": "Idealista.it — major Italian and European property portal",
+          "url": "https://www.idealista.it",
+          "isVerified": true
+        },
+        {
+          "label": "Casa.it — Italian property portal with Florence listings",
+          "url": "https://www.casa.it",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Florence Expats Housing' or 'Appartamenti Firenze' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Florence+Expats+Housing+Facebook+group+Firenze",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Oltrarno or Campo di Marte: $970–$1,510/month",
+        "2-bed apartment, Gavinana: $1,190–$1,730/month",
+        "3-bed apartment, Rifredi: $1,510–$2,160/month",
+        "3-bed house, Fiesole area (hills): $1,730–$2,700/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "Codice Fiscale (Italian tax code — required on all rental contracts)",
+        "3 months of bank statements or employment contract",
+        "2–3 months deposit is standard in Florence",
+        "Rental contracts are typically 4+4 years or 3+2 years — confirm the type before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Florence has very limited international school options. Most expat families with school-age children research the school situation carefully before committing — and some choose Milan or Lisbon specifically because of better school choice.",
+      "publicSystem": "Italian state schools in Florence are free and well structured but all instruction is in Italian. State schools work well for families who are committed to long-term Italian integration or whose children already speak Italian. For most newly arrived English-speaking families, it requires a transition period.",
+      "internationalOptions": "Florence has a small number of international and bilingual schools, primarily IB and Italian-American curriculum. Places are very limited and demand is high. Fees range from roughly $8,640 to $19,440 per year. Apply 12–18 months ahead.",
+      "languageNotes": "Italian state schools teach entirely in Italian. International schools teach in English or a bilingual format. Children typically need 1–2 years to reach full academic fluency if entering the state system without Italian.",
+      "tip": "Contact international schools before booking your move — Florence has fewer options than Milan and places fill quickly. If no place is available, assess whether the state school system is a workable transitional option.",
+      "options": [
+        {
+          "type": "IB curriculum international schools",
+          "description": "The primary English-medium option in Florence. Very limited places — apply well in advance.",
+          "fees": "$10,800–$19,440/year typical"
+        },
+        {
+          "type": "Italian state schools",
+          "description": "Free for all residents. All instruction is in Italian. A viable long-term option for families committed to integration — many expat children who attend from a young age become fluent within 1–2 years.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Florence has both public and private nursery options. Public asili nido are subsidised and popular but oversubscribed. Private nurseries offer more availability.",
+      "daycareItems": [
+        "Asilo nido (nursery — Italian term for state-run or authorised nursery for children 0–3) accept children from 3 months old. Public asili nido in Florence are income-tested and subsidised but have waiting lists — apply as early as possible",
+        "Private asilo nido fees: roughly $650–$1,080/month — more affordable than Milan",
+        "Scuola dell'infanzia (Italian preschool for children 3–6) is free or very low cost in the state system after residency registration",
+        "Visit nurseries in person — quality varies between private providers and inspections are your best filter"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge roughly $11–$16/hr — more affordable than Milan",
+        "Many English-speaking nannies are available in Florence due to its international community and university presence",
+        "Part-time and after-school arrangements are common for families whose children attend state school",
+        "Start your nanny search 6–8 weeks before arrival — good candidates fill quickly in the expat community"
+      ],
+      "whereToFindItems": [
+        "Babysits.com — Italian childcare platform used by expat families in Florence",
+        "Bakeca.it — Italian classifieds widely used for nanny listings in Florence and Tuscany",
+        "Search 'Florence Expat Families' or 'Firenze Expat Parents' on Google — community groups for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register with your local ASL (Azienda Sanitaria Locale) within the first month — this activates your access to Italy's SSN (public health system) and assigns you a GP.",
+      "items": [
+        "Italy's SSN (Servizio Sanitario Nazionale — public health system) covers all registered residents including EU/EEA citizens and non-EU residents with a valid Permesso di Soggiorno.",
+        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) after completing residency registration. Bring your passport, Codice Fiscale, and proof of address. You will receive a tessera sanitaria (health card) and be assigned a GP.",
+        "GP and specialist visits through the SSN require a small co-payment (ticket) of roughly $16–$43 per visit. Emergency care is covered at no cost.",
+        "Private healthcare is available in Florence for faster access and English-speaking doctors. A private GP consultation costs roughly $76–$140.",
+        "Ospedale Careggi (the main university hospital) and Ospedale Meyer (Florence's dedicated children's hospital) are the two most recommended hospitals for families in the city."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 80,
+      "summary": "Florence is a generally safe city for families. Tourist areas have higher petty theft risk; residential neighbourhoods are quieter and safer.",
+      "items": [
+        "Violent crime is rare in Florence — the city is generally very safe for family day-to-day life",
+        "Pickpocketing is the main risk — concentrated in the historic centre (Duomo, Ponte Vecchio, Santa Croce) and on crowded buses. Keep bags in front in tourist areas",
+        "Traffic is a genuine hazard — Florence's narrow historic streets and active scooter and bike culture require road awareness with children",
+        "Summer heat is a real health risk — Florence in July–August is intensely hot; limit outdoor midday activity for young children and keep them hydrated",
+        "Residential neighbourhoods (Oltrarno, Gavinana, Rifredi) away from the tourist centre are quiet, low-traffic, and very safe for families"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,620 / month",
+      "familyDinner": "~$54",
+      "nannyRate": "~$14 / hr"
+    },
+    "sources": {
+      "cost": [
+        {
+          "label": "Florence Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Florence",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Florence Expats' or 'Expat Family Florence Italy' on Google — active community with housing, school, and settlement advice",
+        "searchQuery": "Florence Expats Facebook group",
+        "url": "https://www.google.com/search?q=Florence+Expats+Facebook+group+Italy",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "alicante-es",
+    "citySlug": "alicante",
+    "countrySlug": "spain",
+    "city": "Alicante",
+    "country": "Spain",
+    "tagline": "Sunny, affordable, and family-friendly — Spain's best-value coastal city",
+    "summary": "Alicante combines 300 days of sunshine, a genuine family lifestyle, and some of the most affordable housing costs in Mediterranean Europe. It has a large and well-established British and northern European expat community, good international schools on the Costa Blanca, and a relaxed pace of life that is hard to find in Barcelona or Madrid. The trade-off is limited career options outside of remote work or the local tourism and real estate economy.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Verify your visa pathway — EU/EEA citizens move freely; non-EU remote workers apply for the Spain Digital Nomad Visa (DNV) at the Spanish Consulate before travelling",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Obtain an Apostille-certified criminal record check (an Apostille is an official government certification that makes a document valid abroad) from your home country — required for the DNV application",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — Alicante's rental market is affordable but quality family apartments in Playa de San Juan move fast",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Contact British curriculum and international schools along the Costa Blanca at least 12 months before your planned start date",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Upon arrival, register on the Padrón Municipal (Spain's official address register) at your local Ayuntamiento (city hall) within 30 days — unlocks healthcare, school enrolment, and most local services",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Apply for your NIE (Número de Identidad de Extranjero — Spain's foreigner ID number, required for every formal transaction) at the Extranjería (local immigration office)",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a Spanish bank account — BBVA, Sabadell, and CaixaBank all have branches in Alicante",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Visit your local Centro de Salud with your Padrón certificate to apply for a SIP card (Spain's free public healthcare registration card)",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families seeking a sunny, affordable, and genuinely relaxed coastal lifestyle",
+        "Remote workers and freelancers who can work from anywhere and want to maximise quality of life per euro",
+        "British and northern European families who want a large established expat community around them",
+        "Families transitioning from a more expensive European city who want lower costs without sacrificing Mediterranean climate"
+      ],
+      "watchOutFor": [
+        "Job market is limited outside of remote work, tourism, and real estate — not the right move if you need a local employer",
+        "Spanish is essential day-to-day — English is widely spoken in expat areas but bureaucracy and daily life require basic Spanish",
+        "International school quality varies along the Costa Blanca — research Ofsted-equivalent inspection reports before committing",
+        "Summer heat (July–August) is intense, regularly exceeding 35°C — plan your arrival timing accordingly"
+      ]
+    },
+    "residency": {
+      "title": "Registration & NIE",
+      "tip": "Book your NIE appointment at the Extranjería (immigration office) as soon as you arrive — slots fill weeks ahead in Alicante and you need your NIE before you can do almost anything official.",
+      "items": [
+        "Register on the Padrón Municipal (Spain's official address register) at your local Ayuntamiento (city hall) within 30 days of arrival. Bring your passport and rental contract or proof of address. You will receive a Padrón certificate.",
+        "Your Padrón certificate is the master document — it unlocks your SIP public healthcare card, school enrolment, and most other local services.",
+        "Apply for your NIE (Número de Identidad de Extranjero — Spain's foreigner ID number, required for every formal transaction) at the Extranjería (immigration office) or a police station. Bring your passport and Padrón certificate.",
+        "Non-EU residents who are granted the Digital Nomad Visa must also apply for a TIE (Tarjeta de Identidad de Extranjero — Spain's physical residency card) after arrival. This is your official ID for day-to-day use in Spain.",
+        "After 5 years of continuous legal residence, you can apply for long-term residency status."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your NIE before most Spanish banks will open an account — some branches accept a passport and Padrón certificate as a temporary workaround for non-EU residents.",
+      "items": [
+        "BBVA, Sabadell, and CaixaBank are the most commonly used banks by expat families in Alicante. All have branches across the city and good English-language service.",
+        "To open an account you typically need: passport, NIE (foreigner ID number), and proof of address (Padrón certificate or rental contract).",
+        "N26 (German neobank) operates in Spain and is a useful bridge while your NIE is being processed — open online with just a passport.",
+        "Wise and Revolut are widely used by expats for international transfers and foreign currency spending, particularly for sending money to/from the UK or northern Europe.",
+        "Spain is less cash-dependent than a decade ago — card payments are accepted almost everywhere, but keep $55–$110 in cash for markets and small local businesses."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Alicante is one of the most affordable Mediterranean coastal cities for families. Rents are a fraction of Barcelona or Madrid. Family-friendly areas cluster in Playa de San Juan (beachside), El Campello (coastal village), and the La Florida and Gran Vía residential areas.",
+      "bestAreas": [
+        "Playa de San Juan",
+        "El Campello",
+        "La Florida",
+        "Gran Vía",
+        "San Vicente del Raspeig"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Alicante' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: arrive in Alicante with a short-stay rental for the first 2–4 weeks — it's much easier to view properties and negotiate directly once you're on the ground."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista — Spain's largest property portal",
+          "url": "https://www.idealista.com",
+          "isVerified": true
+        },
+        {
+          "label": "Fotocasa — major Spanish property portal with strong Alicante listings",
+          "url": "https://www.fotocasa.es",
+          "isVerified": true
+        },
+        {
+          "label": "Habitaclia — property portal with Costa Blanca coverage",
+          "url": "https://www.habitaclia.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Alicante Expats Housing' or 'Costa Blanca Expats' (direct landlord deals and community advice)",
+          "url": "https://www.google.com/search?q=Alicante+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, city centre or Gran Vía: $595–$865/month",
+        "2-bed apartment, Playa de San Juan: $810–$1,190/month",
+        "3-bed apartment, Playa de San Juan or El Campello: $970–$1,510/month",
+        "3-bed house, San Vicente del Raspeig: $865–$1,295/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "NIE (foreigner ID number) — required on most rental contracts",
+        "3 months of bank statements or employment contract",
+        "1–2 months deposit is standard in Alicante",
+        "Rental contracts are typically 1-year minimum with annual renewals"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Alicante has both Spanish state schools (free) and a selection of British and international schools along the Costa Blanca. The British community here is large enough to support a well-established international school circuit.",
+      "publicSystem": "Spanish state schools are free and open to all residents. All instruction is in Spanish (with some Valencian). State schools are a realistic option for families committed to long-term Spanish integration — many younger children adapt quickly. For English-speaking families arriving mid-career with older children, the transition is harder.",
+      "internationalOptions": "The Costa Blanca around Alicante has a well-established international school sector, primarily British curriculum, concentrated in Alicante city, Playa de San Juan, and the coastal towns north toward Benidorm. Fees range from roughly $4,860 to $10,800 per year — significantly lower than Madrid or Barcelona. Apply at least 12 months ahead.",
+      "languageNotes": "Spanish state schools teach in Spanish and Valencian. International schools teach in English. Alicante's large British expat community means English is widely understood in expat areas — but Spanish is essential for daily life and bureaucracy.",
+      "tip": "Research Ofsted-equivalent Spanish school inspection reports before choosing an international school — quality varies significantly along the Costa Blanca.",
+      "options": [
+        {
+          "type": "British curriculum international schools (Costa Blanca)",
+          "description": "The primary choice for English-speaking expat families in the Alicante area. British GCSE and A-Level programmes. More affordable than equivalent schools in Madrid or Barcelona.",
+          "fees": "$4,860–$10,800/year typical"
+        },
+        {
+          "type": "Spanish state schools",
+          "description": "Free for all residents. All instruction in Spanish and Valencian. A strong long-term option for families committed to integration — younger children adapt quickly.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Spanish-English bilingual private schools (colegios concertados)",
+          "description": "Semi-private schools with state subsidy offering bilingual Spanish-English programmes. Lower fees than full international schools. Growing option for families who want bilingual education at lower cost.",
+          "fees": "$1,620–$5,400/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Alicante has affordable nursery and childcare options. Public escuelas infantiles (state nurseries) are subsidised but oversubscribed. Private nurseries are widely available and affordable.",
+      "daycareItems": [
+        "Escuelas infantiles (state nurseries for children 0–3) are subsidised and income-tested — apply as soon as you have residency, as waiting lists are common",
+        "Private nursery fees: roughly $325–$650/month — among the lowest in Spain and very affordable compared to northern Europe",
+        "Guardería (nursery/daycare — Spanish term) is the general word for private nursery in the Alicante area — look for authorised centros infantiles",
+        "Children aged 3–6 attend educación infantil (Spanish state preschool) for free after Padrón registration"
+      ],
+      "nannyItems": [
+        "Full-time nannies (cuidadoras — Spanish for nanny/carer) charge roughly $9–$13/hr — very affordable compared to northern Europe",
+        "Many Spanish and South American nannies in Alicante are bilingual in Spanish and English due to the large expat community",
+        "Part-time after-school arrangements are the most common nanny setup in Alicante among expat families",
+        "Start your nanny search 4–6 weeks before arrival — the market is less competitive than in Madrid or Barcelona"
+      ],
+      "whereToFindItems": [
+        "Canguro.es and Sitly.es — Spanish childcare platforms used for nanny and babysitter listings in Alicante",
+        "Milanuncios.com — Spanish classifieds, widely used for childcare listings on the Costa Blanca",
+        "Search 'Alicante Expat Parents' or 'Costa Blanca Families' on Google — community groups used by expat families for nanny recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register at your local Centro de Salud (public health centre) with your Padrón certificate as soon as possible — this activates your SIP card (Spain's free public healthcare registration card) and assigns you a GP.",
+      "items": [
+        "Spain's public healthcare system (Sistema Nacional de Salud — SNS) is free for all registered residents. Registration requires a valid Padrón certificate and a TIE or NIE.",
+        "Visit your local Centro de Salud (public health centre) with your Padrón certificate to apply for your SIP card (Sistema de Información Poblacional — Spain's free public healthcare registration card). You will be assigned a GP.",
+        "Alicante's public hospitals (Hospital General Universitario de Alicante is the main centre) provide good standard care. The system is free at the point of use for registered residents.",
+        "Private healthcare is affordable and widely used by expats for faster appointments and English-speaking doctors. A private GP consultation costs roughly $54–$97. Major private networks including Asisa and Sanitas operate in Alicante.",
+        "Arrange international private health insurance before applying for the Digital Nomad Visa — it is a required document for the DNV application."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 82,
+      "summary": "Alicante is a safe and relaxed city for families with very low violent crime.",
+      "items": [
+        "Violent crime is very rare — Alicante is one of Spain's safest cities for everyday family life",
+        "Petty theft and pickpocketing occur in the city centre and on the beach in summer — keep bags secure in busy tourist areas",
+        "Traffic safety requires attention — Spanish driving culture can be fast on main roads; teach children road awareness",
+        "Summer sun is a genuine health risk — Alicante's UV index is extreme in July–August; SPF 50+, hats, and limited midday sun exposure are essential for children",
+        "Expat-heavy neighbourhoods (Playa de San Juan, El Campello) are family-oriented, well-lit, and very safe for evening walks"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$970 / month",
+      "familyDinner": "~$38",
+      "nannyRate": "~$11 / hr"
+    },
+    "sources": {
+      "cost": [
+        {
+          "label": "Alicante Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Alicante",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Alicante Expats' or 'Costa Blanca Expat Families' on Google — large, active community with housing, school, and settling-in advice",
+        "searchQuery": "Alicante Expats Facebook group",
+        "url": "https://www.google.com/search?q=Alicante+Expats+Facebook+group+Costa+Blanca",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "cascais-pt",
+    "citySlug": "cascais",
+    "countrySlug": "portugal",
+    "city": "Cascais",
+    "country": "Portugal",
+    "tagline": "Portugal's most sought-after coastal town — 30 minutes from Lisbon, with beaches and top schools nearby",
+    "summary": "Cascais is a beautiful coastal town on the Estoril line, 30 minutes from Lisbon by train. It is Portugal's most popular destination for relocating families, combining Atlantic beaches, low crime, excellent international schools nearby, and the NHR (Non-Habitual Resident) tax scheme that reduces foreign income tax to 20% for 10 years. The trade-off is cost — Cascais is one of Portugal's most expensive areas for housing.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA citizens: register at your local Junta de Freguesia (Portugal's local civil parish office — where you register residency) within 90 days of arrival",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU remote workers: apply for the D8 Digital Nomad Visa at a Portuguese Consulate before travelling — requires proof of income above Portugal's minimum wage threshold",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Apply for NHR status (Non-Habitual Resident — reduces foreign income tax to 20% for 10 years) at Finanças (Portugal's tax office) within the year of your first Portuguese tax residency",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Get your NIF (Número de Identificação Fiscal — Portugal's combined tax and ID number) at any Finanças (tax office) or Loja do Cidadão — required before renting, banking, or registering children in school",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Cascais has one of Portugal's tightest rental markets",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your planned start date — schools near Cascais and the Estoril line have long waiting lists",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Register with SNS (Serviço Nacional de Saúde — Portugal's free national health system) at your local health centre after completing residency registration",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Portuguese bank account — Millennium BCP and Caixa Geral de Depósitos operate in Cascais and serve expat families",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want Lisbon's lifestyle and schools with a quieter, beachside base",
+        "Remote workers and digital nomads who want to maximise the NHR (Non-Habitual Resident) tax benefit",
+        "Families with children — Cascais has a very family-oriented environment with beaches, parks, and excellent schools within reach",
+        "Families relocating from the UK, Ireland, or the US who want a safe English-friendly coastal town"
+      ],
+      "watchOutFor": [
+        "Cascais is one of Portugal's most expensive areas — expect Lisbon-equivalent or higher rents in the best neighbourhoods",
+        "International schools near Cascais fill quickly — research and apply before you commit to moving",
+        "Portuguese bureaucracy is slow — NIF, AIMA registration, and bank account opening can each take several weeks",
+        "The Estoril train line to Lisbon is reliable but peak-hour commutes to the city are approximately 40–50 minutes door-to-door"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to Portugal with no visa. Non-EU remote workers and freelancers can apply for the D8 Digital Nomad Residency visa before arriving. Portugal's NHR (Non-Habitual Resident) tax scheme is a significant financial incentive for incoming residents.",
+      "tip": "Apply for your NHR status at Finanças (Portugal's tax office) in the same calendar year as your first tax residency — you cannot apply retrospectively.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Cascais",
+          "duration": "No visa required",
+          "description": "Move freely to Portugal. First steps: NIF, residency registration at Junta de Freguesia, and NHR tax application.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Portugal.",
+            "Get your NIF (Número de Identificação Fiscal — Portugal's combined tax and ID number, required for every transaction) at any Finanças (tax office) or Loja do Cidadão. Bring your passport.",
+            "Register your residency at your local Junta de Freguesia (Portugal's local civil parish office) within 90 days of arrival. Bring your passport, NIF, and rental contract.",
+            "Apply for NHR status (Non-Habitual Resident — reduces foreign income tax to 20% for 10 years) at Finanças within the year of your first Portuguese tax residency — this cannot be done retrospectively.",
+            "After 5 years of continuous legal residence, you can apply for permanent residency."
+          ]
+        },
+        {
+          "type": "Schengen Tourist (non-EU)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it allows and what it does not",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip. No right to work, no extensions, cannot be converted to residency from inside Portugal.",
+          "details": [
+            "90 days maximum across the entire Schengen Area in any 180-day period.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Portugal — apply for a D8 visa at a Portuguese consulate in your home country before travelling.",
+            "Good use: 2–3 weeks scouting Cascais town, Estoril, and Birre for housing, schools, and neighbourhoods.",
+            "Do not attempt long-term stays on rolling tourist entries — Portuguese immigration has tightened enforcement."
+          ]
+        },
+        {
+          "type": "D8 Digital Nomad Residency",
+          "anchor": "visa-d8",
+          "detailTitle": "D8 Digital Nomad Visa — how to apply",
+          "duration": "2 years, renewable",
+          "description": "For non-EU remote workers and freelancers earning above Portugal's minimum income threshold. Apply at a Portuguese Consulate before travelling.",
+          "details": [
+            "Income requirement: roughly 4× Portugal's minimum wage (approximately $3,280/month as of 2024 — verify the current figure before applying as it is reviewed annually).",
+            "Required documents: valid passport, proof of remote employment or freelance contracts, 3 months of bank statements, and private health insurance valid in Portugal.",
+            "Apply at the Portuguese Consulate in your home country — do not enter Portugal on a tourist visa intending to apply from inside.",
+            "After arriving, register with AIMA (Agência para a Integração, Migrações e Asilo — Portugal's immigration authority) to convert your D8 entry visa into a residence permit.",
+            "Apply for NHR status (Non-Habitual Resident) at Finanças (Portugal's tax office) in the same year as your tax residency — reduces foreign income tax to 20% for 10 years."
+          ],
+          "officialLink": {
+            "label": "Portugal D8 Digital Nomad Visa official AIMA"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration, NIF & NHR",
+      "tip": "Apply for NHR status at Finanças (Portugal's tax office) in the same calendar year as your first Portuguese tax residency — you cannot apply retrospectively and the savings over 10 years are substantial.",
+      "items": [
+        "Get your NIF (Número de Identificação Fiscal — Portugal's combined tax and ID number) at any Finanças (tax office) or Loja do Cidadão on your first day. Bring your passport. Required before renting, banking, or registering children in school.",
+        "Register your residency at your local Junta de Freguesia (Portugal's local civil parish office) within 90 days. Bring your passport, NIF, and rental contract.",
+        "Non-EU residents: register with AIMA (Agência para a Integração, Migrações e Asilo — Portugal's immigration authority) to convert your D8 entry visa into a residence permit. Book an AIMA appointment early — slots fill weeks ahead.",
+        "Apply for NHR status (Non-Habitual Resident — reduces foreign income tax to 20% for 10 years) at the Finanças online portal (Portal das Finanças) in the same year as your first Portuguese tax residency.",
+        "Register with the SNS (Serviço Nacional de Saúde — Portugal's free national health system) at your local health centre after completing residency registration."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your NIF before any Portuguese bank will open an account — get it on day one and take it to the bank the same week.",
+      "items": [
+        "Millennium BCP, Caixa Geral de Depósitos, and Santander Portugal are the most commonly used banks by expat families in Cascais. Millennium BCP has strong English-language service.",
+        "To open an account you need: passport, NIF, and proof of Portuguese address (rental contract or residency registration certificate).",
+        "Revolut and Wise are widely used by expats in Cascais for international transfers and day-to-day spending while your Portuguese account is being set up.",
+        "N26 (German neobank) operates in Portugal and is a useful bridge option — open online with just a passport, no Portuguese address required initially.",
+        "Portugal is increasingly card-friendly but keep $55–$110 in cash for markets, local restaurants, and services in older parts of Cascais."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Cascais is one of Portugal's most expensive areas for housing. Demand from international families and digital nomads keeps supply tight. Family-friendly areas cluster in Cascais town centre, Estoril, and the Birre area inland.",
+      "bestAreas": [
+        "Cascais town",
+        "Estoril",
+        "Birre",
+        "São João do Estoril",
+        "Alvide"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Cascais' or 'Estoril' inside each platform to filter local listings.",
+        "Tip: the Cascais rental market is very tight — view properties as quickly as possible after they are listed and have all documents ready to sign the same day."
+      ],
+      "searchPortals": [
+        {
+          "label": "Idealista Portugal — Portugal's largest property portal",
+          "url": "https://www.idealista.pt",
+          "isVerified": true
+        },
+        {
+          "label": "OLX Portugal — widely used for direct landlord rental listings around Cascais",
+          "url": "https://www.olx.pt",
+          "isVerified": true
+        },
+        {
+          "label": "Uniplaces — furnished apartment listings, useful for medium-term stays while searching long-term",
+          "url": "https://www.uniplaces.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Cascais Expats Housing' or 'Portugal Expat Families' (direct landlord deals and community advice)",
+          "url": "https://www.google.com/search?q=Cascais+Expats+Housing+Facebook+group+Portugal",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Cascais town: $1,510–$2,050/month",
+        "2-bed apartment, Estoril or São João do Estoril: $1,945–$2,700/month",
+        "3-bed apartment, Cascais town or Birre: $2,375–$3,455/month",
+        "3-bed villa, Birre or Alvide: $3,025–$4,860/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "NIF (Número de Identificação Fiscal — required on all Portuguese rental contracts)",
+        "3 months of bank statements or employment contract",
+        "2 months deposit is standard in the Cascais area",
+        "Rental contracts are typically 1-year minimum with annual renewals"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Cascais and the Estoril line have some of Portugal's best international schools. Most families find the school choice is the key reason to choose Cascais over other Portuguese coastal towns.",
+      "publicSystem": "Portuguese state schools are free and open to all registered residents. All instruction is in Portuguese. State schools are a realistic option for younger children who adapt quickly to language immersion — older children typically need an international school option.",
+      "internationalOptions": "The Cascais and Estoril area has a well-established international school circuit including IB, British, and American curriculum schools, some of the strongest in Portugal. Fees range from roughly $8,640 to $23,760 per year. The most popular schools have waitlists — apply 12–18 months ahead.",
+      "languageNotes": "Portuguese state schools teach entirely in Portuguese. International schools teach in English. The Cascais area's large expat community means English is widely spoken — but Portuguese is important for daily life and residency integration.",
+      "tip": "Apply to international schools before booking your move — the most sought-after schools on the Estoril line have long waiting lists and may not have places at your child's year group.",
+      "options": [
+        {
+          "type": "IB curriculum international schools (Estoril line)",
+          "description": "The primary choice for English-speaking expat families. Several IB Diploma and PYP schools within commuting distance of Cascais. Among the best in Portugal.",
+          "fees": "$12,960–$23,760+/year typical"
+        },
+        {
+          "type": "British curriculum international schools",
+          "description": "British GCSE and A-Level programmes. Smaller in number than IB options but well established in the Cascais–Estoril corridor.",
+          "fees": "$9,720–$19,440/year typical"
+        },
+        {
+          "type": "Portuguese state schools",
+          "description": "Free for all registered residents. All instruction in Portuguese. A strong option for younger children — many integrate fully within 1–2 years.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Cascais has both public and private nursery options. Creches (nurseries) are the main childcare form for under-3s. The government subsidises childcare for registered residents.",
+      "daycareItems": [
+        "Creche (nursery — Portuguese term for state or private nursery for children 0–3) accept children from 3 months old. Public creches are income-tested and subsidised but have waiting lists — apply as soon as you have your NIF and residency registration",
+        "Private creche fees: roughly $540–$970/month in Cascais — higher than Lisbon or Porto due to the area's premium pricing",
+        "Children aged 3–6 attend pré-escolar (Portuguese state preschool) for free after residency registration. Highly recommended — quality is consistent across the Cascais municipality",
+        "Visit nurseries in person — quality varies between private providers and the Cascais area has a range of bilingual and English-medium private creches serving expat families"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge roughly $10–$14/hr in Cascais — slightly higher than Lisbon due to the expat premium",
+        "Many nannies in Cascais are bilingual in Portuguese and English, particularly those with experience in expat households",
+        "Au pairs are common in Cascais — typically $162–$238/week plus a private room and meals",
+        "Start your nanny search 6–8 weeks before arrival — demand is high in Cascais given the large international community"
+      ],
+      "whereToFindItems": [
+        "Babysits.com Portugal — the main platform for nanny and babysitter listings in the Cascais and Lisbon areas",
+        "OLX Portugal — widely used for nanny and au pair listings in Cascais",
+        "Search 'Cascais Expat Families' or 'Portugal Expat Mums Cascais' on Google — active community groups for personal nanny recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Register with the SNS (Serviço Nacional de Saúde — Portugal's free national health system) at your local health centre as soon as your residency registration is complete.",
+      "items": [
+        "Portugal's SNS (Serviço Nacional de Saúde — public health system) is free for all registered residents. EU/EEA citizens and non-EU residents with a valid residence permit are eligible.",
+        "Register with your local health centre (Centro de Saúde) after completing residency registration. Bring your passport, NIF, and proof of address. You will be assigned a GP.",
+        "GP and specialist visits through the SNS are free or require a small co-payment (taxa moderadora). Emergency and hospital care are covered at no cost.",
+        "Private healthcare is widely used by expats for faster access and English-speaking doctors. A private GP consultation costs roughly $65–$119. AdvanceCare and Médis are the main private health networks with coverage in Cascais.",
+        "Arrange international private health insurance before applying for the D8 visa — it is a required document for the visa application."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 88,
+      "summary": "Cascais is one of the safest places to live in Portugal — very low crime and an extremely family-friendly atmosphere.",
+      "items": [
+        "Violent crime is very rare — Cascais consistently has some of the lowest crime rates in Portugal",
+        "Petty theft is the main risk in busy tourist areas around the Cascais marina and market in summer — keep bags secure",
+        "Traffic on the coastal EN6 road can be fast — take care with children near the main coastal road, particularly in summer when tourist volumes increase",
+        "Atlantic Ocean swimming requires caution — Portuguese Atlantic beaches have strong currents and waves; always check the flag system before entering the water with children",
+        "Family residential neighbourhoods (Birre, Alvide, São João do Estoril) are extremely safe with very active community life"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$2,160 / month",
+      "familyDinner": "~$54",
+      "nannyRate": "~$12 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Portugal D8 Digital Nomad Visa — AIMA",
+          "url": "https://www.aima.gov.pt",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Cascais Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Cascais",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Cascais Expats' or 'Expat Families Cascais Portugal' on Google — active community with housing, school, and settling-in advice",
+        "searchQuery": "Cascais Expats Facebook group",
+        "url": "https://www.google.com/search?q=Cascais+Expats+Facebook+group+Portugal",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "munich-de",
+    "citySlug": "munich",
+    "countrySlug": "germany",
+    "city": "Munich",
+    "country": "Germany",
+    "tagline": "Germany's most liveable city — excellent schools, strong economy, and the Alps on the doorstep",
+    "summary": "Munich consistently ranks among the most liveable cities in the world. It offers excellent schools (public and international), a strong job market in engineering, tech, and finance, world-class public transport, and direct access to the Alps and Lake Bavaria. The trade-off is cost — Munich is Germany's most expensive city for housing — and a high demand for both school places and childcare (KITA) that requires early planning.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "Book your Anmeldung appointment (mandatory address registration at Munich's KVR — Kreisverwaltungsreferat, the equivalent of Berlin's Bürgeramt) the day you arrive — slots in Munich fill 4–8 weeks ahead",
+        "targetSection": "residency"
+      },
+      {
+        "label": "EU/EEA citizens: the Anmeldung is your only post-arrival registration step — it unlocks your Steuer-ID (tax ID), health insurance, and bank account",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU citizens: convert your entry D-Visa to an Aufenthaltserlaubnis (residence permit) at the Ausländerbehörde (immigration office) within 90 days of arrival",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Munich's rental market is one of Germany's tightest and properties go within days",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Register for KITA (Kindertagesstätte — state-subsidised nursery/daycare for children 0–6) as soon as you have a confirmed arrival date — Munich KITA waiting lists are 12–24 months",
+        "targetSection": "childcare"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your planned start date — Munich's international schools have limited places",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Enrol in German statutory health insurance (GKV — gesetzliche Krankenversicherung) within the first week — required for all employed residents; AOK Bayern is the main provider in Bavaria",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a German bank account — Deutsche Bank and HypoVereinsbank both have good English-language service in Munich",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families relocating for jobs in engineering, automotive, finance, or tech — Munich is Germany's strongest corporate job market",
+        "EU/EEA families who want a smooth, low-paperwork registration process",
+        "Parents who want access to excellent public schools and a strong international school circuit in the same city",
+        "Families who want outdoor access — the Alps, lakes, and Bavaria's countryside are all within 30–60 minutes of Munich"
+      ],
+      "watchOutFor": [
+        "Munich is Germany's most expensive city — housing costs are significantly above Berlin, Hamburg, or Frankfurt",
+        "KITA (nursery) waiting lists are 12–24 months — register immediately on arrival or risk not securing a place",
+        "Munich is a conservative Bavarian city — the pace and social culture are quieter than Berlin; expats expecting Berlin-style openness may need to adjust",
+        "German is essential for state schools and daily administration — invest in language lessons before and after arrival"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to Germany — only an Anmeldung (address registration) is needed after arrival. Non-EU workers need employer sponsorship. Non-EU freelancers can apply for the Freiberufler visa, which requires a client base and income plan.",
+      "tip": "Book your KVR (Kreisverwaltungsreferat) appointment for the Anmeldung the day you arrive — Munich appointments fill 4–8 weeks ahead.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Munich",
+          "duration": "No visa required",
+          "description": "Move freely to Germany with no visa. First step after arrival: Anmeldung (address registration) at Munich's KVR.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement within Germany.",
+            "Complete your Anmeldung (mandatory address registration) at Munich's KVR (Kreisverwaltungsreferat — Munich's combined citizens' office and immigration authority) within 14 days of arriving. You will receive a Meldebescheinigung (registration certificate).",
+            "Your Meldebescheinigung unlocks everything: your Steuer-ID (German tax ID number, sent by post within 2–4 weeks), bank account, and statutory health insurance (GKV — gesetzliche Krankenversicherung) enrolment.",
+            "Enrol in GKV (gesetzliche Krankenversicherung — Germany's statutory health insurance) with a provider such as AOK Bayern (the main statutory insurer in Bavaria) or TK — required for all employed residents.",
+            "After 5 years of continuous legal residence, you can apply for a permanent Niederlassungserlaubnis (settlement permit)."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker",
+          "anchor": "visa-dnv",
+          "detailTitle": "Non-EU employed worker — residence permit",
+          "duration": "Tied to employment contract",
+          "description": "Employer-sponsored. Apply at the German Consulate before travelling. Your employer files with German authorities on your behalf.",
+          "details": [
+            "Your employer must initiate the process — they file with the German Federal Employment Agency (Bundesagentur für Arbeit) and the Ausländerbehörde (immigration office, part of Munich's KVR).",
+            "Apply for your D-Visa at the German Consulate in your home country before travelling — do not enter Germany and then try to switch.",
+            "After arriving and completing your Anmeldung, visit the Ausländerbehörde at Munich's KVR within 90 days to convert to an Aufenthaltserlaubnis (residence permit).",
+            "The Aufenthaltserlaubnis is tied to your employer — a job change requires updating the permit.",
+            "Book your KVR appointment as early as possible — Munich appointments fill 4–8 weeks ahead."
+          ],
+          "officialLink": {
+            "label": "Germany work permit Aufenthaltserlaubnis official make-it-in-germany.com",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+            "isVerified": true
+          }
+        },
+        {
+          "type": "Non-EU freelancer (Freiberufler)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Freelancer visa — who qualifies and how to apply",
+          "duration": "1–3 years, renewable",
+          "description": "For independent professionals in recognised freelance professions: IT consultants, designers, writers, journalists, artists. Requires a client base and detailed income plan.",
+          "details": [
+            "Applies to recognised Freiberufler professions — IT, design, media, arts, science, teaching. Does not cover general self-employed traders.",
+            "Apply at the German Consulate in your home country — not from inside Germany on a tourist visa.",
+            "Required: evidence of active clients or contracts, a detailed financial projection, savings to cover initial months, and proof of health insurance.",
+            "A German-speaking Steuerberater (tax accountant) familiar with freelancer registration in Bavaria is strongly recommended.",
+            "After arriving, register your freelance activity with the Finanzamt (tax office) and complete your Anmeldung at Munich's KVR."
+          ]
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration & Anmeldung",
+      "tip": "Book your KVR appointment online at münchen.de the day you arrive — slots fill 4–8 weeks ahead and you cannot open a bank account or enrol in health insurance without your Meldebescheinigung.",
+      "items": [
+        "Complete your Anmeldung (mandatory address registration) at Munich's KVR (Kreisverwaltungsreferat) within 14 days of arriving. Bring your passport, completed Anmeldeformular (registration form), and a landlord confirmation letter (Wohnungsgeberbestätigung).",
+        "You will receive a Meldebescheinigung (registration certificate) — this single document unlocks your Steuer-ID, health insurance enrolment, and bank account.",
+        "Your Steuer-ID (German tax identification number) is sent by post within 2–4 weeks of your Anmeldung — keep it safe; you need it for every employer and for tax returns.",
+        "Non-EU residents: after completing the Anmeldung, visit the Ausländerbehörde at Munich's KVR within 90 days to convert your entry visa to an Aufenthaltserlaubnis (residence permit).",
+        "After 5 years of continuous legal residence, you can apply for a Niederlassungserlaubnis (permanent settlement permit)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your Meldebescheinigung (registration certificate) before any German bank will open an account — get your Anmeldung done first.",
+      "items": [
+        "Deutsche Bank, HypoVereinsbank (UniCredit), Commerzbank, and Sparkasse München are the main banks for expats in Munich. Deutsche Bank and HypoVereinsbank have the best English-language service.",
+        "To open an account you need: passport, Meldebescheinigung (registration certificate), and in some cases your Steuer-ID (tax ID).",
+        "N26 (German neobank) is the fastest option — open online with just your passport before or immediately after arrival. No Meldebescheinigung required initially.",
+        "Wise and Revolut are widely used for international transfers and currency exchange while your German account is being set up.",
+        "Germany is still significantly cash-reliant — many local restaurants, markets, and smaller shops in Munich are cash-only. Keep $110–$215 in cash available."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Munich is Germany's most expensive city for housing. Family-friendly areas cluster in Schwabing, Bogenhausen, Maxvorstadt, Nymphenburg, and Haidhausen — all with good school access and public transport links.",
+      "bestAreas": [
+        "Schwabing",
+        "Bogenhausen",
+        "Maxvorstadt",
+        "Nymphenburg",
+        "Haidhausen"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'München' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: the Munich rental market is extremely competitive — have your Schufa report (German credit reference document), proof of income, and references ready before your first viewing."
+      ],
+      "searchPortals": [
+        {
+          "label": "Immobilienscout24.de — Germany's largest property rental platform",
+          "url": "https://www.immobilienscout24.de",
+          "isVerified": true
+        },
+        {
+          "label": "ImmoWelt.de — Germany's second largest property portal",
+          "url": "https://www.immowelt.de",
+          "isVerified": true
+        },
+        {
+          "label": "WG-Gesucht.de — useful for furnished short-term rooms while searching for a full family property",
+          "url": "https://www.wg-gesucht.de",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Munich Expats Housing' or 'München Wohnungssuche' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Munich+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Schwabing or Maxvorstadt: $1,730–$2,375/month",
+        "3-bed apartment, Bogenhausen: $3,025–$4,320/month",
+        "3-bed apartment, Nymphenburg: $2,810–$4,105/month",
+        "3-bed apartment, Haidhausen: $2,590–$3,670/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "Meldebescheinigung (registration certificate) or proof of upcoming Anmeldung",
+        "Schufa report (German credit reference — get this early; new arrivals can use a SCHUFA StartKonto workaround)",
+        "3 months of payslips or employment contract",
+        "3 months cold rent deposit (Kaution) is standard in Munich"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Munich has one of the strongest school systems in Germany. Bavaria's state schools are consistently ranked among the best in the country, and Munich also has a well-established international school circuit.",
+      "publicSystem": "Bavarian state schools are free and among the most academically rigorous in Germany. German is the language of instruction. Public schools are a realistic long-term option for families committed to German integration — children typically reach academic fluency within 2–3 years. Many expat families with younger children opt for state schools after an initial transition programme.",
+      "internationalOptions": "Munich has a well-established international school sector including IB, British, and American curriculum schools, mostly in Schwabing, Bogenhausen, and the northern suburbs. Fees range from roughly $10,800 to $30,240 per year. Places are limited and waiting lists are common.",
+      "languageNotes": "All German state schools teach in German. International schools teach in English. Children entering without German typically benefit from a transition support programme for the first year.",
+      "tip": "Apply to international schools 12–18 months before your planned start date — Munich's most popular international schools have multi-year waiting lists and places at the right year group are not guaranteed.",
+      "options": [
+        {
+          "type": "IB curriculum international schools",
+          "description": "The primary English-medium choice for expat families in Munich. IB Diploma and PYP available. Limited places per year group.",
+          "fees": "$15,120–$30,240+/year typical"
+        },
+        {
+          "type": "German-American and bilingual private schools",
+          "description": "German-English bilingual programmes with accredited German and international leaving qualifications. Growing in number in Munich.",
+          "fees": "$8,640–$19,440/year typical"
+        },
+        {
+          "type": "Bavarian state schools (public)",
+          "description": "Free, open to all residents. German instruction. Strong academic outcomes — Bavaria consistently tops German school rankings. Requires German language integration.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Munich's KITA (Kindertagesstätte — state-subsidised nursery and daycare) waiting lists are among the longest in Germany. Register immediately on arrival — or ideally before you move.",
+      "daycareItems": [
+        "KITA (Kindertagesstätte — state-subsidised nursery/daycare for children 0–6) is the main childcare form in Munich. Places are heavily subsidised but waiting lists are typically 12–24 months — register as soon as you have a confirmed arrival date",
+        "KITA fees vary by family income after subsidy — typically $0–$430/month depending on earnings and Munich's means-testing system",
+        "Private Krippe (nursery for 0–3) offers more availability than state KITA but costs more — typically $865–$1,620/month unsubsidised",
+        "Register for KITA online at muenchen.de/kita — you can register your child up to 2 years before the intended start date"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge roughly $15–$22/hr in Munich — among the highest in Germany due to the city's cost of living",
+        "Tagesmutter (registered childminder — a home-based childcare professional regulated by the Jugendamt, Munich's youth welfare office) is a state-regulated alternative to private nurseries",
+        "Au pairs are popular with families while waiting for a KITA place — typically $325–$430/month plus a private room and board (based on the German Au Pair Minimum Wage framework)",
+        "Start your nanny search at least 8 weeks before arrival — Munich's childcare market is tight"
+      ],
+      "whereToFindItems": [
+        "muenchen.de/kita — Munich's official KITA registration portal — register here first",
+        "Care.com Germany — used for nanny and au pair listings in Munich",
+        "Search 'Munich Expat Parents' or 'München Expat Families' on Google — community groups for personal recommendations and KITA waiting list strategies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Enrol in GKV (gesetzliche Krankenversicherung — Germany's statutory health insurance) within the first week of employment — your employer handles enrolment but you choose the insurer.",
+      "items": [
+        "Germany operates a statutory health insurance system (GKV — gesetzliche Krankenversicherung) that covers all employed residents. AOK Bayern (Bavaria's main statutory insurer) and TK (Techniker Krankenkasse) are the most commonly used providers in Munich.",
+        "Enrolment in GKV is automatic for employed residents — your employer registers you with the insurer of your choice. Contributions are split between employer and employee (roughly 7% each of gross salary).",
+        "Self-employed and freelancers can choose between GKV (voluntary contribution) or PHV (private health insurance — Privatversicherung). A German-speaking advisor is recommended to compare options before arrival.",
+        "GKV covers GP visits, specialist referrals, hospital care, dental (basic), and children's healthcare at no direct cost at the point of service.",
+        "LMU Klinikum (Ludwig Maximilian University Hospital) and Klinikum Rechts der Isar (Munich's second major university hospital) are the two main public hospitals recommended for families in the city."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 88,
+      "summary": "Munich is one of the safest large cities in Germany and in Europe for families.",
+      "items": [
+        "Violent crime is very rare — Munich consistently ranks among Germany's and Europe's safest major cities for families",
+        "Petty theft and bike theft are the main daily risks — lock bikes with heavy-duty locks and keep bags secure on the U-Bahn and S-Bahn",
+        "Traffic is well managed — Munich's road system and pedestrian infrastructure are excellent; cycling is safe in most family areas",
+        "Winter weather is a genuine consideration — Munich has cold, icy winters with heavy snowfall; prepare children with appropriate outdoor clothing and footwear",
+        "Family areas (Schwabing, Bogenhausen, Nymphenburg, Haidhausen) are extremely safe with strong community infrastructure and very low crime rates"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$3,025 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$18 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Germany work permit — make-it-in-germany.com",
+          "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+          "isVerified": true
+        }
+      ],
+      "cost": [
+        {
+          "label": "Munich Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Munich",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Munich Expats' or 'Expat Family Munich Germany' on Google — active community with housing, school, KITA, and settlement advice",
+        "searchQuery": "Munich Expats Facebook group",
+        "url": "https://www.google.com/search?q=Munich+Expats+Facebook+group+Germany",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "thessaloniki-gr",
+    "citySlug": "thessaloniki",
+    "countrySlug": "greece",
+    "city": "Thessaloniki",
+    "country": "Greece",
+    "tagline": "Greece's second city — vibrant, walkable, and dramatically more affordable than Athens",
+    "summary": "Thessaloniki is Greece's second largest city and one of the most underrated family relocation destinations in Europe. It offers outstanding food, a walkable city centre, warm Mediterranean climate, and housing costs far below Athens or any western European capital. The trade-off is limited international school choice and a smaller expat community — families who thrive here are typically EU citizens or remote workers prepared to engage with Greek life.",
+    "lastReviewed": "2026-03",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA citizens: register at your local KEP (Citizens' Service Centre — Greece's equivalent of a public services office) within 3 months and obtain your AMKA and AFM",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Non-EU remote workers: apply for the Greece Digital Nomad Visa at a Greek Consulate before travelling — minimum income $3,780/month",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Get your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at a local Εφορία (tax office) immediately on arrival — required before renting, banking, or signing any contract",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Get your AMKA (Greek social security and healthcare registration number) at any AMKA office — required to access public healthcare and enrol children in school",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Start your housing search 4–6 weeks before your move — Thessaloniki's rental market is relaxed and affordable; take your time to visit in person",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research international and bilingual school options early — Thessaloniki has very limited English-medium school choice",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Open a Greek bank account — Piraeus Bank and Alpha Bank are the most accessible for new arrivals in Thessaloniki",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Arrange private health insurance before arrival if you cannot yet access EOPYY (Greece's public health organisation) coverage",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "EU/EEA families who want a warm, affordable Mediterranean city with very low cost of living",
+        "Remote workers and digital nomads who want to maximise quality of life per euro in a vibrant, underrated city",
+        "Families who are open to using the Greek state school system and integrating into Greek community life",
+        "Families who value food culture, walkability, and proximity to the sea, mountains, and northern Greek countryside"
+      ],
+      "watchOutFor": [
+        "International school choice is very limited — most English-medium options are small private schools; research before committing",
+        "Greek bureaucracy is genuinely slow and document-heavy — the AFM, AMKA, and residency registration each require separate office visits",
+        "The expat community in Thessaloniki is much smaller than in Athens — community support infrastructure is limited; expect more independent integration",
+        "Greece's economy has recovered but job opportunities outside of remote work and teaching are limited for non-Greek speakers"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA families move freely to Greece with no visa. Greece's Digital Nomad Visa is available for non-EU remote workers earning at least $3,780/month. The AFM (tax ID) and AMKA (social security number) are the two registrations that unlock all other services.",
+      "tip": "Secure your AFM and AMKA in the first week — they are the two IDs that unlock everything else in Greece, including healthcare, school enrolment, and banking.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Thessaloniki",
+          "duration": "No visa required",
+          "description": "Move freely to Greece. Register at your local KEP within 3 months and obtain your AMKA and AFM.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Greece.",
+            "Register at your local KEP (Citizens' Service Centre — Greece's equivalent of a public services office) within 3 months. Bring your passport and proof of address (rental contract or utility bill).",
+            "Apply for your AMKA (Greece's social security and healthcare registration number) at any AMKA office. Required to access public healthcare, enrol children in school, and apply for health coverage.",
+            "Apply for your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at any local Εφορία (tax office). Required to rent a flat, open a bank account, or sign any formal contract.",
+            "After 5 years of continuous legal residence, you can apply for a permanent residency certificate."
+          ]
+        },
+        {
+          "type": "Schengen Tourist",
+          "anchor": "visa-tourist",
+          "detailTitle": "Schengen Tourist — what it covers",
+          "duration": "Up to 90 days in any 180-day window",
+          "description": "Valid for a scouting trip. No right to work, no extensions, cannot be converted to residency from inside Greece.",
+          "details": [
+            "90 days maximum across the entire Schengen Area in any 180-day period.",
+            "No right to work — this includes remote work for a foreign employer.",
+            "Cannot be converted to residency from inside Greece — apply for a long-stay visa at a Greek consulate in your home country before travelling.",
+            "Good use: 2–3 weeks scouting Panorama, Kalamaria, and Pylaia for housing and schools before committing to the move.",
+            "Do not attempt long-term stays on rolling tourist entries — Greek immigration enforces Schengen limits."
+          ]
+        },
+        {
+          "type": "Greece Digital Nomad Visa",
+          "anchor": "visa-gr-dnv",
+          "detailTitle": "Greece Digital Nomad Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "For remote workers earning at least $3,780/month employed by or contracting with a non-Greek entity. Apply at a Greek consulate before travelling.",
+          "details": [
+            "Income requirement: at least $3,780/month from remote employment or freelancing for non-Greek clients. You cannot provide services to Greek clients on this visa.",
+            "Required documents: valid passport, proof of remote employment or client contracts, 3 months of bank statements, private health insurance valid in Greece, and a recent CV.",
+            "Apply at the Greek consulate in your home country — you cannot switch to this visa from inside Greece on a tourist entry.",
+            "Once in Greece, obtain your AMKA (social security number) and AFM (tax ID) to access services and open a bank account.",
+            "After 1 year, the visa can be renewed. After 5 years of legal residence, you can apply for long-term residency."
+          ],
+          "officialLink": {
+            "label": "Greece Digital Nomad Visa official Enterprise Greece"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Registration, AFM & AMKA",
+      "tip": "Get your AFM and AMKA in the first week — without both you cannot rent a flat, open a bank account, or register children in school or healthcare.",
+      "items": [
+        "Apply for your AFM (Arithmos Forologikou Mitroou — Greek tax ID number) at any local Εφορία (tax office). Bring your passport and proof of address. Required before renting, banking, or signing any formal contract.",
+        "Apply for your AMKA (Greece's social security and healthcare registration number — required for all public health services and school enrolment) at any AMKA office. Bring your passport and AFM.",
+        "Register at your local KEP (Citizens' Service Centre — Greece's public services office network) within 3 months. KEP handles most government form submissions in one place — a significant time saver.",
+        "Non-EU residents must apply for a residence permit through the digital.gov.gr portal — bring your passport, D visa, and proof of address. Processing times vary but are typically several months.",
+        "After 5 years of continuous legal residence, you can apply for a permanent residency certificate."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "You need your AFM (tax ID) before most Greek banks will open an account — get it on day one and take it to the bank within the same week.",
+      "items": [
+        "Piraeus Bank, Alpha Bank, Eurobank, and National Bank of Greece (Εθνική Τράπεζα) are the main banks in Thessaloniki. Piraeus Bank and Alpha Bank have the most accessible English-language service.",
+        "To open an account you need: passport, AFM (tax ID), and proof of Greek address (rental contract or utility bill).",
+        "Revolut and Wise are widely used by expats in Thessaloniki for international transfers and day-to-day spending — particularly useful while waiting for your Greek account to open.",
+        "N26 (German neobank) operates in Greece and is a good bridge option — open online with just a passport, no Greek address required initially.",
+        "Greece remains significantly cash-reliant — keep $110–$215 in cash for local markets, small restaurants, and services that do not accept cards."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Thessaloniki is one of the most affordable cities in Europe for housing. Family-friendly areas cluster in Panorama (upmarket hill suburb), Kalamaria (coastal suburb east of the centre), Pylaia, and the Nea Paralia (waterfront area).",
+      "bestAreas": [
+        "Panorama",
+        "Kalamaria",
+        "Pylaia",
+        "Nea Paralia",
+        "Analipsi"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Θεσσαλονίκη' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: Thessaloniki's rental market is relaxed — viewings can be arranged quickly and negotiations with landlords are informal. Arrive with a short-stay rental for the first 2–3 weeks and view in person."
+      ],
+      "searchPortals": [
+        {
+          "label": "Spitogatos.gr — Greece's largest property rental platform",
+          "url": "https://www.spitogatos.gr",
+          "isVerified": true
+        },
+        {
+          "label": "xe.gr — major Greek property portal with strong Thessaloniki listings",
+          "url": "https://www.xe.gr",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Thessaloniki Expats Housing' or 'Thessaloniki Rentals' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Thessaloniki+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, city centre or Nea Paralia: $430–$700/month",
+        "2-bed apartment, Kalamaria: $595–$920/month",
+        "3-bed apartment, Pylaia: $700–$1,080/month",
+        "3-bed house or large apartment, Panorama: $970–$1,730/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport",
+        "AFM (Greek tax ID — required on all rental contracts)",
+        "3 months of bank statements or employment contract",
+        "1–2 months deposit is standard in Thessaloniki",
+        "Rental contracts are typically annual — verbal agreements exist but always insist on a written contract"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Thessaloniki has very limited international school options. Most expat families with children either use the Greek state system (particularly younger children who adapt quickly) or choose private bilingual schools.",
+      "publicSystem": "Greek state schools are free and open to all registered residents. All instruction is in Greek. State schools are a realistic option for younger children — many integrate linguistically within 1–2 years. For families with older children or those planning a shorter stay, the limited English-medium alternatives are a genuine constraint.",
+      "internationalOptions": "Thessaloniki has a small number of private bilingual and international schools, primarily teaching in English and Greek with limited places. Fees range from roughly $3,240 to $9,720 per year — among the lowest in Europe. The choice is considerably more limited than Athens.",
+      "languageNotes": "Greek state schools teach entirely in Greek. Private bilingual schools offer English-Greek instruction. Greek is essential for daily life and bureaucracy — language lessons are highly recommended for all family members before and after arrival.",
+      "tip": "Contact private bilingual schools before committing to Thessaloniki — the total number of English-medium places is small and year groups fill early.",
+      "options": [
+        {
+          "type": "Private bilingual schools (Greek-English)",
+          "description": "The main option for English-speaking expat families in Thessaloniki. Small class sizes and bilingual Greek-English instruction. Fees are very affordable by European standards.",
+          "fees": "$3,240–$9,720/year typical"
+        },
+        {
+          "type": "Greek state schools (public)",
+          "description": "Free for all registered residents. All instruction in Greek. A genuine option for younger children — many adapt linguistically within 1–2 years. Less practical for older children arriving mid-education.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Thessaloniki has affordable public and private nursery options. State paidikoi stathmos (nurseries) are subsidised and available through the municipality.",
+      "daycareItems": [
+        "Paidikos stathmos (nursery — Greek term for municipal nursery for children 1–4) are subsidised and income-tested. Apply through the Thessaloniki municipality portal — waiting lists exist but are shorter than in Athens",
+        "Private nursery fees: roughly $270–$540/month — among the most affordable in Europe",
+        "Nipiagogeio (Greek state kindergarten for children 4–6) is free for all registered residents after AMKA and AFM registration",
+        "Visit nurseries in person before committing — private providers vary in quality and language of instruction"
+      ],
+      "nannyItems": [
+        "Full-time nannies charge roughly $6–$11/hr — among the lowest in Europe",
+        "Many nannies in Thessaloniki speak basic English due to the university city atmosphere and international student presence",
+        "Part-time and after-school arrangements are the most common nanny setup among expat families in Thessaloniki",
+        "Start your nanny search 4–6 weeks before arrival — the market is small but supply is generally available"
+      ],
+      "whereToFindItems": [
+        "Ergani.gr and Xe.gr classified listings — used for childcare and nanny listings in Thessaloniki",
+        "Milanuncios-equivalent Greek classifieds (car.gr, offers.gr) — used for childcare listings locally",
+        "Search 'Thessaloniki Expat Families' or 'Expats Thessaloniki Parents' on Google — small but active community for personal recommendations"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Get your AMKA (social security number) within the first week — without it you cannot access any public healthcare service or register children with a GP.",
+      "items": [
+        "Greece's public health system (EOPYY — Εθνικός Οργανισμός Παροχής Υπηρεσιών Υγείας — the National Health Service Organisation) covers registered residents with an AMKA. Quality varies; most expat families complement it with private insurance.",
+        "Register with EOPYY through your AMKA to access subsidised GP visits, specialist referrals, and public hospital care. GP visits through the system require an AMKA and are low cost.",
+        "Private healthcare is widely used in Thessaloniki for faster access and English-speaking doctors. A private GP consultation costs roughly $43–$86 — very affordable by European standards.",
+        "Arrange IPMI (International Private Medical Insurance) before arrival if you cannot immediately access EOPYY — family plans from Cigna or Allianz Care typically cost $195–$410/month.",
+        "Papageorgiou General Hospital and AHEPA University Hospital (both public) are the two main hospitals for families in Thessaloniki. Private Interbalkan Medical Centre is widely used by expats for faster service."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 76,
+      "summary": "Thessaloniki is generally safe for families, though petty crime and traffic are real daily considerations.",
+      "items": [
+        "Violent crime is relatively rare in family residential areas — Panorama, Kalamaria, and Pylaia are consistently low-crime neighbourhoods",
+        "Petty theft and pickpocketing occur in the busy city centre, the Modiano Market area, and the waterfront — keep bags secure in crowded areas",
+        "Traffic is the primary daily safety risk — Greek driving culture is aggressive by northern European standards and pedestrian crossing compliance is inconsistent; teach children road awareness early",
+        "Stray dogs are present in some city areas — usually not aggressive but worth awareness with young children",
+        "Family suburbs (Panorama, Kalamaria, Pylaia) are well-lit, active, and significantly safer and quieter than the city centre"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$755 / month",
+      "familyDinner": "~$32",
+      "nannyRate": "~$9 / hr"
+    },
+    "sources": {
+      "cost": [
+        {
+          "label": "Thessaloniki Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Thessaloniki",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Thessaloniki Expats' or 'Expat Families Thessaloniki Greece' on Google — small but active community with housing, school, and settling-in advice",
+        "searchQuery": "Thessaloniki Expats Facebook group",
+        "url": "https://www.google.com/search?q=Thessaloniki+Expats+Facebook+group+Greece",
         "isVerified": true
       }
     ]
