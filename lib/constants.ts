@@ -45,15 +45,15 @@ export const CITY_IMAGES: Record<string, string> = {
   "Sydney":       "https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?w=900&q=80",
   "Tel Aviv":     "https://images.unsplash.com/photo-1561992022-6d47c991fdd3?w=900&q=80",
   "Melbourne":    "https://images.unsplash.com/photo-1744367624669-d0b275ff4cd2?w=900&q=80",
-  "Brisbane":     "https://images.unsplash.com/photo-1606509463400-5ce6440c53e9?w=900&q=80",
+  "Brisbane":     "https://images.unsplash.com/photo-1548661625-a30d197ce439?w=900&q=80",
   "Auckland":     "https://images.unsplash.com/photo-1762388749660-44eab9b0e323?w=900&q=80",
   "Wellington":   "https://images.unsplash.com/photo-1624589010805-b4e69450ed87?w=900&q=80",
   "Milan":        "https://images.unsplash.com/photo-1664565649460-9452853ab7b6?w=900&q=80",
   "Florence":     "https://images.unsplash.com/photo-1760552697200-377f9f52356f?w=900&q=80",
-  "Alicante":     "https://images.unsplash.com/photo-1758795679831-c47c6c814acb?w=900&q=80",
-  "Cascais":      "https://images.unsplash.com/photo-1550508111-0c20041f55bd?w=900&q=80",
+  "Alicante":     "https://images.unsplash.com/photo-1680537732160-01750bae5217?w=900&q=80",
+  "Cascais":      "https://images.unsplash.com/photo-1615672337780-6e19a28a5b39?w=900&q=80",
   "Munich":       "https://images.unsplash.com/photo-1741120026139-8ae0036ebe6d?w=900&q=80",
-  "Thessaloniki": "https://images.unsplash.com/photo-1763567966641-2fd8676612b5?w=900&q=80",
+  "Thessaloniki": "https://images.unsplash.com/photo-1641758136107-6f1364766ccd?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =
