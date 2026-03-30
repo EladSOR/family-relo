@@ -10,7 +10,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. $2,570/month; +$990/month per additional family member)",
         "targetSection": "visa"
       },
       {
@@ -62,7 +62,7 @@
     },
     "housing": {
       "status": "estimated",
-      "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for €900–€1,800/month.",
+      "summary": "Valencia is one of the most affordable major cities in Western Europe. A 3-bedroom apartment in a family-friendly neighbourhood rents for $990–$1,980/month.",
       "bestAreas": [
         "Ruzafa",
         "Campanar",
@@ -103,10 +103,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, city centre: €700–€1,100/month",
-        "3-bed flat, family neighbourhoods (Ruzafa, Campanar): €1,000–€1,600/month",
-        "3-bed flat, beachside (El Cabanyal): €1,200–€1,800/month",
-        "House with garden, outskirts (Paterna, Torrent): €1,500–€2,200/month"
+        "1-bed flat, city centre: $750–$1,200/month",
+        "3-bed flat, family neighbourhoods (Ruzafa, Campanar): $1,100–$1,750/month",
+        "3-bed flat, beachside (El Cabanyal): $1,300–$2,000/month",
+        "House with garden, outskirts (Paterna, Torrent): $1,650–$2,400/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport — NIE if you already have it",
@@ -128,36 +128,36 @@
         {
           "type": "British curriculum international schools",
           "description": "IGCSE and A-Level options in and around Valencia. Established expat choice.",
-          "fees": "€7,000–11,000/year typical"
+          "fees": "$7,700–$12,000/year typical"
         },
         {
           "type": "US / IB curriculum international schools",
           "description": "Several schools offering the International Baccalaureate or US diploma.",
-          "fees": "€9,000–13,000/year typical"
+          "fees": "$10,000–$14,000/year typical"
         },
         {
           "type": "Concertado schools (subsidized private)",
           "description": "Part state-funded private schools taught in Spanish and Valencian. Lower cost but require Spanish.",
-          "fees": "Free–€2,000/year"
+          "fees": "Free–$2,200/year"
         }
       ]
     },
     "childcare": {
       "status": "estimated",
       "summary": "Valencia has a strong childcare market — private nurseries, nannies, and au pairs are all easy to find and affordable by European standards.",
-      "daycareNotes": "Private nurseries (guarderías) accept children from 4 months. Fees: €300–€600/month. Public places are subsidised but scarce.",
-      "nannyNotes": "Live-out nannies charge €10–€15/hr. Au pairs receive board, lodging, and €80–€150/week pocket money.",
-      "typicalCost": "Nanny: €10–€15/hr. Private nursery: €300–€600/month. Au pair: €80–€150/week + room and board.",
+      "daycareNotes": "Private nurseries (guarderías) accept children from 4 months. Fees: $330–$660/month. Public places are subsidised but scarce.",
+      "nannyNotes": "Live-out nannies charge $11–$16/hr. Au pairs receive board, lodging, and $90–$165/week pocket money.",
+      "typicalCost": "Nanny: $11–$16/hr. Private nursery: $330–$660/month. Au pair: $90–$165/week + room and board.",
       "howFamiliesFindIt": "Sitly.es, InfoJobs.es, AuPairWorld.com.",
       "daycareItems": [
         "Private nurseries (guarderías) accept children from 4 months — widely available in Ruzafa, Campanar, and most family neighbourhoods",
-        "Typical fees: €300–€600/month depending on hours and location",
+        "Typical fees: $330–$660/month depending on hours and location",
         "Public nursery places (0–3 years) are subsidised but very limited — join the municipal waiting list immediately on arrival",
         "Tip: visit 2–3 nurseries in person before deciding — quality and staff attentiveness vary significantly"
       ],
       "nannyItems": [
-        "Live-out nannies (cuidadoras) charge €10–€15/hr — common among expat families",
-        "Au pairs receive board, lodging, and €80–€150/week pocket money — a popular choice for language immersion",
+        "Live-out nannies (cuidadoras) charge $11–$16/hr — common among expat families",
+        "Au pairs receive board, lodging, and $90–$165/week pocket money — a popular choice for language immersion",
         "Most nannies speak Spanish or Valencian only — good for helping your children pick up the language faster"
       ],
       "whereToFindItems": [
@@ -175,8 +175,8 @@
         "Go to your local Centro de Salud (public health clinic) with your Padrón certificate to get a SIP card — Spain's free healthcare registration card that activates your access to the public system.",
         "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every family member who is registered.",
         "Each child needs their own SIP card — register them separately at the same clinic, bringing their passport and your Padrón certificate.",
-        "Private clinics are fast and affordable — a GP appointment costs €50–€80 without insurance, and results are usually same-day.",
-        "Popular private health insurers for expats: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month and give access to English-speaking doctors."
+        "Private clinics are fast and affordable — a GP appointment costs $55–$90 without insurance, and results are usually same-day.",
+        "Popular private health insurers for expats: Sanitas, Adeslas, and Asisa — family plans start around $165–$275/month and give access to English-speaking doctors."
       ]
     },
     "safety": {
@@ -193,9 +193,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,300 / month",
-      "familyDinner": "~€45",
-      "nannyRate": "~€12 / hr"
+      "rentRange": "~$1,400 / month",
+      "familyDinner": "~$50",
+      "nannyRate": "~$13 / hr"
     },
     "sources": {
       "visa": [
@@ -265,7 +265,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients",
+        "label": "Confirm you meet the D8 income threshold: min. $3,830/month from remote work or freelance for foreign clients",
         "targetSection": "visa"
       },
       {
@@ -348,9 +348,9 @@
           "anchor": "visa-d8",
           "detailTitle": "D8 Visa — how to apply",
           "duration": "2 years, renewable",
-          "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
+          "description": "For remote workers or freelancers earning at least $3,830/month. Apply at the Portuguese Consulate before travelling.",
           "details": [
-            "Income requirement: minimum €3,480/month (4× the national minimum wage) from remote employment or freelance work — at least 80% must come from foreign clients or an employer based outside Portugal.",
+            "Income requirement: minimum $3,830/month (4× the national minimum wage) from remote employment or freelance work — at least 80% must come from foreign clients or an employer based outside Portugal.",
             "Required documents: valid passport (6+ months remaining), Apostilled criminal record check (an Apostille is an official government certification that authenticates the document for use abroad), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
             "Apply at the Portuguese Consulate in your home country — you cannot apply for the D8 from inside Portugal.",
             "Allow 2–4 months for processing — book your consulate appointment as early as possible, slots fill quickly in cities like London, New York, and Tel Aviv.",
@@ -407,10 +407,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, central Lisbon: €1,200–€1,800/month",
-        "3-bed flat, central Lisbon: €2,200–€3,500/month",
-        "3-bed house, Cascais–Estoril corridor: €2,500–€4,500/month",
-        "3-bed flat, Oeiras/Parede (more affordable): €1,800–€2,800/month"
+        "1-bed flat, central Lisbon: $1,320–$1,980/month",
+        "3-bed flat, central Lisbon: $2,420–$3,850/month",
+        "3-bed house, Cascais–Estoril corridor: $2,750–$4,950/month",
+        "3-bed flat, Oeiras/Parede (more affordable): $1,980–$3,080/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport (NIF if you already have it)",
@@ -424,19 +424,19 @@
       "status": "curated",
       "summary": "The greater Lisbon area has excellent international schools. CAISL and St. Julian's are consistently top-rated, but both have waitlists that stretch 12–18 months — apply before you book flights.",
       "publicSystem": "Public schools are free, but all instruction is in Portuguese. Children without Portuguese will struggle to keep up. Bilingual state schools exist in Lisbon but places are very limited — do not count on them. Best for families already planning Portuguese immersion.",
-      "internationalOptions": "The Cascais–Estoril corridor (30 min west of Lisbon by train) is the main hub for international schools. Schools follow US, British, or IB curricula, taught entirely in English. Fees are €10,000–$22,000/year. Apply 12–18 months before your intended start date — CAISL and St. Julian's are the two most competitive.",
-      "languageNotes": "Portuguese is the sole official language. All international schools in the Cascais corridor teach in English. Some offer Portuguese language support for new arrivals. Children who attend public school will need a private Portuguese tutor — budget €30–€60/hr.",
+      "internationalOptions": "The Cascais–Estoril corridor (30 min west of Lisbon by train) is the main hub for international schools. Schools follow US, British, or IB curricula, taught entirely in English. Fees are $11,000–$24,000/year. Apply 12–18 months before your intended start date — CAISL and St. Julian's are the two most competitive.",
+      "languageNotes": "Portuguese is the sole official language. All international schools in the Cascais corridor teach in English. Some offer Portuguese language support for new arrivals. Children who attend public school will need a private Portuguese tutor — budget $33–$66/hr.",
       "tip": "Popular international schools in the Cascais corridor fill 12–18 months ahead — apply early.",
       "options": [
         {
           "type": "American / IB curriculum international schools",
           "description": "Several established options, mainly in the Cascais–Estoril corridor (30 min west of Lisbon).",
-          "fees": "€14,000–22,000/year typical"
+          "fees": "$15,400–$24,000/year typical"
         },
         {
           "type": "British / IB curriculum international schools",
           "description": "Strong options along the Cascais corridor and some central Lisbon locations.",
-          "fees": "€10,000–18,000/year typical"
+          "fees": "$11,000–$19,800/year typical"
         },
         {
           "type": "Portuguese state schools",
@@ -448,20 +448,20 @@
     "childcare": {
       "status": "estimated",
       "summary": "Lisbon has a strong childcare market, particularly in the Cascais–Oeiras corridor where most expat families live. Costs are moderate by Western European standards.",
-      "daycareNotes": "Private nurseries in Cascais and Oeiras charge €500–€900/month, with bilingual (English/Portuguese) programmes.",
-      "nannyNotes": "Live-out nannies charge €10–€15/hr. Many families hire Brazilian nannies experienced with international families.",
-      "typicalCost": "Nanny: €10–€15/hr. Private nursery: €500–€900/month. Au pair: €100–€200/week + room and board.",
+      "daycareNotes": "Private nurseries in Cascais and Oeiras charge $550–$990/month, with bilingual (English/Portuguese) programmes.",
+      "nannyNotes": "Live-out nannies charge $11–$16/hr. Many families hire Brazilian nannies experienced with international families.",
+      "typicalCost": "Nanny: $11–$16/hr. Private nursery: $550–$990/month. Au pair: $110–$220/week + room and board.",
       "howFamiliesFindIt": "Sitly.com, Babysits.com, and local agency Ama Perfeita.",
       "daycareItems": [
         "Private creches (nurseries) accept babies from 3 months old — widely available in Cascais, Oeiras, and Estoril where most expat families live",
-        "Typical fees: €500–€900/month; ask specifically about bilingual (English/Portuguese) programmes — they are common in expat areas but not guaranteed",
+        "Typical fees: $550–$990/month; ask specifically about bilingual (English/Portuguese) programmes — they are common in expat areas but not guaranteed",
         "State-subsidised creches exist but are very limited — register on the waiting list immediately after arriving, even if you plan to go private",
         "Visit at least 2–3 creches in person before deciding — quality and English fluency of staff varies significantly between them"
       ],
       "nannyItems": [
-        "Live-out nannies charge €10–€15/hr — common among expat families in Cascais, Oeiras, and Estoril",
+        "Live-out nannies charge $11–$16/hr — common among expat families in Cascais, Oeiras, and Estoril",
         "Many expat families hire Brazilian nannies — native Portuguese speakers who are very familiar with international family life",
-        "Au pairs cost €100–€200/week plus room and board — a popular option for families wanting full-time coverage",
+        "Au pairs cost $110–$220/week plus room and board — a popular option for families wanting full-time coverage",
         "Start searching 4–6 weeks before arrival — the best nannies in expat areas fill quickly"
       ],
       "whereToFindItems": [
@@ -479,8 +479,8 @@
         "Go to your local Centro de Saúde (public health clinic) with your Junta de Freguesia certificate to register with the SNS — Portugal's free national health system. This activates healthcare cover for your whole family.",
         "The SNS (Serviço Nacional de Saúde) covers GP visits, specialists, emergency care, and prescriptions at reduced cost — for every family member registered.",
         "Each child needs to be registered separately — bring their passport and your Junta de Freguesia certificate to the same clinic.",
-        "Private healthcare is widely used by expats because waiting times are shorter — a private GP costs €60–€120 out of pocket, with results usually same-day.",
-        "Popular private health insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €150–€250/month and include English-speaking doctors across Lisbon and Cascais."
+        "Private healthcare is widely used by expats because waiting times are shorter — a private GP costs $66–$132 out of pocket, with results usually same-day.",
+        "Popular private health insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around $165–$275/month and include English-speaking doctors across Lisbon and Cascais."
       ]
     },
     "safety": {
@@ -497,9 +497,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€2,500 / month",
-      "familyDinner": "~€55",
-      "nannyRate": "~€13 / hr"
+      "rentRange": "~$2,750 / month",
+      "familyDinner": "~$60",
+      "nannyRate": "~$14 / hr"
     },
     "sources": {
       "visa": [
@@ -647,7 +647,7 @@
           "detailTitle": "Virtual Working Programme — how to apply",
           "details": [
             "Officially called the 'Remote Work Visa' — a 1-year renewable residency permit for remote workers and freelancers employed outside the UAE.",
-            "Income requirement: at least $3,500/month (roughly AED 12,850). You must show 3 months of payslips or bank statements.",
+            "Income requirement: at least $3,500/month. You must show 3 months of payslips or bank statements.",
             "Documents required: valid passport, passport-sized photos, proof of remote employment (letter from employer or client contracts), 3 months of income proof, and valid health insurance.",
             "Application fee: approximately $550 USD. Apply through Dubai Tourism (visitdubai.com/en/visa-information) or through a registered UAE PRO agency.",
             "Covers the primary applicant and immediate family — your spouse and children will receive dependent visas under your residency.",
@@ -667,7 +667,7 @@
           "detailTitle": "UAE Golden Visa — who it is for",
           "details": [
             "A 10-year renewable residency visa. Covers the primary applicant, spouse, and all children — including adult children and one household staff member.",
-            "Eligibility routes include: real estate investment (min. AED 2 million property), business ownership, skilled professionals in select fields (doctors, engineers, scientists), and outstanding students.",
+            "Eligibility routes include: real estate investment (min. ~$545,000 property), business ownership, skilled professionals in select fields (doctors, engineers, scientists), and outstanding students.",
             "No UAE sponsor required — you are your own sponsor, which gives significantly more stability than an employment-tied residency.",
             "Holders can stay outside the UAE for extended periods without losing residency (unlike standard residency which lapses after 6 months abroad).",
             "Apply through the Federal Authority for Identity, Citizenship, Customs and Port Security (ICP) or through an authorised service centre.",
@@ -709,11 +709,11 @@
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Dubai Marina / JBR: ~AED 7,000–9,000 / month",
-        "2-bed apartment, Dubai Marina / Business Bay: ~AED 10,000–14,000 / month",
-        "3-bed apartment, Downtown / DIFC: ~AED 15,000–22,000 / month",
-        "3-bed villa, Arabian Ranches or The Springs: ~AED 15,000–25,000 / month",
-        "4-bed villa, Jumeirah / Mirdif (closer to British schools): ~AED 25,000–45,000 / month"
+        "1-bed apartment, Dubai Marina / JBR: ~$1,900–$2,450 / month",
+        "2-bed apartment, Dubai Marina / Business Bay: ~$2,720–$3,810 / month",
+        "3-bed apartment, Downtown / DIFC: ~$4,080–$5,980 / month",
+        "3-bed villa, Arabian Ranches or The Springs: ~$4,080–$6,800 / month",
+        "4-bed villa, Jumeirah / Mirdif (closer to British schools): ~$6,800–$12,240 / month"
       ],
       "whatYouNeedToRent": [
         "Passport and UAE residency visa (or proof of application in progress)",
@@ -734,17 +734,17 @@
         {
           "type": "British curriculum international schools (KHDA regulated)",
           "description": "Largest category — 80+ schools. Most popular choice for expat families in Dubai.",
-          "fees": "AED 30,000–80,000/year typical"
+          "fees": "$8,200–$21,800/year typical"
         },
         {
           "type": "American curriculum international schools (KHDA regulated)",
           "description": "Several strong options across Dubai. All schools are rated by the KHDA (Dubai school regulator).",
-          "fees": "AED 35,000–90,000/year typical"
+          "fees": "$9,500–$24,500/year typical"
         },
         {
           "type": "IB curriculum international schools (KHDA regulated)",
           "description": "International Baccalaureate widely available — good for university-bound students.",
-          "fees": "AED 40,000–100,000/year typical"
+          "fees": "$10,900–$27,200/year typical"
         }
       ]
     },
@@ -753,14 +753,14 @@
       "summary": "Dubai has a large supply of KHDA-regulated nurseries. Hiring a live-in nanny is very common — domestic workers are a normal part of expat family life in the UAE.",
       "daycareItems": [
         "KHDA-licensed nurseries are widely available (KHDA is Dubai's official nursery and school quality regulator) across all major family neighbourhoods — most offer bilingual (English/Arabic) programmes",
-        "Typical nursery fees: ~AED 1,800–4,400 / month; KHDA inspection ratings (published at khda.gov.ae) are the most reliable guide to nursery quality",
+        "Typical nursery fees: ~$490–$1,200 / month; KHDA inspection ratings (published at khda.gov.ae) are the most reliable guide to nursery quality",
         "Most nurseries accept children from 18 months old",
         "Apply a few months in advance — popular nurseries in Arabian Ranches and Jumeirah can fill up quickly"
       ],
       "nannyItems": [
         "Hiring a live-in domestic worker is very common in Dubai — most families apply through a licensed agency",
         "Live-in nannies often come from the Philippines, India, or Sri Lanka and are sponsored on the employer's residence visa",
-        "Typical cost: roughly AED 1,500–2,600 / month plus accommodation and food; agency placement fees are a one-off additional cost",
+        "Typical cost: roughly $410–$710 / month plus accommodation and food; agency placement fees are a one-off additional cost",
         "A live-in arrangement gives around-the-clock coverage — common for dual-income households"
       ],
       "whereToFindItems": [
@@ -819,9 +819,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~AED 12,000 / month",
-      "familyDinner": "~AED 250",
-      "nannyRate": "~AED 55 / hr"
+      "rentRange": "~$3,300 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$15 / hr"
     },
     "sources": {
       "visa": [
@@ -1036,12 +1036,12 @@
         {
           "type": "US / ACSI curriculum international schools",
           "description": "Established options clustered near Hang Dong, 15–20 min south of the city centre.",
-          "fees": "฿150,000–320,000/year typical"
+          "fees": "$4,200–$9,000/year typical"
         },
         {
           "type": "IB curriculum international schools",
           "description": "Fewer options available, higher fees. Strong university preparation.",
-          "fees": "฿300,000–550,000/year typical"
+          "fees": "$8,400–$15,400/year typical"
         }
       ]
     },
@@ -1050,13 +1050,13 @@
       "summary": "Childcare in Chiang Mai is abundant and very affordable. Hiring a full-time nanny — a luxury in most Western cities — is within easy reach for most expat families here.",
       "daycareItems": [
         "International nurseries and pre-schools are widely available in Hang Dong and Nimmanhaemin — most are bilingual (English/Thai)",
-        "Typical fees: ฿5,000–฿14,000 / month — far cheaper than equivalent daycare in Europe or the US",
+        "Typical fees: $140–$390 / month — far cheaper than equivalent daycare in Europe or the US",
         "Most accept children from 18 months old; some from 1 year",
         "Visit at least 2–3 nurseries in person before enrolling — English fluency of staff varies significantly"
       ],
       "nannyItems": [
-        "Full-time live-in nanny: ฿10,500–฿18,000 / month — one of the most affordable places in the world for this arrangement",
-        "Part-time live-out nanny: ฿100–฿210 / hr depending on English level and experience",
+        "Full-time live-in nanny: $295–$505 / month — one of the most affordable places in the world for this arrangement",
+        "Part-time live-out nanny: $3–$6 / hr depending on English level and experience",
         "Many Thai nannies have prior experience with expat families — ask specifically for this when posting",
         "English fluency varies — build in a 2–4 week settling-in period and be patient"
       ],
@@ -1094,9 +1094,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~฿30,000 / month",
-      "familyDinner": "~฿500",
-      "nannyRate": "~฿150 / hr"
+      "rentRange": "~$840 / month",
+      "familyDinner": "~$14",
+      "nannyRate": "~$4 / hr"
     },
     "sources": {
       "visa": [
@@ -1246,7 +1246,7 @@
           "detailTitle": "Tourist Visa — arrival and extension",
           "details": [
             "Most Western passport holders enter Thailand on a 30-day visa exemption — no advance application required.",
-            "You can extend once for 30 more days at the Koh Phangan Immigration Office in Thong Sala (cost: ฿1,900).",
+            "You can extend once for 30 more days at the Koh Phangan Immigration Office in Thong Sala (cost: ~$53).",
             "Not suitable for long-term stays — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
             "Use this for an initial scouting visit only. Start your DTV application before arriving if you plan to stay."
           ]
@@ -1305,10 +1305,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed house or bungalow, Sri Thanu: ฿8,000–15,000 / month",
-        "2-bed house with garden, Sri Thanu / Haad Yao: ฿12,000–22,000 / month",
-        "3-bed house with pool, Sri Thanu: ฿22,000–40,000 / month",
-        "Furnished short-stay option (bills included): ฿15,000–30,000 / month"
+        "1-bed house or bungalow, Sri Thanu: $220–$420 / month",
+        "2-bed house with garden, Sri Thanu / Haad Yao: $330–$610 / month",
+        "3-bed house with pool, Sri Thanu: $610–$1,110 / month",
+        "Furnished short-stay option (bills included): $420–$830 / month"
       ],
       "whatYouNeedToRent": [
         "Passport and current visa stamp",
@@ -1329,7 +1329,7 @@
         {
           "type": "Small community schools and micro-schools",
           "description": "Very limited formal options on the island. Mostly small, informal, or Montessori-style. Not accredited international schools.",
-          "fees": "฿50,000–150,000/year if available"
+          "fees": "$1,400–$4,200/year if available"
         }
       ]
     },
@@ -1339,12 +1339,12 @@
       "daycareItems": [
         "A small number of private nurseries and community micro-schools serve expat families — mainly in Sri Thanu",
         "Options are limited compared to a city; cooperative childcare (nanny shares, community playgroups) is very common and often preferred",
-        "Community nursery fees: typically ฿7,000–฿14,000 / month",
+        "Community nursery fees: typically $196–$392 / month",
         "Ask in expat community groups before arriving — the best current options change as the community evolves"
       ],
       "nannyItems": [
-        "Full-time Thai nannies are widely available and affordable — roughly ฿10,500–฿18,000 / month for a live-in arrangement",
-        "Part-time nannies: roughly ฿140–฿210 / hr",
+        "Full-time Thai nannies are widely available and affordable — roughly $295–$505 / month for a live-in arrangement",
+        "Part-time nannies: roughly $4–$6 / hr",
         "Most families in Sri Thanu and Haad Yao hire through community word-of-mouth — referrals are the most reliable route",
         "English fluency varies — vetted nannies who speak English are sought-after in this smaller community"
       ],
@@ -1398,14 +1398,14 @@
         "Bring your passport, current visa, and a rental contract as proof of address when opening an account.",
         "Use Wise or Revolut for receiving international income and converting to Thai Baht — Thai bank wire fees are high.",
         "ATMs are available in Thong Sala and main tourist areas; many island vendors still prefer cash.",
-        "Keep ฿1,000–฿3,000 in cash at home — ATMs can run empty on busy weekends or after weather events."
+        "Keep $28–$84 in cash at home — ATMs can run empty on busy weekends or after weather events."
       ]
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~฿20,000 / month",
-      "familyDinner": "~฿400",
-      "nannyRate": "~฿175 / hr"
+      "rentRange": "~$560 / month",
+      "familyDinner": "~$11",
+      "nannyRate": "~$5 / hr"
     },
     "sources": {
       "visa": [
@@ -1512,7 +1512,7 @@
           "detailTitle": "Tourist Visa — arrival and extension",
           "details": [
             "Most Western passport holders enter Koh Samui on a 30-day visa exemption at the airport — no advance application required.",
-            "You can extend once for 30 more days at the Koh Samui Immigration Office in Na Thon (cost: ฿1,900). Queue early — it is busy.",
+            "You can extend once for 30 more days at the Koh Samui Immigration Office in Na Thon (cost: ~$53). Queue early — it is busy.",
             "Not suitable for long-term stays. You cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
             "For a first scouting trip it works well — but start your DTV application before you arrive if you plan to stay."
           ]
@@ -1571,10 +1571,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed condo or apartment, Bophut / Maenam: ฿12,000–20,000 / month",
-        "2-bed house, north coast family areas: ฿20,000–38,000 / month",
-        "3-bed pool villa, Bophut / Maenam / Plai Laem: ฿40,000–75,000 / month",
-        "Furnished short-stay apartment (bills included): ฿25,000–55,000 / month"
+        "1-bed condo or apartment, Bophut / Maenam: $330–$560 / month",
+        "2-bed house, north coast family areas: $560–$1,060 / month",
+        "3-bed pool villa, Bophut / Maenam / Plai Laem: $1,110–$2,080 / month",
+        "Furnished short-stay apartment (bills included): $700–$1,530 / month"
       ],
       "whatYouNeedToRent": [
         "Passport and current visa stamp",
@@ -1595,7 +1595,7 @@
         {
           "type": "British / Cambridge curriculum international schools",
           "description": "Small selection of accredited schools serving the island's expat community. Limited capacity.",
-          "fees": "฿120,000–280,000/year typical"
+          "fees": "$3,360–$7,840/year typical"
         }
       ]
     },
@@ -1604,13 +1604,13 @@
       "summary": "Koh Samui has more childcare options than Koh Phangan, with several licensed nurseries and a large pool of experienced Thai nannies.",
       "daycareItems": [
         "Private nurseries operate in the main expat areas on the north coast — a smaller selection than a mainland city but generally sufficient",
-        "Typical fees: roughly ฿7,000–฿18,000 / month; bilingual (English/Thai) programmes are available at most private nurseries",
+        "Typical fees: roughly $196–$504 / month; bilingual (English/Thai) programmes are available at most private nurseries",
         "Most nurseries accept children from 18 months old",
         "Visit in person — quality and English fluency of staff varies; community recommendations are your best guide"
       ],
       "nannyItems": [
-        "Full-time Thai nannies are widely available — typically ฿12,000–฿21,000 / month for a live-in arrangement",
-        "Part-time nannies: roughly ฿180–฿250 / hr",
+        "Full-time Thai nannies are widely available — typically $336–$588 / month for a live-in arrangement",
+        "Part-time nannies: roughly $5–$7 / hr",
         "Many nannies have worked with expat families for years and have community references",
         "English fluency varies — build in a settling-in period and use vetted community referrals"
       ],
@@ -1664,14 +1664,14 @@
         "To open an account you typically need: passport, non-immigrant visa (DTV or similar), and a rental contract as proof of local address.",
         "Use Wise or Revolut for receiving international income and converting to Thai Baht — bank wire fees are high.",
         "ATMs are widely available across the island; markets and smaller shops are still largely cash-based.",
-        "Keep ฿500–฿2,000 in cash on hand at all times for local transactions."
+        "Keep $14–$56 in cash on hand at all times for local transactions."
       ]
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~฿42,000 / month",
-      "familyDinner": "~฿500",
-      "nannyRate": "~฿210 / hr"
+      "rentRange": "~$1,170 / month",
+      "familyDinner": "~$14",
+      "nannyRate": "~$6 / hr"
     },
     "sources": {
       "visa": [
@@ -1728,7 +1728,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. $2,570/month; +$990/month per additional family member)",
         "targetSection": "visa"
       },
       {
@@ -1780,7 +1780,7 @@
     },
     "housing": {
       "status": "estimated",
-      "summary": "Barcelona is the most expensive Spanish city for housing. A 3-bedroom flat in a family neighbourhood typically rents for €1,400–€2,500/month. Families often choose Sarrià-Sant Gervasi, Gràcia, or the Sant Cugat del Vallès suburb.",
+      "summary": "Barcelona is the most expensive Spanish city for housing. A 3-bedroom flat in a family neighbourhood typically rents for $1,540–$2,750/month. Families often choose Sarrià-Sant Gervasi, Gràcia, or the Sant Cugat del Vallès suburb.",
       "bestAreas": [
         "Gràcia",
         "Eixample",
@@ -1821,10 +1821,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, city centre (Eixample): €900–€1,400/month",
-        "3-bed flat, Gràcia or Eixample: €1,400–€2,200/month",
-        "3-bed flat, Sarrià-Sant Gervasi (near international schools): €1,800–€2,800/month",
-        "House with garden, Sant Cugat del Vallès (suburb, 20 min by train): €1,800–€3,000/month"
+        "1-bed flat, city centre (Eixample): $990–$1,540/month",
+        "3-bed flat, Gràcia or Eixample: $1,540–$2,420/month",
+        "3-bed flat, Sarrià-Sant Gervasi (near international schools): $1,980–$3,080/month",
+        "House with garden, Sant Cugat del Vallès (suburb, 20 min by train): $1,980–$3,300/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport — NIE if you already have it",
@@ -1846,17 +1846,17 @@
         {
           "type": "British curriculum international schools",
           "description": "IGCSE and A-Level options in Sarrià and Sant Cugat area. Strong choice for UK families.",
-          "fees": "€8,000–15,000/year typical"
+          "fees": "$8,800–$16,500/year typical"
         },
         {
           "type": "US / IB curriculum international schools",
           "description": "Several established schools offering IB or US diploma programmes. Well represented in Barcelona.",
-          "fees": "€10,000–18,000/year typical"
+          "fees": "$11,000–$19,800/year typical"
         },
         {
           "type": "Concertado schools (subsidized private)",
           "description": "Part state-funded private schools, taught in Catalan and Spanish. Good value for families with language skills.",
-          "fees": "Free–€2,500/year"
+          "fees": "Free–$2,750/year"
         }
       ]
     },
@@ -1865,13 +1865,13 @@
       "summary": "Barcelona has a strong childcare market. Private nurseries are widely available in all family neighbourhoods, and nannies are easy to find — though rates are slightly higher than other Spanish cities.",
       "daycareItems": [
         "Private nurseries (guarderías) accept children from 4 months — widely available in Sarrià, Gràcia, Eixample, and Sant Cugat",
-        "Typical fees: €350–€700/month depending on hours and location; bilingual (English/Spanish) nurseries exist in expat areas",
+        "Typical fees: $385–$770/month depending on hours and location; bilingual (English/Spanish) nurseries exist in expat areas",
         "Public nursery places (0–3 years) are subsidised but scarce — register on the municipal waiting list immediately after arrival",
         "Tip: visit 2–3 nurseries in person before deciding — quality and English fluency of staff varies significantly"
       ],
       "nannyItems": [
-        "Live-out nannies (cuidadoras) charge €12–€16/hr — slightly higher rates than other Spanish cities",
-        "Au pairs receive board, lodging, and €80–€150/week pocket money — common among expat families",
+        "Live-out nannies (cuidadoras) charge $13–$18/hr — slightly higher rates than other Spanish cities",
+        "Au pairs receive board, lodging, and $88–$165/week pocket money — common among expat families",
         "Most nannies speak Spanish or Catalan — excellent for children's language development"
       ],
       "whereToFindItems": [
@@ -1888,8 +1888,8 @@
         "Go to your local Centro de Salud (public health clinic) with your Padrón Municipal certificate to register for a SIP card — Spain's free public healthcare registration card that activates access to the public system.",
         "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every registered family member.",
         "Each child needs their own SIP card — register them separately at the same clinic with their passport and your Padrón certificate.",
-        "Private clinics are fast and widely used by expats — a GP appointment costs €50–€90, usually same-day results.",
-        "Popular private health insurers for expats in Barcelona: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month."
+        "Private clinics are fast and widely used by expats — a GP appointment costs $55–$99, usually same-day results.",
+        "Popular private health insurers for expats in Barcelona: Sanitas, Adeslas, and Asisa — family plans start around $165–$275/month."
       ]
     },
     "safety": {
@@ -1906,9 +1906,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,800 / month",
-      "familyDinner": "~€55",
-      "nannyRate": "~€14 / hr"
+      "rentRange": "~$2,000 / month",
+      "familyDinner": "~$60",
+      "nannyRate": "~$15 / hr"
     },
     "sources": {
       "visa": [],
@@ -1961,7 +1961,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "label": "Verify income eligibility for the Spain Digital Nomad Visa (min. $2,570/month; +$990/month per additional family member)",
         "targetSection": "visa"
       },
       {
@@ -2054,10 +2054,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, central Madrid: €800–€1,300/month",
-        "3-bed flat, Chamberí or Salamanca: €1,400–€2,400/month",
-        "3-bed flat, Pozuelo de Alarcón (near international schools): €1,500–€2,400/month",
-        "House with garden, Las Rozas or Majadahonda (outer suburbs): €1,800–€3,000/month"
+        "1-bed flat, central Madrid: $880–$1,430/month",
+        "3-bed flat, Chamberí or Salamanca: $1,540–$2,640/month",
+        "3-bed flat, Pozuelo de Alarcón (near international schools): $1,650–$2,640/month",
+        "House with garden, Las Rozas or Majadahonda (outer suburbs): $1,980–$3,300/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport — NIE if you already have it",
@@ -2078,17 +2078,17 @@
         {
           "type": "British curriculum international schools",
           "description": "IGCSE and A-Level options mainly in the northwest suburbs and some central locations.",
-          "fees": "€8,000–14,000/year typical"
+          "fees": "$8,800–$15,400/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Several established schools near the northwest business corridor. Well-regarded for US and international university preparation.",
-          "fees": "€10,000–17,000/year typical"
+          "fees": "$11,000–$18,700/year typical"
         },
         {
           "type": "Concertado schools (subsidized private)",
           "description": "Part state-funded private schools, taught in Spanish. Good quality at lower cost for families with Spanish skills.",
-          "fees": "Free–€2,500/year"
+          "fees": "Free–$2,750/year"
         }
       ]
     },
@@ -2097,13 +2097,13 @@
       "summary": "Madrid has a well-developed childcare market with private nurseries, nannies, and au pairs widely available at competitive prices.",
       "daycareItems": [
         "Private nurseries (guarderías) accept children from 4 months — available in all major family neighbourhoods and northwest suburbs",
-        "Typical fees: €300–€650/month depending on hours and location",
+        "Typical fees: $330–$715/month depending on hours and location",
         "Public nursery places (0–3 years) are subsidised but limited — register on the municipal waiting list immediately after arrival",
         "Tip: visit at least 2–3 nurseries before deciding — quality and English fluency of staff varies"
       ],
       "nannyItems": [
-        "Live-out nannies (cuidadoras) charge €11–€14/hr — competitive rates compared to Barcelona",
-        "Au pairs receive board, lodging, and €80–€150/week pocket money — popular for full-time coverage",
+        "Live-out nannies (cuidadoras) charge $12–$15/hr — competitive rates compared to Barcelona",
+        "Au pairs receive board, lodging, and $88–$165/week pocket money — popular for full-time coverage",
         "Most nannies speak Spanish — beneficial for children's language development"
       ],
       "whereToFindItems": [
@@ -2120,8 +2120,8 @@
         "Go to your local Centro de Salud (public health clinic) with your Padrón Municipal certificate to register for a SIP card — Spain's free public healthcare registration card.",
         "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every registered family member.",
         "Each child needs their own SIP card — register them separately at the same clinic with their passport and your Padrón certificate.",
-        "Private clinics are widely used by expats for speed — a GP visit costs €50–€80 and results are usually same-day.",
-        "Popular private health insurers for expats in Madrid: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month."
+        "Private clinics are widely used by expats for speed — a GP visit costs $55–$88 and results are usually same-day.",
+        "Popular private health insurers for expats in Madrid: Sanitas, Adeslas, and Asisa — family plans start around $165–$275/month."
       ]
     },
     "safety": {
@@ -2138,9 +2138,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,700 / month",
-      "familyDinner": "~€50",
-      "nannyRate": "~€13 / hr"
+      "rentRange": "~$1,870 / month",
+      "familyDinner": "~$55",
+      "nannyRate": "~$14 / hr"
     },
     "sources": {
       "visa": [],
@@ -2193,7 +2193,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Confirm you meet the D8 income threshold: min. €3,480/month from remote work or freelance for foreign clients",
+        "label": "Confirm you meet the D8 income threshold: min. $3,830/month from remote work or freelance for foreign clients",
         "targetSection": "visa"
       },
       {
@@ -2275,9 +2275,9 @@
           "anchor": "visa-d8",
           "detailTitle": "D8 Visa — how to apply",
           "duration": "2 years, renewable",
-          "description": "For remote workers or freelancers earning at least €3,480/month. Apply at the Portuguese Consulate before travelling.",
+          "description": "For remote workers or freelancers earning at least $3,830/month. Apply at the Portuguese Consulate before travelling.",
           "details": [
-            "Income requirement: minimum €3,480/month — at least 80% must come from foreign clients or an employer based outside Portugal.",
+            "Income requirement: minimum $3,830/month — at least 80% must come from foreign clients or an employer based outside Portugal.",
             "Required documents: valid passport, Apostilled criminal record check (an Apostille is an official government certification that authenticates the document for international use), proof of private health insurance valid in Portugal, 3+ months of income statements, proof of accommodation.",
             "Apply at the Portuguese Consulate in your home country — you cannot apply for the D8 from inside Portugal.",
             "Allow 2–4 months for processing — book your consulate appointment as early as possible.",
@@ -2334,10 +2334,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, city centre (Bonfim/Cedofeita): €900–€1,400/month",
-        "3-bed flat, Boavista: €1,300–€1,900/month",
-        "3-bed flat/house, Foz do Douro: €1,600–€2,500/month",
-        "3-bed flat, Matosinhos (beach access): €1,200–€1,800/month"
+        "1-bed flat, city centre (Bonfim/Cedofeita): $990–$1,540/month",
+        "3-bed flat, Boavista: $1,430–$2,090/month",
+        "3-bed flat/house, Foz do Douro: $1,760–$2,750/month",
+        "3-bed flat, Matosinhos (beach access): $1,320–$1,980/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport (NIF if you already have it)",
@@ -2352,18 +2352,18 @@
       "summary": "Porto has a growing but more limited international school market compared to Lisbon. The main English-medium options are in Foz do Douro and surrounding areas. Apply at least 12 months before your intended start date.",
       "publicSystem": "Portuguese state schools are free but all instruction is in Portuguese. Not suitable for newly arrived children without language skills. Bilingual state schools are rare in Porto.",
       "internationalOptions": "A smaller number of English-medium international schools operate in and around Porto, primarily in the Foz do Douro and Matosinhos areas. Schools offer British and IB curricula. Less competitive than Lisbon but still require early application.",
-      "languageNotes": "Portuguese is the sole official language. English-medium instruction is only available in private international schools. Private Portuguese tutors charge €30–€50/hr if children attend state schools.",
+      "languageNotes": "Portuguese is the sole official language. English-medium instruction is only available in private international schools. Private Portuguese tutors charge $33–$55/hr if children attend state schools.",
       "tip": "Porto has fewer international school options than Lisbon — confirm availability and current places before committing your move date.",
       "options": [
         {
           "type": "British / IB curriculum international schools",
           "description": "Main English-medium option in Porto, primarily in the Foz do Douro and Matosinhos areas. Limited spots available.",
-          "fees": "€9,000–15,000/year typical"
+          "fees": "$9,900–$16,500/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Fewer options than Lisbon. Check current availability carefully before relying on this route.",
-          "fees": "€10,000–16,000/year typical"
+          "fees": "$11,000–$17,600/year typical"
         },
         {
           "type": "Portuguese state schools",
@@ -2377,14 +2377,14 @@
       "summary": "Porto has a solid childcare market, particularly in the Foz do Douro and Matosinhos expat areas. Costs are lower than Lisbon.",
       "daycareItems": [
         "Private creches (nurseries) accept babies from 3 months old — well distributed in Foz do Douro, Matosinhos, and Boavista",
-        "Typical fees: €400–€800/month; bilingual (English/Portuguese) programmes are available in expat areas",
+        "Typical fees: $440–$880/month; bilingual (English/Portuguese) programmes are available in expat areas",
         "State-subsidised creches exist but have limited places — register on the waiting list immediately after arriving",
         "Tip: visit 2–3 creches in person — quality and English fluency of staff varies"
       ],
       "nannyItems": [
-        "Live-out nannies charge €10–€14/hr — slightly lower rates than Lisbon",
+        "Live-out nannies charge $11–$15/hr — slightly lower rates than Lisbon",
         "Brazilian nannies are widely available and popular with international families — native Portuguese speakers",
-        "Au pairs cost €100–€200/week plus room and board"
+        "Au pairs cost $110–$220/week plus room and board"
       ],
       "whereToFindItems": [
         "Sitly.com — most popular nanny platform in Portugal",
@@ -2399,8 +2399,8 @@
         "Go to your local Centro de Saúde (public health clinic) with your Junta de Freguesia certificate to register with the SNS — Portugal's free national health system.",
         "The SNS (Serviço Nacional de Saúde) covers GP visits, specialists, emergency care, and prescriptions at reduced cost — for every registered family member.",
         "Each child must be registered separately — bring their passport and your Junta de Freguesia certificate.",
-        "Private healthcare is widely used by expats for speed — a private GP costs €60–€100 in Porto, with results usually same-day.",
-        "Popular private insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around €120–€200/month."
+        "Private healthcare is widely used by expats for speed — a private GP costs $66–$110 in Porto, with results usually same-day.",
+        "Popular private insurers: Fidelidade, Allianz Portugal, and Médis — family plans start around $132–$220/month."
       ]
     },
     "safety": {
@@ -2417,9 +2417,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,400 / month",
-      "familyDinner": "~€40",
-      "nannyRate": "~€12 / hr"
+      "rentRange": "~$1,540 / month",
+      "familyDinner": "~$44",
+      "nannyRate": "~$13 / hr"
     },
     "sources": {
       "visa": [
@@ -2602,10 +2602,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, city centre: €1,100–€1,600/month (warm, including utilities)",
-        "3-bed flat, Prenzlauer Berg or Charlottenburg: €1,700–€2,500/month",
-        "3-bed flat, Zehlendorf (near international schools, southwest): €1,800–€2,800/month",
-        "House with garden, outer districts (Dahlem, Zehlendorf): €2,200–€3,500/month"
+        "1-bed flat, city centre: $1,210–$1,760/month (warm, including utilities)",
+        "3-bed flat, Prenzlauer Berg or Charlottenburg: $1,870–$2,750/month",
+        "3-bed flat, Zehlendorf (near international schools, southwest): $1,980–$3,080/month",
+        "House with garden, outer districts (Dahlem, Zehlendorf): $2,420–$3,850/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and visa/residence permit",
@@ -2627,12 +2627,12 @@
         {
           "type": "British curriculum international schools",
           "description": "IGCSE and A-Level options, mainly in the southwest and central-west districts.",
-          "fees": "€10,000–18,000/year typical"
+          "fees": "$11,000–$19,800/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Several established schools serving the US government and tech expat community in Berlin.",
-          "fees": "€15,000–25,000/year typical"
+          "fees": "$16,500–$27,500/year typical"
         },
         {
           "type": "German state schools (Gymnasium)",
@@ -2645,14 +2645,14 @@
       "status": "estimated",
       "summary": "Berlin has a well-developed public childcare system (Kita), but public places are in short supply and waiting lists are long. Most expat families use private Kitas or nannies initially.",
       "daycareItems": [
-        "Kita (Kindertagesstätte) is Germany's publicly subsidised daycare — in Berlin, fees are income-based (€0–€250/month) and widely available for ages 1–6",
+        "Kita (Kindertagesstätte) is Germany's publicly subsidised daycare — in Berlin, fees are income-based ($0–$275/month) and widely available for ages 1–6",
         "Public Kita waiting lists in popular areas (Prenzlauer Berg, Charlottenburg) are often 12–18 months — register your child as soon as you know your move date, before birth if possible",
-        "Private Kitas are easier to access: fees typically €400–€800/month; many offer bilingual (German/English) programmes for expat families",
+        "Private Kitas are easier to access: fees typically $440–$880/month; many offer bilingual (German/English) programmes for expat families",
         "Tip: register your child at multiple Kitas simultaneously — you only need to accept one offer"
       ],
       "nannyItems": [
-        "Kinderfrau (nanny) charge €14–€18/hr — higher than Southern European cities",
-        "Au pairs receive board, lodging, and €280–€350/month pocket money (German au pair minimum) — common among expat families",
+        "Kinderfrau (nanny) charge $15–$20/hr — higher than Southern European cities",
+        "Au pairs receive board, lodging, and $308–$385/month pocket money (German au pair minimum) — common among expat families",
         "Many Berlin nannies speak English, especially in expat-heavy districts like Prenzlauer Berg and Charlottenburg"
       ],
       "whereToFindItems": [
@@ -2687,9 +2687,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,900 / month",
-      "familyDinner": "~€60",
-      "nannyRate": "~€16 / hr"
+      "rentRange": "~$2,090 / month",
+      "familyDinner": "~$66",
+      "nannyRate": "~$18 / hr"
     },
     "sources": {
       "visa": [
@@ -2813,7 +2813,7 @@
           "description": "Employer-sponsored permit for highly skilled non-EU workers. Employer applies to the IND (Immigration and Naturalisation Service). Most common route for tech and corporate expat families.",
           "details": [
             "Your employer must be an IND-recognised sponsor (erkend referent) — large tech companies and multinationals typically qualify.",
-            "Salary threshold (2025): approximately €4,500/month for workers aged 30+; €3,300/month for workers under 30.",
+            "Salary threshold (2025): approximately $4,950/month for workers aged 30+; $3,630/month for workers under 30.",
             "Your employer files the application with the IND — processing typically takes 2–4 weeks for recognised sponsors.",
             "Your family members (spouse and children) receive a dependent residence permit automatically on the same application.",
             "After 5 years you can apply for a permanent residence permit. After 5 years of continuous residence and a civic integration exam, you can apply for Dutch citizenship."
@@ -2867,10 +2867,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, central Amsterdam: €1,500–€2,200/month",
-        "3-bed flat, Oud-Zuid or De Pijp: €2,200–€3,500/month",
-        "3-bed flat/house, Amstelveen (suburb, near international schools): €1,800–€2,800/month",
-        "4-bed house, outer suburbs (Diemen, Badhoevedorp): €2,500–€4,000/month"
+        "1-bed flat, central Amsterdam: $1,650–$2,420/month",
+        "3-bed flat, Oud-Zuid or De Pijp: $2,420–$3,850/month",
+        "3-bed flat/house, Amstelveen (suburb, near international schools): $1,980–$3,080/month",
+        "4-bed house, outer suburbs (Diemen, Badhoevedorp): $2,750–$4,400/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and residence permit (for non-EU)",
@@ -2891,12 +2891,12 @@
         {
           "type": "British / IB curriculum international schools",
           "description": "Well-established options in Oud-Zuid and Amstelveen. Strong IGCSE and A-Level programmes.",
-          "fees": "€12,000–20,000/year typical"
+          "fees": "$13,200–$22,000/year typical"
         },
         {
           "type": "American curriculum international schools",
           "description": "Several established schools serving the US government, tech, and corporate expat community.",
-          "fees": "€15,000–25,000/year typical"
+          "fees": "$16,500–$27,500/year typical"
         },
         {
           "type": "Dutch bilingual state schools",
@@ -2910,13 +2910,13 @@
       "summary": "Amsterdam has a well-regulated childcare system. Costs before government subsidy are high, but the kinderopvangtoeslag (childcare allowance) can offset 60–90% depending on income. Register for the allowance as soon as you receive your BSN.",
       "daycareItems": [
         "Kinderopvang (licensed daycare) accepts children from 6 weeks old — widely available in Oud-Zuid, Jordaan, and Amstelveen",
-        "Full-time kinderopvang costs €1,200–€1,800/month before subsidy; the kinderopvangtoeslag (childcare allowance) from the Dutch Tax Authority (Belastingdienst) can offset 60–90% of cost depending on income",
+        "Full-time kinderopvang costs $1,320–$1,980/month before subsidy; the kinderopvangtoeslag (childcare allowance) from the Dutch Tax Authority (Belastingdienst) can offset 60–90% of cost depending on income",
         "Register for kinderopvangtoeslag at belastingdienst.nl as soon as you receive your BSN — the allowance cannot be claimed retroactively",
         "Tip: English-language daycare centres are widely available in expat-heavy areas; ask specifically at signup"
       ],
       "nannyItems": [
         "Gastouder (state-regulated childminder) are widely available and eligible for the same kinderopvangtoeslag subsidy as formal daycare",
-        "Private nannies (oppas) charge €14–€20/hr — among the highest in Europe",
+        "Private nannies (oppas) charge $15–$22/hr — among the highest in Europe",
         "Au pairs in the Netherlands receive board, lodging, and pocket money under a formal government scheme; specific rules apply — check the IND website for current requirements"
       ],
       "whereToFindItems": [
@@ -2930,10 +2930,10 @@
       "tip": "Purchase your basisverzekering within 4 months of arriving — failure to do so results in back-billing for uncovered periods.",
       "items": [
         "The basisverzekering (basic health insurance policy) is mandatory for all residents — you must purchase it yourself from a private insurer within 4 months of arriving. It is retroactive to your first day of residence.",
-        "Cost: approximately €130–€160/month per adult; all children under 18 are free under a parent's policy.",
+        "Cost: approximately $143–$176/month per adult; all children under 18 are free under a parent's policy.",
         "Choose your insurer from the regulated market: Zilveren Kruis, VGZ, CZ, and Menzis are the largest. All cover the same basic package — compare on price and supplementary options.",
-        "Most expats add an aanvullende verzekering (supplementary insurance) covering dental, physiotherapy, and specialist referrals — adds €20–€60/month.",
-        "The mandatory annual deductible (eigen risico) is €385/year per adult — budget for this when estimating healthcare costs."
+        "Most expats add an aanvullende verzekering (supplementary insurance) covering dental, physiotherapy, and specialist referrals — adds $22–$66/month.",
+        "The mandatory annual deductible (eigen risico) is ~$425/year per adult — budget for this when estimating healthcare costs."
       ]
     },
     "safety": {
@@ -2950,9 +2950,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€2,300 / month",
-      "familyDinner": "~€65",
-      "nannyRate": "~€17 / hr"
+      "rentRange": "~$2,530 / month",
+      "familyDinner": "~$72",
+      "nannyRate": "~$19 / hr"
     },
     "sources": {
       "visa": [
@@ -3134,10 +3134,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, city centre (Prague 1/2): Kč 18,000–28,000/month",
-        "3-bed flat, Vinohrady (Prague 2): Kč 38,000–58,000/month",
-        "3-bed flat, Dejvice / Prague 6 (near international schools): Kč 42,000–68,000/month",
-        "3-bed flat, Prague 5 (more affordable): Kč 32,000–50,000/month"
+        "1-bed flat, city centre (Prague 1/2): $790–$1,230/month",
+        "3-bed flat, Vinohrady (Prague 2): $1,670–$2,560/month",
+        "3-bed flat, Dejvice / Prague 6 (near international schools): $1,850–$3,000/month",
+        "3-bed flat, Prague 5 (more affordable): $1,410–$2,200/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and visa/residence permit",
@@ -3157,12 +3157,12 @@
         {
           "type": "British curriculum international schools",
           "description": "IGCSE and A-Level options, mainly in Prague 6 (Dejvice/Bubeneč area) near the diplomatic quarter.",
-          "fees": "Kč 250,000–500,000/year typical"
+          "fees": "$11,000–$22,000/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Several established schools serving the diplomatic and corporate expat community in Prague.",
-          "fees": "Kč 220,000–480,000/year typical"
+          "fees": "$9,700–$21,100/year typical"
         },
         {
           "type": "Czech state schools (Základní škola)",
@@ -3176,14 +3176,14 @@
       "summary": "Prague has a well-developed childcare market. State kindergartens are affordable but have waitlists in central areas. Private nurseries with English are available in expat neighbourhoods.",
       "daycareItems": [
         "Státní školka (state kindergarten, ages 3–6) is very affordable — fees are nominal (a few hundred Kč/month) — but places in Prague 2 and Prague 6 are limited and often waitlisted",
-        "Soukromá schulka (private nursery, typically bilingual Czech/English): Kč 10,000–22,000/month — widely available in Vinohrady and Prague 6",
-        "Jesle (private creche for under-3s): Kč 12,000–20,000/month — less common but available in expat areas",
+        "Soukromá schulka (private nursery, typically bilingual Czech/English): $440–$970/month — widely available in Vinohrady and Prague 6",
+        "Jesle (private creche for under-3s): $530–$880/month — less common but available in expat areas",
         "Tip: register for state školka as soon as you arrive — even if you plan private initially, the waiting list for state places starts running from registration"
       ],
       "nannyItems": [
-        "Chůva (nanny) charge Kč 200–350/hr — significantly more affordable than Western European cities",
+        "Chůva (nanny) charge $9–$15/hr — significantly more affordable than Western European cities",
         "Many Prague nannies speak English, especially those registered on expat-facing platforms",
-        "Au pairs are widely available — board, lodging, and pocket money of Kč 5,000–8,000/month is typical"
+        "Au pairs are widely available — board, lodging, and pocket money of $220–$350/month is typical"
       ],
       "whereToFindItems": [
         "Babysits.cz — Czech platform for nanny and babysitter searches",
@@ -3198,7 +3198,7 @@
         "Employed workers in the Czech Republic are enrolled in the public health insurance system (VZP — Všeobecná zdravotní pojišťovna, or one of the other national insurers) via their employer — covers the employee and dependent family members.",
         "Non-EU visa holders not employed locally must arrange commercial health insurance — this is required as part of the initial visa application.",
         "EU citizens who are not locally employed and do not hold an EHIC (European Health Insurance Card) from their home country should arrange private health insurance on arrival.",
-        "Private English-speaking clinics are widely available in central Prague and affordable by Western standards — a private GP appointment costs Kč 1,500–3,000 (about €60–€120).",
+        "Private English-speaking clinics are widely available in central Prague and affordable by Western standards — a private GP appointment costs about $66–$132.",
         "For children: expat families typically use a private paediatrician for routine check-ups — bilingual clinics are available in Prague 2 and Prague 6."
       ]
     },
@@ -3216,9 +3216,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~Kč 45,000 / month",
-      "familyDinner": "~Kč 1,400",
-      "nannyRate": "~Kč 280 / hr"
+      "rentRange": "~$2,000 / month",
+      "familyDinner": "~$62",
+      "nannyRate": "~$12 / hr"
     },
     "sources": {
       "visa": [
@@ -3346,7 +3346,7 @@
           "description": "Hungary's visa for remote workers and digital nomads. Apply at the Hungarian Consulate in your home country before travelling.",
           "details": [
             "Introduced in 2024 — designed for remote workers and digital nomads earning income from outside Hungary.",
-            "Requirement: minimum income of approximately €2,000/month (gross) from remote employment or freelance work outside Hungary.",
+            "Requirement: minimum income of approximately $2,200/month (gross) from remote employment or freelance work outside Hungary.",
             "Required documents: valid passport, proof of income (employment contract or 3+ months of payslips), valid health insurance, and proof of accommodation.",
             "Apply at the Hungarian Consulate in your home country — processing timelines vary; allow 4–8 weeks.",
             "After arriving, complete your lakcím bejelentés at the kormányablak — this is required even with the White Card."
@@ -3400,10 +3400,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, central Pest (District V/VII): Ft 280,000–420,000/month",
-        "3-bed flat, District II (Buda hills, near schools): Ft 550,000–900,000/month",
-        "3-bed flat, District XII (leafy residential): Ft 500,000–850,000/month",
-        "House with garden, outer Buda (Districts II/III): Ft 700,000–1,200,000/month"
+        "1-bed flat, central Pest (District V/VII): $760–$1,140/month",
+        "3-bed flat, District II (Buda hills, near schools): $1,490–$2,430/month",
+        "3-bed flat, District XII (leafy residential): $1,350–$2,300/month",
+        "House with garden, outer Buda (Districts II/III): $1,890–$3,240/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and visa/residence permit",
@@ -3423,12 +3423,12 @@
         {
           "type": "British / IB curriculum international schools",
           "description": "IGCSE and A-Level options, mainly in District II and XII on the Buda side.",
-          "fees": "Ft 2,500,000–5,500,000/year typical"
+          "fees": "$6,750–$14,850/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Several schools serving the diplomatic and corporate expat community in Budapest.",
-          "fees": "Ft 3,000,000–5,500,000/year typical"
+          "fees": "$8,100–$14,850/year typical"
         },
         {
           "type": "Hungarian state schools (Általános iskola)",
@@ -3441,13 +3441,13 @@
       "status": "estimated",
       "summary": "Budapest has a solid childcare market. State bölcsödék (creches) are very affordable but have waitlists. Private nurseries with English are available in expat areas.",
       "daycareItems": [
-        "Állami bölcsöde (state creche/nursery, ages 0–3) has very low fees (Ft 5,000–15,000/month) but waitlists are common in Districts II and XII — register immediately after arriving",
-        "Magánbölcsöde (private nursery): Ft 100,000–200,000/month — widely available in District II, XII, and central Pest; bilingual (Hungarian/English) options exist in expat areas",
+        "Állami bölcsöde (state creche/nursery, ages 0–3) has very low fees ($14–$41/month) but waitlists are common in Districts II and XII — register immediately after arriving",
+        "Magánbölcsöde (private nursery): $270–$540/month — widely available in District II, XII, and central Pest; bilingual (Hungarian/English) options exist in expat areas",
         "Tip: visit at least 2–3 nurseries before deciding — staff English fluency and care quality varies significantly"
       ],
       "nannyItems": [
-        "Dadus (nanny) charge Ft 2,500–4,000/hr — very affordable by European standards",
-        "Au pairs are available — board, lodging, and pocket money of Ft 80,000–120,000/month is typical",
+        "Dadus (nanny) charge $7–$11/hr — very affordable by European standards",
+        "Au pairs are available — board, lodging, and pocket money of $216–$324/month is typical",
         "English-speaking nannies are available in expat-heavy districts but require active searching"
       ],
       "whereToFindItems": [
@@ -3462,7 +3462,7 @@
       "items": [
         "Hungarian residents are covered by the public health system (OEP/NEAK) after completing their address registration and paying social insurance contributions — but waiting times for specialists can be very long.",
         "Most expat families use private clinics as their primary healthcare — English-speaking GPs and paediatricians are widely available in central Buda and Pest.",
-        "A private GP appointment costs approximately Ft 10,000–25,000 (about €25–€65) — much more affordable than Western Europe.",
+        "A private GP appointment costs approximately $27–$68 — much more affordable than Western Europe.",
         "International private health insurance is strongly recommended, especially for specialist care — plans from Cigna, AXA, or Allianz International cover English-speaking private hospitals in Budapest.",
         "Get your TAJ szám (Hungarian social insurance number) from the National Health Insurance Fund (NEAK) after your lakcím bejelentés — it is your proof of public health coverage."
       ]
@@ -3481,9 +3481,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~Ft 650,000 / month",
-      "familyDinner": "~Ft 17,000",
-      "nannyRate": "~Ft 3,200 / hr"
+      "rentRange": "~$1,760 / month",
+      "familyDinner": "~$46",
+      "nannyRate": "~$9 / hr"
     },
     "sources": {
       "visa": [
@@ -3675,10 +3675,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed condo, central Sukhumvit: ฿20,000–40,000/month",
-        "3-bed condo, Sukhumvit / Thonglor: ฿50,000–90,000/month",
-        "3-bed house, Bang Na (near school corridor): ฿45,000–80,000/month",
-        "4-bed house with pool, outer area (Bang Na, Bearing): ฿60,000–120,000/month"
+        "1-bed condo, central Sukhumvit: $560–$1,110/month",
+        "3-bed condo, Sukhumvit / Thonglor: $1,390–$2,500/month",
+        "3-bed house, Bang Na (near school corridor): $1,250–$2,220/month",
+        "4-bed house with pool, outer area (Bang Na, Bearing): $1,670–$3,330/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and current visa stamp",
@@ -3698,17 +3698,17 @@
         {
           "type": "British / IB curriculum international schools",
           "description": "Strong British curriculum and IB options across central Bangkok and the Bang Na corridor.",
-          "fees": "฿400,000–800,000/year typical"
+          "fees": "$11,200–$22,400/year typical"
         },
         {
           "type": "American / IB curriculum international schools",
           "description": "Several well-established American-curriculum schools serving the US expat and international community.",
-          "fees": "฿450,000–1,000,000/year typical"
+          "fees": "$12,600–$28,000/year typical"
         },
         {
           "type": "Thai-international bilingual schools",
           "description": "Lower cost, Thai-heavy curriculum with English instruction. Good for families planning a long-term Thailand stay.",
-          "fees": "฿150,000–400,000/year typical"
+          "fees": "$4,200–$11,200/year typical"
         }
       ]
     },
@@ -3716,13 +3716,13 @@
       "status": "estimated",
       "summary": "Bangkok has an excellent childcare market — international nurseries, live-in caregivers (yai liang), and daycare options are all widely available and affordable by Western standards.",
       "daycareItems": [
-        "International nurseries (English-medium toddler programmes) are widely available in Sukhumvit, Thonglor, and Silom — fees: ฿20,000–40,000/month",
-        "Thai private daycare centres are much cheaper (฿5,000–15,000/month) but instruction is in Thai",
+        "International nurseries (English-medium toddler programmes) are widely available in Sukhumvit, Thonglor, and Silom — fees: $560–$1,120/month",
+        "Thai private daycare centres are much cheaper ($140–$420/month) but instruction is in Thai",
         "Tip: many international nurseries run wait lists — register early if you are arriving with a young child"
       ],
       "nannyItems": [
-        "Yai liang (live-in caregiver) is extremely common among expat families in Bangkok — typically ฿12,000–25,000/month for live-in",
-        "Live-out nannies charge ฿180–280/hr",
+        "Yai liang (live-in caregiver) is extremely common among expat families in Bangkok — typically $336–$700/month for live-in",
+        "Live-out nannies charge $5–$8/hr",
         "Most Bangkok caregivers speak basic English; fully bilingual nannies are available at a premium, especially in Sukhumvit and Thonglor"
       ],
       "whereToFindItems": [
@@ -3737,8 +3737,8 @@
       "items": [
         "Expats in Bangkok rely entirely on private hospitals — public hospitals are available but operate in Thai and have very long waits.",
         "Bangkok's private hospitals are world-class: BDMS (Bangkok Dusit Medical Services) and Bangkok Hospital networks are the two main private hospital groups, with English-speaking staff and international standard care.",
-        "A comprehensive family private health insurance plan typically costs ฿60,000–150,000/year — budget for this before arrival as it is non-negotiable.",
-        "Routine care (GP, paediatrician) at a private hospital costs ฿500–2,500 per visit without insurance — affordable, but with insurance it is essentially free at point of use.",
+        "A comprehensive family private health insurance plan typically costs $1,680–$4,200/year — budget for this before arrival as it is non-negotiable.",
+        "Routine care (GP, paediatrician) at a private hospital costs $14–$70 per visit without insurance — affordable, but with insurance it is essentially free at point of use.",
         "Popular private health insurance providers for expats in Bangkok: Cigna International, AXA, Allianz Care, and Pacific Cross — compare plans for hospital network coverage before buying."
       ]
     },
@@ -3756,9 +3756,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~฿55,000 / month",
-      "familyDinner": "~฿900",
-      "nannyRate": "~฿220 / hr"
+      "rentRange": "~$1,530 / month",
+      "familyDinner": "~$25",
+      "nannyRate": "~$6 / hr"
     },
     "sources": {
       "visa": [
@@ -3801,7 +3801,7 @@
         "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
         "Some Bangkok Bank branches accept tourist visa holders — worth asking, but not guaranteed.",
         "Use Wise or Revolut for receiving international income and converting to Thai Baht — significantly lower fees than traditional international bank wire transfers.",
-        "Cash is still widely used at markets, small restaurants, and local shops — keep ฿1,000–3,000 (about $30–$90) on hand at all times."
+        "Cash is still widely used at markets, small restaurants, and local shops — keep $28–$84 on hand at all times."
       ]
     },
     "communityLinks": [
@@ -3954,10 +3954,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed condo, Bangtao: ฿15,000–30,000/month",
-        "3-bed villa/house, Laguna area: ฿40,000–90,000/month",
-        "3-bed house, Rawai/Nai Harn: ฿30,000–60,000/month",
-        "4-bed pool villa, Cherng Talay: ฿60,000–120,000/month"
+        "1-bed condo, Bangtao: $420–$830/month",
+        "3-bed villa/house, Laguna area: $1,110–$2,500/month",
+        "3-bed house, Rawai/Nai Harn: $830–$1,670/month",
+        "4-bed pool villa, Cherng Talay: $1,670–$3,330/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and current visa stamp",
@@ -3977,12 +3977,12 @@
         {
           "type": "British / IB curriculum international schools",
           "description": "Main English-medium option in Phuket, concentrated in the Laguna/Bangtao area. Limited total capacity.",
-          "fees": "฿250,000–600,000/year typical"
+          "fees": "$7,000–$16,800/year typical"
         },
         {
           "type": "Thai-international bilingual schools",
           "description": "Lower cost, available across the island. Good for families planning a longer-term Thai immersion.",
-          "fees": "฿100,000–250,000/year typical"
+          "fees": "$2,800–$7,000/year typical"
         }
       ]
     },
@@ -3990,13 +3990,13 @@
       "status": "estimated",
       "summary": "Phuket has a solid childcare market in the expat-heavy north of the island. International nurseries, live-in caregivers, and local nannies are all available.",
       "daycareItems": [
-        "International nurseries (English-medium) are concentrated in the Laguna/Bangtao and Cherng Talay area — fees: ฿15,000–30,000/month",
-        "Local Thai nurseries are available island-wide at lower cost (฿3,000–8,000/month) but operate in Thai",
+        "International nurseries (English-medium) are concentrated in the Laguna/Bangtao and Cherng Talay area — fees: $420–$840/month",
+        "Local Thai nurseries are available island-wide at lower cost ($84–$224/month) but operate in Thai",
         "Tip: register with international nurseries early — places in the Laguna area fill up, especially for the school year start"
       ],
       "nannyItems": [
-        "Yai liang (live-in caregiver) is widely available — typically ฿10,000–20,000/month for live-in",
-        "Live-out nannies charge ฿150–220/hr",
+        "Yai liang (live-in caregiver) is widely available — typically $280–$560/month for live-in",
+        "Live-out nannies charge $4–$6/hr",
         "English-speaking nannies are available in the Laguna/Bangtao area — ask for recommendations from other expat families"
       ],
       "whereToFindItems": [
@@ -4010,8 +4010,8 @@
       "items": [
         "Expats in Phuket rely entirely on private hospitals — the public Vachira Hospital in Phuket Town is available but operates in Thai with long waits.",
         "Bangkok Hospital Phuket (part of the Bangkok Dusit Medical Services group) is the main international-standard private hospital for expats — English-speaking staff and international standard care.",
-        "A comprehensive family private health insurance plan is strongly recommended — budget ฿60,000–150,000/year for good international coverage.",
-        "Routine GP visits at private clinics cost ฿500–2,000 per visit without insurance — affordable for occasional visits but not for regular family healthcare.",
+        "A comprehensive family private health insurance plan is strongly recommended — budget $1,680–$4,200/year for good international coverage.",
+        "Routine GP visits at private clinics cost $14–$56 per visit without insurance — affordable for occasional visits but not for regular family healthcare.",
         "Popular private health insurance providers: Cigna International, AXA, Allianz Care — ensure your plan covers Bangkok Hospital Phuket and other major private hospitals on the island."
       ]
     },
@@ -4029,9 +4029,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~฿45,000 / month",
-      "familyDinner": "~฿750",
-      "nannyRate": "~฿185 / hr"
+      "rentRange": "~$1,250 / month",
+      "familyDinner": "~$21",
+      "nannyRate": "~$5 / hr"
     },
     "sources": {
       "visa": [
@@ -4073,8 +4073,8 @@
         "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks in Phuket — both have branches in the Laguna area and English-speaking staff.",
         "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
         "Wise is widely used by Phuket expats for receiving foreign income and converting to Thai Baht — significantly lower fees than traditional bank wire transfers.",
-        "Cash is essential in Phuket — many local markets, food stalls, and small shops are cash-only. Keep ฿1,000–3,000 (about $30–$90) on hand at all times.",
-        "ATMs are widely available in Laguna, Patong, and Phuket Town — most charge a ฿220 withdrawal fee for foreign cards; Wise and Revolut reduce this impact."
+        "Cash is essential in Phuket — many local markets, food stalls, and small shops are cash-only. Keep $28–$84 on hand at all times.",
+        "ATMs are widely available in Laguna, Patong, and Phuket Town — most charge a ~$6 withdrawal fee for foreign cards; Wise and Revolut reduce this impact."
       ]
     },
     "communityLinks": [
@@ -4097,7 +4097,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Non-EU remote workers: apply for Greece's Digital Nomad Visa — minimum €3,500/month income required — at a Greek consulate before travelling",
+        "label": "Non-EU remote workers: apply for Greece's Digital Nomad Visa — minimum $3,850/month income required — at a Greek consulate before travelling",
         "targetSection": "visa"
       },
       {
@@ -4145,7 +4145,7 @@
     },
     "visa": {
       "status": "verified",
-      "summary": "EU/EEA families move freely to Greece with no visa. Greece launched a Digital Nomad Visa in 2021 for non-EU remote workers earning at least €3,500/month. A Golden Visa programme for property investors (€250,000+) is also available for those seeking long-term residency.",
+      "summary": "EU/EEA families move freely to Greece with no visa. Greece launched a Digital Nomad Visa in 2021 for non-EU remote workers earning at least $3,850/month. A Golden Visa programme for property investors (~$275,000+) is also available for those seeking long-term residency.",
       "tip": "Secure your AFM (Greek tax ID) and AMKA (social security number) in the first week — they are the two IDs that unlock everything else in Greece.",
       "options": [
         {
@@ -4181,9 +4181,9 @@
           "anchor": "visa-gr-dnv",
           "detailTitle": "Greece Digital Nomad Visa — how to apply",
           "duration": "1 year, renewable",
-          "description": "For remote workers earning at least €3,500/month employed by or contracting with a non-Greek entity. Apply at a Greek consulate before travelling.",
+          "description": "For remote workers earning at least $3,850/month employed by or contracting with a non-Greek entity. Apply at a Greek consulate before travelling.",
           "details": [
-            "Income requirement: at least €3,500/month from remote employment or freelancing for non-Greek clients. You cannot provide services to Greek clients on this visa.",
+            "Income requirement: at least $3,850/month from remote employment or freelancing for non-Greek clients. You cannot provide services to Greek clients on this visa.",
             "Required documents: valid passport, proof of remote employment or client contracts, 3 months of bank statements, private health insurance valid in Greece, and a recent CV.",
             "Apply at the Greek consulate in your home country — you cannot switch to this visa from inside Greece on a tourist entry.",
             "Once in Greece, obtain your AMKA (social security number) and AFM (tax ID) to access services and open a bank account.",
@@ -4214,7 +4214,7 @@
         "Piraeus Bank, Alpha Bank, and Eurobank are the three banks most experienced with expats and international clients. All have English-speaking staff at major branches in Kifissia, Glyfada, and central Athens.",
         "To open an account you will typically need: passport, AFM, AMKA, proof of address (rental contract or utility bill), and a recent payslip or income statement.",
         "While waiting for your AFM, use Revolut or Wise — both work in Greece from day one with just a passport and support EUR and international transfers.",
-        "Cash is still widely used in Athens — keep €200–€400 on hand for markets, taxis, and smaller local transactions."
+        "Cash is still widely used in Athens — keep $220–$440 on hand for markets, taxis, and smaller local transactions."
       ]
     },
     "housing": {
@@ -4255,10 +4255,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, central Athens: €600–€900/month",
-        "3-bed flat, Kifissia or Psychiko (north suburbs): €1,200–€2,000/month",
-        "3-bed house with garden, Ekali or Kifissia: €1,800–€3,000/month",
-        "3-bed flat, Glyfada (southern coast): €1,100–€1,800/month"
+        "1-bed flat, central Athens: $660–$990/month",
+        "3-bed flat, Kifissia or Psychiko (north suburbs): $1,320–$2,200/month",
+        "3-bed house with garden, Ekali or Kifissia: $1,980–$3,300/month",
+        "3-bed flat, Glyfada (southern coast): $1,210–$1,980/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport",
@@ -4273,24 +4273,24 @@
       "status": "curated",
       "summary": "Athens has a limited but established international school scene, concentrated in the northern and southern suburbs. Apply at least 12 months in advance for the top English-medium schools.",
       "publicSystem": "Greek public schools are free and cover all residents, but instruction is entirely in Greek. Not viable for children without Greek unless you plan a multi-year stay and invest heavily in language support. Quality varies widely between schools and districts.",
-      "internationalOptions": "International schools are clustered in the northern suburbs (Kifissia, Psychiko, Ekali) and the southern coastal area (Glyfada). Most offer IB or British curricula taught in English, covering Early Years through secondary. Fees range from €8,000 to €18,000 per year. Apply 12 months in advance — popular schools regularly run waiting lists.",
-      "languageNotes": "All instruction in Greek public schools is in Greek. English-medium instruction is only available in private international schools. Greek tutoring support for newly arrived children costs roughly €30–€60/hr.",
+      "internationalOptions": "International schools are clustered in the northern suburbs (Kifissia, Psychiko, Ekali) and the southern coastal area (Glyfada). Most offer IB or British curricula taught in English, covering Early Years through secondary. Fees range from $8,800 to $19,800 per year. Apply 12 months in advance — popular schools regularly run waiting lists.",
+      "languageNotes": "All instruction in Greek public schools is in Greek. English-medium instruction is only available in private international schools. Greek tutoring support for newly arrived children costs roughly $33–$66/hr.",
       "tip": "Apply to international schools before your housing search — school location determines which suburb makes sense for your family.",
       "options": [
         {
           "type": "IB curriculum international schools",
           "description": "Several IB Diploma and Primary Years Programme schools in the northern and southern suburbs. Small classes, established expat community.",
-          "fees": "€10,000–18,000/year typical"
+          "fees": "$11,000–$19,800/year typical"
         },
         {
           "type": "British curriculum international schools",
           "description": "British IGCSE and A-Level pathway schools, mainly in the northern Athens suburbs.",
-          "fees": "€8,000–14,000/year typical"
+          "fees": "$8,800–$15,400/year typical"
         },
         {
           "type": "Greek private bilingual schools",
           "description": "Greek private schools with significant English-medium content. Lower cost than full international schools but require some Greek.",
-          "fees": "€4,000–9,000/year typical"
+          "fees": "$4,400–$9,900/year typical"
         }
       ]
     },
@@ -4299,13 +4299,13 @@
       "summary": "Childcare in Athens is affordable by European standards. Private nurseries and nannies are widely available, particularly in family-oriented northern and coastal suburbs.",
       "daycareItems": [
         "Private nurseries (παιδικοί σταθμοί — paidikoi stathmoi) accept children from 2–3 months old — widely available in Kifissia, Glyfada, and Psychiko",
-        "Typical fees: €350–€700/month depending on hours and suburb",
+        "Typical fees: $385–$770/month depending on hours and suburb",
         "Municipal nurseries are free or subsidised but have extremely limited places — join the waiting list as soon as you arrive, even if you plan to go private",
         "Visit at least 2–3 nurseries in person before deciding — quality and English-language availability vary significantly between providers"
       ],
       "nannyItems": [
-        "Full-time live-out nannies charge €800–€1,300/month — considerably lower than Western European equivalents",
-        "Hourly nannies charge €8–€14/hr — Filipino and Albanian nannies are common among expat families in Athens",
+        "Full-time live-out nannies charge $880–$1,430/month — considerably lower than Western European equivalents",
+        "Hourly nannies charge $9–$15/hr — Filipino and Albanian nannies are common among expat families in Athens",
         "Most nannies speak Greek — English-speaking nannies are available but cost more, especially in expat suburbs",
         "Start your search 4–6 weeks before arrival — the best nannies in expat areas fill quickly via word of mouth"
       ],
@@ -4321,8 +4321,8 @@
       "items": [
         "Public healthcare (EOPYY — Greece's national health fund) covers residents with an AMKA number, but waiting times are long and the system is under-resourced — most expat families use private hospitals for routine and specialist care.",
         "Athens has several strong private hospitals: Hygeia Hospital (northern suburbs), Metropolitan Hospital (Faliro), and Henry Dunant Hospital (central Athens) are the three most recommended for English-speaking expat families.",
-        "Private GP visit: roughly €60–€120. Specialist: €80–€150. Emergency private: €150–€300+.",
-        "Arrange IPMI (International Private Medical Insurance) before arriving — family plans from global providers (Cigna Global, AXA-PPP, Allianz Care) typically run €200–€500/month depending on age and coverage level.",
+        "Private GP visit: roughly $66–$132. Specialist: $88–$165. Emergency private: $165–$330+.",
+        "Arrange IPMI (International Private Medical Insurance) before arriving — family plans from global providers (Cigna Global, AXA-PPP, Allianz Care) typically run $220–$550/month depending on age and coverage level.",
         "Pharmacies (φαρμακεία) are widely available in every neighbourhood and can dispense many medications without a prescription — a useful first point of contact for minor illness."
       ]
     },
@@ -4340,9 +4340,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,500 / month",
-      "familyDinner": "~€55",
-      "nannyRate": "~€10 / hr"
+      "rentRange": "~$1,650 / month",
+      "familyDinner": "~$60",
+      "nannyRate": "~$11 / hr"
     },
     "sources": {
       "visa": [
@@ -4381,7 +4381,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Verify income eligibility for Spain's Digital Nomad Visa (min. €2,334/month; +€897/month per additional family member)",
+        "label": "Verify income eligibility for Spain's Digital Nomad Visa (min. $2,570/month; +$990/month per additional family member)",
         "targetSection": "visa"
       },
       {
@@ -4490,10 +4490,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed flat, Malaga city centre: €700–€1,000/month",
-        "3-bed flat, Benalmadena or Torremolinos: €900–€1,400/month",
-        "3-bed villa or townhouse, Mijas or Alhaurin de la Torre: €1,200–€2,000/month",
-        "3-bed beachfront apartment, Malaga or Fuengirola: €1,400–€2,200/month"
+        "1-bed flat, Malaga city centre: $770–$1,100/month",
+        "3-bed flat, Benalmadena or Torremolinos: $990–$1,540/month",
+        "3-bed villa or townhouse, Mijas or Alhaurin de la Torre: $1,320–$2,200/month",
+        "3-bed beachfront apartment, Malaga or Fuengirola: $1,540–$2,420/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport — NIE if you already have it",
@@ -4515,17 +4515,17 @@
         {
           "type": "British curriculum international schools",
           "description": "Several established British GCSE and A-Level schools along the Costa del Sol, particularly near Marbella and Benalmadena.",
-          "fees": "€6,000–11,000/year typical"
+          "fees": "$6,600–$12,100/year typical"
         },
         {
           "type": "IB and US curriculum international schools",
           "description": "IB Diploma and Middle Years Programme schools serving the broader international expat community.",
-          "fees": "€8,000–13,000/year typical"
+          "fees": "$8,800–$14,300/year typical"
         },
         {
           "type": "Concertado schools (subsidised private)",
           "description": "Part state-funded private schools taught in Spanish. Lower cost, but require solid Spanish language skills.",
-          "fees": "Free–€2,500/year"
+          "fees": "Free–$2,750/year"
         }
       ]
     },
@@ -4534,13 +4534,13 @@
       "summary": "Childcare in Malaga and the Costa del Sol is affordable and well-supplied, with private nurseries and a healthy nanny market throughout the expat towns.",
       "daycareItems": [
         "Private nurseries (guarderías) accept children from 4 months old — widely available in Malaga city, Benalmadena, Torremolinos, and other expat towns",
-        "Typical fees: €300–€600/month depending on hours and location",
+        "Typical fees: $330–$660/month depending on hours and location",
         "Public nursery places (0–3 years) are subsidised but very limited — join the municipal waiting list immediately on arrival",
         "Visit 2–3 nurseries in person before deciding — quality varies significantly between providers"
       ],
       "nannyItems": [
-        "Live-out nannies (cuidadoras) charge €9–€14/hr — comparable to or slightly below Valencia and Barcelona",
-        "Au pairs receive board, lodging, and €80–€150/week pocket money — popular among British and German expat families",
+        "Live-out nannies (cuidadoras) charge $10–$15/hr — comparable to or slightly below Valencia and Barcelona",
+        "Au pairs receive board, lodging, and $88–$165/week pocket money — popular among British and German expat families",
         "English-speaking nannies are easier to find along the Costa del Sol than in inland Spain, due to the large British expat community"
       ],
       "whereToFindItems": [
@@ -4556,8 +4556,8 @@
         "Go to your local Centro de Salud (public health clinic) with your Padrón certificate to get a SIP card — Spain's free healthcare registration card that activates your access to Spain's public health system.",
         "The SIP card covers GP visits, specialists, hospital care, and prescriptions at reduced cost — for every family member registered.",
         "Each child needs their own SIP card — register them separately at the same clinic, bringing their passport and your Padrón certificate.",
-        "Private clinics are fast and affordable — a GP appointment costs €50–€80 without insurance, and results are usually same-day. Several private hospitals operate in Malaga city.",
-        "Popular private health insurers: Sanitas, Adeslas, and Asisa — family plans start around €150–€250/month and include English-speaking doctors across the province."
+        "Private clinics are fast and affordable — a GP appointment costs $55–$88 without insurance, and results are usually same-day. Several private hospitals operate in Malaga city.",
+        "Popular private health insurers: Sanitas, Adeslas, and Asisa — family plans start around $165–$275/month and include English-speaking doctors across the province."
       ]
     },
     "safety": {
@@ -4574,9 +4574,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~€1,200 / month",
-      "familyDinner": "~€50",
-      "nannyRate": "~€11 / hr"
+      "rentRange": "~$1,320 / month",
+      "familyDinner": "~$55",
+      "nannyRate": "~$12 / hr"
     },
     "sources": {
       "visa": [],
@@ -4609,7 +4609,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Decide which UAE visa route applies to you: employer-sponsored residency (your company files the visa on your behalf), Virtual Working Programme (for remote workers earning at least $3,500/month from outside the UAE), or Golden Visa (for property investors of AED 2 million+). See the Visa section for step-by-step guidance on each.",
+        "label": "Decide which UAE visa route applies to you: employer-sponsored residency (your company files the visa on your behalf), Virtual Working Programme (for remote workers earning at least $3,500/month from outside the UAE), or Golden Visa (for property investors of ~$545,000+). See the Visa section for step-by-step guidance on each.",
         "targetSection": "visa"
       },
       {
@@ -4621,7 +4621,7 @@
         "targetSection": "schools"
       },
       {
-        "label": "Arrange mandatory health insurance before your visa can be issued — UAE law requires every resident to hold valid coverage. If your employer does not provide it, search 'Cigna Global UAE family plan' or 'AXA UAE family health insurance' for comparable international policies. Typical private cost: AED 400–800/month for a family.",
+        "label": "Arrange mandatory health insurance before your visa can be issued — UAE law requires every resident to hold valid coverage. If your employer does not provide it, search 'Cigna Global UAE family plan' or 'AXA UAE family health insurance' for comparable international policies. Typical private cost: $109–$218/month for a family.",
         "targetSection": "healthcare"
       },
       {
@@ -4684,7 +4684,7 @@
           "duration": "1 year, renewable",
           "description": "Remote work residency for those earning at least $3,500/month. Covers primary applicant and immediate family.",
           "details": [
-            "Income requirement: at least $3,500/month (roughly AED 12,850) from remote employment or freelancing outside the UAE.",
+            "Income requirement: at least $3,500/month from remote employment or freelancing outside the UAE.",
             "Documents required: valid passport, passport-sized photo, proof of remote employment (employer letter or client contracts), 3 months of income proof, and valid health insurance.",
             "Document attestation: key family documents (birth certificates, marriage certificate, degree certificates) must be officially attested — meaning stamped by your home country's government authority and then by the UAE Embassy in your country to prove they are genuine — then translated into Arabic. Search 'document attestation Abu Dhabi licensed office' on Google to find authorised translation and attestation services.",
             "Application fee: approximately $550 USD. Apply through the ICP portal (search 'UAE Virtual Working Programme ICP apply' on Google) or via an authorised PRO agency in Abu Dhabi — a PRO (Public Relations Officer) is a licensed agent who handles UAE government paperwork on your behalf.",
@@ -4700,10 +4700,10 @@
           "anchor": "visa-golden",
           "detailTitle": "UAE Golden Visa — who qualifies",
           "duration": "10 years",
-          "description": "Long-term residency for property investors (AED 2 million+), skilled professionals, and entrepreneurs.",
+          "description": "Long-term residency for property investors (~$545,000+), skilled professionals, and entrepreneurs.",
           "details": [
-            "Property investment of at least AED 2 million (roughly $545,000 USD) in registered UAE real estate qualifies for the 10-year Golden Visa.",
-            "Other qualifying routes: UAE-listed company investments of at least AED 2 million, approved entrepreneurs, scientists, or exceptional talent in education, technology, and the arts.",
+            "Property investment of at least ~$545,000 in registered UAE real estate qualifies for the 10-year Golden Visa.",
+            "Other qualifying routes: UAE-listed company investments of at least ~$545,000, approved entrepreneurs, scientists, or exceptional talent in education, technology, and the arts.",
             "Covers the primary applicant and immediate family for the full 10-year term.",
             "Golden Visa holders are not required to spend a minimum number of days in the UAE — making it flexible for families who travel frequently.",
             "Document attestation: key family documents must be officially attested (stamped by your home government and the UAE Embassy) and translated into Arabic before submission. Search 'document attestation Abu Dhabi licensed office' on Google to find authorised services.",
@@ -4735,7 +4735,7 @@
         "FAB (First Abu Dhabi Bank) and ADCB (Abu Dhabi Commercial Bank) are the two banks most experienced with expat account opening in Abu Dhabi. HSBC UAE is a strong option if you already have an HSBC relationship internationally.",
         "To open an account you will typically need: passport, Emirates ID, visa page, DARI-registered tenancy agreement, and a payslip or income letter.",
         "While waiting for your Emirates ID, use Wise or Revolut for international transfers and day-to-day spending — both open with just your passport and work anywhere in the UAE from day one.",
-        "Cash is accepted widely in Abu Dhabi — keep AED 500–1,000 on hand for local markets, smaller restaurants, and taxis."
+        "Cash is accepted widely in Abu Dhabi — keep $136–$272 on hand for local markets, smaller restaurants, and taxis."
       ]
     },
     "housing": {
@@ -4776,10 +4776,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Al Reem Island: AED 5,000–7,500/month",
-        "3-bed apartment, Saadiyat Island: AED 12,000–18,000/month",
-        "3-bed villa, Khalifa City: AED 9,000–14,000/month",
-        "3-bed apartment, Yas Island: AED 8,500–13,000/month"
+        "1-bed apartment, Al Reem Island: $1,360–$2,040/month",
+        "3-bed apartment, Saadiyat Island: $3,260–$4,900/month",
+        "3-bed villa, Khalifa City: $2,450–$3,810/month",
+        "3-bed apartment, Yas Island: $2,310–$3,540/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and Emirates ID (required for contract signing)",
@@ -4794,24 +4794,24 @@
       "status": "curated",
       "summary": "Abu Dhabi has an excellent selection of international schools, all regulated and inspected by ADEK — the Abu Dhabi Department of Education and Knowledge. Saadiyat Island and Khalifa City are the main school hubs for expat families.",
       "publicSystem": "UAE public schools are for Emirati citizens and teach in Arabic. They are not an option for expat families. All expat families use private international schools.",
-      "internationalOptions": "Abu Dhabi has a wide range of ADEK-inspected international schools offering British, American, IB, and Indian curricula in English. Schools are concentrated on Saadiyat Island, Khalifa City, and Al Reef. Fees range from AED 30,000 to AED 90,000 per year. Apply 12–18 months before your intended start date — the most popular schools fill very quickly.",
+      "internationalOptions": "Abu Dhabi has a wide range of ADEK-inspected international schools offering British, American, IB, and Indian curricula in English. Schools are concentrated on Saadiyat Island, Khalifa City, and Al Reef. Fees range from $8,200 to $24,500 per year. Apply 12–18 months before your intended start date — the most popular schools fill very quickly.",
       "languageNotes": "All international schools in Abu Dhabi teach primarily in English. Arabic is a compulsory additional subject in all private schools under UAE regulations. Most schools offer Arabic as a first or second language depending on the pupil's background.",
       "tip": "ADEK publishes annual school inspection reports — search 'ADEK school inspection report Abu Dhabi' on Google to compare school ratings before applying.",
       "options": [
         {
           "type": "British curriculum international schools (IGCSE and A-Level)",
           "description": "The most common choice for UK and Commonwealth expat families. Widely available and consistently inspected by ADEK.",
-          "fees": "AED 35,000–75,000/year typical"
+          "fees": "$9,500–$20,400/year typical"
         },
         {
           "type": "American curriculum international schools",
           "description": "Serving the US expat community and international families seeking a US diploma pathway.",
-          "fees": "AED 40,000–80,000/year typical"
+          "fees": "$10,900–$21,800/year typical"
         },
         {
           "type": "IB (International Baccalaureate) schools",
           "description": "Several IB Diploma and Primary Years Programme schools, particularly on Saadiyat Island.",
-          "fees": "AED 50,000–90,000/year typical"
+          "fees": "$13,600–$24,500/year typical"
         }
       ]
     },
@@ -4821,12 +4821,12 @@
       "daycareItems": [
         "Private nurseries and daycare centres are the only option — no subsidised public childcare exists for expat families in Abu Dhabi",
         "ADEK-licensed nurseries (ADEK is Abu Dhabi's official education regulator) accept children from 45 days old — popular nurseries on Saadiyat Island and Al Reem Island frequently have waiting lists",
-        "Typical fees: AED 2,500–5,000/month depending on hours and school reputation",
+        "Typical fees: $680–$1,360/month depending on hours and school reputation",
         "Visit at least 2–3 nurseries before deciding — ADEK publishes inspection reports for nurseries too. Search 'ADEK nursery inspection Abu Dhabi' on Google to review ratings before your visit."
       ],
       "nannyItems": [
-        "Live-out nannies charge AED 25–45/hr — Filipino and Indonesian nannies are most common and very experienced with expat families",
-        "Live-in domestic helpers are legal in the UAE under a domestic worker sponsorship arrangement — typically cost AED 1,500–2,500/month plus accommodation and food",
+        "Live-out nannies charge $7–$12/hr — Filipino and Indonesian nannies are most common and very experienced with expat families",
+        "Live-in domestic helpers are legal in the UAE under a domestic worker sponsorship arrangement — typically cost $408–$680/month plus accommodation and food",
         "Many expat families combine nursery in the morning with a part-time nanny in the afternoon — a common and practical arrangement in Abu Dhabi",
         "Start your search before arriving — the most experienced English-speaking nannies fill quickly through word of mouth in expat communities"
       ],
@@ -4842,9 +4842,9 @@
       "items": [
         "Health insurance is legally mandatory in Abu Dhabi for all residents — employers are required to provide it for their employees. If self-sponsored or on the Virtual Working Programme, arrange private insurance before visa issuance. Search 'UAE compliant family health insurance' on Google to compare international plans.",
         "Abu Dhabi has excellent private hospitals. Cleveland Clinic Abu Dhabi (on Al Maryah Island — a short drive from Saadiyat and Al Reem Island) is one of the most advanced hospitals in the region and widely used by expat families. Burjeel Hospital and Sheikh Khalifa Medical City are strong alternatives.",
-        "Cost with insurance is manageable — GP visits are typically AED 200–400 with a standard corporate insurance plan. Out-of-pocket emergency treatment without insurance can exceed AED 5,000–10,000.",
+        "Cost with insurance is manageable — GP visits are typically $54–$109 with a standard corporate insurance plan. Out-of-pocket emergency treatment without insurance can exceed $1,360–$2,720.",
         "Children under 3 are required to complete the UAE vaccination schedule — bring your home country vaccination records when registering your child with a paediatrician. Search 'UAE child vaccination schedule' on Google to see the required list.",
-        "IPMI (International Private Medical Insurance — a comprehensive health plan that covers you in the UAE and globally, not just locally) from Cigna Global, AXA-PPP, or Allianz Care gives broader coverage and direct billing at top hospitals — family plans typically start around AED 15,000–25,000/year."
+        "IPMI (International Private Medical Insurance — a comprehensive health plan that covers you in the UAE and globally, not just locally) from Cigna Global, AXA-PPP, or Allianz Care gives broader coverage and direct billing at top hospitals — family plans typically start around $4,080–$6,800/year."
       ]
     },
     "safety": {
@@ -4861,9 +4861,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~AED 13,000 / month",
-      "familyDinner": "~AED 250",
-      "nannyRate": "~AED 35 / hr"
+      "rentRange": "~$3,540 / month",
+      "familyDinner": "~$68",
+      "nannyRate": "~$10 / hr"
     },
     "sources": {
       "visa": [
@@ -4968,7 +4968,7 @@
           "duration": "Up to 3 months",
           "description": "Available to most Western passport holders. For scouting trips only — no right to work or long-term stay.",
           "details": [
-            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an eVisitor (Subclass 651) or ETA (Subclass 601) online — typically free to AUD 20 and approved within minutes.",
+            "Citizens of the UK, US, Canada, Ireland, and most EU countries can apply for an eVisitor (Subclass 651) or ETA (Subclass 601) online — typically free to ~$13 and approved within minutes.",
             "Maximum stay: 3 months per entry. Cannot be extended or converted into a work visa from inside Australia.",
             "No right to work — this includes remote work for a non-Australian employer, which sits in a legal grey area under Australian immigration rules.",
             "Good use: 2–4 weeks scouting the Northern Beaches, North Shore, Eastern Suburbs, and Inner West for schools, housing, and neighbourhoods.",
@@ -5057,10 +5057,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Inner West or Eastern Suburbs: AUD 2,500–3,200/month",
-        "3-bed house, Northern Beaches: AUD 4,500–7,000/month",
-        "3-bed house, Upper North Shore: AUD 4,000–6,500/month",
-        "3-bed apartment, Inner West (Leichhardt or Balmain): AUD 3,500–5,000/month"
+        "1-bed apartment, Inner West or Eastern Suburbs: $1,575–$2,020/month",
+        "3-bed house, Northern Beaches: $2,835–$4,410/month",
+        "3-bed house, Upper North Shore: $2,520–$4,095/month",
+        "3-bed apartment, Inner West (Leichhardt or Balmain): $2,205–$3,150/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and visa grant notice",
@@ -5075,7 +5075,7 @@
       "status": "curated",
       "summary": "Sydney has one of the most respected school systems in the world. Both public selective schools and established private schools offer excellent outcomes — but the most sought-after schools require early planning.",
       "publicSystem": "Australian public schools are free and open to all residents. Many of Sydney's selective public high schools rank among the best schools in Australia and are genuinely competitive. The state system is strong — many expat families use it successfully without going private, particularly in high-performing public school zones.",
-      "internationalOptions": "Sydney has a large and well-established private school sector including Anglican, Catholic, and independent schools with strong academic and extracurricular programmes. Fees range from AUD 15,000 to AUD 45,000+ per year. Enrolment at the most popular private schools in the Northern Beaches and North Shore can require applications very soon after arrival.",
+      "internationalOptions": "Sydney has a large and well-established private school sector including Anglican, Catholic, and independent schools with strong academic and extracurricular programmes. Fees range from $9,450 to $28,350+ per year. Enrolment at the most popular private schools in the Northern Beaches and North Shore can require applications very soon after arrival.",
       "languageNotes": "All instruction is in English. There is no language barrier for English-speaking families — this is one of Sydney's key advantages for families relocating from other English-speaking countries.",
       "tip": "For private schools, contact the school registrar within the first month of arrival — the most popular schools in the Northern Beaches and North Shore have multi-year waiting lists.",
       "options": [
@@ -5087,12 +5087,12 @@
         {
           "type": "Independent private schools (Anglican and Catholic)",
           "description": "The traditional choice for expat families. Strong academic results, extensive extracurricular programmes, and long-established reputations.",
-          "fees": "AUD 20,000–45,000+/year typical"
+          "fees": "$12,600–$28,350+/year typical"
         },
         {
           "type": "IB curriculum international schools",
           "description": "Several IB Diploma and Primary Years Programme schools in Sydney, particularly in the Eastern Suburbs and Inner West.",
-          "fees": "AUD 25,000–40,000/year typical"
+          "fees": "$15,750–$25,200/year typical"
         }
       ]
     },
@@ -5101,14 +5101,14 @@
       "summary": "Sydney childcare is expensive but partially subsidised via the Child Care Subsidy (CCS) for eligible residents and visa holders. Long day care centres are the main childcare form for under-5s.",
       "daycareItems": [
         "Long day care centres accept children from 6 weeks old — the main childcare form in Sydney for working parents",
-        "Typical fees before subsidy: AUD 150–220/day. After the Child Care Subsidy (CCS) for eligible families, out-of-pocket costs can reduce significantly",
+        "Typical fees before subsidy: $95–$139/day. After the Child Care Subsidy (CCS) for eligible families, out-of-pocket costs can reduce significantly",
         "The CCS (Child Care Subsidy) is income-tested and available to permanent residents and eligible visa holders — check your entitlement at servicesaustralia.gov.au",
         "Popular long day care centres in family suburbs have 6–12 month waiting lists — register before or immediately on arrival"
       ],
       "nannyItems": [
-        "Full-time nannies charge AUD 25–40/hr — Sydney nanny rates are among the highest in the world due to the city's cost of living",
+        "Full-time nannies charge $16–$25/hr — Sydney nanny rates are among the highest in the world due to the city's cost of living",
         "Nanny-sharing (two families sharing one nanny) is common among expat families in the Northern Beaches and North Shore — reduces the hourly cost significantly",
-        "Au pairs are a popular budget-friendly alternative — typically AUD 250–350/week plus a private room and board",
+        "Au pairs are a popular budget-friendly alternative — typically $158–$221/week plus a private room and board",
         "Start your nanny search at least 8 weeks before your arrival — Sydney's nanny market is tight"
       ],
       "whereToFindItems": [
@@ -5123,8 +5123,8 @@
       "items": [
         "Australia has an excellent public healthcare system called Medicare. Permanent residents and citizens have full access. Temporary skilled visa holders from reciprocal agreement countries (UK, Ireland, New Zealand, Italy, Netherlands, Sweden, Belgium, Finland, Norway, and Slovenia) are also eligible.",
         "Register with Medicare at a Services Australia centre — bring your passport, visa grant notice, and proof of address. Medicare covers GP visits (often bulk-billed, meaning free at the point of service), public hospital care, and most specialist referrals.",
-        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost AUD 400–900/month.",
-        "Private GP visit without bulk billing: roughly AUD 80–180 per consultation. Out-of-pocket specialist costs exist even with Medicare depending on the provider's billing policy.",
+        "For non-Medicare-eligible visa holders, arrange IPMI (International Private Medical Insurance) before arrival — family plans from Bupa International, Cigna, or Allianz Care typically cost $252–$567/month.",
+        "Private GP visit without bulk billing: roughly $50–$113 per consultation. Out-of-pocket specialist costs exist even with Medicare depending on the provider's billing policy.",
         "Sydney has world-class hospitals — Royal North Shore, Sydney Children's Hospital (Randwick), and Westmead Hospital are the most recommended for families in different parts of the city."
       ]
     },
@@ -5142,9 +5142,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~AUD 5,000 / month",
-      "familyDinner": "~AUD 120",
-      "nannyRate": "~AUD 32 / hr"
+      "rentRange": "~$3,150 / month",
+      "familyDinner": "~$76",
+      "nannyRate": "~$20 / hr"
     },
     "sources": {
       "visa": [
@@ -5336,10 +5336,10 @@
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Florentin or Lev HaIr: ₪7,000–10,000/month",
-        "3-bed apartment, Neve Tzedek: ₪12,000–18,000/month",
-        "3-bed apartment, Ramat Aviv: ₪11,000–16,000/month",
-        "3-bed house or large apartment, Herzliya Pituach: ₪12,000–20,000/month"
+        "1-bed apartment, Florentin or Lev HaIr: $1,890–$2,700/month",
+        "3-bed apartment, Neve Tzedek: $3,240–$4,860/month",
+        "3-bed apartment, Ramat Aviv: $2,970–$4,320/month",
+        "3-bed house or large apartment, Herzliya Pituach: $3,240–$5,400/month"
       ],
       "whatYouNeedToRent": [
         "Valid passport and Israeli ID number (Mispar Zehut)",
@@ -5355,7 +5355,7 @@
       "summary": "Tel Aviv's international school options are limited but improving. Most English-speaking expat families use English-medium international schools or Israeli state schools with private Hebrew tutoring support.",
       "publicSystem": "Israeli public schools are free and open to all residents. Instruction is in Hebrew — not viable for children without Hebrew unless you invest in intensive language support. Children aged 3–8 typically acquire Hebrew quickly with good tutoring. Ulpan (intensive Hebrew language programmes) exist for older children and adults.",
       "internationalOptions": "Tel Aviv has a small number of English-medium international schools, primarily serving the diplomatic and tech-industry expat community. Places are limited and demand is high — apply 12 months in advance. Herzliya has additional international school options popular with tech families based in that corridor.",
-      "languageNotes": "Hebrew is the language of instruction in all Israeli public schools. English is widely spoken in Tel Aviv, particularly in business and tech. International schools teach in English, often with Hebrew as a compulsory second language. Private Hebrew tutoring for newly arrived children costs roughly ₪150–250/hr.",
+      "languageNotes": "Hebrew is the language of instruction in all Israeli public schools. English is widely spoken in Tel Aviv, particularly in business and tech. International schools teach in English, often with Hebrew as a compulsory second language. Private Hebrew tutoring for newly arrived children costs roughly $41–$68/hr.",
       "tip": "Apply for international school places before your housing search — school location should guide which neighbourhood you choose.",
       "options": [
         {
@@ -5366,7 +5366,7 @@
         {
           "type": "Israeli private schools with bilingual tracks",
           "description": "Israeli private schools with Hebrew-English bilingual tracks. Growing in number in the Tel Aviv–Herzliya corridor.",
-          "fees": "₪40,000–80,000/year typical"
+          "fees": "$10,800–$21,600/year typical"
         },
         {
           "type": "Israeli public schools with Hebrew integration",
@@ -5380,13 +5380,13 @@
       "summary": "Israel has a structured early childhood system. Children aged 3–6 attend gan (גן — preschool), which is free or subsidised. Under-3s typically use a licensed metapelet (home daycare) or a private nursery.",
       "daycareItems": [
         "Gan (גן — preschool) is mandatory and free for ages 3–6 under Israeli law — the local authority allocates a place based on your registered address",
-        "For under-3s, a metapelet (מטפלת — a licensed home daycare provider) is the most common option. Licensed metaplot accept up to 5 children in a home setting. Typical cost: ₪2,000–3,500/month",
-        "Private nurseries (maon — מעון) accept children from 3 months old. Fees: ₪3,000–5,500/month. Higher-quality private nurseries in Tel Aviv frequently have waiting lists",
+        "For under-3s, a metapelet (מטפלת — a licensed home daycare provider) is the most common option. Licensed metaplot accept up to 5 children in a home setting. Typical cost: $540–$945/month",
+        "Private nurseries (maon — מעון) accept children from 3 months old. Fees: $810–$1,485/month. Higher-quality private nurseries in Tel Aviv frequently have waiting lists",
         "The Israeli government provides a subsidised daycare voucher (Shal) for children aged 3 months to 3 years — eligibility and amount vary by family income; check your entitlement at btl.gov.il"
       ],
       "nannyItems": [
-        "Nannies (metapelet prat or babysitter) typically charge ₪40–80/hr — rates vary by experience and English fluency",
-        "Full-time nannies in Tel Aviv charge roughly ₪7,000–12,000/month — English-speaking nannies from abroad command a premium",
+        "Nannies (metapelet prat or babysitter) typically charge $11–$22/hr — rates vary by experience and English fluency",
+        "Full-time nannies in Tel Aviv charge roughly $1,890–$3,240/month — English-speaking nannies from abroad command a premium",
         "Filipino nannies are common in the Tel Aviv tech community — many are experienced with international families and English is their working language",
         "Start your search 4–6 weeks before arrival — good nannies in the Neve Tzedek and Ramat Aviv expat areas book up quickly through word of mouth"
       ],
@@ -5404,7 +5404,7 @@
         "Kupat Holim membership requires a Mispar Zehut (Israeli ID number) and formal residency status — new arrivals on a B/1 work visa typically become eligible after registering with the Ministry of Interior.",
         "Until you have Kupat Holim access, arrange private IPMI (International Private Medical Insurance) — plans from Cigna Global, AXA, or Allianz Care are standard for newly arrived expats.",
         "Private medical care in Tel Aviv is high quality — Assuta Medical Centre, Ichilov (Sourasky Medical Centre), and Herzliya Medical Centre are the main private hospitals used by expat families.",
-        "Monthly Kupat Holim contributions are income-tested and collected via Bituach Leumi (ביטוח לאומי — National Insurance Institute) — roughly ₪200–600/month for a family depending on income."
+        "Monthly Kupat Holim contributions are income-tested and collected via Bituach Leumi (ביטוח לאומי — National Insurance Institute) — roughly $54–$162/month for a family depending on income."
       ]
     },
     "safety": {
@@ -5421,9 +5421,9 @@
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~₪14,000 / month",
-      "familyDinner": "~₪300",
-      "nannyRate": "~₪55 / hr"
+      "rentRange": "~$3,780 / month",
+      "familyDinner": "~$81",
+      "nannyRate": "~$15 / hr"
     },
     "sources": {
       "visa": [
