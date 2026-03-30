@@ -371,7 +371,7 @@ export default async function CityPage({ params }: Props) {
         {dest.faq && dest.faq.length > 0 && (
           <Section id="faq" title="FAQ" icon={<HelpCircle size={16} className="text-slate-500" />}>
             <dl className="divide-y divide-slate-100">
-              {dest.faq.map((item: { question: string; answer: string }, i: number) => (
+              {dest.faq.map((item, i) => (
                 <details key={i} className="group/faq">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-medium text-slate-800 marker:hidden">
                     <span>{item.question}</span>

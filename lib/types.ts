@@ -220,6 +220,9 @@ export interface Destination {
    *                   e.g. "Valencia Expats Facebook group"
    */
   communityLinks?: { label: string; searchQuery?: string }[];
+
+  /** FAQ section — 8 questions and answers shown between Safety and Sources */
+  faq?: { question: string; answer: string }[];
 }
 
 // ── Trust / verification layer ────────────────────────────────────────────────
