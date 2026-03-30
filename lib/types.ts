@@ -280,6 +280,7 @@ export interface CountryData {
     summary: string;
     options: VisaOption[];
     tip?: string;
+    tipSearchQuery?: string;
   };
 }
 
