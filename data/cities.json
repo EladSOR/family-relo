@@ -4249,7 +4249,9 @@
           "isVerified": true
         },
         {
-          "label": "Search 'Athens Expats Housing' on Facebook — direct landlord deals, no agency fee"
+          "label": "Facebook groups — search: 'Athens Expats Housing' (direct landlord deals, no agency fee)",
+          "url": "https://www.google.com/search?q=Athens+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -4482,7 +4484,9 @@
           "isVerified": true
         },
         {
-          "label": "Search 'Costa del Sol Expat Housing' or 'Malaga Expat Property' on Facebook — many direct landlord deals, no agency fee"
+          "label": "Facebook groups — search: 'Costa del Sol Expat Housing' or 'Malaga Expat Property' (direct landlord deals, no agency fee)",
+          "url": "https://www.google.com/search?q=Costa+del+Sol+Expat+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -5047,7 +5051,9 @@
           "isVerified": true
         },
         {
-          "label": "Search 'Sydney Expats Housing' on Facebook — community listings and occasional direct landlord deals"
+          "label": "Facebook groups — search: 'Sydney Expats Housing' (community listings and direct landlord deals)",
+          "url": "https://www.google.com/search?q=Sydney+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -5319,12 +5325,14 @@
           "isVerified": true
         },
         {
-          "label": "Homely.co.il — English-language listings popular with the expat community",
-          "url": "https://www.homely.co.il",
+          "label": "Homely MLS — English-language listings popular with the expat community",
+          "url": "https://www.google.com/search?q=Homely+MLS+Tel+Aviv+rentals",
           "isVerified": true
         },
         {
-          "label": "Search 'Tel Aviv Expat Housing' or 'Olim Housing Tel Aviv' on Facebook — active communities with direct landlord listings"
+          "label": "Facebook groups — search: 'Tel Aviv Expat Housing' or 'Olim Housing Tel Aviv' (active communities, direct landlord listings)",
+          "url": "https://www.google.com/search?q=Tel+Aviv+Expat+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
