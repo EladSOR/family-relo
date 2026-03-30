@@ -4,7 +4,7 @@ import {
   MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, Landmark, CreditCard, Users, ChevronDown,
+  BookOpen, Landmark, CreditCard, Users, ChevronDown, HelpCircle,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
@@ -366,6 +366,23 @@ export default async function CityPage({ params }: Props) {
           </div>
           <BulletList items={dest.safety.items} />
         </Section>
+
+        {/* ── FAQ ──────────────────────────────────────────────────────── */}
+        {dest.faq && dest.faq.length > 0 && (
+          <Section id="faq" title="FAQ" icon={<HelpCircle size={16} className="text-slate-500" />}>
+            <dl className="divide-y divide-slate-100">
+              {dest.faq.map((item: { question: string; answer: string }, i: number) => (
+                <details key={i} className="group/faq">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-medium text-slate-800 marker:hidden">
+                    <span>{item.question}</span>
+                    <ChevronDown size={15} className="shrink-0 text-slate-400 transition-transform duration-200 group-open/faq:rotate-180" />
+                  </summary>
+                  <p className="pb-4 pr-1 text-sm leading-relaxed text-slate-600">{item.answer}</p>
+                </details>
+              ))}
+            </dl>
+          </Section>
+        )}
 
         {/* ── Official sources ──────────────────────────────────────────── */}
         {allSources.length > 0 && (
