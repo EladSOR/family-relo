@@ -4605,35 +4605,35 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Determine your visa route: employer-sponsored residency, UAE Virtual Working Programme ($3,500+/month income required), or UAE Golden Visa",
+        "label": "Decide which UAE visa route applies to you: employer-sponsored residency (your company files the visa on your behalf), Virtual Working Programme (for remote workers earning at least $3,500/month from outside the UAE), or Golden Visa (for property investors of AED 2 million+). See the Visa section for step-by-step guidance on each.",
         "targetSection": "visa"
       },
       {
-        "label": "For the Virtual Working Programme: prepare proof of remote employment, 3 months of income statements, and valid health insurance",
+        "label": "For the Virtual Working Programme: prepare your employer letter or client contracts, 3 months of income statements showing $3,500+/month, and a valid international health insurance policy. Apply through the ICP — search 'UAE Virtual Working Programme apply ICP' on Google to find the official application page.",
         "targetSection": "visa"
       },
       {
-        "label": "Research ADEK-approved school applications (ADEK is Abu Dhabi's official Department of Education and Knowledge) before relocating — top schools fill 12–18 months out",
+        "label": "Apply to international schools 12–18 months before your planned move — all Abu Dhabi schools are licensed by ADEK (Abu Dhabi Department of Education and Knowledge — the government body that inspects and certifies every school in the emirate). Search 'ADEK school inspection reports Abu Dhabi' on Google to compare school ratings before applying.",
         "targetSection": "schools"
       },
       {
-        "label": "Obtain mandatory health insurance — required before visa issuance; typically employer-provided or roughly AED 400–800/month privately",
+        "label": "Arrange mandatory health insurance before your visa can be issued — UAE law requires every resident to hold valid coverage. If your employer does not provide it, search 'Cigna Global UAE family plan' or 'AXA UAE family health insurance' for comparable international policies. Typical private cost: AED 400–800/month for a family.",
         "targetSection": "healthcare"
       },
       {
-        "label": "Get all family documents attested and translated into Arabic by a certified legal translation office in Abu Dhabi",
-        "targetSection": "visa"
-      },
-      {
-        "label": "Apply for your Emirates ID — UAE's national identity card — within 30 days of visa stamping; required for banking, healthcare, and school enrolment",
+        "label": "Get key family documents (birth certificates, marriage certificate, degree certificates) officially attested and translated into Arabic. Attestation means having each document verified by your home country's government authority and then by the UAE Embassy in your country — proving the document is genuine. Required by UAE immigration before your residency is processed. Search 'document attestation Abu Dhabi' on Google to find licensed translation offices.",
         "targetSection": "residency"
       },
       {
-        "label": "Open a UAE bank account (First Abu Dhabi Bank, ADCB, or HSBC UAE) once you have your Emirates ID",
+        "label": "Apply for your Emirates ID — UAE's national identity card required for banking, healthcare, and school enrolment — within 30 days of your visa being stamped. Book your biometrics appointment (fingerprint scan and photo) through the ICP portal by searching 'ICP Emirates ID apply Abu Dhabi' on Google.",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a bank account at FAB (First Abu Dhabi Bank), ADCB (Abu Dhabi Commercial Bank), or HSBC UAE once you have your Emirates ID — UAE banks cannot open an account without it. Use Wise or Revolut as a bridge for spending in the first 2–4 weeks.",
         "targetSection": "banking"
       },
       {
-        "label": "Register your tenancy contract on DARI (Abu Dhabi's official tenancy registration system) — required by Abu Dhabi law and your legal protection as a tenant",
+        "label": "Register your rental contract on DARI — Abu Dhabi's official tenancy registration platform — within 30 days of signing your lease. Required by law and provides your legal protection as a tenant. Search 'DARI tenancy registration Abu Dhabi' on Google to register online.",
         "targetSection": "housing"
       }
     ],
@@ -4654,7 +4654,8 @@
     "visa": {
       "status": "verified",
       "summary": "The UAE operates a federal visa system that applies equally to Abu Dhabi and Dubai. The Virtual Working Programme allows 1-year residency for remote workers earning $3,500+/month. Many expat families come on employer-sponsored residency visas. The UAE Golden Visa offers 10-year residency for investors and high earners.",
-      "tip": "Process your Emirates ID — UAE's national identity card — within 30 days of your visa being stamped. It is required for virtually every formal transaction in Abu Dhabi.",
+      "tip": "Before applying for any UAE visa route, get your key family documents (birth certificates, marriage certificate, degree certificates) officially attested — meaning stamped by your home country's government and the UAE Embassy in your country — and translated into Arabic. This is required by UAE immigration regardless of which visa you choose.",
+      "tipSearchQuery": "document attestation Abu Dhabi licensed office",
       "options": [
         {
           "type": "Visa on Arrival",
@@ -4664,9 +4665,9 @@
           "description": "Available to most Western passport holders. Useful for a family scouting trip — not for long-term living.",
           "details": [
             "Most Western, EU, and GCC passport holders receive a free 30-day visa on arrival at Abu Dhabi International Airport, extendable to 60 days.",
-            "Extensions can be done online via the ICP portal (icp.gov.ae) — the ICP is the Federal Authority for Identity, Citizenship, Customs and Port Security, the UAE's federal authority for identity documents.",
-            "Good for a family scouting trip but not suitable for long-term living — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
-            "If you plan to stay long-term, apply for a residency visa as early as possible — you cannot convert a tourist entry into residency from inside the UAE."
+            "Extensions can be done online via the ICP portal — the ICP (Federal Authority for Identity, Citizenship, Customs and Port Security) is the UAE's federal body that issues Emirates IDs and manages all visa and identity services. Search 'UAE ICP visa extension' on Google to find the official portal.",
+            "Good for a family scouting trip — but you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
+            "If you plan to stay long-term, apply for a residency visa before your tourist entry expires — you cannot convert a tourist entry into residency from inside the UAE."
           ],
           "officialLink": {
             "label": "UAE ICP visa on arrival official icp.gov.ae"
@@ -4681,7 +4682,8 @@
           "details": [
             "Income requirement: at least $3,500/month (roughly AED 12,850) from remote employment or freelancing outside the UAE.",
             "Documents required: valid passport, passport-sized photo, proof of remote employment (employer letter or client contracts), 3 months of income proof, and valid health insurance.",
-            "Application fee: approximately $550 USD. Apply through the ICP portal (icp.gov.ae) or via an authorised PRO agency in Abu Dhabi.",
+            "Document attestation: key family documents (birth certificates, marriage certificate, degree certificates) must be officially attested — meaning stamped by your home country's government authority and then by the UAE Embassy in your country to prove they are genuine — then translated into Arabic. Search 'document attestation Abu Dhabi licensed office' on Google to find authorised translation and attestation services.",
+            "Application fee: approximately $550 USD. Apply through the ICP portal (search 'UAE Virtual Working Programme ICP apply' on Google) or via an authorised PRO agency in Abu Dhabi — a PRO (Public Relations Officer) is a licensed agent who handles UAE government paperwork on your behalf.",
             "Covers the primary applicant and immediate family — spouse and children receive dependent visas under your residency.",
             "After receiving your residency stamp, apply for your Emirates ID — UAE's national identity card required for banking, healthcare, and school enrolment — within 30 days."
           ],
@@ -4700,7 +4702,8 @@
             "Other qualifying routes: UAE-listed company investments of at least AED 2 million, approved entrepreneurs, scientists, or exceptional talent in education, technology, and the arts.",
             "Covers the primary applicant and immediate family for the full 10-year term.",
             "Golden Visa holders are not required to spend a minimum number of days in the UAE — making it flexible for families who travel frequently.",
-            "Apply through the ICP portal (icp.gov.ae) or via an authorised PRO agency. Processing typically takes 2–4 weeks after document submission."
+            "Document attestation: key family documents must be officially attested (stamped by your home government and the UAE Embassy) and translated into Arabic before submission. Search 'document attestation Abu Dhabi licensed office' on Google to find authorised services.",
+            "Apply through the ICP portal (search 'UAE Golden Visa ICP apply' on Google) or via an authorised PRO agency. Processing typically takes 2–4 weeks after document submission."
           ],
           "officialLink": {
             "label": "UAE Golden Visa official ICP requirements"
@@ -4710,23 +4713,24 @@
     },
     "residency": {
       "title": "Residency & Emirates ID",
-      "tip": "Book your Emirates ID biometrics appointment via the ICP portal (icp.gov.ae) within your first week — slots fill quickly and the ID is required for almost everything.",
+      "tip": "Book your Emirates ID biometrics appointment through the ICP portal (search 'ICP UAE Emirates ID appointment' on Google) within your first week — slots fill quickly and the ID is required for almost everything in Abu Dhabi.",
       "items": [
-        "Apply for your Emirates ID — UAE's national identity card — within 30 days of your visa being stamped. Required for banking, healthcare registration, school enrolment, and most formal services in Abu Dhabi.",
-        "Book your biometrics appointment (fingerprinting and photo) through the ICP portal (icp.gov.ae). After the appointment, the card is typically issued within 5–10 business days.",
-        "Register your tenancy contract on the DARI system — Abu Dhabi's official tenancy registration platform — within 30 days of signing your lease. This is your legal protection as a tenant and is required by Abu Dhabi law.",
+        "Before your visa is processed, get key family documents (birth certificates, marriage certificate, degree certificates) officially attested and translated into Arabic. Attestation means having each document stamped by your home country's government authority and then by the UAE Embassy in your country — proving it is genuine. Search 'document attestation Abu Dhabi licensed office' on Google to find authorised translation and attestation services.",
+        "Apply for your Emirates ID — UAE's national identity card — within 30 days of your visa being stamped. Required for banking, healthcare registration, school enrolment, and most formal services in Abu Dhabi. Search 'ICP UAE Emirates ID apply' on Google to find the official application portal.",
+        "Book your biometrics appointment (fingerprinting and photo) through the ICP (Federal Authority for Identity, Citizenship, Customs and Port Security) portal. After the appointment, the card is typically issued within 5–10 business days.",
+        "Register your tenancy contract on the DARI system — Abu Dhabi's official tenancy registration platform — within 30 days of signing your lease. This is your legal protection as a tenant and is required by Abu Dhabi law. Search 'DARI tenancy registration Abu Dhabi' on Google to register online.",
         "All family members require their own Emirates ID — including children. Dependants are registered under the primary visa holder's residency.",
         "Keep scanned copies of your Emirates ID, visa page, and entry stamp — Abu Dhabi healthcare providers, schools, and government offices frequently request all three."
       ]
     },
     "banking": {
-      "title": "Banking & Emirates ID",
-      "tip": "No bank in the UAE will open an account without your Emirates ID — get it within your first 30 days to avoid being cut off from local banking.",
+      "title": "Banking",
+      "tip": "No UAE bank will open an account without your Emirates ID — get it within your first 30 days to avoid being cut off from local banking.",
       "items": [
-        "You need your Emirates ID before any UAE bank will open a personal account — this is a hard requirement with no workaround.",
-        "First Abu Dhabi Bank (FAB) and Abu Dhabi Commercial Bank (ADCB) are the two banks most experienced with expat account opening in Abu Dhabi. HSBC UAE is a strong option if you already have an HSBC relationship internationally.",
+        "You need your Emirates ID before any UAE bank will open a personal account — this is a hard requirement with no workaround. Use Wise or Revolut as a spending bridge while you wait for your ID to arrive.",
+        "FAB (First Abu Dhabi Bank) and ADCB (Abu Dhabi Commercial Bank) are the two banks most experienced with expat account opening in Abu Dhabi. HSBC UAE is a strong option if you already have an HSBC relationship internationally.",
         "To open an account you will typically need: passport, Emirates ID, visa page, DARI-registered tenancy agreement, and a payslip or income letter.",
-        "While waiting for your Emirates ID, use Wise or Revolut for international transfers and day-to-day spending — both work immediately with just your passport.",
+        "While waiting for your Emirates ID, use Wise or Revolut for international transfers and day-to-day spending — both open with just your passport and work anywhere in the UAE from day one.",
         "Cash is accepted widely in Abu Dhabi — keep AED 500–1,000 on hand for local markets, smaller restaurants, and taxis."
       ]
     },
@@ -4762,7 +4766,9 @@
           "isVerified": true
         },
         {
-          "label": "Search 'Abu Dhabi Expats Housing' on Facebook — direct landlord and community deals"
+          "label": "Facebook groups — search: 'Abu Dhabi Expats Housing' (direct landlord deals, no agent fee)",
+          "url": "https://www.google.com/search?q=Abu+Dhabi+Expats+Housing+Facebook+group",
+          "isVerified": true
         }
       ],
       "typicalPrices": [
@@ -4774,10 +4780,10 @@
       "whatYouNeedToRent": [
         "Valid passport and Emirates ID (required for contract signing)",
         "Residency visa page",
-        "DARI tenancy registration — landlords are required to register the lease on the Abu Dhabi platform",
+        "DARI tenancy registration — your landlord must register the lease on DARI, Abu Dhabi's official tenancy platform, within 30 days of signing. Without this registration you have no legal protection as a tenant. Search 'DARI tenancy registration Abu Dhabi' on Google to verify your contract is registered or to register yourself.",
         "1–3 months deposit — typically around 5% of annual rent, negotiable",
         "Post-dated cheques for rent — most Abu Dhabi landlords require 1–4 post-dated cheques per year",
-        "No-objection letter from employer (NOC) — sometimes required for certain residential compounds"
+        "NOC (No-Objection Certificate) from employer — a letter stating your employer has no objection to you renting the property; sometimes required for certain residential compounds"
       ]
     },
     "schools": {
@@ -4786,7 +4792,7 @@
       "publicSystem": "UAE public schools are for Emirati citizens and teach in Arabic. They are not an option for expat families. All expat families use private international schools.",
       "internationalOptions": "Abu Dhabi has a wide range of ADEK-inspected international schools offering British, American, IB, and Indian curricula in English. Schools are concentrated on Saadiyat Island, Khalifa City, and Al Reef. Fees range from AED 30,000 to AED 90,000 per year. Apply 12–18 months before your intended start date — the most popular schools fill very quickly.",
       "languageNotes": "All international schools in Abu Dhabi teach primarily in English. Arabic is a compulsory additional subject in all private schools under UAE regulations. Most schools offer Arabic as a first or second language depending on the pupil's background.",
-      "tip": "ADEK publishes annual school inspection reports — search 'ADEK school inspection report Abu Dhabi' to compare schools before applying.",
+      "tip": "ADEK publishes annual school inspection reports — search 'ADEK school inspection report Abu Dhabi' on Google to compare school ratings before applying.",
       "options": [
         {
           "type": "British curriculum international schools (IGCSE and A-Level)",
@@ -4810,43 +4816,43 @@
       "summary": "Childcare in Abu Dhabi is expensive by global standards. Live-in domestic helpers and nannies are extremely common, with a large Filipino and Indonesian workforce experienced with international families.",
       "daycareItems": [
         "Private nurseries and daycare centres are the only option — no subsidised public childcare exists for expat families in Abu Dhabi",
-        "ADEK-licensed nurseries accept children from 45 days old — popular nurseries on Saadiyat Island and Al Reem Island frequently have waiting lists",
+        "ADEK-licensed nurseries (ADEK is Abu Dhabi's official education regulator) accept children from 45 days old — popular nurseries on Saadiyat Island and Al Reem Island frequently have waiting lists",
         "Typical fees: AED 2,500–5,000/month depending on hours and school reputation",
-        "Visit at least 2–3 nurseries before deciding — ADEK inspection reports are publicly available and worth reviewing before your visit"
+        "Visit at least 2–3 nurseries before deciding — ADEK publishes inspection reports for nurseries too. Search 'ADEK nursery inspection Abu Dhabi' on Google to review ratings before your visit."
       ],
       "nannyItems": [
         "Live-out nannies charge AED 25–45/hr — Filipino and Indonesian nannies are most common and very experienced with expat families",
-        "Live-in domestic helpers (under a sponsorship arrangement) are legal in the UAE — typically cost AED 1,500–2,500/month plus accommodation and food",
-        "Many expat families combine nursery in the morning with a part-time nanny in the afternoon",
+        "Live-in domestic helpers are legal in the UAE under a domestic worker sponsorship arrangement — typically cost AED 1,500–2,500/month plus accommodation and food",
+        "Many expat families combine nursery in the morning with a part-time nanny in the afternoon — a common and practical arrangement in Abu Dhabi",
         "Start your search before arriving — the most experienced English-speaking nannies fill quickly through word of mouth in expat communities"
       ],
       "whereToFindItems": [
-        "Dubizzle Abu Dhabi — the primary platform for domestic worker listings in Abu Dhabi",
-        "Search 'Abu Dhabi Expat Mums' or 'Abu Dhabi Families' on Google — the main Facebook communities for personal nanny recommendations",
-        "Relocation agency referrals — most Abu Dhabi relocation companies maintain a vetted nanny and domestic worker referral list"
+        "Dubizzle Abu Dhabi (dubizzle.com) — the primary platform for domestic worker and nanny listings in Abu Dhabi; search 'nanny' or 'babysitter' within the site",
+        "Search 'Abu Dhabi Expat Mums' on Google — the main Facebook community for personal nanny recommendations and childcare advice from families already living there",
+        "Search 'relocation agency Abu Dhabi' on Google — most relocation companies in the city maintain a vetted nanny and domestic worker referral list for incoming families"
       ]
     },
     "healthcare": {
       "status": "estimated",
       "tip": "Health insurance is mandatory for all Abu Dhabi residents — your visa cannot be processed without it. Confirm your policy covers the whole family before submitting any visa application.",
       "items": [
-        "Health insurance is legally mandatory in Abu Dhabi for all residents — employers are required to provide it for their employees. If self-sponsored or on the Virtual Working Programme, arrange private insurance before visa issuance.",
-        "Abu Dhabi has excellent private hospitals. Cleveland Clinic Abu Dhabi (on Al Maryah Island) is one of the most advanced hospitals in the region and widely used by expat families. Burjeel Hospital and Sheikh Khalifa Medical City are strong alternatives.",
-        "Cost with insurance is manageable — GP visits are typically AED 200–400 with a standard corporate insurance plan. Out-of-pocket emergency treatment can exceed AED 5,000–10,000.",
-        "Children under 3 are required to complete the UAE vaccination schedule — bring your home country vaccination records for review at registration.",
-        "IPMI (International Private Medical Insurance) from Cigna Global, AXA-PPP, or Allianz Care gives broader international coverage and direct billing at Cleveland Clinic Abu Dhabi — family plans typically start around AED 15,000–25,000/year."
+        "Health insurance is legally mandatory in Abu Dhabi for all residents — employers are required to provide it for their employees. If self-sponsored or on the Virtual Working Programme, arrange private insurance before visa issuance. Search 'UAE compliant family health insurance' on Google to compare international plans.",
+        "Abu Dhabi has excellent private hospitals. Cleveland Clinic Abu Dhabi (on Al Maryah Island — a short drive from Saadiyat and Al Reem Island) is one of the most advanced hospitals in the region and widely used by expat families. Burjeel Hospital and Sheikh Khalifa Medical City are strong alternatives.",
+        "Cost with insurance is manageable — GP visits are typically AED 200–400 with a standard corporate insurance plan. Out-of-pocket emergency treatment without insurance can exceed AED 5,000–10,000.",
+        "Children under 3 are required to complete the UAE vaccination schedule — bring your home country vaccination records when registering your child with a paediatrician. Search 'UAE child vaccination schedule' on Google to see the required list.",
+        "IPMI (International Private Medical Insurance — a comprehensive health plan that covers you in the UAE and globally, not just locally) from Cigna Global, AXA-PPP, or Allianz Care gives broader coverage and direct billing at top hospitals — family plans typically start around AED 15,000–25,000/year."
       ]
     },
     "safety": {
       "status": "estimated",
-      "score": 90,
+      "score": 88,
       "summary": "Abu Dhabi is one of the safest cities in the world for families. Violent crime is extremely rare.",
       "items": [
-        "Violent crime against expats is exceptionally rare — Abu Dhabi consistently ranks among the safest cities globally in major indices",
-        "The main daily risk is road traffic — Abu Dhabi has high-speed roads and aggressive driving standards; defensive driving and correct use of child car seats is essential",
-        "Heat is a health risk from May to September — limit outdoor exposure during midday, ensure children stay hydrated, and recognise heat-related illness symptoms",
-        "Family-friendly residential areas (Saadiyat Island, Al Reem Island, Khalifa City) are calm, well-patrolled communities with very low crime",
-        "Public behaviour standards apply — dress modestly in public spaces, respect prayer times in commercial areas, and avoid public displays of affection"
+        "Violent crime against expats is exceptionally rare — Abu Dhabi consistently ranks among the safest cities globally in major safety indices",
+        "The main daily risk is road traffic — Abu Dhabi has high-speed roads and aggressive driving culture; defensive driving and correct use of child car seats is essential from day one",
+        "Heat is a genuine health risk from May to September — limit outdoor exposure during midday, ensure children stay hydrated, and know how to recognise heat exhaustion symptoms",
+        "Family-friendly residential areas (Saadiyat Island, Al Reem Island, Khalifa City) are calm, well-patrolled communities with very low crime rates",
+        "Public behaviour standards apply — dress modestly in public spaces (malls, government buildings, markets), respect prayer times in commercial areas, and avoid public displays of affection"
       ]
     },
     "cost": {
@@ -4863,7 +4869,13 @@
           "isVerified": true
         }
       ],
-      "schools": [],
+      "schools": [
+        {
+          "label": "ADEK — Abu Dhabi Department of Education and Knowledge",
+          "url": "https://www.adek.gov.ae",
+          "isVerified": true
+        }
+      ],
       "cost": [
         {
           "label": "Abu Dhabi Cost of Living — Numbeo",
@@ -4877,6 +4889,12 @@
         "label": "Search 'Abu Dhabi Expat Families' on Google — active community with school, housing, and relocation advice",
         "searchQuery": "Abu Dhabi Expat Families Facebook group",
         "url": "https://www.google.com/search?q=Abu+Dhabi+Expat+Families+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Abu Dhabi Mums' on Google — the main community for childcare recommendations, school advice, and day-to-day family life in Abu Dhabi",
+        "searchQuery": "Abu Dhabi Mums Facebook group",
+        "url": "https://www.google.com/search?q=Abu+Dhabi+Mums+Facebook+group",
         "isVerified": true
       }
     ]

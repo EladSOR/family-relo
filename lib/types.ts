@@ -52,6 +52,8 @@ export interface Destination {
     summary: string;
     options: VisaOption[];
     tip?: string;
+    /** Google search query rendered as a SearchHint button below the tip */
+    tipSearchQuery?: string;
   };
 
   /**

@@ -173,6 +173,7 @@ export default async function CityPage({ params }: Props) {
               <p className="mb-4 text-sm leading-relaxed text-slate-700">{visaData.summary}</p>
               <VisaPathSelector options={visaData.options} />
               {visaData.tip && <Tip text={visaData.tip} />}
+              {visaData.tipSearchQuery && <SearchHint query={visaData.tipSearchQuery} />}
             </>
           )}
         </Section>

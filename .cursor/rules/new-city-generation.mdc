@@ -57,33 +57,94 @@ Every bullet must answer: **what is it / what should I do / why does it matter.*
 
 ---
 
-## RULE 3 — Local terms: always explain inline
+## RULE 3 — Local terms and acronyms: always explain inline
 
-When a local term appears, define it in the same sentence.
+When a local term or acronym appears **anywhere** (checklist, section text, visa details, residency, banking, healthcare — everywhere), define it in the same sentence. This applies both to local bureaucratic terms and to institution/programme name abbreviations.
 
 ```
-// ❌ BAD
-"Register on the Padrón."
+// ❌ BAD — acronym unexplained
+"Apply for your Emirates ID within 30 days."
 
-// ✅ GOOD
-"Register on the Padrón Municipal — Spain's official address register — at your local Ayuntamiento (city hall)."
+// ✅ GOOD — explained on first use
+"Apply for your Emirates ID — UAE's national identity card required for banking, healthcare, and school enrolment — within 30 days."
 ```
 
-This applies to: Padrón, NIE, NIF, TIE, Junta de Freguesia, Finanças, AIMA, SNS, SIP, TM30, Emirates ID, KHDA, moo ban, and any other local bureaucratic term.
+```
+// ❌ BAD — institution abbreviation with no explanation
+"Apply through the ICP portal."
+
+// ✅ GOOD — expanded inline
+"Apply through the ICP portal — the ICP (Federal Authority for Identity, Citizenship, Customs and Port Security) is the UAE's federal body for all visa and identity services."
+```
+
+This applies to: Padrón, NIE, NIF, TIE, Junta de Freguesia, Finanças, AIMA, SNS, SIP, TM30, Emirates ID, KHDA, ADEK, ICP, DARI, FAB, ADCB, NOC, PRO, IPMI, moo ban, and any other local bureaucratic term or institution abbreviation.
 
 ---
 
-## RULE 4 — Links: stable only, no deep URLs
+## RULE 3b — Actionability of checklist items
+
+Every `actionChecklist` item must pass all three of these tests:
+
+1. **What is this?** — Is the concept and any acronym clear to someone with zero prior knowledge?
+2. **What should I do next?** — Does the item tell the user the immediate action to take?
+3. **Where do I go?** — Is there a named place, search query, or Google search link they can act on?
+
+If an item fails any test, rewrite it.
+
+```
+// ❌ FAILS — vague, no action, no destination
+"Research ADEK-approved school applications before relocating."
+
+// ✅ PASSES — clear concept, clear action, clear destination
+"Apply to international schools 12–18 months before your move — all Abu Dhabi schools are licensed by ADEK (Abu Dhabi Department of Education and Knowledge — the government body that inspects every school). Search 'ADEK school inspection reports Abu Dhabi' on Google to compare school ratings before applying."
+```
+
+---
+
+## RULE 4 — Links: Google search over deep links
 
 See `external-links.mdc` for full link rules. Summary:
 
 | Link type | Rule |
 |---|---|
 | Rental portals | Root homepage only — never filtered search pages |
-| Facebook groups | Plain text only — no URL |
+| Facebook groups in `searchPortals` | **Always** add a Google search URL — see format below |
 | Official gov links | Only if stable (gov domain, not a press release or PDF) |
-| No stable link exists | Use: `"label": "Search Google: '[query]'"` — no `url` field |
+| No stable direct link | Use a Google search link: `"url": "https://www.google.com/search?q=..."` with `"isVerified": true` |
 | Legal documents (BOE, Gazette) | Never use as a primary user link |
+
+**Google search links are preferred over deep links.** A Google search URL (`google.com/search?q=...`) is always stable, works on mobile and desktop, and never goes stale. Use them anywhere a stable official URL does not exist or may change.
+
+```json
+// ✅ Google search link — evergreen and mobile-friendly
+{ "label": "Search 'UAE Golden Visa ICP apply' on Google", "url": "https://www.google.com/search?q=UAE+Golden+Visa+ICP+apply", "isVerified": true }
+
+// ❌ Deep link — may break, may redirect, often fails on mobile
+{ "label": "UAE Golden Visa", "url": "https://icp.gov.ae/en/category/goldenvisa/visatypes", "isVerified": true }
+```
+
+**Facebook groups in `searchPortals` must always have a Google search URL.** Never leave the Facebook entry without a `url` field — it must link to Google search results for that group name, so the user has a clickable destination.
+
+```json
+// ✅ CORRECT — Facebook group entry with Google search URL
+{
+  "label": "Facebook groups — search: 'Abu Dhabi Expats Housing' (direct landlord deals, no agent fee)",
+  "url": "https://www.google.com/search?q=Abu+Dhabi+Expats+Housing+Facebook+group",
+  "isVerified": true
+}
+
+// ❌ WRONG — no URL, no clickable destination for the user
+{ "label": "Search 'Abu Dhabi Expats Housing' on Facebook — direct landlord and community deals" }
+```
+
+**Section content must provide continuity from the checklist.** When a checklist item targets a section, that section must contain the information and action link the user was promised in the checklist label. If checklist item 5 says "search for document attestation offices", the visa section must include a bullet with that Google search link. If checklist item 8 says "register on DARI", the housing section must include a DARI explanation and search link in `whatYouNeedToRent`.
+
+Within **section text** (residency items, banking items, healthcare items, childcare whereToFindItems, visa details), include inline search instructions like:
+- `"Search 'DARI tenancy registration Abu Dhabi' on Google to register online."`
+- `"Search 'ADEK school inspection report Abu Dhabi' on Google to compare schools."`
+- `"Search 'document attestation Abu Dhabi licensed office' on Google to find authorised services."`
+
+This keeps all text actionable without requiring a stored URL.
 
 ---
 
