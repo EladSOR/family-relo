@@ -9165,5 +9165,2641 @@
         "answer": "How enjoyable daily life is at this price point. Thessaloniki is widely regarded by Greeks as the best food city in the country. Families who arrive with modest expectations consistently find the combination of affordable living, warm locals, exceptional food, and a relaxed pace hard to leave."
       }
     ]
+  },
+  {
+    "id": "paris-fr",
+    "citySlug": "paris",
+    "countrySlug": "france",
+    "city": "Paris",
+    "country": "France",
+    "tagline": "World capital of culture — extraordinary city life with a demanding administrative system",
+    "summary": "Paris is one of the world's great cities for culture, education, and family life. Free state nursery starts at age 3, the international school scene is large and established, and the city's museums, parks, and food make daily life genuinely rewarding. The trade-offs are high housing costs — among the most expensive in Europe — a fiercely competitive rental market, and a bureaucratic system that requires patience. French language skills accelerate everything.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA families: no visa required — register at your local Mairie (town hall) within 90 days and obtain a justificatif de domicile (official proof of address document)",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU families: apply for a Visa de Long Sejour (long-stay visa) at the French Consulate before travelling — you cannot switch status from inside France on a tourist entry",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — family apartments in Paris are taken within 48 hours of listing",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12–18 months before your move date — popular British and IB curriculum schools are heavily oversubscribed",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Enrol children in your local Ecole Maternelle (free state nursery ages 3–6) via your Mairie — your assigned school is determined by your home address",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your Titre de Sejour (residency permit) at the Prefecture de Police after arriving and validating your VLS at the OFII portal (ofii.fr) — required to access banking and healthcare",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a French bank account (BNP Paribas, Societe Generale, or Hello Bank!) — required for rent direct debits and utility contracts",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Apply for your Carte Vitale (France's public health insurance card) once your Numero de Securite Sociale is issued — covers GP and specialist visit reimbursements",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who prioritise world-class cultural education, museums, and food as part of everyday life",
+        "EU/EEA families seeking a stable, safe European base with free public schooling from age 3",
+        "Finance, luxury goods, or tech professionals where Paris is the regional hub",
+        "Families committed to French language integration for a long-term European base"
+      ],
+      "watchOutFor": [
+        "Housing costs are very high — budget $3,500–$5,000/month for a 3-bed apartment; properties are taken within 48 hours of listing",
+        "French bureaucracy (Prefecture, OFII, Securite Sociale) is thorough and slow — non-French-speaking families save weeks with a relocation agent",
+        "International schools are heavily oversubscribed — apply 12–18 months ahead or you will miss the intake",
+        "Summers bring heat waves (38°C / 100°F+) and most of Paris shuts down in August — plan your arrival and school start carefully"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to France. Non-EU families need a Visa de Long Sejour (VLS) obtained at the French Consulate before travelling. France has no standalone digital nomad visa — remote workers use the VLS-Visiteur (passive or remote income) route.",
+      "tip": "Book your French Consulate appointment early — slots fill 6–8 weeks ahead. After arriving, validate your VLS at ofii.fr within 3 months — non-validation voids your visa.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Paris",
+          "duration": "No visa required",
+          "description": "Move freely to France. Register at your local Mairie within 90 days for your justificatif de domicile (proof of address).",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in France.",
+            "Register at your local Mairie to obtain a justificatif de domicile. Bring your passport and signed rental contract.",
+            "Children can enrol in French state schools immediately — your Mairie issues a carte scolaire confirming your assigned local school.",
+            "After 5 years of continuous legal residence, apply for a Carte de Resident (permanent residency card, valid 10 years)."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker (VLS-Salarie)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Visa de Long Sejour Salarie — employer-sponsored work visa",
+          "duration": "1 year, renewable",
+          "description": "Requires a French employer and signed work contract. Apply at the French Consulate before travelling.",
+          "details": [
+            "Your French employer must obtain authorisation from the OFII (Office Francais de l'Immigration et de l'Integration — France's immigration authority) before you can apply.",
+            "Apply for the VLS-Salarie at the French Consulate — required: passport, employment contract, OFII authorisation, proof of accommodation.",
+            "After arriving, validate your VLS at ofii.fr within 3 months — mandatory step that activates your legal status.",
+            "Dependents receive a VLS-Famille alongside your visa granting the same residence rights."
+          ],
+          "officialLink": {
+            "label": "France long-stay work visa VLS-Salarie official france-visas.gouv.fr"
+          }
+        },
+        {
+          "type": "Non-EU remote worker / passive income (VLS-Visiteur)",
+          "anchor": "visa-tourist",
+          "detailTitle": "VLS-Visiteur — the closest route for remote workers",
+          "duration": "1 year, renewable",
+          "description": "France has no standalone digital nomad visa. The VLS-Visiteur is the honest route for non-EU remote workers with sufficient income.",
+          "details": [
+            "Requires passive or remote income from a non-French employer — roughly $1,500–$2,000/month per adult minimum typically assessed at consulates.",
+            "Required: proof of remote income, private health insurance valid in France, proof of accommodation.",
+            "Apply at the French Consulate in your home country — processing typically takes 2–4 weeks.",
+            "After arriving, validate your VLS at ofii.fr within 3 months — mandatory step."
+          ]
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Titre de Sejour",
+      "tip": "Search 'titre de sejour Paris prefecture rendez-vous' on Google to book your appointment — slots at the Prefecture de Police fill weeks ahead.",
+      "items": [
+        "Obtain a justificatif de domicile from your Mairie first — bring your passport and signed rental contract.",
+        "Non-EU residents apply for a Titre de Sejour at the Prefecture de Police de Paris. Bring your validated VLS, passport, rental contract, and 3 months of bank statements.",
+        "Your Numero de Securite Sociale is issued once your Titre de Sejour is processed — required for healthcare, school enrolment, and tax registration.",
+        "Children enrol at the local state school assigned to your address — your Mairie provides a carte scolaire confirming the school.",
+        "After 5 years of continuous legal residence, apply for a Carte de Resident — a 10-year long-term residency card."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Hello Bank! (digital, BNP-owned) opens fully online — use it as a bridge while waiting for a traditional bank appointment, which takes 2–4 weeks.",
+      "items": [
+        "BNP Paribas and Societe Generale are the two largest banks used by expat families in Paris — both have English-language phone support.",
+        "You need your justificatif de domicile, passport, and Titre de Sejour (or validated VLS in early weeks) to open an account at a branch.",
+        "Hello Bank! and Boursorama Banque open fully online with no monthly fee — easier and faster for new arrivals than branch banking.",
+        "Wise and Revolut work immediately from arrival for international transfers — essential while your French IBAN is pending.",
+        "Most French landlords require a RIB (Releve d'Identite Bancaire — standardised French bank account reference) for rent direct debit — a French IBAN is essential within the first month."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Paris is one of Europe's most expensive rental markets. Family-friendly areas are the 15th, 16th (Passy, Auteuil), 17th arrondissements, and western suburbs (Saint-Germain-en-Laye, Versailles) near the main international schools.",
+      "bestAreas": [
+        "16th arrondissement (Passy/Auteuil)",
+        "15th arrondissement",
+        "7th arrondissement",
+        "Saint-Germain-en-Laye",
+        "Versailles"
+      ],
+      "searchPortalsIntro": [
+        "These are France's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Paris' or the arrondissement number inside each platform to filter local listings.",
+        "Tip: arrive with a 1–2 month furnished short-stay rental booked — the Paris market moves extremely fast and family apartments are taken within 48 hours of listing."
+      ],
+      "searchPortals": [
+        {
+          "label": "SeLoger.com — France's largest long-term rental platform",
+          "url": "https://www.seloger.com",
+          "isVerified": true
+        },
+        {
+          "label": "PAP.fr — direct owner-to-tenant listings, no agent fee",
+          "url": "https://www.pap.fr",
+          "isVerified": true
+        },
+        {
+          "label": "LeBonCoin.fr — classifieds with a large Paris rentals section",
+          "url": "https://www.leboncoin.fr",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Paris Expats Housing' for English-speaking listings",
+          "url": "https://www.google.com/search?q=Paris+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, central Paris (5th–10th arrondissement): $1,900–$2,800/month",
+        "3-bed apartment, 15th or 17th arrondissement: $3,500–$5,200/month",
+        "3-bed apartment, 16th arrondissement (Passy/Auteuil): $4,500–$7,000/month",
+        "3-bed house or large apartment, Saint-Germain-en-Laye or Versailles: $2,800–$4,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Titre de Sejour (or VLS validation in early weeks)",
+        "3 months of recent bank statements",
+        "Employment contract or proof of stable income",
+        "DossierFacile application — most Paris landlords require a verified digital rental dossier via the French government's DossierFacile platform",
+        "1 month deposit (caution) — legally capped for unfurnished rentals",
+        "Attestation d'assurance habitation (tenant contents insurance) — legally required before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Paris has one of the world's largest international school markets. British, American, and IB options concentrate in the 16th and western suburbs near Versailles. Apply 12–18 months ahead.",
+      "publicSystem": "French state schools are free from age 3 and academically rigorous. All instruction is in French. Children under 8 typically integrate within one school year with tutoring support. Older children without French benefit from a transitional private school first.",
+      "internationalOptions": "Paris has multiple British, American, and IB curriculum schools concentrated in the 16th and western suburbs (Saint-Germain-en-Laye, Versailles). Fees range from $18,000 to $35,000/year. Apply 12–18 months before start date.",
+      "languageNotes": "French is the language of instruction in all state schools. International schools teach in English. Private French tutoring costs roughly $55–$85/hr.",
+      "tip": "Choose your arrondissement or suburb based on your school shortlist — school location should determine your housing search, not the other way around.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "Strong British sector in the 16th and western suburbs. Limited places. Apply 12+ months ahead.",
+          "fees": "$18,000–$32,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "Several well-established American and IB schools in western Paris and the Versailles corridor. Apply 12+ months ahead.",
+          "fees": "$20,000–$35,000/year typical"
+        },
+        {
+          "type": "French public schools (Ecole Maternelle / Primaire)",
+          "description": "Free from age 3. High standards. French-only instruction. Excellent for families committing to long-term integration.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Paris has a structured public childcare system but demand far exceeds supply. Creche places for under-3s are heavily rationed. Most expat families use private creches or nannies for under-3s then transition to the free Ecole Maternelle at age 3.",
+      "daycareItems": [
+        "Creche (public nursery ages 2.5 months to 3 years) — subsidised, income-tested, typically $200–$500/month; waiting lists open before birth and fill months in advance",
+        "Private creches are more accessible but expensive — roughly $1,200–$2,200/month; many offer bilingual French/English programmes for expat families",
+        "Ecole Maternelle (free state nursery) available from age 3 — enrol via your Mairie; France's mainstream childcare solution from that point",
+        "Register for creche immediately on arriving — private lists in central arrondissements close within weeks of opening"
+      ],
+      "nannyItems": [
+        "Full-time assistante maternelle (France's registered home childminder) in Paris: typically $1,600–$2,200/month net, plus employer social contributions of roughly 30% on top",
+        "Part-time nanny: roughly $15–$20/hr net",
+        "Many nannies in expat-dense arrondissements (16th, 17th) speak English — specify this requirement when searching",
+        "Start searching 2–3 months before arrival — good English-speaking nannies in Paris fill quickly"
+      ],
+      "whereToFindItems": [
+        "Yoopies.fr — France's main nanny and childcare platform with a large Paris section",
+        "Babychou Services — established nanny agency network across Paris and inner suburbs",
+        "Search 'Paris Expats' on Google — community word-of-mouth is the most reliable source for nanny recommendations by arrondissement"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Apply for your Carte Vitale (France's public health insurance card) as soon as your Numero de Securite Sociale arrives — takes 4–6 weeks to issue.",
+      "items": [
+        "France's Securite Sociale is among the world's best public healthcare systems. Access begins once you have a Numero de Securite Sociale and a Carte Vitale.",
+        "Employed residents enrol in Securite Sociale automatically through their employer. VLS-Visiteur holders apply via the PUMA scheme (Protection Universelle Maladie — France's universal coverage for non-employed legal residents).",
+        "Typical costs with Securite Sociale: GP visit roughly $30 (partially reimbursed); specialist $60–$120 (partially reimbursed). A mutuelle (complementary top-up insurance) costs roughly $80–$150/month for a family.",
+        "English-speaking hospitals used by expats: American Hospital of Paris and Hertford British Hospital — both in western Paris.",
+        "Arrange private international health insurance before arrival — required for your VLS visa application and essential as a bridge until your Carte Vitale arrives."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 78,
+      "summary": "Paris is broadly safe for families in residential neighbourhoods. Tourist-heavy zones require standard vigilance.",
+      "items": [
+        "Violent crime in family residential areas (7th, 15th, 16th) is uncommon — Paris is broadly safe for daily family life",
+        "Pickpocketing is the #1 daily risk — particularly on the Metro, at the Eiffel Tower, and in tourist-dense areas; keep bags zipped at all times",
+        "Some northern arrondissements (parts of 18th, 19th, 20th at night) require more situational awareness — less relevant for families in residential districts",
+        "Traffic requires vigilance with young children — Parisian drivers do not reliably yield to pedestrians at marked crossings",
+        "Occasional large demonstrations are a regular feature of Parisian life — check news before travelling through central areas on weekends"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$3,900 / month",
+      "familyDinner": "~$85",
+      "nannyRate": "~$18 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "France long-stay visa official — france-visas.gouv.fr",
+          "url": "https://france-visas.gouv.fr/en/web/france-visas/long-stay-visa",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Paris Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Paris",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Paris Expats' on Google — largest English-speaking community for families in Paris",
+        "searchQuery": "Paris Expats Facebook group",
+        "url": "https://www.google.com/search?q=Paris+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Anglophone Paris' on Google — active parent and family network in Paris",
+        "searchQuery": "Anglophone Paris Facebook group",
+        "url": "https://www.google.com/search?q=Anglophone+Paris+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "nice-fr",
+    "citySlug": "nice",
+    "countrySlug": "france",
+    "city": "Nice",
+    "country": "France",
+    "tagline": "French Riviera living — sunshine, beaches, and proximity to Monaco and the Italian border",
+    "summary": "Nice is the capital of the Cote d'Azur and one of France's most liveable cities for families. It offers a Mediterranean climate, a beautiful old town, walkable neighbourhoods, and significantly lower housing costs than Paris. The international school scene is smaller than Paris — the main cluster is in nearby Sophia Antipolis — but quality of life is exceptional for families who integrate into French life.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA families: no visa required — register at your local Mairie and obtain a justificatif de domicile (proof of address) within 90 days",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU families: apply for a Visa de Long Sejour at the French Consulate before travelling — do not attempt to switch status from a tourist entry inside France",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 5–7 weeks before your move — Nice is less pressured than Paris but 3-bed apartments in Cimiez and Mont-Boron move quickly",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12+ months before your move — the main cluster is in Sophia Antipolis (20–30 min from central Nice) and places fill fast",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Enrol young children in local Ecole Maternelle (free state nursery ages 3–6) via your Mairie — a good option while older children attend an international school in Sophia Antipolis",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your Titre de Sejour at the Nice Prefecture des Alpes-Maritimes after arriving and validating your VLS at ofii.fr",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Open a French bank account (BNP Paribas, Credit Agricole Alpes Provence, or Hello Bank!) — required for rent and utility direct debits",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Register with a local medecin traitant (your assigned GP) and apply for your Carte Vitale once your Numero de Securite Sociale is issued",
+        "targetSection": "healthcare"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families seeking a Mediterranean lifestyle with beaches, mountains, and the Alps within an hour's drive",
+        "EU/EEA parents with remote or European-based roles who want lower costs than Paris with exceptional quality of life",
+        "Families with younger children happy to use the French state system and integrate into local life",
+        "Those drawn to proximity to Monaco, the Italian border, and the broader Riviera region"
+      ],
+      "watchOutFor": [
+        "The international school scene is significantly smaller than Paris — the main cluster is in Sophia Antipolis 20–30 min away; a car is needed for school runs",
+        "Nice requires a car for most suburban errands and school runs — public transport is good within the city but limited for the wider region",
+        "Summers are hot (35°C / 95°F+) and the seafront crowds significantly June–August — accommodation costs spike during Cannes Film Festival and Monaco Grand Prix",
+        "The same French bureaucratic system applies fully — Titre de Sejour, OFII validation, and Prefecture appointments require patience and some French language ability"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Nice is in France — the same national visa system applies as Paris. EU/EEA citizens move freely. Non-EU families need a Visa de Long Sejour (VLS) from the French Consulate before travelling. No standalone digital nomad visa exists.",
+      "tip": "Book your French Consulate appointment early — slots fill 6–8 weeks ahead. Validate your VLS at ofii.fr within 3 months of arriving — mandatory step.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Nice",
+          "duration": "No visa required",
+          "description": "Move freely to France. Register at your local Mairie within 90 days for your justificatif de domicile.",
+          "details": [
+            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in France.",
+            "Register at your local Mairie in Nice. Bring your passport and rental contract.",
+            "Children can enrol in French state schools immediately — your Mairie issues a carte scolaire confirming your assigned local school.",
+            "After 5 years of continuous legal residence, apply for a Carte de Resident (10-year permanent residency card)."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker (VLS-Salarie)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Visa de Long Sejour Salarie — employer-sponsored work visa",
+          "duration": "1 year, renewable",
+          "description": "Requires a French employer and signed work contract. Apply at the French Consulate before travelling.",
+          "details": [
+            "Your French employer must obtain authorisation from the OFII (France's immigration authority) before you can apply.",
+            "Apply for the VLS-Salarie at the French Consulate — required: passport, employment contract, OFII authorisation, proof of accommodation.",
+            "After arriving in Nice, validate your VLS at ofii.fr within 3 months — mandatory step.",
+            "Dependents receive a VLS-Famille granting the same residence rights."
+          ],
+          "officialLink": {
+            "label": "France long-stay work visa VLS-Salarie official france-visas.gouv.fr"
+          }
+        },
+        {
+          "type": "Non-EU remote worker / passive income (VLS-Visiteur)",
+          "anchor": "visa-tourist",
+          "detailTitle": "VLS-Visiteur — the closest route for remote workers",
+          "duration": "1 year, renewable",
+          "description": "France has no standalone digital nomad visa. The VLS-Visiteur is the honest route for non-EU remote workers with sufficient income.",
+          "details": [
+            "Requires passive or remote income from a non-French employer — roughly $1,500–$2,000/month per adult minimum typically assessed.",
+            "Required: proof of remote income, private health insurance valid in France, proof of accommodation.",
+            "Apply at the French Consulate in your home country — processing typically takes 2–4 weeks.",
+            "After arriving, validate your VLS at ofii.fr within 3 months — mandatory step."
+          ]
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Titre de Sejour",
+      "tip": "Search 'titre de sejour Nice prefecture rendez-vous' on Google to book your appointment — the Prefecture des Alpes-Maritimes has an online booking system.",
+      "items": [
+        "Obtain a justificatif de domicile from your Mairie — bring your passport and signed rental contract.",
+        "Non-EU residents apply for a Titre de Sejour at the Prefecture des Alpes-Maritimes in Nice. Bring your validated VLS, passport, rental contract, and 3 months of bank statements.",
+        "Your Numero de Securite Sociale is issued once your Titre de Sejour is processed — required for healthcare, school enrolment, and tax registration.",
+        "Children enrol at the local state school assigned to your address — your Mairie provides the carte scolaire confirming the school.",
+        "After 5 years of continuous legal residence, apply for a Carte de Resident — a 10-year long-term residency card."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Hello Bank! (digital, BNP-owned) opens fully online — use it as a bridge while your Credit Agricole or BNP branch appointment is pending.",
+      "items": [
+        "BNP Paribas and Credit Agricole Alpes Provence are the most widely used banks for expat families in the Nice and Cote d'Azur region.",
+        "You need your justificatif de domicile, passport, and Titre de Sejour (or validated VLS in early weeks) to open an account.",
+        "Hello Bank! and Boursorama Banque open fully online with no monthly fee — faster for new arrivals than traditional branch banking.",
+        "Wise and Revolut work immediately from arrival for international transfers — essential while your French IBAN is pending.",
+        "Most French landlords require a RIB (Releve d'Identite Bancaire — French bank account reference) for rent direct debit — a French IBAN is essential within the first month."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Nice is significantly more affordable than Paris. Family-friendly areas include Cimiez (leafy hilltop, large apartments), Mont-Boron (quiet, elevated, sea views), and Saint-Laurent-du-Var (suburban, near Sophia Antipolis schools).",
+      "bestAreas": [
+        "Cimiez",
+        "Mont-Boron",
+        "Carre d'Or",
+        "Californie",
+        "Saint-Laurent-du-Var"
+      ],
+      "searchPortalsIntro": [
+        "These are France's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Nice' or the neighbourhood name inside each platform to filter local listings.",
+        "Tip: Nice's rental market is significantly less pressured than Paris — 3–4 weeks of in-person searching usually finds a suitable 3-bed family apartment."
+      ],
+      "searchPortals": [
+        {
+          "label": "SeLoger.com — France's largest long-term rental platform",
+          "url": "https://www.seloger.com",
+          "isVerified": true
+        },
+        {
+          "label": "PAP.fr — direct owner-to-tenant listings, no agent fee",
+          "url": "https://www.pap.fr",
+          "isVerified": true
+        },
+        {
+          "label": "LeBonCoin.fr — classifieds with a strong Nice and Cote d'Azur section",
+          "url": "https://www.leboncoin.fr",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Nice Expats France' for English-speaking housing recommendations",
+          "url": "https://www.google.com/search?q=Nice+Expats+France+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, central Nice: $1,300–$1,900/month",
+        "3-bed apartment, Cimiez or Mont-Boron: $2,200–$3,500/month",
+        "3-bed apartment, seafront near Promenade des Anglais: $2,800–$4,500/month",
+        "3-bed house with garden, Saint-Laurent-du-Var: $2,000–$3,200/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Titre de Sejour (or VLS validation in early weeks)",
+        "3 months of recent bank statements",
+        "Employment contract or proof of stable income",
+        "DossierFacile application — standard digital rental dossier required by most French landlords",
+        "1 month deposit (caution) — legally capped for unfurnished rentals",
+        "Attestation d'assurance habitation (tenant contents insurance) — legally required before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Nice has a smaller international school scene than Paris. The main cluster is in Sophia Antipolis (20–30 min west of Nice), not in the city itself. Apply at least 12 months ahead.",
+      "publicSystem": "French state schools are free from age 3 and academically rigorous. All instruction is in French. Young children (under 8) typically integrate within one school year. Older non-French-speaking children benefit from tutoring or a transitional private school first.",
+      "internationalOptions": "The main international school hub for the Nice area is Sophia Antipolis (20–30 min west) — British, IB, and bilingual options serving the tech and business expat community. Within Nice itself, options are limited. Fees range from $15,000 to $28,000/year.",
+      "languageNotes": "French is the language of instruction in all state schools. International schools in Sophia Antipolis teach in English. A small number of Nice private schools offer bilingual French/English tracks. Private French tutoring costs roughly $45–$70/hr.",
+      "tip": "If international school is a priority, apply to Sophia Antipolis schools before committing to a neighbourhood — school location should guide your housing choice.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools (Sophia Antipolis)",
+          "description": "Main cluster for the Nice area — serving the large tech expat community. Limited places. Apply 12+ months ahead.",
+          "fees": "$15,000–$28,000/year typical"
+        },
+        {
+          "type": "French bilingual private schools (Nice city)",
+          "description": "Small number of private schools in Nice with partial English-language tracks. More accessible than Sophia Antipolis schools.",
+          "fees": "$8,000–$16,000/year typical"
+        },
+        {
+          "type": "French public schools (Ecole Maternelle / Primaire)",
+          "description": "Free from age 3. French-only instruction. Strong quality. Ideal for younger children or families committing to full integration.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Nice has similar public childcare to the rest of France. Creche waiting lists are shorter than Paris. Most expat families use private creches or nannies for under-3s then transition to the free Ecole Maternelle at age 3.",
+      "daycareItems": [
+        "Creche (public nursery ages 2.5 months to 3 years) — subsidised, income-tested, typically $150–$400/month in Nice; waiting lists exist but shorter than Paris",
+        "Private creches charge roughly $900–$1,500/month — many offer bilingual French/English programmes in expat-popular areas like Cimiez",
+        "Ecole Maternelle (free state nursery) available from age 3 — enrol via your Mairie",
+        "Register for creche in the first weeks after arriving — private lists fill quickly even in Nice"
+      ],
+      "nannyItems": [
+        "Full-time assistante maternelle in Nice: typically $1,300–$1,800/month net plus employer social contributions",
+        "Part-time nanny: roughly $13–$17/hr net",
+        "English-speaking nannies available in expat-popular areas (Cimiez, Mont-Boron) — specify language when searching",
+        "Start searching 6–8 weeks before arrival — demand is lower than Paris but good nannies fill quickly"
+      ],
+      "whereToFindItems": [
+        "Yoopies.fr — France's main nanny platform; good coverage in the Nice and Cote d'Azur area",
+        "Babychou Services — nanny agency with an office in Nice",
+        "Search 'Nice Expats France' on Google — community recommendations are the most reliable source for English-speaking nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Apply for your Carte Vitale as soon as your Numero de Securite Sociale is issued — required for GP and specialist visit reimbursements.",
+      "items": [
+        "France's Securite Sociale applies fully in Nice. Access begins once you have a Numero de Securite Sociale and a Carte Vitale.",
+        "Employed residents enrol through their employer. VLS-Visiteur holders apply via the PUMA scheme (Protection Universelle Maladie — France's universal coverage for non-employed legal residents).",
+        "Typical costs with Securite Sociale: GP visit roughly $28 (partially reimbursed); specialist $55–$110. A mutuelle (top-up insurance) costs roughly $70–$130/month for a family.",
+        "CHU de Nice (Centre Hospitalier Universitaire — Nice's main public university hospital) provides full specialist and emergency care. Clinique Saint-George is a private clinic popular with expats.",
+        "Arrange private international health insurance before arrival — required for your VLS application and essential as a bridge until your Carte Vitale arrives."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 79,
+      "summary": "Nice is broadly safe for families. Tourist areas near the seafront require standard vigilance; residential neighbourhoods are quiet.",
+      "items": [
+        "Violent crime in family residential areas (Cimiez, Mont-Boron) is uncommon — Nice is broadly safe for daily family life",
+        "Pickpocketing is the main daily risk — particularly on the Promenade des Anglais in summer, at the beach, and in the Vieux-Nice tourist areas",
+        "The city is very safe outside peak tourist season (September–May) — residential areas are quiet with minimal incidents",
+        "Nice has invested significantly in security infrastructure since 2016 — police presence in tourist areas is high",
+        "Traffic on coastal roads requires vigilance with young children — cyclists and pedestrians share space with drivers who are not always cautious"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$2,400 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$16 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "France long-stay visa official — france-visas.gouv.fr",
+          "url": "https://france-visas.gouv.fr/en/web/france-visas/long-stay-visa",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Nice Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Nice",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Nice Expats France' on Google — main English-speaking community for families on the Cote d'Azur",
+        "searchQuery": "Nice Expats France Facebook group",
+        "url": "https://www.google.com/search?q=Nice+Expats+France+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Cote d Azur Expats' on Google — broader Riviera expat community covering Nice, Cannes, and Monaco",
+        "searchQuery": "Cote d Azur Expats Facebook group",
+        "url": "https://www.google.com/search?q=Cote+d+Azur+Expats+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "warsaw-pl",
+    "citySlug": "warsaw",
+    "countrySlug": "poland",
+    "city": "Warsaw",
+    "country": "Poland",
+    "tagline": "Central Europe's rising tech capital — affordable, modern, and well-connected to the rest of Europe",
+    "summary": "Warsaw is Poland's capital and a fast-growing tech and business hub with a large established expat community. For families it offers affordable housing compared to Western Europe, a growing international school sector, and a dynamic city that has rebuilt itself into a genuinely modern European capital. The trade-offs are a harsh winter (November–March), a Polish-language bureaucratic system, and limited long-term visa options for non-EU families without employer sponsorship.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA families: no visa required — register your address (zameldowanie — Poland's mandatory address registration) at your local Urzad Dzielnicy (district office) within 30 days of arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU families: your employer must obtain a Zezwolenie na prace (Polish work permit) from the Voivodeship Office before you can apply for a National Visa Type D at the Polish Consulate — allow 1–3 months for permit processing",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 6–8 weeks before your move — Mokotow and Zoliborz have steady demand from expat families",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months before your move — most Warsaw international schools have limited capacity and fill early in the intake cycle",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your PESEL (Poland's national ID number — required for banking, healthcare, and all formal transactions) at your local Urzad Dzielnicy immediately after registering your address",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange private health insurance before arriving — LuxMed and Medicover are the two networks used by most expat families in Warsaw, both with English-speaking GPs",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Polish bank account (PKO Bank Polski or mBank) after receiving your PESEL — required for rent payments and employer payroll",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Tech and business professionals with employer sponsorship in Warsaw's growing startup and corporate sector",
+        "EU/EEA families seeking an affordable, modern European capital well below Western Europe cost levels",
+        "Families who value a strong international school community and a growing English-speaking expat network",
+        "Those drawn to Central Europe's central location — budget flights reach most European capitals in 2–3 hours"
+      ],
+      "watchOutFor": [
+        "Winters are harsh (November–March) — temperatures regularly drop to -10°C to -15°C (14°F to 5°F); families from warm climates need to prepare wardrobes and outdoor routines",
+        "Non-EU families without employer sponsorship have very limited long-term options — Poland has no standalone remote work or digital nomad visa",
+        "Private health insurance is essential for expats — quality in public hospitals is inconsistent and wait times are long; most expat families use LuxMed or Medicover",
+        "Polish bureaucracy operates entirely in Polish — an employer relocation package or Polish-speaking fixer is very helpful in the first weeks"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "EU/EEA citizens move freely to Poland. Non-EU workers need a Zezwolenie na prace (Polish work permit) obtained by their employer, then a National Visa Type D from the Polish Consulate. Poland has no standalone digital nomad visa — non-EU without employer sponsorship have no viable long-term path.",
+      "tip": "Non-EU applicants: Polish work permit processing takes 1–3 months at the Voivodeship Office — your employer must initiate this well before your intended travel date.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Warsaw",
+          "duration": "No visa required",
+          "description": "Move freely to Poland. Register your address (zameldowanie) at your local Urzad Dzielnicy within 30 days and apply for your PESEL.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in Poland.",
+            "Register your address (zameldowanie — Poland's mandatory address registration) at your local Urzad Dzielnicy within 30 days. Bring your passport and rental contract.",
+            "Apply for your PESEL (Poland's national ID number) at the same office — required for banking, healthcare, and school enrolment.",
+            "After 5 years of continuous legal residence, EU citizens can apply for permanent residency in Poland."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker (National Visa Type D)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Polish work visa (National Visa Type D) — how to apply",
+          "duration": "Up to 1 year, then extend to Karta Pobytu",
+          "description": "Requires employer-initiated Zezwolenie na prace from the Voivodeship Office, then National Visa Type D from the Polish Consulate. Poland has no standalone digital nomad visa.",
+          "details": [
+            "Your employer applies for a Zezwolenie na prace (work authorisation) at the Mazowieckie Voivodeship Office — takes 1–3 months; your employer's HR team manages this.",
+            "Once the work permit is issued, apply for a National Visa Type D at the Polish Consulate — required: passport, work permit, employment contract, proof of accommodation.",
+            "After arriving, apply for a Karta Pobytu (Temporary Residence Card) at the Voivodeship Office — your primary long-term permit; family members apply for dependent cards.",
+            "Poland has no standalone remote work or digital nomad visa — employer sponsorship is the only viable long-term route for non-EU families."
+          ],
+          "officialLink": {
+            "label": "Poland work permit Zezwolenie na prace official gov.pl"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & PESEL",
+      "tip": "Search 'PESEL Warsaw Urzad Dzielnicy appointment' on Google to find your nearest district office — bring your passport, visa or EU ID, rental contract, and completed address registration form.",
+      "items": [
+        "Register your address (zameldowanie) at your local Urzad Dzielnicy in Warsaw within 30 days. Bring your passport and rental contract.",
+        "Apply for your PESEL (Poland's universal national ID number) at the same office — required for banking, healthcare, school enrolment, and virtually every formal transaction.",
+        "Non-EU residents apply for a Karta Pobytu (Temporary Residence Card) at the Mazowieckie Voivodeship Office — your primary long-term permit; family members apply for dependent cards.",
+        "Your PESEL also serves as your NIP (Numer Identyfikacji Podatkowej — Polish tax ID) for individuals — needed for employer payroll and tax filing.",
+        "After 5 years of continuous legal residence on a Karta Pobytu, apply for a Karta Stalego Pobytu (permanent residence card)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "mBank opens accounts fully online — use it as a bridge while waiting for your PKO Bank Polski appointment, which requires an in-person visit with your PESEL in hand.",
+      "items": [
+        "PKO Bank Polski and mBank are the two most widely used banks by expat families in Warsaw — both have English-language apps and phone support.",
+        "You need your PESEL number, passport, and Karta Pobytu (or National Visa) to open a bank account — most banks require PESEL before proceeding.",
+        "mBank offers a fully digital account opening process — fastest option for new arrivals before arranging a full in-person appointment.",
+        "Wise and Revolut work immediately from arrival for international transfers and foreign currency spending — widely used by Warsaw expats.",
+        "Most Warsaw landlords and employers require payment via Polish IBAN bank transfer — a local account is essential within the first month."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Warsaw is significantly more affordable than Western European capitals. Family-friendly areas concentrate in Mokotow, Zoliborz, and Wilanow (a modern suburban district near international schools south of the city).",
+      "bestAreas": [
+        "Mokotow",
+        "Zoliborz",
+        "Wilanow",
+        "Ursynow",
+        "Srodmiescie"
+      ],
+      "searchPortalsIntro": [
+        "These are Poland's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Warszawa' or the district name inside each platform to filter local listings.",
+        "Tip: Warsaw's rental market is active but not as pressured as Western European capitals — 3–5 weeks of searching from inside the city typically finds a suitable family apartment."
+      ],
+      "searchPortals": [
+        {
+          "label": "Otodom.pl — Poland's largest property rental and sales portal",
+          "url": "https://www.otodom.pl",
+          "isVerified": true
+        },
+        {
+          "label": "OLX.pl — classifieds platform with a large Warsaw rental section",
+          "url": "https://www.olx.pl",
+          "isVerified": true
+        },
+        {
+          "label": "Gratka.pl — secondary Polish property portal with good family-sized flat coverage",
+          "url": "https://www.gratka.pl",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Warsaw Expats Housing' for English-speaking community listings",
+          "url": "https://www.google.com/search?q=Warsaw+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Srodmiescie (city centre): $900–$1,400/month",
+        "3-bed apartment, Mokotow or Zoliborz: $1,400–$2,200/month",
+        "3-bed apartment or house, Wilanow (near international schools): $1,600–$2,600/month",
+        "Short-stay serviced apartment, central Warsaw: $1,800–$3,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Karta Pobytu (or National Visa)",
+        "PESEL number — most landlords require it before signing",
+        "2–3 months of bank statements or employment contract",
+        "1–2 months deposit (kaucja) — standard in Warsaw; 2 months typical for larger apartments",
+        "Rental contracts are in Polish — use a certified translator or your employer's HR team to review before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Warsaw has a growing international school scene, primarily in Mokotow and Wilanow. British, American, and IB options serve a large established expat community. Apply 12 months ahead.",
+      "publicSystem": "Polish state schools are free and widely available. All instruction is in Polish — not viable for non-Polish-speaking children above age 8 without significant language support. Young children (ages 3–7) typically acquire Polish within one school year with weekly tutoring support.",
+      "internationalOptions": "Warsaw's international schools are concentrated in the southern districts (Mokotow, Wilanow) where most of the expat community lives. British, American, and IB curricula available. Fees range from $10,000 to $22,000/year. Apply at least 12 months before your intended start date.",
+      "languageNotes": "Polish is the language of instruction in all state schools. International schools teach in English. A growing number of Polish private schools offer bilingual (Polish/English) programmes. Private English tutoring costs roughly $30–$55/hr.",
+      "tip": "Wilanow is the most convenient neighbourhood for families using international schools in south Warsaw — base your housing search here if school proximity is a priority.",
+      "options": [
+        {
+          "type": "British curriculum international schools",
+          "description": "Well-established British sector in Mokotow and Wilanow serving a large corporate expat community. Apply 12 months ahead.",
+          "fees": "$12,000–$22,000/year typical"
+        },
+        {
+          "type": "American / IB curriculum international schools",
+          "description": "American-style and IB curriculum schools in south Warsaw serving diplomatic and US corporate families.",
+          "fees": "$14,000–$22,000/year typical"
+        },
+        {
+          "type": "Polish bilingual private schools",
+          "description": "Growing sector of private schools with English-language instruction tracks. More affordable than fully international schools.",
+          "fees": "$5,000–$10,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Warsaw has both public and private childcare. Public nurseries (zlobek) are subsidised but limited. Most expat families use private nurseries or nannies initially.",
+      "daycareItems": [
+        "Zlobek (state nursery ages 1–3) — subsidised, roughly $200–$400/month in Warsaw; waiting lists in popular districts (Mokotow, Zoliborz) can be 6–12 months; register as soon as you have an address",
+        "Prywatny zlobek (private nursery) — easier to access, fees typically $600–$1,000/month; many offer bilingual Polish/English programmes",
+        "Przedszkole (state preschool ages 3–6) is free or subsidised — enrol via your district Urzad",
+        "Visit nurseries in person before committing — facilities vary considerably between private providers"
+      ],
+      "nannyItems": [
+        "Full-time niania (nanny) in Warsaw: typically $900–$1,300/month — significantly more affordable than Western European cities",
+        "Part-time nanny: roughly $7–$10/hr",
+        "English-speaking nannies are available in Mokotow and Wilanow — specify language requirement when searching",
+        "Start searching 6–8 weeks before arrival — good English-speaking nannies fill quickly"
+      ],
+      "whereToFindItems": [
+        "Niania.pl — Poland's main platform for nanny and childcare searches with a strong Warsaw section",
+        "e-Opieka.pl — secondary platform for nursery and childcare listings in Warsaw",
+        "Search 'Warsaw Expats' on Google — community recommendations are the most reliable source for English-speaking nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange LuxMed or Medicover private insurance before arriving — both have Warsaw clinics with English-speaking GPs and paediatricians available same-day.",
+      "items": [
+        "Poland's public healthcare (NFZ — Narodowy Fundusz Zdrowia, Poland's national health fund) is accessible to EU citizens and registered workers, but most expat families use private networks for speed and English-language access.",
+        "LuxMed and Medicover are the two main private healthcare networks in Warsaw — both have English-speaking GPs and paediatricians with same-day availability.",
+        "Family private health plans cost roughly $120–$200/month covering GP, specialist consultations, diagnostics, and emergency care within the network.",
+        "Major private hospitals: LUX MED Szpital in Wilanow and Medicover Hospital in the city centre — both well-equipped for family healthcare including paediatrics.",
+        "Arrange international travel insurance for your first weeks as a bridge before your Polish private plan activates."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 82,
+      "summary": "Warsaw is a safe European capital with low violent crime. Standard urban awareness applies in a few areas at night.",
+      "items": [
+        "Violent crime in family residential areas (Mokotow, Zoliborz, Wilanow) is uncommon — Warsaw is broadly safe for everyday family life",
+        "Petty theft and pickpocketing can occur in crowded areas (Old Town, central train stations) — standard city vigilance applies",
+        "The Praga district (east bank) has a rougher reputation at night — not a concern for families in the main expat neighbourhoods",
+        "Public transport (metro, trams, buses) is safe and well-maintained; children travel independently from secondary school age",
+        "Air quality in winter is a genuine consideration — coal heating generates significant particulate pollution; monitor airly.org for daily levels in Warsaw"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,200 / month",
+      "familyDinner": "~$35",
+      "nannyRate": "~$7 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Poland official government portal — gov.pl",
+          "url": "https://www.gov.pl/web/mswia-en",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Warsaw Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Warsaw",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Warsaw Expats' on Google — largest English-speaking expat community in Warsaw",
+        "searchQuery": "Warsaw Expats Facebook group",
+        "url": "https://www.google.com/search?q=Warsaw+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Expats in Poland' on Google — broader Poland expat community covering Warsaw, Krakow, and Wroclaw",
+        "searchQuery": "Expats in Poland Facebook group",
+        "url": "https://www.google.com/search?q=Expats+in+Poland+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "krakow-pl",
+    "citySlug": "krakow",
+    "countrySlug": "poland",
+    "city": "Krakow",
+    "country": "Poland",
+    "tagline": "Medieval beauty meets modern affordability — Poland's most liveable city for remote-working families",
+    "summary": "Krakow is Poland's cultural capital and the most popular city with remote workers and long-stay expats. It offers a beautifully preserved medieval old town, a strong English-speaking community, very low living costs, and an improving international school scene. The trade-offs are a smaller corporate job market than Warsaw, harsh winters, poor air quality in winter from coal heating, and no standalone visa route for non-EU families without employer sponsorship.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "EU/EEA families: no visa required — register your address (zameldowanie) at your local Urzad Dzielnicy (district office) within 30 days",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Non-EU families: your employer must obtain a Zezwolenie na prace (Polish work permit) from the Lesser Poland Voivodeship Office before you can apply for a National Visa Type D — allow 1–3 months",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 4–6 weeks before your move — Kazimierz and Podgorze are popular with expats; Krowodrza suits families near the ring road",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to international schools 12 months before your move — capacity is more limited than Warsaw and fills early in the intake cycle",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your PESEL (Poland's national ID number — required for banking, healthcare, and all formal transactions) at your local Urzad immediately after registering your address",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange private health insurance before arriving — LuxMed and Medicover both have Krakow clinics with English-speaking doctors and same-day GP appointments",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Polish bank account (mBank or PKO Bank Polski) after receiving your PESEL — required for rent and employer payroll",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Remote-working families seeking a beautiful, affordable European base with a large English-speaking community",
+        "EU/EEA families who want lower costs than Warsaw with a walkable city centre and strong quality of life",
+        "Families drawn to Central European history, architecture, and the Tatra Mountains (1 hour south) for skiing and hiking",
+        "Parents in tech or creative industries with EU-based or international remote employment"
+      ],
+      "watchOutFor": [
+        "Non-EU families without employer sponsorship have no viable long-term visa options — Poland has no standalone remote work or digital nomad visa",
+        "Air quality in winter (November–March) is among the worst in Europe due to coal heating — families with respiratory conditions should research this seriously before committing",
+        "The corporate job market is much smaller than Warsaw — Krakow suits remote workers and EU employees, not those seeking Polish employer sponsorship",
+        "Harsh winters with temperatures regularly reaching -10°C to -15°C (14°F to 5°F) require significant preparation for children's outdoor routines"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Krakow is in Poland — the same national visa system applies as Warsaw. EU/EEA citizens move freely. Non-EU workers need an employer-initiated Zezwolenie na prace then a National Visa Type D. No standalone remote work or digital nomad visa exists.",
+      "tip": "Non-EU applicants: the Lesser Poland Voivodeship Office (Malopolski Urzad Wojewodzki) in Krakow handles work permits — processing takes 1–3 months; your employer must initiate this before you apply for the visa.",
+      "options": [
+        {
+          "type": "EU / EEA citizens",
+          "anchor": "visa-eu",
+          "detailTitle": "EU / EEA citizens — what to do after arriving in Krakow",
+          "duration": "No visa required",
+          "description": "Move freely to Poland. Register your address (zameldowanie) at your local Urzad within 30 days and apply for your PESEL.",
+          "details": [
+            "No visa or permit required — EU/EEA passport holders have full freedom of movement in Poland.",
+            "Register your address (zameldowanie) at your local Urzad Dzielnicy in Krakow within 30 days. Bring your passport and rental contract.",
+            "Apply for your PESEL (Poland's national ID number) at the same office — required for banking, healthcare, and school enrolment.",
+            "After 5 years of continuous legal residence, EU citizens can apply for permanent residency in Poland."
+          ]
+        },
+        {
+          "type": "Non-EU employed worker (National Visa Type D)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Polish work visa (National Visa Type D) — how to apply",
+          "duration": "Up to 1 year, then extend to Karta Pobytu",
+          "description": "Requires employer-initiated Zezwolenie na prace from the Lesser Poland Voivodeship Office. Poland has no standalone digital nomad visa.",
+          "details": [
+            "Your employer applies for a Zezwolenie na prace at the Malopolski Urzad Wojewodzki (Lesser Poland Voivodeship Office) in Krakow — takes 1–3 months.",
+            "Once the work permit is issued, apply for a National Visa Type D at the Polish Consulate — required: passport, work permit, employment contract, proof of accommodation.",
+            "After arriving, apply for a Karta Pobytu (Temporary Residence Card) at the Voivodeship Office — your primary long-term permit.",
+            "Poland has no standalone remote work or digital nomad visa — employer sponsorship is the only viable long-term route for non-EU families."
+          ],
+          "officialLink": {
+            "label": "Poland work permit Zezwolenie na prace official gov.pl"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & PESEL",
+      "tip": "Search 'PESEL Krakow Urzad appointment' on Google to find your nearest district office — bring your passport, visa or EU ID, rental contract, and completed registration form.",
+      "items": [
+        "Register your address (zameldowanie) at your local Urzad Dzielnicy in Krakow within 30 days. Bring your passport and signed rental contract.",
+        "Apply for your PESEL (Poland's national ID number) at the same office — required for banking, healthcare, and school enrolment.",
+        "Non-EU residents apply for a Karta Pobytu (Temporary Residence Card) at the Malopolski Urzad Wojewodzki — primary permit for long-term residence.",
+        "Your PESEL also serves as your NIP (Polish tax ID) for individuals — needed for employer payroll and tax filing.",
+        "After 5 years of continuous legal residence on a Karta Pobytu, apply for a Karta Stalego Pobytu (permanent residence card)."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "mBank opens accounts digitally — use it as a bridge while waiting for your in-person PKO Bank Polski appointment, which requires your PESEL in hand.",
+      "items": [
+        "PKO Bank Polski and mBank are the most widely used banks by expat families in Krakow — both have English-language apps.",
+        "You need your PESEL number, passport, and Karta Pobytu (or National Visa) to open an account — most branches require PESEL before proceeding.",
+        "mBank offers digital account opening — the fastest option for new arrivals before arranging a full in-person appointment.",
+        "Wise and Revolut work immediately from arrival and are widely used by Krakow expats for international transfers.",
+        "Most Krakow landlords expect payment via Polish bank transfer — a local IBAN is essential within the first month."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Krakow is one of the most affordable cities in Central Europe for family-sized rentals. Kazimierz (historic, artsy, expat-popular), Podgorze (quieter, across the river), and Krowodrza (near the ring road, family-oriented) are the main expat neighbourhoods.",
+      "bestAreas": [
+        "Kazimierz",
+        "Podgorze",
+        "Krowodrza",
+        "Stare Miasto adjacent",
+        "Bronowice"
+      ],
+      "searchPortalsIntro": [
+        "These are Poland's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Krakow' inside each platform to filter local listings.",
+        "Tip: Krakow's rental market is relaxed compared to Warsaw — a good family apartment can usually be found within 2–3 weeks of searching from inside the city."
+      ],
+      "searchPortals": [
+        {
+          "label": "Otodom.pl — Poland's largest property rental portal with strong Krakow listings",
+          "url": "https://www.otodom.pl",
+          "isVerified": true
+        },
+        {
+          "label": "OLX.pl — classifieds platform with a large Krakow rental section",
+          "url": "https://www.olx.pl",
+          "isVerified": true
+        },
+        {
+          "label": "Gratka.pl — secondary Polish property portal with good Krakow coverage",
+          "url": "https://www.gratka.pl",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Krakow Expats' for English-speaking housing tips and direct listings",
+          "url": "https://www.google.com/search?q=Krakow+Expats+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Kazimierz or city centre: $700–$1,100/month",
+        "3-bed apartment, Kazimierz or Podgorze: $1,100–$1,700/month",
+        "3-bed apartment, Krowodrza (family-oriented, quieter): $1,000–$1,600/month",
+        "3-bed house with garden, outer districts (Bronowice, Debniki): $1,200–$2,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Karta Pobytu (or National Visa)",
+        "PESEL number — most landlords require it before signing",
+        "2–3 months of bank statements or employment contract",
+        "1–2 months deposit (kaucja) — standard in Krakow",
+        "Rental contracts are in Polish — use a certified translator or ask your employer's HR team to assist"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Krakow's international school sector is smaller than Warsaw's but growing. A handful of schools offer English-medium instruction serving corporate expat and local bilingual families. Apply 12+ months ahead.",
+      "publicSystem": "Polish state schools are free and available. All instruction is in Polish — not suitable for non-Polish-speaking children above age 8 without significant tutoring. Young children (3–7) typically acquire Polish quickly with weekly private tutoring support.",
+      "internationalOptions": "Krakow has a small number of English-medium international and bilingual private schools. Capacity is limited. Fees range from $8,000 to $18,000/year. Apply at least 12 months before your intended start date.",
+      "languageNotes": "Polish is the language of instruction in state schools. International schools teach in English. Some private schools offer bilingual (Polish/English) programmes. Private English tutoring costs roughly $25–$45/hr.",
+      "tip": "Krakow's international school sector is expanding but small — confirm place availability before committing to a move date.",
+      "options": [
+        {
+          "type": "British / IB curriculum international schools",
+          "description": "Small sector serving corporate expats and local bilingual families. Limited capacity. Apply 12+ months ahead.",
+          "fees": "$10,000–$18,000/year typical"
+        },
+        {
+          "type": "Polish bilingual private schools (Polish/English)",
+          "description": "Growing sector of private schools with partial English instruction tracks. More affordable than fully international schools.",
+          "fees": "$5,000–$9,000/year typical"
+        },
+        {
+          "type": "Polish public schools",
+          "description": "Free state schools — viable for young children (ages 3–7) with private tutoring support alongside. Full Polish immersion from day one.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Krakow has a mix of public and private childcare at very low cost compared to Western Europe. English-speaking nannies are available in expat neighbourhoods.",
+      "daycareItems": [
+        "Zlobek (state nursery ages 1–3) — subsidised, typically $100–$250/month; waiting lists exist but shorter than Warsaw; register early at your local Urzad",
+        "Prywatny zlobek (private nursery) — fees roughly $400–$700/month; bilingual (Polish/English) programmes available in Kazimierz and Podgorze",
+        "Przedszkole (state preschool ages 3–6) is free or low-cost — enrol via your district Urzad",
+        "Private preschools with English instruction exist in expat neighbourhoods — fees roughly $300–$600/month"
+      ],
+      "nannyItems": [
+        "Full-time niania (nanny) in Krakow: typically $700–$1,000/month — among the most affordable in Europe",
+        "Part-time nanny: roughly $5–$8/hr",
+        "English-speaking nannies available in Kazimierz and Podgorze — specify language when searching",
+        "Start searching 4–6 weeks before arrival — Krakow's nanny market is more relaxed than Warsaw or Western cities"
+      ],
+      "whereToFindItems": [
+        "Niania.pl — Poland's main nanny platform with a Krakow section",
+        "e-Opieka.pl — secondary platform for nursery and childcare listings in Krakow",
+        "Search 'Krakow Expats' on Google — community word-of-mouth is the most reliable source for English-speaking nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange LuxMed or Medicover private insurance before arriving — both have Krakow clinics with English-speaking GPs and paediatricians; same-day appointments are standard.",
+      "items": [
+        "Poland's public healthcare (NFZ) is accessible to EU citizens and registered workers, but quality in public hospitals varies and specialist wait times can be months — most expat families use private networks.",
+        "LuxMed and Medicover are the two main private healthcare networks in Krakow with English-speaking GPs and paediatricians available same-day.",
+        "Family private health plans cost roughly $100–$160/month covering GP, specialist consultations, diagnostics, and emergency care.",
+        "Major private hospital: Medicover Hospital serves most serious family healthcare needs in Krakow.",
+        "Arrange international travel insurance for your first weeks as a bridge before your Polish private plan activates."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 83,
+      "summary": "Krakow is one of the safest cities in Central Europe. Violent crime is rare; the main concern is petty theft in tourist areas.",
+      "items": [
+        "Violent crime is rare across all Krakow neighbourhoods — one of the safest mid-sized cities in Central Europe for families",
+        "Petty theft and pickpocketing occur in the Old Town (Stare Miasto) and main market square (Rynek Glowny) during peak tourist season — normal vigilance applies",
+        "Air quality in winter (November–March) from coal and wood heating is a serious concern for families with respiratory conditions — monitor airly.org for daily levels",
+        "Trams and buses are safe and reliable — children travel independently from secondary school age",
+        "Krakow has a strong police presence in tourist areas and a very low rate of violent incidents in residential neighbourhoods"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$950 / month",
+      "familyDinner": "~$28",
+      "nannyRate": "~$6 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Poland official government portal — gov.pl",
+          "url": "https://www.gov.pl/web/mswia-en",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Krakow Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Krakow",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Krakow Expats' on Google — main English-speaking community for residents and families in Krakow",
+        "searchQuery": "Krakow Expats Facebook group",
+        "url": "https://www.google.com/search?q=Krakow+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Expats in Poland' on Google — broader Poland expat community covering Krakow, Warsaw, and Wroclaw",
+        "searchQuery": "Expats in Poland Facebook group",
+        "url": "https://www.google.com/search?q=Expats+in+Poland+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "new-york-city-us",
+    "citySlug": "new-york-city",
+    "countrySlug": "usa",
+    "city": "New York City",
+    "country": "USA",
+    "tagline": "The world's most ambitious city — extraordinary opportunity with an extraordinary price tag",
+    "summary": "New York City is one of the world's great cities for career, culture, and family life. It has world-class schools and hospitals, a vast international community, and an energy that is genuinely unique. The trade-offs are the highest housing costs of any city in this guide, a complex and expensive healthcare system that requires private insurance, and a pace that demands organisation. Families who commit fully to NYC typically find it deeply rewarding.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — citizens of Visa Waiver Program countries (UK, EU, Australia, Canada, and others) enter the US on an ESTA for up to 90 days; working families need an employer-sponsored H-1B, O-1, or L-1 visa before arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–12 weeks before your move — NYC's rental market is extremely competitive; properties in family neighbourhoods are taken within 24–72 hours of listing",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Contact private and independent schools 12–18 months before your intended start date — NYC's private school admissions process is long and competitive",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your Social Security Number (SSN — the US's primary government ID required for employment, banking, and tax filing) at a Social Security Administration office in your first week",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange comprehensive private health insurance before arriving — employer-sponsored plans are standard; without insurance, US medical costs are extremely high",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a US bank account (Chase, Bank of America, or Citibank) — required for rent payments, direct deposit, and all US financial transactions",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Explore NYC public school options via the NYC Department of Education (schools.nyc.gov) — district zoning determines your assigned school; quality varies significantly by district",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Get a New York State Driver's License or non-driver ID at your nearest DMV (Department of Motor Vehicles) — widely accepted as primary identification; bring passport, visa, and 2 proofs of NY address",
+        "targetSection": "residency"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Finance, tech, media, or arts professionals whose industry is headquartered in NYC and where employer sponsorship is available",
+        "Families who want their children immersed in the world's most diverse and stimulating urban environment",
+        "Parents comfortable with a high-cost, high-intensity lifestyle in exchange for extraordinary career and cultural opportunity",
+        "Families with strong international school preferences — NYC has an excellent private and independent school ecosystem"
+      ],
+      "watchOutFor": [
+        "Housing costs are extreme — a 3-bed family apartment in a good school district costs $5,500–$12,000/month; budget carefully before committing",
+        "Healthcare requires private insurance — without employer coverage, family health insurance can cost $1,500–$3,000/month; there is no public option for most working expats",
+        "The H-1B work visa is subject to an annual lottery — employer sponsorship does not guarantee a visa in the same year; discuss timing carefully with your employer",
+        "NYC's intensity and pace are real — commute times, school competition, and cost of living require sustained organisation that not every family finds sustainable long-term"
+      ]
+    },
+    "residency": {
+      "title": "Registration & Social Security Number",
+      "tip": "Apply for your SSN at your nearest Social Security Administration office (ssa.gov) in your first week — required for employment, banking, and tax filing; takes 2–4 weeks to arrive by post.",
+      "items": [
+        "Apply for your SSN (Social Security Number — the US's primary government ID for all financial and government purposes) at a Social Security Administration office. Bring your passport, visa, and I-94 arrival record (downloadable at cbp.gov).",
+        "There is no mandatory address registration system in the US — update your address with your employer, bank, and the SSA as soon as you move in.",
+        "Apply for a New York State Driver's License or non-driver ID at your nearest DMV — required: passport, visa, I-94, and 2 proofs of NY address.",
+        "File a US tax return (Form 1040) each year — your employer withholds federal and state income tax from payroll. Engage a US CPA (Certified Public Accountant) familiar with expat and international tax.",
+        "Green card (lawful permanent residency) is a long-term pathway — most employment-based green cards require 3–10+ years of sponsorship. Your immigration attorney tracks this timeline."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Chase and Citibank accept new arrivals with passport and visa — open an account in your first week; most NYC landlords require a US bank account for rent payment by electronic transfer.",
+      "items": [
+        "Chase and Bank of America are the two largest banks used by expat families in NYC — both have extensive branch networks throughout the five boroughs.",
+        "You need your passport, US visa, I-94 arrival record, and a US address to open an account. Most major banks do not require an SSN initially but will need it within 30–60 days.",
+        "Citibank and HSBC have good international banking infrastructure and experience with foreign-born clients — useful if you maintain accounts in multiple countries.",
+        "Wise and Revolut work from arrival for international transfers and foreign currency spending — widely used while US banking is being set up.",
+        "Most NYC landlords require rent by personal check, Zelle, or ACH bank transfer — a US bank account is essential within the first week."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "NYC is one of the most expensive rental markets in the world. Family-friendly neighbourhoods concentrate in Brooklyn (Park Slope, Carroll Gardens), the Upper West Side and Upper East Side in Manhattan, and in New Jersey suburbs (Hoboken, Jersey City, Montclair) offering more space at lower cost.",
+      "bestAreas": [
+        "Park Slope (Brooklyn)",
+        "Carroll Gardens (Brooklyn)",
+        "Upper West Side (Manhattan)",
+        "Hoboken (New Jersey)",
+        "Forest Hills (Queens)"
+      ],
+      "searchPortalsIntro": [
+        "These are NYC's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search by neighbourhood name inside each platform — NYC's rental market is hyperlocal.",
+        "Tip: arrive with 4–6 weeks booked in a furnished short-stay rental; the long-term market moves within 24–72 hours of listing and you must be available to view and apply immediately."
+      ],
+      "searchPortals": [
+        {
+          "label": "StreetEasy.com — NYC's dominant rental and sales platform with the most complete local inventory",
+          "url": "https://www.streeteasy.com",
+          "isVerified": true
+        },
+        {
+          "label": "Zillow.com — nationwide platform with strong NYC and New Jersey suburb coverage",
+          "url": "https://www.zillow.com",
+          "isVerified": true
+        },
+        {
+          "label": "Apartments.com — good coverage of larger buildings and new construction across all boroughs",
+          "url": "https://www.apartments.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'NYC Housing Expats' or 'Relocating to New York City' for community listings",
+          "url": "https://www.google.com/search?q=NYC+Housing+Expats+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Manhattan (Midtown / Upper West Side): $3,800–$5,800/month",
+        "3-bed apartment, Brooklyn (Park Slope / Carroll Gardens): $5,500–$9,000/month",
+        "3-bed apartment, Upper West Side or Upper East Side (Manhattan): $7,500–$14,000/month",
+        "3-bed apartment or townhouse, Hoboken or Jersey City NJ (PATH train commute): $3,200–$5,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and US visa",
+        "Employment verification letter from your employer confirming salary",
+        "3 months of recent bank statements and last 3 payslips (or offer letter if newly arrived)",
+        "NYC landlords typically require income of 40–45 times the monthly rent — plan your search to match your salary level",
+        "1–2 months security deposit — legally capped at 1 month in New York State",
+        "US bank account for ACH transfer or check payments"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "NYC has both excellent public schools in certain districts and a large, competitive private school ecosystem. Public school quality varies dramatically by district — researching your catchment zone before choosing a neighbourhood is essential.",
+      "publicSystem": "NYC public schools are free and open to all residents regardless of immigration status. Quality varies significantly by district — District 2 (Manhattan) and District 15 (Brooklyn/Park Slope) are among the highest-performing. All instruction is in English. Enrol via the NYC Department of Education at schools.nyc.gov.",
+      "internationalOptions": "NYC has a large private and independent school sector serving diplomatic, finance, and international business communities. British, IB, and American curriculum private schools concentrate on Manhattan's Upper East and Upper West Sides and in Brooklyn Heights. Fees range from $35,000 to $60,000/year. Admission processes begin 12–18 months before start date.",
+      "languageNotes": "English is the language of instruction in all public and most private schools. NYC public schools provide ESL (English as a Second Language) support for non-English-speaking students. Private language tutoring costs roughly $80–$150/hr in NYC.",
+      "tip": "Choose your neighbourhood based on the school district first — public school catchment zones in NYC are strict and some of the best schools are only accessible by address.",
+      "options": [
+        {
+          "type": "NYC public schools — high-performing districts",
+          "description": "Free, open to all residents. Quality varies by district. Districts 2 (Lower Manhattan/West Village) and 15 (Brooklyn/Park Slope) are among the highest-rated.",
+          "fees": "Free"
+        },
+        {
+          "type": "British / IB curriculum independent schools",
+          "description": "Strong British and IB sector on Manhattan's Upper East and Upper West Sides serving diplomatic and expat families. Extremely competitive admissions.",
+          "fees": "$40,000–$60,000/year typical"
+        },
+        {
+          "type": "American independent / prep schools",
+          "description": "Prestigious American independent schools with selective admissions. Apply 12–18 months ahead.",
+          "fees": "$35,000–$58,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "NYC offers free public Pre-K (ages 4–5) and 3-K (ages 3–4) programmes through NYC Public Schools. Under-3s rely on licensed daycare centres or nannies — both are expensive. Nanny costs in NYC are among the highest in the world.",
+      "daycareItems": [
+        "3-K and Pre-K — NYC's free public early education for ages 3–5 — apply via the NYC Schools Account (account.schools.nyc.gov); priority for district residents",
+        "Licensed daycare centres for ages 6 weeks to 3 years — fees typically $2,200–$3,500/month; high-quality centres in Park Slope and Upper West Side have waitlists of 12+ months",
+        "ACS (Administration for Children's Services) subsidised daycare is income-tested and difficult to access for most expat families at market salaries",
+        "Visit 3–5 centres before choosing — quality and philosophy vary considerably in NYC's large childcare market"
+      ],
+      "nannyItems": [
+        "Full-time nanny in NYC: typically $3,500–$5,000/month (roughly $22–$32/hr) — among the highest of any city in this guide",
+        "Part-time nanny / babysitter: roughly $25–$40/hr depending on experience and neighbourhood",
+        "Nanny taxes are legally required in NYC — as employer, you must pay Social Security, Medicare, and unemployment taxes; use a nanny payroll service (HomePay or SurePayroll) to stay compliant",
+        "Start searching 2–3 months before arriving — quality nannies in NYC move quickly"
+      ],
+      "whereToFindItems": [
+        "Care.com — the largest US childcare platform with a strong NYC section for nannies and daycare",
+        "UrbanSitter — popular platform in NYC specifically for nannies and sitters",
+        "Search 'NYC Expats with Kids' on Google — community recommendations from parents in your neighbourhood are invaluable for finding trustworthy nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Verify your employer's health plan covers your full family from your first day of work — enrolment windows are strict in the US and missing the window means waiting until the next open enrolment period.",
+      "items": [
+        "The US has no universal public healthcare — private insurance is required. Most working families receive employer-sponsored health insurance; confirm your plan covers dependents and has in-network providers near your neighbourhood.",
+        "Employer-sponsored family health insurance typically costs $0–$800/month in employee contributions depending on the plan — confirm total family coverage before accepting a job offer.",
+        "Without employer coverage, a family ACA marketplace plan (Affordable Care Act — the US's subsidised private insurance marketplace) costs roughly $1,200–$2,500/month at market incomes.",
+        "Major family-friendly hospitals and paediatric care: NewYork-Presbyterian, NYU Langone Health, and Mount Sinai — all have strong paediatric departments and internationally trained staff.",
+        "Budget for significant out-of-pocket costs even with insurance — family deductibles of $1,000–$5,000/year are standard on most US employer plans."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 77,
+      "summary": "NYC is safe in family residential neighbourhoods. Standard big-city awareness applies; crime levels vary significantly by borough and neighbourhood.",
+      "items": [
+        "Violent crime in family neighbourhoods (Park Slope, Upper West Side, Carroll Gardens, Forest Hills) is uncommon — NYC's major family areas are broadly safe for daily life",
+        "Petty theft and pickpocketing occur on the subway and in crowded tourist areas (Times Square, Grand Central) — keep bags secured and stay aware on public transit",
+        "Crime levels vary significantly by neighbourhood — research specific areas before choosing where to live; StreetEasy listings often include neighbourhood context",
+        "The subway is generally safe during the day; at night, rideshare (Uber/Lyft) is a sensible option for families with young children",
+        "Traffic is the real daily safety risk — pedestrian accidents are common; teach children to wait for walk signals and stay off phones when crossing streets"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$6,800 / month",
+      "familyDinner": "~$130",
+      "nannyRate": "~$30 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "US work visa types official — uscis.gov",
+          "url": "https://www.uscis.gov/working-in-the-united-states",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "New York City Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/New-York",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Expats in New York City' on Google — active community for international families in NYC",
+        "searchQuery": "Expats in New York City Facebook group",
+        "url": "https://www.google.com/search?q=Expats+in+New+York+City+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Relocating to New York City' on Google — practical community for families in the relocation process",
+        "searchQuery": "Relocating to New York City Facebook group",
+        "url": "https://www.google.com/search?q=Relocating+to+New+York+City+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "miami-us",
+    "citySlug": "miami",
+    "countrySlug": "usa",
+    "city": "Miami",
+    "country": "USA",
+    "tagline": "Latin America's gateway city — warm, international, and increasingly expensive",
+    "summary": "Miami is one of the US's most international cities — a gateway between the Americas with strong Latin American cultural connections, a warm climate year-round, and a fast-growing tech and finance sector. For families it offers excellent private schools, year-round outdoor lifestyle, and a city that feels more global than most of the US. The trade-offs are high and rising housing costs, total reliance on cars, hurricane season (June–November), and the same absence of public healthcare that applies across the US.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — citizens of Visa Waiver Program countries enter on an ESTA for up to 90 days; working families need an employer-sponsored H-1B, O-1, or L-1 visa before arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Coral Gables, Coconut Grove, and Pinecrest are the main family neighbourhoods and good 3-beds move quickly",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to private schools 12–18 months before your move — Miami's top private and bilingual schools are competitive and fill early",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your Social Security Number (SSN) at a Social Security Administration office within your first week of arriving — required for employment, banking, and tax filing",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange comprehensive private health insurance before arriving — employer-sponsored plans are standard; medical care in Miami without insurance is extremely expensive",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a US bank account (Chase, Wells Fargo, or City National Bank of Florida) — required for rent payments and payroll deposit",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Get a Florida Driver's License within 30 days — Miami is entirely car-dependent and a FL license serves as your primary US ID",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Prepare for hurricane season (June 1–November 30) — stock an emergency kit, know your evacuation zone, and check flood risk for your rental address before signing",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Finance, tech, or Latin American business professionals whose industry is concentrated in Miami's Brickell and Wynwood hubs",
+        "Families who want year-round warm weather and an outdoor lifestyle combining beaches, watersports, and Everglades proximity",
+        "Families with Latin American roots or those who want their children raised in a bilingual Spanish/English environment",
+        "Parents comfortable with a car-dependent lifestyle in exchange for space, warmth, and strong private school options"
+      ],
+      "watchOutFor": [
+        "Housing costs have risen sharply — a 3-bed apartment in Coral Gables or Coconut Grove now costs $4,000–$7,000/month; budget carefully",
+        "Miami is entirely car-dependent — public transport is minimal and school runs, grocery trips, and most social activities require a car",
+        "Hurricane season (June–November) is a real operational consideration — families need an emergency plan and insurance; evacuation orders can disrupt school calendars",
+        "Summer heat and humidity (38°C / 100°F with high humidity June–September) limits outdoor time and significantly raises electricity bills from air conditioning"
+      ]
+    },
+    "residency": {
+      "title": "Registration & Social Security Number",
+      "tip": "Apply for your SSN at a Social Security Administration office (ssa.gov) in your first week — bring your passport, I-94, and work visa; takes 2–4 weeks to arrive by post.",
+      "items": [
+        "Apply for your SSN (Social Security Number) at your nearest SSA office — bring your passport, US visa, and I-94 arrival record (downloadable at cbp.gov).",
+        "There is no mandatory address registration system in the US — update your address with your employer, bank, and the SSA as soon as you move in.",
+        "Apply for a Florida Driver's License at your nearest Florida DHSMV (Department of Highway Safety and Motor Vehicles) office — required: passport, visa, I-94, proof of FL residency, and SSN.",
+        "Florida has no state income tax — only federal income tax applies. Engage a US CPA familiar with international tax situations for your first filing.",
+        "Green card (permanent residency) is a long-term pathway through employment — your employer's immigration attorney tracks eligibility and timeline."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Chase and Wells Fargo open accounts for new arrivals with passport and visa — go in your first week; most Miami landlords require rent payment via electronic transfer or personal check.",
+      "items": [
+        "Chase, Wells Fargo, and Bank of America are the main banks used by expat families in Miami — all have extensive branch networks in Coral Gables, Coconut Grove, and Brickell.",
+        "City National Bank of Florida is a strong local option with good experience serving international clients and Latin American banking relationships.",
+        "You need your passport, US visa, I-94, and a US address to open an account — SSN is helpful but not always required initially.",
+        "Wise and Revolut work immediately from arrival for international transfers — widely used by Miami's large international community.",
+        "Most Miami landlords require rent via check, Zelle, or ACH bank transfer — a US bank account is essential within the first week."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Miami's best family neighbourhoods — Coral Gables, Coconut Grove, Pinecrest, and South Miami — are suburban, car-dependent, and increasingly expensive. Brickell offers high-rise urban living closer to the CBD.",
+      "bestAreas": [
+        "Coral Gables",
+        "Coconut Grove",
+        "Pinecrest",
+        "South Miami",
+        "Brickell"
+      ],
+      "searchPortalsIntro": [
+        "These are the main US rental platforms — this is where residents rent, not Airbnb.",
+        "Search by neighbourhood name inside each platform to filter local Miami listings.",
+        "Tip: Miami's rental market has become very tight — arrive with 4–6 weeks booked in a furnished short-stay and be ready to sign quickly when a suitable property appears."
+      ],
+      "searchPortals": [
+        {
+          "label": "Zillow.com — comprehensive US rental and sales platform with strong Miami coverage",
+          "url": "https://www.zillow.com",
+          "isVerified": true
+        },
+        {
+          "label": "Realtor.com — strong Miami listings including single-family homes in Coral Gables and Pinecrest",
+          "url": "https://www.realtor.com",
+          "isVerified": true
+        },
+        {
+          "label": "Apartments.com — good coverage of Miami apartment buildings and condo rentals",
+          "url": "https://www.apartments.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Miami Expats Housing' for community tips and direct listings",
+          "url": "https://www.google.com/search?q=Miami+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Brickell or Edgewater: $2,800–$4,200/month",
+        "3-bed apartment, Coral Gables or Coconut Grove: $4,500–$7,000/month",
+        "3-bed house with pool, Pinecrest or South Miami: $5,000–$9,000/month",
+        "3-bed apartment, Doral (west Miami, more affordable): $2,800–$4,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and US visa",
+        "Employment verification letter with salary confirmation from your employer",
+        "3 months of bank statements and last 3 payslips (or offer letter if newly arrived)",
+        "Miami landlords typically require income of 3 times the monthly rent minimum",
+        "1–2 months security deposit",
+        "US bank account for ACH transfer or personal check payments"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Miami has a strong private and bilingual school ecosystem. Miami-Dade County public schools vary widely by area; some excellent charter schools are accessible via application. Private school admissions are competitive.",
+      "publicSystem": "Miami-Dade County Public Schools is the fourth-largest school district in the US. Quality varies significantly by zone. Charter schools and magnet programmes offer strong alternatives within the public system — apply separately. All instruction is in English; ESL support is available.",
+      "internationalOptions": "Miami's private school sector is strong, with British, American, IB, and bilingual (Spanish/English) options concentrated in Coral Gables, Coconut Grove, and the Upper East Side. Fees range from $20,000 to $40,000/year. Apply 12–18 months ahead.",
+      "languageNotes": "English is the primary language of instruction. Miami's bilingual (Spanish/English) private schools are in high demand — many families choose Miami specifically for this reason. ESL support is available in public schools. Spanish is widely spoken in daily life and a significant asset for children.",
+      "tip": "Miami's best bilingual (Spanish/English) schools fill years in advance — begin school research before choosing a neighbourhood if bilingual education is a goal.",
+      "options": [
+        {
+          "type": "Bilingual Spanish/English private schools",
+          "description": "Miami's most distinctive offering. High demand and long waitlists. Serving the large Latin American expat community.",
+          "fees": "$22,000–$38,000/year typical"
+        },
+        {
+          "type": "American independent / IB private schools",
+          "description": "Well-established American and IB schools in Coral Gables and Coconut Grove. Competitive admissions; apply 12+ months ahead.",
+          "fees": "$20,000–$40,000/year typical"
+        },
+        {
+          "type": "Miami-Dade public schools and charter schools",
+          "description": "Free for all residents. Quality varies by zone. Charter schools and magnet programmes are the best public options — apply separately and early.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Miami has a large licensed daycare sector. Florida's VPK (Voluntary Pre-Kindergarten) programme provides free part-time pre-K at age 4. Costs are high in family neighbourhoods.",
+      "daycareItems": [
+        "VPK (Florida's Voluntary Pre-Kindergarten programme) — free part-time programme for all Florida children in the year they turn 4; enrol via the Early Learning Coalition",
+        "Licensed daycare centres for ages 6 weeks to 4 years — fees typically $1,800–$3,000/month in Coral Gables, Coconut Grove, and Brickell; many have 6–12 month waitlists",
+        "Bilingual (Spanish/English) daycare centres are in high demand and fill early — start searching well before your move if this is a priority",
+        "Visit at least 3 centres and check Florida DCF (Department of Children and Families) licensing status before committing"
+      ],
+      "nannyItems": [
+        "Full-time nanny in Miami: typically $2,500–$3,800/month (roughly $16–$25/hr)",
+        "Part-time nanny / babysitter: roughly $18–$28/hr depending on neighbourhood and experience",
+        "Nanny taxes are legally required — as employer, you must pay Social Security, Medicare, and state unemployment taxes; use a payroll service to stay compliant",
+        "Start searching 6–8 weeks before arriving — quality English and Spanish-speaking nannies fill quickly in Coral Gables and Coconut Grove"
+      ],
+      "whereToFindItems": [
+        "Care.com — largest US childcare platform with a strong Miami section for nannies and daycare",
+        "UrbanSitter — popular in South Florida for nannies and after-school sitters",
+        "Search 'Miami Expats with Kids' on Google — local community recommendations are the most reliable source in family-oriented Miami neighbourhoods"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Confirm your employer's health plan covers your whole family from day one — enrolment windows are strict in the US and missing the window means waiting until the next open enrolment period.",
+      "items": [
+        "The US has no universal public healthcare — private insurance is required. Most working families receive employer-sponsored health insurance as part of their compensation package.",
+        "Employer-sponsored family health insurance in Miami typically costs $0–$700/month in employee contributions depending on the plan and employer subsidy.",
+        "Major hospitals: Jackson Health System (largest public hospital in Florida, Level I trauma), Baptist Health South Florida, and Cleveland Clinic Florida (in Weston, 30 min from Miami) — all provide comprehensive family and paediatric care.",
+        "Budget for deductibles and co-pays even with insurance — family deductibles of $1,000–$5,000/year are standard on most US employer plans.",
+        "International private medical insurance (IPMI — global health coverage including the US) is an alternative for families not covered by a US employer plan."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 77,
+      "summary": "Miami is safe in family residential neighbourhoods. Crime varies significantly by area; the main daily risk is traffic and seasonal hurricane exposure.",
+      "items": [
+        "Violent crime in family neighbourhoods (Coral Gables, Coconut Grove, Pinecrest) is uncommon — these are among the safest residential areas in South Florida",
+        "Traffic accidents are the #1 daily risk in Miami — driving standards are mixed, intersections are busy, and pedestrian infrastructure is poor in most areas",
+        "Some areas of Miami (parts of Little Haiti, Overtown, North Miami at night) have higher crime rates — not a day-to-day concern for families in the main expat neighbourhoods",
+        "Hurricane season (June 1–November 30) is a genuine operational consideration — register with Miami-Dade County emergency alerts and know your evacuation zone",
+        "Flooding during heavy rain is common in low-lying Miami neighbourhoods — check FEMA flood maps before signing a lease"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$4,200 / month",
+      "familyDinner": "~$85",
+      "nannyRate": "~$22 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "US work visa types official — uscis.gov",
+          "url": "https://www.uscis.gov/working-in-the-united-states",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Miami Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Miami",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Miami Expats' on Google — active community for international families in Miami",
+        "searchQuery": "Miami Expats Facebook group",
+        "url": "https://www.google.com/search?q=Miami+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Relocating to Miami' on Google — practical community for families in the relocation process",
+        "searchQuery": "Relocating to Miami Facebook group",
+        "url": "https://www.google.com/search?q=Relocating+to+Miami+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "dallas-us",
+    "citySlug": "dallas",
+    "countrySlug": "usa",
+    "city": "Dallas",
+    "country": "USA",
+    "tagline": "Texas Sun Belt living — lower cost, strong suburban schools, and no state income tax",
+    "summary": "Dallas (Dallas-Fort Worth metro) is one of the US's fastest-growing cities — a business and tech hub with strong suburban school districts, no Texas state income tax, and significantly lower housing costs than NYC or Miami. The suburban corridor north of Dallas (Plano, Frisco, Southlake) offers genuinely excellent public schools, large homes, and an affordable lifestyle by US standards. The trade-offs are extreme summer heat (40°C / 104°F+), total dependence on cars, and the same absence of public healthcare that applies across the US.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — citizens of Visa Waiver Program countries enter the US on an ESTA for up to 90 days; working families need an employer-sponsored H-1B, O-1, L-1, or TN visa before arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Decide between Dallas city and northern suburbs (Plano, Frisco, Southlake) before searching — suburb choice determines school district and adds 20–40 min commute",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research school districts before choosing a suburb — Plano ISD, Frisco ISD, and Carroll ISD (Southlake) are consistently among Texas's highest-ranked public school districts",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your Social Security Number (SSN) at a Social Security Administration office in your first week — required for employment, banking, and tax filing",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange comprehensive private health insurance before arriving — employer-sponsored plans are standard; medical care in Texas without insurance is extremely expensive",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a US bank account (Chase, Wells Fargo, or Frost Bank) — required for payroll deposit and rent payments",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Get a Texas Driver's License within 90 days — Dallas is entirely car-dependent and a TX license serves as your primary US ID for most purposes",
+        "targetSection": "residency"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Tech, finance, telecom, and energy sector professionals whose employers are headquartered in the DFW metro",
+        "Families who want excellent public school districts, large homes, and more space than coastal US cities allow at the same budget",
+        "Parents attracted by no Texas state income tax — a meaningful take-home pay advantage over California or New York",
+        "Families comfortable with a car-dependent suburban lifestyle in exchange for space, affordability, and strong school options"
+      ],
+      "watchOutFor": [
+        "Dallas is entirely car-dependent — there is virtually no useful public transport; every family needs at least one car, and most need two",
+        "Summer heat is extreme and long — temperatures of 38–42°C (100–108°F) run June through September; children's outdoor time is significantly limited during these months",
+        "Severe weather includes tornado risk in spring (March–May) and occasional ice storms in winter — families need an emergency plan",
+        "The same absence of public healthcare that applies across the US applies here — private insurance is essential and non-negotiable"
+      ]
+    },
+    "residency": {
+      "title": "Registration & Social Security Number",
+      "tip": "Apply for your SSN at a Social Security Administration office (ssa.gov) in your first week — bring passport, I-94, and work visa; takes 2–4 weeks to arrive by post.",
+      "items": [
+        "Apply for your SSN at your nearest SSA office — bring your passport, US visa, and I-94 arrival record (downloadable at cbp.gov).",
+        "There is no mandatory address registration system in the US — update your address with your employer, bank, and the SSA as soon as you move in.",
+        "Apply for a Texas Driver's License at your nearest Texas DPS (Department of Public Safety) office within 90 days — required: passport, visa, I-94, SSN, and 2 proofs of Texas address.",
+        "Texas has no state income tax — only federal income tax applies. This is a significant financial advantage over California or New York; engage a US CPA for your first filing.",
+        "Dallas-Fort Worth's large corporate employer base means many companies have established immigration sponsorship programmes — confirm your employer's green card sponsorship intentions early."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Chase and Wells Fargo open accounts with passport and visa — go in your first week; most Dallas landlords and property managers require ACH transfer or personal check.",
+      "items": [
+        "Chase, Wells Fargo, and Bank of America are the main banks used by expat families in the DFW metro — all have extensive branch networks across the northern suburbs.",
+        "Frost Bank is a Texas-headquartered bank with strong customer service and good experience serving corporate relocations — a solid local alternative.",
+        "You need your passport, US visa, I-94, and a Texas address to open an account — SSN is helpful but most major banks can open an account before it arrives.",
+        "Wise and Revolut work immediately from arrival for international transfers — widely used by the DFW expat community.",
+        "Most Dallas-area landlords require rent via ACH transfer, personal check, or Zelle — a US bank account is essential within the first week."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Dallas-Fort Worth is significantly more affordable than coastal US cities. The northern suburbs (Plano, Frisco, Southlake, Allen) are the top family destinations — excellent public schools, larger homes, and strong community infrastructure. Dallas proper (Highland Park, Preston Hollow) offers a more urban feel at higher cost.",
+      "bestAreas": [
+        "Plano",
+        "Frisco",
+        "Southlake",
+        "Highland Park",
+        "Allen"
+      ],
+      "searchPortalsIntro": [
+        "These are the main US rental platforms — this is where residents rent, not Airbnb.",
+        "Search by suburb name inside each platform to filter local DFW listings.",
+        "Tip: DFW is spread across a very large metro area — decide on your target suburb before searching; neighbourhood choice has a major impact on school district and commute."
+      ],
+      "searchPortals": [
+        {
+          "label": "Zillow.com — comprehensive US rental and sales platform with strong DFW suburb coverage",
+          "url": "https://www.zillow.com",
+          "isVerified": true
+        },
+        {
+          "label": "Realtor.com — strong Dallas suburb listings including single-family homes in Plano and Frisco",
+          "url": "https://www.realtor.com",
+          "isVerified": true
+        },
+        {
+          "label": "Apartments.com — good coverage of Dallas apartment buildings and suburban complexes",
+          "url": "https://www.apartments.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Dallas Fort Worth Expats' for community housing tips and direct listings",
+          "url": "https://www.google.com/search?q=Dallas+Fort+Worth+Expats+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Uptown Dallas or Plano: $1,800–$2,600/month",
+        "3-bed house, Plano or Frisco (northern suburbs, top school districts): $2,500–$3,800/month",
+        "3-bed house, Southlake or Colleyville (premium suburbs): $3,200–$5,000/month",
+        "3-bed house, Dallas proper (Highland Park / Preston Hollow): $3,000–$5,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and US visa",
+        "Employment verification letter with salary confirmation",
+        "3 months of bank statements and last 3 payslips (or offer letter if newly arrived)",
+        "Most DFW landlords require income of 3 times the monthly rent minimum",
+        "1–2 months security deposit",
+        "US bank account for ACH transfer or personal check"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Dallas-Fort Worth's major strength for families is its suburban public school districts. Plano ISD, Frisco ISD, and Carroll ISD (Southlake) are consistently among the highest-ranked school districts in Texas. International and private schools are available but the public school option here is genuinely strong.",
+      "publicSystem": "Texas public schools are free and open to all residents regardless of immigration status. Quality varies enormously by school district — the northern suburbs (Plano, Frisco, Southlake) have some of Texas's highest-rated public schools. All instruction is in English; ESL support is available. Enrol via your local school district website after establishing a Texas address.",
+      "internationalOptions": "Dallas has a smaller international school sector than NYC or Miami. Private and independent schools exist in Highland Park and North Dallas. Fees range from $18,000 to $35,000/year. For most international families, the high-quality public school districts in the northern suburbs are the preferred and most practical choice.",
+      "languageNotes": "English is the language of instruction in all public schools. ESL support is widely available. Spanish is widely spoken across the DFW metro and is a practical second language for children. Private tutoring costs roughly $60–$100/hr in the DFW area.",
+      "tip": "Choose your suburb based on school district first — Plano ISD and Frisco ISD are among Texas's best public school systems and the primary reason families choose the northern suburbs.",
+      "options": [
+        {
+          "type": "Texas public school districts — top-rated suburbs",
+          "description": "Plano ISD, Frisco ISD, and Carroll ISD (Southlake) are consistently among Texas's highest-rated public school systems. Free for all residents.",
+          "fees": "Free"
+        },
+        {
+          "type": "American independent / private schools",
+          "description": "Private and independent schools available in Highland Park and North Dallas. Selective admissions. Apply 6–12 months ahead.",
+          "fees": "$18,000–$35,000/year typical"
+        },
+        {
+          "type": "International / IB curriculum schools",
+          "description": "Small but growing international school sector in the DFW metro. Serves diplomatic and multinational corporate families.",
+          "fees": "$20,000–$32,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "DFW has a large licensed daycare sector and an affordable nanny market compared to coastal US cities. Texas offers a Pre-K programme for qualifying 4-year-olds, and private Pre-K is widely available.",
+      "daycareItems": [
+        "Texas Pre-K — free half-day public pre-K for qualifying 4-year-olds (income-based, English learners, and other eligibility criteria); enrol via your local school district",
+        "Licensed private daycare centres — fees typically $1,200–$2,000/month in the northern suburbs for ages 6 weeks to 4 years; shorter waitlists than coastal US cities",
+        "Bilingual (Spanish/English) daycare options are available across the DFW metro given the large Spanish-speaking community",
+        "Check Texas DFPS (Department of Family and Protective Services) licensing status for any daycare centre before enrolling"
+      ],
+      "nannyItems": [
+        "Full-time nanny in Dallas/DFW suburbs: typically $2,000–$3,200/month (roughly $13–$20/hr) — significantly more affordable than NYC or Miami",
+        "Part-time nanny / babysitter: roughly $15–$22/hr",
+        "Nanny taxes are legally required — as employer, you must pay Social Security, Medicare, and state unemployment taxes; use a nanny payroll service to stay compliant",
+        "Start searching 6–8 weeks before arriving — the DFW nanny market is more relaxed than coastal US cities"
+      ],
+      "whereToFindItems": [
+        "Care.com — the largest US childcare platform with a strong DFW section for nannies and daycare",
+        "UrbanSitter — used in Dallas for nannies and after-school sitters",
+        "Search 'Dallas Fort Worth Expats' on Google — community recommendations from parents in your suburb are the most reliable source for trustworthy nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Confirm your employer's health plan covers your full family from your first day of work — enrolment windows are strict in the US.",
+      "items": [
+        "The US has no universal public healthcare — private insurance is required. Most working families receive employer-sponsored health insurance as part of their DFW corporate compensation package.",
+        "Employer-sponsored family health insurance in the DFW metro typically costs $0–$600/month in employee contributions depending on the plan.",
+        "Major hospitals: UT Southwestern Medical Center (world-class academic medical centre), Children's Health (dedicated children's hospital), and Baylor Scott and White Health — all provide comprehensive family and paediatric care.",
+        "Budget for deductibles and co-pays even with insurance — family deductibles of $1,000–$5,000/year are standard on most US employer plans.",
+        "International private medical insurance (IPMI) is an alternative for families not covered by a US employer plan — provides global health coverage including the US."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 79,
+      "summary": "Dallas northern suburbs are very safe. Dallas city proper requires neighbourhood research. Summer heat and severe weather are the main seasonal risks.",
+      "items": [
+        "The northern suburbs (Plano, Frisco, Southlake, Allen) are among the safest communities in Texas — very low violent crime rates for day-to-day family life",
+        "Dallas city proper varies significantly by neighbourhood — Highland Park and Preston Hollow are safe; some south and west Dallas areas have higher crime rates",
+        "Summer heat is extreme (38–42°C / 100–108°F) from June through September — outdoor activities for children should be planned for early morning or late evening",
+        "Tornado risk in spring (March–May) is real in North Texas — know your shelter options and monitor weather alerts during severe weather season",
+        "Traffic accidents on DFW's highway network are the #1 daily risk — speeds are high and driving standards vary; maintain focus and defensive driving habits"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$2,600 / month",
+      "familyDinner": "~$65",
+      "nannyRate": "~$18 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "US work visa types official — uscis.gov",
+          "url": "https://www.uscis.gov/working-in-the-united-states",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Dallas Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Dallas",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Dallas Fort Worth Expats' on Google — active English-speaking expat community for families in the DFW metro",
+        "searchQuery": "Dallas Fort Worth Expats Facebook group",
+        "url": "https://www.google.com/search?q=Dallas+Fort+Worth+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Relocating to Dallas Texas' on Google — practical community for families in the relocation process",
+        "searchQuery": "Relocating to Dallas Texas Facebook group",
+        "url": "https://www.google.com/search?q=Relocating+to+Dallas+Texas+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "san-jose-cr",
+    "citySlug": "san-jose",
+    "countrySlug": "costa-rica",
+    "city": "San Jose",
+    "country": "Costa Rica",
+    "tagline": "Central America's most accessible expat destination — affordable, stable, and a short flight from the US",
+    "summary": "San Jose is the capital of Costa Rica and the primary base for expat families in Central America. It offers a spring-like climate year-round (altitude means it avoids tropical heat), a strong private school system, and significantly lower living costs than the US or Western Europe. Most expat families live in the western suburbs of Escazu and Santa Ana. The trade-offs are significant traffic congestion, variable infrastructure outside expat areas, and a Spanish-language bureaucratic system that requires patience.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Remote workers earning $3,000/month or more: apply for Costa Rica's Digital Nomad Visa (Visa de Trabajo para Nomadas Digitales) at the Costa Rican Consulate before or shortly after arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 4–6 weeks before your move — Escazu and Santa Ana are the main expat areas; furnished rentals are widely available for short initial stays",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply to private bilingual schools 6–12 months before your move — the best schools in Escazu and Santa Ana have limited places and fill well ahead of the academic year",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your DIMEX (Documento de Identidad Migratoria para Extranjeros — Costa Rica's official foreign resident ID card) after your visa is approved — required for banking and healthcare",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Arrange private health insurance before arriving — CIMA Hospital and Clinica Biblica are the top private hospitals; CAJA (public healthcare) is only fully accessible after DIMEX and registration",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Costa Rican bank account (BAC Credomatic or Banco Nacional) after receiving your DIMEX — required for rent payments and local transactions",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "US-based remote workers seeking a nearby, affordable base with a large English-speaking expat community and a short flight home",
+        "Families who want a warm-climate outdoor lifestyle with mountains, rainforests, beaches, and wildlife accessible on weekends",
+        "Parents drawn to Costa Rica's strong private bilingual (Spanish/English) school system for long-term language integration",
+        "Those seeking a Central American base with a stable democracy, relatively low crime in expat areas, and good private healthcare"
+      ],
+      "watchOutFor": [
+        "Traffic in the San Jose metro is severe — commutes from Escazu to the city centre can take 45–90 min in rush hour; many families plan their lives around avoiding peak traffic",
+        "Infrastructure outside of expat areas (Escazu, Santa Ana) is variable — road conditions, water supply reliability, and power cuts are more common in rural or semi-urban areas",
+        "Non-DIMEX holders face significant limitations — banking, healthcare, and many formal transactions require the DIMEX foreign resident ID, which takes months to obtain",
+        "Rainy season (May–November) brings heavy daily afternoon rain in the Central Valley — this affects outdoor routines for children and can cause flooding in low-lying areas"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Citizens of the US, EU, UK, Canada, Australia, and most other Western countries enter Costa Rica visa-free for 90 days. Costa Rica launched a Digital Nomad Visa in 2022 for remote workers earning $3,000/month or more. The Rentista and Pensionado programmes offer long-term residency for those with passive income.",
+      "tip": "The Costa Rica Digital Nomad Visa application is processed by the Direccion General de Migracion y Extranjeria (DGME — Costa Rica's immigration authority) — apply with a complete documentation package to avoid delays.",
+      "options": [
+        {
+          "type": "Tourist entry (visa-free, 90 days)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Tourist entry — what it covers",
+          "duration": "90 days",
+          "description": "Citizens of the US, EU, UK, Canada, Australia, and most Western countries enter Costa Rica visa-free for 90 days. Good for a scouting trip or initial stay while applying for the Digital Nomad Visa.",
+          "details": [
+            "No advance visa required for citizens of the US, EU, UK, Canada, Australia, Japan, and most other Western countries — enter on your passport for 90 days.",
+            "You must show a return ticket or onward travel ticket on arrival at Costa Rican immigration.",
+            "No right to formal employment with a Costa Rican employer on tourist entry — remote work for a non-Costa Rican employer is the accepted practice.",
+            "Good use: scout Escazu and Santa Ana for housing and schools, open initial banking relationships, and submit your Digital Nomad Visa application before your 90 days expire.",
+            "Do not overstay the 90-day limit without a visa approved — Costa Rica enforces entry rules and overstays result in fines and future entry complications."
+          ]
+        },
+        {
+          "type": "Digital Nomad Visa (Visa de Trabajo para Nomadas Digitales)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Costa Rica Digital Nomad Visa — who qualifies and how to apply",
+          "duration": "1 year, renewable once for 1 additional year",
+          "description": "Launched in 2022. For remote workers and freelancers earning $3,000/month or more from outside Costa Rica. Grants legal residence and allows the holder to open bank accounts and access services.",
+          "details": [
+            "Income requirement: minimum $3,000/month (or $4,000/month if bringing dependents) from remote employment or freelancing for non-Costa Rican clients — verified by 3 months of bank statements and an employer letter.",
+            "Required documents: valid passport, proof of remote income (minimum $3,000/month), private health insurance valid in Costa Rica, criminal background check with Apostille, and proof of accommodation.",
+            "Apply at a Costa Rican Consulate or directly at the DGME (Direccion General de Migracion y Extranjeria — Costa Rica's immigration authority) in San Jose — processing typically takes 1–3 months.",
+            "Once approved, apply for your DIMEX (Documento de Identidad Migratoria para Extranjeros — Costa Rica's official foreign resident ID card) — required for banking, healthcare, and school enrolment.",
+            "The visa is valid 1 year and can be renewed once; after 2 years, many families transition to the Residencia Temporal or Rentista programmes for longer-term residency."
+          ],
+          "officialLink": {
+            "label": "Costa Rica Digital Nomad Visa official DGME migracion.go.cr"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & DIMEX",
+      "tip": "Search 'DIMEX appointment Costa Rica DGME' on Google to book your appointment at the DGME office — bring your approved visa, passport, and all supporting documents.",
+      "items": [
+        "Apply for your DIMEX (Documento de Identidad Migratoria para Extranjeros — Costa Rica's official foreign resident ID card) at the DGME office in San Jose after your visa is approved. Bring your passport, visa approval, and supporting documents.",
+        "The DIMEX is required for opening a bank account, enrolling children in school, accessing CAJA (Costa Rica's public healthcare system), and most formal transactions in Costa Rica.",
+        "CAJA (Caja Costarricense de Seguro Social — Costa Rica's public healthcare and social security system) enrolment is possible once you have your DIMEX — families with DIMEX can access public healthcare for a monthly contribution.",
+        "Costa Rica does not have a mandatory address registration equivalent — but keeping your DIMEX address current with the DGME is important for permit renewals.",
+        "After several years of legal residency, Costa Rica offers permanent residency (Residencia Permanente) pathways — consult a Costa Rican immigration lawyer (abogado) for your specific situation."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Banking in Costa Rica requires your DIMEX — set up a Wise account before arriving to handle international transfers while your DIMEX application is in progress.",
+      "items": [
+        "BAC Credomatic is the bank most widely used by expat families in Costa Rica — English-language service, widespread ATM network, and online banking. Banco Nacional de Costa Rica is the largest public bank and also serves expats.",
+        "You need your DIMEX (foreign resident ID card) to open a local bank account — this is the primary barrier for new arrivals who have not yet received their DIMEX.",
+        "While waiting for your DIMEX, use Wise or Revolut for international transfers and day-to-day spending — both are widely used by Costa Rica expats.",
+        "Scotiabank Costa Rica also serves expats and has some English-language support in the Escazu and Santa Ana branches.",
+        "Most San Jose landlords in Escazu and Santa Ana accept rent in US dollars — Costa Rica is a largely dollarized economy in expat areas, so USD accounts are practical."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Most expat families live in Escazu or Santa Ana — affluent western suburbs with good infrastructure, English-speaking communities, international schools, and the best private hospitals. Housing costs are high by Central American standards but very affordable compared to the US.",
+      "bestAreas": [
+        "Escazu",
+        "Santa Ana",
+        "Lindora",
+        "La Sabana / Rohrmoser",
+        "Curridabat"
+      ],
+      "searchPortalsIntro": [
+        "These are Costa Rica's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search 'Escazu' or 'Santa Ana' inside each platform to filter expat-area listings.",
+        "Tip: furnished short-term rentals are widely available in Escazu and Santa Ana — arrive with 4–6 weeks booked while you search for a long-term unfurnished rental."
+      ],
+      "searchPortals": [
+        {
+          "label": "Encuentra24.com — one of Costa Rica's largest property classifieds platforms",
+          "url": "https://www.encuentra24.com",
+          "isVerified": true
+        },
+        {
+          "label": "OLX Costa Rica — classifieds platform with a strong San Jose and Escazu rental section",
+          "url": "https://www.olx.co.cr",
+          "isVerified": true
+        },
+        {
+          "label": "Remax Costa Rica — established real estate agency with English-speaking agents and a strong expat rental section",
+          "url": "https://www.remax.co.cr",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Expats in Costa Rica Housing' for community listings and direct landlord deals",
+          "url": "https://www.google.com/search?q=Expats+in+Costa+Rica+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Escazu or Santa Ana: $900–$1,400/month",
+        "3-bed apartment, Escazu: $1,800–$2,800/month",
+        "3-bed apartment, Santa Ana or Lindora: $1,500–$2,500/month",
+        "3-bed house with garden, outer Escazu or Curridabat: $1,400–$2,200/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and DIMEX (foreign resident ID) — required by most landlords before signing",
+        "Proof of income or bank statements (3 months)",
+        "Costa Rican bank account or US bank account for transfer payments",
+        "1–2 months deposit (deposito de garantia) — standard in Costa Rica",
+        "Rental contracts are in Spanish — use a bilingual lawyer (abogado bilingue) to review before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Costa Rica has a strong private bilingual school sector in the Escazu and Santa Ana corridor. These schools follow US or IB curricula and teach in both English and Spanish. Apply 6–12 months ahead.",
+      "publicSystem": "Costa Rican public schools are free and widely available. All instruction is in Spanish. Not viable for non-Spanish-speaking children without significant language support. Young children (ages 4–7) typically acquire Spanish quickly if enrolled with tutoring support.",
+      "internationalOptions": "The main concentration of international and bilingual private schools for expat families is in the Escazu and Santa Ana corridor west of San Jose. Schools follow US, IB, or Costa Rican bilingual curricula with both English and Spanish instruction. Fees range from $5,000 to $12,000/year — affordable by US or European standards.",
+      "languageNotes": "Spanish is the language of instruction in all public schools. International and bilingual private schools teach in both English and Spanish. Bilingual education is a major advantage for children — many families choose Costa Rica specifically for this. Private Spanish tutoring costs roughly $25–$40/hr.",
+      "tip": "Apply to schools 6–12 months before your intended start — the best bilingual schools in Escazu fill quickly, especially for secondary-age students.",
+      "options": [
+        {
+          "type": "Bilingual private schools (English/Spanish)",
+          "description": "Costa Rica's strongest offering for expat families — full bilingual instruction in English and Spanish. Concentrated in Escazu and Santa Ana. Apply 6–12 months ahead.",
+          "fees": "$6,000–$12,000/year typical"
+        },
+        {
+          "type": "International / IB curriculum schools",
+          "description": "Small number of IB-affiliated and American curriculum schools in the western suburbs. Serving diplomatic and US corporate families.",
+          "fees": "$8,000–$15,000/year typical"
+        },
+        {
+          "type": "Costa Rican public schools",
+          "description": "Free state schools. Spanish-only instruction. Viable for younger children (4–7) integrating with tutoring support. Full Spanish immersion.",
+          "fees": "Free"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Costa Rica has a growing private daycare sector in expat areas. Costs are very affordable compared to the US or Europe. English-speaking nannies are available in Escazu and Santa Ana.",
+      "daycareItems": [
+        "CEN-CINAI (Centro de Educacion y Nutricion — Costa Rica's state early childhood centres) are free for qualifying families but not accessible to most expat families without DIMEX and income thresholds",
+        "Private daycare centres (guarderias privadas) in Escazu and Santa Ana — fees typically $400–$800/month; bilingual (Spanish/English) programmes are widely available",
+        "Kinders and preescolares (private preschools) for ages 3–6 are widely available in expat areas — fees roughly $250–$600/month; most teach in both English and Spanish",
+        "Visit daycare centres in person — quality varies; look for centres with a high staff-to-child ratio and bilingual teaching staff"
+      ],
+      "nannyItems": [
+        "Full-time niñera (nanny) in San Jose expat areas: typically $500–$900/month — very affordable by US or European standards",
+        "Part-time nanny: roughly $4–$7/hr",
+        "Many nannies in Escazu and Santa Ana speak some English and are experienced with expat families",
+        "Start searching 4–6 weeks before arriving — nanny availability is good in the expat corridor but quality English-speaking nannies fill quickly"
+      ],
+      "whereToFindItems": [
+        "Search 'Expats in Costa Rica' on Google — the expat community Facebook group is the most reliable source for nanny and childcare recommendations in Escazu and Santa Ana",
+        "ConMuchoGusto.net — Costa Rica's classifieds platform with a domestic worker section",
+        "Word-of-mouth from school communities is the most trusted source for nanny referrals in the expat corridor"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Arrange private health insurance before arriving — CIMA Hospital and Clinica Biblica are the top private hospitals in San Jose and are widely used by the expat community.",
+      "items": [
+        "Costa Rica has a public healthcare system (CAJA — Caja Costarricense de Seguro Social) that is among the best in Central America. Expats with DIMEX can enrol by paying monthly contributions — typically $50–$150/month depending on income.",
+        "In practice, most expat families use private hospitals for speed and English-language access. CIMA Hospital (San Jose) and Clinica Biblica (San Jose) are the two top-rated private hospitals — both have international accreditation and English-speaking doctors.",
+        "Typical costs at private hospitals: GP visit roughly $60–$100; specialist $100–$200; emergency care $300–$1,000+ depending on severity.",
+        "International private medical insurance (IPMI — global health coverage that includes Costa Rica) is the recommended option for expat families — prices range from $200–$600/month for a family depending on coverage level.",
+        "Pharmacies (farmacias) in Costa Rica are well-stocked and medications are significantly cheaper than in the US — many medications available over the counter that require prescriptions elsewhere."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 76,
+      "summary": "San Jose is generally safe in expat residential areas. Petty theft is the primary concern; the western suburbs (Escazu, Santa Ana) are well-managed and patrolled.",
+      "items": [
+        "Violent crime in expat residential areas (Escazu, Santa Ana, La Sabana) is uncommon — these neighbourhoods are well-patrolled and broadly safe for family life",
+        "Petty theft (bag snatching, phone theft, car break-ins) is the #1 daily risk throughout San Jose — keep valuables out of sight in vehicles, do not display phones on the street, and use taxis or Uber at night",
+        "Downtown San Jose (Barrio Mexico, La Merced, and around the Coca-Cola terminal) should be avoided at night — these areas are not relevant to expat families based in Escazu or Santa Ana",
+        "Traffic accidents are a significant risk — Costa Rican roads have high accident rates; drive defensively and be cautious at intersections and on mountain roads",
+        "Heavy rain during rainy season (May–November) causes flooding and landslides on some routes — check road conditions before driving into mountainous areas"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,700 / month",
+      "familyDinner": "~$38",
+      "nannyRate": "~$7 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Costa Rica immigration official — migracion.go.cr",
+          "url": "https://www.migracion.go.cr",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "San Jose Costa Rica Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/San-Jose-Costa-Rica",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Expats in Costa Rica' on Google — the largest English-speaking expat community group for families in San Jose and the Central Valley",
+        "searchQuery": "Expats in Costa Rica Facebook group",
+        "url": "https://www.google.com/search?q=Expats+in+Costa+Rica+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Costa Rica Living Escazu' on Google — active community focused on families in the Escazu and Santa Ana expat corridor",
+        "searchQuery": "Costa Rica Living Escazu Facebook group",
+        "url": "https://www.google.com/search?q=Costa+Rica+Living+Escazu+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "vancouver-ca",
+    "citySlug": "vancouver",
+    "countrySlug": "canada",
+    "city": "Vancouver",
+    "country": "Canada",
+    "tagline": "Canada's Pacific gateway — spectacular scenery, world-class livability, and high housing costs",
+    "summary": "Vancouver is consistently ranked among the world's most liveable cities. It offers a mild Pacific climate, stunning mountain-and-ocean scenery, excellent public schools, and a large international community — particularly strong ties to Asia-Pacific. The trade-offs are housing costs that rival the most expensive US cities, a complex Canadian immigration system for non-EU families, and a 3-month wait for provincial health coverage (BC MSP) for new arrivals.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — citizens of most Western countries can visit Canada visa-free or with an eTA (Electronic Travel Authorization — Canada's online entry permission for eligible nationalities) for up to 6 months",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Working families: confirm your employer's immigration route (LMIA-based work permit or Express Entry) and apply for your Canadian work permit before travelling",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — North Vancouver, Burnaby, and South Surrey are the main family areas; 3-bed houses move quickly",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Explore Vancouver's excellent public school options via the Vancouver School Board (vsb.bc.ca) — district schools are very strong and many families choose them over private",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your SIN (Social Insurance Number — Canada's primary government ID required for employment and tax filing) at a Service Canada office within your first week",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Apply for your BC Services Card and MSP (BC Medical Services Plan — BC's provincial public health insurance) — note the 3-month waiting period; arrange private bridging insurance to cover this gap",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Canadian bank account (RBC, TD, or BMO) — required for payroll deposit, rent payments, and all Canadian financial transactions",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Tech, resource, or Asia-Pacific trade professionals whose industry is headquartered in Vancouver or whose employers have Canadian operations",
+        "Families who want a genuinely beautiful, safe, outdoor-focused urban lifestyle with skiing, hiking, and beaches accessible from the city",
+        "Asia-Pacific families (particularly from Hong Kong, China, South Korea, India) for whom Vancouver has an established and welcoming community",
+        "Families on a Canadian immigration pathway who want strong public schools, universal healthcare, and a stable long-term base"
+      ],
+      "watchOutFor": [
+        "Housing costs are very high — Vancouver is one of the most expensive cities in Canada; a 3-bed detached house in North Vancouver or South Surrey costs $4,500–$7,500/month to rent",
+        "The 3-month waiting period for BC MSP (BC's provincial public health insurance) means you need bridging private insurance for your first 3 months — plan and budget for this",
+        "Canada's immigration system for non-Canadian/non-PR families is complex — employer-tied work permits, LMIA processing, and Express Entry points calculations require professional guidance",
+        "Winters in Vancouver are mild by Canadian standards but very rainy (November–March) — grey skies, constant drizzle, and limited sunlight are a significant lifestyle adjustment for some families"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Citizens of most Western countries can visit Canada with an eTA (Electronic Travel Authorization) for up to 6 months. Long-term working families need a Canadian work permit — typically via LMIA (Labour Market Impact Assessment) employer sponsorship or the Express Entry points-based immigration programme.",
+      "tip": "Express Entry is points-based — your CRS score (Comprehensive Ranking System) determines your chance of invitation. Search 'Express Entry CRS calculator Canada' on Google to estimate your score before beginning the process.",
+      "options": [
+        {
+          "type": "eTA — Electronic Travel Authorization (tourist entry)",
+          "anchor": "visa-tourist",
+          "detailTitle": "eTA — tourist entry to Canada",
+          "duration": "Up to 6 months per visit",
+          "description": "Citizens of most Western countries (UK, EU, Australia, Japan, and others) apply online for an eTA — Canada's online entry permission for visa-exempt nationalities. No right to work.",
+          "details": [
+            "Apply for your eTA at canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta — typically approved within minutes; costs CAD $7.",
+            "eTA is valid for 5 years or until your passport expires — allows multiple entries, up to 6 months per visit.",
+            "US citizens are exempt from eTA but need a valid passport to enter Canada.",
+            "No right to work or study on an eTA — for working families, a work permit is required.",
+            "Good use: 2–4 week scouting trip to visit North Vancouver, Burnaby, South Surrey, and Coquitlam neighbourhoods and attend school tours."
+          ]
+        },
+        {
+          "type": "LMIA-based employer work permit or Express Entry",
+          "anchor": "visa-dnv",
+          "detailTitle": "Canadian work permit — LMIA and Express Entry routes",
+          "duration": "Work permit: typically 1–2 years, renewable; PR through Express Entry: permanent",
+          "description": "Canada has no standalone digital nomad visa. Long-term working families need an employer-sponsored work permit (via LMIA) or Express Entry permanent residency. Canada has no standalone remote work visa.",
+          "details": [
+            "LMIA (Labour Market Impact Assessment): your employer applies to ESDC (Employment and Social Development Canada) to demonstrate no Canadian was available for your role. Processing: 2–6 months. After LMIA approval, apply for your work permit at IRCC.",
+            "Express Entry: a points-based permanent residency programme. Your CRS (Comprehensive Ranking System) score determines your chance of receiving an Invitation to Apply. High CRS scores (typically 450+) receive invitations quickly. Search 'Express Entry CRS calculator Canada' on Google to estimate your score.",
+            "LMIA-exempt work permits are available for intracompany transfers (ICT) and under certain trade agreements — confirm with your employer's immigration counsel.",
+            "Once you have a work permit, apply for your SIN (Social Insurance Number) at a Service Canada office — required for all employment and tax purposes.",
+            "Your spouse and dependent children can apply for an Open Work Permit (dependent) and study permits respectively, allowing them to work and attend school in Canada."
+          ],
+          "officialLink": {
+            "label": "Canada Express Entry permanent residency official canada.ca"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Social Insurance Number",
+      "tip": "Apply for your SIN at a Service Canada office (servicecanada.gc.ca) in your first week — bring your work permit and passport; issued on the spot.",
+      "items": [
+        "Apply for your SIN (Social Insurance Number — Canada's primary government ID required for all employment and tax purposes) at a Service Canada office. Bring your work permit and passport — issued on the spot.",
+        "Apply for your BC Services Card and MSP (BC Medical Services Plan — British Columbia's provincial public health insurance) at servicebc.gov.bc.ca — note the mandatory 3-month waiting period before coverage activates.",
+        "Arrange private bridging health insurance for the first 3 months — essential for any medical event before your MSP activates. Coverage for a family costs roughly $200–$400/month.",
+        "File a Canadian T1 General income tax return each year by April 30 — your employer withholds federal and provincial income tax from payroll; engage a Canadian tax accountant for your first filing.",
+        "After 3–5 years of continuous legal residence on a work permit, most permanent residency pathways become available — consult a Regulated Canadian Immigration Consultant (RCIC) for your specific route."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "RBC and TD open accounts with passport and work permit — go on your first working day; most Vancouver landlords require rent via electronic funds transfer (EFT) or e-transfer.",
+      "items": [
+        "RBC (Royal Bank of Canada) and TD (Toronto-Dominion Bank) are the two banks most widely used by new arrivals in Vancouver — both have newcomer banking packages that simplify account opening.",
+        "The Big Five banks (RBC, TD, BMO, Scotiabank, CIBC) all have newcomer programmes — you can open an account with your passport and work permit before your SIN arrives.",
+        "Use Wise or Revolut for international transfers in the first weeks — both are widely used in Vancouver while Canadian banking is being set up.",
+        "Most Vancouver landlords require rent via Interac e-Transfer (Canada's instant bank-to-bank transfer system) — a Canadian bank account is essential from day one.",
+        "Your SIN is required for payroll and tax purposes — provide it to your bank and employer as soon as it is issued at Service Canada."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Vancouver is one of Canada's most expensive housing markets. Family-friendly areas include North Vancouver (outdoorsy, excellent schools), Burnaby (more affordable, central), South Surrey/White Rock (suburban, quiet), and Coquitlam (newer builds, more space).",
+      "bestAreas": [
+        "North Vancouver",
+        "Burnaby",
+        "South Surrey / White Rock",
+        "Coquitlam",
+        "Kerrisdale (Vancouver West Side)"
+      ],
+      "searchPortalsIntro": [
+        "These are Canada's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search by city or neighbourhood name inside each platform to filter local Vancouver listings.",
+        "Tip: Vancouver's rental market is competitive — arrive with 4–6 weeks in a furnished short-term rental and be prepared to sign quickly when a suitable property appears."
+      ],
+      "searchPortals": [
+        {
+          "label": "Rentals.ca — Canada's largest dedicated rental platform with strong Vancouver and suburb coverage",
+          "url": "https://www.rentals.ca",
+          "isVerified": true
+        },
+        {
+          "label": "Zolo.ca — Canadian real estate platform with a good Vancouver rental and sales section",
+          "url": "https://www.zolo.ca",
+          "isVerified": true
+        },
+        {
+          "label": "PadMapper.com — visual rental search with strong Metro Vancouver coverage",
+          "url": "https://www.padmapper.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Vancouver Expats Housing' for community listings and direct landlord recommendations",
+          "url": "https://www.google.com/search?q=Vancouver+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, Vancouver West End or Burnaby: $2,400–$3,200/month",
+        "3-bed apartment, North Vancouver or Burnaby: $3,500–$5,200/month",
+        "3-bed detached house, North Vancouver or Coquitlam: $4,500–$7,500/month",
+        "3-bed detached house, South Surrey / White Rock (commute 45 min): $2,800–$4,500/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Canadian work permit",
+        "Canadian bank account (EFT / e-Transfer payment expected by most landlords)",
+        "Employment verification letter with salary confirmation",
+        "3 months of bank statements or payslips",
+        "First and last month's rent as deposit — standard in British Columbia",
+        "BC's Residential Tenancy Act protects tenants strongly — familiarise yourself before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Vancouver and its suburbs have excellent public schools. BC's public school system is among the strongest in Canada. Many international families choose public schools here rather than private alternatives. Private and independent schools are also available.",
+      "publicSystem": "BC's public school system is highly regarded — many Vancouver families, including international ones, use the public system rather than private schools. The Vancouver School Board (vsb.bc.ca) assigns students to schools based on address. ESL support is strong across the system given Vancouver's multicultural intake.",
+      "internationalOptions": "Vancouver has a well-established private and independent school sector — British, IB, and religious school options are available across the metro. Fees range from $15,000 to $35,000/year. Many international families choose these for smaller class sizes and specific curricula.",
+      "languageNotes": "English (and in some areas French) is the language of instruction in BC public schools. French immersion programmes are available at many public schools — a popular choice for families wanting bilingual education. ESL support is standard across Vancouver public schools.",
+      "tip": "Research French immersion programme availability in your target school district before choosing a neighbourhood — programmes are school-specific and have limited enrolment.",
+      "options": [
+        {
+          "type": "BC public schools — standard English or French immersion",
+          "description": "High quality across the Metro Vancouver area. French immersion programmes widely available. Free for all residents. Enrol at vsb.bc.ca or your district's school board.",
+          "fees": "Free"
+        },
+        {
+          "type": "British / IB curriculum independent schools",
+          "description": "Well-established independent school sector in West Vancouver and Vancouver's West Side. Smaller class sizes and strong extracurriculars.",
+          "fees": "$18,000–$35,000/year typical"
+        },
+        {
+          "type": "Catholic and faith-based independent schools",
+          "description": "Popular across the Metro Vancouver area — typically more affordable than non-faith independent schools.",
+          "fees": "$8,000–$16,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Vancouver has a regulated childcare sector but fees are high and spaces are scarce. BC's $10-a-Day ChildCare Plan has been expanding access — check eligibility. Licensed spaces have long waitlists.",
+      "daycareItems": [
+        "BC's $10-a-Day ChildCare Plan is expanding subsidised daycare across the province — not universally available but growing; check eligibility at childcarebc.ca",
+        "Licensed daycare centres in Vancouver and North Vancouver: fees typically $1,400–$2,400/month without subsidy — waitlists of 6–18 months are common in family-friendly areas",
+        "Register on multiple daycare waitlists as soon as your address is confirmed — some families start waiting 12 months before their child's start date",
+        "BC licensed preschools (ages 3–5) run part-time sessions, typically 3 days/week — fees roughly $500–$800/month"
+      ],
+      "nannyItems": [
+        "Full-time nanny in Vancouver: typically $2,800–$3,800/month (roughly $18–$24/hr) — Vancouver is one of Canada's most expensive nanny markets",
+        "Part-time nanny / babysitter: roughly $20–$30/hr",
+        "As a nanny employer in Canada, you must deduct and remit CPP (Canada Pension Plan), EI (Employment Insurance — Canada's unemployment insurance), and income tax; use a payroll service to stay compliant",
+        "Start searching 2–3 months before arriving — good nannies in North Vancouver and Burnaby fill quickly"
+      ],
+      "whereToFindItems": [
+        "Care.com — the main North American childcare platform with a strong Vancouver section for nannies and daycare",
+        "Sitter.com — used in Metro Vancouver for nannies and after-school sitters",
+        "Search 'Vancouver Expats' on Google — community recommendations from parents in your neighbourhood are the most reliable source for trusted nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Apply for BC MSP (BC Medical Services Plan) immediately on arriving — the mandatory 3-month waiting period means you need private bridging insurance from day one.",
+      "items": [
+        "BC MSP (BC Medical Services Plan — British Columbia's provincial public health insurance) covers all residents but has a mandatory 3-month waiting period for new arrivals. Apply immediately at servicebc.gov.bc.ca.",
+        "Arrange private bridging health insurance for the first 3 months — essential for any medical event. Coverage for a family costs roughly $200–$400/month.",
+        "Once MSP activates, GP visits, specialist referrals, and hospital care are covered. Prescription drugs, dental, and vision are not covered by MSP — arrange supplemental private insurance.",
+        "Major hospitals: Vancouver General Hospital and BC Children's Hospital are the top tertiary care facilities in BC — both are world-class. North Vancouver's Lions Gate Hospital is the most accessible for families in that area.",
+        "Dental and vision care are not covered by MSP — plan for annual dental costs of roughly $1,500–$3,000 for a family unless your employer includes these benefits."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 80,
+      "summary": "Vancouver is a very safe city for families. The Downtown Eastside has concentrated social issues; family residential neighbourhoods are broadly safe.",
+      "items": [
+        "Violent crime in family residential areas (North Vancouver, Burnaby, South Surrey) is uncommon — Metro Vancouver is broadly safe for everyday family life",
+        "Vancouver's Downtown Eastside (DTES) has concentrated homelessness and drug use — not a residential area for families, but visible when travelling through the east side of downtown",
+        "Petty theft (bike theft, car break-ins) is Vancouver's most common reported property crime — use good locks and do not leave valuables in vehicles",
+        "Bears and coyotes occasionally enter North Vancouver and Coquitlam residential areas bordering the forest — teach children basic wildlife awareness from arrival",
+        "Traffic on the Lions Gate Bridge and key commuter routes (Highway 1 east of Vancouver) is very heavy at rush hour — factor commute times into neighbourhood decisions"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$3,500 / month",
+      "familyDinner": "~$85",
+      "nannyRate": "~$22 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Canada Express Entry and work permits official — canada.ca/IRCC",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Vancouver Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Vancouver",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Vancouver Expats' on Google — active community for international families and newcomers in Metro Vancouver",
+        "searchQuery": "Vancouver Expats Facebook group",
+        "url": "https://www.google.com/search?q=Vancouver+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Newcomers to Canada Vancouver' on Google — practical support community for families new to BC",
+        "searchQuery": "Newcomers to Canada Vancouver Facebook group",
+        "url": "https://www.google.com/search?q=Newcomers+to+Canada+Vancouver+Facebook+group",
+        "isVerified": true
+      }
+    ]
+  },
+  {
+    "id": "toronto-ca",
+    "citySlug": "toronto",
+    "countrySlug": "canada",
+    "city": "Toronto",
+    "country": "Canada",
+    "tagline": "Canada's economic capital — diverse, ambitious, and the primary hub for corporate relocations",
+    "summary": "Toronto is Canada's largest city and its primary economic, financial, and immigration hub. For families it offers a genuinely world-class multicultural city, strong public schools, universal healthcare (after a 3-month wait), and more corporate employer sponsorship than any other Canadian city. The trade-offs are high and rising housing costs, a harsh winter (November–March), and a 3-month wait for OHIP (Ontario Health Insurance Plan) coverage that requires bridging private insurance.",
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — citizens of most Western countries visit Canada with an eTA (Electronic Travel Authorization — online entry permission) for up to 6 months; working families need a Canadian work permit before arriving",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Working families: confirm your employer's immigration route (LMIA-based work permit, intracompany transfer, or Express Entry) before arriving — process takes 2–6 months",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search 8–10 weeks before your move — Etobicoke, North York, and Mississauga are the main family areas; good 3-beds move quickly",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Research Ontario public school options via your local school board — Toronto District School Board (tdsb.on.ca) schools are free, strong, and serve most expat families well",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Apply for your SIN (Social Insurance Number — Canada's primary ID for employment and tax) at a Service Canada office within your first week",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Apply for OHIP (Ontario Health Insurance Plan — Ontario's provincial public health insurance) immediately on arriving — note the 3-month mandatory waiting period and arrange private bridging insurance to cover this gap",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open a Canadian bank account (RBC, TD, or Scotiabank) — required for payroll deposit and rent payments",
+        "targetSection": "banking"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Finance, tech, consulting, and corporate professionals whose employer is headquartered or has significant operations in Toronto",
+        "Families pursuing Canadian permanent residency (PR) — Toronto's large corporate job market offers the most employer immigration sponsorship of any Canadian city",
+        "Families who value extreme multiculturalism — Toronto is one of the world's most diverse cities; children grow up with exposure to virtually every culture and language",
+        "Asia-Pacific, South Asian, and Middle Eastern families for whom Toronto has among the world's largest and most established diaspora communities"
+      ],
+      "watchOutFor": [
+        "Housing costs are among Canada's highest — a 3-bed detached house in Etobicoke or North York costs $3,500–$6,500/month to rent; budget carefully",
+        "Winters are genuinely cold (November–March) — temperatures of -10°C to -20°C (14°F to -4°F) with wind chill; this is a significant lifestyle adjustment for families from warm climates",
+        "The 3-month OHIP waiting period (Ontario's provincial health insurance) means bridging private insurance is essential for the first 3 months",
+        "Toronto's traffic is severe — commutes from suburbs to the downtown core (Financial District, Bay Street) can take 60–90 min; factor transit routes into your neighbourhood choice"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Same national system as Vancouver. Citizens of most Western countries can visit Canada with an eTA for up to 6 months. Working families need a Canadian work permit — typically via LMIA employer sponsorship or Express Entry permanent residency. No standalone digital nomad visa.",
+      "tip": "Express Entry CRS (Comprehensive Ranking System) scores fluctuate with each draw — search 'Express Entry CRS calculator Canada' on Google to estimate your current score before starting the process.",
+      "options": [
+        {
+          "type": "eTA — Electronic Travel Authorization (tourist entry)",
+          "anchor": "visa-tourist",
+          "detailTitle": "eTA — tourist entry to Canada",
+          "duration": "Up to 6 months per visit",
+          "description": "Citizens of most Western countries apply online for a Canadian eTA — approved within minutes, valid 5 years. No right to work.",
+          "details": [
+            "Apply at canada.ca/en/immigration-refugees-citizenship/services/visit-canada/eta — costs CAD $7, typically approved within minutes.",
+            "Valid for 5 years or until your passport expires, with multiple entries of up to 6 months each.",
+            "US citizens are exempt from eTA but need a valid passport to enter Canada.",
+            "Good use: 2–4 week scouting trip to visit Etobicoke, North York, Mississauga, and Oakville and attend school tours."
+          ]
+        },
+        {
+          "type": "LMIA-based employer work permit or Express Entry",
+          "anchor": "visa-dnv",
+          "detailTitle": "Canadian work permit — LMIA and Express Entry routes",
+          "duration": "Work permit: typically 1–2 years, renewable; PR through Express Entry: permanent",
+          "description": "Canada has no standalone digital nomad visa. Long-term working families need an employer-sponsored work permit (via LMIA) or Express Entry permanent residency.",
+          "details": [
+            "LMIA (Labour Market Impact Assessment): your employer applies to ESDC to demonstrate no Canadian was available for your role. Processing: 2–6 months.",
+            "Express Entry: a points-based permanent residency programme. Your CRS (Comprehensive Ranking System) score determines invitation eligibility — search 'Express Entry CRS calculator Canada' on Google to estimate your score.",
+            "LMIA-exempt work permits for intracompany transfers (ICT) and trade agreement workers — confirm eligibility with your employer's immigration counsel.",
+            "Once you have a work permit, apply for your SIN at a Service Canada office — required for employment, banking, and tax.",
+            "Dependents receive an Open Work Permit (spouse) and study permit (children), allowing work and school enrolment in Ontario."
+          ],
+          "officialLink": {
+            "label": "Canada Express Entry permanent residency official canada.ca"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Social Insurance Number",
+      "tip": "Apply for your SIN at a Service Canada office (servicecanada.gc.ca) in your first week — bring your work permit and passport; issued on the spot.",
+      "items": [
+        "Apply for your SIN (Social Insurance Number) at a Service Canada office. Bring your work permit and passport — issued on the spot.",
+        "Apply for OHIP (Ontario Health Insurance Plan — Ontario's provincial public health insurance) immediately on arriving at ServiceOntario (ontario.ca/page/apply-ohip-and-get-health-card) — note the mandatory 3-month waiting period.",
+        "Arrange private bridging health insurance for the first 3 months. Coverage for a family costs roughly $200–$400/month.",
+        "File a Canadian T1 General income tax return each year by April 30 — your employer withholds federal and Ontario provincial income tax from payroll.",
+        "After 3–5 years of continuous legal residence, most permanent residency pathways become available — consult a Regulated Canadian Immigration Consultant (RCIC) for your specific route."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "RBC and TD have the best newcomer banking programmes in Toronto — both open accounts with passport and work permit and include introductory fee waivers for the first year.",
+      "items": [
+        "RBC (Royal Bank of Canada) and TD (Toronto-Dominion Bank) are the two most widely used banks by new arrivals in Toronto — both have newcomer banking packages with reduced fees.",
+        "The Big Five banks (RBC, TD, BMO, Scotiabank, CIBC) all have newcomer programmes — you can open an account with your passport and work permit before your SIN arrives.",
+        "Wise and Revolut work immediately from arrival for international transfers — widely used in Toronto while Canadian banking is being set up.",
+        "Most Toronto landlords require rent via Interac e-Transfer (Canada's instant bank-to-bank transfer system) — a Canadian bank account with e-Transfer access is essential from day one.",
+        "Provide your SIN to your bank and employer as soon as it is issued at Service Canada — required for payroll tax withholding and year-end T4 slip."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Toronto is one of Canada's most expensive rental markets. Family-friendly areas include Etobicoke (west, suburban, near highways and Pearson Airport), North York (north, large multicultural communities, good schools), Mississauga (further west, more space, lower cost), and Oakville (south of Toronto, premium suburban schools).",
+      "bestAreas": [
+        "Etobicoke",
+        "North York",
+        "Mississauga",
+        "Oakville",
+        "Scarborough"
+      ],
+      "searchPortalsIntro": [
+        "These are Canada's main long-term rental platforms — this is where residents rent, not Airbnb.",
+        "Search by city or neighbourhood name inside each platform to filter local Toronto listings.",
+        "Tip: Toronto's rental market is very competitive — arrive with 4–6 weeks in a furnished short-term rental and be prepared to sign quickly when a suitable property appears."
+      ],
+      "searchPortals": [
+        {
+          "label": "Rentals.ca — Canada's largest dedicated rental platform with strong Toronto and suburb coverage",
+          "url": "https://www.rentals.ca",
+          "isVerified": true
+        },
+        {
+          "label": "Zolo.ca — Canadian real estate platform with strong Greater Toronto Area coverage",
+          "url": "https://www.zolo.ca",
+          "isVerified": true
+        },
+        {
+          "label": "PadMapper.com — visual rental search with comprehensive GTA coverage",
+          "url": "https://www.padmapper.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Toronto Expats Housing' for community listings and direct landlord recommendations",
+          "url": "https://www.google.com/search?q=Toronto+Expats+Housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, downtown Toronto or Midtown: $2,400–$3,400/month",
+        "3-bed apartment, North York or Etobicoke: $3,200–$5,000/month",
+        "3-bed detached house, Etobicoke or North York: $3,800–$6,500/month",
+        "3-bed detached house, Mississauga or Brampton (commute 40–60 min): $2,500–$4,000/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Canadian work permit",
+        "Canadian bank account (Interac e-Transfer payment expected by most Ontario landlords)",
+        "Employment verification letter with salary confirmation",
+        "3 months of bank statements or payslips",
+        "First and last month's rent as deposit — standard under Ontario's Residential Tenancies Act",
+        "Ontario's Residential Tenancies Act provides strong tenant protections — familiarise yourself before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Toronto's public school system (TDSB) is strong and highly multicultural. Many international families use the public system here. Private and independent schools are available for families wanting smaller class sizes or specific curricula.",
+      "publicSystem": "The Toronto District School Board (tdsb.on.ca) is one of the most diverse school boards in North America — extremely strong ESL support and multicultural programming. French immersion programmes are available at many schools. Enrol at your local TDSB office with your proof of address and work permit.",
+      "internationalOptions": "Toronto has a well-established private and independent school sector — IB, British, and religious school options available in Etobicoke, North York, and inner Toronto. Fees range from $15,000 to $40,000/year.",
+      "languageNotes": "English (and in some schools French) is the language of instruction in Ontario public schools. French immersion is popular — enrolment is school-specific. ESL support is standard across TDSB. Toronto is one of the world's most multilingual cities.",
+      "tip": "Research French immersion programme availability in your target school before choosing a neighbourhood — programmes are specific to schools and have limited enrolment capacity.",
+      "options": [
+        {
+          "type": "TDSB public schools — standard English or French immersion",
+          "description": "High quality across the GTA. Exceptional ESL and multicultural programming. French immersion widely available. Free for all residents. Enrol at tdsb.on.ca.",
+          "fees": "Free"
+        },
+        {
+          "type": "British / IB curriculum independent schools",
+          "description": "Well-established independent school sector in inner Toronto and North York. Smaller class sizes and competitive admissions.",
+          "fees": "$20,000–$40,000/year typical"
+        },
+        {
+          "type": "Catholic and faith-based independent schools",
+          "description": "Popular across the GTA and typically more affordable than secular independent schools.",
+          "fees": "$8,000–$16,000/year typical"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Toronto's childcare market is expensive and spaces are scarce. Ontario has been expanding its $10-a-Day childcare programme — check eligibility. Licensed daycare waitlists of 12–24 months are common in family areas.",
+      "daycareItems": [
+        "Ontario's CWELCC ($10-a-Day ChildCare plan) is being rolled out for licensed providers — check eligibility and participating centres at ontario.ca/page/child-care-subsidies",
+        "Licensed daycare centres in Toronto and the inner suburbs: fees typically $1,500–$2,500/month without subsidy — waitlists of 12–24 months are common; register on multiple lists as soon as your address is confirmed",
+        "JK (Junior Kindergarten) is free from age 4 in Ontario public schools — one year earlier than most Canadian provinces and a useful anchor for childcare planning",
+        "Visit at least 3–4 licensed centres before choosing — quality varies significantly in Toronto's large and varied childcare market"
+      ],
+      "nannyItems": [
+        "Full-time nanny in Toronto: typically $2,500–$3,600/month (roughly $16–$23/hr)",
+        "Part-time nanny / babysitter: roughly $18–$28/hr",
+        "As a nanny employer in Ontario, you must deduct and remit CPP (Canada Pension Plan), EI (Employment Insurance — Canada's unemployment insurance), and income tax — use a payroll service to stay compliant",
+        "Start searching 2–3 months before arriving — good nannies in Etobicoke, North York, and Mississauga fill quickly"
+      ],
+      "whereToFindItems": [
+        "Care.com — the main North American childcare platform with a strong GTA section for nannies and daycare",
+        "Sitter.com — widely used in Toronto for nannies and occasional babysitters",
+        "Search 'Toronto Expats' on Google — community recommendations from parents in your neighbourhood are the most reliable source for trustworthy nannies"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "tip": "Apply for OHIP (Ontario Health Insurance Plan) on your first day in Ontario — the 3-month mandatory waiting period begins when you apply, not when you arrive.",
+      "items": [
+        "OHIP (Ontario Health Insurance Plan — Ontario's provincial public health insurance) covers all Ontario residents but has a mandatory 3-month waiting period for new arrivals. Apply immediately at ServiceOntario (ontario.ca).",
+        "Arrange private bridging health insurance for the first 3 months — essential for any medical event. A family plan costs roughly $200–$400/month.",
+        "Once OHIP activates, GP visits, specialist referrals, and hospital care are covered. Prescription drugs, dental, and vision are not covered by OHIP — arrange supplemental private insurance.",
+        "Major hospitals: Toronto General Hospital, SickKids (Hospital for Sick Children — one of the world's leading paediatric hospitals), and Mount Sinai Hospital — all world-class.",
+        "Finding a family doctor (GP) who is accepting new patients in Toronto can take months — use walk-in clinics for non-emergency care while searching for a GP."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 80,
+      "summary": "Toronto is a very safe city for families. Family residential areas in Etobicoke, North York, and Mississauga are broadly safe. A small number of downtown-adjacent areas require awareness.",
+      "items": [
+        "Violent crime in family residential areas (Etobicoke, North York, Mississauga, Oakville) is uncommon — Metro Toronto is broadly safe for everyday family life",
+        "Petty theft and car break-ins are the most common property crimes — do not leave valuables visible in parked vehicles; this applies especially in parkade lots",
+        "Some areas adjacent to downtown Toronto (parts of the east end and Jane-Finch corridor) have higher crime rates — not relevant to families based in the main expat neighbourhoods",
+        "Winter ice and snow require caution — black ice on footpaths and roads causes serious injuries; invest in proper winter boots and drive carefully on ice",
+        "Traffic on major arteries (Highway 401, Highway 400, Gardiner Expressway) is severe at rush hour — factor commute times carefully into neighbourhood and lifestyle decisions"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$3,100 / month",
+      "familyDinner": "~$75",
+      "nannyRate": "~$19 / hr"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Canada Express Entry and work permits official — canada.ca/IRCC",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Toronto Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Toronto",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Toronto Expats' on Google — largest English-speaking expat community for families in the GTA",
+        "searchQuery": "Toronto Expats Facebook group",
+        "url": "https://www.google.com/search?q=Toronto+Expats+Facebook+group",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Newcomers to Canada Toronto' on Google — practical support community for families new to Ontario",
+        "searchQuery": "Newcomers to Canada Toronto Facebook group",
+        "url": "https://www.google.com/search?q=Newcomers+to+Canada+Toronto+Facebook+group",
+        "isVerified": true
+      }
+    ]
   }
 ]

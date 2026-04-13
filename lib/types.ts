@@ -42,7 +42,11 @@ export interface Destination {
 
   /**
    * City-specific visa options. When absent, the page falls back to
-   * the shared country-level visa data from `data/countries.json`.
+   * the shared country-level visa data from `data/countries.json` (keyed by `countrySlug`).
+   *
+   * Scaling: put national immigration rules once under `countries.json` (e.g. `usa`, `france`)
+   * and omit `visa` on each city so every city in that country stays in sync. Override `visa`
+   * only when a city truly needs different options (rare).
    *
    * RULE: Every VisaOption must have `anchor`, `detailTitle`, and `details[]`.
    * New anchors must also be registered in `components/VisaPathSelector.tsx`.

@@ -98,5 +98,49 @@
         }
       ]
     }
+  },
+  "usa": {
+    "name": "United States",
+    "visa": {
+      "status": "verified",
+      "summary": "US immigration rules are federal — the same in every state and city. Short visits: travellers from VWP (Visa Waiver Program) countries must get ESTA (Electronic System for Travel Authorization — online permission to board a US flight) before travel. After you land, CBP (US Customs and Border Protection) admits you for a limited time — usually up to 90 days per trip under VWP — and records it on your I-94 (official admit-until date at i94.cbp.dhs.gov). B-2 (tourist visa) visitors are often given up to six months per trip on I-94, but the officer decides. None of these allow paid work for a US employer. To live and work long-term, you need an employer-backed petition filed with USCIS (US Citizenship and Immigration Services) and a visa such as H-1B, O-1, or L-1 — or, for many Canadian and Mexican professionals, TN under USMCA. There is no general US remote-work or digital-nomad visa.",
+      "tip": "Within a few days of every arrival, check i94.cbp.dhs.gov and note your admit-until date — that is when you must leave or change status (your passport visa stamp can show a later expiry). If you need H-1B subject to the annual cap, ask your employer for this year’s registration dates and typical October 1 start — timelines shift each year.",
+      "options": [
+        {
+          "type": "ESTA / B-1/B-2 Visitor Visa",
+          "anchor": "visa-tourist",
+          "detailTitle": "ESTA / B-2 — how long you can stay and what to do first",
+          "duration": "Usually up to 90 days per visit (ESTA/VWP); often up to 6 months per visit (B-2) — confirm on I-94",
+          "description": "ESTA: apply on esta.cbp.dhs.gov before you fly if your country is in the VWP — approval usually lasts two years, but each stay ends on the date CBP puts on your I-94 (often 90 days max per entry). B-2: apply at a US consulate if you are not VWP-eligible; how long you may stay each trip is set at the border on I-94 (often up to six months, not guaranteed). Tourism, family visits, and scouting only — not US payroll work.",
+          "details": [
+            "Step 1 — Before travel: complete ESTA (VWP nationals) or book a B-2 visa interview — consular wait times vary a lot by country.",
+            "Step 2 — After entry: download your I-94 from i94.cbp.dhs.gov — that admit-until date is your real leave-by deadline for this trip.",
+            "VWP/ESTA: plan for about 90 days per visit unless I-94 shows less — you usually cannot extend VWP from inside the US.",
+            "Paid work for a US employer is not allowed on tourist status; rules on other activities are strict — ask a US immigration attorney if you are unsure.",
+            "Good use for relocation planning: a short trip to view neighbourhoods, schools, and employers — then leave before I-94 expires, or get an appropriate work visa before moving (often applied from outside the US).",
+            "Overstaying past your I-94 date can mean long bars on returning — treat that date as firm."
+          ]
+        },
+        {
+          "type": "Employer-sponsored work visa (H-1B / O-1 / L-1 / TN)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Work visas — from offer to first paycheck",
+          "duration": "H-1B/O-1: often up to 3 years per approval, extendable; L-1: often 1–3 years initially; TN: often up to 3 years — see approval notice",
+          "description": "A US employer (or qualifying US entity) files with USCIS for H-1B, O-1, or L-1, or you may qualify for TN at a border or consulate if you are Canadian or Mexican in a listed profession. You start paid work only after your status allows it — there is no broad freelance or remote-nomad visa for the US.",
+          "details": [
+            "H-1B (specialty occupation — typically degree-level jobs): annual cap and often a lottery in March; many new cap hires target an October 1 start — confirm each year with your employer. Processing often takes roughly several months unless premium processing is used where available.",
+            "O-1 (extraordinary ability in certain fields): no H-1B cap; heavy documentation; initial approval often up to three years; timelines often a few months unless expedited.",
+            "L-1A / L-1B (intracompany transfer — executives, managers, or specialized knowledge staff from a foreign branch of the same company): no H-1B lottery; employer files a petition — often roughly 2–4 months processing; one year of prior employment abroad and corporate relationship rules apply.",
+            "TN (USMCA): for Canadian and Mexican citizens in specific professional roles under the treaty — often faster than H-1B for eligible people; duration commonly up to three years per approval; renewals possible — confirm your job title matches the treaty list with an attorney.",
+            "Dependents: spouses and children may receive H-4, O-3, L-2, or TD status — children can usually attend school; whether a spouse may work depends on category and current rules — verify with an attorney.",
+            "Typical order: signed offer → employer and counsel file → USCIS approval → visa stamp abroad if needed, or change of status if eligible → Social Security Number → payroll starts on or after your authorised employment date.",
+            "Changing employers usually requires a new or transferred petition — do not assume you can switch jobs without immigration steps."
+          ],
+          "officialLink": {
+            "label": "US work visa H-1B O-1 L-1 TN official uscis.gov"
+          }
+        }
+      ]
+    }
   }
 }
