@@ -64,7 +64,8 @@ export default function DestinationCard({ city }: Props) {
       >
         <div className="relative aspect-[3/4]">
 
-          {/* Image */}
+          {/* Image — native img + lazy; URLs from CITY_IMAGES (same sources as city heroes) */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={`${city.city}, ${city.country}`}

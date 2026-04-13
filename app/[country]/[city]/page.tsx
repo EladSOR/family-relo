@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import type { ReactNode } from "react";
 import {
   MapPin, Shield, Home, Utensils,
@@ -11,6 +10,7 @@ import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
 import type { Destination, Source, CountryData } from "@/lib/types";
 import { resolveCityHeroImage } from "@/lib/constants";
+import { getCityHeroImgAttrs } from "@/lib/heroImage";
 import { SearchHint } from "@/components/SearchHint";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
@@ -50,7 +50,7 @@ export default async function CityPage({ params }: Props) {
 
   if (!dest) notFound();
 
-  const image = resolveCityHeroImage(dest);
+  const heroImg = getCityHeroImgAttrs(resolveCityHeroImage(dest));
 
   // Visa data: city-specific first, then shared country-level fallback.
   const countries = countriesData as unknown as Record<string, CountryData>;
@@ -71,25 +71,35 @@ export default async function CityPage({ params }: Props) {
         { label: dest.city                                           },
       ]} />
 
-      {/* ── Hero image ───────────────────────────────────────────────────── */}
-      <div className="relative h-72 w-full overflow-hidden md:h-[420px]">
-        <img src={image} alt={dest.city} className="h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+      {/* ── Hero: capped width on huge monitors + taller band = less “postage stamp” crop */}
+      <div className="relative w-full bg-[#F5EFE8]">
+        <div className="relative mx-auto h-64 w-full max-w-[1920px] overflow-hidden sm:h-72 md:h-[clamp(26rem,min(44vh,38rem),38rem)]">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={heroImg.src}
+            srcSet={heroImg.srcSet}
+            sizes={heroImg.sizes}
+            alt={dest.city}
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
-        {/* Last reviewed badge */}
-        <div className="absolute right-6 top-6 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
-          Reviewed {dest.lastReviewed}
-        </div>
+          <div className="absolute right-6 top-6 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
+            Reviewed {dest.lastReviewed}
+          </div>
 
-        <div className="absolute bottom-0 left-0 p-5 md:p-8 lg:p-12">
-          <p className="mb-1 flex items-center gap-1.5 text-xs font-medium text-white/70 md:mb-1.5 md:text-sm">
-            <MapPin size={12} strokeWidth={2.5} />
-            {dest.country}
-          </p>
-          <h1 className="text-3xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
-            {dest.city}
-          </h1>
-          <p className="mt-1.5 text-sm text-white/80 md:mt-2 md:text-lg">{dest.tagline}</p>
+          <div className="absolute bottom-0 left-0 p-5 md:p-8 lg:p-12">
+            <p className="mb-1 flex items-center gap-1.5 text-xs font-medium text-white/70 md:mb-1.5 md:text-sm">
+              <MapPin size={12} strokeWidth={2.5} />
+              {dest.country}
+            </p>
+            <h1 className="text-3xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">
+              {dest.city}
+            </h1>
+            <p className="mt-1.5 text-sm text-white/80 md:mt-2 md:text-lg">{dest.tagline}</p>
+          </div>
         </div>
       </div>
 

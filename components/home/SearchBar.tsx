@@ -112,20 +112,23 @@ export default function SearchBar({ compact = false, inlineDropdowns = false }: 
     const params = new URLSearchParams(window.location.search);
     const hasUrlState = params.has("where") || params.has("family") || params.has("duration");
 
-    if (hasUrlState) {
-      const where = params.get("where");
-      if (where && WHERE_OPTIONS.some(o => o.value === where)) setDestination(where);
-      setGuests(parseFamily(params.get("family")));
-      const dur = params.get("duration");
-      if (dur && DURATION_OPTIONS.some(o => o.value === dur)) setDuration(dur);
-    } else {
-      const saved = loadSearch();
-      if (saved) {
-        if (WHERE_OPTIONS.some(o => o.value === saved.where)) setDestination(saved.where);
-        setGuests(parseFamily(saved.family));
-        if (DURATION_OPTIONS.some(o => o.value === saved.duration)) setDuration(saved.duration);
+    const apply = () => {
+      if (hasUrlState) {
+        const where = params.get("where");
+        if (where && WHERE_OPTIONS.some((o) => o.value === where)) setDestination(where);
+        setGuests(parseFamily(params.get("family")));
+        const dur = params.get("duration");
+        if (dur && DURATION_OPTIONS.some((o) => o.value === dur)) setDuration(dur);
+      } else {
+        const saved = loadSearch();
+        if (saved) {
+          if (WHERE_OPTIONS.some((o) => o.value === saved.where)) setDestination(saved.where);
+          setGuests(parseFamily(saved.family));
+          if (DURATION_OPTIONS.some((o) => o.value === saved.duration)) setDuration(saved.duration);
+        }
       }
-    }
+    };
+    queueMicrotask(apply);
   }, []);
 
   // Close all panels + clear search when clicking outside

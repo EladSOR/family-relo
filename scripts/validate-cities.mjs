@@ -112,7 +112,6 @@ try {
 let cityImageKeys = new Set();
 try {
   const src = readFileSync(constantsPath, "utf8");
-  const matches = [...src.matchAll(/"([^"]+)"\s*:/g)];
   // Only keep entries inside the CITY_IMAGES block
   const block = src.match(/CITY_IMAGES[^=]*=\s*\{([^}]+)\}/s)?.[1] ?? "";
   const blockKeys = [...block.matchAll(/"([^"]+)"\s*:/g)].map((m) => m[1]);
