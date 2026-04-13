@@ -1,7 +1,8 @@
 "use client";
 
 import { HelpCircle } from "lucide-react";
-import { useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { VISA_GLOSSARY } from "@/lib/visaGlossary";
 
 interface Props {
@@ -11,16 +12,21 @@ interface Props {
   tone?: "default" | "lightOnDark";
 }
 
+type PopupPos = { top: number; left: number; width: number };
+
 /**
  * Compact ⓘ control: hover (or focus) shows definition on fine pointers;
- * on touch-first devices, tap toggles a bubble. Mobile affordance: bordered button.
+ * on touch-first devices, tap toggles a bubble. Mobile uses fixed positioning
+ * so the panel never clips past the viewport edge.
  */
 export function TermHint({ termId, tone = "default" }: Props) {
   const def = VISA_GLOSSARY[termId];
-  const panelId = useId();
+  const panelId = useId().replace(/:/g, "");
   const rootRef = useRef<HTMLSpanElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const [tapOpen, setTapOpen] = useState(false);
   const [useHoverUi, setUseHoverUi] = useState(true);
+  const [popupPos, setPopupPos] = useState<PopupPos | null>(null);
 
   useEffect(() => {
     const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -30,28 +36,91 @@ export function TermHint({ termId, tone = "default" }: Props) {
     return () => mq.removeEventListener("change", sync);
   }, []);
 
+  const closeMobile = useCallback(() => {
+    setTapOpen(false);
+    setPopupPos(null);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (useHoverUi || !tapOpen || !buttonRef.current) return;
+
+    const updatePosition = () => {
+      const el = buttonRef.current;
+      if (!el) return;
+      const r = el.getBoundingClientRect();
+      const margin = 12;
+      const vw = window.innerWidth;
+      const maxPanel = 320;
+      const width = Math.min(maxPanel, vw - 2 * margin);
+      const centerX = r.left + r.width / 2;
+      let left = centerX - width / 2;
+      left = Math.max(margin, Math.min(left, vw - margin - width));
+      const top = r.bottom + 8;
+      setPopupPos({ top, left, width });
+    };
+
+    updatePosition();
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition, true);
+    return () => {
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition, true);
+    };
+  }, [tapOpen, useHoverUi]);
+
   useEffect(() => {
     if (useHoverUi || !tapOpen) return;
     const close = (e: PointerEvent) => {
-      if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
-        setTapOpen(false);
-      }
+      const t = e.target as Node;
+      if (rootRef.current?.contains(t)) return;
+      const portal = document.getElementById(`termhint-portal-${panelId}`);
+      if (portal?.contains(t)) return;
+      closeMobile();
     };
     document.addEventListener("pointerdown", close, true);
     return () => document.removeEventListener("pointerdown", close, true);
-  }, [tapOpen, useHoverUi]);
+  }, [tapOpen, useHoverUi, panelId, closeMobile]);
 
   if (!def) return null;
+
+  const mobilePanel =
+    !useHoverUi &&
+    tapOpen &&
+    popupPos &&
+    typeof document !== "undefined" &&
+    createPortal(
+      <div
+        id={`termhint-portal-${panelId}`}
+        role="tooltip"
+        className="pointer-events-auto fixed z-[200] rounded-lg border border-slate-200 bg-white p-3 text-left shadow-xl md:hidden"
+        style={{
+          top: popupPos.top,
+          left: popupPos.left,
+          width: popupPos.width,
+          maxHeight: "min(50vh, 22rem)",
+          overflowY: "auto",
+        }}
+      >
+        <span className="block text-xs font-semibold text-slate-900">{termId}</span>
+        <span className="mt-1 block text-xs leading-snug text-slate-600">{def}</span>
+      </div>,
+      document.body,
+    );
 
   return (
     <span ref={rootRef} className="group/hint relative inline-flex items-baseline">
       <button
+        ref={buttonRef}
         type="button"
         aria-label={`${termId}: ${def}`}
         aria-expanded={useHoverUi ? undefined : tapOpen}
-        aria-controls={useHoverUi ? undefined : `panel-${panelId}`}
+        aria-controls={useHoverUi ? undefined : `termhint-portal-${panelId}`}
         onClick={() => {
-          if (!useHoverUi) setTapOpen((v) => !v);
+          if (useHoverUi) return;
+          setTapOpen((v) => {
+            if (v) setPopupPos(null);
+            return !v;
+          });
         }}
         className={
           tone === "lightOnDark"
@@ -68,17 +137,7 @@ export function TermHint({ termId, tone = "default" }: Props) {
         <HelpCircle className="h-3 w-3" strokeWidth={2.2} aria-hidden />
       </button>
 
-      {/* Touch / coarse pointer: tap panel */}
-      {!useHoverUi && tapOpen && (
-        <span
-          id={`panel-${panelId}`}
-          role="tooltip"
-          className="absolute left-0 top-[calc(100%+6px)] z-50 w-[min(92vw,20rem)] rounded-lg border border-slate-200 bg-white p-3 text-left shadow-xl"
-        >
-          <span className="block text-xs font-semibold text-slate-900">{termId}</span>
-          <span className="mt-1 block text-xs leading-snug text-slate-600">{def}</span>
-        </span>
-      )}
+      {mobilePanel}
 
       {/* Fine pointer: hover / focus tooltip (hidden on touch-first layouts) */}
       {useHoverUi && (
