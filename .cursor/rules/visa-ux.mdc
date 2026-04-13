@@ -1,0 +1,30 @@
+---
+description: Visa section UX — short-stay bridge, Schengen, glossary hints
+globs: "**/VisaPathSelector.tsx,**/visaGlossary.ts,**/visaMergeOptions.ts,**/VisaRichText.tsx,**/TermHint.tsx,data/cities.json,data/countries.json"
+alwaysApply: false
+---
+
+# Visa section — system behaviour
+
+## Short stay before long stay
+
+- Every **Schengen short-stay** destination in the app (see `SCHENGEN_SHORT_STAY_COUNTRY_SLUGS` in `lib/visaMergeOptions.ts`) must expose a **Short stay / Schengen visit** path (`anchor: "visa-tourist"`) for families who only need to know how long they can visit **without** a national visa.
+- City or country JSON **may** omit that card: `VisaPathSelector` **prepends** a synthetic `visa-tourist` option when the country is in that set and no option already uses `visa-tourist`.
+- Non-Schengen countries (e.g. USA, UAE, Thailand) do **not** get the synthetic Schengen card; they rely on written options (ESTA, tourist visa, etc.).
+
+## Acronyms (EU, EEA, Schengen, PESEL, …)
+
+- Do **not** rely on long inline glossaries in JSON for common terms.
+- Add or reuse entries in `lib/visaGlossary.ts`. `VisaRichText` + `TermHint` attach a **?** control: hover/focus tooltip on fine pointers; **tap** on touch-first devices (helper line on mobile explains tapping).
+- Visa summary, tips, option titles/descriptions/detail bullets rendered through `VisaRichText` where the component is already wired.
+
+## Writing rules for new city/country visa copy
+
+1. Mention **who** short stay is for (visa-exempt / tourist entry) vs **who** needs a national visa or work route.
+2. State clearly that **each family member** needs a valid passport; children are not covered on a parent’s stay.
+3. Avoid promising exact days; use “typically”, “about 90 days in any 180-day period” for Schengen, and point users to official calculators via `SearchHint` / `officialLink.label`.
+4. Keep EU/EEA paths distinct from **employer-sponsored** or **DNV** paths — no gap where a US/Israeli family sees only EU then work visa.
+
+## UI
+
+- Path filter chips for **EU / EEA** and (where relevant) **Short-term visitor** include `TermHint` for key terms; use `tone="lightOnDark"` when the chip is selected (handled inside `VisaPathSelector`).

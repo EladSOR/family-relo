@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import {
   MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
@@ -14,6 +15,7 @@ import { SearchHint } from "@/components/SearchHint";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import VisaPathSelector from "@/components/VisaPathSelector";
+import { VisaRichText } from "@/components/VisaRichText";
 import { ChecklistItems } from "@/components/ChecklistItems";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -170,9 +172,20 @@ export default async function CityPage({ params }: Props) {
         >
           {visaData && (
             <>
-              <p className="mb-4 text-sm leading-relaxed text-slate-700">{visaData.summary}</p>
-              <VisaPathSelector options={visaData.options} />
-              {visaData.tip && <Tip text={visaData.tip} />}
+              <p className="mb-4 text-sm leading-relaxed text-slate-700">
+                <VisaRichText text={visaData.summary} />
+              </p>
+              <VisaPathSelector
+                options={visaData.options}
+                countrySlug={dest.countrySlug}
+                countryName={dest.country}
+                cityName={dest.city}
+              />
+              {visaData.tip && (
+                <Tip>
+                  <VisaRichText text={visaData.tip} />
+                </Tip>
+              )}
               {visaData.tipSearchQuery && <SearchHint query={visaData.tipSearchQuery} />}
             </>
           )}
@@ -186,7 +199,11 @@ export default async function CityPage({ params }: Props) {
           meta={reviewedLabel(dest.lastReviewed)}
         >
           <BulletList items={dest.residency.items} />
-          {dest.residency.tip && <Tip text={dest.residency.tip} />}
+          {dest.residency.tip && (
+            <Tip>
+              <VisaRichText text={dest.residency.tip} />
+            </Tip>
+          )}
         </Section>
 
         {/* ── Banking ───────────────────────────────────────────────────── */}
@@ -196,7 +213,11 @@ export default async function CityPage({ params }: Props) {
           icon={<CreditCard size={16} className="text-slate-500" />}
         >
           <BulletList items={dest.banking.items} />
-          {dest.banking.tip && <Tip text={dest.banking.tip} />}
+          {dest.banking.tip && (
+            <Tip>
+              <VisaRichText text={dest.banking.tip} />
+            </Tip>
+          )}
         </Section>
 
         {/* ── Housing ───────────────────────────────────────────────────── */}
@@ -296,7 +317,11 @@ export default async function CityPage({ params }: Props) {
             <DetailRow label="Language notes" value={dest.schools.languageNotes} />
           </div>
 
-          {dest.schools.tip && <Tip text={dest.schools.tip} />}
+          {dest.schools.tip && (
+            <Tip>
+              <VisaRichText text={dest.schools.tip} />
+            </Tip>
+          )}
 
           {dest.schools.options && dest.schools.options.length > 0 && (
             <div className="mt-5">
@@ -355,7 +380,11 @@ export default async function CityPage({ params }: Props) {
           sources={dest.sources.healthcare}
         >
           <BulletList items={dest.healthcare.items} />
-          {dest.healthcare.tip && <Tip text={dest.healthcare.tip} />}
+          {dest.healthcare.tip && (
+            <Tip>
+              <VisaRichText text={dest.healthcare.tip} />
+            </Tip>
+          )}
         </Section>
 
         {/* ── Safety ────────────────────────────────────────────────────── */}
@@ -534,10 +563,10 @@ function Section({
   );
 }
 
-function Tip({ text }: { text: string }) {
+function Tip({ children }: { children: ReactNode }) {
   return (
     <p className="mt-4 border-l-2 border-emerald-300 pl-3 text-xs leading-relaxed text-slate-500 md:border-emerald-200">
-      {text}
+      {children}
     </p>
   );
 }
