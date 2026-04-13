@@ -196,11 +196,17 @@ for (const city of cities) {
     }
   }
 
-  // 6. Image checks
+  // 6. Image checks — each city needs `CITY_IMAGES[city]` or `heroImage` (https URL)
   if (cityImageKeys.size > 0) {
-    if (!cityImageKeys.has(name)) {
-      issues.push(`Missing CITY_IMAGES entry in lib/constants.ts for city key "${name}"`);
-    } else if (cityImageUrls && cityImageUrls[name] === "") {
+    const heroOk =
+      typeof city.heroImage === "string" &&
+      city.heroImage.startsWith("https://") &&
+      city.heroImage.length > 12;
+    if (!cityImageKeys.has(name) && !heroOk) {
+      issues.push(
+        `Missing hero image: add CITY_IMAGES["${name}"] in lib/constants.ts or set "heroImage" on the city`,
+      );
+    } else if (cityImageKeys.has(name) && cityImageUrls && cityImageUrls[name] === "") {
       issues.push(`Empty image URL in lib/constants.ts for "${name}"`);
     }
   }

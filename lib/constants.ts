@@ -21,7 +21,17 @@ export const GUEST_ROWS: GuestRow[] = [
 ];
 
 // ── City images ───────────────────────────────────────────────────────────────
-// Hardcoded stable Unsplash photo IDs — no API key required.
+// Hardcoded stable Unsplash CDN URLs — no API key required.
+// Every city in `data/cities.json` must have a matching key here OR `heroImage` on the record.
+// When adding a city, pick a landmark photo on unsplash.com and copy the `images.unsplash.com/photo-…` URL.
+
+export function resolveCityHeroImage(input: {
+  city: string;
+  heroImage?: string;
+}): string {
+  if (input.heroImage) return input.heroImage;
+  return CITY_IMAGES[input.city] ?? FALLBACK_IMAGE;
+}
 
 export const CITY_IMAGES: Record<string, string> = {
   "Valencia":     "https://images.unsplash.com/photo-1754403392652-0edc305bce4b?w=900&q=80",
@@ -54,6 +64,17 @@ export const CITY_IMAGES: Record<string, string> = {
   "Cascais":      "https://images.unsplash.com/photo-1615672337780-6e19a28a5b39?w=900&q=80",
   "Munich":       "https://images.unsplash.com/photo-1741120026139-8ae0036ebe6d?w=900&q=80",
   "Thessaloniki": "https://images.unsplash.com/photo-1641758136107-6f1364766ccd?w=900&q=80",
+
+  "Paris":          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80",
+  "Nice":           "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=80",
+  "Warsaw":         "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=900&q=80",
+  "Krakow":         "https://images.unsplash.com/photo-1757954699070-465653b34697?w=900&q=80",
+  "New York City":  "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=900&q=80",
+  "Miami":          "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=900&q=80",
+  "Dallas":         "https://images.unsplash.com/photo-1621904878414-d4ca4756bd7e?w=900&q=80",
+  "San Jose":       "https://images.unsplash.com/photo-1699385600774-02aec33b3ff7?w=900&q=80",
+  "Vancouver":      "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=900&q=80",
+  "Toronto":        "https://images.unsplash.com/photo-1543962226-818f4301073f?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =

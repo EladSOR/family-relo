@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { MapPin, Shield } from "lucide-react";
 import type { Destination } from "@/lib/types";
-import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
+import { resolveCityHeroImage } from "@/lib/constants";
 
 interface Props {
   city: Destination;
@@ -28,7 +28,7 @@ export default function DestinationCard({ city }: Props) {
   const router  = useRouter();
 
   const href  = `/${city.countrySlug}/${city.citySlug}`;
-  const image = CITY_IMAGES[city.city] ?? FALLBACK_IMAGE;
+  const image = resolveCityHeroImage(city);
 
   // Close on outside tap (mobile)
   useEffect(() => {

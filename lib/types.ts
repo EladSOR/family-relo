@@ -22,6 +22,12 @@ export interface Destination {
   lastReviewed: string;
 
   /**
+   * Optional Unsplash (or other HTTPS) URL for card + city-page hero.
+   * When unset, `lib/constants.ts` → `CITY_IMAGES[city]` is used.
+   */
+  heroImage?: string;
+
+  /**
    * Ordered, concrete action steps a family should take to relocate here.
    * Written in plain language. Drives the "Action Checklist" UX.
    *

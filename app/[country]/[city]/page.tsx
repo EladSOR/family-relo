@@ -9,7 +9,7 @@ import {
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
 import type { Destination, Source, CountryData } from "@/lib/types";
-import { CITY_IMAGES, FALLBACK_IMAGE } from "@/lib/constants";
+import { resolveCityHeroImage } from "@/lib/constants";
 import { SearchHint } from "@/components/SearchHint";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
@@ -48,7 +48,7 @@ export default async function CityPage({ params }: Props) {
 
   if (!dest) notFound();
 
-  const image = CITY_IMAGES[dest.city] ?? FALLBACK_IMAGE;
+  const image = resolveCityHeroImage(dest);
 
   // Visa data: city-specific first, then shared country-level fallback.
   const countries = countriesData as unknown as Record<string, CountryData>;
