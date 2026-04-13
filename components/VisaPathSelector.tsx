@@ -81,9 +81,29 @@ const ANCHOR_PATH: Record<string, VisaPath> = {
 
 const VISA_ANCHORS = new Set(Object.keys(ANCHOR_PATH));
 
-function isRelevant(anchor: string | undefined, path: VisaPath): boolean {
+/** Short-stay entry cards that apply to EU/EEA passport holders when the destination has no `visa-eu` option (true for almost all non-EU countries). */
+const EU_PATH_FALLBACK_ANCHORS = new Set(["visa-tourist", "visa-arrival"]);
+
+function hasVisaEuOption(options: VisaOption[]): boolean {
+  return options.some((o) => o.anchor === "visa-eu");
+}
+
+function isRelevant(
+  anchor: string | undefined,
+  path: VisaPath,
+  options: VisaOption[],
+): boolean {
   if (path === "unsure" || !anchor) return true;
-  return ANCHOR_PATH[anchor] === path;
+  if (ANCHOR_PATH[anchor] === path) return true;
+  // Outside the EU/EEA, we do not ship a `visa-eu` card — EU visitors use the same visa-free / short-stay routes as other Western passport holders described on the tourist / arrival cards.
+  if (
+    path === "eu" &&
+    !hasVisaEuOption(options) &&
+    EU_PATH_FALLBACK_ANCHORS.has(anchor)
+  ) {
+    return true;
+  }
+  return false;
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -152,27 +172,34 @@ export default function VisaPathSelector({
         definition.
       </p>
 
-      {/* Path selector */}
-      <div className="mb-5 flex flex-wrap gap-2">
+      {/* Path selector — must NOT use <button> here: PathFilterLabel embeds TermHint, which renders <button> for the ? control (button-in-button is invalid HTML and breaks hydration). */}
+      <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Filter visa options by passport or situation">
         {PATH_IDS.map((id) => (
-          <button
+          <div
             key={id}
-            type="button"
+            tabIndex={0}
             onClick={() => setPath(id)}
-            className={`rounded-full px-4 py-2 text-xs font-semibold transition-colors md:px-3.5 md:py-1.5 ${
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                setPath(id);
+              }
+            }}
+            aria-current={path === id ? "true" : undefined}
+            className={`cursor-pointer rounded-full px-4 py-2 text-xs font-semibold outline-none transition-colors focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 md:px-3.5 md:py-1.5 ${
               path === id
                 ? "bg-slate-900 text-white"
                 : "border border-slate-200 text-slate-500 hover:border-slate-400 hover:text-slate-700"
             }`}
           >
             <PathFilterLabel id={id} countrySlug={countrySlug} active={path === id} />
-          </button>
+          </div>
         ))}
       </div>
 
       <div className="space-y-3">
         {mergedOptions.map((opt, i) => {
-          const relevant = isRelevant(opt.anchor, path);
+          const relevant = isRelevant(opt.anchor, path, mergedOptions);
 
           const inner = (
             <>
@@ -217,18 +244,10 @@ export default function VisaPathSelector({
             return (
               <div
                 key={key}
-                role="button"
-                tabIndex={0}
                 className={cls}
                 onClick={() => {
                   highlight(opt.anchor!);
                   history.pushState(null, "", `#${opt.anchor}`);
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    highlight(opt.anchor!);
-                    history.pushState(null, "", `#${opt.anchor}`);
-                  }
                 }}
               >
                 {inner}
@@ -249,7 +268,7 @@ export default function VisaPathSelector({
           {mergedOptions
             .filter((o) => o.anchor && (o.sections?.length || o.details?.length))
             .map((opt, i) => {
-              const relevant = isRelevant(opt.anchor, path);
+              const relevant = isRelevant(opt.anchor, path, mergedOptions);
               const highlighted = highlightId === opt.anchor;
               return (
                 <div

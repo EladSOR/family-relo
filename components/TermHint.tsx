@@ -115,7 +115,8 @@ export function TermHint({ termId, tone = "default" }: Props) {
         aria-label={`${termId}: ${def}`}
         aria-expanded={useHoverUi ? undefined : tapOpen}
         aria-controls={useHoverUi ? undefined : `termhint-portal-${panelId}`}
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           if (useHoverUi) return;
           setTapOpen((v) => {
             if (v) setPopupPos(null);

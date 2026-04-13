@@ -1,3 +1,5 @@
+"use client";
+
 import { Search } from "lucide-react";
 
 /**
@@ -23,6 +25,7 @@ export function SearchHint({ query }: { query: string }) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={(e) => e.stopPropagation()}
         className="inline-flex shrink-0 items-center gap-1 rounded-md bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-600 transition-colors hover:bg-blue-100"
       >
         <Search size={10} />
