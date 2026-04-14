@@ -6,8 +6,12 @@ export const SITE_DESCRIPTION =
 export const SITE_HOME_TITLE =
   "Family Relocation Guide: Visas, Schools & Childcare | Family Relocation Engine";
 
-/** Homepage social preview (`/public` asset). OG + Twitter + JSON-LD `WebSite.image`. */
-export const SITE_HOME_OG_IMAGE = "/og-home.png";
+/**
+ * Homepage social preview (`/public` asset). OG + Twitter + JSON-LD `WebSite.image`.
+ * `?v=` cache-busts Facebook/LinkedIn when you replace the file — otherwise platforms
+ * keep the old image (or a fallback scrapped from the page) for days.
+ */
+export const SITE_HOME_OG_IMAGE = "/og-home.png?v=2";
 
 /** Alt text for `SITE_HOME_OG_IMAGE` (accessibility + some crawlers). */
 export const SITE_HOME_OG_IMAGE_ALT =
