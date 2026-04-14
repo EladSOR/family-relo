@@ -20,6 +20,7 @@ Every new city entry must follow this structure exactly.
 id, citySlug, countrySlug, city, country, tagline, summary, lastReviewed
 → actionChecklist
 → familyFit
+→ weather       (always required — run scripts/generate_city_weather.py; adds sources.weather)
 → visa          (city-level object OR falls back to countries.json)
 → residency     (always required)
 → banking       (always required)
@@ -34,7 +35,16 @@ id, citySlug, countrySlug, city, country, tagline, summary, lastReviewed
 → faq           (always required — 8 Q&As; see `new-city-generation.mdc` RULE 9)
 ```
 
-**Note:** In `page.tsx`, FAQ renders between **Safety** and **Sources**; in JSON it lives **after** `communityLinks` (same pattern as Valencia).
+**Note:** In `page.tsx`, FAQ renders between **Safety** and **Sources**; in JSON it lives **after** `communityLinks` (same pattern as Valencia). The **`weather`** block may appear anywhere in the JSON object; the page renders it after **Family fit** (see `app/[country]/[city]/page.tsx`).
+
+### weather (climate normals)
+
+- **Do not hand-write** monthly rows. After adding a new city to `data/cities.json` with `city`, `countrySlug`, and `id`, run:
+
+  `python3 scripts/generate_city_weather.py`
+
+  The script fills `weather` (NASA POWER / MERRA-2 monthly climatologies) and `sources.weather` (methodology links). For tiny places that fail geocoding, add coordinates to `MANUAL_COORDS` in the script.
+- `weather.familyHighlights` is auto-generated for families (heat, cold, rain); review for city-specific tone if needed.
 
 ---
 

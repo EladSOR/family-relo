@@ -4,7 +4,7 @@ import {
   MapPin, Shield, Home, Utensils,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, Landmark, CreditCard, Users, ChevronDown, HelpCircle,
+  BookOpen, Landmark, CreditCard, Users, ChevronDown, HelpCircle, Cloud,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
@@ -17,6 +17,7 @@ import StickySearchHeader from "@/components/StickySearchHeader";
 import VisaPathSelector from "@/components/VisaPathSelector";
 import { VisaRichText } from "@/components/VisaRichText";
 import { ChecklistItems } from "@/components/ChecklistItems";
+import { CityWeather } from "@/components/CityWeather";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -171,6 +172,18 @@ export default async function CityPage({ params }: Props) {
             </div>
           </div>
         </Section>
+
+        {/* ── Climate (monthly normals) ─────────────────────────────────── */}
+        {dest.weather && (
+          <Section
+            id="weather"
+            title="Climate & seasons"
+            icon={<Cloud size={16} className="text-slate-500" />}
+            sources={dest.sources.weather}
+          >
+            <CityWeather data={dest.weather} />
+          </Section>
+        )}
 
         {/* ── Visa ──────────────────────────────────────────────────────── */}
         <Section

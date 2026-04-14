@@ -223,6 +223,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Valencia",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -286,7 +298,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Two things: how liveable it actually is at this price point — most families arrive expecting a second-tier city and immediately want to extend their stay. And the pace of bureaucracy — even routine registrations require appointments booked weeks in advance, so start the NIE process the day you arrive."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 39.474,
+      "gridLongitude": -0.38,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 20.0,
+          "lowC": -0.9,
+          "rainMm": 30.4,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 20.9,
+          "lowC": -0.4,
+          "rainMm": 24.9,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 25.6,
+          "lowC": 1.2,
+          "rainMm": 40.0,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 27.2,
+          "lowC": 4.5,
+          "rainMm": 41.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 31.3,
+          "lowC": 7.3,
+          "rainMm": 37.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 6,
+          "highC": 36.1,
+          "lowC": 12.3,
+          "rainMm": 20.7,
+          "rainDays": 2.0
+        },
+        {
+          "month": 7,
+          "highC": 38.5,
+          "lowC": 16.5,
+          "rainMm": 9.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 38.0,
+          "lowC": 16.4,
+          "rainMm": 18.0,
+          "rainDays": 2.0
+        },
+        {
+          "month": 9,
+          "highC": 34.0,
+          "lowC": 12.2,
+          "rainMm": 48.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 30.2,
+          "lowC": 7.3,
+          "rainMm": 44.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 24.1,
+          "lowC": 2.6,
+          "rainMm": 45.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 19.9,
+          "lowC": 0.5,
+          "rainMm": 32.9,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~38°C); coolest: Jan (mean daily low ~-1°C).",
+        "Most rainfall on average: Sep (~49 mm total); driest: Jul (~9 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug, Sep — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "lisbon-pt",
@@ -561,6 +674,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Lisbon",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -626,7 +751,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How long the AIMA residency appointment backlog is. Many families complete registration smoothly but then wait 3–6 months for their formal residency appointment. Start the process immediately upon arrival — do not wait until you feel settled."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 38.717,
+      "gridLongitude": -9.133,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 16.8,
+          "lowC": 7.3,
+          "rainMm": 64.8,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 17.0,
+          "lowC": 7.5,
+          "rainMm": 50.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 19.2,
+          "lowC": 8.2,
+          "rainMm": 60.1,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 21.1,
+          "lowC": 10.9,
+          "rainMm": 54.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 24.7,
+          "lowC": 12.4,
+          "rainMm": 30.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 6,
+          "highC": 26.3,
+          "lowC": 14.9,
+          "rainMm": 10.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 27.3,
+          "lowC": 16.4,
+          "rainMm": 3.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 27.3,
+          "lowC": 16.7,
+          "rainMm": 5.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 26.2,
+          "lowC": 16.1,
+          "rainMm": 25.2,
+          "rainDays": 2.0
+        },
+        {
+          "month": 10,
+          "highC": 24.0,
+          "lowC": 13.7,
+          "rainMm": 79.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 20.5,
+          "lowC": 10.3,
+          "rainMm": 92.1,
+          "rainDays": 8.0
+        },
+        {
+          "month": 12,
+          "highC": 17.5,
+          "lowC": 7.7,
+          "rainMm": 64.5,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~27°C); coolest: Jan (mean daily low ~7°C).",
+        "Most rainfall on average: Nov (~92 mm total); driest: Jul (~3 mm)."
+      ]
+    }
   },
   {
     "id": "dubai-ae",
@@ -917,6 +1140,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Dubai",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -960,7 +1195,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The school fees. Many families budget for housing and living costs but underestimate how quickly $15,000–$30,000/year per child adds up. Factor school fees into your total budget calculation before committing to the move."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 25.077,
+      "gridLongitude": 55.309,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 26.8,
+          "lowC": 15.3,
+          "rainMm": 17.1,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 29.2,
+          "lowC": 15.4,
+          "rainMm": 7.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 33.0,
+          "lowC": 17.1,
+          "rainMm": 15.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 4,
+          "highC": 36.1,
+          "lowC": 20.2,
+          "rainMm": 9.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 5,
+          "highC": 38.9,
+          "lowC": 23.9,
+          "rainMm": 4.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 6,
+          "highC": 41.3,
+          "lowC": 27.0,
+          "rainMm": 3.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 42.8,
+          "lowC": 29.1,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 42.5,
+          "lowC": 30.3,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 40.8,
+          "lowC": 28.4,
+          "rainMm": 2.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 10,
+          "highC": 37.3,
+          "lowC": 25.1,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 11,
+          "highC": 33.4,
+          "lowC": 21.1,
+          "rainMm": 8.1,
+          "rainDays": 1.0
+        },
+        {
+          "month": 12,
+          "highC": 28.8,
+          "lowC": 17.0,
+          "rainMm": 13.6,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~43°C); coolest: Jan (mean daily low ~15°C).",
+        "Most rainfall on average: Jan (~17 mm total); driest: Jul (~1 mm).",
+        "Mean daily highs reach about 32°C or more in Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible."
+      ]
+    }
   },
   {
     "id": "chiang-mai-th",
@@ -1231,6 +1566,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -1303,7 +1650,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How good the quality of life is at this price point. Most families arrive expecting to make compromises and quickly find the combination of low cost, warm weather, great food, and reliable private healthcare hard to match anywhere else at this budget."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 18.79,
+      "gridLongitude": 98.985,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 29.0,
+          "lowC": 9.8,
+          "rainMm": 15.2,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 32.8,
+          "lowC": 11.7,
+          "rainMm": 4.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 35.8,
+          "lowC": 13.7,
+          "rainMm": 22.9,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 37.8,
+          "lowC": 17.5,
+          "rainMm": 63.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 5,
+          "highC": 35.6,
+          "lowC": 19.3,
+          "rainMm": 188.8,
+          "rainDays": 16.0
+        },
+        {
+          "month": 6,
+          "highC": 32.6,
+          "lowC": 19.7,
+          "rainMm": 141.3,
+          "rainDays": 12.0
+        },
+        {
+          "month": 7,
+          "highC": 32.1,
+          "lowC": 19.5,
+          "rainMm": 177.9,
+          "rainDays": 15.0
+        },
+        {
+          "month": 8,
+          "highC": 30.5,
+          "lowC": 19.5,
+          "rainMm": 237.2,
+          "rainDays": 20.0
+        },
+        {
+          "month": 9,
+          "highC": 29.7,
+          "lowC": 19.1,
+          "rainMm": 221.7,
+          "rainDays": 18.0
+        },
+        {
+          "month": 10,
+          "highC": 28.9,
+          "lowC": 16.1,
+          "rainMm": 123.4,
+          "rainDays": 10.0
+        },
+        {
+          "month": 11,
+          "highC": 28.1,
+          "lowC": 12.5,
+          "rainMm": 36.6,
+          "rainDays": 3.0
+        },
+        {
+          "month": 12,
+          "highC": 27.4,
+          "lowC": 9.1,
+          "rainMm": 13.0,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~38°C); coolest: Dec (mean daily low ~9°C).",
+        "Most rainfall on average: Aug (~237 mm total); driest: Feb (~4 mm).",
+        "Mean daily highs reach about 32°C or more in Feb, Mar, Apr, May, Jun, Jul — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "koh-phangan-th",
@@ -1564,6 +2012,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -1607,7 +2067,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The isolation. The island's small size and community feel are real strengths, but families from major cities often underestimate how much they miss variety — restaurants, activities, specialist services, and easy access to healthcare. It's a trade-off, not a hidden problem, but it catches people off guard."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 9.745,
+      "gridLongitude": 100.025,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 28.2,
+          "lowC": 25.3,
+          "rainMm": 135.5,
+          "rainDays": 11.0
+        },
+        {
+          "month": 2,
+          "highC": 28.8,
+          "lowC": 25.5,
+          "rainMm": 38.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 30.3,
+          "lowC": 26.1,
+          "rainMm": 114.4,
+          "rainDays": 10.0
+        },
+        {
+          "month": 4,
+          "highC": 31.2,
+          "lowC": 27.3,
+          "rainMm": 90.3,
+          "rainDays": 8.0
+        },
+        {
+          "month": 5,
+          "highC": 31.2,
+          "lowC": 27.4,
+          "rainMm": 169.9,
+          "rainDays": 14.0
+        },
+        {
+          "month": 6,
+          "highC": 30.7,
+          "lowC": 26.9,
+          "rainMm": 167.1,
+          "rainDays": 14.0
+        },
+        {
+          "month": 7,
+          "highC": 30.1,
+          "lowC": 26.7,
+          "rainMm": 166.2,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 30.2,
+          "lowC": 26.5,
+          "rainMm": 144.2,
+          "rainDays": 12.0
+        },
+        {
+          "month": 9,
+          "highC": 29.8,
+          "lowC": 26.3,
+          "rainMm": 180.6,
+          "rainDays": 15.0
+        },
+        {
+          "month": 10,
+          "highC": 29.4,
+          "lowC": 26.2,
+          "rainMm": 245.8,
+          "rainDays": 20.0
+        },
+        {
+          "month": 11,
+          "highC": 29.2,
+          "lowC": 26.3,
+          "rainMm": 375.0,
+          "rainDays": 30.0
+        },
+        {
+          "month": 12,
+          "highC": 28.8,
+          "lowC": 25.5,
+          "rainMm": 261.6,
+          "rainDays": 22.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~31°C); coolest: Jan (mean daily low ~25°C).",
+        "Most rainfall on average: Nov (~375 mm total); driest: Feb (~38 mm).",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "koh-samui-th",
@@ -1876,6 +2435,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -1919,7 +2490,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How expensive it feels compared to Chiang Mai or the mainland. Samui's popularity with tourists has pushed housing costs up significantly — families expecting typical Thai prices are often caught off guard. Budget accordingly."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 9.547,
+      "gridLongitude": 100.062,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 28.2,
+          "lowC": 25.3,
+          "rainMm": 135.5,
+          "rainDays": 11.0
+        },
+        {
+          "month": 2,
+          "highC": 28.8,
+          "lowC": 25.5,
+          "rainMm": 38.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 30.3,
+          "lowC": 26.1,
+          "rainMm": 114.4,
+          "rainDays": 10.0
+        },
+        {
+          "month": 4,
+          "highC": 31.2,
+          "lowC": 27.3,
+          "rainMm": 90.3,
+          "rainDays": 8.0
+        },
+        {
+          "month": 5,
+          "highC": 31.2,
+          "lowC": 27.4,
+          "rainMm": 169.9,
+          "rainDays": 14.0
+        },
+        {
+          "month": 6,
+          "highC": 30.7,
+          "lowC": 26.9,
+          "rainMm": 167.1,
+          "rainDays": 14.0
+        },
+        {
+          "month": 7,
+          "highC": 30.1,
+          "lowC": 26.7,
+          "rainMm": 166.2,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 30.2,
+          "lowC": 26.5,
+          "rainMm": 144.2,
+          "rainDays": 12.0
+        },
+        {
+          "month": 9,
+          "highC": 29.8,
+          "lowC": 26.3,
+          "rainMm": 180.6,
+          "rainDays": 15.0
+        },
+        {
+          "month": 10,
+          "highC": 29.4,
+          "lowC": 26.2,
+          "rainMm": 245.8,
+          "rainDays": 20.0
+        },
+        {
+          "month": 11,
+          "highC": 29.2,
+          "lowC": 26.3,
+          "rainMm": 375.0,
+          "rainDays": 30.0
+        },
+        {
+          "month": 12,
+          "highC": 28.8,
+          "lowC": 25.5,
+          "rainMm": 261.6,
+          "rainDays": 22.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~31°C); coolest: Jan (mean daily low ~25°C).",
+        "Most rainfall on average: Nov (~375 mm total); driest: Feb (~38 mm).",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "barcelona-es",
@@ -2123,6 +2793,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Barcelona",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -2186,7 +2868,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Petty crime. Barcelona has among the highest pickpocket rates in Europe in tourist zones. Families are generally safe from serious crime, but bag-snatching and phone theft are very common near the Ramblas, in the Gothic Quarter, and on the metro. Stay alert in these areas."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 41.389,
+      "gridLongitude": 2.159,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 18.1,
+          "lowC": -0.7,
+          "rainMm": 34.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 19.1,
+          "lowC": -0.6,
+          "rainMm": 31.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 22.4,
+          "lowC": 0.6,
+          "rainMm": 43.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 24.4,
+          "lowC": 4.2,
+          "rainMm": 49.8,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 28.2,
+          "lowC": 7.3,
+          "rainMm": 49.3,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 32.6,
+          "lowC": 12.4,
+          "rainMm": 27.3,
+          "rainDays": 2.0
+        },
+        {
+          "month": 7,
+          "highC": 34.0,
+          "lowC": 15.8,
+          "rainMm": 27.9,
+          "rainDays": 2.0
+        },
+        {
+          "month": 8,
+          "highC": 34.3,
+          "lowC": 16.4,
+          "rainMm": 40.6,
+          "rainDays": 3.0
+        },
+        {
+          "month": 9,
+          "highC": 30.6,
+          "lowC": 11.7,
+          "rainMm": 59.1,
+          "rainDays": 5.0
+        },
+        {
+          "month": 10,
+          "highC": 27.3,
+          "lowC": 7.6,
+          "rainMm": 70.4,
+          "rainDays": 6.0
+        },
+        {
+          "month": 11,
+          "highC": 21.7,
+          "lowC": 2.3,
+          "rainMm": 54.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 18.1,
+          "lowC": 0.2,
+          "rainMm": 30.7,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~34°C); coolest: Jan (mean daily low ~-1°C).",
+        "Most rainfall on average: Oct (~70 mm total); driest: Jun (~27 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "madrid-es",
@@ -2389,6 +3171,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Madrid",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -2452,7 +3246,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How good the public school system is. Many families budget for international school and then discover that Madrid's bilingual state programme is genuinely strong. Research catchment areas before committing to a rental — school zone matters more than most families realise."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 40.416,
+      "gridLongitude": -3.703,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 14.9,
+          "lowC": -4.6,
+          "rainMm": 37.5,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 16.7,
+          "lowC": -4.4,
+          "rainMm": 38.4,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 21.0,
+          "lowC": -3.3,
+          "rainMm": 48.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 24.4,
+          "lowC": -0.7,
+          "rainMm": 52.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 30.1,
+          "lowC": 2.6,
+          "rainMm": 42.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 36.4,
+          "lowC": 7.4,
+          "rainMm": 21.6,
+          "rainDays": 2.0
+        },
+        {
+          "month": 7,
+          "highC": 38.0,
+          "lowC": 11.6,
+          "rainMm": 8.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 37.9,
+          "lowC": 11.4,
+          "rainMm": 13.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 33.4,
+          "lowC": 7.3,
+          "rainMm": 24.3,
+          "rainDays": 2.0
+        },
+        {
+          "month": 10,
+          "highC": 27.2,
+          "lowC": 2.5,
+          "rainMm": 65.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 20.0,
+          "lowC": -2.1,
+          "rainMm": 53.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 15.3,
+          "lowC": -3.8,
+          "rainMm": 40.3,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~38°C); coolest: Jan (mean daily low ~-5°C).",
+        "Most rainfall on average: Oct (~66 mm total); driest: Jul (~9 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug, Sep — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "porto-pt",
@@ -2708,6 +3603,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Porto",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -2772,7 +3679,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How fast Porto has changed. Families arrive expecting the 'affordable alternative to Lisbon' and find that the best neighbourhoods now command prices comparable to Lisbon just a few years ago. Budget with current numbers, not old guidebook figures."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 41.15,
+      "gridLongitude": -8.611,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 15.9,
+          "lowC": 4.0,
+          "rainMm": 137.6,
+          "rainDays": 11.0
+        },
+        {
+          "month": 2,
+          "highC": 16.9,
+          "lowC": 4.0,
+          "rainMm": 95.8,
+          "rainDays": 8.0
+        },
+        {
+          "month": 3,
+          "highC": 19.7,
+          "lowC": 5.1,
+          "rainMm": 111.6,
+          "rainDays": 9.0
+        },
+        {
+          "month": 4,
+          "highC": 22.7,
+          "lowC": 7.0,
+          "rainMm": 90.6,
+          "rainDays": 8.0
+        },
+        {
+          "month": 5,
+          "highC": 26.6,
+          "lowC": 9.1,
+          "rainMm": 60.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 29.9,
+          "lowC": 12.0,
+          "rainMm": 32.4,
+          "rainDays": 3.0
+        },
+        {
+          "month": 7,
+          "highC": 31.5,
+          "lowC": 13.4,
+          "rainMm": 12.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 31.4,
+          "lowC": 14.0,
+          "rainMm": 22.0,
+          "rainDays": 2.0
+        },
+        {
+          "month": 9,
+          "highC": 30.2,
+          "lowC": 12.7,
+          "rainMm": 49.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 25.9,
+          "lowC": 10.2,
+          "rainMm": 136.7,
+          "rainDays": 11.0
+        },
+        {
+          "month": 11,
+          "highC": 20.3,
+          "lowC": 6.7,
+          "rainMm": 137.4,
+          "rainDays": 11.0
+        },
+        {
+          "month": 12,
+          "highC": 16.7,
+          "lowC": 4.3,
+          "rainMm": 121.8,
+          "rainDays": 10.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~32°C); coolest: Jan (mean daily low ~4°C).",
+        "Most rainfall on average: Jan (~138 mm total); driest: Jul (~13 mm)."
+      ]
+    }
   },
   {
     "id": "berlin-de",
@@ -3012,6 +4017,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Berlin",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -3076,7 +4093,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The housing search. Most families underestimate how competitive and time-consuming it is. Arrive with a flexible short-stay option and expect 6–10 weeks of searching before securing a permanent flat. Do not book a one-way move without a housing contingency plan."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 52.524,
+      "gridLongitude": 13.411,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 8.1,
+          "lowC": -11.8,
+          "rainMm": 54.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 10.0,
+          "lowC": -9.0,
+          "rainMm": 38.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 16.5,
+          "lowC": -6.1,
+          "rainMm": 40.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 22.2,
+          "lowC": -2.0,
+          "rainMm": 28.5,
+          "rainDays": 2.0
+        },
+        {
+          "month": 5,
+          "highC": 27.4,
+          "lowC": 2.4,
+          "rainMm": 53.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 31.6,
+          "lowC": 7.2,
+          "rainMm": 56.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 7,
+          "highC": 33.4,
+          "lowC": 10.0,
+          "rainMm": 80.6,
+          "rainDays": 7.0
+        },
+        {
+          "month": 8,
+          "highC": 32.9,
+          "lowC": 9.5,
+          "rainMm": 58.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 28.0,
+          "lowC": 5.6,
+          "rainMm": 48.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 21.9,
+          "lowC": -0.2,
+          "rainMm": 48.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 14.8,
+          "lowC": -3.7,
+          "rainMm": 48.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 9.0,
+          "lowC": -7.3,
+          "rainMm": 48.1,
+          "rainDays": 4.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~33°C); coolest: Jan (mean daily low ~-12°C).",
+        "Most rainfall on average: Jul (~81 mm total); driest: Apr (~28 mm).",
+        "Mean daily highs reach about 32°C or more in Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "amsterdam-nl",
@@ -3309,6 +4426,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Amsterdam",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -3373,7 +4502,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The housing cost. Amsterdam is significantly more expensive than most families expect — even those arriving from other Western European cities. Rental prices and competition consistently exceed pre-arrival estimates. Build in extra financial runway."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 52.374,
+      "gridLongitude": 4.89,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 9.8,
+          "lowC": -4.3,
+          "rainMm": 75.0,
+          "rainDays": 6.0
+        },
+        {
+          "month": 2,
+          "highC": 10.1,
+          "lowC": -3.4,
+          "rainMm": 63.6,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 14.2,
+          "lowC": -2.0,
+          "rainMm": 52.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 19.1,
+          "lowC": 1.3,
+          "rainMm": 39.6,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 22.4,
+          "lowC": 4.7,
+          "rainMm": 57.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 25.9,
+          "lowC": 8.9,
+          "rainMm": 63.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 7,
+          "highC": 27.4,
+          "lowC": 11.6,
+          "rainMm": 80.9,
+          "rainDays": 7.0
+        },
+        {
+          "month": 8,
+          "highC": 26.9,
+          "lowC": 11.6,
+          "rainMm": 89.6,
+          "rainDays": 7.0
+        },
+        {
+          "month": 9,
+          "highC": 23.7,
+          "lowC": 8.8,
+          "rainMm": 69.6,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 19.3,
+          "lowC": 4.1,
+          "rainMm": 78.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 14.5,
+          "lowC": 0.7,
+          "rainMm": 75.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 12,
+          "highC": 10.8,
+          "lowC": -2.5,
+          "rainMm": 80.6,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~27°C); coolest: Jan (mean daily low ~-4°C).",
+        "Most rainfall on average: Aug (~90 mm total); driest: Apr (~40 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "prague-cz",
@@ -3609,6 +4837,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Prague",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -3673,7 +4913,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How liveable it is for the price. Most families arrive with expectations calibrated to London or Amsterdam and are consistently pleasantly surprised. Prague reliably punches above its weight for quality of life relative to what you spend."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 50.088,
+      "gridLongitude": 14.421,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 7.5,
+          "lowC": -13.4,
+          "rainMm": 41.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 10.0,
+          "lowC": -10.9,
+          "rainMm": 31.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 17.3,
+          "lowC": -7.3,
+          "rainMm": 39.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 22.6,
+          "lowC": -3.1,
+          "rainMm": 35.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 26.7,
+          "lowC": 1.7,
+          "rainMm": 69.1,
+          "rainDays": 6.0
+        },
+        {
+          "month": 6,
+          "highC": 31.0,
+          "lowC": 6.9,
+          "rainMm": 78.3,
+          "rainDays": 7.0
+        },
+        {
+          "month": 7,
+          "highC": 33.5,
+          "lowC": 8.9,
+          "rainMm": 79.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 8,
+          "highC": 32.4,
+          "lowC": 8.3,
+          "rainMm": 80.6,
+          "rainDays": 7.0
+        },
+        {
+          "month": 9,
+          "highC": 28.2,
+          "lowC": 3.4,
+          "rainMm": 52.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 22.6,
+          "lowC": -2.0,
+          "rainMm": 46.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 15.1,
+          "lowC": -4.8,
+          "rainMm": 42.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 8.0,
+          "lowC": -9.8,
+          "rainMm": 41.2,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~34°C); coolest: Jan (mean daily low ~-13°C).",
+        "Most rainfall on average: Aug (~81 mm total); driest: Feb (~32 mm).",
+        "Mean daily highs reach about 32°C or more in Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, May, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "budapest-hu",
@@ -3908,6 +5248,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Budapest",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -3972,7 +5324,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How enjoyable and affordable daily life is. Families arrive expecting to make European-level compromises and find they get genuine quality — restaurants, culture, safety, and housing — at a fraction of Western European prices. Most families end up staying longer than planned."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 47.498,
+      "gridLongitude": 19.04,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 9.3,
+          "lowC": -12.4,
+          "rainMm": 39.4,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 12.4,
+          "lowC": -9.9,
+          "rainMm": 40.0,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 18.6,
+          "lowC": -5.7,
+          "rainMm": 40.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 24.0,
+          "lowC": -1.3,
+          "rainMm": 34.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 28.3,
+          "lowC": 4.3,
+          "rainMm": 65.1,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 33.0,
+          "lowC": 9.0,
+          "rainMm": 70.2,
+          "rainDays": 6.0
+        },
+        {
+          "month": 7,
+          "highC": 35.6,
+          "lowC": 11.1,
+          "rainMm": 65.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 8,
+          "highC": 34.8,
+          "lowC": 10.8,
+          "rainMm": 62.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 29.6,
+          "lowC": 5.7,
+          "rainMm": 56.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 10,
+          "highC": 24.2,
+          "lowC": -1.4,
+          "rainMm": 50.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 17.3,
+          "lowC": -4.6,
+          "rainMm": 43.8,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 10.1,
+          "lowC": -10.0,
+          "rainMm": 43.1,
+          "rainDays": 4.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~36°C); coolest: Jan (mean daily low ~-12°C).",
+        "Most rainfall on average: Jun (~70 mm total); driest: Apr (~35 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "bangkok-th",
@@ -4222,6 +5675,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Bangkok",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -4287,7 +5752,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Traffic and commute times. Bangkok's rush-hour congestion is among the worst in the world. Families who don't plan their neighbourhood around school proximity often spend 45–90 minutes each way on school runs. Proximity to your child's school is the single most important factor when choosing where to live."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 13.754,
+      "gridLongitude": 100.501,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 36.1,
+          "lowC": 15.8,
+          "rainMm": 16.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 38.5,
+          "lowC": 19.1,
+          "rainMm": 13.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 40.1,
+          "lowC": 21.3,
+          "rainMm": 47.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 40.6,
+          "lowC": 23.8,
+          "rainMm": 75.3,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 38.0,
+          "lowC": 24.5,
+          "rainMm": 163.7,
+          "rainDays": 14.0
+        },
+        {
+          "month": 6,
+          "highC": 35.2,
+          "lowC": 23.8,
+          "rainMm": 165.0,
+          "rainDays": 14.0
+        },
+        {
+          "month": 7,
+          "highC": 34.3,
+          "lowC": 23.3,
+          "rainMm": 168.6,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 34.0,
+          "lowC": 23.1,
+          "rainMm": 181.3,
+          "rainDays": 15.0
+        },
+        {
+          "month": 9,
+          "highC": 32.9,
+          "lowC": 22.9,
+          "rainMm": 278.1,
+          "rainDays": 23.0
+        },
+        {
+          "month": 10,
+          "highC": 32.3,
+          "lowC": 20.9,
+          "rainMm": 203.0,
+          "rainDays": 17.0
+        },
+        {
+          "month": 11,
+          "highC": 32.8,
+          "lowC": 17.8,
+          "rainMm": 38.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 12,
+          "highC": 33.8,
+          "lowC": 15.2,
+          "rainMm": 9.6,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~41°C); coolest: Dec (mean daily low ~15°C).",
+        "Most rainfall on average: Sep (~278 mm total); driest: Dec (~10 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "phuket-th",
@@ -4529,6 +6095,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Phuket",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "residency": {
@@ -4594,7 +6172,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How concentrated expat family life is in the north. If you rent outside the Bangtao–Laguna corridor, expect significant daily driving to reach schools, hospitals, and family-friendly activities. Most experienced expat families cluster in that corridor for practical reasons."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 7.891,
+      "gridLongitude": 98.398,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 29.0,
+          "lowC": 24.7,
+          "rainMm": 80.3,
+          "rainDays": 7.0
+        },
+        {
+          "month": 2,
+          "highC": 30.2,
+          "lowC": 25.1,
+          "rainMm": 26.6,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 31.1,
+          "lowC": 25.9,
+          "rainMm": 111.9,
+          "rainDays": 9.0
+        },
+        {
+          "month": 4,
+          "highC": 31.3,
+          "lowC": 26.8,
+          "rainMm": 144.9,
+          "rainDays": 12.0
+        },
+        {
+          "month": 5,
+          "highC": 30.5,
+          "lowC": 26.9,
+          "rainMm": 265.1,
+          "rainDays": 22.0
+        },
+        {
+          "month": 6,
+          "highC": 29.7,
+          "lowC": 26.5,
+          "rainMm": 281.1,
+          "rainDays": 23.0
+        },
+        {
+          "month": 7,
+          "highC": 29.2,
+          "lowC": 26.3,
+          "rainMm": 263.5,
+          "rainDays": 22.0
+        },
+        {
+          "month": 8,
+          "highC": 29.2,
+          "lowC": 26.1,
+          "rainMm": 309.7,
+          "rainDays": 26.0
+        },
+        {
+          "month": 9,
+          "highC": 29.1,
+          "lowC": 25.8,
+          "rainMm": 351.6,
+          "rainDays": 29.0
+        },
+        {
+          "month": 10,
+          "highC": 29.1,
+          "lowC": 25.7,
+          "rainMm": 336.0,
+          "rainDays": 28.0
+        },
+        {
+          "month": 11,
+          "highC": 29.3,
+          "lowC": 25.7,
+          "rainMm": 218.7,
+          "rainDays": 18.0
+        },
+        {
+          "month": 12,
+          "highC": 29.1,
+          "lowC": 24.8,
+          "rainMm": 136.7,
+          "rainDays": 11.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~31°C); coolest: Jan (mean daily low ~25°C).",
+        "Most rainfall on average: Sep (~352 mm total); driest: Feb (~27 mm).",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "athens-gr",
@@ -4869,6 +6546,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Athens",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -4912,7 +6601,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The driving culture. Athens traffic and driving habits are chaotic by Northern European standards. It takes a few weeks to adjust, and families with young children often find the road environment more stressful than they expected when researching the move."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 37.984,
+      "gridLongitude": 23.728,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 16.8,
+          "lowC": 1.9,
+          "rainMm": 66.0,
+          "rainDays": 6.0
+        },
+        {
+          "month": 2,
+          "highC": 17.8,
+          "lowC": 2.5,
+          "rainMm": 57.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 21.0,
+          "lowC": 4.4,
+          "rainMm": 52.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 24.9,
+          "lowC": 7.3,
+          "rainMm": 30.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 31.2,
+          "lowC": 11.8,
+          "rainMm": 20.8,
+          "rainDays": 2.0
+        },
+        {
+          "month": 6,
+          "highC": 36.6,
+          "lowC": 16.2,
+          "rainMm": 19.5,
+          "rainDays": 2.0
+        },
+        {
+          "month": 7,
+          "highC": 38.3,
+          "lowC": 20.1,
+          "rainMm": 11.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 37.0,
+          "lowC": 20.6,
+          "rainMm": 8.1,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 34.4,
+          "lowC": 16.5,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 10,
+          "highC": 28.5,
+          "lowC": 11.5,
+          "rainMm": 49.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 23.1,
+          "lowC": 7.5,
+          "rainMm": 69.3,
+          "rainDays": 6.0
+        },
+        {
+          "month": 12,
+          "highC": 18.8,
+          "lowC": 3.7,
+          "rainMm": 86.2,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~38°C); coolest: Jan (mean daily low ~2°C).",
+        "Most rainfall on average: Dec (~86 mm total); driest: Aug (~8 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug, Sep — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "malaga-es",
@@ -5131,6 +6921,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Malaga",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -5174,7 +6976,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How spread out the Costa del Sol is. Families who envision a tight expat hub often find the community is fragmented across Malaga, Marbella, Estepona, and Mijas. Without a car, access to the people and places that suit your family best is limited."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 36.72,
+      "gridLongitude": -4.42,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 17.9,
+          "lowC": 7.7,
+          "rainMm": 56.1,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 18.2,
+          "lowC": 8.1,
+          "rainMm": 56.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 20.3,
+          "lowC": 9.1,
+          "rainMm": 68.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 4,
+          "highC": 21.4,
+          "lowC": 11.0,
+          "rainMm": 51.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 24.8,
+          "lowC": 12.9,
+          "rainMm": 23.9,
+          "rainDays": 2.0
+        },
+        {
+          "month": 6,
+          "highC": 28.1,
+          "lowC": 16.2,
+          "rainMm": 2.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 30.6,
+          "lowC": 19.2,
+          "rainMm": 0.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 31.3,
+          "lowC": 20.4,
+          "rainMm": 3.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 28.2,
+          "lowC": 18.2,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 10,
+          "highC": 25.3,
+          "lowC": 14.6,
+          "rainMm": 60.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 21.2,
+          "lowC": 10.5,
+          "rainMm": 82.2,
+          "rainDays": 7.0
+        },
+        {
+          "month": 12,
+          "highC": 18.5,
+          "lowC": 9.2,
+          "rainMm": 71.0,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~31°C); coolest: Jan (mean daily low ~8°C).",
+        "Most rainfall on average: Nov (~82 mm total); driest: Jul (~1 mm)."
+      ]
+    }
   },
   {
     "id": "abu-dhabi-ae",
@@ -5464,6 +7364,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Abu-Dhabi",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -5513,7 +7425,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Document attestation requirements. Families consistently underestimate how much official paperwork needs to be apostilled (an official government certification that authenticates a document for use in another country) or authenticated before it's valid in the UAE. Get documents attested in your home country before you leave."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 24.451,
+      "gridLongitude": 54.397,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 26.4,
+          "lowC": 15.8,
+          "rainMm": 11.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 29.2,
+          "lowC": 15.8,
+          "rainMm": 5.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 33.0,
+          "lowC": 17.6,
+          "rainMm": 13.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 4,
+          "highC": 36.2,
+          "lowC": 20.8,
+          "rainMm": 5.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 5,
+          "highC": 39.1,
+          "lowC": 24.7,
+          "rainMm": 2.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 6,
+          "highC": 40.5,
+          "lowC": 27.7,
+          "rainMm": 3.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 42.0,
+          "lowC": 29.4,
+          "rainMm": 0.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 41.8,
+          "lowC": 30.8,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 40.0,
+          "lowC": 28.9,
+          "rainMm": 4.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 10,
+          "highC": 36.6,
+          "lowC": 25.8,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 11,
+          "highC": 32.9,
+          "lowC": 21.4,
+          "rainMm": 5.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 12,
+          "highC": 28.2,
+          "lowC": 17.4,
+          "rainMm": 9.3,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~42°C); coolest: Jan (mean daily low ~16°C).",
+        "Most rainfall on average: Mar (~13 mm total); driest: Jul (~1 mm).",
+        "Mean daily highs reach about 32°C or more in Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible."
+      ]
+    }
   },
   {
     "id": "sydney-au",
@@ -5779,6 +7791,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Sydney",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -5822,7 +7846,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The cost hits harder than expected in practice — particularly childcare at $150–$250/day per child, and how quickly dining out adds up. Families also underestimate how long it takes to find housing in a good school zone at a price they're comfortable with. Give yourself more financial runway than you think you need."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": -33.868,
+      "gridLongitude": 151.207,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 34.2,
+          "lowC": 17.9,
+          "rainMm": 83.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 2,
+          "highC": 31.2,
+          "lowC": 18.3,
+          "rainMm": 133.0,
+          "rainDays": 11.0
+        },
+        {
+          "month": 3,
+          "highC": 29.4,
+          "lowC": 16.8,
+          "rainMm": 104.5,
+          "rainDays": 9.0
+        },
+        {
+          "month": 4,
+          "highC": 26.8,
+          "lowC": 14.4,
+          "rainMm": 73.2,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 23.4,
+          "lowC": 11.5,
+          "rainMm": 53.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 19.9,
+          "lowC": 9.6,
+          "rainMm": 86.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 7,
+          "highC": 20.2,
+          "lowC": 8.6,
+          "rainMm": 44.3,
+          "rainDays": 4.0
+        },
+        {
+          "month": 8,
+          "highC": 21.8,
+          "lowC": 8.9,
+          "rainMm": 46.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 9,
+          "highC": 25.8,
+          "lowC": 10.7,
+          "rainMm": 42.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 28.7,
+          "lowC": 12.4,
+          "rainMm": 64.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 30.8,
+          "lowC": 13.8,
+          "rainMm": 82.8,
+          "rainDays": 7.0
+        },
+        {
+          "month": 12,
+          "highC": 32.1,
+          "lowC": 15.9,
+          "rainMm": 71.9,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jan (mean daily high ~34°C); coolest: Jul (mean daily low ~9°C).",
+        "Most rainfall on average: Feb (~133 mm total); driest: Sep (~43 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children."
+      ]
+    }
   },
   {
     "id": "tel-aviv-il",
@@ -6086,6 +8209,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Tel-Aviv",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -6129,7 +8264,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The combined weight of living costs. Even families prepared for high prices are often surprised by how quickly rent, groceries, childcare, and dining out add up together. Tel Aviv's quality of life is genuinely high, but it demands a correspondingly high income to maintain comfortably."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 32.081,
+      "gridLongitude": 34.781,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 22.0,
+          "lowC": 3.3,
+          "rainMm": 87.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 2,
+          "highC": 25.2,
+          "lowC": 4.1,
+          "rainMm": 61.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 29.1,
+          "lowC": 6.0,
+          "rainMm": 36.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 33.8,
+          "lowC": 8.5,
+          "rainMm": 20.7,
+          "rainDays": 2.0
+        },
+        {
+          "month": 5,
+          "highC": 37.5,
+          "lowC": 12.1,
+          "rainMm": 5.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 6,
+          "highC": 38.0,
+          "lowC": 16.2,
+          "rainMm": 0.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 37.8,
+          "lowC": 19.4,
+          "rainMm": 0.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 37.5,
+          "lowC": 20.5,
+          "rainMm": 0.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 37.3,
+          "lowC": 18.6,
+          "rainMm": 1.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 10,
+          "highC": 35.8,
+          "lowC": 14.9,
+          "rainMm": 14.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 11,
+          "highC": 30.0,
+          "lowC": 8.8,
+          "rainMm": 45.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 24.6,
+          "lowC": 5.2,
+          "rainMm": 83.1,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jun (mean daily high ~38°C); coolest: Jan (mean daily low ~3°C).",
+        "Most rainfall on average: Jan (~88 mm total); driest: Aug (~0 mm).",
+        "Mean daily highs reach about 32°C or more in Apr, May, Jun, Jul, Aug, Sep, Oct — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible."
+      ]
+    }
   },
   {
     "id": "melbourne-au",
@@ -6399,6 +8634,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Melbourne",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -6442,7 +8689,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The weather. Melbourne's famous variability — four seasons in one day is not an exaggeration — consistently catches families from warmer climates off guard. It doesn't diminish the quality of life, but pack layers and don't assume Sydney-style weather."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": -37.814,
+      "gridLongitude": 144.963,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 37.6,
+          "lowC": 11.5,
+          "rainMm": 44.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 35.2,
+          "lowC": 11.6,
+          "rainMm": 49.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 32.4,
+          "lowC": 10.8,
+          "rainMm": 45.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 27.2,
+          "lowC": 8.3,
+          "rainMm": 60.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 5,
+          "highC": 21.5,
+          "lowC": 6.1,
+          "rainMm": 60.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 17.1,
+          "lowC": 4.1,
+          "rainMm": 64.5,
+          "rainDays": 5.0
+        },
+        {
+          "month": 7,
+          "highC": 15.9,
+          "lowC": 3.1,
+          "rainMm": 63.5,
+          "rainDays": 5.0
+        },
+        {
+          "month": 8,
+          "highC": 17.5,
+          "lowC": 3.8,
+          "rainMm": 69.8,
+          "rainDays": 6.0
+        },
+        {
+          "month": 9,
+          "highC": 21.8,
+          "lowC": 4.7,
+          "rainMm": 61.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 10,
+          "highC": 26.6,
+          "lowC": 6.2,
+          "rainMm": 61.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 31.8,
+          "lowC": 7.9,
+          "rainMm": 73.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 12,
+          "highC": 34.7,
+          "lowC": 9.9,
+          "rainMm": 60.1,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jan (mean daily high ~38°C); coolest: Jul (mean daily low ~3°C).",
+        "Most rainfall on average: Nov (~74 mm total); driest: Jan (~45 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Feb, Mar, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible."
+      ]
+    }
   },
   {
     "id": "brisbane-au",
@@ -6710,6 +9057,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Brisbane",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -6753,7 +9112,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How quickly the lifestyle wins people over. Brisbane gets overshadowed by Sydney and Melbourne in international coverage, but families who arrive consistently report it as one of their best decisions — lower stress, better weather, genuine outdoor access, and a city that has been rapidly improving its infrastructure."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": -27.468,
+      "gridLongitude": 153.028,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 33.9,
+          "lowC": 20.3,
+          "rainMm": 139.8,
+          "rainDays": 12.0
+        },
+        {
+          "month": 2,
+          "highC": 33.0,
+          "lowC": 20.3,
+          "rainMm": 154.6,
+          "rainDays": 13.0
+        },
+        {
+          "month": 3,
+          "highC": 31.4,
+          "lowC": 18.1,
+          "rainMm": 136.1,
+          "rainDays": 11.0
+        },
+        {
+          "month": 4,
+          "highC": 28.4,
+          "lowC": 15.2,
+          "rainMm": 83.1,
+          "rainDays": 7.0
+        },
+        {
+          "month": 5,
+          "highC": 26.3,
+          "lowC": 10.7,
+          "rainMm": 72.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 6,
+          "highC": 23.8,
+          "lowC": 8.5,
+          "rainMm": 88.2,
+          "rainDays": 7.0
+        },
+        {
+          "month": 7,
+          "highC": 23.5,
+          "lowC": 7.9,
+          "rainMm": 38.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 8,
+          "highC": 25.6,
+          "lowC": 8.8,
+          "rainMm": 44.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 9,
+          "highC": 28.6,
+          "lowC": 11.4,
+          "rainMm": 37.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 10,
+          "highC": 31.5,
+          "lowC": 13.5,
+          "rainMm": 81.2,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 32.1,
+          "lowC": 16.3,
+          "rainMm": 92.4,
+          "rainDays": 8.0
+        },
+        {
+          "month": 12,
+          "highC": 33.8,
+          "lowC": 18.2,
+          "rainMm": 130.2,
+          "rainDays": 11.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jan (mean daily high ~34°C); coolest: Jul (mean daily low ~8°C).",
+        "Most rainfall on average: Feb (~155 mm total); driest: Sep (~38 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Feb, Nov, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "auckland-nz",
@@ -7017,6 +9476,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Auckland",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -7060,7 +9531,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Commute times. Auckland looks compact on a map but peak-hour travel — especially to and from the North Shore across the harbour bridge — can be surprisingly long. Choose your suburb with school proximity and commute in mind, not just rental price."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": -36.849,
+      "gridLongitude": 174.763,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 26.0,
+          "lowC": 13.8,
+          "rainMm": 58.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 26.1,
+          "lowC": 14.4,
+          "rainMm": 63.6,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 24.9,
+          "lowC": 13.0,
+          "rainMm": 71.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 4,
+          "highC": 22.8,
+          "lowC": 10.6,
+          "rainMm": 83.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 5,
+          "highC": 20.1,
+          "lowC": 8.0,
+          "rainMm": 118.1,
+          "rainDays": 10.0
+        },
+        {
+          "month": 6,
+          "highC": 17.8,
+          "lowC": 6.6,
+          "rainMm": 105.9,
+          "rainDays": 9.0
+        },
+        {
+          "month": 7,
+          "highC": 16.2,
+          "lowC": 5.2,
+          "rainMm": 115.0,
+          "rainDays": 10.0
+        },
+        {
+          "month": 8,
+          "highC": 16.8,
+          "lowC": 5.7,
+          "rainMm": 99.8,
+          "rainDays": 8.0
+        },
+        {
+          "month": 9,
+          "highC": 18.4,
+          "lowC": 6.9,
+          "rainMm": 85.5,
+          "rainDays": 7.0
+        },
+        {
+          "month": 10,
+          "highC": 20.0,
+          "lowC": 8.1,
+          "rainMm": 79.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 22.5,
+          "lowC": 10.1,
+          "rainMm": 52.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 24.3,
+          "lowC": 12.0,
+          "rainMm": 80.6,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Feb (mean daily high ~26°C); coolest: Jul (mean daily low ~5°C).",
+        "Most rainfall on average: May (~118 mm total); driest: Nov (~52 mm)."
+      ]
+    }
   },
   {
     "id": "wellington-nz",
@@ -7318,6 +9887,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Wellington",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -7361,7 +9942,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The wind. Wellington is consistently and genuinely very windy — it's not a figure of speech. Families from calm climates find the daily wind disruptive, particularly for young children outdoors. It's a quirk rather than a deal-breaker, but it comes up in every newcomer conversation."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": -41.287,
+      "gridLongitude": 174.776,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 22.8,
+          "lowC": 11.5,
+          "rainMm": 51.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 22.5,
+          "lowC": 12.0,
+          "rainMm": 57.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 21.1,
+          "lowC": 11.4,
+          "rainMm": 58.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 19.1,
+          "lowC": 9.7,
+          "rainMm": 69.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 17.1,
+          "lowC": 7.9,
+          "rainMm": 79.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 6,
+          "highC": 15.0,
+          "lowC": 6.9,
+          "rainMm": 92.1,
+          "rainDays": 8.0
+        },
+        {
+          "month": 7,
+          "highC": 13.7,
+          "lowC": 6.3,
+          "rainMm": 85.9,
+          "rainDays": 7.0
+        },
+        {
+          "month": 8,
+          "highC": 14.0,
+          "lowC": 6.2,
+          "rainMm": 81.8,
+          "rainDays": 7.0
+        },
+        {
+          "month": 9,
+          "highC": 15.2,
+          "lowC": 6.5,
+          "rainMm": 69.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 16.5,
+          "lowC": 7.2,
+          "rainMm": 77.2,
+          "rainDays": 6.0
+        },
+        {
+          "month": 11,
+          "highC": 18.6,
+          "lowC": 8.6,
+          "rainMm": 63.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 12,
+          "highC": 20.5,
+          "lowC": 10.3,
+          "rainMm": 68.5,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jan (mean daily high ~23°C); coolest: Aug (mean daily low ~6°C).",
+        "Most rainfall on average: Jun (~92 mm total); driest: Jan (~52 mm)."
+      ]
+    }
   },
   {
     "id": "milan-it",
@@ -7627,6 +10306,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Milan",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -7670,7 +10361,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The housing documentation requirements. Italian landlords often ask for things that are impossible to have as a new arrival — a Codice Fiscale, Italian bank account, and sometimes a guarantor. Arriving with a serviced apartment booked for the first 4–8 weeks while you gather documents is near-essential."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 45.464,
+      "gridLongitude": 9.19,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 12.9,
+          "lowC": -4.4,
+          "rainMm": 47.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 14.9,
+          "lowC": -3.5,
+          "rainMm": 61.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 20.6,
+          "lowC": -1.8,
+          "rainMm": 64.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 23.8,
+          "lowC": 2.6,
+          "rainMm": 86.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 5,
+          "highC": 27.4,
+          "lowC": 7.3,
+          "rainMm": 106.3,
+          "rainDays": 9.0
+        },
+        {
+          "month": 6,
+          "highC": 31.4,
+          "lowC": 11.5,
+          "rainMm": 81.0,
+          "rainDays": 7.0
+        },
+        {
+          "month": 7,
+          "highC": 32.9,
+          "lowC": 14.1,
+          "rainMm": 68.2,
+          "rainDays": 6.0
+        },
+        {
+          "month": 8,
+          "highC": 32.8,
+          "lowC": 13.8,
+          "rainMm": 88.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 9,
+          "highC": 29.0,
+          "lowC": 9.3,
+          "rainMm": 80.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 10,
+          "highC": 24.0,
+          "lowC": 4.8,
+          "rainMm": 95.2,
+          "rainDays": 8.0
+        },
+        {
+          "month": 11,
+          "highC": 18.3,
+          "lowC": -0.4,
+          "rainMm": 136.8,
+          "rainDays": 11.0
+        },
+        {
+          "month": 12,
+          "highC": 12.6,
+          "lowC": -3.8,
+          "rainMm": 68.5,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~33°C); coolest: Jan (mean daily low ~-4°C).",
+        "Most rainfall on average: Nov (~137 mm total); driest: Jan (~47 mm).",
+        "Mean daily highs reach about 32°C or more in Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "florence-it",
@@ -7931,6 +10722,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Florence",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -7974,7 +10777,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Tourist overwhelm in the historic centre. Florence's old town is intensely crowded year-round. Families who rent inside the ZTL find daily life more pleasant than expected; those who assumed the whole city would feel liveable are often surprised. Most long-term expat families rent outside the historic centre."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 43.779,
+      "gridLongitude": 11.246,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 11.6,
+          "lowC": -6.2,
+          "rainMm": 54.6,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 12.7,
+          "lowC": -5.5,
+          "rainMm": 65.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 17.8,
+          "lowC": -3.7,
+          "rainMm": 62.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 21.8,
+          "lowC": -0.2,
+          "rainMm": 56.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 5,
+          "highC": 26.5,
+          "lowC": 4.4,
+          "rainMm": 62.6,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 32.5,
+          "lowC": 8.9,
+          "rainMm": 44.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 7,
+          "highC": 35.3,
+          "lowC": 12.2,
+          "rainMm": 32.6,
+          "rainDays": 3.0
+        },
+        {
+          "month": 8,
+          "highC": 34.7,
+          "lowC": 11.6,
+          "rainMm": 40.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 9,
+          "highC": 29.8,
+          "lowC": 7.1,
+          "rainMm": 66.0,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 23.7,
+          "lowC": 2.8,
+          "rainMm": 84.0,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 17.2,
+          "lowC": -2.2,
+          "rainMm": 96.3,
+          "rainDays": 8.0
+        },
+        {
+          "month": 12,
+          "highC": 12.5,
+          "lowC": -5.1,
+          "rainMm": 69.8,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~35°C); coolest: Jan (mean daily low ~-6°C).",
+        "Most rainfall on average: Nov (~96 mm total); driest: Jul (~33 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "alicante-es",
@@ -8188,6 +11092,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Alicante",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -8231,7 +11147,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How affordable daily life genuinely is. Families arriving from Northern Europe or North America are consistently surprised by how far their money goes — dining out, activities, and general cost of living are significantly lower than they expected at a coastal European location."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 38.345,
+      "gridLongitude": -0.481,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 19.5,
+          "lowC": 0.2,
+          "rainMm": 30.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 20.6,
+          "lowC": 0.7,
+          "rainMm": 18.8,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 24.6,
+          "lowC": 2.3,
+          "rainMm": 35.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 26.1,
+          "lowC": 5.6,
+          "rainMm": 37.2,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 30.3,
+          "lowC": 8.7,
+          "rainMm": 24.8,
+          "rainDays": 2.0
+        },
+        {
+          "month": 6,
+          "highC": 34.3,
+          "lowC": 13.3,
+          "rainMm": 11.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 36.4,
+          "lowC": 17.5,
+          "rainMm": 3.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 36.8,
+          "lowC": 17.8,
+          "rainMm": 14.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 32.8,
+          "lowC": 14.0,
+          "rainMm": 41.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 10,
+          "highC": 29.2,
+          "lowC": 8.9,
+          "rainMm": 36.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 11,
+          "highC": 23.6,
+          "lowC": 3.9,
+          "rainMm": 40.5,
+          "rainDays": 3.0
+        },
+        {
+          "month": 12,
+          "highC": 19.7,
+          "lowC": 1.6,
+          "rainMm": 33.5,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~37°C); coolest: Jan (mean daily low ~0°C).",
+        "Most rainfall on average: Sep (~42 mm total); driest: Jul (~4 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug, Sep — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "cascais-pt",
@@ -8504,6 +11521,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Cascais",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -8547,7 +11576,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The school fee stack. Cascais's international schools are in high demand and not cheap. Families who budget carefully for rent and general costs often arrive without fully accounting for school fees, extra-curricular activities, and the general premium of living in Portugal's most in-demand expat corridor."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 38.697,
+      "gridLongitude": -9.421,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 16.8,
+          "lowC": 7.3,
+          "rainMm": 64.8,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 17.0,
+          "lowC": 7.5,
+          "rainMm": 50.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 19.2,
+          "lowC": 8.2,
+          "rainMm": 60.1,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 21.1,
+          "lowC": 10.9,
+          "rainMm": 54.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 24.7,
+          "lowC": 12.4,
+          "rainMm": 30.7,
+          "rainDays": 3.0
+        },
+        {
+          "month": 6,
+          "highC": 26.3,
+          "lowC": 14.9,
+          "rainMm": 10.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 27.3,
+          "lowC": 16.4,
+          "rainMm": 3.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 27.3,
+          "lowC": 16.7,
+          "rainMm": 5.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 26.2,
+          "lowC": 16.1,
+          "rainMm": 25.2,
+          "rainDays": 2.0
+        },
+        {
+          "month": 10,
+          "highC": 24.0,
+          "lowC": 13.7,
+          "rainMm": 79.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 20.5,
+          "lowC": 10.3,
+          "rainMm": 92.1,
+          "rainDays": 8.0
+        },
+        {
+          "month": 12,
+          "highC": 17.5,
+          "lowC": 7.7,
+          "rainMm": 64.5,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~27°C); coolest: Jan (mean daily low ~7°C).",
+        "Most rainfall on average: Nov (~92 mm total); driest: Jul (~3 mm)."
+      ]
+    }
   },
   {
     "id": "munich-de",
@@ -8822,6 +11949,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Munich",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -8865,7 +12004,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "The housing search difficulty. Munich's rental market is genuinely brutal — many families arrive fully prepared and still take 3–4 months to secure a permanent flat. Do not book a one-way move without a short-stay contingency. A furnished serviced apartment as a bridge is near-essential."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 48.137,
+      "gridLongitude": 11.575,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 8.6,
+          "lowC": -12.6,
+          "rainMm": 78.4,
+          "rainDays": 7.0
+        },
+        {
+          "month": 2,
+          "highC": 11.2,
+          "lowC": -11.4,
+          "rainMm": 60.8,
+          "rainDays": 5.0
+        },
+        {
+          "month": 3,
+          "highC": 17.7,
+          "lowC": -7.5,
+          "rainMm": 71.6,
+          "rainDays": 6.0
+        },
+        {
+          "month": 4,
+          "highC": 21.9,
+          "lowC": -3.4,
+          "rainMm": 68.7,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 25.9,
+          "lowC": 1.6,
+          "rainMm": 124.0,
+          "rainDays": 10.0
+        },
+        {
+          "month": 6,
+          "highC": 29.4,
+          "lowC": 6.4,
+          "rainMm": 142.8,
+          "rainDays": 12.0
+        },
+        {
+          "month": 7,
+          "highC": 31.0,
+          "lowC": 8.1,
+          "rainMm": 138.0,
+          "rainDays": 12.0
+        },
+        {
+          "month": 8,
+          "highC": 30.3,
+          "lowC": 7.8,
+          "rainMm": 142.6,
+          "rainDays": 12.0
+        },
+        {
+          "month": 9,
+          "highC": 25.5,
+          "lowC": 3.2,
+          "rainMm": 95.1,
+          "rainDays": 8.0
+        },
+        {
+          "month": 10,
+          "highC": 22.6,
+          "lowC": -1.3,
+          "rainMm": 79.7,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 16.3,
+          "lowC": -5.7,
+          "rainMm": 62.4,
+          "rainDays": 5.0
+        },
+        {
+          "month": 12,
+          "highC": 9.6,
+          "lowC": -10.4,
+          "rainMm": 68.2,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~31°C); coolest: Jan (mean daily low ~-13°C).",
+        "Most rainfall on average: Jun (~143 mm total); driest: Feb (~61 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, May, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "thessaloniki-gr",
@@ -9121,6 +12359,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Thessaloniki",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -9164,7 +12414,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How enjoyable daily life is at this price point. Thessaloniki is widely regarded by Greeks as the best food city in the country. Families who arrive with modest expectations consistently find the combination of affordable living, warm locals, exceptional food, and a relaxed pace hard to leave."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 40.644,
+      "gridLongitude": 22.931,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 14.8,
+          "lowC": -4.7,
+          "rainMm": 47.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 17.0,
+          "lowC": -3.2,
+          "rainMm": 37.5,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 21.0,
+          "lowC": -0.7,
+          "rainMm": 47.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 24.6,
+          "lowC": 3.4,
+          "rainMm": 40.2,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 30.2,
+          "lowC": 9.1,
+          "rainMm": 45.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 36.1,
+          "lowC": 13.5,
+          "rainMm": 37.5,
+          "rainDays": 3.0
+        },
+        {
+          "month": 7,
+          "highC": 37.8,
+          "lowC": 17.1,
+          "rainMm": 28.5,
+          "rainDays": 2.0
+        },
+        {
+          "month": 8,
+          "highC": 37.2,
+          "lowC": 17.8,
+          "rainMm": 24.2,
+          "rainDays": 2.0
+        },
+        {
+          "month": 9,
+          "highC": 33.3,
+          "lowC": 11.7,
+          "rainMm": 47.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 26.7,
+          "lowC": 5.9,
+          "rainMm": 50.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 21.3,
+          "lowC": 0.8,
+          "rainMm": 43.8,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 16.0,
+          "lowC": -3.3,
+          "rainMm": 64.2,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~38°C); coolest: Jan (mean daily low ~-5°C).",
+        "Most rainfall on average: Dec (~64 mm total); driest: Aug (~24 mm).",
+        "Mean daily highs reach about 32°C or more in Jun, Jul, Aug, Sep — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "paris-fr",
@@ -9436,6 +12787,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Paris",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -9485,7 +12848,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How much time administrative tasks consume — and how quiet Paris can be in August when many services shut. Second surprise: the rental market rewards preparation; walking in without a complete dossier rarely works."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 48.853,
+      "gridLongitude": 2.349,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 12.3,
+          "lowC": -5.9,
+          "rainMm": 53.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 14.1,
+          "lowC": -5.5,
+          "rainMm": 49.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 18.6,
+          "lowC": -3.7,
+          "rainMm": 52.1,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 22.9,
+          "lowC": -1.0,
+          "rainMm": 39.3,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 25.6,
+          "lowC": 3.0,
+          "rainMm": 63.5,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 29.8,
+          "lowC": 6.7,
+          "rainMm": 60.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 7,
+          "highC": 32.3,
+          "lowC": 9.3,
+          "rainMm": 54.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 8,
+          "highC": 31.8,
+          "lowC": 8.7,
+          "rainMm": 58.6,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 27.4,
+          "lowC": 5.9,
+          "rainMm": 42.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 23.4,
+          "lowC": 1.9,
+          "rainMm": 57.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 16.9,
+          "lowC": -1.6,
+          "rainMm": 60.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 12,
+          "highC": 12.3,
+          "lowC": -4.5,
+          "rainMm": 69.4,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~32°C); coolest: Jan (mean daily low ~-6°C).",
+        "Most rainfall on average: Dec (~69 mm total); driest: Apr (~39 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "nice-fr",
@@ -9757,6 +13219,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Nice",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -9806,7 +13280,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How strong the seasonal tourism pulse is along the seafront — summer crowds and winter calm feel like different cities. And how much school and housing choices are linked on the Riviera — map both together before you commit."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 43.703,
+      "gridLongitude": 7.266,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 15.0,
+          "lowC": 6.0,
+          "rainMm": 55.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 14.6,
+          "lowC": 6.2,
+          "rainMm": 52.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 16.5,
+          "lowC": 7.2,
+          "rainMm": 62.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 18.2,
+          "lowC": 9.9,
+          "rainMm": 55.5,
+          "rainDays": 5.0
+        },
+        {
+          "month": 5,
+          "highC": 22.0,
+          "lowC": 12.6,
+          "rainMm": 48.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 6,
+          "highC": 26.1,
+          "lowC": 16.7,
+          "rainMm": 29.4,
+          "rainDays": 2.0
+        },
+        {
+          "month": 7,
+          "highC": 28.1,
+          "lowC": 20.2,
+          "rainMm": 16.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 28.5,
+          "lowC": 20.8,
+          "rainMm": 23.2,
+          "rainDays": 2.0
+        },
+        {
+          "month": 9,
+          "highC": 25.7,
+          "lowC": 17.6,
+          "rainMm": 46.5,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 22.3,
+          "lowC": 13.4,
+          "rainMm": 88.0,
+          "rainDays": 7.0
+        },
+        {
+          "month": 11,
+          "highC": 19.1,
+          "lowC": 9.7,
+          "rainMm": 123.3,
+          "rainDays": 10.0
+        },
+        {
+          "month": 12,
+          "highC": 15.8,
+          "lowC": 7.4,
+          "rainMm": 80.6,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~28°C); coolest: Jan (mean daily low ~6°C).",
+        "Most rainfall on average: Nov (~123 mm total); driest: Jul (~17 mm)."
+      ]
+    }
   },
   {
     "id": "warsaw-pl",
@@ -10060,6 +13632,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Warsaw",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -10109,7 +13693,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "Winter air quality when coal heating peaks — check pollution indexes on bad days. And how affordable help and dining can feel compared to Western Europe — then school fees remind you where the budget goes."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 52.23,
+      "gridLongitude": 21.012,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 5.3,
+          "lowC": -17.7,
+          "rainMm": 45.3,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 7.8,
+          "lowC": -14.1,
+          "rainMm": 38.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 3,
+          "highC": 16.2,
+          "lowC": -8.6,
+          "rainMm": 38.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 4,
+          "highC": 23.2,
+          "lowC": -3.1,
+          "rainMm": 41.1,
+          "rainDays": 3.0
+        },
+        {
+          "month": 5,
+          "highC": 26.8,
+          "lowC": 2.1,
+          "rainMm": 73.8,
+          "rainDays": 6.0
+        },
+        {
+          "month": 6,
+          "highC": 29.9,
+          "lowC": 7.3,
+          "rainMm": 66.6,
+          "rainDays": 6.0
+        },
+        {
+          "month": 7,
+          "highC": 32.5,
+          "lowC": 10.1,
+          "rainMm": 75.6,
+          "rainDays": 6.0
+        },
+        {
+          "month": 8,
+          "highC": 32.7,
+          "lowC": 9.0,
+          "rainMm": 62.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 28.1,
+          "lowC": 3.5,
+          "rainMm": 51.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 10,
+          "highC": 21.8,
+          "lowC": -2.8,
+          "rainMm": 48.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 11,
+          "highC": 14.3,
+          "lowC": -6.2,
+          "rainMm": 42.6,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 6.7,
+          "lowC": -10.7,
+          "rainMm": 44.0,
+          "rainDays": 4.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~33°C); coolest: Jan (mean daily low ~-18°C).",
+        "Most rainfall on average: Jul (~76 mm total); driest: Feb (~38 mm).",
+        "Mean daily highs reach about 32°C or more in Jul, Aug — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "krakow-pl",
@@ -10363,6 +14047,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Krakow",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -10412,7 +14108,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How tourist-busy the Old Town can feel versus how calm residential districts are just minutes away. And how smoky some winter days get — families with asthma should monitor air quality and plan indoor activities."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 50.061,
+      "gridLongitude": 19.937,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 6.5,
+          "lowC": -16.4,
+          "rainMm": 46.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 9.4,
+          "lowC": -13.1,
+          "rainMm": 42.3,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 16.5,
+          "lowC": -8.6,
+          "rainMm": 47.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 22.5,
+          "lowC": -3.6,
+          "rainMm": 52.8,
+          "rainDays": 4.0
+        },
+        {
+          "month": 5,
+          "highC": 25.7,
+          "lowC": 2.4,
+          "rainMm": 98.6,
+          "rainDays": 8.0
+        },
+        {
+          "month": 6,
+          "highC": 29.2,
+          "lowC": 7.3,
+          "rainMm": 96.0,
+          "rainDays": 8.0
+        },
+        {
+          "month": 7,
+          "highC": 32.2,
+          "lowC": 9.3,
+          "rainMm": 106.0,
+          "rainDays": 9.0
+        },
+        {
+          "month": 8,
+          "highC": 31.8,
+          "lowC": 8.7,
+          "rainMm": 76.0,
+          "rainDays": 6.0
+        },
+        {
+          "month": 9,
+          "highC": 28.0,
+          "lowC": 3.5,
+          "rainMm": 74.1,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 22.8,
+          "lowC": -2.5,
+          "rainMm": 58.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 11,
+          "highC": 16.2,
+          "lowC": -7.0,
+          "rainMm": 46.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 12,
+          "highC": 8.2,
+          "lowC": -11.2,
+          "rainMm": 40.9,
+          "rainDays": 3.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~32°C); coolest: Jan (mean daily low ~-16°C).",
+        "Most rainfall on average: Jul (~106 mm total); driest: Dec (~41 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Oct, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "new-york-city-us",
@@ -10635,6 +14430,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/New-York",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -10684,7 +14491,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How small apartments feel versus the price — and how much school choice drives neighbourhood choice. Second: summer heat and humidity without universal AC in older buildings; check cooling before you lease."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 40.714,
+      "gridLongitude": -74.006,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 11.6,
+          "lowC": -9.2,
+          "rainMm": 99.2,
+          "rainDays": 8.0
+        },
+        {
+          "month": 2,
+          "highC": 10.3,
+          "lowC": -8.1,
+          "rainMm": 94.4,
+          "rainDays": 8.0
+        },
+        {
+          "month": 3,
+          "highC": 13.5,
+          "lowC": -4.8,
+          "rainMm": 113.5,
+          "rainDays": 9.0
+        },
+        {
+          "month": 4,
+          "highC": 19.2,
+          "lowC": 0.9,
+          "rainMm": 106.8,
+          "rainDays": 9.0
+        },
+        {
+          "month": 5,
+          "highC": 23.4,
+          "lowC": 6.7,
+          "rainMm": 100.8,
+          "rainDays": 8.0
+        },
+        {
+          "month": 6,
+          "highC": 27.4,
+          "lowC": 11.9,
+          "rainMm": 114.6,
+          "rainDays": 10.0
+        },
+        {
+          "month": 7,
+          "highC": 30.1,
+          "lowC": 17.6,
+          "rainMm": 113.8,
+          "rainDays": 9.0
+        },
+        {
+          "month": 8,
+          "highC": 29.6,
+          "lowC": 17.4,
+          "rainMm": 113.8,
+          "rainDays": 9.0
+        },
+        {
+          "month": 9,
+          "highC": 27.6,
+          "lowC": 13.0,
+          "rainMm": 96.6,
+          "rainDays": 8.0
+        },
+        {
+          "month": 10,
+          "highC": 23.8,
+          "lowC": 5.9,
+          "rainMm": 123.7,
+          "rainDays": 10.0
+        },
+        {
+          "month": 11,
+          "highC": 18.1,
+          "lowC": 0.3,
+          "rainMm": 101.1,
+          "rainDays": 8.0
+        },
+        {
+          "month": 12,
+          "highC": 14.3,
+          "lowC": -4.3,
+          "rainMm": 132.7,
+          "rainDays": 11.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~30°C); coolest: Jan (mean daily low ~-9°C).",
+        "Most rainfall on average: Dec (~133 mm total); driest: Feb (~94 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "miami-us",
@@ -10907,6 +14813,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Miami",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -10956,7 +14874,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How intense summer heat and humidity feel for outdoor play — and how real hurricane season is for school calendars and insurance. Also: traffic on key corridors can swallow more time than maps suggest."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 25.774,
+      "gridLongitude": -80.194,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 25.9,
+          "lowC": 11.7,
+          "rainMm": 43.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 26.4,
+          "lowC": 14.1,
+          "rainMm": 48.4,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 27.6,
+          "lowC": 15.7,
+          "rainMm": 55.8,
+          "rainDays": 5.0
+        },
+        {
+          "month": 4,
+          "highC": 28.7,
+          "lowC": 19.1,
+          "rainMm": 75.9,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 29.8,
+          "lowC": 22.6,
+          "rainMm": 135.5,
+          "rainDays": 11.0
+        },
+        {
+          "month": 6,
+          "highC": 30.7,
+          "lowC": 25.6,
+          "rainMm": 191.4,
+          "rainDays": 16.0
+        },
+        {
+          "month": 7,
+          "highC": 31.0,
+          "lowC": 26.6,
+          "rainMm": 165.2,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 31.2,
+          "lowC": 26.9,
+          "rainMm": 181.7,
+          "rainDays": 15.0
+        },
+        {
+          "month": 9,
+          "highC": 30.6,
+          "lowC": 25.9,
+          "rainMm": 189.6,
+          "rainDays": 16.0
+        },
+        {
+          "month": 10,
+          "highC": 29.7,
+          "lowC": 21.5,
+          "rainMm": 123.7,
+          "rainDays": 10.0
+        },
+        {
+          "month": 11,
+          "highC": 27.9,
+          "lowC": 17.5,
+          "rainMm": 64.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 12,
+          "highC": 26.7,
+          "lowC": 15.2,
+          "rainMm": 50.8,
+          "rainDays": 4.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~31°C); coolest: Jan (mean daily low ~12°C).",
+        "Most rainfall on average: Jun (~191 mm total); driest: Jan (~44 mm).",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "dallas-us",
@@ -11175,6 +15192,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Dallas",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -11224,7 +15253,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How far distances feel — \"20 minutes away\" can be a different county. And how severe hail and storms are for roofs and cars — check insurance deductibles and garage space."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 32.783,
+      "gridLongitude": -96.807,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 23.0,
+          "lowC": -6.4,
+          "rainMm": 58.0,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 25.0,
+          "lowC": -4.9,
+          "rainMm": 66.1,
+          "rainDays": 6.0
+        },
+        {
+          "month": 3,
+          "highC": 27.6,
+          "lowC": -2.2,
+          "rainMm": 88.0,
+          "rainDays": 7.0
+        },
+        {
+          "month": 4,
+          "highC": 31.0,
+          "lowC": 3.6,
+          "rainMm": 82.5,
+          "rainDays": 7.0
+        },
+        {
+          "month": 5,
+          "highC": 34.5,
+          "lowC": 9.3,
+          "rainMm": 116.2,
+          "rainDays": 10.0
+        },
+        {
+          "month": 6,
+          "highC": 37.6,
+          "lowC": 17.3,
+          "rainMm": 96.3,
+          "rainDays": 8.0
+        },
+        {
+          "month": 7,
+          "highC": 40.5,
+          "lowC": 20.8,
+          "rainMm": 55.5,
+          "rainDays": 5.0
+        },
+        {
+          "month": 8,
+          "highC": 40.8,
+          "lowC": 20.0,
+          "rainMm": 62.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 37.4,
+          "lowC": 13.3,
+          "rainMm": 76.8,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 33.6,
+          "lowC": 4.5,
+          "rainMm": 102.0,
+          "rainDays": 8.0
+        },
+        {
+          "month": 11,
+          "highC": 27.7,
+          "lowC": -1.6,
+          "rainMm": 57.3,
+          "rainDays": 5.0
+        },
+        {
+          "month": 12,
+          "highC": 23.8,
+          "lowC": -5.6,
+          "rainMm": 60.8,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Aug (mean daily high ~41°C); coolest: Jan (mean daily low ~-6°C).",
+        "Most rainfall on average: May (~116 mm total); driest: Jul (~56 mm).",
+        "Mean daily highs reach about 32°C or more in May, Jun, Jul, Aug, Sep, Oct — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   },
   {
     "id": "san-jose-cr",
@@ -11482,6 +15612,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/San-Jose-Costa-Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -11531,7 +15673,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How long afternoon rain lasts in wet season — and how much daily life orbits around avoiding rush-hour gridlock. Also: how far \"close\" neighbourhoods are in minutes versus kilometres on clogged roads."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 9.933,
+      "gridLongitude": -84.083,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 29.1,
+          "lowC": 17.3,
+          "rainMm": 37.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 31.0,
+          "lowC": 17.5,
+          "rainMm": 22.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 32.9,
+          "lowC": 18.5,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 33.2,
+          "lowC": 19.0,
+          "rainMm": 76.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 32.2,
+          "lowC": 19.4,
+          "rainMm": 220.4,
+          "rainDays": 18.0
+        },
+        {
+          "month": 6,
+          "highC": 29.4,
+          "lowC": 19.6,
+          "rainMm": 209.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 7,
+          "highC": 29.1,
+          "lowC": 19.1,
+          "rainMm": 184.5,
+          "rainDays": 15.0
+        },
+        {
+          "month": 8,
+          "highC": 29.2,
+          "lowC": 19.1,
+          "rainMm": 198.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 9,
+          "highC": 28.7,
+          "lowC": 18.9,
+          "rainMm": 255.9,
+          "rainDays": 21.0
+        },
+        {
+          "month": 10,
+          "highC": 28.2,
+          "lowC": 19.0,
+          "rainMm": 301.0,
+          "rainDays": 25.0
+        },
+        {
+          "month": 11,
+          "highC": 27.9,
+          "lowC": 17.8,
+          "rainMm": 187.5,
+          "rainDays": 16.0
+        },
+        {
+          "month": 12,
+          "highC": 28.1,
+          "lowC": 17.4,
+          "rainMm": 70.4,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~33°C); coolest: Jan (mean daily low ~17°C).",
+        "Most rainfall on average: Oct (~301 mm total); driest: Feb (~22 mm).",
+        "Mean daily highs reach about 32°C or more in Mar, Apr, May — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "tamarindo-cr",
@@ -11798,6 +16040,18 @@
           "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -11847,7 +16101,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How dry and dusty the high season feels — and how much school commutes shape your week when listings look 'close' on a map."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 10.299,
+      "gridLongitude": -85.841,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 34.4,
+          "lowC": 21.3,
+          "rainMm": 4.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 36.2,
+          "lowC": 21.8,
+          "rainMm": 2.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 37.5,
+          "lowC": 22.4,
+          "rainMm": 3.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 4,
+          "highC": 37.7,
+          "lowC": 23.4,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 5,
+          "highC": 36.7,
+          "lowC": 24.1,
+          "rainMm": 222.0,
+          "rainDays": 18.0
+        },
+        {
+          "month": 6,
+          "highC": 32.4,
+          "lowC": 23.8,
+          "rainMm": 226.2,
+          "rainDays": 19.0
+        },
+        {
+          "month": 7,
+          "highC": 32.6,
+          "lowC": 23.5,
+          "rainMm": 164.6,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 32.9,
+          "lowC": 23.7,
+          "rainMm": 222.0,
+          "rainDays": 18.0
+        },
+        {
+          "month": 9,
+          "highC": 32.0,
+          "lowC": 23.6,
+          "rainMm": 317.1,
+          "rainDays": 26.0
+        },
+        {
+          "month": 10,
+          "highC": 30.9,
+          "lowC": 23.2,
+          "rainMm": 359.3,
+          "rainDays": 30.0
+        },
+        {
+          "month": 11,
+          "highC": 30.6,
+          "lowC": 21.7,
+          "rainMm": 162.6,
+          "rainDays": 14.0
+        },
+        {
+          "month": 12,
+          "highC": 32.3,
+          "lowC": 21.4,
+          "rainMm": 17.1,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~38°C); coolest: Jan (mean daily low ~21°C).",
+        "Most rainfall on average: Oct (~359 mm total); driest: Feb (~3 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "heredia-cr",
@@ -12114,6 +16469,18 @@
           "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -12163,7 +16530,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How much rush hour reshapes your day — a '15 km' school run can eat an hour if timed wrong."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 10.002,
+      "gridLongitude": -84.117,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 29.1,
+          "lowC": 17.3,
+          "rainMm": 37.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 31.0,
+          "lowC": 17.5,
+          "rainMm": 22.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 32.9,
+          "lowC": 18.5,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 33.2,
+          "lowC": 19.0,
+          "rainMm": 76.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 32.2,
+          "lowC": 19.4,
+          "rainMm": 220.4,
+          "rainDays": 18.0
+        },
+        {
+          "month": 6,
+          "highC": 29.4,
+          "lowC": 19.6,
+          "rainMm": 209.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 7,
+          "highC": 29.1,
+          "lowC": 19.1,
+          "rainMm": 184.5,
+          "rainDays": 15.0
+        },
+        {
+          "month": 8,
+          "highC": 29.2,
+          "lowC": 19.1,
+          "rainMm": 198.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 9,
+          "highC": 28.7,
+          "lowC": 18.9,
+          "rainMm": 255.9,
+          "rainDays": 21.0
+        },
+        {
+          "month": 10,
+          "highC": 28.2,
+          "lowC": 19.0,
+          "rainMm": 301.0,
+          "rainDays": 25.0
+        },
+        {
+          "month": 11,
+          "highC": 27.9,
+          "lowC": 17.8,
+          "rainMm": 187.5,
+          "rainDays": 16.0
+        },
+        {
+          "month": 12,
+          "highC": 28.1,
+          "lowC": 17.4,
+          "rainMm": 70.4,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~33°C); coolest: Jan (mean daily low ~17°C).",
+        "Most rainfall on average: Oct (~301 mm total); driest: Feb (~22 mm).",
+        "Mean daily highs reach about 32°C or more in Mar, Apr, May — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "atenas-cr",
@@ -12430,6 +16897,18 @@
           "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -12479,7 +16958,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How much driving consolidates into one or two weekly 'city days' — life becomes calendaring errands rather than popping out for one thing."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 9.975,
+      "gridLongitude": -84.379,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 29.1,
+          "lowC": 17.3,
+          "rainMm": 37.8,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 31.0,
+          "lowC": 17.5,
+          "rainMm": 22.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 3,
+          "highC": 32.9,
+          "lowC": 18.5,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 33.2,
+          "lowC": 19.0,
+          "rainMm": 76.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 32.2,
+          "lowC": 19.4,
+          "rainMm": 220.4,
+          "rainDays": 18.0
+        },
+        {
+          "month": 6,
+          "highC": 29.4,
+          "lowC": 19.6,
+          "rainMm": 209.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 7,
+          "highC": 29.1,
+          "lowC": 19.1,
+          "rainMm": 184.5,
+          "rainDays": 15.0
+        },
+        {
+          "month": 8,
+          "highC": 29.2,
+          "lowC": 19.1,
+          "rainMm": 198.4,
+          "rainDays": 17.0
+        },
+        {
+          "month": 9,
+          "highC": 28.7,
+          "lowC": 18.9,
+          "rainMm": 255.9,
+          "rainDays": 21.0
+        },
+        {
+          "month": 10,
+          "highC": 28.2,
+          "lowC": 19.0,
+          "rainMm": 301.0,
+          "rainDays": 25.0
+        },
+        {
+          "month": 11,
+          "highC": 27.9,
+          "lowC": 17.8,
+          "rainMm": 187.5,
+          "rainDays": 16.0
+        },
+        {
+          "month": 12,
+          "highC": 28.1,
+          "lowC": 17.4,
+          "rainMm": 70.4,
+          "rainDays": 6.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~33°C); coolest: Jan (mean daily low ~17°C).",
+        "Most rainfall on average: Oct (~301 mm total); driest: Feb (~22 mm).",
+        "Mean daily highs reach about 32°C or more in Mar, Apr, May — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "puerto-viejo-cr",
@@ -12746,6 +17325,18 @@
           "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -12795,7 +17386,108 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How intense humidity feels year-round — and how much education planning differs from Pacific coast expat towns."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 10.4,
+      "gridLongitude": -85.819,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 34.4,
+          "lowC": 21.3,
+          "rainMm": 4.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 36.2,
+          "lowC": 21.8,
+          "rainMm": 2.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 37.5,
+          "lowC": 22.4,
+          "rainMm": 3.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 4,
+          "highC": 37.7,
+          "lowC": 23.4,
+          "rainMm": 29.1,
+          "rainDays": 2.0
+        },
+        {
+          "month": 5,
+          "highC": 36.7,
+          "lowC": 24.1,
+          "rainMm": 222.0,
+          "rainDays": 18.0
+        },
+        {
+          "month": 6,
+          "highC": 32.4,
+          "lowC": 23.8,
+          "rainMm": 226.2,
+          "rainDays": 19.0
+        },
+        {
+          "month": 7,
+          "highC": 32.6,
+          "lowC": 23.5,
+          "rainMm": 164.6,
+          "rainDays": 14.0
+        },
+        {
+          "month": 8,
+          "highC": 32.9,
+          "lowC": 23.7,
+          "rainMm": 222.0,
+          "rainDays": 18.0
+        },
+        {
+          "month": 9,
+          "highC": 32.0,
+          "lowC": 23.6,
+          "rainMm": 317.1,
+          "rainDays": 26.0
+        },
+        {
+          "month": 10,
+          "highC": 30.9,
+          "lowC": 23.2,
+          "rainMm": 359.3,
+          "rainDays": 30.0
+        },
+        {
+          "month": 11,
+          "highC": 30.6,
+          "lowC": 21.7,
+          "rainMm": 162.6,
+          "rainDays": 14.0
+        },
+        {
+          "month": 12,
+          "highC": 32.3,
+          "lowC": 21.4,
+          "rainMm": 17.1,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~38°C); coolest: Jan (mean daily low ~21°C).",
+        "Most rainfall on average: Oct (~359 mm total); driest: Feb (~3 mm).",
+        "Mean daily highs reach about 32°C or more in Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Dec — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "santa-teresa-cr",
@@ -13062,6 +17754,18 @@
           "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -13111,7 +17815,106 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How tiring supply runs become — and how much education pathways differ from Instagram surf reels."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 9.646,
+      "gridLongitude": -85.168,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 30.8,
+          "lowC": 25.4,
+          "rainMm": 36.9,
+          "rainDays": 3.0
+        },
+        {
+          "month": 2,
+          "highC": 31.3,
+          "lowC": 26.0,
+          "rainMm": 17.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 31.8,
+          "lowC": 26.5,
+          "rainMm": 26.3,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 31.9,
+          "lowC": 26.6,
+          "rainMm": 99.0,
+          "rainDays": 8.0
+        },
+        {
+          "month": 5,
+          "highC": 31.1,
+          "lowC": 25.9,
+          "rainMm": 286.4,
+          "rainDays": 24.0
+        },
+        {
+          "month": 6,
+          "highC": 30.0,
+          "lowC": 25.8,
+          "rainMm": 283.2,
+          "rainDays": 24.0
+        },
+        {
+          "month": 7,
+          "highC": 30.1,
+          "lowC": 25.8,
+          "rainMm": 281.5,
+          "rainDays": 23.0
+        },
+        {
+          "month": 8,
+          "highC": 30.0,
+          "lowC": 25.7,
+          "rainMm": 285.5,
+          "rainDays": 24.0
+        },
+        {
+          "month": 9,
+          "highC": 29.4,
+          "lowC": 25.6,
+          "rainMm": 333.3,
+          "rainDays": 28.0
+        },
+        {
+          "month": 10,
+          "highC": 29.1,
+          "lowC": 25.4,
+          "rainMm": 369.2,
+          "rainDays": 31.0
+        },
+        {
+          "month": 11,
+          "highC": 29.2,
+          "lowC": 25.1,
+          "rainMm": 207.0,
+          "rainDays": 17.0
+        },
+        {
+          "month": 12,
+          "highC": 29.9,
+          "lowC": 25.2,
+          "rainMm": 83.1,
+          "rainDays": 7.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Apr (mean daily high ~32°C); coolest: Nov (mean daily low ~25°C).",
+        "Most rainfall on average: Oct (~369 mm total); driest: Feb (~17 mm).",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "vancouver-ca",
@@ -13368,6 +18171,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Vancouver",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -13417,7 +18232,107 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How much grey drizzle defines winter versus snow — invest in light layers and vitamin-D habits. Second: how school catchment and address are tied — families often wish they had mapped schools before signing a lease."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 49.25,
+      "gridLongitude": -123.119,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 10.2,
+          "lowC": -3.0,
+          "rainMm": 194.1,
+          "rainDays": 16.0
+        },
+        {
+          "month": 2,
+          "highC": 10.2,
+          "lowC": -1.5,
+          "rainMm": 101.6,
+          "rainDays": 8.0
+        },
+        {
+          "month": 3,
+          "highC": 13.4,
+          "lowC": 0.2,
+          "rainMm": 141.7,
+          "rainDays": 12.0
+        },
+        {
+          "month": 4,
+          "highC": 18.0,
+          "lowC": 3.3,
+          "rainMm": 87.3,
+          "rainDays": 7.0
+        },
+        {
+          "month": 5,
+          "highC": 22.8,
+          "lowC": 6.5,
+          "rainMm": 59.8,
+          "rainDays": 5.0
+        },
+        {
+          "month": 6,
+          "highC": 25.0,
+          "lowC": 9.5,
+          "rainMm": 46.2,
+          "rainDays": 4.0
+        },
+        {
+          "month": 7,
+          "highC": 27.7,
+          "lowC": 12.0,
+          "rainMm": 25.7,
+          "rainDays": 2.0
+        },
+        {
+          "month": 8,
+          "highC": 27.2,
+          "lowC": 12.6,
+          "rainMm": 33.2,
+          "rainDays": 3.0
+        },
+        {
+          "month": 9,
+          "highC": 24.0,
+          "lowC": 9.6,
+          "rainMm": 70.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 10,
+          "highC": 17.8,
+          "lowC": 5.0,
+          "rainMm": 139.5,
+          "rainDays": 12.0
+        },
+        {
+          "month": 11,
+          "highC": 13.1,
+          "lowC": -0.1,
+          "rainMm": 205.8,
+          "rainDays": 17.0
+        },
+        {
+          "month": 12,
+          "highC": 10.4,
+          "lowC": -2.5,
+          "rainMm": 177.3,
+          "rainDays": 15.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~28°C); coolest: Jan (mean daily low ~-3°C).",
+        "Most rainfall on average: Nov (~206 mm total); driest: Jul (~26 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children.",
+        "Very wet months mean waterproofs, covered waiting at school pickup, and extra room to dry uniforms and shoes."
+      ]
+    }
   },
   {
     "id": "toronto-ca",
@@ -13673,6 +18588,18 @@
           "url": "https://www.numbeo.com/cost-of-living/in/Toronto",
           "isVerified": true
         }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
       ]
     },
     "communityLinks": [
@@ -13722,6 +18649,105 @@
         "question": "What usually surprises families after arrival?",
         "answer": "How long commutes can stretch from seemingly close suburbs — and how dry cold winter air differs from damp European chill. Also: how much school waitlists and childcare lottery timelines shape your first year — start both early."
       }
-    ]
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 43.706,
+      "gridLongitude": -79.399,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 7.1,
+          "lowC": -13.2,
+          "rainMm": 53.9,
+          "rainDays": 4.0
+        },
+        {
+          "month": 2,
+          "highC": 6.7,
+          "lowC": -12.9,
+          "rainMm": 48.7,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 11.6,
+          "lowC": -10.0,
+          "rainMm": 53.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 4,
+          "highC": 16.2,
+          "lowC": -2.5,
+          "rainMm": 71.4,
+          "rainDays": 6.0
+        },
+        {
+          "month": 5,
+          "highC": 22.8,
+          "lowC": 2.5,
+          "rainMm": 72.5,
+          "rainDays": 6.0
+        },
+        {
+          "month": 6,
+          "highC": 26.9,
+          "lowC": 8.4,
+          "rainMm": 71.1,
+          "rainDays": 6.0
+        },
+        {
+          "month": 7,
+          "highC": 29.2,
+          "lowC": 14.2,
+          "rainMm": 75.0,
+          "rainDays": 6.0
+        },
+        {
+          "month": 8,
+          "highC": 28.8,
+          "lowC": 15.1,
+          "rainMm": 58.9,
+          "rainDays": 5.0
+        },
+        {
+          "month": 9,
+          "highC": 27.2,
+          "lowC": 10.4,
+          "rainMm": 65.7,
+          "rainDays": 5.0
+        },
+        {
+          "month": 10,
+          "highC": 21.6,
+          "lowC": 3.3,
+          "rainMm": 74.1,
+          "rainDays": 6.0
+        },
+        {
+          "month": 11,
+          "highC": 14.1,
+          "lowC": -2.8,
+          "rainMm": 66.3,
+          "rainDays": 6.0
+        },
+        {
+          "month": 12,
+          "highC": 9.0,
+          "lowC": -8.1,
+          "rainMm": 62.6,
+          "rainDays": 5.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~29°C); coolest: Jan (mean daily low ~-13°C).",
+        "Most rainfall on average: Jul (~75 mm total); driest: Feb (~49 mm).",
+        "Winter nights can dip near freezing (Jan, Feb, Mar, Apr, Nov, Dec) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
   }
 ]
