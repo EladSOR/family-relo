@@ -11,8 +11,8 @@ export const SITE_HOME_TITLE =
  * `?v=` cache-busts Facebook/LinkedIn when you replace the file — otherwise platforms
  * keep the old image (or a fallback scrapped from the page) for days.
  */
-export const SITE_HOME_OG_IMAGE = "/og-home.png?v=2";
+export const SITE_HOME_OG_IMAGE = "/og-home.png?v=3";
 
 /** Alt text for `SITE_HOME_OG_IMAGE` (accessibility + some crawlers). */
 export const SITE_HOME_OG_IMAGE_ALT =
-  "Family on a beach at sunset — a relaxed, hopeful mood for planning your next move abroad";
+  "Aerial view of a turquoise bay and green coastline at golden hour — calm, travel-focused scene";
