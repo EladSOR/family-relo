@@ -91,7 +91,13 @@ export interface Destination {
      * Facebook entries must be text-only (no `url` field).
      * Set `isVerified: true` only after confirming the URL resolves correctly.
      */
-    searchPortals: { label: string; url?: string; isVerified?: boolean }[];
+    searchPortals: {
+      label: string;
+      url?: string;
+      isVerified?: boolean;
+      /** Optional line below the link (e.g. how to find Housing on Craigslist) */
+      note?: string;
+    }[];
     /** Bullet list of 4–5 typical monthly rent examples in local currency */
     typicalPrices?: string[];
     /** Bullet list of documents and requirements to rent in this city */
@@ -107,13 +113,19 @@ export interface Destination {
     /**
      * RULE: Use `options[]` only. Never use specific school names.
      * Each entry describes a *type* of school (e.g. "British curriculum international schools"),
-     * not a named institution. The renderer auto-generates a SearchHint from `type + city + country`.
+     * not a named institution. The renderer builds SearchHint from `type` plus `searchContext` or `in ${city}, ${country}`.
      *
      * @deprecated `examples[]` — replaced by `options[]`
      */
     examples?: SchoolExample[];
     /** School-type categories. Required — replaces named `examples[]`. */
     options?: SchoolOption[];
+    /**
+     * Optional override for the Google search string next to each school option.
+     * Use when the city name is ambiguous (e.g. "San Jose" → include "Costa Rica" + metro areas like Escazu).
+     * If omitted, the page builds: `${type} in ${city}, ${country}`.
+     */
+    searchContext?: string;
     /** One urgent, specific action — e.g. "Apply 12+ months before your move" */
     tip?: string;
   };

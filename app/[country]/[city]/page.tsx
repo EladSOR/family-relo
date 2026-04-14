@@ -253,14 +253,19 @@ export default async function CityPage({ params }: Props) {
                 {dest.housing.searchPortals.map((p, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
-                    {p.url && p.isVerified === true ? (
-                      <a href={p.url} target="_blank" rel="noopener noreferrer"
-                         className="cursor-pointer break-words text-blue-600 underline-offset-2 hover:underline">
-                        {p.label}
-                      </a>
-                    ) : (
-                      <span className="break-words">{p.label}</span>
-                    )}
+                    <div className="min-w-0 flex-1">
+                      {p.url && p.isVerified === true ? (
+                        <a href={p.url} target="_blank" rel="noopener noreferrer"
+                           className="cursor-pointer break-words text-blue-600 underline-offset-2 hover:underline">
+                          {p.label}
+                        </a>
+                      ) : (
+                        <span className="break-words">{p.label}</span>
+                      )}
+                      {p.note && (
+                        <p className="mt-1.5 text-xs leading-relaxed text-slate-500">{p.note}</p>
+                      )}
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -347,7 +352,13 @@ export default async function CityPage({ params }: Props) {
                       <div className="min-w-0 break-words">
                         <p className="font-semibold text-slate-800">{opt.type}</p>
                         <p className="mt-0.5 text-sm leading-relaxed text-slate-600">{opt.description}</p>
-                        <SearchHint query={`${opt.type} ${dest.city} ${dest.country}`} />
+                        <SearchHint
+                          query={
+                            dest.schools.searchContext
+                              ? `${opt.type} ${dest.schools.searchContext}`
+                              : `${opt.type} in ${dest.city}, ${dest.country}`
+                          }
+                        />
                       </div>
                       {opt.fees && (
                         <span className="self-start break-words rounded-lg bg-white px-2.5 py-1 text-xs font-bold text-slate-500 ring-1 ring-slate-200 md:rounded-full">

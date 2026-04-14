@@ -34,7 +34,7 @@ The button generates `https://www.google.com/search?q=[encoded query]` at render
 
 | Section | Query format |
 |---|---|
-| Schools | `"[School Name] [City] [Country]"` |
+| Schools | Default: `"[type] in [City], [Country]"`. If the city name is ambiguous (e.g. San Jose), set `schools.searchContext` in JSON so the query includes the metro (e.g. `in Escazu, Santa Ana, and greater San Jose, Costa Rica`). |
 | Visa | `"[visa type] [country] official"` — use the `officialLink.label` |
 | Community | stored in `communityLinks[].searchQuery`, e.g. `"Valencia Expats Facebook group"` |
 

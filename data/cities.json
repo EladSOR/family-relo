@@ -11356,23 +11356,24 @@
       ],
       "searchPortals": [
         {
-          "label": "Encuentra24.com — one of Costa Rica's largest property classifieds platforms",
+          "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
           "url": "https://www.encuentra24.com",
           "isVerified": true
         },
         {
-          "label": "OLX Costa Rica — classifieds platform with a strong San Jose and Escazu rental section",
-          "url": "https://www.olx.co.cr",
+          "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+          "url": "https://costarica.craigslist.org",
+          "isVerified": true,
+          "note": "Tip: on the homepage, open the Housing category, then choose 'apartments / housing for rent' (or 'real estate for rent'). Pick an area such as san jose centro, Escazu / Santa Ana / Rohrmoser, or use the map — long-term unfurnished listings are mixed with short-term, so read each post carefully."
+        },
+        {
+          "label": "Coldwell Banker Costa Rica — agency network with English-speaking agents in the San Jose metro",
+          "url": "https://www.coldwellbankercostarica.com",
           "isVerified": true
         },
         {
-          "label": "Remax Costa Rica — established real estate agency with English-speaking agents and a strong expat rental section",
-          "url": "https://www.remax.co.cr",
-          "isVerified": true
-        },
-        {
-          "label": "Facebook groups — search: 'Expats in Costa Rica Housing' for community listings and direct landlord deals",
-          "url": "https://www.google.com/search?q=Expats+in+Costa+Rica+Housing+Facebook+group",
+          "label": "Facebook groups — search: 'San Jose Costa Rica Escazu housing' for metro-specific community listings",
+          "url": "https://www.google.com/search?q=San+Jose+Costa+Rica+Escazu+housing+Facebook+group",
           "isVerified": true
         }
       ],
@@ -11392,6 +11393,7 @@
     },
     "schools": {
       "status": "curated",
+      "searchContext": "in Escazu, Santa Ana, and greater San Jose, Costa Rica",
       "summary": "Costa Rica has a strong private bilingual school sector in the Escazu and Santa Ana corridor. These schools follow US or IB curricula and teach in both English and Spanish. Apply 6–12 months ahead.",
       "publicSystem": "Costa Rican public schools are free and widely available. All instruction is in Spanish. Not viable for non-Spanish-speaking children without significant language support. Young children (ages 4–7) typically acquire Spanish quickly if enrolled with tutoring support.",
       "internationalOptions": "The main concentration of international and bilingual private schools for expat families is in the Escazu and Santa Ana corridor west of San Jose. Schools follow US, IB, or Costa Rican bilingual curricula with both English and Spanish instruction. Fees range from $5,000 to $12,000/year — affordable by US or European standards.",
