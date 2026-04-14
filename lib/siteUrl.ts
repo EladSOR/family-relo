@@ -1,13 +1,20 @@
 import { headers } from "next/headers";
 
 /**
+ * Default public origin for production builds when `NEXT_PUBLIC_SITE_URL` is not set.
+ * Canonical / Open Graph use this via `metadataBase` — without it, static HTML was
+ * embedding `http://localhost:3000`. Forks or other domains: set `NEXT_PUBLIC_SITE_URL`.
+ */
+const DEFAULT_PRODUCTION_ORIGIN = "https://femirelo.com";
+
+/**
  * Public site origin for metadata, JSON-LD, sitemap, and robots.
  *
- * **Production:** set `NEXT_PUBLIC_SITE_URL=https://femirelo.com` in Vercel so
- * metadataBase and OG tags match your domain even at build time.
+ * Override with `NEXT_PUBLIC_SITE_URL` (e.g. in Vercel) if the site is not served on
+ * the default production domain.
  *
- * **`VERCEL_URL` is not used** — it is always the deployment hostname (`*.vercel.app`
- * or a preview URL), not your custom domain, so sitemap/robots would point at the wrong host.
+ * **`VERCEL_URL` is not used** — it is the deployment hostname (`*.vercel.app`), not
+ * your custom domain.
  */
 
 function siteUrlFromHeaders(h: Headers): string | null {
@@ -33,15 +40,21 @@ export async function getAbsoluteSiteUrl(): Promise<string> {
   } catch {
     // Called outside a request (e.g. some tooling)
   }
+  if (process.env.NODE_ENV === "production") {
+    return DEFAULT_PRODUCTION_ORIGIN;
+  }
   return "http://localhost:3000";
 }
 
 /**
- * Sync helper for `metadataBase` and any code that cannot await (must not use request headers).
- * Use `NEXT_PUBLIC_SITE_URL` in production builds so canonical/OG URLs are correct.
+ * Sync helper for `metadataBase` and JSON-LD at build time (cannot use request headers).
+ * Development: `http://localhost:3000`. Production: env, else `https://femirelo.com`.
  */
 export function getSiteUrl(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
   if (fromEnv) return fromEnv;
+  if (process.env.NODE_ENV === "production") {
+    return DEFAULT_PRODUCTION_ORIGIN;
+  }
   return "http://localhost:3000";
 }
