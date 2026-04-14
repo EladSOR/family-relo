@@ -73,6 +73,11 @@ export const CITY_IMAGES: Record<string, string> = {
   "Miami":          "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=900&q=80",
   "Dallas":         "https://images.unsplash.com/photo-1621904878414-d4ca4756bd7e?w=900&q=80",
   "San Jose":       "https://images.unsplash.com/photo-1699385600774-02aec33b3ff7?w=900&q=80",
+  "Tamarindo":      "https://images.unsplash.com/photo-1465512585831-856a0bfd5e0b?w=900&q=80",
+  "Heredia":        "https://images.unsplash.com/photo-1699385600836-76d37a7de79b?w=900&q=80",
+  "Atenas":         "https://images.unsplash.com/photo-1682965738453-558d583ad9ec?w=900&q=80",
+  "Puerto Viejo":   "https://images.unsplash.com/photo-1628128590990-47b06054074f?w=900&q=80",
+  "Santa Teresa":   "https://images.unsplash.com/photo-1746280372149-9917a641688c?w=900&q=80",
   "Vancouver":      "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=900&q=80",
   "Toronto":        "https://images.unsplash.com/photo-1543962226-818f4301073f?w=900&q=80",
 };
