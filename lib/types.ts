@@ -231,7 +231,7 @@ export interface Destination {
    */
   communityLinks?: { label: string; searchQuery?: string }[];
 
-  /** FAQ section — 8 questions and answers shown between Safety and Sources */
+  /** FAQ — 8 Q&As; stored after `communityLinks` in JSON; rendered between Safety and Sources */
   faq?: { question: string; answer: string }[];
 }
 

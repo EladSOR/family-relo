@@ -247,6 +247,35 @@ One test: if you could remove a sentence without losing any useful guidance, rem
 
 ---
 
+## RULE 9 — FAQ: required on every city
+
+Every city entry **must** include `faq`: an array of exactly **8** objects `{ "question": "...", "answer": "..." }`, placed in JSON **immediately after** `communityLinks` (the UI renders this block between **Safety** and **Sources**).
+
+**Standard questions (use these exact wordings — only substitute the city name in Q1 and Q6):**
+
+1. `Is [City] good for families?`
+2. `How much does a family typically need per month here?`
+3. `Is housing hard to find here?`
+4. `Do children need international school here, or can local schools work?`
+5. `Is healthcare easy to access as a newcomer?`
+6. `Do you need a car in [City]?`
+7. `How difficult is the paperwork and bureaucracy after moving?`
+8. `What usually surprises families after arrival?`
+
+**Answers:** City-specific, practical, 1–3 sentences each (same tone as RULE 8). Reference real trade-offs from the city’s `summary`, `cost`, and section bullets. Do **not** paste URLs into FAQ answers — plain guidance only.
+
+```json
+"communityLinks": [ ],
+"faq": [
+  { "question": "Is CityName good for families?", "answer": "…" },
+  { "question": "How much does a family typically need per month here?", "answer": "…" }
+]
+```
+
+(Array must contain exactly eight objects — two shown above as a pattern.)
+
+---
+
 ## Pre-flight checklist (run before saving a new city)
 
 Before completing a new city entry, verify:
@@ -268,4 +297,5 @@ Before completing a new city entry, verify:
 - [ ] No deep/filtered portal URLs — root homepage only
 - [ ] No superlatives without evidence
 - [ ] All local terms explained inline on first use
+- [ ] `faq` present with **8** Q&As using the standard questions from RULE 9 (city-specific answers)
 - [ ] JSON is valid (run `python3 -c "import json; json.load(open('data/cities.json'))"`)

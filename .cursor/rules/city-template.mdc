@@ -31,7 +31,10 @@ id, citySlug, countrySlug, city, country, tagline, summary, lastReviewed
 → cost          (always required, 3 fields)
 → sources
 → communityLinks
+→ faq           (always required — 8 Q&As; see `new-city-generation.mdc` RULE 9)
 ```
+
+**Note:** In `page.tsx`, FAQ renders between **Safety** and **Sources**; in JSON it lives **after** `communityLinks` (same pattern as Valencia).
 
 ---
 
