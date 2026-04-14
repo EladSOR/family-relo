@@ -29,7 +29,7 @@ id, citySlug, countrySlug, city, country, tagline, summary, lastReviewed
 → childcare     (always required, structured 3-block format)
 → healthcare    (always required, items array)
 → safety        (always required, items array)
-→ cost          (always required, 3 fields)
+→ cost          (always required — `monthlyFamilyAllIn` + `rentRange`, `familyDinner`, `nannyRate`; see `new-city-generation.mdc` Rule 6)
 → sources
 → communityLinks
 → faq           (always required — 8 Q&As; see `new-city-generation.mdc` RULE 9)
@@ -237,10 +237,11 @@ Items array required. No summary-only entries.
 ```
 
 ### cost
-Exactly 3 fields, single approximate values in local currency.
+Required fields: **`monthlyFamilyAllIn`** (all-in monthly budget for a family of four — must align with FAQ #2; may be a `~` range) plus **`rentRange`**, **`familyDinner`**, **`nannyRate`** (each a single `~` figure in local currency; `nannyRate` hourly).
 ```json
 {
   "status": "estimated",
+  "monthlyFamilyAllIn": "~€4,500–€5,500 / month",
   "rentRange": "~€1,300 / month",
   "familyDinner": "~€45",
   "nannyRate": "~€12 / hr"
@@ -293,7 +294,8 @@ Only official, institutional, or stable public URLs.
 
 ## 6. Data rules
 
-- `rentRange`: single approximate value in local currency with `~` prefix — NOT a range
+- `monthlyFamilyAllIn`: all-in monthly budget for a family of four; must match FAQ #2; may be a range with `~` (see `new-city-generation.mdc` Rule 6)
+- `rentRange`: single approximate value in local currency with `~` prefix — NOT a range (3-bed rent anchor, not total budget)
 - `familyDinner`: single approximate value — a mid-range restaurant meal for 2 adults + 1–2 kids
 - `nannyRate`: single approximate hourly rate — NOT monthly, NOT daycare
 - Safety score: use 75–90 range for realistic cities; never above 92
