@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import {
-  MapPin, Shield, Home, Utensils,
+  MapPin, Shield, Home, Utensils, Wallet,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
   BookOpen, Landmark, CreditCard, Users, ChevronDown, HelpCircle, Cloud,
@@ -143,32 +143,56 @@ export default async function CityPage({ params }: Props) {
       {/* ── Body ─────────────────────────────────────────────────────────── */}
       <div className="mx-auto max-w-3xl px-4 py-8 space-y-4 sm:px-6 md:py-14 md:space-y-8">
 
+        {/* ── Family budget cards (all-in + line items — same data as FAQ #2 context) ─ */}
+        <section
+          id="family-budget"
+          aria-labelledby="family-budget-heading"
+          className="scroll-mt-28"
+        >
+          <h2
+            id="family-budget-heading"
+            className="mb-3 text-[11px] font-bold uppercase tracking-widest text-slate-500 md:mb-4"
+          >
+            Family budget at a glance
+          </h2>
+          <p className="mb-4 text-xs leading-relaxed text-slate-500 md:text-sm">
+            The all-in range matches the FAQ answer for &quot;How much does a family typically need per
+            month here?&quot; The other cards are single-line benchmarks — they don&apos;t add up to
+            that total (school fees and other costs are separate).
+          </p>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+            <StatCard
+              icon={<Wallet size={18} className="text-[#E84A4F]" />}
+              bg="bg-rose-50"
+              label="All-in / month (family of 4)"
+              value={dest.cost.monthlyFamilyAllIn}
+              small
+            />
+            <StatCard
+              icon={<Home size={18} className="text-blue-500" />}
+              bg="bg-blue-50"
+              label="3-bed family home"
+              value={dest.cost.rentRange}
+              small
+            />
+            <StatCard
+              icon={<Utensils size={18} className="text-orange-500" />}
+              bg="bg-orange-50"
+              label="Dinner for 2 (mid-range)"
+              value={dest.cost.familyDinner}
+            />
+            <StatCard
+              icon={<Baby size={18} className="text-purple-500" />}
+              bg="bg-purple-50"
+              label="Nanny"
+              value={dest.cost.nannyRate}
+              small
+            />
+          </div>
+        </section>
+
         {/* Summary */}
         <p className="text-base leading-relaxed text-slate-700 md:text-lg">{dest.summary}</p>
-
-        {/* ── Quick stats ───────────────────────────────────────────────── */}
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
-          <StatCard
-            icon={<Home size={18} className="text-blue-500" />}
-            bg="bg-blue-50"
-            label="3-bed family home"
-            value={dest.cost.rentRange}
-            small
-          />
-          <StatCard
-            icon={<Utensils size={18} className="text-orange-500" />}
-            bg="bg-orange-50"
-            label="Dinner for 2 (mid-range)"
-            value={dest.cost.familyDinner}
-          />
-          <StatCard
-            icon={<Baby size={18} className="text-purple-500" />}
-            bg="bg-purple-50"
-            label="Nanny"
-            value={dest.cost.nannyRate}
-            small
-          />
-        </div>
 
         {/* ── Action checklist ──────────────────────────────────────────── */}
         <Section title="Action checklist" icon={<ClipboardList size={16} className="text-slate-500" />}>

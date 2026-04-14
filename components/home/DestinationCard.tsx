@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { MapPin, Shield } from "lucide-react";
+import { MapPin } from "lucide-react";
 import type { Destination } from "@/lib/types";
 import { resolveCityHeroImage } from "@/lib/constants";
 
@@ -11,10 +11,8 @@ interface Props {
   city: Destination;
 }
 
-// Stats block spans the full card below the safety badge on ALL screen sizes.
-// Mobile : top-10 (40px clears badge at ~34px, extra breathing room below).
-// Desktop: top-14 (56px, slightly more clearance) → bottom-0.
-const STATS_POS = "inset-x-0 top-10 bottom-0 md:top-14";
+// Stats block sits below the compact budget badge.
+const STATS_POS = "inset-x-0 top-11 bottom-0 md:top-12";
 
 const STATS = (city: Destination) => [
   { label: "3-bed family home", value: city.cost.rentRange },
@@ -89,11 +87,12 @@ export default function DestinationCard({ city }: Props) {
           tapped ? "opacity-100" : "opacity-0 md:group-hover:opacity-100"
         }`} />
 
-        {/* Safety badge — top right, always visible */}
-        <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-black/50 px-2.5 py-1 text-xs font-bold text-white backdrop-blur-sm">
-          <Shield size={11} strokeWidth={2.5} />
-          {city.safety.score}/100
-          <span className="font-normal text-white/70">Safety</span>
+        {/* Compact all-in budget pill — full amount in native tooltip if truncated */}
+        <div
+          className="absolute right-2 top-2 z-10 max-w-[min(calc(100%-1rem),11.5rem)] truncate rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[10px] font-bold tabular-nums text-white shadow-sm sm:right-3 sm:top-3 sm:max-w-[13rem] sm:py-1 sm:text-[11px]"
+          title={`All-in / month (family of 4): ${city.cost.monthlyFamilyAllIn}`}
+        >
+          {city.cost.monthlyFamilyAllIn}
         </div>
 
         {/* Revealed: stats + Explore */}

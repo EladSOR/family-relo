@@ -195,7 +195,8 @@
       "status": "estimated",
       "rentRange": "~$1,400 / month",
       "familyDinner": "~$50",
-      "nannyRate": "~$13 / hr"
+      "nannyRate": "~$13 / hr",
+      "monthlyFamilyAllIn": "~$3,500–$4,500 / month"
     },
     "sources": {
       "visa": [
@@ -646,7 +647,8 @@
       "status": "estimated",
       "rentRange": "~$2,750 / month",
       "familyDinner": "~$60",
-      "nannyRate": "~$14 / hr"
+      "nannyRate": "~$14 / hr",
+      "monthlyFamilyAllIn": "~$5,000–$7,000 / month"
     },
     "sources": {
       "visa": [
@@ -1112,7 +1114,8 @@
       "status": "estimated",
       "rentRange": "~$3,300 / month",
       "familyDinner": "~$70",
-      "nannyRate": "~$15 / hr"
+      "nannyRate": "~$15 / hr",
+      "monthlyFamilyAllIn": "~$6,000–$10,000 / month"
     },
     "sources": {
       "visa": [
@@ -1533,7 +1536,8 @@
       "status": "estimated",
       "rentRange": "~$840 / month",
       "familyDinner": "~$14",
-      "nannyRate": "~$4 / hr"
+      "nannyRate": "~$4 / hr",
+      "monthlyFamilyAllIn": "~$2,500–$4,000 / month"
     },
     "sources": {
       "visa": [
@@ -1989,7 +1993,8 @@
       "status": "estimated",
       "rentRange": "~$560 / month",
       "familyDinner": "~$11",
-      "nannyRate": "~$5 / hr"
+      "nannyRate": "~$5 / hr",
+      "monthlyFamilyAllIn": "~$2,000–$3,500 / month"
     },
     "sources": {
       "visa": [
@@ -2400,7 +2405,8 @@
       "status": "estimated",
       "rentRange": "~$1,170 / month",
       "familyDinner": "~$14",
-      "nannyRate": "~$6 / hr"
+      "nannyRate": "~$6 / hr",
+      "monthlyFamilyAllIn": "~$3,000–$5,000 / month"
     },
     "sources": {
       "visa": [
@@ -2782,7 +2788,8 @@
       "status": "estimated",
       "rentRange": "~$2,000 / month",
       "familyDinner": "~$60",
-      "nannyRate": "~$15 / hr"
+      "nannyRate": "~$15 / hr",
+      "monthlyFamilyAllIn": "~$5,000–$7,000 / month"
     },
     "sources": {
       "visa": [],
@@ -3160,7 +3167,8 @@
       "status": "estimated",
       "rentRange": "~$1,870 / month",
       "familyDinner": "~$55",
-      "nannyRate": "~$14 / hr"
+      "nannyRate": "~$14 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$6,500 / month"
     },
     "sources": {
       "visa": [],
@@ -3586,7 +3594,8 @@
       "status": "estimated",
       "rentRange": "~$1,540 / month",
       "familyDinner": "~$44",
-      "nannyRate": "~$13 / hr"
+      "nannyRate": "~$13 / hr",
+      "monthlyFamilyAllIn": "~$4,000–$5,500 / month"
     },
     "sources": {
       "visa": [
@@ -4000,7 +4009,8 @@
       "status": "estimated",
       "rentRange": "~$2,090 / month",
       "familyDinner": "~$66",
-      "nannyRate": "~$18 / hr"
+      "nannyRate": "~$18 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$7,500 / month"
     },
     "sources": {
       "visa": [
@@ -4409,7 +4419,8 @@
       "status": "estimated",
       "rentRange": "~$2,530 / month",
       "familyDinner": "~$72",
-      "nannyRate": "~$19 / hr"
+      "nannyRate": "~$19 / hr",
+      "monthlyFamilyAllIn": "~$6,500–$9,000 / month"
     },
     "sources": {
       "visa": [
@@ -4820,7 +4831,8 @@
       "status": "estimated",
       "rentRange": "~$2,000 / month",
       "familyDinner": "~$62",
-      "nannyRate": "~$12 / hr"
+      "nannyRate": "~$12 / hr",
+      "monthlyFamilyAllIn": "~$3,500–$5,000 / month"
     },
     "sources": {
       "visa": [
@@ -5231,7 +5243,8 @@
       "status": "estimated",
       "rentRange": "~$1,760 / month",
       "familyDinner": "~$46",
-      "nannyRate": "~$9 / hr"
+      "nannyRate": "~$9 / hr",
+      "monthlyFamilyAllIn": "~$3,000–$4,500 / month"
     },
     "sources": {
       "visa": [
@@ -5653,7 +5666,8 @@
       "status": "estimated",
       "rentRange": "~$1,530 / month",
       "familyDinner": "~$25",
-      "nannyRate": "~$6 / hr"
+      "nannyRate": "~$6 / hr",
+      "monthlyFamilyAllIn": "~$3,500–$6,000 / month"
     },
     "sources": {
       "visa": [
@@ -6073,7 +6087,8 @@
       "status": "estimated",
       "rentRange": "~$1,250 / month",
       "familyDinner": "~$21",
-      "nannyRate": "~$5 / hr"
+      "nannyRate": "~$5 / hr",
+      "monthlyFamilyAllIn": "~$3,000–$5,000 / month"
     },
     "sources": {
       "visa": [
@@ -6529,7 +6544,8 @@
       "status": "estimated",
       "rentRange": "~$1,650 / month",
       "familyDinner": "~$60",
-      "nannyRate": "~$11 / hr"
+      "nannyRate": "~$11 / hr",
+      "monthlyFamilyAllIn": "~$3,500–$5,000 / month"
     },
     "sources": {
       "visa": [
@@ -6910,7 +6926,8 @@
       "status": "estimated",
       "rentRange": "~$1,320 / month",
       "familyDinner": "~$55",
-      "nannyRate": "~$12 / hr"
+      "nannyRate": "~$12 / hr",
+      "monthlyFamilyAllIn": "~$3,000–$4,500 / month"
     },
     "sources": {
       "visa": [],
@@ -7341,7 +7358,8 @@
       "status": "estimated",
       "rentRange": "~$3,540 / month",
       "familyDinner": "~$68",
-      "nannyRate": "~$10 / hr"
+      "nannyRate": "~$10 / hr",
+      "monthlyFamilyAllIn": "~$7,000–$10,000 / month"
     },
     "sources": {
       "visa": [
@@ -7768,7 +7786,8 @@
       "status": "estimated",
       "rentRange": "~$1,985 / month",
       "familyDinner": "~$48",
-      "nannyRate": "~$13 / hr"
+      "nannyRate": "~$13 / hr",
+      "monthlyFamilyAllIn": "~$7,000–$10,000+ / month"
     },
     "sources": {
       "visa": [
@@ -8192,7 +8211,8 @@
       "status": "estimated",
       "rentRange": "~$3,780 / month",
       "familyDinner": "~$81",
-      "nannyRate": "~$15 / hr"
+      "nannyRate": "~$15 / hr",
+      "monthlyFamilyAllIn": "~$8,000–$12,000 / month"
     },
     "sources": {
       "visa": [
@@ -8611,7 +8631,8 @@
       "status": "estimated",
       "rentRange": "~$1,785 / month",
       "familyDinner": "~$41",
-      "nannyRate": "~$12 / hr"
+      "nannyRate": "~$12 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month"
     },
     "sources": {
       "visa": [
@@ -9034,7 +9055,8 @@
       "status": "estimated",
       "rentRange": "~$1,385 / month",
       "familyDinner": "~$38",
-      "nannyRate": "~$11 / hr"
+      "nannyRate": "~$11 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$6,500 / month"
     },
     "sources": {
       "visa": [
@@ -9453,7 +9475,8 @@
       "status": "estimated",
       "rentRange": "~$1,890 / month",
       "familyDinner": "~$53",
-      "nannyRate": "~$14 / hr"
+      "nannyRate": "~$14 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month"
     },
     "sources": {
       "visa": [
@@ -9864,7 +9887,8 @@
       "status": "estimated",
       "rentRange": "~$1,590 / month",
       "familyDinner": "~$47",
-      "nannyRate": "~$12 / hr"
+      "nannyRate": "~$12 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$6,500 / month"
     },
     "sources": {
       "visa": [
@@ -10297,7 +10321,8 @@
       "status": "estimated",
       "rentRange": "~$2,375 / month",
       "familyDinner": "~$65",
-      "nannyRate": "~$15 / hr"
+      "nannyRate": "~$15 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month"
     },
     "sources": {
       "cost": [
@@ -10713,7 +10738,8 @@
       "status": "estimated",
       "rentRange": "~$1,620 / month",
       "familyDinner": "~$54",
-      "nannyRate": "~$14 / hr"
+      "nannyRate": "~$14 / hr",
+      "monthlyFamilyAllIn": "~$4,000–$6,000 / month"
     },
     "sources": {
       "cost": [
@@ -11083,7 +11109,8 @@
       "status": "estimated",
       "rentRange": "~$970 / month",
       "familyDinner": "~$38",
-      "nannyRate": "~$11 / hr"
+      "nannyRate": "~$11 / hr",
+      "monthlyFamilyAllIn": "~$2,500–$3,500 / month"
     },
     "sources": {
       "cost": [
@@ -11505,7 +11532,8 @@
       "status": "estimated",
       "rentRange": "~$2,160 / month",
       "familyDinner": "~$54",
-      "nannyRate": "~$12 / hr"
+      "nannyRate": "~$12 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month"
     },
     "sources": {
       "visa": [
@@ -11933,7 +11961,8 @@
       "status": "estimated",
       "rentRange": "~$3,025 / month",
       "familyDinner": "~$70",
-      "nannyRate": "~$18 / hr"
+      "nannyRate": "~$18 / hr",
+      "monthlyFamilyAllIn": "~$7,000–$10,000 / month"
     },
     "sources": {
       "visa": [
@@ -12350,7 +12379,8 @@
       "status": "estimated",
       "rentRange": "~$755 / month",
       "familyDinner": "~$32",
-      "nannyRate": "~$9 / hr"
+      "nannyRate": "~$9 / hr",
+      "monthlyFamilyAllIn": "~$2,000–$3,500 / month"
     },
     "sources": {
       "cost": [
@@ -12770,7 +12800,8 @@
       "status": "estimated",
       "rentRange": "~$3,900 / month",
       "familyDinner": "~$85",
-      "nannyRate": "~$18 / hr"
+      "nannyRate": "~$18 / hr",
+      "monthlyFamilyAllIn": "~$6,500–$9,000 / month"
     },
     "sources": {
       "visa": [
@@ -13202,7 +13233,8 @@
       "status": "estimated",
       "rentRange": "~$2,400 / month",
       "familyDinner": "~$70",
-      "nannyRate": "~$16 / hr"
+      "nannyRate": "~$16 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$6,500 / month"
     },
     "sources": {
       "visa": [
@@ -13615,7 +13647,8 @@
       "status": "estimated",
       "rentRange": "~$1,200 / month",
       "familyDinner": "~$35",
-      "nannyRate": "~$7 / hr"
+      "nannyRate": "~$7 / hr",
+      "monthlyFamilyAllIn": "~$3,200–$4,800 / month"
     },
     "sources": {
       "visa": [
@@ -14030,7 +14063,8 @@
       "status": "estimated",
       "rentRange": "~$950 / month",
       "familyDinner": "~$28",
-      "nannyRate": "~$6 / hr"
+      "nannyRate": "~$6 / hr",
+      "monthlyFamilyAllIn": "~$2,800–$4,000 / month"
     },
     "sources": {
       "visa": [
@@ -14413,7 +14447,8 @@
       "status": "estimated",
       "rentRange": "~$6,800 / month",
       "familyDinner": "~$130",
-      "nannyRate": "~$30 / hr"
+      "nannyRate": "~$30 / hr",
+      "monthlyFamilyAllIn": "~$11,000–$16,000+ / month"
     },
     "sources": {
       "visa": [
@@ -14796,7 +14831,8 @@
       "status": "estimated",
       "rentRange": "~$4,200 / month",
       "familyDinner": "~$85",
-      "nannyRate": "~$22 / hr"
+      "nannyRate": "~$22 / hr",
+      "monthlyFamilyAllIn": "~$7,500–$11,000+ / month"
     },
     "sources": {
       "visa": [
@@ -15175,7 +15211,8 @@
       "status": "estimated",
       "rentRange": "~$2,600 / month",
       "familyDinner": "~$65",
-      "nannyRate": "~$18 / hr"
+      "nannyRate": "~$18 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,500 / month"
     },
     "sources": {
       "visa": [
@@ -15595,7 +15632,8 @@
       "status": "estimated",
       "rentRange": "~$1,700 / month",
       "familyDinner": "~$38",
-      "nannyRate": "~$7 / hr"
+      "nannyRate": "~$7 / hr",
+      "monthlyFamilyAllIn": "~$4,000–$6,500 / month"
     },
     "sources": {
       "visa": [
@@ -16023,7 +16061,8 @@
       "status": "estimated",
       "rentRange": "~$2,200 / month",
       "familyDinner": "~$48",
-      "nannyRate": "~$8 / hr"
+      "nannyRate": "~$8 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$7,500 / month"
     },
     "sources": {
       "visa": [
@@ -16452,7 +16491,8 @@
       "status": "estimated",
       "rentRange": "~$1,400 / month",
       "familyDinner": "~$36",
-      "nannyRate": "~$7 / hr"
+      "nannyRate": "~$7 / hr",
+      "monthlyFamilyAllIn": "~$3,800–$6,000 / month"
     },
     "sources": {
       "visa": [
@@ -16880,7 +16920,8 @@
       "status": "estimated",
       "rentRange": "~$1,200 / month",
       "familyDinner": "~$34",
-      "nannyRate": "~$7 / hr"
+      "nannyRate": "~$7 / hr",
+      "monthlyFamilyAllIn": "~$3,200–$5,500 / month"
     },
     "sources": {
       "visa": [
@@ -17308,7 +17349,8 @@
       "status": "estimated",
       "rentRange": "~$1,400 / month",
       "familyDinner": "~$40",
-      "nannyRate": "~$6 / hr"
+      "nannyRate": "~$6 / hr",
+      "monthlyFamilyAllIn": "~$3,500–$6,000 / month"
     },
     "sources": {
       "visa": [
@@ -17737,7 +17779,8 @@
       "status": "estimated",
       "rentRange": "~$2,000 / month",
       "familyDinner": "~$46",
-      "nannyRate": "~$8 / hr"
+      "nannyRate": "~$8 / hr",
+      "monthlyFamilyAllIn": "~$4,000–$7,500 / month"
     },
     "sources": {
       "visa": [
@@ -18154,7 +18197,8 @@
       "status": "estimated",
       "rentRange": "~$3,500 / month",
       "familyDinner": "~$85",
-      "nannyRate": "~$22 / hr"
+      "nannyRate": "~$22 / hr",
+      "monthlyFamilyAllIn": "~$7,000–$10,000+ / month"
     },
     "sources": {
       "visa": [
@@ -18571,7 +18615,8 @@
       "status": "estimated",
       "rentRange": "~$3,100 / month",
       "familyDinner": "~$75",
-      "nannyRate": "~$19 / hr"
+      "nannyRate": "~$19 / hr",
+      "monthlyFamilyAllIn": "~$6,500–$9,500+ / month"
     },
     "sources": {
       "visa": [

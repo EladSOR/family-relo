@@ -214,14 +214,19 @@ export interface Destination {
   };
 
   /**
-   * Quick-stat cost cards shown at the top of the page and on homepage cards.
+   * Quick-stat cost cards on city pages; listing cards use `monthlyFamilyAllIn` for the badge.
    *
-   * RULE: All three fields use a single approximate value with `~` prefix in local currency.
-   * `nannyRate` is hourly. `rentRange` is monthly. Never use ranges.
+   * RULE: `rentRange`, `familyDinner`, `nannyRate` use a single approximate value with `~` in local currency.
+   * `nannyRate` is hourly. `monthlyFamilyAllIn` matches FAQ #2 and may be a range (e.g. ~$X–$Y / month).
    */
   cost: {
     status: DataStatus;
-    /** e.g. "~€1,300 / month" */
+    /**
+     * Typical all-in monthly budget for a family of four (housing, food, transport baseline).
+     * Must align with FAQ #2 ("How much does a family typically need per month here?").
+     */
+    monthlyFamilyAllIn: string;
+    /** e.g. "~€1,300 / month" — 3-bed rent anchor only; not the full monthly family budget */
     rentRange: string;
     /** e.g. "~€45" */
     familyDinner: string;
