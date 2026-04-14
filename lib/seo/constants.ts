@@ -1,3 +1,7 @@
-/** Shared default meta copy (layout, homepage, JSON-LD). */
+/** Sitewide default: root layout `description`, homepage, JSON-LD `WebSite.description`. */
 export const SITE_DESCRIPTION =
-  "Find your family's next chapter — visa rules, childcare costs, and the best cities for relocating families.";
+  "Family relocation guides for parents — compare cities on visas, international schools, childcare, safety, and monthly costs before you move.";
+
+/** Homepage only: same string for `<title>`, `og:title`, and `twitter:title`. */
+export const SITE_HOME_TITLE =
+  "Family Relocation Guide: Visas, Schools & Childcare | Family Relocation Engine";

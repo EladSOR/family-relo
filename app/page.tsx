@@ -4,21 +4,21 @@ import DestinationsGrid from "@/components/home/DestinationsGrid";
 import { JsonLd } from "@/components/JsonLd";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
-import { SITE_DESCRIPTION } from "@/lib/seo/constants";
+import { SITE_DESCRIPTION, SITE_HOME_TITLE } from "@/lib/seo/constants";
 import { buildWebSiteJsonLd } from "@/lib/seo/siteJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
 export const metadata: Metadata = {
-  title: { absolute: "Family Relocation Engine" },
+  title: { absolute: SITE_HOME_TITLE },
   description: SITE_DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Family Relocation Engine",
+    title: SITE_HOME_TITLE,
     description: SITE_DESCRIPTION,
     url: "/",
   },
   twitter: {
-    title: "Family Relocation Engine",
+    title: SITE_HOME_TITLE,
     description: SITE_DESCRIPTION,
   },
 };
