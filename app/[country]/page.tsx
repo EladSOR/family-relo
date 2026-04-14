@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import DestinationCard from "@/components/home/DestinationCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import { JsonLd } from "@/components/JsonLd";
+import { clipMetaDescription } from "@/lib/seo/description";
+import { buildCountryPageJsonLd } from "@/lib/seo/countryJsonLd";
+import { getSiteUrl } from "@/lib/siteUrl";
 
 // ── Static params ─────────────────────────────────────────────────────────────
 
@@ -12,14 +17,26 @@ export function generateStaticParams() {
   return slugs.map(country => ({ country }));
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { country } = await params;
   const cities = (citiesData as Destination[]).filter(d => d.countrySlug === country);
   if (cities.length === 0) return {};
   const countryName = cities[0].country;
+  const description = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
+  const canonicalPath = `/${country}`;
   return {
-    title: `${countryName} — Family Relocation Engine`,
-    description: `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`,
+    title: { absolute: `${countryName} — Family Relocation Engine` },
+    description: clipMetaDescription(description),
+    alternates: { canonical: canonicalPath },
+    openGraph: {
+      title: `${countryName} — Family Relocation Engine`,
+      description: clipMetaDescription(description),
+      url: canonicalPath,
+    },
+    twitter: {
+      title: `${countryName} — Family Relocation Engine`,
+      description: clipMetaDescription(description),
+    },
   };
 }
 
@@ -36,9 +53,14 @@ export default async function CountryPage({ params }: Props) {
   if (cities.length === 0) notFound();
 
   const countryName = cities[0].country;
+  const siteUrl = getSiteUrl();
+  const countryDescription = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
+      <JsonLd
+        data={buildCountryPageJsonLd(countryName, country, countryDescription, siteUrl)}
+      />
 
       <StickySearchHeader />
       <Breadcrumb items={[

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import {
@@ -18,6 +19,10 @@ import VisaPathSelector from "@/components/VisaPathSelector";
 import { VisaRichText } from "@/components/VisaRichText";
 import { ChecklistItems } from "@/components/ChecklistItems";
 import { CityWeather } from "@/components/CityWeather";
+import { JsonLd } from "@/components/JsonLd";
+import { clipMetaDescription } from "@/lib/seo/description";
+import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
+import { getSiteUrl } from "@/lib/siteUrl";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -42,6 +47,34 @@ interface Props {
   params: Promise<{ country: string; city: string }>;
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { country, city: cityParam } = await params;
+  const dest = (citiesData as Destination[]).find(
+    (d) => d.countrySlug === country && d.citySlug === cityParam,
+  );
+  if (!dest) return {};
+  const canonicalPath = `/${dest.countrySlug}/${dest.citySlug}`;
+  const description = clipMetaDescription(dest.summary);
+  const ogImage = resolveCityHeroImage(dest);
+  return {
+    title: { absolute: `${dest.city}, ${dest.country} — Family Relocation Engine` },
+    description,
+    alternates: { canonical: canonicalPath },
+    openGraph: {
+      title: `${dest.city} — ${dest.tagline}`,
+      description,
+      url: canonicalPath,
+      images: [{ url: ogImage, alt: `${dest.city}, ${dest.country}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${dest.city}, ${dest.country}`,
+      description,
+      images: [ogImage],
+    },
+  };
+}
+
 export default async function CityPage({ params }: Props) {
   const { country, city: cityParam } = await params;
 
@@ -62,8 +95,11 @@ export default async function CityPage({ params }: Props) {
     .flat()
     .filter((s): s is Source => Boolean(s));
 
+  const siteUrl = getSiteUrl();
+
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
+      <JsonLd data={buildCityPageJsonLd(dest, siteUrl)} />
 
       <StickySearchHeader />
       <Breadcrumb items={[

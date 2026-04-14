@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
-import { getSiteUrl } from "@/lib/siteUrl";
+import { getAbsoluteSiteUrl } from "@/lib/siteUrl";
+
+/** Resolve URLs from the live request host (e.g. femirelo.com), not the Vercel deployment hostname. */
+export const dynamic = "force-dynamic";
 
 function lastReviewedToDate(raw: string | undefined): Date | undefined {
   if (!raw) return undefined;
@@ -10,8 +13,8 @@ function lastReviewedToDate(raw: string | undefined): Date | undefined {
   return new Date(y, m - 1, 1);
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = getSiteUrl();
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const base = await getAbsoluteSiteUrl();
   const cities = citiesData as Destination[];
   const now = new Date();
 

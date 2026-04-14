@@ -1,19 +1,38 @@
+import type { Metadata } from "next";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import DestinationCard from "@/components/home/DestinationCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import { JsonLd } from "@/components/JsonLd";
+import { buildDestinationsPageJsonLd } from "@/lib/seo/siteJsonLd";
+import { getSiteUrl } from "@/lib/siteUrl";
 
-export const metadata = {
-  title: "All Destinations — Family Relocation Engine",
-  description: "Browse every family-friendly city in our database — visa rules, schools, childcare costs, and safety scores.",
+const DEST_DESCRIPTION =
+  "Browse every family-friendly city in our database — visa rules, schools, childcare costs, and safety scores.";
+
+export const metadata: Metadata = {
+  title: { absolute: "All Destinations — Family Relocation Engine" },
+  description: DEST_DESCRIPTION,
+  alternates: { canonical: "/destinations" },
+  openGraph: {
+    title: "All Destinations — Family Relocation Engine",
+    description: DEST_DESCRIPTION,
+    url: "/destinations",
+  },
+  twitter: {
+    title: "All Destinations — Family Relocation Engine",
+    description: DEST_DESCRIPTION,
+  },
 };
 
 export default function DestinationsPage() {
   const cities = citiesData as Destination[];
+  const siteUrl = getSiteUrl();
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
+      <JsonLd data={buildDestinationsPageJsonLd(siteUrl, DEST_DESCRIPTION)} />
 
       <StickySearchHeader />
       <Breadcrumb items={[

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { SITE_DESCRIPTION } from "@/lib/seo/constants";
+import { getSiteUrl } from "@/lib/siteUrl";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -10,8 +12,19 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Family Relocation Engine",
-  description: "Find your family's next chapter — visa rules, childcare costs, and the best cities for relocating families.",
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: "Family Relocation Engine",
+    template: "%s | Family Relocation Engine",
+  },
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    type: "website",
+    siteName: "Family Relocation Engine",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
