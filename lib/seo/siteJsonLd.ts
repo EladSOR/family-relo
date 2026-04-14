@@ -1,12 +1,17 @@
 /** Sitewide WebSite entity for the homepage. */
-export function buildWebSiteJsonLd(siteUrl: string, description: string) {
-  return {
+export function buildWebSiteJsonLd(
+  siteUrl: string,
+  description: string,
+  imageUrl?: string,
+) {
+  const base = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Family Relocation Engine",
     url: `${siteUrl}/`,
     description,
   };
+  return imageUrl ? { ...base, image: imageUrl } : base;
 }
 
 /** Destinations index: WebPage + breadcrumbs. */
