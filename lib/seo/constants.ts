@@ -20,7 +20,7 @@ export const SITE_DESTINATIONS_TITLE = `Browse Family Relocation Guides by City 
 export const SITE_DESTINATIONS_OPEN_GRAPH_TITLE = `All cities — visas, schools & family costs | ${SITE_BRAND_NAME}`;
 
 export const SITE_DESTINATIONS_DESCRIPTION = clipMetaDescription(
-  "Every destination in one place: visa rules, school options, childcare and nanny costs, rent bands, and safety — pick a city and open the full family relocation guide.",
+  "Family relocation guides by city: visas, schools, childcare, rent & safety for parents moving with kids. Browse every destination in one place.",
 );
 
 /**

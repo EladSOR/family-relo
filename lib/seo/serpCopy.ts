@@ -21,8 +21,8 @@ export function countrySerpOpenGraphTitle(countryName: string, cityCount: number
 export function countrySerpDescription(countryName: string, cityCount: number): string {
   const raw =
     cityCount === 1
-      ? `Relocating to ${countryName} with kids? Visa options, international schools, childcare costs, rent, and safety — one practical hub for parents.`
-      : `Compare ${cityCount} family-friendly cities in ${countryName}. Visa paths, school fees, nanny rates, housing, and safety — guides built for relocating families.`;
+      ? `${countryName}: moving abroad with kids — visas, schools, childcare, rent & safety. One family relocation hub.`
+      : `${countryName}: ${cityCount} cities for families with kids — visas, schools, childcare, rent & safety. Compare relocation guides.`;
   return clipMetaDescription(raw);
 }
 
@@ -31,9 +31,10 @@ export function citySerpTitle(dest: Destination): string {
 }
 
 /**
- * Meta description: lead with the city name + intent; tagline first when it fits after clipping.
+ * Meta description: fixed template so length stays predictable; city + country + “kids” + search intents.
+ * (Tagline length varies — it is not prepended here to avoid truncation mid-sentence in SERPs.)
  */
 export function citySerpDescription(dest: Destination): string {
-  const raw = `${dest.tagline} See visa routes, international schools, rent, childcare, healthcare, and safety for families in ${dest.city} — practical checklist-style guide.`;
+  const raw = `${dest.city}, ${dest.country}: relocating with kids — visas, schools, rent, childcare, healthcare & safety. Practical guide for families.`;
   return clipMetaDescription(raw);
 }
