@@ -6,7 +6,10 @@ import DestinationCard from "@/components/home/DestinationCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import { JsonLd } from "@/components/JsonLd";
+import { resolveCityHeroImage } from "@/lib/constants";
 import { clipMetaDescription } from "@/lib/seo/description";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
+import { SITE_BRAND_NAME } from "@/lib/seo/constants";
 import { buildCountryPageJsonLd } from "@/lib/seo/countryJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
@@ -24,20 +27,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const countryName = cities[0].country;
   const description = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
   const canonicalPath = `/${country}`;
-  return {
-    title: { absolute: `${countryName} — Family Relocation Engine` },
-    description: clipMetaDescription(description),
-    alternates: { canonical: canonicalPath },
-    openGraph: {
-      title: `${countryName} — Family Relocation Engine`,
-      description: clipMetaDescription(description),
-      url: canonicalPath,
-    },
-    twitter: {
-      title: `${countryName} — Family Relocation Engine`,
-      description: clipMetaDescription(description),
-    },
-  };
+  const metaDesc = clipMetaDescription(description);
+  const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
+  const ogImage = resolveCityHeroImage(coverCity);
+  const ogAlt = `${coverCity.city} — ${countryName} relocation guides`;
+
+  return buildPageMetadata({
+    title: `${countryName} — ${SITE_BRAND_NAME}`,
+    description: metaDesc,
+    canonicalPath,
+    images: [{ url: ogImage, alt: ogAlt }],
+  });
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
@@ -55,11 +55,13 @@ export default async function CountryPage({ params }: Props) {
   const countryName = cities[0].country;
   const siteUrl = getSiteUrl();
   const countryDescription = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
+  const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
+  const ogImageUrl = resolveCityHeroImage(coverCity);
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
       <JsonLd
-        data={buildCountryPageJsonLd(countryName, country, countryDescription, siteUrl)}
+        data={buildCountryPageJsonLd(countryName, country, countryDescription, siteUrl, ogImageUrl)}
       />
 
       <StickySearchHeader />

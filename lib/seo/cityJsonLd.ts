@@ -1,7 +1,7 @@
 import type { Destination } from "@/lib/types";
 
 /** JSON-LD for city pages: breadcrumbs, place context, FAQ (matches visible FAQ). */
-export function buildCityPageJsonLd(dest: Destination, siteUrl: string) {
+export function buildCityPageJsonLd(dest: Destination, siteUrl: string, heroImageUrl: string) {
   const path = `/${dest.countrySlug}/${dest.citySlug}`;
   const pageUrl = `${siteUrl}${path}`;
 
@@ -35,6 +35,7 @@ export function buildCityPageJsonLd(dest: Destination, siteUrl: string) {
     "@id": `${pageUrl}#place`,
     name: dest.city,
     description: dest.summary,
+    image: heroImageUrl,
     containedInPlace: {
       "@type": "Country",
       name: dest.country,

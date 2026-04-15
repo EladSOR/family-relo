@@ -1,15 +1,18 @@
 import { ImageResponse } from "next/og";
+import citiesData from "@/data/cities.json";
+import type { Destination } from "@/lib/types";
 import { OG_CARD, loadPlusJakartaFonts, readBrandedOgBackgroundDataUrl } from "@/lib/seo/ogImageAssets";
-import { SITE_HOME_OG_IMAGE_ALT } from "@/lib/seo/constants";
+import { SITE_DESTINATIONS_OG_IMAGE_ALT } from "@/lib/seo/constants";
 
 export const runtime = "nodejs";
-export const alt = SITE_HOME_OG_IMAGE_ALT;
+export const alt = SITE_DESTINATIONS_OG_IMAGE_ALT;
 export const size = OG_CARD;
 export const contentType = "image/png";
 
 const { width: W, height: H } = OG_CARD;
 
 export default async function Image() {
+  const count = (citiesData as Destination[]).length;
   const [fonts, bgDataUrl] = await Promise.all([
     loadPlusJakartaFonts(),
     readBrandedOgBackgroundDataUrl(),
@@ -96,8 +99,8 @@ export default async function Image() {
                 border: "1px solid rgba(255,255,255,0.22)",
                 borderRadius: 999,
                 padding: "10px 22px",
-                marginBottom: 26,
-                fontSize: 21,
+                marginBottom: 24,
+                fontSize: 20,
                 fontFamily: '"Plus Jakarta Sans"',
                 fontWeight: 700,
                 color: "#ffffff",
@@ -112,7 +115,7 @@ export default async function Image() {
                   backgroundColor: "#34d399",
                 }}
               />
-              Trusted by 2,000+ relocating families
+              {count} family-friendly cities
             </div>
             <div
               style={{
@@ -120,12 +123,12 @@ export default async function Image() {
                 flexDirection: "column",
                 alignItems: "center",
                 textAlign: "center",
-                marginBottom: 20,
+                marginBottom: 18,
               }}
             >
               <span
                 style={{
-                  fontSize: 52,
+                  fontSize: 48,
                   lineHeight: 1.08,
                   fontFamily: '"Plus Jakarta Sans"',
                   fontWeight: 800,
@@ -134,11 +137,11 @@ export default async function Image() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.55)",
                 }}
               >
-                {`Plan your family's move.`}
+                Explore the world
               </span>
               <span
                 style={{
-                  fontSize: 52,
+                  fontSize: 48,
                   lineHeight: 1.08,
                   fontFamily: '"Plus Jakarta Sans"',
                   fontWeight: 800,
@@ -148,38 +151,24 @@ export default async function Image() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.55)",
                 }}
               >
-                Without the chaos.
+                with your family.
               </span>
             </div>
             <p
               style={{
                 margin: 0,
-                marginBottom: 14,
-                fontSize: 23,
+                fontSize: 22,
                 lineHeight: 1.5,
                 fontFamily: '"Plus Jakarta Sans"',
                 fontWeight: 700,
                 color: "rgba(255,255,255,0.94)",
                 textAlign: "center",
-                maxWidth: 900,
+                maxWidth: 880,
                 textShadow: "0 1px 12px rgba(0,0,0,0.45)",
               }}
             >
-              Everything families need to relocate — visas, schools, real costs — finally in one
+              Visa rules, schools, childcare costs, and safety — browse every relocation guide in one
               place.
-            </p>
-            <p
-              style={{
-                margin: 0,
-                fontSize: 19,
-                fontFamily: '"Plus Jakarta Sans"',
-                fontWeight: 700,
-                color: "rgba(255,255,255,0.82)",
-                textAlign: "center",
-                textShadow: "0 1px 10px rgba(0,0,0,0.4)",
-              }}
-            >
-              Built for families, by a family.
             </p>
           </div>
         </div>

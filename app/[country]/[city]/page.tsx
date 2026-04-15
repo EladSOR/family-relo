@@ -21,6 +21,8 @@ import { ChecklistItems } from "@/components/ChecklistItems";
 import { CityWeather } from "@/components/CityWeather";
 import { JsonLd } from "@/components/JsonLd";
 import { clipMetaDescription } from "@/lib/seo/description";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
+import { SITE_BRAND_NAME } from "@/lib/seo/constants";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
@@ -56,23 +58,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonicalPath = `/${dest.countrySlug}/${dest.citySlug}`;
   const description = clipMetaDescription(dest.summary);
   const ogImage = resolveCityHeroImage(dest);
-  return {
-    title: { absolute: `${dest.city}, ${dest.country} — Family Relocation Engine` },
+  const imgAlt = `${dest.city}, ${dest.country}`;
+
+  return buildPageMetadata({
+    title: `${dest.city}, ${dest.country} — ${SITE_BRAND_NAME}`,
+    openGraphTitle: `${dest.city} — ${dest.tagline}`,
     description,
-    alternates: { canonical: canonicalPath },
-    openGraph: {
-      title: `${dest.city} — ${dest.tagline}`,
-      description,
-      url: canonicalPath,
-      images: [{ url: ogImage, alt: `${dest.city}, ${dest.country}` }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${dest.city}, ${dest.country}`,
-      description,
-      images: [ogImage],
-    },
-  };
+    canonicalPath,
+    images: [{ url: ogImage, alt: imgAlt }],
+  });
 }
 
 export default async function CityPage({ params }: Props) {
@@ -99,7 +93,7 @@ export default async function CityPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
-      <JsonLd data={buildCityPageJsonLd(dest, siteUrl)} />
+      <JsonLd data={buildCityPageJsonLd(dest, siteUrl, resolveCityHeroImage(dest))} />
 
       <StickySearchHeader />
       <Breadcrumb items={[

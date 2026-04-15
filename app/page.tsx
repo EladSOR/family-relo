@@ -5,24 +5,15 @@ import { JsonLd } from "@/components/JsonLd";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import { SITE_DESCRIPTION, SITE_HOME_OG_IMAGE, SITE_HOME_TITLE } from "@/lib/seo/constants";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildWebSiteJsonLd } from "@/lib/seo/siteJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
-export const metadata: Metadata = {
-  title: { absolute: SITE_HOME_TITLE },
+export const metadata: Metadata = buildPageMetadata({
+  title: SITE_HOME_TITLE,
   description: SITE_DESCRIPTION,
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: SITE_HOME_TITLE,
-    description: SITE_DESCRIPTION,
-    url: "/",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_HOME_TITLE,
-    description: SITE_DESCRIPTION,
-  },
-};
+  canonicalPath: "/",
+});
 
 export default function Home() {
   const siteUrl = getSiteUrl();

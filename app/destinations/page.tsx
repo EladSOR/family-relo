@@ -5,34 +5,29 @@ import DestinationCard from "@/components/home/DestinationCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import { JsonLd } from "@/components/JsonLd";
+import {
+  SITE_DESTINATIONS_DESCRIPTION,
+  SITE_DESTINATIONS_OG_IMAGE,
+  SITE_DESTINATIONS_TITLE,
+} from "@/lib/seo/constants";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildDestinationsPageJsonLd } from "@/lib/seo/siteJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
-const DEST_DESCRIPTION =
-  "Browse every family-friendly city in our database — visa rules, schools, childcare costs, and safety scores.";
-
-export const metadata: Metadata = {
-  title: { absolute: "All Destinations — Family Relocation Engine" },
-  description: DEST_DESCRIPTION,
-  alternates: { canonical: "/destinations" },
-  openGraph: {
-    title: "All Destinations — Family Relocation Engine",
-    description: DEST_DESCRIPTION,
-    url: "/destinations",
-  },
-  twitter: {
-    title: "All Destinations — Family Relocation Engine",
-    description: DEST_DESCRIPTION,
-  },
-};
+export const metadata: Metadata = buildPageMetadata({
+  title: SITE_DESTINATIONS_TITLE,
+  description: SITE_DESTINATIONS_DESCRIPTION,
+  canonicalPath: "/destinations",
+});
 
 export default function DestinationsPage() {
   const cities = citiesData as Destination[];
   const siteUrl = getSiteUrl();
+  const ogAbs = new URL(SITE_DESTINATIONS_OG_IMAGE, `${siteUrl}/`).href;
 
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
-      <JsonLd data={buildDestinationsPageJsonLd(siteUrl, DEST_DESCRIPTION)} />
+      <JsonLd data={buildDestinationsPageJsonLd(siteUrl, SITE_DESTINATIONS_DESCRIPTION, ogAbs)} />
 
       <StickySearchHeader />
       <Breadcrumb items={[

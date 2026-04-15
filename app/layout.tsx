@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { SITE_DESCRIPTION } from "@/lib/seo/constants";
+import { SITE_BRAND_NAME, SITE_DESCRIPTION } from "@/lib/seo/constants";
 import { getSiteUrl } from "@/lib/siteUrl";
 import "./globals.css";
 
@@ -14,13 +14,13 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Family Relocation Engine",
-    template: "%s | Family Relocation Engine",
+    default: SITE_BRAND_NAME,
+    template: `%s | ${SITE_BRAND_NAME}`,
   },
   description: SITE_DESCRIPTION,
   openGraph: {
     type: "website",
-    siteName: "Family Relocation Engine",
+    siteName: SITE_BRAND_NAME,
   },
   twitter: {
     card: "summary_large_image",
