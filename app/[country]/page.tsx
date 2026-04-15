@@ -7,10 +7,13 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import { JsonLd } from "@/components/JsonLd";
 import { resolveCityHeroImage } from "@/lib/constants";
-import { clipMetaDescription } from "@/lib/seo/description";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
-import { SITE_BRAND_NAME } from "@/lib/seo/constants";
 import { buildCountryPageJsonLd } from "@/lib/seo/countryJsonLd";
+import {
+  countrySerpDescription,
+  countrySerpOpenGraphTitle,
+  countrySerpTitle,
+} from "@/lib/seo/serpCopy";
 import { getSiteUrl } from "@/lib/siteUrl";
 
 // ── Static params ─────────────────────────────────────────────────────────────
@@ -25,15 +28,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cities = (citiesData as Destination[]).filter(d => d.countrySlug === country);
   if (cities.length === 0) return {};
   const countryName = cities[0].country;
-  const description = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
   const canonicalPath = `/${country}`;
-  const metaDesc = clipMetaDescription(description);
+  const n = cities.length;
+  const metaDesc = countrySerpDescription(countryName, n);
   const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
   const ogImage = resolveCityHeroImage(coverCity);
   const ogAlt = `${coverCity.city} — ${countryName} relocation guides`;
 
   return buildPageMetadata({
-    title: `${countryName} — ${SITE_BRAND_NAME}`,
+    title: countrySerpTitle(countryName, n),
+    openGraphTitle: countrySerpOpenGraphTitle(countryName, n),
     description: metaDesc,
     canonicalPath,
     images: [{ url: ogImage, alt: ogAlt }],
@@ -54,7 +58,7 @@ export default async function CountryPage({ params }: Props) {
 
   const countryName = cities[0].country;
   const siteUrl = getSiteUrl();
-  const countryDescription = `Explore ${cities.length} family-friendly ${cities.length === 1 ? "city" : "cities"} in ${countryName} — visa rules, schools, and childcare costs.`;
+  const countryDescription = countrySerpDescription(countryName, cities.length);
   const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
   const ogImageUrl = resolveCityHeroImage(coverCity);
 

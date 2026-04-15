@@ -20,10 +20,9 @@ import { VisaRichText } from "@/components/VisaRichText";
 import { ChecklistItems } from "@/components/ChecklistItems";
 import { CityWeather } from "@/components/CityWeather";
 import { JsonLd } from "@/components/JsonLd";
-import { clipMetaDescription } from "@/lib/seo/description";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
-import { SITE_BRAND_NAME } from "@/lib/seo/constants";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
+import { citySerpDescription, citySerpTitle } from "@/lib/seo/serpCopy";
 import { getSiteUrl } from "@/lib/siteUrl";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -56,14 +55,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   );
   if (!dest) return {};
   const canonicalPath = `/${dest.countrySlug}/${dest.citySlug}`;
-  const description = clipMetaDescription(dest.summary);
+  const metaDesc = citySerpDescription(dest);
   const ogImage = resolveCityHeroImage(dest);
   const imgAlt = `${dest.city}, ${dest.country}`;
 
   return buildPageMetadata({
-    title: `${dest.city}, ${dest.country} — ${SITE_BRAND_NAME}`,
+    title: citySerpTitle(dest),
     openGraphTitle: `${dest.city} — ${dest.tagline}`,
-    description,
+    description: metaDesc,
     canonicalPath,
     images: [{ url: ogImage, alt: imgAlt }],
   });

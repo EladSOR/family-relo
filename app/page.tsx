@@ -4,13 +4,19 @@ import DestinationsGrid from "@/components/home/DestinationsGrid";
 import { JsonLd } from "@/components/JsonLd";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
-import { SITE_DESCRIPTION, SITE_HOME_OG_IMAGE, SITE_HOME_TITLE } from "@/lib/seo/constants";
+import {
+  SITE_DESCRIPTION,
+  SITE_HOME_OG_IMAGE,
+  SITE_HOME_OPEN_GRAPH_TITLE,
+  SITE_HOME_TITLE,
+} from "@/lib/seo/constants";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildWebSiteJsonLd } from "@/lib/seo/siteJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
 export const metadata: Metadata = buildPageMetadata({
   title: SITE_HOME_TITLE,
+  openGraphTitle: SITE_HOME_OPEN_GRAPH_TITLE,
   description: SITE_DESCRIPTION,
   canonicalPath: "/",
 });
