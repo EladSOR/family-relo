@@ -13,6 +13,9 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
+  verification: {
+    google: "fdepb_YyEjOiVqWLjXJ6yLMVwM1mD8KPCTuu_Zi9M9g",
+  },
   title: {
     default: SITE_BRAND_NAME,
     template: `%s | ${SITE_BRAND_NAME}`,
