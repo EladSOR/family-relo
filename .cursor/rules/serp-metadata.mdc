@@ -1,0 +1,43 @@
+---
+description: SERP title & meta description rules for all pages except the homepage (homepage uses SITE_HOME_* in lib/seo/constants.ts).
+globs: lib/seo/serpCopy.ts, lib/seo/constants.ts, lib/seo/description.ts, lib/seo/serpTitle.ts, app/[country]/**/*.tsx, app/destinations/**/*.tsx
+---
+
+# SERP metadata — system rules
+
+## Scope
+
+- **Homepage (`/`):** do not change `SITE_HOME_TITLE`, `SITE_HOME_OPEN_GRAPH_TITLE`, or `SITE_DESCRIPTION` unless explicitly requested.
+- **All other indexable routes:** country hubs (`/[country]`), city guides (`/[country]/[city]`), and `/destinations` follow this spec.
+- **Implementation:** centralize copy in `lib/seo/serpCopy.ts` and listing constants in `lib/seo/constants.ts` — do not hard-code one-off titles in page files.
+- **Numeric caps:** `TITLE_MAX = 70`, `META_DESCRIPTION_MAX = 170` (see `lib/seo/description.ts` and `lib/seo/serpCopy.ts`).
+
+## One title for SERP and social
+
+- **`buildPageMetadata`** sets Open Graph and Twitter `title` from `openGraphTitle` when provided; otherwise it **reuses the same string as `<title>`**.
+- **Do not** pass a different `openGraphTitle` for country, city, or `/destinations` unless there is an explicit product decision — users and crawlers should see **one consistent headline** everywhere.
+- Prefer **`family relocation`** in title cores where length allows (high-intent query); fall back to shorter cores (`moving with kids`, etc.) via the ladder in `serpCopy.ts`.
+
+## `<title>` (HTML title tag)
+
+- **Max length:** **70 characters** (full string, including ` | FamiRelo`). Never ship a truncated or incomplete title — shorten the **core** with the ladder / `fitSerpTitle()` so the suffix stays intact.
+- **Brand:** end with ` | FamiRelo` (`SITE_SERP_TITLE_BRAND`). Spell it exactly **FamiRelo** — no variants. Do not use the full `Family Relocation Engine` in `<title>` (too long). If the core already reads clearly and adding the suffix would force a weak trim, shorten the core first; the suffix is the default end cap.
+- **Evergreen:** never encode **counts** of cities (e.g. “1 family-friendly city”, “N cities”).
+- **Intent & keywords:** include the **place name** (country or city + country), **family / kids / children** or **family relocation**, plus visas/schools/childcare where natural.
+- **Long names:** use the **fallback ladder** in `serpCopy.ts`, then `fitSerpTitle()` in `lib/seo/serpTitle.ts` so **` | FamiRelo` is never truncated**.
+
+## Meta description (`<meta name="description">`)
+
+- **Max length:** **up to 170 characters** (`META_DESCRIPTION_MAX` in `lib/seo/description.ts`). You may use the full budget when it improves keywords and CTR, as long as the text stays **grammatically complete**.
+- **Complete text only:** every description must read as **finished sentences** — no mid-thought cutoffs, no reliance on `…` from `clipMetaDescription` in normal operation. That helper is an emergency fallback if a string overshoots; **after any template change**, verify length for the **longest country name** and **longest `city, country` pair** in `data/cities.json`.
+- **Evergreen:** no city counts; benefit-led, click-worthy copy (plan, actionable, before you move).
+- **Keywords:** place name + kids/relocation + visas, schools, childcare, rent, healthcare, safety — no stuffing.
+
+## Checklist before shipping copy changes
+
+- [ ] No city or country count in titles or descriptions.
+- [ ] All `<title>` strings ≤ **70** chars (spot-check longest place names in `data/cities.json`).
+- [ ] All meta descriptions ≤ **170** chars and **complete** for longest place names (no intentional ellipsis).
+- [ ] Same title used for `<title>` and OG/Twitter unless `openGraphTitle` is deliberately set (should be rare).
+- [ ] Brand suffix spelled **FamiRelo** only.
+- [ ] Homepage constants unchanged unless the task explicitly includes them.

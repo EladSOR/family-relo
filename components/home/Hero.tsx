@@ -61,7 +61,7 @@ export default function Hero() {
               <MapPin size={13} strokeWidth={2.5} />
             </span>
             <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamilyRelo
+              FamiRelo
             </span>
           </Link>
           <div className="min-w-0 flex-1">
@@ -85,7 +85,7 @@ export default function Hero() {
               <MapPin size={16} strokeWidth={2.5} />
             </span>
             <span className="text-lg font-extrabold tracking-tight text-white">
-              FamilyRelo
+              FamiRelo
             </span>
           </Link>
         </nav>

@@ -3,6 +3,12 @@ import { clipMetaDescription } from "@/lib/seo/description";
 /** Product name — use in titles and `openGraph.siteName`. */
 export const SITE_BRAND_NAME = "Family Relocation Engine";
 
+/**
+ * Brand suffix for `<title>` on country, city, and /destinations pages (≤70 chars total).
+ * Homepage keeps full `SITE_BRAND_NAME` unless explicitly updated.
+ */
+export const SITE_SERP_TITLE_BRAND = "FamiRelo";
+
 /** Sitewide default: root layout `description`, homepage, JSON-LD `WebSite.description`. */
 export const SITE_DESCRIPTION = clipMetaDescription(
   "Move abroad with kids: visa options, international schools, childcare, rent, and safety — compare cities with clear, family-first relocation guides.",
@@ -14,13 +20,11 @@ export const SITE_HOME_TITLE = `Family Relocation: Visas, Schools & Costs Before
 /** Shorter headline for OG/Twitter when the full title is long. */
 export const SITE_HOME_OPEN_GRAPH_TITLE = `Family relocation: visas, schools & childcare | ${SITE_BRAND_NAME}`;
 
-/** `/destinations` — SERP title + meta (discovery + benefit). */
-export const SITE_DESTINATIONS_TITLE = `Browse Family Relocation Guides by City | ${SITE_BRAND_NAME}`;
-
-export const SITE_DESTINATIONS_OPEN_GRAPH_TITLE = `All cities — visas, schools & family costs | ${SITE_BRAND_NAME}`;
+/** `/destinations` — same string for `<title>` and Open Graph / Twitter title (see `buildPageMetadata`). */
+export const SITE_DESTINATIONS_TITLE = `Browse family relocation guides by city | ${SITE_SERP_TITLE_BRAND}`;
 
 export const SITE_DESTINATIONS_DESCRIPTION = clipMetaDescription(
-  "Family relocation guides by city: visas, schools, childcare, rent & safety for parents moving with kids. Browse every destination in one place.",
+  "Family relocation guides by city: visas, schools, childcare, housing and healthcare for parents with kids. Browse and compare every destination in one place.",
 );
 
 /**

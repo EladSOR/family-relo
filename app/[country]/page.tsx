@@ -9,11 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { resolveCityHeroImage } from "@/lib/constants";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildCountryPageJsonLd } from "@/lib/seo/countryJsonLd";
-import {
-  countrySerpDescription,
-  countrySerpOpenGraphTitle,
-  countrySerpTitle,
-} from "@/lib/seo/serpCopy";
+import { countrySerpDescription, countrySerpTitle } from "@/lib/seo/serpCopy";
 import { getSiteUrl } from "@/lib/siteUrl";
 
 // ── Static params ─────────────────────────────────────────────────────────────
@@ -29,15 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (cities.length === 0) return {};
   const countryName = cities[0].country;
   const canonicalPath = `/${country}`;
-  const n = cities.length;
-  const metaDesc = countrySerpDescription(countryName, n);
+  const metaDesc = countrySerpDescription(countryName);
   const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
   const ogImage = resolveCityHeroImage(coverCity);
   const ogAlt = `${coverCity.city} — ${countryName} relocation guides`;
 
   return buildPageMetadata({
-    title: countrySerpTitle(countryName, n),
-    openGraphTitle: countrySerpOpenGraphTitle(countryName, n),
+    title: countrySerpTitle(countryName),
     description: metaDesc,
     canonicalPath,
     images: [{ url: ogImage, alt: ogAlt }],
@@ -58,7 +52,7 @@ export default async function CountryPage({ params }: Props) {
 
   const countryName = cities[0].country;
   const siteUrl = getSiteUrl();
-  const countryDescription = countrySerpDescription(countryName, cities.length);
+  const countryDescription = countrySerpDescription(countryName);
   const coverCity = [...cities].sort((a, b) => a.city.localeCompare(b.city))[0];
   const ogImageUrl = resolveCityHeroImage(coverCity);
 

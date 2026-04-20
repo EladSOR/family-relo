@@ -54,7 +54,7 @@ export default function MobileSearchPanel() {
                   <MapPin size={13} strokeWidth={2.5} />
                 </span>
                 <span className="text-sm font-extrabold tracking-tight text-slate-900">
-                  FamilyRelo
+                  FamiRelo
                 </span>
               </Link>
               <button

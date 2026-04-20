@@ -8,7 +8,6 @@ import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_DESTINATIONS_DESCRIPTION,
   SITE_DESTINATIONS_OG_IMAGE,
-  SITE_DESTINATIONS_OPEN_GRAPH_TITLE,
   SITE_DESTINATIONS_TITLE,
 } from "@/lib/seo/constants";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
@@ -17,7 +16,6 @@ import { getSiteUrl } from "@/lib/siteUrl";
 
 export const metadata: Metadata = buildPageMetadata({
   title: SITE_DESTINATIONS_TITLE,
-  openGraphTitle: SITE_DESTINATIONS_OPEN_GRAPH_TITLE,
   description: SITE_DESTINATIONS_DESCRIPTION,
   canonicalPath: "/destinations",
 });

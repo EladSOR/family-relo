@@ -39,7 +39,7 @@ async function check(url) {
     const res = await fetch(url, {
       method: "HEAD",
       redirect: "manual",
-      headers: { "User-Agent": "FamilyRelo-LinkChecker/1.0" },
+      headers: { "User-Agent": "FamiRelo-LinkChecker/1.0" },
       signal: AbortSignal.timeout(8000),
     });
     if (res.status >= 200 && res.status < 300) return { status: "OK",       code: res.status };

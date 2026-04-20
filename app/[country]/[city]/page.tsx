@@ -61,7 +61,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildPageMetadata({
     title: citySerpTitle(dest),
-    openGraphTitle: `${dest.city} — ${dest.tagline}`,
     description: metaDesc,
     canonicalPath,
     images: [{ url: ogImage, alt: imgAlt }],
