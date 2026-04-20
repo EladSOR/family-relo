@@ -5,7 +5,7 @@ import { headers } from "next/headers";
  * Canonical / Open Graph use this via `metadataBase` — without it, static HTML was
  * embedding `http://localhost:3000`. Forks or other domains: set `NEXT_PUBLIC_SITE_URL`.
  */
-const DEFAULT_PRODUCTION_ORIGIN = "https://femirelo.com";
+const DEFAULT_PRODUCTION_ORIGIN = "https://famirelo.com";
 
 /**
  * Public site origin for metadata, JSON-LD, sitemap, and robots.
@@ -28,7 +28,7 @@ function siteUrlFromHeaders(h: Headers): string | null {
 
 /**
  * Preferred for server components and route handlers: respects `NEXT_PUBLIC_SITE_URL`,
- * otherwise the actual request host (so https://femirelo.com/... works without env).
+ * otherwise the actual request host (so https://famirelo.com/... works without env).
  */
 export async function getAbsoluteSiteUrl(): Promise<string> {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");
@@ -48,7 +48,7 @@ export async function getAbsoluteSiteUrl(): Promise<string> {
 
 /**
  * Sync helper for `metadataBase` and JSON-LD at build time (cannot use request headers).
- * Development: `http://localhost:3000`. Production: env, else `https://femirelo.com`.
+ * Development: `http://localhost:3000`. Production: env, else `https://famirelo.com`.
  */
 export function getSiteUrl(): string {
   const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, "");

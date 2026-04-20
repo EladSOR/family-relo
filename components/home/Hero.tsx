@@ -8,7 +8,6 @@ import StickySearchHeader from "@/components/StickySearchHeader";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 
 export default function Hero() {
-  const [videoReady,       setVideoReady]       = useState(false);
   const [showStickySearch, setShowStickySearch] = useState(false);
   const [mobileScrolled,   setMobileScrolled]   = useState(false);
 
@@ -74,25 +73,6 @@ export default function Hero() {
           grid below (z-0). Desktop sticky header is z-[100]. */}
       <section className="hero-gradient relative z-20 flex min-h-screen flex-col lg:min-h-0">
 
-        {/* Background video */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          onCanPlay={() => setVideoReady(true)}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[2000ms] ${
-            videoReady ? "opacity-70" : "opacity-0"
-          }`}
-        >
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-family-walking-on-the-beach-at-sunset-1258-large.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        {/* Gradient scrim */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-stone-50" />
 
         {/* ── NAV ─────────────────────────────────────────────────────────── */}

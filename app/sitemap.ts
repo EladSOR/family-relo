@@ -3,7 +3,7 @@ import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import { getAbsoluteSiteUrl } from "@/lib/siteUrl";
 
-/** Resolve URLs from the live request host (e.g. femirelo.com), not the Vercel deployment hostname. */
+/** Resolve URLs from the live request host (e.g. famirelo.com), not the Vercel deployment hostname. */
 export const dynamic = "force-dynamic";
 
 function lastReviewedToDate(raw: string | undefined): Date | undefined {
