@@ -78,7 +78,8 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-stone-50" />
 
         {/* ── NAV ─────────────────────────────────────────────────────────── */}
-        <nav className="relative z-10 flex items-center justify-between px-6 py-5 md:px-10">
+        <nav className="relative z-10 flex items-center gap-3 px-6 py-5 md:gap-4 md:px-10">
+          <SiteHierarchyMenu variant="onHero" />
           <Link href="/" className="flex items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
               <MapPin size={16} strokeWidth={2.5} />
@@ -87,7 +88,6 @@ export default function Hero() {
               FamilyRelo
             </span>
           </Link>
-          <SiteHierarchyMenu variant="onHero" />
         </nav>
 
         {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
