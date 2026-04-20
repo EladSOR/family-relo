@@ -6,6 +6,7 @@ import { MapPin } from "lucide-react";
 import SearchBar from "./SearchBar";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
+import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
 
 export default function Hero() {
   const [showStickySearch, setShowStickySearch] = useState(false);
@@ -54,6 +55,7 @@ export default function Hero() {
         }`}
       >
         <div className="flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3 shadow-sm">
+          <SiteHierarchyMenu variant="light" />
           <Link href="/" aria-label="Home" className="flex shrink-0 items-center gap-1.5">
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
               <MapPin size={13} strokeWidth={2.5} />
@@ -76,7 +78,7 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-stone-50" />
 
         {/* ── NAV ─────────────────────────────────────────────────────────── */}
-        <nav className="relative z-10 flex items-center px-6 py-5 md:px-10">
+        <nav className="relative z-10 flex items-center justify-between px-6 py-5 md:px-10">
           <Link href="/" className="flex items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
               <MapPin size={16} strokeWidth={2.5} />
@@ -85,6 +87,7 @@ export default function Hero() {
               FamilyRelo
             </span>
           </Link>
+          <SiteHierarchyMenu variant="onHero" />
         </nav>
 
         {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
