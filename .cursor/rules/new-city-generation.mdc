@@ -190,29 +190,52 @@ This applies to: `communityLinks[]`, `housing.searchPortals[]`, `sources.*[]`, `
 
 ---
 
-## RULE 6 — Data: local currency, single values, no fake precision
+## RULE 6 — Data: USD for all cost benchmarks, single values, no fake precision
+
+**Default currency:** use **US dollars (`$`)** for every `cost.*` field, housing `typicalPrices` rent examples, and any user-facing monthly/dinner/nanny benchmark tied to the “Family budget at a glance” cards or destination badges. **Do not** switch to local currency (€, £, ฿, AED, etc.) unless the product owner explicitly requests it for a specific city.
 
 **`cost` fields:**
 ```json
-// ❌ BAD — range, wrong currency context
+// ❌ BAD — vague, missing ~
 { "rentRange": "$800–$2,000/month", "nannyRate": "$/hr" }
 
-// ✅ GOOD — single approximate, local currency
-{ "rentRange": "~฿30,000 / month", "familyDinner": "~฿500", "nannyRate": "~฿150 / hr" }
+// ✅ GOOD — single approximate figures in USD
+{ "rentRange": "~$2,100 / month", "familyDinner": "~$55", "nannyRate": "~$12 / hr" }
 ```
 
 **`monthlyFamilyAllIn` (required on every city):**
 - Typical **all-in monthly budget for a family of four** (housing, food, day-to-day transport baseline — **not** the same as `rentRange` alone).
 - **Must match** the ballpark in FAQ #2 (`"How much does a family typically need per month here?"`). When you edit one, update the other.
-- May be a **range** with `~`, e.g. `"~€4,000–€5,500 / month"` — this is the exception to “single figure only” for the three line-item cards.
+- May be a **range** with `~`, e.g. `"~$4,000–$5,500 / month"` — this is the exception to “single figure only” for the three line-item cards.
 - Powers: city page “Family budget at a glance” (first card) + destination card badge + must stay consistent with FAQ.
 
 Rules:
-- `rentRange`, `familyDinner`, `nannyRate`: single approximate figure with `~` prefix (see exceptions above for `monthlyFamilyAllIn`).
-- Use local currency for the country: `€` for Europe, `฿` for Thailand, `AED` for UAE
+- `rentRange`, `familyDinner`, `nannyRate`: single approximate figure with `~` prefix in **USD** (see exceptions above for `monthlyFamilyAllIn`).
+- You may still **name** local currencies in prose (e.g. “rent is often quoted in colones”) — but **stored benchmark fields stay in USD**.
 - `nannyRate` is always hourly — never monthly, never daycare
-- `typicalPrices` in the housing section may show ranges (they are detail bullets, not cards)
+- `typicalPrices` in the housing section may show ranges (they are detail bullets, not cards); express amounts in **USD** for consistency with cards
 - Safety `score` must be in the 75–90 range — never above 92
+
+---
+
+## RULE 6b — Searchable areas vs. parent cities (no slug conflicts)
+
+When users search for a **popular area** that is not the same as a major municipality (beach town, suburb, peninsula community), ship it as its **own destination card** with the **name people type into Google** (`city` / `citySlug`). In `summary` (and optionally `relatedDestinationGuide`), spell out the geography: e.g. neighbourhood vs. city, town vs. region.
+
+If the site already has a guide for a **nearby hub** (capital, metro core) that readers should compare, add:
+
+```json
+"relatedDestinationGuide": {
+  "countrySlug": "costa-rica",
+  "citySlug": "san-jose",
+  "label": "San Jose",
+  "context": "One or two sentences: what this place is relative to the hub, and why the other guide is useful."
+}
+```
+
+- `countrySlug` + `citySlug` **must** match an existing entry in `cities.json` (same pair as that page’s URL).
+- **Do not** reuse `citySlug` for two different places — each card stays unique; the link is editorial only.
+- Optional: from the hub guide, mention the area in prose — no requirement to duplicate `relatedDestinationGuide` on both sides.
 
 ---
 
@@ -298,8 +321,8 @@ Before completing a new city entry, verify:
 - [ ] `healthcare` and `safety` use `items[]` arrays — no prose `summary`-only entries
 - [ ] `residency` and `banking` are both present with `tip` fields
 - [ ] `schools` has `options[]` with 2–4 category descriptions — **no named schools, no `url` fields**
-- [ ] `cost.monthlyFamilyAllIn` is set and matches FAQ #2; `rentRange` / `familyDinner` / `nannyRate` use local currency and `~`; `nannyRate` is hourly
-- [ ] No USD in Thai city data; no EUR in UAE data
+- [ ] `cost.monthlyFamilyAllIn` is set and matches FAQ #2; `rentRange` / `familyDinner` / `nannyRate` use **USD** and `~`; `nannyRate` is hourly
+- [ ] If the destination is a searchable area tied to a hub we already cover, `relatedDestinationGuide` points at a real `countrySlug`/`citySlug` pair (or omit the field)
 - [ ] Safety score is between 75 and 90
 - [ ] No Facebook URLs anywhere — plain text only
 - [ ] No deep/filtered portal URLs — root homepage only

@@ -11286,6 +11286,12 @@
     "tagline": "Portugal's most sought-after coastal town — 30 minutes from Lisbon, with beaches and top schools nearby",
     "summary": "Cascais is a beautiful coastal town on the Estoril line, 30 minutes from Lisbon by train. It is Portugal's most popular destination for relocating families, combining Atlantic beaches, low crime, excellent international schools nearby, and the NHR (Non-Habitual Resident) tax scheme that reduces foreign income tax to 20% for 10 years. The trade-off is cost — Cascais is one of Portugal's most expensive areas for housing.",
     "lastReviewed": "2026-03",
+    "relatedDestinationGuide": {
+      "countrySlug": "portugal",
+      "citySlug": "lisbon",
+      "label": "Lisbon",
+      "context": "Cascais is its own municipality on the Lisbon metro coast — not a neighbourhood inside Lisbon city proper. National visa framing, a wider housing search arc, and some school commutes overlap with the Lisbon guide."
+    },
     "actionChecklist": [
       {
         "label": "EU/EEA citizens: register at your local Junta de Freguesia (Portugal's local civil parish office — where you register residency) within 90 days of arrival",
@@ -15822,6 +15828,12 @@
     "tagline": "Guanacaste's best-known beach town — surf, sunsets, and a large foreign-resident scene",
     "summary": "Tamarindo is a Pacific beach town in Guanacaste province — hot and dry much of the year, with a strong tourism economy and a long-standing expat community. Families come for beach life, international schooling options spread across the province (often with driving), and Liberia's airport (LIR — Daniel Oduber Quirós International Airport) within about an hour. Trade-offs are high seasonality, beach-town prices, petty theft in busy areas, and less concentrated school choice than the Central Valley.",
     "lastReviewed": "2026-04",
+    "relatedDestinationGuide": {
+      "countrySlug": "costa-rica",
+      "citySlug": "san-jose",
+      "label": "San Jose",
+      "context": "Tamarindo is in Guanacaste, not Greater San José. For Central Valley school density, DIMEX paperwork rhythms, and private-hospital depth, many families read the capital guide alongside this beach-town page."
+    },
     "actionChecklist": [
       {
         "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",
@@ -16252,6 +16264,12 @@
     "tagline": "Central Valley living without San Jose's sprawl — cooler air and a strong commuter link to the capital",
     "summary": "Heredia is a major Central Valley city north-east of San Jose — spring-like temperatures, real urban services, and lower rents than prime Escazú in many neighbourhoods. Many families live here while using bilingual schools in Heredia, Belén, or the western San Jose suburbs (sometimes with school runs). Trade-offs are traffic on the General Cañas corridor, Spanish-first bureaucracy, and the same DIMEX-driven onboarding as everywhere else in Costa Rica.",
     "lastReviewed": "2026-04",
+    "relatedDestinationGuide": {
+      "countrySlug": "costa-rica",
+      "citySlug": "san-jose",
+      "label": "San Jose",
+      "context": "Heredia is its own city in the Central Valley (not a district inside San José). Many families still cross-shop Escazú–Santa Ana schooling and capital services described in the San José guide."
+    },
     "actionChecklist": [
       {
         "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",
@@ -16681,6 +16699,12 @@
     "tagline": "Small-town Central Valley life — mild weather, tight expat circles, and regular trips to San Jose for services",
     "summary": "Atenas is a hillside town west of Alajuela known for expat retirees and families seeking a slower pace than San Jose — pleasant temperatures, mountain views, and a compact centro. Daily life leans local and Spanish-forward; international schools and major private hospitals still mean driving toward the western suburbs or San Jose. Trade-offs are winding roads, limited late-night services, and the need to plan errands in bigger towns.",
     "lastReviewed": "2026-04",
+    "relatedDestinationGuide": {
+      "countrySlug": "costa-rica",
+      "citySlug": "san-jose",
+      "label": "San Jose",
+      "context": "Atenas is a separate town west of the capital, not a San José neighbourhood. For Escazú–Santa Ana school clusters and CIMA–Clínica Bíblica–centric healthcare planning, the San José guide is the usual complement."
+    },
     "actionChecklist": [
       {
         "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",
@@ -17110,6 +17134,12 @@
     "tagline": "Caribbean Costa Rica — humid, laid-back, and culturally distinct from the Pacific coast",
     "summary": "Puerto Viejo de Talamanca is a small coastal town on the Caribbean side — Afro-Caribbean and Bri Bri communities, humid tropical weather, and a slower rhythm than Guanacaste. Some English appears in tourism, but Spanish still runs daily life and government. International schooling is limited compared with the Central Valley; serious healthcare often means travel to Limón city or San Jose. Trade-offs are humidity, infrastructure variability, and honest planning for education continuity.",
     "lastReviewed": "2026-04",
+    "relatedDestinationGuide": {
+      "countrySlug": "costa-rica",
+      "citySlug": "san-jose",
+      "label": "San Jose",
+      "context": "Puerto Viejo is on the Caribbean coast, far from the capital. Families often pair this guide with San José for Central Valley schools, private hospitals, and the rhythm of DIMEX-driven onboarding."
+    },
     "actionChecklist": [
       {
         "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",
@@ -17540,6 +17570,12 @@
     "tagline": "Nicoya Peninsula surf strip — remote beach life with a serious road-access learning curve",
     "summary": "Santa Teresa is a beach community on the southern Nicoya Peninsula — known for surf, steep dirt roads, and a younger expat scene that now includes some families. It sits far from San Jose: expect long drives or combined ferry plus driving. Schooling and paediatric depth cannot match the Central Valley — many families plan homeschooling, online programmes, or boarding school options for secondary years. Trade-offs are cost inflation, power and water quirks, and medical evacuation planning.",
     "lastReviewed": "2026-04",
+    "relatedDestinationGuide": {
+      "countrySlug": "costa-rica",
+      "citySlug": "san-jose",
+      "label": "San Jose",
+      "context": "Santa Teresa is not part of San José — it is a beach community on the Nicoya Peninsula. Many families still compare flights, specialist care, and Central Valley schooling with the capital hub."
+    },
     "actionChecklist": [
       {
         "label": "Check your entry rules — citizens of the US, EU, UK, Canada, and Australia enter Costa Rica visa-free for up to 90 days; most Western passport holders do not need a visa in advance",

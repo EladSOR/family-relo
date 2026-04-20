@@ -6,3 +6,4 @@ Rules:
 2. Every piece of city data must have a 'Source' link to an official government or school website.
 3. Use a clean, professional UI like Booking.com.
 4. Support both English and Hebrew for all action items.
+5. **Cost benchmarks** (`cost.*` fields and housing price bullets): use **USD ($)** by default site-wide unless explicitly told otherwise — see `.cursor/rules/currency-usd.mdc` and RULE 6 in `new-city-generation.mdc`.

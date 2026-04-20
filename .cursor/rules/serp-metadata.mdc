@@ -9,6 +9,7 @@ globs: lib/seo/serpCopy.ts, lib/seo/constants.ts, lib/seo/description.ts, lib/se
 
 - **Homepage (`/`):** do not change `SITE_HOME_TITLE`, `SITE_HOME_OPEN_GRAPH_TITLE`, or `SITE_DESCRIPTION` unless explicitly requested.
 - **All other indexable routes:** country hubs (`/[country]`), city guides (`/[country]/[city]`), and `/destinations` follow this spec.
+- **Data-driven discovery:** `generateStaticParams`, `app/sitemap.ts`, the hierarchy menu (`SiteHierarchyMenu` / `buildSiteHierarchy`), and `/destinations` all read **`data/cities.json`**. Adding or removing a city updates routes, sitemap URLs, and nav **without** hard-coding those URLs in page files — keep using `buildPageMetadata` + `serpCopy.ts` for title/description/canonical.
 - **Implementation:** centralize copy in `lib/seo/serpCopy.ts` and listing constants in `lib/seo/constants.ts` — do not hard-code one-off titles in page files.
 - **Numeric caps:** `TITLE_MAX = 70`, `META_DESCRIPTION_MAX = 170` (see `lib/seo/description.ts` and `lib/seo/serpCopy.ts`).
 

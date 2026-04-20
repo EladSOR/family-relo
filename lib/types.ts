@@ -16,6 +16,20 @@ export interface Destination {
   summary: string;
 
   /**
+   * Optional link to another guide when this destination is a searchable area (beach town,
+   * suburb, etc.) and a nearby hub page adds useful context. Must match an existing
+   * `countrySlug` + `citySlug` in `cities.json`.
+   */
+  relatedDestinationGuide?: {
+    countrySlug: string;
+    citySlug: string;
+    /** Short label for the CTA, e.g. "San Jose" */
+    label: string;
+    /** 1–2 sentences: geography vs. hub + why to open the other guide */
+    context: string;
+  };
+
+  /**
    * ISO year-month string indicating when this record was last reviewed.
    * Used to surface data freshness to users. e.g. "2026-01"
    */
@@ -103,7 +117,7 @@ export interface Destination {
       /** Optional line below the link (e.g. how to find Housing on Craigslist) */
       note?: string;
     }[];
-    /** Bullet list of 4–5 typical monthly rent examples in local currency */
+    /** Bullet list of 4–5 typical monthly rent examples (USD by default — see currency rule) */
     typicalPrices?: string[];
     /** Bullet list of documents and requirements to rent in this city */
     whatYouNeedToRent?: string[];
@@ -216,7 +230,7 @@ export interface Destination {
   /**
    * Quick-stat cost cards on city pages; listing cards use `monthlyFamilyAllIn` for the badge.
    *
-   * RULE: `rentRange`, `familyDinner`, `nannyRate` use a single approximate value with `~` in local currency.
+   * RULE: `rentRange`, `familyDinner`, `nannyRate` use a single approximate value with `~` in USD by default.
    * `nannyRate` is hourly. `monthlyFamilyAllIn` matches FAQ #2 and may be a range (e.g. ~$X–$Y / month).
    */
   cost: {
@@ -226,11 +240,11 @@ export interface Destination {
      * Must align with FAQ #2 ("How much does a family typically need per month here?").
      */
     monthlyFamilyAllIn: string;
-    /** e.g. "~€1,300 / month" — 3-bed rent anchor only; not the full monthly family budget */
+    /** e.g. "~$1,300 / month" — 3-bed rent anchor only; not the full monthly family budget */
     rentRange: string;
-    /** e.g. "~€45" */
+    /** e.g. "~$45" */
     familyDinner: string;
-    /** e.g. "~€12 / hr" */
+    /** e.g. "~$12 / hr" */
     nannyRate: string;
     /** @deprecated */
     childcare?: string;

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import {
@@ -185,6 +186,23 @@ export default async function CityPage({ params }: Props) {
 
         {/* Summary */}
         <p className="text-base leading-relaxed text-slate-700 md:text-lg">{dest.summary}</p>
+
+        {dest.relatedDestinationGuide ? (
+          <aside
+            className="rounded-xl border border-slate-200/90 bg-white p-4 shadow-sm md:p-5"
+            aria-label="Related destination"
+          >
+            <p className="text-sm leading-relaxed text-slate-700 md:text-base">
+              {dest.relatedDestinationGuide.context}
+            </p>
+            <Link
+              href={`/${dest.relatedDestinationGuide.countrySlug}/${dest.relatedDestinationGuide.citySlug}`}
+              className="mt-3 inline-flex text-sm font-semibold text-[#E84A4F] hover:underline md:text-base"
+            >
+              Open {dest.relatedDestinationGuide.label} guide →
+            </Link>
+          </aside>
+        ) : null}
 
         {/* ── Action checklist ──────────────────────────────────────────── */}
         <Section title="Action checklist" icon={<ClipboardList size={16} className="text-slate-500" />}>

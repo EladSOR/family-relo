@@ -1,0 +1,11 @@
+---
+description: Cost benchmarks and housing price bullets use USD ($) by default across the site.
+globs: data/cities.json, lib/types.ts, components/**/*.tsx, app/**/*.tsx
+alwaysApply: true
+---
+
+# Currency: USD default
+
+- **`cost.monthlyFamilyAllIn`**, **`cost.rentRange`**, **`cost.familyDinner`**, **`cost.nannyRate`**, and **`housing.typicalPrices`** (when they state money amounts) must use **US dollars** with a `~` prefix on approximate line items, unless the product owner explicitly asks for another currency on a specific task.
+- Prose may mention local currencies for context; **stored numeric benchmarks** stay in USD so cards, badges, and FAQs stay comparable.
+- See **RULE 6** in `new-city-generation.mdc` for examples and FAQ alignment.
