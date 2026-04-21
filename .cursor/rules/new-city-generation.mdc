@@ -43,6 +43,8 @@ Every bullet must answer: **what is it / what should I do / why does it matter.*
 "Register at your local clinic with your address certificate to activate public coverage — required for your whole family."
 ```
 
+**Do not paste Thailand-specific bureaucracy into non-Thailand cities.** If you are editing Japan, Singapore, Taiwan, Malaysia, Indonesia, etc., never reuse Bangkok-template phrases such as TM30 landlord filing, `imm.immigration.go.th` 90-day reporting, Thai Baht, Sukhumvit/Thonglor/Bang Na, Kasikorn/Bangkok Bank (unless the city is in Thailand), Bumrungrad/Samitivej as default hospitals, or Thai embassy / Thailand Elite URLs. Each country has its own immigration sites, address rules, and currency — verify them for that `countrySlug` before saving.
+
 **Do not use:**
 - "world-class", "virtually zero", "best in the region", "top-tier"
 - Exact government fee amounts (they change — use "roughly" or "approximately")
@@ -190,6 +192,18 @@ This applies to: `communityLinks[]`, `housing.searchPortals[]`, `sources.*[]`, `
 
 ---
 
+## RULE 5b — Weather (required on every destination)
+
+Every city entry must include a `weather` object with **12 monthly rows** (`months` array), generated with the repo script so methodology stays consistent:
+
+```bash
+python3 scripts/generate_city_weather.py
+```
+
+The script writes NASA POWER (MERRA-2) climatology normals plus `sources.weather` citations. If you add a new `countrySlug`, extend `COUNTRY_CODE` in `scripts/generate_city_weather.py` before running. Do not hand-type monthly temperatures unless the script cannot geocode the place (then add `MANUAL_COORDS` for that city `id`).
+
+---
+
 ## RULE 6 — Data: USD for all cost benchmarks, single values, no fake precision
 
 **Default currency:** use **US dollars (`$`)** for every `cost.*` field, housing `typicalPrices` rent examples, and any user-facing monthly/dinner/nanny benchmark tied to the “Family budget at a glance” cards or destination badges. **Do not** switch to local currency (€, £, ฿, AED, etc.) unless the product owner explicitly requests it for a specific city.
@@ -237,6 +251,8 @@ If the site already has a guide for a **nearby hub** (capital, metro core) that 
 - **Do not** reuse `citySlug` for two different places — each card stays unique; the link is editorial only.
 - Optional: from the hub guide, mention the area in prose — no requirement to duplicate `relatedDestinationGuide` on both sides.
 
+**Related guide in the UI:** the city page renders `relatedDestinationGuide` as **inline prose + link** after the summary — not a boxed card. Keep `context` to one or two short sentences.
+
 ---
 
 ## RULE 7 — Visa: all options must be interactive
@@ -244,7 +260,10 @@ If the site already has a guide for a **nearby hub** (capital, metro core) that 
 Every visa option must have:
 - `anchor` — a unique string like `"visa-dtv"`, `"visa-d8"`, `"visa-golden"`
 - `detailTitle` — descriptive heading for the detail panel
+- `duration` — **must answer “how long can I stay on this route?”** in plain language (e.g. “Many passports: about 90 days visa-free”, “Typically 1–2 years per Employment Pass issue”). Avoid useless placeholders like `Varies` without a typical range. If rules differ by nationality, say so and point to the official chart or a Google search link.
 - `details[]` — 4–6 flat bullet strings explaining how to apply
+
+**Acronyms** (VoA, KITAS, EP, COE, ARC, etc.): expand on first use in that option's `type`, `description`, or `summary` — e.g. `VoA (Visa on Arrival)`. For terms in `lib/visaGlossary.ts`, the UI can show a `?` hint — add new keys there when you introduce country-specific jargon.
 
 The `anchor` must also be registered in `components/VisaPathSelector.tsx` in the `ANCHOR_PATH` map.
 
@@ -314,7 +333,7 @@ Before completing a new city entry, verify:
 - [ ] Every checklist item has a valid `targetSection`
 - [ ] No checklist item targets a section that doesn't exist in the data
 - [ ] All `familyFit` arrays have exactly 4 items each
-- [ ] All visa options have `anchor`, `detailTitle`, and `details[]`
+- [ ] All visa options have `anchor`, `detailTitle`, `duration` (plain-language stay length), and `details[]`
 - [ ] New visa anchors are added to `VisaPathSelector.tsx`
 - [ ] `housing` has all 4 blocks including `searchPortalsIntro` with 3 lines
 - [ ] `childcare` uses 3 structured arrays — no prose paragraphs
@@ -329,4 +348,6 @@ Before completing a new city entry, verify:
 - [ ] No superlatives without evidence
 - [ ] All local terms explained inline on first use
 - [ ] `faq` present with **8** Q&As using the standard questions from RULE 9 (city-specific answers)
+- [ ] `weather` present with 12 `months` (run `scripts/generate_city_weather.py` after adding or moving a city)
+- [ ] No Thailand-only jargon (TM30, Thai 90-day site, Baht rents in Tokyo, etc.) unless `countrySlug` is `thailand`
 - [ ] JSON is valid (run `python3 -c "import json; json.load(open('data/cities.json'))"`)

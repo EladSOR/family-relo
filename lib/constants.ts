@@ -80,6 +80,28 @@ export const CITY_IMAGES: Record<string, string> = {
   "Santa Teresa":   "https://images.unsplash.com/photo-1746280372149-9917a641688c?w=900&q=80",
   "Vancouver":      "https://images.unsplash.com/photo-1559511260-66a654ae982a?w=900&q=80",
   "Toronto":        "https://images.unsplash.com/photo-1543962226-818f4301073f?w=900&q=80",
+
+  "Jerusalem":      "https://images.unsplash.com/photo-1574513828599-a4fefc82fe7d?w=900&q=80",
+  "Los Angeles":    "https://images.unsplash.com/photo-1580655653885-65763b2597d0?w=900&q=80",
+  "San Francisco":  "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=900&q=80",
+  "Chicago":        "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80",
+  "Seattle":        "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=900&q=80",
+  "Austin":         "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=900&q=80",
+  "London":         "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80",
+  "Dublin":         "https://images.unsplash.com/photo-1634499282463-274002e296a9?w=900&q=80",
+  "Rome":           "https://images.unsplash.com/photo-1514896856000-91cb6de818e0?w=900&q=80",
+  "Vienna":         "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=900&q=80",
+  "Copenhagen":     "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=900&q=80",
+  "Zurich":         "https://images.unsplash.com/photo-1573137785546-9d19e4f33f87?w=900&q=80",
+  "Singapore":      "https://images.unsplash.com/photo-1499619051840-3e43e7e5d7c9?w=900&q=80",
+  "Tokyo":          "https://images.unsplash.com/photo-1626731759284-fb4a4390d796?w=900&q=80",
+  "Taipei":         "https://images.unsplash.com/photo-1470004914212-05527e49370b?w=900&q=80",
+  "Kuala Lumpur":   "https://images.unsplash.com/photo-1597148543182-830ef7bbb904?w=900&q=80",
+  "Bali":           "https://images.unsplash.com/photo-1739862836638-a3ffe31ff481?w=900&q=80",
+  "Ubud":           "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=900&q=80",
+  "Medellín":       "https://images.unsplash.com/photo-1512250431446-d0b4b57b27ec?w=900&q=80",
+  "Buenos Aires":   "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=900&q=80",
+  "Lima":           "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=900&q=80",
 };
 
 export const FALLBACK_IMAGE =

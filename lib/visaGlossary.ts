@@ -40,10 +40,18 @@ export const VISA_GLOSSARY: Record<string, string> = {
   "Emirates ID":
     "UAE national ID card — required for banking, healthcare, and school enrolment after residency.",
   TM30:
-    "Thai address reporting rule — your landlord must notify immigration when you stay at an address.",
+    "Thailand-only landlord address notification to immigration — not used in Indonesia, Japan, or most other countries.",
   "90-day report":
-    "Thailand's periodic check-in for long-stay visa holders — often every 90 days.",
+    "Thailand's periodic check-in for long-stay visa holders — not Indonesia's system; ignore Thai sites when planning Indonesia.",
   DTV: "Destination Thailand Visa — long-stay route aimed at remote workers and visitors; rules and fees change — confirm officially.",
+  KITAS:
+    "Indonesia limited stay permit (popular name) — temporary residence tied to work, family, or other sponsored categories; validity is printed on your permit.",
+  KITAP:
+    "Indonesia permanent stay permit — long-term status for eligible residents after many years on limited permits; not a tourist stamp.",
+  VoA: "Visa on Arrival (Indonesia) — paid on entry for many nationalities; length and extensions depend on passport — check imigrasi.go.id.",
+  B211A:
+    "Indonesia offshore visit visa category (letter/ e-visa style) — used for longer tourism or pre-arranged visits; rules change — confirm current category names on official immigration pages.",
+  COE: "Certificate of Eligibility (Japan) — immigration pre-approval your employer obtains before you apply for a work visa abroad.",
   NIE: "Spanish foreigner ID number — needed for many contracts and registrations before residency card steps.",
   TIE: "Spain's physical residency card for non-EU residents after approval.",
   "Padrón Municipal":

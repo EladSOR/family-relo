@@ -188,20 +188,15 @@ export default async function CityPage({ params }: Props) {
         <p className="text-base leading-relaxed text-slate-700 md:text-lg">{dest.summary}</p>
 
         {dest.relatedDestinationGuide ? (
-          <aside
-            className="rounded-xl border border-slate-200/90 bg-white p-4 shadow-sm md:p-5"
-            aria-label="Related destination"
-          >
-            <p className="text-sm leading-relaxed text-slate-700 md:text-base">
-              {dest.relatedDestinationGuide.context}
-            </p>
+          <p className="text-base leading-relaxed text-slate-700 md:text-lg">
+            {dest.relatedDestinationGuide.context}{" "}
             <Link
               href={`/${dest.relatedDestinationGuide.countrySlug}/${dest.relatedDestinationGuide.citySlug}`}
-              className="mt-3 inline-flex text-sm font-semibold text-[#E84A4F] hover:underline md:text-base"
+              className="font-semibold text-[#E84A4F] hover:underline"
             >
-              Open {dest.relatedDestinationGuide.label} guide →
+              {dest.relatedDestinationGuide.label} guide →
             </Link>
-          </aside>
+          </p>
         ) : null}
 
         {/* ── Action checklist ──────────────────────────────────────────── */}
