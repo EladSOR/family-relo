@@ -20,6 +20,7 @@ import VisaPathSelector from "@/components/VisaPathSelector";
 import { VisaRichText } from "@/components/VisaRichText";
 import { ChecklistItems } from "@/components/ChecklistItems";
 import { CityWeather } from "@/components/CityWeather";
+import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
@@ -484,6 +485,7 @@ export default async function CityPage({ params }: Props) {
               <VisaRichText text={dest.healthcare.tip} />
             </Tip>
           )}
+          <HealthcareInsuranceCard />
         </Section>
 
         {/* ── Safety ────────────────────────────────────────────────────── */}
