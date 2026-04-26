@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
+import { BLOG_POSTS } from "@/lib/blog/registry";
 import { getAbsoluteSiteUrl } from "@/lib/siteUrl";
 
 /** Resolve URLs from the live request host (e.g. famirelo.com), not the Vercel deployment hostname. */
@@ -43,6 +44,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const blogIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${base}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.85,
+    },
+  ];
+
+  const blogPosts: MetadataRoute.Sitemap = BLOG_POSTS.map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: new Date(p.publishedAt + "T12:00:00Z"),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
   return [
     {
       url: `${base}/`,
@@ -56,6 +73,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    ...blogIndex,
+    ...blogPosts,
     ...countryEntries,
     ...cityEntries,
   ];

@@ -150,6 +150,15 @@ export default function SiteHierarchyMenu({ variant }: Props) {
                   All destinations
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="relative z-10 block rounded-md px-2 py-2.5 font-semibold text-slate-900 hover:bg-slate-100 active:bg-slate-200"
+                  onClick={() => setOpen(false)}
+                >
+                  Blog
+                </Link>
+              </li>
             </ul>
 
             <div className="my-4 h-px bg-slate-200" />

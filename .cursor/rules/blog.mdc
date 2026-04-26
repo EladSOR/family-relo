@@ -1,0 +1,46 @@
+---
+description: Data-first blog (digests, comparisons) — not travel fluff. SEO, structure, and honesty rules for app/blog and content components.
+globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/blogJsonLd.ts
+---
+
+# Blog — data digest rules
+
+## Purpose
+
+- **Value:** Publish **data in a post-shaped layout** that answers a question city pages are not designed to answer (e.g. A vs B), using **the same numbers** as our guides. Do **not** copy long narrative blocks from city pages; **synthesize, tabulate, and link** instead.
+- **Not:** Generic “AI travel” copy, first-person travel stories, or anything that overclaims visa, tax, or school outcomes.
+
+## URLs & registry
+
+- Routes: `/blog` (index), `/blog/[slug]`.
+- Register every post in `lib/blog/registry.ts` with `getAllBlogPosts()` / `BLOG_POSTS`.
+- Each post: `listTitle` (H1, no brand), `title` (SERP, ends with ` | FamiRelo`, ≤ 70 characters total for `<title>`), `metaDescription` (≤ 170, complete sentences — use `clipMetaDescription`), `relatedCityIds` from `data/cities.json`, `publishedAt`, `tags`, `contentTypeLabel` (e.g. `Data digest`).
+
+## SERP (align with `serp-metadata.mdc`)
+
+- Brand suffix: **`FamiRelo`**, not the full `Family Relocation Engine`, in the HTML `<title>` for blog.
+- `buildPageMetadata` for canonical, OG, Twitter; **OG image** = first related city’s `resolveCityHeroImage` unless a post-specific asset is added later.
+- `generateStaticParams` from `BLOG_POSTS`. Add new posts to `app/sitemap.ts` via the registry (already mapped).
+
+## Layout & design
+
+- **Layout:** `StickySearchHeader`, `Breadcrumb` (`Home` → `Blog` → current), `min-h-screen bg-[#F5EFE8]`, `max-w-3xl` article column — same family as country/city pages.
+- **Readability:** Short paragraphs, real `<h2>` / `<h3>`, tables with `overflow-x-auto`, avoid walls of text.
+- **Byline / framing:** “Data digest · `publishedAt`” and “Last reviewed {month year} from guides” so readers know this is a **re-layout of our dataset**, not independent journalism.
+- **No “what this page is not” section in the middle** of a post — stay useful. One short scope line in the intro or a single FAQ is enough for legal/careful phrasing.
+- **FAQ:** end with `BlogFaqSection` (accordion, same pattern as city guide FAQ) — not a flat `<dl>` list.
+- **Footer block:** `You might also like` (or the same phrasing) with **internal** links to relevant city/country/destinations pages.
+- **Premium:** Static digests are fine; the paid product can offer **interactivity, more dimensions, and saved comparisons** — do not make every blog post an app substitute. Point to the guides for depth.
+
+## Structured data
+
+- Use `lib/seo/buildBlogArticleJsonLd.ts`: `Article` + `BreadcrumbList` + optional `FAQPage` when the page shows matching Q&A.
+- FAQs must be **on-page** and **aligned** with the FAQ schema; no FAQ stuffing that is not visible.
+
+## New post checklist
+
+- [ ] Add to `BLOG_POSTS` with all required fields
+- [ ] Implement rendering in `app/blog/[slug]/page.tsx` (or a colocated content component) and `generateStaticParams` picks it up
+- [ ] Title length / meta length spot-check
+- [ ] `npm run build` — static generation must succeed
+- [ ] Sitemap includes `/blog` and `/blog/slug` (registry-driven)
