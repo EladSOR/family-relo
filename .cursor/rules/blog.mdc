@@ -1,6 +1,6 @@
 ---
 description: Data-first blog (digests, comparisons) — not travel fluff. SEO, structure, and honesty rules for app/blog and content components.
-globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/blogJsonLd.ts
+globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/blogJsonLd.ts, components/blog/ComparisonPostBodies.tsx, components/blog/DataDigestCityComparisonArticle.tsx, components/blog/comparisonVisaBlocks.tsx, lib/blog/cityPairFaqs.ts
 ---
 
 # Blog — data digest rules
