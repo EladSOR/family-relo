@@ -8387,6 +8387,429 @@
     }
   },
   {
+    "id": "eilat-il",
+    "citySlug": "eilat",
+    "countrySlug": "israel",
+    "city": "Eilat",
+    "country": "Israel",
+    "tagline": "Red Sea resort city — desert heat, compact living, and a slower pace than central Israel",
+    "summary": "Eilat is Israel's southernmost city on the Red Sea — a hot desert climate, coral reefs and outdoor life, and an economy centred on tourism, hospitality, and logistics. Families come for a beach-town lifestyle, remote-friendly work, or Red Sea outdoor culture without Tel Aviv's scale. Trade-offs are intense summer heat, fewer English-medium school options than in central Israel, isolation from the main job and specialist-care clusters (Beersheba and Tel Aviv are the usual referral hubs), and the same national security awareness as elsewhere in the country.",
+    "relatedDestinationGuide": {
+      "countrySlug": "israel",
+      "citySlug": "tel-aviv",
+      "label": "Tel Aviv",
+      "context": "Most international schools and many headquarters jobs sit in central Israel — Eilat families often compare notes with Tel Aviv relocations and use domestic flights when they need metro services or visits."
+    },
+    "lastReviewed": "2026-04",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — most Western passport holders enter Israel visa-free for 90 days; a B/1 work visa requires Israeli employer sponsorship",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Line up housing early — Eilat's rental market is smaller than Tel Aviv's but still moves fast in peak tourism seasons",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply for your Mispar Zehut (מספר זהות — Israeli ID number) at the Ministry of Interior — required for banking, healthcare, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Map school options before you sign a lease — English-medium places are limited; younger children often integrate into Hebrew public schools with tutoring support",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Join a Kupat Holim (קופת חולים — health fund) once you have your Israeli ID number — Israel's public healthcare system covering GP, specialists, and hospital care",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Arrange private IPMI (International Private Medical Insurance) as a bridge until your Kupat Holim membership is active",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open an Israeli bank account (Hapoalim, Leumi, or Discount) once you have your residency number — start early because branches can be busy",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Review your government's current travel advisory before moving and keep your family's emergency plan current",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families who want Red Sea beaches, diving, and desert outdoor life in a compact city",
+        "Households with remote income or tourism, hospitality, and logistics roles tied to southern Israel",
+        "Parents comfortable with Hebrew-first schooling or longer school commutes / boarding discussions for English tracks",
+        "Those who prefer a slower pace than Tel Aviv while staying inside Israel's systems"
+      ],
+      "watchOutFor": [
+        "Summer heat is extreme — plan air-conditioning, hydration, and limited midday outdoor time for children",
+        "English-medium and international school capacity is thin — research before you commit",
+        "Complex specialist care often means travel to Beersheba or central Israel — budget time and transport",
+        "National security awareness and bureaucracy match the rest of Israel — Hebrew help is valuable at government offices"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Most Western passport holders enter Israel visa-free for up to 90 days. Long-term residence requires either a B/1 work visa (employer-sponsored) or oleh status (available under the Law of Return). Non-resident expats typically arrive on a B/1 work visa sponsored by their Israeli employer.",
+      "tip": "Start the B/1 work visa process well in advance — the Israeli Ministry of Interior processing typically takes 2–4 months from a complete submission.",
+      "options": [
+        {
+          "type": "Visa-free entry (tourist)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Visa-free tourist entry — what it covers",
+          "duration": "Up to 90 days",
+          "description": "Most Western passport holders enter Israel visa-free. Good for a scouting trip — no right to work or long-term residency.",
+          "details": [
+            "Citizens of the US, UK, EU, Australia, Canada, and most other Western countries enter Israel visa-free for up to 90 days.",
+            "No right to work on visa-free entry — working for an Israeli employer without a B/1 visa is not permitted.",
+            "Cannot be converted to residency from inside Israel — you must apply at the Israeli Ministry of Interior or consulate before arriving.",
+            "Good use: spend time in the Coral Beach area, the city centre, and Shahamon to test school runs, heat tolerance, and daily logistics before committing.",
+            "Check your government's current travel advisory before booking — conditions change and entry requirements should always be confirmed ahead of travel."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Foreign Affairs visa information official"
+          }
+        },
+        {
+          "type": "B/1 Work Visa (employer-sponsored)",
+          "anchor": "visa-il-work",
+          "detailTitle": "B/1 Work Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "Requires sponsorship by a licensed Israeli employer. The primary long-term route for tech, hospitality, and corporate expats.",
+          "details": [
+            "Your Israeli employer must apply to the Israeli Population and Immigration Authority for a work permit on your behalf before you can apply for the B/1 visa.",
+            "Required documents: valid passport, employer sponsorship letter, employment contract, and private health insurance valid in Israel.",
+            "Apply at the Israeli consulate or embassy in your home country. Processing typically takes 2–4 months from a complete submission.",
+            "The B/1 visa is tied to your specific employer — if you change jobs, the new employer must apply for a new work permit.",
+            "Family members (spouse and children) receive a B/2 dependent visa under your B/1, allowing residence in Israel but not independent employment."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Interior work visa B1 official requirements"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Mispar Zehut",
+      "tip": "Engage a relocation agent or a Hebrew-speaking fixer for your first appointments — southern branches still use the same national rules as Tel Aviv, but queues and forms are easier with local help.",
+      "items": [
+        "Temporary residents receive a Mispar Zehut (מספר זהות — Israeli ID number) from the Ministry of Interior (Misrad HaPnim — משרד הפנים). This number is required for almost every formal transaction: banking, healthcare, school enrolment, and contracts.",
+        "Apply for your Mispar Zehut at your nearest Ministry of Interior office. Bring your passport, visa page, employment contract, and rental agreement. Expect to wait several weeks for the physical ID document.",
+        "Families eligible under the Law of Return (Jewish heritage) can apply for Aliyah — full Israeli citizenship — which immediately grants full residency rights, access to Kupat Holim, and government absorption benefits.",
+        "Non-citizen temporary residents must renew their B/1 visa annually through their employer — make sure your employer's HR team manages this renewal calendar.",
+        "Your Israeli ID number also serves as your tax ID for all local financial and government purposes."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Israeli banks are slow to open accounts for new arrivals — start the process in your first week and expect 2–4 weeks before the account is fully active.",
+      "items": [
+        "Bank Hapoalim (בנק הפועלים) and Bank Leumi (בנק לאומי) are the two largest banks in Israel and the most commonly used by expat families. Discount Bank (בנק דיסקונט) is a strong alternative with a more modern digital experience.",
+        "You need your Mispar Zehut (Israeli ID number), passport, visa, rental contract, and employment contract to open an account. Some banks additionally require an introductory letter from your employer.",
+        "The process is slow — expect multiple visits and 2–4 weeks from first application to a fully working account. Use Wise or Revolut as a bridge while waiting.",
+        "Most financial transactions in Eilat are done by bank transfer or direct debit (הוראת קבע) — rent, school fees, and utilities typically require a local Israeli bank account within 4–6 weeks of arrival.",
+        "Wise is widely used by expats for receiving foreign income in USD or EUR and converting into ILS (Israeli New Shekel — ₪) at a competitive rate."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Eilat's rental market is smaller than Tel Aviv's but still competitive around the beach belt and city centre. Listings mix long-term residents with tourism-adjacent housing — read contracts carefully for seasonal clauses. Many families choose Coral Beach, Shahamon, or the central grid for walkable daily life.",
+      "bestAreas": [
+        "Coral Beach",
+        "Shahamon",
+        "City centre",
+        "Amram Park area",
+        "North beach / Arava road belt"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than short-stay tourism sites).",
+        "Search 'Eilat' plus the neighbourhood name inside each platform to filter local listings.",
+        "Tip: peak tourism periods can tighten inventory — start early, keep guarantor paperwork ready, and confirm whether utilities and municipal tax (Arnona — ארנונה) are included."
+      ],
+      "searchPortals": [
+        {
+          "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+          "url": "https://www.yad2.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Madlan.co.il — Israeli property portal with map-based search",
+          "url": "https://www.madlan.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Eilat Anglo housing' or 'Olim Eilat' (direct landlord leads)",
+          "url": "https://www.google.com/search?q=Eilat+Anglo+housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, city centre: ~$1,080–$1,620/month",
+        "2-bed apartment, Coral Beach or Shahamon: ~$1,620–$2,430/month",
+        "3-bed apartment, beach belt: ~$2,160–$3,240/month",
+        "Larger villa or house, north Eilat: ~$2,700–$4,050/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Israeli ID number (Mispar Zehut)",
+        "2–3 months of personal bank statements",
+        "Employment contract or income proof",
+        "Israeli guarantor or bank guarantee — most landlords require a local guarantor; a bank guarantee is accepted as an alternative",
+        "2–3 months deposit — common in Israeli leases",
+        "Rental contracts are in Hebrew — use a registered translator or relocation agent to review before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Eilat runs Hebrew-first public schools like the rest of Israel. English-medium international options are much scarcer than in Tel Aviv — many families plan Hebrew integration for younger children or accept longer commutes / creative solutions for older pupils.",
+      "publicSystem": "Israeli public schools are free and open to all residents. Instruction is in Hebrew — realistic mainly when children are young enough to pick up language quickly or when you budget for intensive tutoring. Ulpan (intensive Hebrew programmes) exists for older children and adults.",
+      "internationalOptions": "A small English-speaking expat community uses limited private bilingual or international-style programmes — capacity and bus logistics should be verified early. Domestic flights to central Israel are common when families split schooling between cities.",
+      "languageNotes": "Hebrew dominates day-to-day schooling. English is spoken in tourism and many service jobs, but not a substitute for classroom Hebrew. Private Hebrew tutoring for newly arrived children often costs roughly $35–$65/hr.",
+      "tip": "Visit schools during term time if you can — heat, distance, and language support plans matter more here than in milder climates.",
+      "options": [
+        {
+          "type": "Hebrew public schools with integration support",
+          "description": "Free state schools — most realistic for younger children with a tutoring plan and patience for the first year.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Private bilingual or international-style programmes",
+          "description": "Very limited seats — confirm transport, hours, and waitlists before housing.",
+          "fees": "~$12,000–$24,000/year typical where available"
+        },
+        {
+          "type": "Boarding or metro-area schooling (families splitting locations)",
+          "description": "Some households use relatives or secondary homes in central Israel for secondary school while keeping a base in Eilat — requires honest budgeting for travel.",
+          "fees": "Varies widely"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Israel's early-years rules apply in Eilat: gan (גן — preschool) for ages 3–6, metaplot (מטפלות — licensed home daycare) and maon (מעון — nursery) for younger babies.",
+      "daycareItems": [
+        "Gan (גן — preschool) is mandatory and free for ages 3–6 under Israeli law — the local authority allocates a place based on your registered address",
+        "For under-3s, a metaplet (מטפלת — a licensed home daycare provider) is common. Licensed metaplot accept up to five children in a home setting. Typical cost: ~$490–$860/month",
+        "Private nurseries (maon — מעון) accept children from three months old. Fees: ~$730–$1,350/month — premium nurseries near the beach belt can have short waiting lists",
+        "The Israeli government provides a subsidised daycare voucher (Shal) for children aged three months to three years — eligibility and amount vary by family income; search 'Bituach Leumi Shal voucher' on Google for current rules"
+      ],
+      "nannyItems": [
+        "Nannies and sitters typically charge ~$10–$20/hr — English-speaking caregivers may sit at the upper end",
+        "Full-time live-out nannies often cost ~$1,620–$2,700/month in Eilat — lower than Tel Aviv but still meaningful in the household budget",
+        "Filipino and other migrant caregivers work in many Israeli homes — verify contracts and legal hiring rules with your employer or relocation agent",
+        "Start your search four to six weeks before arrival — word-of-mouth in parent chats fills roles quickly"
+      ],
+      "whereToFindItems": [
+        "Yad2.co.il — domestic services section for nanny and babysitter listings across Israel",
+        "Search 'Eilat Anglo parents' or 'Olim families Eilat' on Google for English-speaking parent groups and referrals",
+        "Israeli relocation agencies — many maintain vetted childcare referral lists for incoming families"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "summary": "Israel's Kupat Holim system covers most routine care once you are registered; Eilat has a full local hospital while complex cases often route to Beersheba or central Israel.",
+      "tip": "Kupat Holim membership requires a Mispar Zehut (Israeli ID number) — arrange private insurance as a bridge until your residency documents are in place.",
+      "items": [
+        "Israel's public healthcare runs through four Kupat Holim (קופת חולים — health funds): Clalit, Maccabi, Meuhedet, and Leumit. All cover GP visits, specialists, hospitals, and prescriptions from the national health basket once you are registered.",
+        "Kupat Holim membership requires a Mispar Zehut and formal residency — B/1 workers usually become eligible after Ministry of Interior registration.",
+        "Until Kupat Holim is active, carry IPMI (International Private Medical Insurance) — Cigna Global, AXA, and Allianz Care are common choices for newly arrived expats.",
+        "Yoseftal Medical Center is Eilat's main public hospital for emergencies and many inpatient needs — confirm which Kupat Holim clinics and paediatricians serve your neighbourhood.",
+        "Complex specialist care is often coordinated through Soroka Medical Center in Beersheba — Soroka is the major referral hospital for southern Israel — or through centres in Tel Aviv; plan transport and accommodation for overnight appointments."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 76,
+      "summary": "Day-to-day life in Eilat is calm for a small resort city, but desert hazards and Israel's national security context still require preparation.",
+      "items": [
+        "Petty theft can occur near busy beaches and hotels — use normal urban awareness with bags and phones.",
+        "Heat stress is a real risk from late spring through early autumn — schedule children's outdoor play for mornings or evenings and never leave kids in parked cars.",
+        "National alert systems (Red Alert / Tzeva Adom — צבע אדום) and shelter norms apply — download the Home Front Command app (Pikud HaOref) and know your building's protected space (mamad — ממ\"ד).",
+        "Check your home government's travel advisory — border areas and regional events can change guidance quickly.",
+        "Road trips into the Negev or Timna Park need extra water, sun protection, and fuel planning — desert breakdowns are dangerous in midsummer"
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$2,160 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$13 / hr",
+      "monthlyFamilyAllIn": "~$6,000–$9,000 / month"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Israel Ministry of Foreign Affairs — Visa information",
+          "url": "https://www.gov.il/en/departments/ministry_of_foreign_affairs",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Eilat Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Eilat",
+          "isVerified": true
+        }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Eilat expats' or 'Anglo Eilat' on Google — English-speaking communities for families in southern Israel",
+        "searchQuery": "Eilat expats Anglo parents",
+        "url": "https://www.google.com/search?q=Eilat+expats+Facebook+group",
+        "isVerified": true
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Eilat good for families?",
+        "answer": "Yes for families who want Red Sea outdoor life and a compact city. Less ideal if you need many English-medium school places or frequent specialist care without travel — compare honestly with Tel Aviv before you commit."
+      },
+      {
+        "question": "How much does a family typically need per month here?",
+        "answer": "Roughly $6,000–$9,000/month all-in is typical for a family of four before heavy private-school premiums — rent runs lower than Tel Aviv but tourism pricing and summer cooling bills add up."
+      },
+      {
+        "question": "Is housing hard to find here?",
+        "answer": "Moderate. The market is smaller than Tel Aviv's but can tighten in peak seasons. Start six to eight weeks before arrival with guarantor paperwork ready."
+      },
+      {
+        "question": "Do children need international school here, or can local schools work?",
+        "answer": "Hebrew public schools are free and viable for younger children with tutoring support. English-medium options are limited — plan school strategy before you choose a neighbourhood."
+      },
+      {
+        "question": "Is healthcare easy to access as a newcomer?",
+        "answer": "Emergency and routine care exist locally at Yoseftal, but complex cases often route to Beersheba or central Israel. Register with a Kupat Holim as soon as you have a Mispar Zehut and keep private insurance until then."
+      },
+      {
+        "question": "Do you need a car in Eilat?",
+        "answer": "Not strictly for the beach and city core — many errands are walkable or a short drive. A car helps for groceries in outlying retail parks, desert trips, and school runs if you live north of the centre. Domestic flights connect to Tel Aviv when you need metro services."
+      },
+      {
+        "question": "How difficult is the paperwork and bureaucracy after moving?",
+        "answer": "Similar to the rest of Israel — Hebrew forms, Ministry of Interior queues, and slow bank onboarding. Hire translation help for your first week if you can."
+      },
+      {
+        "question": "What usually surprises families after arrival?",
+        "answer": "How dominant the heat is for daily scheduling — school pickup, sports, and weekend hikes all revolve around morning and evening windows for much of the year."
+      }
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 29.558,
+      "gridLongitude": 34.948,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 24.6,
+          "lowC": 1.5,
+          "rainMm": 9.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 2,
+          "highC": 27.9,
+          "lowC": 2.0,
+          "rainMm": 10.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 3,
+          "highC": 30.9,
+          "lowC": 4.4,
+          "rainMm": 5.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 4,
+          "highC": 34.9,
+          "lowC": 7.3,
+          "rainMm": 3.9,
+          "rainDays": 1.0
+        },
+        {
+          "month": 5,
+          "highC": 38.8,
+          "lowC": 11.2,
+          "rainMm": 0.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 6,
+          "highC": 39.8,
+          "lowC": 14.6,
+          "rainMm": 0.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 40.4,
+          "lowC": 17.2,
+          "rainMm": 0.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 40.0,
+          "lowC": 18.0,
+          "rainMm": 0.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 38.9,
+          "lowC": 16.1,
+          "rainMm": 2.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 10,
+          "highC": 36.3,
+          "lowC": 12.4,
+          "rainMm": 3.4,
+          "rainDays": 1.0
+        },
+        {
+          "month": 11,
+          "highC": 30.0,
+          "lowC": 7.2,
+          "rainMm": 6.0,
+          "rainDays": 1.0
+        },
+        {
+          "month": 12,
+          "highC": 25.3,
+          "lowC": 3.2,
+          "rainMm": 5.3,
+          "rainDays": 1.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~40°C); coolest: Jan (mean daily low ~2°C).",
+        "Most rainfall on average: Feb (~10 mm total); driest: Jun (~0 mm).",
+        "Mean daily highs reach about 32°C or more in Apr, May, Jun, Jul, Aug, Sep, Oct — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan, Feb) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
+  },
+  {
     "id": "melbourne-au",
     "citySlug": "melbourne",
     "countrySlug": "australia",

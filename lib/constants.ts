@@ -37,6 +37,7 @@ export const CITY_IMAGES: Record<string, string> = {
   "Valencia":     "https://images.unsplash.com/photo-1754403392652-0edc305bce4b?w=900&q=80",
   "Lisbon":       "https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?w=900&q=80",
   "Dubai":        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+  "Eilat":        "https://images.unsplash.com/photo-1562525333-0470577360e8?w=900&q=80",
   "Chiang Mai":   "https://images.unsplash.com/photo-1512553353614-82a7370096dc?w=900&q=80",
   "Koh Phangan":  "https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=900&q=80",
   "Koh Samui":    "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=900&q=80",
