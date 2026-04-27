@@ -47,11 +47,9 @@ const BARCELONA_MADRID_RELATED = [
 export function ValenciaVsLisbonArticle({
   valencia,
   lisbon,
-  dataAsOf,
 }: {
   valencia: Destination;
   lisbon: Destination;
-  dataAsOf: string;
 }) {
   const vPath = `/${valencia.countrySlug}/${valencia.citySlug}`;
   const lPath = `/${lisbon.countrySlug}/${lisbon.citySlug}`;
@@ -61,8 +59,7 @@ export function ValenciaVsLisbonArticle({
     <DataDigestCityComparisonArticle
       a={valencia}
       b={lisbon}
-      dataAsOf={dataAsOf}
-      headline="Valencia vs Lisbon: family comparison"
+      headline="Valencia vs Lisbon: which city for families?"
       intro={
         <p>
           A <strong>side-by-side</strong> of the family-focused numbers we publish for{" "}
@@ -97,15 +94,7 @@ export function ValenciaVsLisbonArticle({
   );
 }
 
-export function LisbonVsPortoArticle({
-  lisbon,
-  porto,
-  dataAsOf,
-}: {
-  lisbon: Destination;
-  porto: Destination;
-  dataAsOf: string;
-}) {
+export function LisbonVsPortoArticle({ lisbon, porto }: { lisbon: Destination; porto: Destination }) {
   const aPath = `/${lisbon.countrySlug}/${lisbon.citySlug}`;
   const bPath = `/${porto.countrySlug}/${porto.citySlug}`;
   const lRent = parseRentAnchor(lisbon.cost.rentRange);
@@ -114,8 +103,7 @@ export function LisbonVsPortoArticle({
     <DataDigestCityComparisonArticle
       a={lisbon}
       b={porto}
-      dataAsOf={dataAsOf}
-      headline="Lisbon vs Porto: family comparison"
+      headline="Lisbon vs Porto: which city for families?"
       intro={
         <p>
           <strong>Portugal’s two largest metros</strong> side by side: the same data fields as our{" "}
@@ -153,11 +141,9 @@ export function LisbonVsPortoArticle({
 export function BarcelonaVsMadridArticle({
   barcelona,
   madrid,
-  dataAsOf,
 }: {
   barcelona: Destination;
   madrid: Destination;
-  dataAsOf: string;
 }) {
   const aPath = `/${barcelona.countrySlug}/${barcelona.citySlug}`;
   const bPath = `/${madrid.countrySlug}/${madrid.citySlug}`;
@@ -167,8 +153,7 @@ export function BarcelonaVsMadridArticle({
     <DataDigestCityComparisonArticle
       a={barcelona}
       b={madrid}
-      dataAsOf={dataAsOf}
-      headline="Barcelona vs Madrid: family comparison"
+      headline="Barcelona vs Madrid: which city for families?"
       intro={
         <p>
           A <strong>head-to-head</strong> of our published numbers for{" "}

@@ -45,8 +45,8 @@ function BarCompare({
     <div className="space-y-4 rounded-2xl border border-stone-200 bg-white p-4 shadow-sm md:p-5">
       <h3 className="text-sm font-bold text-slate-800">All-in family budget (midpoint of our range)</h3>
       <p className="text-xs text-slate-500">
-        We take the mid-point of each city&apos;s &quot;monthly family all-in&quot; band from the cost cards.
-        Ranges in the table above are the source of truth.
+        Quick read: the bar uses the middle of each city&apos;s monthly all-in range. The table above has
+        the full range.
       </p>
       <div className="space-y-2">
         <div>
@@ -81,7 +81,6 @@ function BarCompare({
 export type DataDigestCityComparisonArticleProps = {
   a: Destination;
   b: Destination;
-  dataAsOf: string;
   /** Same as registry `listTitle` — H1 */
   headline: string;
   intro: ReactNode;
@@ -99,7 +98,6 @@ export type DataDigestCityComparisonArticleProps = {
 export function DataDigestCityComparisonArticle({
   a,
   b,
-  dataAsOf,
   headline,
   intro,
   rentNote,
@@ -149,14 +147,17 @@ export function DataDigestCityComparisonArticle({
 
       <p className="text-xs font-medium uppercase tracking-wider text-slate-500">Data digest</p>
       <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">{headline}</h1>
-      <p className="mt-3 text-sm text-slate-500">Figures on this page are taken from our city guides, last reviewed {dataAsOf}.</p>
+      <p className="mt-3 text-sm text-slate-600">
+        Side-by-side rent, budgets, school fees, safety, and weather—so you can compare both cities in one
+        read. Follow the links to each place for the full checklists, neighbourhoods, and visa detail.
+      </p>
 
       <div className="mt-6 text-base leading-relaxed text-slate-700">{intro}</div>
 
       <h2 className="mt-10 text-xl font-bold text-slate-900">At a glance</h2>
       <p className="mt-2 max-w-prose text-base leading-relaxed text-slate-700">
-        These rows mirror the &quot;family budget at a glance&quot; cards and related sections. Dollar figures are
-        the estimates already shown in each guide’s cost and schools blocks.
+        Dollar amounts are the same ballpark figures we use on each city page for family rent, all-in
+        spend, and day-to-day costs.
       </p>
 
       <div className="mt-4 overflow-x-auto rounded-2xl border border-stone-200 bg-white shadow-sm">

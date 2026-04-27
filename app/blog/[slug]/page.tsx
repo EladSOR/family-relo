@@ -20,7 +20,6 @@ import {
   getLisbonPortoFaqForSchema,
   getValenciaLisbonFaqForSchema,
 } from "@/lib/blog/cityPairFaqs";
-import { formatLastReviewedLabel } from "@/lib/blog/formatReviewed";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -66,23 +65,21 @@ export default async function BlogPostPage({ params }: Props) {
   const canonicalPath = `/blog/${post.slug}`;
   const og = resolveCityHeroImage(d0);
   const imageUrl = new URL(og, `${siteUrl}/`).href;
-  const dataAsOf = formatLastReviewedLabel(d0.lastReviewed, d1.lastReviewed);
-
   let faqs: { question: string; answer: string }[];
   let article: ReactNode;
 
   switch (post.slug) {
     case "valencia-vs-lisbon":
       faqs = getValenciaLisbonFaqForSchema(d0, d1);
-      article = <ValenciaVsLisbonArticle valencia={d0} lisbon={d1} dataAsOf={dataAsOf} />;
+      article = <ValenciaVsLisbonArticle valencia={d0} lisbon={d1} />;
       break;
     case "lisbon-vs-porto":
       faqs = getLisbonPortoFaqForSchema(d0, d1);
-      article = <LisbonVsPortoArticle lisbon={d0} porto={d1} dataAsOf={dataAsOf} />;
+      article = <LisbonVsPortoArticle lisbon={d0} porto={d1} />;
       break;
     case "barcelona-vs-madrid":
       faqs = getBarcelonaMadridFaqForSchema(d0, d1);
-      article = <BarcelonaVsMadridArticle barcelona={d0} madrid={d1} dataAsOf={dataAsOf} />;
+      article = <BarcelonaVsMadridArticle barcelona={d0} madrid={d1} />;
       break;
     default:
       notFound();

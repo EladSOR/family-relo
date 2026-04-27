@@ -1,0 +1,21 @@
+---
+description: Title, meta description, and Open Graph copy must stay evergreen unless the user explicitly asks for dates or “last updated” language.
+globs: lib/seo/**/*.ts, lib/blog/registry.ts, app/**/page.tsx, app/**/layout.tsx, components/**/opengraph*.tsx
+---
+
+# Timeless SERP & social copy
+
+## Default (no explicit user request)
+
+- **Do not** put **time-sensitive** phrasing in `<title>`, `<meta name="description">`, **Open Graph `title` / `description`**, or **Twitter card** fields — e.g. “last reviewed January 2026”, “updated April 2026”, “as of 2026”, “new for 2026”, or any month/year that will go stale.
+- **Do** write **evergreen, benefit-led** copy: intent + place + topic (family relocation, kids, schools, rent, visas where appropriate) so it stays accurate without maintenance.
+- **Schema** may still use machine-readable `datePublished` / `dateModified` in JSON-LD from source data; that is not user-facing in the same way. Do not mirror those into visible meta strings unless asked.
+
+## When the user *does* ask for freshness language
+
+- Only then add review/update wording to titles, descriptions, or OG — and prefer **one** clear pattern (e.g. “Data updated [month]” in the **body** only if needed), not multiple inconsistent signals.
+
+## Checklist
+
+- [ ] No review month/year in `<title>`, meta description, or OG/Twitter `description` unless requested.
+- [ ] Titles still respect `serp-metadata.mdc` (length, `FamiRelo` suffix, complete descriptions).
