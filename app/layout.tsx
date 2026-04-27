@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { SITE_BRAND_NAME, SITE_DESCRIPTION } from "@/lib/seo/constants";
 import { getSiteUrl } from "@/lib/siteUrl";
+import MapToggle from "@/components/home/MapToggle";
+import citiesData from "@/data/cities.json";
+import type { Destination } from "@/lib/types";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -55,6 +58,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        {/* Site-wide floating "Show map" pill. Lazy-loads Leaflet on tap,
+            so it has zero cost on initial paint for any page. The fullscreen
+            overlay is the single shared "go bigger" exit from the inline
+            cube on the home page and the only map entry on inner pages. */}
+        <MapToggle cities={citiesData as Destination[]} />
       </body>
     </html>
   );
