@@ -12,7 +12,7 @@ globs: lib/seo/serpCopy.ts, lib/seo/constants.ts, lib/seo/description.ts, lib/se
 - **Evergreen copy:** do not put “last reviewed {date}” or similar in `<title>`, meta description, or OG/Twitter — unless the user explicitly asked. See **`serp-timeless.mdc`**.
 - **Data-driven discovery:** `generateStaticParams`, `app/sitemap.ts`, the hierarchy menu (`SiteHierarchyMenu` / `buildSiteHierarchy`), and `/destinations` all read **`data/cities.json`**. Adding or removing a city updates routes, sitemap URLs, and nav **without** hard-coding those URLs in page files — keep using `buildPageMetadata` + `serpCopy.ts` for title/description/canonical.
 - **Implementation:** centralize copy in `lib/seo/serpCopy.ts` and listing constants in `lib/seo/constants.ts` — do not hard-code one-off titles in page files.
-- **Numeric caps:** `TITLE_MAX = 70`, `META_DESCRIPTION_MAX = 170` (see `lib/seo/description.ts` and `lib/seo/serpCopy.ts`).
+- **Numeric caps:** `<title>` **≤ 70** characters total (including ` | FamiRelo`). **Target ~65–70** for the full string when you can fit strong keywords (place + family/schools/rent, etc.). Meta description **`META_DESCRIPTION_MAX = 165`** (`lib/seo/description.ts`). See `serpCopy.ts` for country/city templates.
 
 ## One title for SERP and social
 
@@ -30,8 +30,8 @@ globs: lib/seo/serpCopy.ts, lib/seo/constants.ts, lib/seo/description.ts, lib/se
 
 ## Meta description (`<meta name="description">`)
 
-- **Max length:** **up to 170 characters** (`META_DESCRIPTION_MAX` in `lib/seo/description.ts`). You may use the full budget when it improves keywords and CTR, as long as the text stays **grammatically complete**.
-- **Complete text only:** every description must read as **finished sentences** — no mid-thought cutoffs, no reliance on `…` from `clipMetaDescription` in normal operation. That helper is an emergency fallback if a string overshoots; **after any template change**, verify length for the **longest country name** and **longest `city, country` pair** in `data/cities.json`.
+- **Max length:** **165 characters** (`META_DESCRIPTION_MAX`). Use the space for intent and keywords; every string must end as **complete sentence(s)** — **never** ship a description that stops mid-sentence or uses a `…` ellipsis from trimming.
+- **`clipMetaDescription`:** does **not** append `…`. Prefer **hand-editing** copy to ≤ 165 chars so the published description is exactly what you intend. If a template might exceed 165 (e.g. long place names), shorten the **fixed** part of the sentence in `serpCopy.ts` / `constants.ts`, then re-check the longest case in `data/cities.json`.
 - **Evergreen:** no city counts; benefit-led, click-worthy copy (plan, actionable, before you move).
 - **Keywords:** place name + kids/relocation + visas, schools, childcare, rent, healthcare, safety — no stuffing.
 
@@ -39,7 +39,7 @@ globs: lib/seo/serpCopy.ts, lib/seo/constants.ts, lib/seo/description.ts, lib/se
 
 - [ ] No city or country count in titles or descriptions.
 - [ ] All `<title>` strings ≤ **70** chars (spot-check longest place names in `data/cities.json`).
-- [ ] All meta descriptions ≤ **170** chars and **complete** for longest place names (no intentional ellipsis).
+- [ ] All meta descriptions ≤ **165** chars and **complete** for longest place names (no `…`, no mid-sentence cuts).
 - [ ] Same title used for `<title>` and OG/Twitter unless `openGraphTitle` is deliberately set (should be rare).
 - [ ] Brand suffix spelled **FamiRelo** only.
 - [ ] Homepage constants unchanged unless the task explicitly includes them.

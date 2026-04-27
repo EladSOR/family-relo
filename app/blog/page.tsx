@@ -2,16 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllBlogPosts } from "@/lib/blog/registry";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
-import { clipMetaDescription } from "@/lib/seo/description";
 import { SITE_SERP_TITLE_BRAND } from "@/lib/seo/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 
-const TITLE = `Family relocation: city comparison guides & tips | ${SITE_SERP_TITLE_BRAND}`;
+const TITLE = `Family relocation: city guides & comparisons for families | ${SITE_SERP_TITLE_BRAND}`;
 
-const DESCRIPTION = clipMetaDescription(
-  "Practical family relocation compare guides: two cities, one page—rent, cost of living, international schools, childcare, and safety. For parents planning a move abroad with kids.",
-);
+/** ≤ 165 chars, two complete sentences — see `serp-metadata.mdc`. */
+const DESCRIPTION =
+  "Compare two family destinations at once: rent, cost of living, international schools, childcare, and safety. For parents who are still choosing where to go.";
 
 export const metadata: Metadata = buildPageMetadata({
   title: TITLE,

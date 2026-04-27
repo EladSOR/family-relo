@@ -59,7 +59,7 @@ export function ValenciaVsLisbonArticle({
     <DataDigestCityComparisonArticle
       a={valencia}
       b={lisbon}
-      headline="Valencia vs Lisbon: which city for families?"
+      headline="Valencia vs Lisbon: rent, schools & costs"
       intro={
         <p>
           A <strong>side-by-side</strong> of the family-focused numbers we publish for{" "}
@@ -103,7 +103,7 @@ export function LisbonVsPortoArticle({ lisbon, porto }: { lisbon: Destination; p
     <DataDigestCityComparisonArticle
       a={lisbon}
       b={porto}
-      headline="Lisbon vs Porto: which city for families?"
+      headline="Lisbon vs Porto: rent, schools & family costs"
       intro={
         <p>
           <strong>Portugal’s two largest metros</strong> side by side: the same data fields as our{" "}
@@ -153,7 +153,7 @@ export function BarcelonaVsMadridArticle({
     <DataDigestCityComparisonArticle
       a={barcelona}
       b={madrid}
-      headline="Barcelona vs Madrid: which city for families?"
+      headline="Barcelona vs Madrid: rent, schools & family life"
       intro={
         <p>
           A <strong>head-to-head</strong> of our published numbers for{" "}

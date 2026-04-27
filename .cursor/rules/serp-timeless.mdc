@@ -8,6 +8,7 @@ globs: lib/seo/**/*.ts, lib/blog/registry.ts, app/**/page.tsx, app/**/layout.tsx
 ## Default (no explicit user request)
 
 - **Do not** put **time-sensitive** phrasing in `<title>`, `<meta name="description">`, **Open Graph `title` / `description`**, or **Twitter card** fields — e.g. “last reviewed January 2026”, “updated April 2026”, “as of 2026”, “new for 2026”, or any month/year that will go stale.
+- **Do not** end meta descriptions with a **`…` ellipsis** or any **incomplete sentence** because of length. Stay within **165** characters with **full stops** (see `serp-metadata.mdc`). Titles: **≤ 70** characters total; **target ~65–70** including ` | FamiRelo` when keywords allow.
 - **Do** write **evergreen, benefit-led** copy: intent + place + topic (family relocation, kids, schools, rent, visas where appropriate) so it stays accurate without maintenance.
 - **Schema** may still use machine-readable `datePublished` / `dateModified` in JSON-LD from source data; that is not user-facing in the same way. Do not mirror those into visible meta strings unless asked.
 

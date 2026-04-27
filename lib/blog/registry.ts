@@ -1,42 +1,42 @@
 import type { BlogPostMeta } from "@/lib/blog/types";
-import { clipMetaDescription } from "@/lib/seo/description";
 
+/**
+ * ≤ `META_DESCRIPTION_MAX` (165), **complete sentences** — do not rely on `clipMetaDescription` to fix length
+ * (see `serp-metadata.mdc`). Run a character count after edits.
+ */
 export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: "lisbon-vs-porto",
-    title: "Lisbon vs Porto: Which Is Better for Families? | FamiRelo",
-    metaDescription: clipMetaDescription(
-      "Lisbon or Porto for your family? Compare cost of living, 3-bed rent, international school fees, childcare, safety, and weather—Portugal’s capital vs the north, with numbers parents actually plan with.",
-    ),
+    title: "Lisbon vs Porto: rent, schools & family costs compared | FamiRelo",
+    metaDescription:
+      "Lisbon or Porto? Compare cost of living, rent, school fees, childcare, safety, and weather for families. Portugal's capital versus the north.",
     publishedAt: "2026-04-27",
     contentTypeLabel: "Data digest",
     tags: ["lisbon", "porto", "portugal", "compare"],
     relatedCityIds: ["lisbon-pt", "porto-pt"],
-    listTitle: "Lisbon vs Porto: which city for families?",
+    listTitle: "Lisbon vs Porto: rent, schools & family costs",
   },
   {
     slug: "barcelona-vs-madrid",
-    title: "Barcelona vs Madrid: Which City for Families? | FamiRelo",
-    metaDescription: clipMetaDescription(
-      "Barcelona or Madrid with kids? See rent, monthly family spend, school options, safety, and climate—coast and Catalonia vs Spain’s big inland capital, compared for family relocation and Spain digital nomad planning.",
-    ),
+    title: "Barcelona vs Madrid: rent, schools & best for families? | FamiRelo",
+    metaDescription:
+      "Barcelona or Madrid with kids? Compare rent, budgets, school options, safety, and climate. Mediterranean coast versus Spain's inland capital.",
     publishedAt: "2026-04-27",
     contentTypeLabel: "Data digest",
     tags: ["barcelona", "madrid", "spain", "compare"],
     relatedCityIds: ["barcelona-es", "madrid-es"],
-    listTitle: "Barcelona vs Madrid: which city for families?",
+    listTitle: "Barcelona vs Madrid: rent, schools & family life",
   },
   {
     slug: "valencia-vs-lisbon",
-    title: "Valencia vs Lisbon: Which Is Cheaper for Families? | FamiRelo",
-    metaDescription: clipMetaDescription(
-      "Valencia or Lisbon for family life abroad? Compare housing costs, monthly budgets, international schools, childcare, and safety—Mediterranean Spain vs Portugal’s capital for families planning a move.",
-    ),
+    title: "Valencia vs Lisbon: rent, schools & costs for families | FamiRelo",
+    metaDescription:
+      "Valencia or Lisbon for family life? Compare rent, all-in costs, international schools, childcare, and safety. Spain or Portugal in one read.",
     publishedAt: "2026-01-26",
     contentTypeLabel: "Data digest",
     tags: ["valencia", "lisbon", "spain", "portugal", "compare"],
     relatedCityIds: ["valencia-es", "lisbon-pt"],
-    listTitle: "Valencia vs Lisbon: which city for families?",
+    listTitle: "Valencia vs Lisbon: rent, schools & costs",
   },
 ];
 

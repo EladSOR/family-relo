@@ -14,7 +14,7 @@ globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/bl
 
 - Routes: `/blog` (index), `/blog/[slug]`.
 - Register every post in `lib/blog/registry.ts` with `getAllBlogPosts()` / `BLOG_POSTS`.
-- Each post: `listTitle` (H1, no brand), `title` (SERP, ends with ` | FamiRelo`, ≤ 70 characters total for `<title>`), `metaDescription` (≤ 170, complete sentences — use `clipMetaDescription`), `relatedCityIds` from `data/cities.json`, `publishedAt`, `tags`, `contentTypeLabel` (e.g. `Data digest`).
+- Each post: `listTitle` (H1, no brand), `title` (SERP, ends with ` | FamiRelo`, ≤ 70 characters total; target **~65–70** with keywords), `metaDescription` (≤ **165** characters, **one or two complete sentences** — write copy that already fits; `clipMetaDescription` is a last-resort trim with **no** `…`), `relatedCityIds` from `data/cities.json`, `publishedAt`, `tags`, `contentTypeLabel` (e.g. `Data digest`).
 
 ## SERP (align with `serp-metadata.mdc` and `serp-timeless.mdc`)
 

@@ -32,11 +32,11 @@ export function countrySerpTitle(countryName: string): string {
 
 export function countrySerpDescription(countryName: string): string {
   /**
-   * Full sentences only — verified ≤ `META_DESCRIPTION_MAX` with longest country name in `data/cities.json`.
-   * `clipMetaDescription` is only if data exceeds the limit (avoid shipping broken `…` endings).
+   * Full sentences only — keep ≤ `META_DESCRIPTION_MAX` with longest country name in `data/cities.json`.
+   * `clipMetaDescription` only if data exceeds the limit; it does not append `…` (see `serp-metadata.mdc`).
    */
   const body =
-    "Family relocation guides for parents moving with kids. Visas, international schools, childcare, housing and healthcare in one place. Read before you move.";
+    "Family relocation for parents and kids. Visas, international schools, childcare, housing and healthcare. Read before you move.";
   const raw = `${countryName}: ${body}`.trim().replace(/\s+/g, " ");
   if (raw.length > DESC_MAX) return clipMetaDescription(raw, DESC_MAX);
   return raw;
@@ -61,7 +61,7 @@ export function citySerpTitle(dest: Destination): string {
 
 export function citySerpDescription(dest: Destination): string {
   const { city, country } = dest;
-  /** Verified ≤ `META_DESCRIPTION_MAX` with longest `city, country` prefix in `data/cities.json`. */
+  /** Prefer ≤ `META_DESCRIPTION_MAX` with longest `city, country` in `data/cities.json` (verify after edits). */
   const body =
     "Family relocation for parents with kids: visas, schools, childcare, rent, healthcare and safety. Plan each step before you move abroad.";
   const raw = `${city}, ${country}: ${body}`.trim().replace(/\s+/g, " ");
