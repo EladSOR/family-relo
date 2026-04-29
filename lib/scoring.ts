@@ -6,6 +6,8 @@ import { parseMonthlyCost } from "./cityCost";
 export type FamilySize = "solo" | "couple" | "family";
 export type WorkSituation = "remote" | "local" | "freelance";
 export type Priority = "cost" | "safety" | "schools" | "weather" | "lifestyle";
+export type KidsAge = "preschool" | "primary" | "secondary";
+export type NumKids = 1 | 2 | 3;
 
 export interface UserInputs {
   budget: number;
@@ -13,6 +15,10 @@ export interface UserInputs {
   workSituation: WorkSituation;
   /** Up to 3 priorities, in order of importance */
   priorities: Priority[];
+  /** Only relevant when familySize === "family" */
+  numKids?: NumKids;
+  /** School stage of oldest/youngest child */
+  kidsAge?: KidsAge;
 }
 
 export interface DimensionScores {
@@ -33,6 +39,8 @@ export interface CityScore {
   budgetMid: number;
   budgetMin: number;
   budgetMax: number;
+  /** Estimated monthly cost for childcare/schooling (set when numKids + kidsAge provided) */
+  kidsMonthlyEstimate?: number;
 }
 
 // ── Dimension scorers ─────────────────────────────────────────────────────────
@@ -206,6 +214,54 @@ function computeWeights(priorities: Priority[]): Record<Priority, number> {
   return weights;
 }
 
+// ── Kids cost estimation ──────────────────────────────────────────────────────
+
+function parseSchoolFeeAnnual(feesStr: string): number | null {
+  const matches = [...feesStr.matchAll(/\$([\d,]+)/g)];
+  if (!matches.length) return null;
+  const numbers = matches
+    .map((m) => Number(m[1].replace(/,/g, "")))
+    .filter((n) => n > 1000);
+  if (!numbers.length) return null;
+  return Math.round(numbers.reduce((a, b) => a + b, 0) / numbers.length);
+}
+
+/** Monthly cost of schooling/childcare per city for the given family inputs. */
+export function estimateKidsMonthlyCost(
+  city: Destination,
+  numKids: NumKids,
+  kidsAge: KidsAge,
+): number {
+  const n = numKids;
+  const cityMid = parseMonthlyCost(city.cost.monthlyFamilyAllIn)?.mid ?? 4000;
+  const tier: "cheap" | "mid" | "expensive" =
+    cityMid < 2800 ? "cheap" : cityMid < 5000 ? "mid" : "expensive";
+
+  if (kidsAge === "preschool") {
+    const childcareText = [
+      ...(city.childcare?.daycareItems ?? []),
+      ...(city.childcare?.nannyItems ?? []),
+    ].join(" ");
+    const parsed = parseMonthlyCost(childcareText);
+    if (parsed && parsed.mid > 100) return Math.round(parsed.mid * n);
+    const base = tier === "cheap" ? 500 : tier === "mid" ? 900 : 1500;
+    return base * n;
+  }
+
+  for (const opt of city.schools.options ?? []) {
+    if (opt.fees) {
+      const annual = parseSchoolFeeAnnual(opt.fees);
+      if (annual && annual > 3000) return Math.round((annual / 12) * n);
+    }
+  }
+
+  const bases: Record<typeof tier, number> =
+    kidsAge === "secondary"
+      ? { cheap: 700, mid: 1400, expensive: 2200 }
+      : { cheap: 500, mid: 1000, expensive: 1700 };
+  return bases[tier] * n;
+}
+
 // ── Public API ────────────────────────────────────────────────────────────────
 
 export function scoreCity(city: Destination, inputs: UserInputs): CityScore {
@@ -230,6 +286,12 @@ export function scoreCity(city: Destination, inputs: UserInputs): CityScore {
   const matchPct = Math.min(99, Math.max(28, Math.round(raw)));
 
   const parsed = parseMonthlyCost(city.cost.monthlyFamilyAllIn);
+
+  const kidsMonthlyEstimate =
+    inputs.familySize === "family" && inputs.numKids && inputs.kidsAge
+      ? estimateKidsMonthlyCost(city, inputs.numKids, inputs.kidsAge)
+      : undefined;
+
   return {
     city,
     matchPct,
@@ -238,6 +300,7 @@ export function scoreCity(city: Destination, inputs: UserInputs): CityScore {
     budgetMid: parsed?.mid ?? 0,
     budgetMin: parsed?.min ?? 0,
     budgetMax: parsed?.max ?? 0,
+    kidsMonthlyEstimate,
   };
 }
 

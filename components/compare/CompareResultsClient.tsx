@@ -15,6 +15,8 @@ import {
   type Priority,
   type FamilySize,
   type WorkSituation,
+  type KidsAge,
+  type NumKids,
 } from "@/lib/scoring";
 
 const ALL_CITIES = citiesData as Destination[];
@@ -499,7 +501,20 @@ export default function CompareResultsClient() {
   const priorities = parsePriorities(params.get("priorities") ?? "cost,safety");
   const isPreview = params.get("preview") === "true";
 
-  const inputs: UserInputs = { budget, familySize, workSituation: work, priorities };
+  const rawKids = params.get("kids");
+  const rawKidsAge = params.get("kidsage");
+  const numKids: NumKids | undefined =
+    familySize === "family" && rawKids
+      ? (Math.min(3, Math.max(1, Number(rawKids))) as NumKids)
+      : undefined;
+  const kidsAge: KidsAge | undefined =
+    familySize === "family" && rawKidsAge
+      ? (["preschool", "primary", "secondary"].includes(rawKidsAge)
+          ? (rawKidsAge as KidsAge)
+          : "primary")
+      : undefined;
+
+  const inputs: UserInputs = { budget, familySize, workSituation: work, priorities, numKids, kidsAge };
 
   const scores: CityScore[] = useMemo(() => {
     const cities = cityIds
@@ -525,12 +540,20 @@ export default function CompareResultsClient() {
     );
   }
 
+  const kidsAgeLabel: Record<KidsAge, string> = {
+    preschool: "under 5",
+    primary: "ages 5–12",
+    secondary: "ages 13+",
+  };
+
   const familyLabel =
     familySize === "solo"
       ? "Solo"
       : familySize === "couple"
         ? "Couple"
-        : "Family with kids";
+        : numKids && kidsAge
+          ? `Family · ${numKids === 3 ? "3+" : numKids} kid${numKids > 1 ? "s" : ""} ${kidsAgeLabel[kidsAge]}`
+          : "Family with kids";
 
   const workLabel =
     work === "remote" ? "remote work" : work === "local" ? "local job" : "freelance";
@@ -726,6 +749,18 @@ export default function CompareResultsClient() {
                     </span>
                   </div>
 
+                  {/* Kids cost estimate */}
+                  {s.kidsMonthlyEstimate !== undefined && (
+                    <div className="mb-2 flex items-center justify-between rounded-lg bg-amber-50 px-2.5 py-1.5">
+                      <span className="text-[11px] font-medium text-amber-700">
+                        + est. school / childcare
+                      </span>
+                      <span className="text-[11px] font-bold text-amber-800">
+                        ~{formatBudget(s.kidsMonthlyEstimate)}/mo
+                      </span>
+                    </div>
+                  )}
+
                   {/* Bar */}
                   <div className="h-2 overflow-hidden rounded-full bg-slate-100">
                     <div
@@ -740,6 +775,7 @@ export default function CompareResultsClient() {
                   {headroom > 0 && s.budgetFit !== "over" && (
                     <p className="mt-1.5 text-[11px] font-medium text-slate-500">
                       ~{formatBudget(headroom)} headroom each month
+                      {s.kidsMonthlyEstimate !== undefined && " (before kids costs)"}
                     </p>
                   )}
                 </div>

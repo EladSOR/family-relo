@@ -6,7 +6,7 @@ import Link from "next/link";
 import { MapPin, Search, Check, ChevronRight, ArrowLeft } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
-import type { FamilySize, WorkSituation, Priority } from "@/lib/scoring";
+import type { FamilySize, WorkSituation, Priority, KidsAge, NumKids } from "@/lib/scoring";
 import { PRIORITY_LABELS, PRIORITY_ICONS } from "@/lib/scoring";
 
 const ALL_CITIES = citiesData as Destination[];
@@ -29,6 +29,8 @@ function buildResultsUrl(
   familySize: FamilySize,
   work: WorkSituation,
   priorities: Priority[],
+  numKids: NumKids,
+  kidsAge: KidsAge,
 ): string {
   const params = new URLSearchParams({
     cities: selectedIds.join(","),
@@ -37,6 +39,10 @@ function buildResultsUrl(
     work,
     priorities: priorities.join(","),
   });
+  if (familySize === "family") {
+    params.set("kids", String(numKids));
+    params.set("kidsage", kidsAge);
+  }
   return `/compare/results?${params.toString()}`;
 }
 
@@ -145,6 +151,8 @@ export default function CompareBuildClient() {
   // Step 2
   const [budget, setBudget] = useState(BUDGET_DEFAULT);
   const [familySize, setFamilySize] = useState<FamilySize>("family");
+  const [numKids, setNumKids] = useState<NumKids>(1);
+  const [kidsAge, setKidsAge] = useState<KidsAge>("primary");
   const [work, setWork] = useState<WorkSituation>("remote");
   const [priorities, setPriorities] = useState<Priority[]>(["cost", "safety"]);
 
@@ -178,7 +186,7 @@ export default function CompareBuildClient() {
   }
 
   function handleSubmit() {
-    const url = buildResultsUrl(selectedIds, budget, familySize, work, priorities);
+    const url = buildResultsUrl(selectedIds, budget, familySize, work, priorities, numKids, kidsAge);
     router.push(url);
   }
 
@@ -367,6 +375,68 @@ export default function CompareBuildClient() {
                     With kids
                   </OptionBtn>
                 </div>
+
+                {/* Kids follow-up — inline, only when "With kids" is selected */}
+                {familySize === "family" && (
+                  <div className="mt-4 space-y-4 rounded-xl border border-slate-100 bg-stone-50 px-4 py-4">
+                    {/* How many kids */}
+                    <div>
+                      <p className="mb-2 text-xs font-bold text-slate-600">
+                        How many kids?
+                      </p>
+                      <div className="flex gap-2">
+                        {([1, 2, 3] as NumKids[]).map((n) => (
+                          <button
+                            key={n}
+                            type="button"
+                            onClick={() => setNumKids(n)}
+                            className={`rounded-lg border px-4 py-2 text-sm font-semibold transition-all ${
+                              numKids === n
+                                ? "border-[#FF5A5F] bg-[#FF5A5F]/8 text-[#FF5A5F]"
+                                : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                            }`}
+                          >
+                            {n === 3 ? "3+" : n}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* School stage */}
+                    <div>
+                      <p className="mb-2 text-xs font-bold text-slate-600">
+                        Youngest child&apos;s stage?
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {(
+                          [
+                            { value: "preschool", label: "Under 5", sub: "nanny / daycare" },
+                            { value: "primary", label: "Ages 5–12", sub: "primary school" },
+                            { value: "secondary", label: "Ages 13+", sub: "secondary / IB" },
+                          ] as { value: KidsAge; label: string; sub: string }[]
+                        ).map(({ value, label, sub }) => (
+                          <button
+                            key={value}
+                            type="button"
+                            onClick={() => setKidsAge(value)}
+                            className={`flex flex-col items-start rounded-lg border px-3 py-2 text-left transition-all ${
+                              kidsAge === value
+                                ? "border-[#FF5A5F] bg-[#FF5A5F]/8"
+                                : "border-slate-200 bg-white hover:border-slate-300"
+                            }`}
+                          >
+                            <span
+                              className={`text-xs font-bold ${kidsAge === value ? "text-[#FF5A5F]" : "text-slate-700"}`}
+                            >
+                              {label}
+                            </span>
+                            <span className="text-[10px] text-slate-400">{sub}</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Work situation */}
