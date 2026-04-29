@@ -80,27 +80,29 @@ export default function CompareLandingPage() {
           </Link>
           <Link
             href="/compare/build"
-            className="flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-4 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
+            className="flex items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-3 py-2 text-xs font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f] md:gap-2 md:px-4 md:py-2.5 md:text-sm"
           >
-            Start comparing
-            <ArrowRight size={14} strokeWidth={2.5} />
+            <span className="hidden sm:inline">Start comparing</span>
+            <span className="sm:hidden">Start</span>
+            <ArrowRight size={13} strokeWidth={2.5} className="md:hidden" />
+            <ArrowRight size={14} strokeWidth={2.5} className="hidden md:block" />
           </Link>
         </div>
       </nav>
 
       {/* Hero */}
-      <section className="px-4 pb-16 pt-16 text-center md:pt-24">
+      <section className="px-4 pb-12 pt-12 text-center md:pb-16 md:pt-24">
         <div className="mx-auto max-w-2xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-4 py-2 text-sm font-semibold text-[#FF5A5F]">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] md:mb-6 md:px-4 md:py-2 md:text-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A5F]" />
             Coming soon · Free preview available now
           </div>
-          <h1 className="mb-5 text-4xl font-black tracking-tight text-slate-900 md:text-6xl">
+          <h1 className="mb-4 text-3xl font-black tracking-tight text-slate-900 md:mb-5 md:text-6xl">
             Stop guessing.{" "}
             <span className="text-[#FF5A5F]">Compare cities</span>{" "}
             built for your family.
           </h1>
-          <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-slate-500">
+          <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-slate-500 md:mb-10 md:text-lg">
             Pick up to 3 cities, tell us your situation, and get a personalized
             report with match scores, budget fit, visa paths, and schools — not
             generic data, but weighted to{" "}

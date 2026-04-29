@@ -408,37 +408,39 @@ function MatchCard({
   const isBest = rank === 0;
   return (
     <div
-      className={`relative flex flex-col items-center rounded-2xl border p-5 text-center shadow-sm transition-all ${
+      className={`relative flex min-w-0 flex-col items-center rounded-2xl border p-3 text-center shadow-sm transition-all md:p-5 ${
         isBest
           ? "border-[#FF5A5F]/30 bg-gradient-to-b from-[#FF5A5F]/5 to-white"
           : "border-slate-100 bg-white"
-      } ${cols === 2 ? "min-w-0" : ""}`}
+      } ${cols === 3 ? "pt-5 md:pt-7" : "pt-4 md:pt-5"}`}
     >
       {isBest && (
-        <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-[#FF5A5F]/30 bg-[#FF5A5F] px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm">
+        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-[#FF5A5F]/30 bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-sm md:px-3 md:text-[10px]">
           Best match
         </span>
       )}
-      <p className="mb-0.5 truncate text-base font-extrabold text-slate-900">
+      <p className="mb-0.5 w-full truncate text-sm font-extrabold text-slate-900 md:text-base">
         {score.city.city}
       </p>
-      <p className="mb-4 truncate text-xs font-medium text-slate-400">
+      <p className="mb-3 w-full truncate text-[11px] font-medium text-slate-400 md:mb-4 md:text-xs">
         {score.city.country}
       </p>
       <div
-        className={`mb-1 text-5xl font-black tabular-nums ${matchColor(score.matchPct)}`}
+        className={`mb-0.5 text-3xl font-black tabular-nums md:mb-1 md:text-5xl ${matchColor(score.matchPct)}`}
       >
         {score.matchPct}%
       </div>
-      <p className="text-xs font-semibold text-slate-400">match for you</p>
-      <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+      <p className="text-[10px] font-semibold text-slate-400 md:text-xs">
+        match for you
+      </p>
+      <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-100 md:mt-4">
         <div
           className={`h-full rounded-full transition-all ${matchBg(score.matchPct)}`}
           style={{ width: `${score.matchPct}%` }}
         />
       </div>
       <span
-        className={`mt-3 inline-block rounded-full border px-3 py-0.5 text-xs font-semibold ${budgetFitStyle(score.budgetFit)}`}
+        className={`mt-2.5 inline-block whitespace-nowrap rounded-full border px-2 py-0.5 text-[10px] font-semibold md:mt-3 md:px-3 md:text-xs ${budgetFitStyle(score.budgetFit)}`}
       >
         {budgetFitLabel(score.budgetFit)}
       </span>
@@ -584,39 +586,40 @@ export default function CompareResultsClient() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-4xl px-4 py-8 md:py-12">
+      <div className="mx-auto max-w-4xl px-4 py-6 md:py-12">
         {/* Report header */}
-        <div className="mb-8">
-          <p className="mb-1.5 text-xs font-semibold uppercase tracking-widest text-[#FF5A5F]">
+        <div className="mb-6 md:mb-8">
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F] md:text-xs">
             Your City Comparison Report
           </p>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
+          <h1 className="text-xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
             {cityNames}
           </h1>
-          <p className="mt-2 text-sm text-slate-500">
-            Personalized for:{" "}
-            <span className="font-semibold text-slate-700">{familyLabel}</span>
-            {" · "}
-            <span className="font-semibold text-slate-700">
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-semibold text-slate-700">
+              {familyLabel}
+            </span>
+            <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-semibold text-slate-700">
               {formatBudget(budget)}/mo
             </span>
-            {" · "}
-            <span className="font-semibold text-slate-700">{workLabel}</span>
-            {priorities.length > 0 && (
-              <>
-                {" · "}
-                <span className="font-semibold text-slate-700">
-                  Priority: {priorities.slice(0, 2).map((p) => PRIORITY_LABELS[p]).join(", ")}
-                </span>
-              </>
-            )}
-          </p>
+            <span className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-semibold text-slate-700">
+              {workLabel}
+            </span>
+            {priorities.slice(0, 2).map((p) => (
+              <span
+                key={p}
+                className="rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-2.5 py-1 text-[11px] font-semibold text-[#FF5A5F]"
+              >
+                {PRIORITY_LABELS[p]}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* ── Match score cards ──────────────────────────────────────────── */}
         <section className="mb-8">
           <div
-            className={`grid gap-4 ${
+            className={`grid gap-2 md:gap-4 ${
               cols === 2 ? "grid-cols-2" : "grid-cols-3"
             }`}
           >
@@ -627,55 +630,74 @@ export default function CompareResultsClient() {
         </section>
 
         {/* ── Dimension breakdown ────────────────────────────────────────── */}
-        <section className="mb-8 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm md:p-6">
           <h2 className="mb-5 text-sm font-bold uppercase tracking-wider text-slate-400">
             Score breakdown
           </h2>
 
-          {/* Header: city names */}
-          <div
-            className={`mb-4 grid gap-4 ${
-              cols === 2
-                ? "grid-cols-[140px_1fr_1fr]"
-                : "grid-cols-[140px_1fr_1fr_1fr]"
-            }`}
-          >
-            <div />
-            {scores.map((s) => (
-              <p
-                key={s.city.id}
-                className="truncate text-center text-xs font-bold text-slate-600"
-              >
-                {s.city.city}
-              </p>
+          {/* ── Mobile layout: one card per dimension ─────────────────── */}
+          <div className="space-y-4 md:hidden">
+            {DIM_KEYS.map((key) => (
+              <div key={key}>
+                <p className="mb-2 text-xs font-bold text-slate-700">
+                  {dimensionLabel(key)}
+                </p>
+                <div className="space-y-1.5">
+                  {scores.map((s) => (
+                    <div key={s.city.id} className="flex items-center gap-2">
+                      <p className="w-20 shrink-0 truncate text-[11px] font-medium text-slate-500">
+                        {s.city.city}
+                      </p>
+                      <DimBar score={s.dimensions[key]} />
+                    </div>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
 
-          {/* Rows */}
-          {DIM_KEYS.map((key) => (
+          {/* ── Desktop layout: traditional grid table ────────────────── */}
+          <div className="hidden md:block">
             <div
-              key={key}
-              className={`mb-3 grid items-center gap-4 ${
+              className={`mb-4 grid gap-4 ${
                 cols === 2
                   ? "grid-cols-[140px_1fr_1fr]"
                   : "grid-cols-[140px_1fr_1fr_1fr]"
               }`}
             >
-              <p className="text-xs font-semibold text-slate-500">
-                {dimensionLabel(key)}
-              </p>
+              <div />
               {scores.map((s) => (
-                <DimBar
+                <p
                   key={s.city.id}
-                  score={s.dimensions[key]}
-                />
+                  className="truncate text-center text-xs font-bold text-slate-600"
+                >
+                  {s.city.city}
+                </p>
               ))}
             </div>
-          ))}
+
+            {DIM_KEYS.map((key) => (
+              <div
+                key={key}
+                className={`mb-3 grid items-center gap-4 ${
+                  cols === 2
+                    ? "grid-cols-[140px_1fr_1fr]"
+                    : "grid-cols-[140px_1fr_1fr_1fr]"
+                }`}
+              >
+                <p className="text-xs font-semibold text-slate-500">
+                  {dimensionLabel(key)}
+                </p>
+                {scores.map((s) => (
+                  <DimBar key={s.city.id} score={s.dimensions[key]} />
+                ))}
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* ── Budget fit ─────────────────────────────────────────────────── */}
-        <section className="mb-8 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+        <section className="mb-8 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm md:p-6">
           <h2 className="mb-5 text-sm font-bold uppercase tracking-wider text-slate-400">
             Your {formatBudget(budget)}/month budget
           </h2>
@@ -685,36 +707,41 @@ export default function CompareResultsClient() {
               return (
                 <div
                   key={s.city.id}
-                  className="flex flex-wrap items-center gap-3 rounded-xl border border-slate-100 p-3"
+                  className="rounded-xl border border-slate-100 p-3"
                 >
-                  <div className="min-w-[90px]">
-                    <p className="text-sm font-bold text-slate-900">
-                      {s.city.city}
-                    </p>
-                    <p className="text-xs text-slate-400">
-                      ~{formatBudget(s.budgetMin)}–{formatBudget(s.budgetMax)}/mo avg
-                    </p>
-                  </div>
-                  <div className="flex-1">
-                    <div className="h-2 overflow-hidden rounded-full bg-slate-100">
-                      <div
-                        className={`h-full rounded-full ${matchBg(s.dimensions.cost)}`}
-                        style={{
-                          width: `${Math.min(100, (budget / (s.budgetMax * 1.4)) * 100)}%`,
-                        }}
-                      />
+                  {/* Top row: city + status badge */}
+                  <div className="mb-2 flex items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="text-sm font-bold text-slate-900">
+                        {s.city.city}
+                      </p>
+                      <p className="text-[11px] text-slate-400">
+                        ~{formatBudget(s.budgetMin)}–{formatBudget(s.budgetMax)}/mo avg
+                      </p>
                     </div>
+                    <span
+                      className={`shrink-0 rounded-lg border px-2 py-0.5 text-[11px] font-bold ${budgetFitStyle(s.budgetFit)}`}
+                    >
+                      {budgetFitLabel(s.budgetFit)}
+                    </span>
                   </div>
-                  <span
-                    className={`rounded-lg border px-2.5 py-1 text-xs font-bold ${budgetFitStyle(s.budgetFit)}`}
-                  >
-                    {budgetFitLabel(s.budgetFit)}
-                    {headroom > 0 && s.budgetFit !== "over" && (
-                      <span className="ml-1 font-normal opacity-70">
-                        · {formatBudget(headroom)} left
-                      </span>
-                    )}
-                  </span>
+
+                  {/* Bar */}
+                  <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+                    <div
+                      className={`h-full rounded-full ${matchBg(s.dimensions.cost)}`}
+                      style={{
+                        width: `${Math.min(100, (budget / (s.budgetMax * 1.4)) * 100)}%`,
+                      }}
+                    />
+                  </div>
+
+                  {/* Headroom note */}
+                  {headroom > 0 && s.budgetFit !== "over" && (
+                    <p className="mt-1.5 text-[11px] font-medium text-slate-500">
+                      ~{formatBudget(headroom)} headroom each month
+                    </p>
+                  )}
                 </div>
               );
             })}

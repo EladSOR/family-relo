@@ -121,7 +121,7 @@ function OptionBtn({
     <button
       type="button"
       onClick={onClick}
-      className={`flex-1 rounded-xl border px-4 py-3 text-sm font-semibold transition-all duration-150 ${
+      className={`flex-1 rounded-xl border px-2 py-3 text-xs font-semibold transition-all duration-150 md:px-4 md:text-sm ${
         active
           ? "border-[#FF5A5F] bg-[#FF5A5F]/5 text-[#FF5A5F] shadow-sm"
           : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
@@ -210,13 +210,13 @@ export default function CompareBuildClient() {
         {/* ── Step 1: Pick cities ─────────────────────────────────────────── */}
         {step === 1 && (
           <div>
-            <div className="mb-8 flex items-start justify-between gap-4">
+            <div className="mb-6 flex items-start justify-between gap-3 md:mb-8">
               <div>
-                <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
+                <h1 className="text-xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
                   Which cities are you considering?
                 </h1>
-                <p className="mt-2 text-slate-500">
-                  Pick 2 or 3 cities to compare. We&apos;ll score them against your situation.
+                <p className="mt-1.5 text-sm text-slate-500 md:mt-2 md:text-base">
+                  Pick 2 or 3 cities to compare.
                 </p>
               </div>
               {/* Top Next button — visible when enough cities are selected */}
@@ -224,10 +224,11 @@ export default function CompareBuildClient() {
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="flex shrink-0 items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-[#e84a4f]"
+                  className="flex shrink-0 items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-3 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#e84a4f] md:gap-2 md:px-5 md:py-2.5 md:text-sm"
                 >
                   Next
-                  <ChevronRight size={15} strokeWidth={2.5} />
+                  <ChevronRight size={13} strokeWidth={2.5} className="md:hidden" />
+                  <ChevronRight size={15} strokeWidth={2.5} className="hidden md:block" />
                 </button>
               )}
             </div>
@@ -304,11 +305,11 @@ export default function CompareBuildClient() {
         {/* ── Step 2: Questionnaire ───────────────────────────────────────── */}
         {step === 2 && (
           <div>
-            <div className="mb-8">
-              <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
+            <div className="mb-6 md:mb-8">
+              <h1 className="text-xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
                 Tell us about your situation
               </h1>
-              <p className="mt-2 text-slate-500">
+              <p className="mt-1.5 text-sm text-slate-500 md:mt-2 md:text-base">
                 We use this to weight the comparison to what matters for{" "}
                 <em>you</em>.
               </p>
