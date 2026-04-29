@@ -1,0 +1,49 @@
+---
+description: robots noindex rules — which pages must never be indexed by search engines.
+globs: app/compare/**/*.tsx, app/**/build/**/*.tsx, app/**/results/**/*.tsx, app/**/dashboard/**/*.tsx, app/**/account/**/*.tsx, app/**/login/**/*.tsx, app/**/signup/**/*.tsx, app/**/checkout/**/*.tsx, app/**/order/**/*.tsx
+---
+
+# robots: noindex — system rules
+
+## Pages that must always have `robots: { index: false }`
+
+The following route categories must **never** be crawled or indexed. Apply this to the `export const metadata` (or `generateMetadata`) in every matching page file, **without exception**.
+
+### Always noindex
+
+| Category | Route pattern | Reason |
+|---|---|---|
+| Comparison flow | `/compare/build` | Internal step page, no standalone value |
+| Comparison results | `/compare/results` | Personalised, session-specific, duplicate risk |
+| Any future checkout | `/checkout/**`, `/order/**` | Transactional, no SEO value |
+| Account / auth | `/account/**`, `/login`, `/signup`, `/dashboard/**` | Private user pages |
+| Any preview/debug | `?preview=true` or `/preview/**` | Development/QA only |
+
+### `/compare` landing page
+
+`/compare` (the marketing landing page) **is** indexable — it is a product page, not a user-specific or internal page. Do **not** add `robots: { index: false }` here.
+
+## Implementation
+
+```ts
+// Correct — in any page file that falls under the categories above:
+export const metadata = {
+  title: "...",
+  robots: { index: false },
+};
+
+// Or via generateMetadata:
+export async function generateMetadata() {
+  return {
+    title: "...",
+    robots: { index: false },
+  };
+}
+```
+
+## Checklist
+
+- [ ] Every new page under `/compare/build`, `/compare/results` has `robots: { index: false }`.
+- [ ] Every future account, login, signup, dashboard, checkout page has `robots: { index: false }`.
+- [ ] `/compare` landing page does **not** have `robots: { index: false }`.
+- [ ] Do not set `robots: { index: false }` on any city guide, country hub, blog post, or `/destinations` — those are public SEO pages.
