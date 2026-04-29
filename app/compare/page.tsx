@@ -342,80 +342,44 @@ export default function CompareLandingPage() {
 
       {/* Pricing */}
       <section className="bg-white px-4 py-16">
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-sm">
           <h2 className="mb-3 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
             Simple pricing
           </h2>
-          <p className="mb-10 text-center text-sm text-slate-400">
-            Each comparison = one personalized report with up to 3 cities.
+          <p className="mb-8 text-center text-sm text-slate-400">
+            One report · up to 3 cities · yours forever.
           </p>
-          <div className="grid gap-4 md:grid-cols-2">
-            {/* Single */}
-            <div className="rounded-2xl border border-slate-200 bg-stone-50 p-6">
-              <p className="text-sm font-semibold text-slate-500">Single report</p>
-              <div className="my-3 flex items-baseline gap-1.5">
-                <span className="text-4xl font-black text-slate-900">$9</span>
-                <span className="text-sm text-slate-400">one-time</span>
-              </div>
-              <ul className="mb-5 space-y-1.5 text-sm text-slate-500">
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-slate-400" />
-                  Compare up to 3 cities
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-slate-400" />
-                  Full personalized report
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-slate-400" />
-                  Shareable link + PDF
-                </li>
-              </ul>
-              <button
-                type="button"
-                disabled
-                className="w-full cursor-not-allowed rounded-xl border border-slate-200 bg-slate-100 py-3 text-sm font-bold text-slate-400"
-              >
-                Coming soon
-              </button>
-            </div>
 
-            {/* Bundle */}
-            <div className="relative rounded-2xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-6">
-              <span className="absolute -top-3 left-6 rounded-full bg-[#FF5A5F] px-3 py-1 text-xs font-bold text-white shadow-sm">
-                Best value
-              </span>
-              <p className="text-sm font-semibold text-slate-600">Bundle — 3 reports</p>
-              <div className="my-3 flex items-baseline gap-1.5">
-                <span className="text-4xl font-black text-slate-900">$19</span>
-                <span className="text-sm text-slate-400">one-time</span>
-              </div>
-              <ul className="mb-5 space-y-1.5 text-sm text-slate-700">
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-[#FF5A5F]" />
-                  3 full reports (up to 3 cities each)
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-[#FF5A5F]" />
-                  Try different city combinations
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check size={13} className="shrink-0 text-[#FF5A5F]" />
-                  All reports shareable + downloadable
-                </li>
-              </ul>
-              <button
-                type="button"
-                disabled
-                className="w-full cursor-not-allowed rounded-xl border border-[#FF5A5F]/20 bg-white py-3 text-sm font-bold text-slate-400"
-              >
-                Coming soon
-              </button>
+          <div className="rounded-2xl border border-[#FF5A5F]/25 bg-[#FF5A5F]/5 p-7 text-center shadow-sm">
+            <div className="mb-1 flex items-baseline justify-center gap-2">
+              <span className="text-6xl font-black text-slate-900">$9</span>
+              <span className="text-base text-slate-400">one-time</span>
             </div>
+            <p className="mb-6 text-sm text-slate-500">No subscription. No account required.</p>
+            <ul className="mb-6 space-y-2.5 text-left text-sm text-slate-700">
+              {[
+                "Compare up to 3 cities",
+                "Full personalized report",
+                "Match scores weighted to your priorities",
+                "Schools, visas & family fit analysis",
+                "Shareable link — send to partner or family",
+                "Download as PDF",
+              ].map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <Check size={14} className="shrink-0 text-[#FF5A5F]" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <button
+              type="button"
+              disabled
+              className="w-full cursor-not-allowed rounded-xl bg-slate-200 py-3.5 text-sm font-bold text-slate-400"
+            >
+              Get full report — launching soon
+            </button>
           </div>
-          <p className="mt-6 text-center text-sm text-slate-400">
-            Pay once. No subscription. No account required.
-          </p>
+
           <div className="mt-8 text-center">
             <Link
               href="/compare/build"
