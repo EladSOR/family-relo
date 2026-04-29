@@ -66,12 +66,21 @@ export default function WorldMap({
       maxZoom: 18,
     }).setView([20, 10], 1);
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18,
-      minZoom: 1,
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+    // OpenStreetMap's public raster tiles embed whatever `name=*` exists in
+    // the database — so Beijing shows as 北京市, Seoul in Hangul, etc. Esri's
+    // World Street Map layer standardises labels in English for global
+    // legibility (better for this product's audience).
+    // Tile URL uses Esri MapServer order: `{z}/{y}/{x}` (not OSM's z/x/y).
+    L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+      {
+        maxZoom: 19,
+        minZoom: 1,
+        attribution:
+          'Tiles &copy; <a href="https://www.esri.com/">Esri</a> ' +
+          "&mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+      },
+    ).addTo(map);
 
     const bounds: [number, number][] = [];
 
