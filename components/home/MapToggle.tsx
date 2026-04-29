@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 import { Map as MapIcon, X } from "lucide-react";
 import type { Destination } from "@/lib/types";
 
@@ -34,6 +35,11 @@ const WorldMap = dynamic(() => import("./WorldMap"), {
  */
 export default function MapToggle({ cities }: Props) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Hide on /compare/* — the comparison flow has its own sticky CTA + banner,
+  // and a world map of all destinations is irrelevant on those pages.
+  const hideOnRoute = pathname?.startsWith("/compare");
 
   useEffect(() => {
     if (!open) return;
@@ -52,6 +58,8 @@ export default function MapToggle({ cities }: Props) {
       document.body.style.overflow = previousOverflow;
     };
   }, [open]);
+
+  if (hideOnRoute) return null;
 
   return (
     <>
