@@ -1,9 +1,23 @@
-"use client";
-
-import { useRef } from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, Check, Lock, ArrowRight, Share2, FileDown } from "lucide-react";
 import CompareStickyBar from "@/components/compare/CompareStickyBar";
+import {
+  SITE_COMPARE_DESCRIPTION,
+  SITE_COMPARE_OG_IMAGE,
+  SITE_COMPARE_OG_IMAGE_ALT,
+  SITE_COMPARE_OPEN_GRAPH_TITLE,
+  SITE_COMPARE_TITLE,
+} from "@/lib/seo/constants";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: SITE_COMPARE_TITLE,
+  openGraphTitle: SITE_COMPARE_OPEN_GRAPH_TITLE,
+  description: SITE_COMPARE_DESCRIPTION,
+  canonicalPath: "/compare",
+  images: [{ url: SITE_COMPARE_OG_IMAGE, alt: SITE_COMPARE_OG_IMAGE_ALT }],
+});
 
 const SAMPLE_CITIES = [
   { name: "Valencia", country: "Spain", match: 91, fit: "Comfortable", fitStyle: "text-emerald-700 bg-emerald-50" },
@@ -51,8 +65,6 @@ function barColor(score: number) {
 }
 
 export default function CompareLandingPage() {
-  const heroCtaRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className="min-h-screen bg-stone-50 pb-20">
       {/* Nav */}
@@ -94,7 +106,7 @@ export default function CompareLandingPage() {
             generic data, but weighted to{" "}
             <em className="font-semibold not-italic text-slate-700">you</em>.
           </p>
-          <div ref={heroCtaRef} className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/compare/build"
               className="flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-[#e84a4f] hover:shadow-xl"
@@ -469,7 +481,7 @@ export default function CompareLandingPage() {
         </div>
       </section>
 
-      <CompareStickyBar heroRef={heroCtaRef} />
+      <CompareStickyBar />
 
       {/* Final CTA */}
       <section className="px-4 py-20 text-center">

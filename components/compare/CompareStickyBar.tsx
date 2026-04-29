@@ -1,31 +1,25 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 /**
  * Sticky bottom CTA bar for the /compare landing page.
- * Hides until the user scrolls past the hero CTA button so there's no
- * visual duplication at the top of the page.
+ * Appears once the user has scrolled past the hero so there's no
+ * visual duplication with the hero CTA. Pure scroll listener — no ref
+ * required, so the page can remain a server component.
  */
-export default function CompareStickyBar({
-  heroRef,
-}: {
-  heroRef: React.RefObject<HTMLDivElement | null>;
-}) {
+export default function CompareStickyBar() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const el = heroRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(!entry.isIntersecting),
-      { threshold: 0 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [heroRef]);
+    const HERO_OFFSET_PX = 600;
+    const onScroll = () => setVisible(window.scrollY > HERO_OFFSET_PX);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div
