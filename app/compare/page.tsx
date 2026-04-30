@@ -159,16 +159,18 @@ export default function CompareLandingPage() {
                 {SAMPLE_CITIES.map((c, i) => (
                   <div
                     key={c.name}
-                    className={`relative rounded-xl border p-3 text-center ${
+                    className={`rounded-xl border p-3 text-center ${
                       i === 0
                         ? "border-[#FF5A5F]/30 bg-[#FF5A5F]/5"
                         : "border-slate-100"
                     }`}
                   >
-                    {i === 0 && (
-                      <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+                    {i === 0 ? (
+                      <span className="mb-1.5 inline-block rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
                         Best match
                       </span>
+                    ) : (
+                      <span className="mb-1.5 block h-[18px]" aria-hidden="true" />
                     )}
                     <p className="truncate text-xs font-bold text-slate-700">{c.name}</p>
                     <p className="truncate text-[10px] text-slate-400">{c.country}</p>

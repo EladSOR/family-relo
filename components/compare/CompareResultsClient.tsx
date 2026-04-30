@@ -410,16 +410,18 @@ function MatchCard({
   const isBest = rank === 0;
   return (
     <div
-      className={`relative flex min-w-0 flex-col items-center rounded-2xl border p-3 text-center shadow-sm transition-all md:p-5 ${
+      className={`flex min-w-0 flex-col items-center rounded-2xl border p-3 text-center shadow-sm transition-all md:p-5 ${
         isBest
           ? "border-[#FF5A5F]/30 bg-gradient-to-b from-[#FF5A5F]/5 to-white"
           : "border-slate-100 bg-white"
-      } ${cols === 3 ? "pt-5 md:pt-7" : "pt-4 md:pt-5"}`}
+      }`}
     >
-      {isBest && (
-        <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-[#FF5A5F]/30 bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-sm md:px-3 md:text-[10px]">
+      {isBest ? (
+        <span className="mb-1.5 inline-block whitespace-nowrap rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white md:px-3 md:text-[10px]">
           Best match
         </span>
+      ) : (
+        <span className="mb-1.5 block h-[18px]" aria-hidden="true" />
       )}
       <p className="mb-0.5 w-full truncate text-sm font-extrabold text-slate-900 md:text-base">
         {score.city.city}
