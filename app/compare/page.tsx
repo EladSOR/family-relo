@@ -291,29 +291,27 @@ export default function CompareLandingPage() {
         <div className="mx-auto max-w-3xl">
           <div className="mb-4 text-center">
             <h2 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
-              Same cities. Completely different report.
+              From browsing to deciding.
             </h2>
             <p className="mt-3 text-slate-500">
-              A $4k/month remote worker and a $10k couple with three kids should
-              not get the same comparison. Yours is scored around your actual
-              situation — budget, family size, and what you care about most.
+              The standard city pages are great for learning. This report is for
+              making the call — side-by-side, scored for your budget, family, and
+              priorities.
             </p>
           </div>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-slate-200 bg-white p-6">
               <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-400">
-                One-size-fits-all comparison
+                Standard site view
               </p>
               <ul className="space-y-2.5 text-sm text-slate-500">
                 {[
-                  "Same data for everyone",
-                  "No budget context",
-                  "No family situation filter",
-                  "Can't share or download",
-                  "No visa path for your work type",
+                  "City facts and averages",
+                  "Not adjusted to your budget/family",
+                  "Hard to compare cities side-by-side",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
-                    <span className="text-slate-300">✕</span>
+                    <span className="text-slate-300">•</span>
                     {item}
                   </li>
                 ))}
@@ -325,11 +323,10 @@ export default function CompareLandingPage() {
               </p>
               <ul className="space-y-2.5 text-sm text-slate-700">
                 {[
-                  "Weighted to your priorities",
-                  "Your exact budget mapped to each city",
-                  "Scored for your family size",
-                  "Shareable link + PDF download",
-                  "Visa path for remote/local/freelance",
+                  "Match score per city for your situation",
+                  "Budget fit + the trade-offs you’ll feel",
+                  "Schools/childcare + visa path tailored to you",
+                  "Shareable link + PDF (yours forever)",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Check size={14} className="shrink-0 text-[#FF5A5F]" />
