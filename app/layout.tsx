@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Link from "next/link";
 import { SITE_BRAND_NAME, SITE_DESCRIPTION } from "@/lib/seo/constants";
 import { getSiteUrl } from "@/lib/siteUrl";
 import MapToggle from "@/components/home/MapToggle";
@@ -65,6 +66,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             cube on the home page and the only map entry on inner pages. */}
         <MapToggle cities={citiesData as Destination[]} />
         <CompareBanner />
+        {/* pb-20 md:pb-24 clears the fixed MapToggle pill (bottom-5 / md:bottom-7 + pill height) */}
+        <footer className="border-t border-slate-100 bg-white px-4 pb-20 pt-6 text-center text-xs text-slate-400 md:pb-24">
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/" className="hover:text-slate-700">Home</Link>
+            <Link href="/compare" className="hover:text-slate-700">Compare cities</Link>
+            <Link href="/legal/privacy" className="hover:text-slate-700">Privacy Policy</Link>
+            <Link href="/legal/terms" className="hover:text-slate-700">Terms of Use</Link>
+            <a href="mailto:hello@famirelo.com" className="hover:text-slate-700">hello@famirelo.com</a>
+          </div>
+          <p className="mt-3">© {new Date().getFullYear()} Famirelo. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
