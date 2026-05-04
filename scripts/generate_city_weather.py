@@ -38,6 +38,7 @@ COUNTRY_CODE = {
     "canada": "CA",
     "colombia": "CO",
     "costa-rica": "CR",
+    "chile": "CL",
     "czech-republic": "CZ",
     "denmark": "DK",
     "france": "FR",
@@ -45,13 +46,16 @@ COUNTRY_CODE = {
     "greece": "GR",
     "hungary": "HU",
     "indonesia": "ID",
+    "india": "IN",
     "ireland": "IE",
     "israel": "IL",
     "italy": "IT",
     "japan": "JP",
     "malaysia": "MY",
+    "mexico": "MX",
     "netherlands": "NL",
     "new-zealand": "NZ",
+    "panama": "PA",
     "peru": "PE",
     "poland": "PL",
     "portugal": "PT",
@@ -63,6 +67,8 @@ COUNTRY_CODE = {
     "uae": "AE",
     "united-kingdom": "GB",
     "usa": "US",
+    "uruguay": "UY",
+    "vietnam": "VN",
 }
 
 MONTH_KEYS = [

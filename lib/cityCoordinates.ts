@@ -90,6 +90,17 @@ export const CITY_COORDINATES: Record<string, CityCoords> = {
   "chicago":       { lat: 41.8781, lng: -87.6298 },
   "seattle":       { lat: 47.6062, lng: -122.3321 },
   "austin":        { lat: 30.2672, lng: -97.7431 },
+  "charlotte":     { lat: 35.2271, lng: -80.8431 },
+  "raleigh":       { lat: 35.7796, lng: -78.6382 },
+  "charleston":    { lat: 32.7765, lng: -79.9311 },
+  "greenville-sc": { lat: 34.8526, lng: -82.3940 },
+  "atlanta":       { lat: 33.7490, lng: -84.3880 },
+  "denver":        { lat: 39.7392, lng: -104.9903 },
+  "nashville":     { lat: 36.1627, lng: -86.7816 },
+  "salt-lake-city": { lat: 40.7608, lng: -111.8910 },
+  "phoenix":       { lat: 33.4484, lng: -112.0740 },
+  "tampa":         { lat: 27.9506, lng: -82.4572 },
+  "portland-or":   { lat: 45.5152, lng: -122.6784 },
 
   // ── Costa Rica
   "san-jose":      { lat: 9.9281,  lng: -84.0907 },
@@ -142,4 +153,26 @@ export const CITY_COORDINATES: Record<string, CityCoords> = {
 
   // ── Peru
   "lima":         { lat: -12.0464, lng: -77.0428 },
+
+  // ── Mexico
+  "mexico-city":  { lat: 19.4326, lng: -99.1332 },
+
+  // ── Panama
+  "panama-city":  { lat: 8.9824,  lng: -79.5199 },
+
+  // ── Chile
+  "santiago":     { lat: -33.4489, lng: -70.6693 },
+
+  // ── Uruguay
+  "montevideo":   { lat: -34.9011, lng: -56.1645 },
+
+  // ── Colombia
+  "bogota":       { lat: 4.7110,   lng: -74.0721 },
+
+  // ── Vietnam
+  "ho-chi-minh-city": { lat: 10.7769, lng: 106.7009 },
+
+  // ── India
+  "bengaluru":    { lat: 12.9716, lng: 77.5946 },
+  "mumbai":       { lat: 19.0760, lng: 72.8777 },
 };

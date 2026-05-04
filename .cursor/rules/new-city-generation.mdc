@@ -11,7 +11,75 @@ These are derived from Valencia and Lisbon — the reference standard.
 
 ---
 
-## RULE 1 — Checklist: every item must be connected
+## RULE 0 — Quality gate: run the validator before shipping
+
+After writing or editing any city, run:
+
+```bash
+python3 scripts/validate_cities.py [city-id]
+```
+
+The script checks: field lengths, artifact patterns, section completeness, FAQ count, safety score range, cost USD format, weather rows. A city is not ready to ship until the validator returns `✅ All X cities passed validation.`
+
+---
+
+## RULE 0b — No telegraphic notes. Write for humans.
+
+Every field that a user reads must be a **complete sentence** that answers: **what is it / what do I do / where do I go.**
+
+Telegraphic notes (compressed keyword lists) are the single most common failure mode. They look like real content in the JSON but are useless to a user who doesn't already know the city.
+
+### Checklist items
+
+```
+// ❌ BAD — telegraphic note. Meaningless to someone who doesn't know Bogotá.
+"Model Whitefield ORR traffic before school deposits"
+
+// ❌ BAD — keyword list, no action, no explanation.
+"Interview IB campuses Sarjapur"
+
+// ❌ BAD — artifact filler word.
+"Open Davivienda or Bancolombia bundles once RUT interplay clarifies mildly"
+
+// ✅ GOOD — full sentence, specific action, acronym explained, price given.
+"Apply to IB or IGCSE (International General Certificate of Secondary Education — Cambridge's globally recognized qualification) schools on the Sarjapur corridor 12–18 months before your move — the top schools near the tech parks fill their June intake by December."
+
+// ✅ GOOD — full sentence, named bank, what to bring, why you need it.
+"Open an HDFC Bank or ICICI Bank account — both have expat-focused branches in Whitefield and Koramangala that accept an Employment Visa, passport, and company letter. Bring a reference letter from your employer."
+```
+
+Minimum character count: **80 characters per checklist item**. If it's under 80 characters, it's a stub — expand it.
+
+### Schools sections
+
+```
+// ❌ BAD — stub. Tells the user nothing.
+"summary": "CBSE IB IGCSE."
+"publicSystem": "State board immersive."
+"internationalOptions": "Fees USD."
+"tip": "Model school bus ORR."
+"description": "IB."
+
+// ✅ GOOD — full sentences, explains what CBSE/IGCSE mean, where schools are, how much, how to apply.
+"summary": "Bengaluru has one of India's strongest international school markets, concentrated along the Sarjapur Road, Whitefield, and Koramangala tech corridors where most expat families live."
+"publicSystem": "Indian state board and CBSE (Central Board of Secondary Education) government schools teach in Kannada or English, following an April–March academic year with large class sizes. Not a practical choice for expat children."
+"internationalOptions": "The main international schools are clustered along Sarjapur Road and in Whitefield. IB Diploma and IGCSE programs are standard. Annual fees: ~$8,000–$20,000/year. Apply 12–18 months in advance."
+"tip": "Submit applications and pay deposits before your move — the most popular IB campuses on the Sarjapur corridor fill their June intake by December and do not hold spots."
+"description": "The standard choice for expat families relocating with multinational companies. Cambridge IGCSE in middle school, IB Diploma in the final two years. School buses service the main tech park areas. Fees: ~$10,000–$20,000/year."
+```
+
+### Housing summaries
+
+```
+// ❌ BAD — cryptic jargon. No neighborhoods named. No price. Useless.
+"Streetcar suburbs fade into Union and York counties — trade school commute against newer construction."
+"ADU ordinances nuanced — mildew inspections overshadow Seattle rainfall totals occasionally."
+
+// ✅ GOOD — neighborhood named and explained, price anchor given, practical tip included.
+"Charlotte's top family neighborhoods are in the south and southeast of the city — SouthPark (upscale, walkable, close to great schools), Myers Park (historic, tree-lined), and Ballantyne (suburban, newer, excellent schools). A 3-bedroom in SouthPark or Ballantyne runs ~$3,200–$5,000/month. School zone boundaries are strict — verify your address is in the right CMS (Charlotte-Mecklenburg Schools) zone before signing a lease."
+```
+
+---
 
 Every item in `actionChecklist` must have a `targetSection`.
 

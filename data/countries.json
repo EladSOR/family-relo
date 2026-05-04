@@ -142,5 +142,292 @@
         }
       ]
     }
+  },
+  "colombia": {
+    "name": "Colombia",
+    "visa": {
+      "status": "verified",
+      "summary": "Many Western visitors enter Colombia visa-free for short stays — confirm duration for your passport on the Cancillería (Colombia's Ministry of Foreign Affairs) site. Long-term stays usually need a migrant visa (visa tipo M or related categories) tied to work, investment, or family — Colombian immigration updates categories periodically.",
+      "tip": "Search 'Cancillería Colombia visas official' on Google before you book — rules and reciprocity change.",
+      "options": [
+        {
+          "type": "Visitor / visa-free entry (short stay)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay — tourism and family visits",
+          "duration": "Many passports (US, EU, UK, Canada, Australia, etc.): often up to 90 days visa-free — officers can grant a shorter stamp; working for a Colombian employer needs a migrant visa.",
+          "description": "Tourism and private visits during the stay printed on your entry stamp — not a work permit.",
+          "details": [
+            "Verify allowed stay length on the official migration site for each family member before you travel.",
+            "Use short visits to view housing and school routes — then apply for the correct migrant category if you plan to stay.",
+            "Working without the correct migrant category is risky — line up employer or independent visa advice before you take local payroll."
+          ],
+          "officialLink": {
+            "label": "Colombia Ministry Foreign Affairs visas"
+          }
+        },
+        {
+          "type": "Migrant visa (work / investment / family)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Migrant visa — national categories",
+          "duration": "Validity depends on visa tipo — many work or investment visas are issued for about 1–3 years; your electronic approval or sticker states renewal rules.",
+          "description": "Apply through the Cancillería or in-country migration processes as rules allow.",
+          "details": [
+            "Employer, business, retirement, and family routes each have document bundles — use official PDFs, not forum shortcuts.",
+            "Dependants usually need linked applications.",
+            "Search 'Migración Colombia visa tipo M trabajo' on Google for the current matrix."
+          ],
+          "officialLink": {
+            "label": "Migración Colombia official visa information"
+          }
+        }
+      ]
+    }
+  },
+  "mexico": {
+    "name": "Mexico",
+    "visa": {
+      "status": "verified",
+      "summary": "Mexico issues an FMM (Forma Migratoria Múltiple — arrival/departure slip) or digital equivalent for many visitors — duration is stamped per person and depends on nationality. Long-term stays use temporary or permanent residence cards tied to employer, investment, retirement, or family categories through INM (Mexico's National Migration Institute — Instituto Nacional de Migración).",
+      "tip": "Within a few days of arrival photograph every stamp and QR on the FMM or digital admission — landlords and banks often ask for copies.",
+      "options": [
+        {
+          "type": "Visitor (FMM / tourist-style entry)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay — tourism and scouting",
+          "duration": "Many Western passports receive roughly 180 days on a tourist stamp at the border or airport — not guaranteed; immigration can shorten stays. Paid work on a visitor stay is restricted.",
+          "description": "Private visits and travel during the authorised days on your passport — check each child's stamp individually.",
+          "details": [
+            "Search 'INM México visitante FMM oficial' on Google for the nationality matrix that applies today.",
+            "Carry onward tickets when asked — some airlines deny boarding without proof.",
+            "Remote payroll law is nuanced — clarify with Mexican counsel before working Mexico-sourced gigs on a visitor entry.",
+            "Good use before a permanent move: view neighbourhoods and schools — then pursue residente temporal (temporary residence) paperwork if staying."
+          ],
+          "officialLink": {
+            "label": "Mexico INM Instituto Nacional de Migracion official"
+          }
+        },
+        {
+          "type": "Temporary or permanent resident",
+          "anchor": "visa-dnv",
+          "detailTitle": "Resident cards — temporal or permanente",
+          "duration": "Residente temporal (temporary resident) cards commonly run 1–4 years depending on approval; residente permanente (permanent resident) lasts indefinitely — durations print on your card.",
+          "description": "Consulate filings or exchanges from inside Mexico follow INM bundles — HR or a vetted facilitator helps with document stacks.",
+          "details": [
+            "Employer-sponsored, family-linked, inversionista (investor), and retirement-style routes each demand different affidavits and fees.",
+            "Children need aligned entries — enrolment crews ask for passports and residency copies.",
+            "Search 'tramite residencia México consulado' on Google before you courier originals.",
+            "Keep digital scans of CURP (Mexico's citizen registration key) issuance steps if HR guides you toward local IDs."
+          ],
+          "officialLink": {
+            "label": "Mexico residente temporal INM oficial"
+          }
+        }
+      ]
+    }
+  },
+  "panama": {
+    "name": "Panama",
+    "visa": {
+      "status": "verified",
+      "summary": "Friendly Nations visas, remote-worker visas, pensions, and investment routes change often — Immigration (Servicio Nacional de Migracion) publishes the authoritative lists. Tourist visits are usually short stamps at the airport or land border.",
+      "tip": "Treat every nationality separately — dependents may need apostilled marriage and birth bundles.",
+      "options": [
+        {
+          "type": "Visitor / tourist admission",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay — tourism visits",
+          "duration": "Many travellers receive about 180 days as a baseline tourist stamp depending on nationality and officer discretion — yours may differ; confirm immigration notices before travel.",
+          "description": "Leisure visits and scouting during the authorised days — not Panama payroll without the correct residency permit.",
+          "details": [
+            "Bring proof of onward travel when flying — Panama checks occasionally.",
+            "Carry passports for every minor — guardianship letters help if travelling with one parent.",
+            "Opening bank accounts legally usually waits until residency documents exist — use Wise or similar as a bridge."
+          ],
+          "officialLink": {
+            "label": "Panama immigration migracion.gob.pa official visits"
+          }
+        },
+        {
+          "type": "Residency (Friendly Nations / work / pension / investor)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Residency routes — Panama-specific",
+          "duration": "Card validity depends on pathway — Friendly Nations filings often yield multi-year cards with renewals; follow the dates printed once approved.",
+          "description": "Attorneys coordinate police checks, Apostilles, translations, and health certificates — timelines vary widely by queue.",
+          "details": [
+            "Remote-worker and digital-nomad visas have income thresholds published by decree — screenshot the bulletin your lawyer cites.",
+            "Employer filings need Ministry of Labour (Mitradel — Panama's labour ministry) steps for some visas.",
+            "Dependants piggy-back on principal filings — passports must stay valid beyond processing windows.",
+            "Search 'friendly nations visa Panama oficial' before paying retainers."
+          ],
+          "officialLink": {
+            "label": "Panama Migracion trabajadores extranjeros official"
+          }
+        }
+      ]
+    }
+  },
+  "chile": {
+    "name": "Chile",
+    "visa": {
+      "status": "verified",
+      "summary": "Chile distinguishes short visits from subject-to-visa nationals — travellers from Visa Waiver countries receive a stamped PDI (Polícia de Investigaciones de Chile — national police) stays of usually up to 90 days. Paid work demands a Contrato Subject to residence processing or visas handled by consulates and Departamento de Extranjeria y Migración.",
+      "tip": "Spanish PDFs dominate official sites — use browser translation layers and bilingual counsel.",
+      "options": [
+        {
+          "type": "Visa waiver / visitor entry",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay — tourism admissions",
+          "duration": "Visa waiver nationalities commonly receive roughly 90 days per entry stamped by PDI — confirm on consulate bulletins before tickets; others must apply beforehand.",
+          "description": "Private visits inside the authorised period — enrolling kids long-term normally needs residency alignment.",
+          "details": [
+            "Search 'Chile Extranjeria ingreso turistico oficial' before flying — reciprocity adjusts.",
+            "Carry onward tickets especially when airlines enforce return dates.",
+            "Keep hotel or lease proof on phone — sporadic documentary checks occur."
+          ],
+          "officialLink": {
+            "label": "Chile Ministerio Relaciones Exteriores visa official"
+          }
+        },
+        {
+          "type": "Temporary residency / contracts subject to visa",
+          "anchor": "visa-dnv",
+          "detailTitle": "Temporary residence contracts",
+          "duration": "Work-linked temporary residence often aligns with roughly 1–2 year cards depending on tipo — Dirección Nacional de Migración prints exact validity.",
+          "description": "Employers file contratos sujeto a visa for many hires — paralegals notarise every page twice.",
+          "details": [
+            "Criminal records need Apostilles and Spanish translations dated within officer windows.",
+            "Dependants usually file linked Family Regroup visas — budget extra months.",
+            "RUT (Chile tax ID roll) unlocking follows approvals — accountants help after cards issue.",
+            "Search 'tramite temporal residencia Chile extranjeria' for live PDFs."
+          ],
+          "officialLink": {
+            "label": "Chile Migraciones contrato vista sujeto official"
+          }
+        }
+      ]
+    }
+  },
+  "uruguay": {
+    "name": "Uruguay",
+    "visa": {
+      "status": "verified",
+      "summary": "Uruguay admits many passports visa-free with short stamped stays at port or airports through Migración officers. Retirement, reunificación familiar (family reunion), trabajo (work), and inversionista filings share similar police and birth-certificate dossiers coordinated by Migración Nacional.",
+      "tip": "Residency filings often start online with physical follow-up appointments in Montevideo — keep PDF receipts.",
+      "options": [
+        {
+          "type": "Visitor / tourist admission",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay — tourism",
+          "duration": "Many travellers receive about 90 days when admitted as tourists — confirm for your passport on official Ministry updates; officers can shorten stays.",
+          "description": "Private visits and tourism during the stamped period — not local employment without the correct permit.",
+          "details": [
+            "Search 'Uruguay turismo ingreso sin visa oficial' before booking tickets.",
+            "Land border queues spike in summer — bring snacks for young children.",
+            "Keep proof of accommodation when asked by immigration or carriers."
+          ],
+          "officialLink": {
+            "label": "Uruguay Ministerio interior migracion official"
+          }
+        },
+        {
+          "type": "Residency (work / family / investor / rentista)",
+          "anchor": "visa-dnv",
+          "detailTitle": "Residency pathways",
+          "duration": "Initial cards often run about 1–2 years before renewal depending on category — read the certificate Migración issues.",
+          "description": "Attorneys bundle FBI or national police clearance, marital documents, vaccination records (for minors), and income proof.",
+          "details": [
+            "Rentistas show passive income affidavits; investors reference company bylaws notarised in Uruguay.",
+            "Work routes need Contrato lodged with Dirección Nacional de Migración approvals.",
+            "Search 'tramite residencia legal Uruguay Migracion oficial' quarterly — fees change silently."
+          ],
+          "officialLink": {
+            "label": "Uruguay residencia temporal oficial"
+          }
+        }
+      ]
+    }
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "visa": {
+      "status": "verified",
+      "summary": "Vietnam swaps between e-visas (EL — electronic visas), visa exemptions for select passports, visas on arrival in limited cases, and consular stickers. Employers invite experts through LA (Labour Acceptance — work permit prelude) filings through MOLISA (Ministry of Labour — Vietnam's labour ministry).",
+      "tip": "Download every approval letter PDF before airport check-in — low-cost airlines may refuse boarding without QR codes.",
+      "options": [
+        {
+          "type": "E-visa / exemption / tourism visa",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short stay visits",
+          "duration": "E-visas commonly allow about 30–90-day single-entry stays depending on issued category; exemptions for some ASEAN and European passports periodically extend — yours may differ.",
+          "description": "Tourism inside the authorised window — unpaid volunteer work still needs clarification with counsel.",
+          "details": [
+            "Apply only via the official Vietnamese government e-visa portal or consulate emails you trust.",
+            "Passport validity must stretch months beyond departure — airlines enforce ICAO norms strictly.",
+            "Children need their own e-visa or sticker — annotate custody letters if surnames differ.",
+            "Search 'evisa vietnam oficial govn' quarterly before paying agents."
+          ],
+          "officialLink": {
+            "label": "Vietnam immigration evisa official portal"
+          }
+        },
+        {
+          "type": "Work permits & temporary residence cards",
+          "anchor": "visa-dnv",
+          "detailTitle": "Employer-sponsored stays",
+          "duration": "Work permits commonly run roughly up to two years aligned with Labour Acceptance; temporary residence cards (TRC — laminated ID for foreigners) mirror permit dates.",
+          "description": "HR obtains health checks, judicial records abroad, apostilles, Vietnamese translations — expect multi-month dossiers.",
+          "details": [
+            "Experts need degree equivalency attestations recognised by MOST (Ministry of Science — Vietnam recognises foreign degrees through designated offices).",
+            "Dependants often hold TT visas tied to principals — kindergarten paperwork references TRC scans.",
+            "Search 'temporary residence card vietnam moi official' whenever decrees amend forms."
+          ],
+          "officialLink": {
+            "label": "Vietnam work permit LA official search"
+          }
+        }
+      ]
+    }
+  },
+  "india": {
+    "name": "India",
+    "visa": {
+      "status": "verified",
+      "summary": "Most inbound travellers rely on India's e-visas or consular visas with fixed stay durations printed electronically. Employers pursue Employment (E-type) visas and FRRO/FRO registrations (foreigner regional registration offices) after landing. India's rules tighten often — screenshots from the Ministry of Home Affairs ICA site win arguments with landlords.",
+      "tip": "Register at the nearest FRRO (Foreigners Regional Registration Office) within deadlines printed on visas — overstaying risks fines.",
+      "options": [
+        {
+          "type": "E-visa / tourist or business visa",
+          "anchor": "visa-tourist",
+          "detailTitle": "Short visits",
+          "duration": "E-tourist windows often span about 30 or 90 days depending on nationality and issuance date — triple-check the emailed PDF.",
+          "description": "Private visits and sanctioned business trips — not payroll without correct employment stamping.",
+          "details": [
+            "Only use India's official Visa Online government channels or embassy appointments — avoid clone sites charging fake fees.",
+            "Carry vaccination print-outs if onward domestic flights ask.",
+            "Search 'Indian immigration visa bulletin official MOHA' quarterly — reciprocal changes happen fast.",
+            "Good scouting use: touring schools — long-term placements need FRRO-aligned residency proofs."
+          ],
+          "officialLink": {
+            "label": "India eVisa portal official indianvisaonline gov"
+          }
+        },
+        {
+          "type": "Employment / long-term residence",
+          "anchor": "visa-dnv",
+          "detailTitle": "Employment and dependent routes",
+          "duration": "Employment visas mirror contract length — FRRO registrations often peg first residence endorsements near one year renewable.",
+          "description": "HR coordinates Ministry of Labour filings, PIO cards for heritage cases, dependant linkage forms, lease FRRO affidavits, and biometric capture slots.",
+          "details": [
+            "Aadhaar (India's biometric ID) may stay unavailable early — landlords often accept passports plus FRRO slip copies.",
+            "Children need student visa swaps if switching to CBSE-heavy schools — registrar offices scrutinise affidavits.",
+            "Domestic helpers require separate PIO/OCI nuances — payroll compliance via specialised firms avoids fines.",
+            "Search 'FRRO india registration employment visa official' weekly during monsoon bureaucracy peaks."
+          ],
+          "officialLink": {
+            "label": "Immigration india FRRO handbook official pdf"
+          }
+        }
+      ]
+    }
   }
 }
