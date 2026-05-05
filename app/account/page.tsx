@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { MapPin, FileText, LogOut } from "lucide-react";
+import { MapPin, FileText } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
+import SignOutButton from "@/components/auth/SignOutButton";
 
 export const metadata: Metadata = {
   title: "My Account | Famirelo",
@@ -28,15 +29,7 @@ export default async function AccountPage() {
               FamiRelo
             </span>
           </Link>
-          <form action="/auth/signout" method="post">
-            <button
-              type="submit"
-              className="flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-slate-600"
-            >
-              <LogOut size={13} />
-              Sign out
-            </button>
-          </form>
+          <SignOutButton />
         </div>
       </nav>
 
