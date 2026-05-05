@@ -991,13 +991,23 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Dubai UAE\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Dubai+UAE",
+          "label": "Bayut — UAE's largest property portal",
+          "url": "https://www.bayut.com",
           "isVerified": true
         },
         {
-          "label": "Search on Facebook: 'Dubai Expats' — community group with housing posts and direct landlord deals",
-          "url": "https://www.google.com/search?q=Dubai+Expats+Facebook+group",
+          "label": "Property Finder — major UAE property portal with English interface",
+          "url": "https://www.propertyfinder.ae",
+          "isVerified": true
+        },
+        {
+          "label": "Dubizzle — direct landlord listings (no agent fee)",
+          "url": "https://dubai.dubizzle.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Dubai Expats Housing' (direct landlord and community deals)",
+          "url": "https://www.google.com/search?q=Dubai+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
@@ -3925,12 +3935,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Berlin Germany\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Berlin+Germany",
+          "label": "ImmoScout24 — Germany's largest property portal",
+          "url": "https://www.immobilienscout24.de",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Berlin Wohnungssuche' or 'Apartments Berlin Expats' for direct landlord deals",
+          "label": "ImmoWelt — major German rental portal",
+          "url": "https://www.immowelt.de",
+          "isVerified": true
+        },
+        {
+          "label": "WG-Gesucht — flatshares and longer-term rooms (useful while flat-hunting)",
+          "url": "https://www.wg-gesucht.de",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Berlin Wohnungssuche' or 'Apartments Berlin Expats' (community listings, direct landlord deals)",
           "url": "https://www.google.com/search?q=Berlin+Wohnungssuche+Facebook+group",
           "isVerified": true
         }
@@ -4345,13 +4365,23 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Amsterdam Netherlands\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Amsterdam+Netherlands",
+          "label": "Funda — Netherlands' largest property portal",
+          "url": "https://www.funda.nl",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing Amsterdam Expats' or 'Amsterdam Rentals' for direct landlord deals",
-          "url": "https://www.google.com/search?q=Housing+Amsterdam+Expats+Facebook+group",
+          "label": "Pararius — strong rental focus, English-language interface",
+          "url": "https://www.pararius.com",
+          "isVerified": true
+        },
+        {
+          "label": "Kamernet — flats and rooms, useful for shorter-term while hunting",
+          "url": "https://kamernet.nl",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Amsterdam Housing Expats' (direct landlord and sublet deals)",
+          "url": "https://www.google.com/search?q=Amsterdam+Housing+Expats+Facebook+group",
           "isVerified": true
         }
       ],
@@ -4762,12 +4792,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Prague Czech Republic\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Prague+Czech+Republic",
+          "label": "Sreality.cz — Czech Republic's largest property portal",
+          "url": "https://www.sreality.cz",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Prague Expats Housing' or 'Apartments Prague' for direct deals",
+          "label": "Reality.iDNES.cz — major Czech rental portal",
+          "url": "https://reality.idnes.cz",
+          "isVerified": true
+        },
+        {
+          "label": "Bezrealitky — landlord-direct listings (no agent fee)",
+          "url": "https://www.bezrealitky.cz",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Prague Expats Housing' or 'Apartments Prague' (community listings, direct landlord deals)",
           "url": "https://www.google.com/search?q=Prague+Expats+Housing+Facebook+group",
           "isVerified": true
         }
@@ -5179,12 +5219,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Budapest Hungary\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Budapest+Hungary",
+          "label": "Ingatlan.com — Hungary's largest property portal",
+          "url": "https://ingatlan.com",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Budapest Expats Housing' or 'Expat Budapest Rentals' for direct landlord deals",
+          "label": "Otthontérkép — major Hungarian rental portal",
+          "url": "https://www.otthonterkep.hu",
+          "isVerified": true
+        },
+        {
+          "label": "Jófogás Ingatlan — Hungarian classifieds with strong rental section",
+          "url": "https://ingatlan.jofogas.hu",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Budapest Expats Housing' (community listings, direct landlord deals)",
           "url": "https://www.google.com/search?q=Budapest+Expats+Housing+Facebook+group",
           "isVerified": true
         }
@@ -5606,12 +5656,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Bangkok Thailand\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Bangkok+Thailand",
+          "label": "DDproperty — Thailand's largest property portal (English interface)",
+          "url": "https://www.ddproperty.com",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Bangkok Expats Housing' or 'Condos for Rent Bangkok' for direct deals",
+          "label": "Hipflat — Bangkok-focused rental portal",
+          "url": "https://www.hipflat.com",
+          "isVerified": true
+        },
+        {
+          "label": "Renthub — direct landlord listings popular with expat families",
+          "url": "https://www.renthub.in.th",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Bangkok Expats Housing' or 'Condos for Rent Bangkok' (direct landlord and community deals)",
           "url": "https://www.google.com/search?q=Bangkok+Expats+Housing+Facebook+group",
           "isVerified": true
         }
@@ -6037,12 +6097,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Phuket Thailand\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Phuket+Thailand",
+          "label": "DDproperty — Thailand's largest property portal",
+          "url": "https://www.ddproperty.com",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Phuket Expats Housing' or 'Phuket Rental Villas' for direct deals",
+          "label": "FazWaz — Phuket-focused villa and condo rentals",
+          "url": "https://www.fazwaz.com",
+          "isVerified": true
+        },
+        {
+          "label": "Hipflat — Thai rental portal with strong Phuket inventory",
+          "url": "https://www.hipflat.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Phuket Expats Housing' or 'Phuket Rental Villas' (direct landlord and community deals)",
           "url": "https://www.google.com/search?q=Phuket+Expats+Housing+Facebook+group",
           "isVerified": true
         }
@@ -6095,7 +6165,8 @@
       ],
       "whereToFindItems": [
         "Search 'Phuket Expat Families' on Google — most reliable source for vetted nanny recommendations on the island",
-        "Search 'Expat Women Phuket' on Google — extensive nanny and childcare recommendation threads"
+        "Search 'Expat Women Phuket' on Google — extensive nanny and childcare recommendation threads",
+        "International schools (e.g. UWC Thailand, BIS Phuket) often keep informal nanny lists — ask the school office once your child is enrolled or in the application stage"
       ]
     },
     "healthcare": {
@@ -8221,7 +8292,8 @@
       ],
       "whereToFindItems": [
         "Search 'Tel Aviv Expat Parents' or 'Olim Families Tel Aviv' on Google — the most active English-language communities for personal nanny referrals",
-        "Israeli relocation agencies — many maintain a vetted childcare referral list specifically for incoming expat families"
+        "Israeli relocation agencies — many maintain a vetted childcare referral list specifically for incoming expat families",
+        "Yad2.co.il (Israel's largest classifieds site) — search the 'mishmeret yeladim' (childcare) section for local nannies and au pairs"
       ]
     },
     "healthcare": {
@@ -8640,7 +8712,8 @@
       ],
       "whereToFindItems": [
         "Search 'Eilat Anglo parents' or 'Olim families Eilat' on Google for English-speaking parent groups and referrals",
-        "Israeli relocation agencies — many maintain vetted childcare referral lists for incoming families"
+        "Israeli relocation agencies — many maintain vetted childcare referral lists for incoming families",
+        "Word-of-mouth through Eilat's small expat community — ask at international school open days and at synagogues with English-speaking congregations"
       ]
     },
     "healthcare": {
@@ -10538,12 +10611,12 @@
     "lastReviewed": "2026-03",
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival — bring your passport, visa, and accommodation details",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
+        "targetSection": "residency"
       },
       {
         "label": "Get your Codice Fiscale (Italian tax code — required for everything: renting, banking, school enrolment, and healthcare) at any Agenzia delle Entrate (tax authority) office",
@@ -10960,12 +11033,12 @@
     "lastReviewed": "2026-03",
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
+        "targetSection": "residency"
       },
       {
         "label": "Get your Codice Fiscale (Italian tax code — required for renting, banking, and school enrolment) at any Agenzia delle Entrate (tax authority) office",
@@ -11755,12 +11828,12 @@
     },
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register at your local Junta de Freguesia (Portugal's local civil parish office — where you register residency) within 90 days of arrival",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU remote workers: apply for the D8 Digital Nomad Visa at a Portuguese Consulate before travelling — requires proof of income above Portugal's minimum wage threshold",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA citizens: register at your local Junta de Freguesia (Portugal's local civil parish office — where you register residency) within 90 days of arrival",
+        "targetSection": "residency"
       },
       {
         "label": "Apply for NHR status (Non-Habitual Resident — reduces foreign income tax to 20% for 10 years) at Finanças (Portugal's tax office) within the year of your first Portuguese tax residency",
@@ -12182,16 +12255,16 @@
     "lastReviewed": "2026-03",
     "actionChecklist": [
       {
+        "label": "Non-EU citizens: convert your entry D-Visa to an Aufenthaltserlaubnis (residence permit) at the Ausländerbehörde (immigration office) within 90 days of arrival",
+        "targetSection": "visa"
+      },
+      {
         "label": "Book your Anmeldung appointment (mandatory address registration at Munich's KVR — Kreisverwaltungsreferat, the equivalent of Berlin's Bürgeramt) the day you arrive — slots in Munich fill 4–8 weeks ahead",
         "targetSection": "residency"
       },
       {
         "label": "EU/EEA citizens: the Anmeldung is your only post-arrival registration step — it unlocks your Steuer-ID (tax ID), health insurance, and bank account",
         "targetSection": "residency"
-      },
-      {
-        "label": "Non-EU citizens: convert your entry D-Visa to an Aufenthaltserlaubnis (residence permit) at the Ausländerbehörde (immigration office) within 90 days of arrival",
-        "targetSection": "visa"
       },
       {
         "label": "Start your housing search 8–10 weeks before your move — Munich's rental market is one of Germany's tightest and properties go within days",
@@ -12612,12 +12685,12 @@
     "lastReviewed": "2026-03",
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register at your local KEP (Citizens' Service Centre — Greece's equivalent of a public services office) within 3 months and obtain your AMKA and AFM",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU remote workers: apply for the Greece Digital Nomad Visa at a Greek Consulate before travelling — minimum income $3,780/month",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA citizens: register at your local KEP (Citizens' Service Centre — Greece's equivalent of a public services office) within 3 months and obtain your AMKA and AFM",
+        "targetSection": "residency"
       },
       {
         "label": "Get your AFM (Arithmos Forologikou Mitroou — your Greek tax ID number) at a local Εφορία (tax office) immediately on arrival — required before renting, banking, or signing any contract",
@@ -19518,7 +19591,8 @@
       ],
       "whereToFindItems": [
         "Search 'Jerusalem Anglo parents' on Google — active community with nanny referrals and WhatsApp hiring groups",
-        "Local parent mailing lists and WhatsApp groups are the primary hiring channel in Jerusalem"
+        "Local parent mailing lists and WhatsApp groups are the primary hiring channel in Jerusalem",
+        "Yad2.co.il (Israel's largest classifieds site) — has a dedicated 'metaplot' (childcare) category widely used in Jerusalem"
       ]
     },
     "healthcare": {
@@ -19989,7 +20063,7 @@
         "answer": "Competitive in strong public zones — start early and align lease with school acceptance."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "LAUSD magnets and charters can work; many expat families still choose private routes for predictability — see Schools."
       },
       {
@@ -22195,12 +22269,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Dublin Ireland\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Dublin+Ireland",
+          "label": "Daft.ie — Ireland's largest property portal",
+          "url": "https://www.daft.ie",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing Dublin Expats' or 'Dublin Rentals' for direct landlord deals",
+          "label": "MyHome.ie — major Irish rental portal",
+          "url": "https://www.myhome.ie",
+          "isVerified": true
+        },
+        {
+          "label": "Rent.ie — landlord-direct listings",
+          "url": "https://www.rent.ie",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Housing Dublin Expats' or 'Dublin Rentals' (direct landlord and community deals)",
           "url": "https://www.google.com/search?q=Housing+Dublin+Expats+Facebook+group",
           "isVerified": true
         }
@@ -22471,17 +22555,17 @@
     "countrySlug": "italy",
     "city": "Rome",
     "country": "Italy",
-    "tagline": "Italy's capital — history, state schools, and a slower rhythm than Rome",
-    "summary": "Rome offers Mediterranean family life with vast culture, international schools in the EUR and northern belt, and lower buzz than Rome. Trade-offs are traffic, summer heat, and bureaucracy that rewards patience and Italian language help.",
+    "tagline": "Italy's capital — strong international school circuit, top public healthcare, and an EU passport-free move for European families",
+    "summary": "Rome offers a high standard of living, an established international school sector, and Italy's free public healthcare system (SSN — Servizio Sanitario Nazionale) for residents. The trade-offs are slow Italian bureaucracy, summer heat, and one of Italy's tighter rental markets.",
     "lastReviewed": "2026-04",
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
-        "targetSection": "residency"
-      },
-      {
         "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival — bring your passport, visa, and accommodation details",
         "targetSection": "visa"
+      },
+      {
+        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
+        "targetSection": "residency"
       },
       {
         "label": "Get your Codice Fiscale (Italian tax code — required for everything: renting, banking, school enrolment, and healthcare) at any Agenzia delle Entrate (tax authority) office",
@@ -22510,16 +22594,16 @@
     ],
     "familyFit": {
       "bestFor": [
-        "Families relocating for corporate roles in finance, fashion, design, or consulting",
-        "EU/EEA families who want straightforward residency registration without a visa process",
-        "Parents who want access to an established international school circuit in a major European city",
-        "Families who value proximity to the Alps, Lake Como, and easy access to the rest of Europe"
+        "Families relocating for diplomatic, government, NGO (FAO, WFP, IFAD), or international organisation roles",
+        "EU/EEA families who want a low-friction move with no visa process — only a Codice Fiscale and address registration are required after arrival",
+        "Parents who want access to an established international school circuit (IB, British, American) in a major European capital",
+        "Families who value Mediterranean climate and proximity to Tuscany, the Amalfi coast, and the rest of Italy by high-speed rail"
       ],
       "watchOutFor": [
-        "Rome is expensive — rent and international school fees are high relative to most of Italy",
-        "Italian bureaucracy is genuinely slow — the Permesso di Soggiorno and school registration processes require patience and preparation",
-        "Summer in Rome (July–August) is very hot and humid and the city largely empties — not the best time to arrive",
-        "Air quality can be poor in winter — the Po Valley traps pollution; families with asthma or young children should factor this in"
+        "Rome is expensive — rent in family neighbourhoods (Prati, Parioli, EUR) and international school fees are well above the Italian national average",
+        "Italian bureaucracy is genuinely slow — the Permesso di Soggiorno (residence permit) and school registration processes require patience and preparation",
+        "Roman summers (July–August) are very hot and humid and the city largely empties — not the best time to arrive",
+        "Air quality dips in winter due to traffic and domestic heating; not as severe as northern Italy but families with asthma or young children should factor it in"
       ]
     },
     "visa": {
@@ -22551,7 +22635,7 @@
             "90 days maximum across the entire Schengen Area in any 180-day period.",
             "No right to work — this includes remote work for a foreign employer.",
             "Cannot be converted to residency from inside Italy — you must apply for a long-stay D visa at an Italian consulate in your home country before travelling.",
-            "Good use: 2–3 weeks scouting Porta Venezia, Isola, Brera, and Navigli for schools, housing, and neighbourhoods.",
+            "Good use: 2–3 weeks scouting Prati, Parioli, Trastevere, and EUR for schools, housing, and neighbourhoods.",
             "Do not attempt long-term stays on rolling tourist entries — Italian immigration enforces Schengen limits."
           ]
         },
@@ -22598,17 +22682,19 @@
     },
     "housing": {
       "status": "estimated",
-      "summary": "Rome is Italy's most expensive city for housing. Family-friendly areas cluster in Porta Venezia, Isola, Brera, Navigli, and Sempione — all within easy reach of international schools and the city centre.",
+      "summary": "Rome is one of Italy's most expensive rental markets. Family-friendly areas cluster in Prati, Parioli, Trieste-Salario, Aventino, Monteverde, EUR, and Flaminio — all within reach of international schools and the city centre.",
       "bestAreas": [
         "Prati",
+        "Parioli",
+        "Trieste-Salario",
+        "Aventino",
         "Monteverde",
         "EUR",
-        "Parioli",
         "Trastevere"
       ],
       "searchPortalsIntro": [
         "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
-        "Search 'Romeo' or the neighbourhood name inside each platform to filter local listings.",
+        "Search 'Roma' (Italian for Rome) or the neighbourhood name (e.g. 'Prati', 'Parioli', 'Monteverde') inside each platform to filter local listings.",
         "Tip: arrive in Rome with a short-stay Airbnb or serviced apartment booked for the first 2–4 weeks — the rental market moves fast and you need time to view properties in person."
       ],
       "searchPortals": [
@@ -22628,42 +22714,48 @@
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Rome Expats Housing' or 'Appartamenti Romeo' (community listings and direct landlord deals)",
+          "label": "Facebook groups — search: 'Rome Expats Housing' or 'Affitti Roma' (community listings and direct landlord deals)",
           "url": "https://www.google.com/search?q=Rome+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Porta Venezia or Isola: $1,510–$2,050/month",
-        "2-bed apartment, Brera or Navigli: $2,160–$3,025/month",
-        "3-bed apartment, Sempione or De Angeli: $2,590–$3,780/month",
-        "3-bed apartment, Porta Venezia: $2,375–$3,455/month"
+        "1-bed apartment, Prati or Trastevere: ~$1,500–$2,050 / month",
+        "2-bed apartment, Parioli or Aventino: ~$2,150–$3,000 / month",
+        "3-bed apartment, Prati or Parioli: ~$2,600–$3,800 / month",
+        "3-bed apartment, EUR or Monteverde: ~$2,400–$3,450 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$2,500–$4,000 / month"
       ],
       "whatYouNeedToRent": [
         "Valid passport",
-        "Codice Fiscale (Italian tax code — required on all rental contracts)",
-        "3 months of bank statements or employment contract",
-        "2–3 months deposit is standard in Rome",
-        "Rental contracts are typically 4+4 years (standard) or 3+2 years (transitional) — confirm the contract type before signing"
+        "Codice Fiscale (Italian tax code — required on every rental contract)",
+        "3 months of bank statements or an Italian employment contract — landlords often ask for both",
+        "2–3 months deposit is standard in Rome (sometimes 3 months for international tenants without an Italian guarantor)",
+        "Confirm contract type before signing — '4+4' (standard residential) or '3+2' (transitional) is normal; tourist contracts under 18 months do not give you residency rights"
       ]
     },
     "schools": {
       "status": "curated",
-      "summary": "Rome has the widest choice of international schools in Italy. Most have limited places and require applications well in advance — plan 12–18 months ahead.",
+      "summary": "Rome has the widest choice of international schools in Italy after Milan. Most have limited places and require applications well in advance — plan 12–18 months ahead.",
       "publicSystem": "Italian state schools are free and well structured but all instruction is in Italian. State schools are a realistic option only if your children already speak Italian or you are willing to enrol them in an intensive Italian language programme first. Most expat families with English-speaking children use the international school circuit.",
-      "internationalOptions": "Rome has a small but well-established international school sector with IB, British, and American curriculum schools, mostly located in the Porta Venezia, Brera, and northern suburban areas. Fees range from roughly $10,800 to $27,000+ per year. Places are limited — apply early.",
-      "languageNotes": "Italian state schools teach entirely in Italian. International schools teach in English. Children who attend state schools without prior Italian typically need 1–2 years to reach full academic fluency.",
-      "tip": "Apply to international schools before booking your flights — most Rome international schools have waitlists and do not reserve places without a completed application.",
+      "internationalOptions": "Rome has a well-established international school sector with IB, British, American, and French curriculum schools. Most cluster in the northern and northwestern suburbs (Cassia, La Storta, Olgiata) and in the Parioli, EUR, and Trastevere areas. Fees range from roughly $11,000 to $27,000+ per year. Places are limited — apply early.",
+      "languageNotes": "Italian state schools teach entirely in Italian. International schools teach in English, with French and other languages also available at the larger schools. Children who attend state schools without prior Italian typically need 1–2 years to reach full academic fluency.",
+      "tip": "Apply to international schools before booking your flights — most Rome international schools have waitlists and do not reserve places without a completed application and supporting documents.",
       "options": [
         {
           "type": "IB curriculum international schools",
-          "description": "The primary choice for English-speaking expat families. IB Diploma and Primary Years Programme available. Limited places per year group.",
-          "fees": "$15,120–$27,000+/year typical"
+          "description": "The primary choice for English-speaking expat families in Rome. IB Diploma and Primary Years Programme available. Limited places per year group — apply 12–18 months ahead.",
+          "fees": "$15,000–$27,000+/year typical"
         },
         {
           "type": "British curriculum international schools",
-          "description": "British A-Level and GCSE pathway schools. Smaller in number than IB options in Rome but well regarded.",
-          "fees": "$12,960–$23,760/year typical"
+          "description": "British A-Level and GCSE pathway schools with several long-established options in Rome's northern suburbs and central areas.",
+          "fees": "$13,000–$24,000/year typical"
+        },
+        {
+          "type": "American curriculum international schools",
+          "description": "US-style curriculum with AP courses. Popular with American diplomatic and corporate families. Concentrated in the northern suburbs.",
+          "fees": "$15,000–$26,000/year typical"
         },
         {
           "type": "Italian state schools",
@@ -22674,54 +22766,55 @@
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Rome has both public and private nursery options. Public asili nido (nurseries) are subsidised but heavily oversubscribed. Private nurseries are more accessible but expensive.",
+      "summary": "Rome has both public and private nursery options. Public asili nido (nurseries) are subsidised but heavily oversubscribed — private nurseries are more accessible but expensive.",
       "daycareItems": [
-        "Asilo nido (nursery/daycare — Italian term for state-run or authorised nursery for children 0–3) accept children from 3 months old. Public asili nido are subsidised but have long waiting lists — apply as soon as your arrival date is confirmed",
-        "Private asilo nido fees: roughly $755–$1,295/month. Public asili nido fees are income-tested and significantly lower — but availability is limited",
+        "Asilo nido (nursery/daycare — Italian term for state-run or authorised nursery for children 0–3) accepts children from 3 months old. Public asili nido are subsidised but have long waiting lists in Rome — apply as soon as your arrival date is confirmed",
+        "Private asilo nido fees: roughly $750–$1,300/month. Public asili nido fees are income-tested and significantly lower — but availability is limited",
         "Scuola dell'infanzia (Italian preschool for children 3–6) is free or very low cost in the state system — enrolment requires residency registration and a Codice Fiscale",
-        "Visit nurseries in person before committing — quality varies significantly between private providers"
+        "Visit nurseries in person before committing — quality varies significantly between private providers; ask about staff-to-child ratios and outdoor space"
       ],
       "nannyItems": [
-        "Full-time nannies charge roughly $13–$19/hr — rates in Rome are higher than elsewhere in Italy",
-        "Many nannies in Rome speak English, particularly those who have worked with expat families previously — ask specifically when searching",
+        "Full-time nannies (often called tata or babysitter) charge roughly $13–$19/hr in Rome — rates are higher than in southern Italy but lower than Milan",
+        "Many nannies in Rome speak English, particularly those who have worked with diplomatic or expat families previously — ask specifically when searching",
         "Part-time nannies and after-school childcare (for school-age children) are common arrangements among expat families",
-        "Start your nanny search at least 6–8 weeks before arrival — good candidates go quickly in Rome's expat community"
+        "Start your nanny search at least 6–8 weeks before arrival — good candidates go quickly, particularly those with English language skills"
       ],
       "whereToFindItems": [
-        "Babysits.com — Italian childcare platform used by expat families in Rome for nanny and babysitter listings",
-        "Gumtree Italy and Bakeca.it — Italian classifieds widely used for nanny listings in Rome",
-        "Search 'Rome Expat Families' or 'Romeo Mamme Expat' on Google — community groups for personal recommendations and nanny introductions"
+        "Babysits.com — international childcare platform with strong Italian listings used by expat families in Rome",
+        "Tata.it and Bakeca.it — Italian classifieds widely used for nanny and tata listings in Rome",
+        "Search 'Rome Expat Families' or 'Mamme Roma Expat' on Facebook — community groups for personal recommendations and nanny introductions",
+        "Word of mouth through international schools and embassy/NGO communities — many of the best Rome nannies are found this way"
       ]
     },
     "healthcare": {
       "status": "estimated",
       "tip": "Register with your local ASL (Azienda Sanitaria Locale) within the first month — this activates your access to Italy's SSN (public health system) and assigns you a GP.",
       "items": [
-        "Italy's SSN (Servizio Sanitario Nazionale — public national health system) covers all registered residents including EU/EEA citizens and non-EU residents with a valid Permesso di Soggiorno.",
+        "Italy's SSN (Servizio Sanitario Nazionale — public national health system) covers all registered residents including EU/EEA citizens and non-EU residents with a valid Permesso di Soggiorno (residence permit).",
         "Register with your local ASL (Azienda Sanitaria Locale — local health authority) after completing your residency registration. Bring your passport, Codice Fiscale, and proof of address. You will receive a tessera sanitaria (health card) and be assigned a GP.",
-        "GP and specialist visits through the SSN require a small co-payment (called a ticket) of roughly $16–$43 per visit. Emergency care and hospitalisation are covered at no cost.",
-        "Private healthcare is widely used in Rome for faster access and English-speaking doctors. A private GP consultation costs roughly $86–$162. International health insurance (IPMI) is recommended for non-EU residents while awaiting SSN registration.",
-        "Ospedale San Raffaele and Ospedale Fatebenefratelli are among the most recommended hospitals for families in Rome, offering both public and private patient services."
+        "GP and specialist visits through the SSN require a small co-payment (called a ticket) of roughly $16–$45 per visit. Emergency care and hospitalisation are covered at no cost.",
+        "Private healthcare is widely used in Rome for faster access and English-speaking doctors. A private GP consultation costs roughly $90–$160. International private medical insurance (IPMI — International Private Medical Insurance) is recommended for non-EU residents while awaiting SSN registration.",
+        "Policlinico Universitario Agostino Gemelli is Rome's largest teaching hospital and a strong choice for adults. Ospedale Pediatrico Bambino Gesù — the Vatican-affiliated children's hospital — is one of Europe's leading paediatric centres and the default for serious child cases."
       ]
     },
     "safety": {
       "status": "estimated",
-      "score": 78,
-      "summary": "Rome is a generally safe city for families but pickpocketing and petty theft in tourist and transport areas are common.",
+      "score": 80,
+      "summary": "Rome is generally safe for families. The main daily risks are pickpocketing in tourist zones and Roman traffic — not violent crime.",
       "items": [
-        "Violent crime is relatively rare in family residential areas — Porta Venezia, Isola, Brera, and Sempione are low-risk neighbourhoods",
-        "Pickpocketing is the main risk — particularly around Romeo Centrale train station, the Duomo, and busy Metro lines 2 and 3. Keep bags in front and phones out of back pockets",
-        "Rome's air quality can be poor in winter — the Po Valley geography traps pollution; invest in air purifiers for the home if you have young children or family members with respiratory conditions",
-        "Traffic is the primary daily hazard — Rome's driving culture is aggressive by northern European standards; teach children road awareness early",
-        "Family residential neighbourhoods (Porta Venezia, Brera, De Angeli) are well-lit, active, and safe for evening walks with children"
+        "Violent crime is relatively rare in family residential areas — Prati, Parioli, Trieste-Salario, Aventino, and Monteverde are low-risk neighbourhoods for everyday family life",
+        "Pickpocketing is the main daily risk — particularly around Roma Termini (the central rail station), the Vatican, the Colosseum, Trevi Fountain, and busy Metro lines A and B. Keep bags in front and phones out of back pockets",
+        "Roman traffic is the primary daily hazard — driving culture is aggressive, scooters weave through stopped cars, and pedestrian crossings are not always respected. Teach children road awareness early",
+        "Family residential neighbourhoods (Prati, Parioli, Aventino, Monteverde) are well-lit, active, and safe for evening walks with children",
+        "Heat is a real summer hazard — July and August regularly hit 35°C+. Plan around midday heat with young children and avoid arriving during peak summer if possible"
       ]
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~$2,200 / month",
-      "familyDinner": "~$62",
-      "nannyRate": "~$14 / hr",
-      "monthlyFamilyAllIn": "~$4,800–$7,000 / month"
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month",
+      "rentRange": "~$3,000 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$15 / hr"
     },
     "sources": {
       "cost": [
@@ -22746,44 +22839,50 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Rome Expats' or 'Expat Family Rome Italy' on Google — active community with housing, school, and settlement advice",
+        "label": "Search 'Rome Expats' or 'Expat Family Rome Italy' on Facebook — active community with housing, school, and settlement advice",
         "searchQuery": "Rome Expats Facebook group",
         "url": "https://www.google.com/search?q=Rome+Expats+Facebook+group+Italy",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Mamme Roma Expat' on Facebook — Rome-based parent group with on-the-ground advice from international families",
+        "searchQuery": "Mamme Roma Expat Facebook",
+        "url": "https://www.google.com/search?q=Mamme+Roma+Expat+Facebook+group",
         "isVerified": true
       }
     ],
     "faq": [
       {
         "question": "Is Rome good for families?",
-        "answer": "Good — Rome offers a high standard of living, strong private schools, excellent healthcare, and Italy's most international city environment. The main trade-offs are high cost and notoriously slow Italian bureaucracy."
+        "answer": "Good — Rome offers a high standard of living, an established international school circuit, and Italy's free public healthcare system. The main trade-offs are high cost, summer heat, and notoriously slow Italian bureaucracy."
       },
       {
         "question": "How much does a family typically need per month here?",
-        "answer": "Budget $5,500–$8,000/month for a family of four. Rent for a 3-bedroom in a family-friendly area runs $2,500–$3,800/month. International school fees of $12,000–$22,000/year are the largest additional cost."
+        "answer": "Budget $5,500–$8,000/month for a family of four. Rent for a 3-bedroom in Prati, Parioli, or EUR runs $2,600–$3,800/month. International school fees of $13,000–$24,000/year are the largest additional cost."
       },
       {
         "question": "Is housing hard to find here?",
-        "answer": "Competitive. Rome has a tight rental market relative to supply. Popular family areas (Porta Venezia, Brera, Isola) move fast. Italian landlords often require a Codice Fiscale (Italian tax code) and local bank account before signing — hard to have as a new arrival. Budget for a furnished serviced apartment for the first 4–8 weeks."
+        "answer": "Yes — Rome has a tight rental market and family neighbourhoods (Prati, Parioli, Trastevere, Aventino, Monteverde) move fast. Italian landlords usually require a Codice Fiscale (Italian tax code) and proof of income before signing — hard to have as a new arrival. Budget for a furnished serviced apartment for the first 4–8 weeks while you search in person."
       },
       {
         "question": "Do children need international school here, or can local schools work?",
-        "answer": "International school is recommended for non-Italian-speaking families. State schools are free but teach entirely in Italian. Rome has a strong international school sector at $12,000–$22,000/year. Many families use it for at least the first few years."
+        "answer": "International school is recommended for non-Italian-speaking families. State schools are free but teach entirely in Italian. Rome has a strong international school sector at $13,000–$24,000/year. Many families use it for at least the first few years until children pick up Italian."
       },
       {
         "question": "Is healthcare easy to access as a newcomer?",
-        "answer": "Yes, once you have your Codice Fiscale (Italian tax code) and residency. Register with the Italian public health system (SSN — Servizio Sanitario Nazionale) at your local ASL (Azienda Sanitaria Locale — local health district office). Private health insurance at $100–$200/month per person speeds up specialist access considerably."
+        "answer": "Yes, once you have your Codice Fiscale and residency. Register with the SSN (Servizio Sanitario Nazionale — Italy's public health system) at your local ASL (Azienda Sanitaria Locale — local health authority). Private health insurance at $100–$200/month per person speeds up specialist access."
       },
       {
         "question": "Do you need a car in Rome?",
-        "answer": "No. Rome has excellent metro and tram coverage. Most families in central and semi-central areas live car-free. A car is useful for weekend trips to the Italian Lakes or mountains."
+        "answer": "Not in central or semi-central areas — Rome has Metro lines A, B, B1, and C plus extensive bus and tram coverage. Most families in Prati, Parioli, Trastevere, and Monteverde live car-free. A car is useful if you live in EUR or the northern suburbs (near international schools) and for weekend trips to the coast or Tuscany."
       },
       {
         "question": "How difficult is the paperwork and bureaucracy after moving?",
-        "answer": "Slow and document-heavy. Start with your Codice Fiscale at the Agenzia delle Entrate (tax office). Then register your address (Residenza) at the Municipio (municipal office). Then apply for a Permesso di Soggiorno (residence permit) if non-EU. Italian bureaucracy is predictable but slow — allow 2–3 months for everything to resolve."
+        "answer": "Slow and document-heavy. Start with your Codice Fiscale at any Agenzia delle Entrate (tax office). Then register your address at the Ufficio Anagrafe (civil registry, part of your Comune). Then apply for a Permesso di Soggiorno (residence permit) at the local Questura (police HQ) if non-EU. Italian bureaucracy is predictable but slow — allow 2–3 months for everything to resolve."
       },
       {
         "question": "What usually surprises families after arrival?",
-        "answer": "The housing documentation requirements. Italian landlords often ask for things that are impossible to have as a new arrival — a Codice Fiscale, Italian bank account, and sometimes a guarantor. Arriving with a serviced apartment booked for the first 4–8 weeks while you gather documents is near-essential."
+        "answer": "How much summer changes the city — Rome empties in August and many shops, schools, and offices close or run reduced hours. How car-free family life can be in central neighbourhoods despite Italy's reputation. And how much cash culture lingers — keep a small wallet for markets, taxis, and small restaurants that prefer cash."
       }
     ],
     "weather": {
@@ -22894,259 +22993,288 @@
     "countrySlug": "austria",
     "city": "Vienna",
     "country": "Austria",
-    "tagline": "Imperial city with strong public services — German-language daily life",
-    "summary": "Vienna offers excellent public transport, green space, and family subsidies. Expat families integrate through German while enjoying safe neighbourhoods and central European travel links.",
+    "tagline": "Imperial city, top-rated quality of life — German-language daily life",
+    "summary": "Vienna consistently tops global liveability rankings: excellent public transport, generous green space, low crime, and strong public services. Healthcare and education are subsidised, but daily life runs in German and the rental market is regulated — paperwork is slow but predictable.",
     "lastReviewed": "2026-04",
     "actionChecklist": [
       {
-        "label": "EU/EEA citizens: register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your local Comune — city hall) within 90 days of arrival",
-        "targetSection": "residency"
-      },
-      {
-        "label": "Non-EU citizens: apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days of arrival — bring your passport, visa, and accommodation details",
+        "label": "EU/EEA citizens: stay in Austria visa-free indefinitely. After 3 months, apply for an Anmeldebescheinigung (EU residence registration certificate) at MA 35 (Vienna's residence office) within 4 months of arrival — bring passport, proof of income or work, and health insurance proof",
         "targetSection": "visa"
       },
       {
-        "label": "Get your Codice Fiscale (Austrian tax code — required for everything: renting, banking, school enrolment, and healthcare) at any Agenzia delle Entrate (tax authority) office",
+        "label": "Non-EU citizens: apply for a Red-White-Red Card or Settlement Permit at the Austrian consulate in your home country BEFORE travelling — most categories require €1,200–€3,000+/month income proof, valid health insurance, and confirmed accommodation. Processing usually takes 8–12 weeks",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Within 3 working days of moving into your Vienna address, file a Meldezettel (registration form) at your local Magistratisches Bezirksamt (district registration office) — landlord must sign it, bring passport and rental contract. This is mandatory for everyone, including EU citizens",
         "targetSection": "residency"
       },
       {
-        "label": "Start your housing search 8–10 weeks before your move — Vienna's rental market is competitive, especially for family-sized apartments",
+        "label": "Start your housing search 8–10 weeks before arrival — Vienna's rental market is regulated and competitive. Family-sized apartments (3-bed) in popular districts like Döbling, Währing, and Hietzing move quickly",
         "targetSection": "housing"
       },
       {
-        "label": "Apply to international schools 12–18 months before your planned start date — Vienna's international schools have limited places and long waiting lists",
+        "label": "Apply to international schools 12–18 months before your planned start date — Vienna International School, Danube International School, and AIS Vienna all run multi-year waitlists for popular year groups",
         "targetSection": "schools"
       },
       {
-        "label": "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to access Austria's SSN (Servizio Sanitario Nazionale — public health system)",
+        "label": "Register with ÖGK (Österreichische Gesundheitskasse — Austria's public health insurance fund) once you have a residency certificate or work contract. You'll receive an e-card (Austrian health card) which gives access to all public GPs and hospitals",
         "targetSection": "healthcare"
       },
       {
-        "label": "Open an Austrian bank account — Intesa Sanpaolo and UniCredit are the two largest banks with good English-language service",
+        "label": "Open an Austrian bank account at Erste Bank, Bank Austria (UniCredit), Raiffeisen, or BAWAG — bring passport, Meldezettel, and a residency document. Some branches require an appointment",
         "targetSection": "banking"
       },
       {
-        "label": "Find a nanny or nursery as soon as your arrival date is confirmed — asili nido (public nurseries) have long waiting lists in Vienna",
+        "label": "Apply to a Krippe (nursery for under-3s) or Kindergarten (3–6 years) as soon as your arrival date is confirmed — Vienna offers free public Kindergarten from age 1, but popular city-run spots have waitlists",
         "targetSection": "childcare"
       }
     ],
     "familyFit": {
       "bestFor": [
-        "Families relocating for corporate roles in finance, fashion, design, or consulting",
-        "EU/EEA families who want straightforward residency registration without a visa process",
-        "Parents who want access to an established international school circuit in a major European city",
-        "Families who value proximity to the Alps, Lake Como, and easy access to the rest of Europe"
+        "Families seeking high public-service quality (healthcare, transit, parks) at moderate cost for a Western European capital",
+        "EU/EEA families who want simple registration and access to free public Kindergarten from age 1",
+        "Parents prioritising safety, walkability, and excellent music/arts/sports programmes for kids",
+        "Families relocating for corporate roles in finance, UN/diplomatic, or international organisations (Vienna hosts the UN, OPEC, IAEA)"
       ],
       "watchOutFor": [
-        "Vienna is expensive — rent and international school fees are high relative to most of Austria",
-        "Austrian bureaucracy is genuinely slow — the Permesso di Soggiorno and school registration processes require patience and preparation",
-        "Summer in Vienna (July–August) is very hot and humid and the city largely empties — not the best time to arrive",
-        "Air quality can be poor in winter — the Po Valley traps pollution; families with asthma or young children should factor this in"
+        "Daily life is in German — English is widely spoken in central districts and at international employers, but housing, banking, and bureaucracy assume German",
+        "Austrian bureaucracy is slow but exact — every form requires originals, often translated and apostilled. Allow 8–12 weeks for non-EU residence permits",
+        "Winters are long and grey — cold, short days from November to February. Plan for indoor activities and ski weekends in nearby Alps",
+        "Rental market is heavily regulated — many family-sized flats are unfurnished (no kitchen, no light fixtures); budget €5,000–€10,000 for first-time setup"
       ]
     },
     "visa": {
       "status": "verified",
-      "summary": "EU/EEA citizens move to Austria freely — only a Codice Fiscale and address registration are needed after arrival. Non-EU families need a D visa before travelling. Austria launched a Digital Nomad Visa in 2024 for non-EU remote workers earning at least $30,240/year.",
-      "tip": "Book your Questura appointment to apply for your Permesso di Soggiorno (residence permit) immediately on arrival — slots in Vienna fill quickly and delays risk overstaying your entry stamp.",
+      "summary": "EU/EEA citizens move to Austria freely. Non-EU families need a Red-White-Red Card (skilled workers, key workers, self-employed key workers) or a Settlement Permit before travelling — both require income proof, health insurance, and confirmed accommodation. Austria does NOT have a dedicated digital nomad visa.",
+      "tip": "Book your consulate appointment 8–12 weeks before your planned move — Austrian consulate slots in major cities (London, New York, Sydney) fill 6+ weeks out and apostilled documents take 2–3 weeks to prepare.",
       "options": [
         {
           "type": "EU / EEA citizens",
           "anchor": "visa-eu",
           "detailTitle": "EU / EEA citizens — what to do after arriving in Vienna",
-          "duration": "No visa required",
-          "description": "Move freely to Austria with no visa. First steps after arrival: Codice Fiscale and dichiarazione di residenza.",
+          "duration": "No visa required — unlimited stay",
+          "description": "Move freely to Austria. After 3 months, you must apply for an Anmeldebescheinigung (EU registration certificate) within 4 months of arrival.",
           "details": [
-            "No visa, permit, or income threshold required — EU/EEA passport holders have full freedom of movement in Austria.",
-            "Get your Codice Fiscale (Austrian tax code — a personal ID number required for every transaction: renting, banking, school enrolment, healthcare) at any Agenzia delle Entrate (tax authority) office within your first week. Bring your passport.",
-            "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office, part of your local Comune — city hall) within 90 days of arrival. Bring your passport, Codice Fiscale, and rental contract.",
-            "After registering, apply for your SPID (Sistema Pubblico di Identità Digitale — Austria's digital identity for accessing government services online) — required for school registration and many public services.",
-            "After 5 years of continuous legal residence, you can apply for a permanent EU residency permit."
-          ]
+            "No visa, permit, or income threshold required for entry — EU/EEA passport holders have full freedom of movement.",
+            "Within 3 working days of moving into a Vienna address, file a Meldezettel (registration form) at your local Magistratisches Bezirksamt — landlord must sign. This applies to ALL residents, EU or not.",
+            "If staying longer than 3 months, apply for an Anmeldebescheinigung (EU registration certificate) at MA 35 (Magistratsabteilung 35 — Vienna's residence office) within 4 months of arrival. Bring passport, proof of income/work, and health insurance proof.",
+            "After 5 years of continuous legal residence, you can apply for a Daueraufenthalt – EU (permanent EU residence permit).",
+            "Search 'MA 35 Vienna Anmeldebescheinigung' on Google for the latest application form and required documents."
+          ],
+          "officialLink": {
+            "label": "MA 35 Vienna Anmeldebescheinigung official"
+          }
         },
         {
           "type": "Schengen Tourist (non-EU)",
           "anchor": "visa-tourist",
           "detailTitle": "Schengen Tourist — what it allows and what it does not",
           "duration": "Up to 90 days in any 180-day window",
-          "description": "Valid for a scouting trip before committing to the move. No right to work, no extensions, cannot be converted to residency.",
+          "description": "Valid for a scouting trip before committing to the move. No right to work, cannot be converted to residency from inside Austria.",
           "details": [
-            "90 days maximum across the entire Schengen Area in any 180-day period.",
-            "No right to work — this includes remote work for a foreign employer.",
-            "Cannot be converted to residency from inside Austria — you must apply for a long-stay D visa at an Austrian consulate in your home country before travelling.",
-            "Good use: 2–3 weeks scouting Porta Venezia, Isola, Brera, and Navigli for schools, housing, and neighbourhoods.",
-            "Do not attempt long-term stays on rolling tourist entries — Austrian immigration enforces Schengen limits."
+            "90 days maximum across the entire Schengen Area in any 180-day rolling period — many passports (US, UK, Australia, Canada, Israel, Japan) qualify visa-free; others must apply at an Austrian consulate.",
+            "No right to work — including remote work for a foreign employer (Austria interprets this strictly).",
+            "Cannot be converted to residency from inside Austria — you must apply for the long-stay visa or residence permit at the Austrian consulate in your home country before travelling.",
+            "Good use: 2–3 weeks scouting Döbling, Währing, Hietzing, and Leopoldstadt for schools and housing.",
+            "Do not attempt long-term stays on rolling 90-day entries — Austrian immigration enforces Schengen limits with database tracking."
           ]
         },
         {
-          "type": "Austria Digital Nomad Visa (non-EU remote workers)",
+          "type": "Red-White-Red Card / Settlement Permit (non-EU)",
           "anchor": "visa-dnv",
-          "detailTitle": "Austria Digital Nomad Visa — how to apply",
-          "duration": "1 year, renewable",
-          "description": "For non-EU remote workers earning at least $30,240/year from non-Austrian employers or clients. Apply at an Austrian consulate before travelling.",
+          "detailTitle": "Red-White-Red Card / Niederlassungsbewilligung — how to apply",
+          "duration": "Initially 24 months, then 3-year renewals",
+          "description": "Austria's main long-stay route for non-EU families: skilled-worker, very-highly-qualified, key-worker, self-employed key worker, start-up founder, or family-reunification routes. No remote-worker / nomad visa exists.",
           "details": [
-            "Income requirement: at least $30,240/year from remote employment or freelance work for non-Austrian clients.",
-            "Required documents: valid passport, proof of remote employment or freelance contracts, 3 months of bank statements, and private health insurance valid in Austria.",
-            "Apply at the Austrian consulate in your home country before travelling — you cannot switch to this visa from inside Austria on a tourist entry.",
-            "After arriving, apply for your Permesso di Soggiorno (residence permit) at your local Questura (police headquarters) within 8 working days — bring your passport, visa, and rental contract.",
-            "Get your Codice Fiscale (Austrian tax code) at any Agenzia delle Entrate office immediately — required before you can rent a flat, open a bank account, or register children in school."
+            "Choose the right category: Red-White-Red Card for employed work; Settlement Permit (Niederlassungsbewilligung) for self-employed, retired with passive income, or family reunification. Each has different income, qualification, and document requirements.",
+            "Income requirement: roughly €1,200–€3,000+/month minimum (varies by category and family size) — this is checked at every renewal too. Family reunification requires the sponsor to prove higher income.",
+            "Required documents: valid passport, apostilled birth/marriage certificates (translated to German by a sworn translator), proof of accommodation in Vienna, valid health insurance, and category-specific proof (job offer, university degree, business plan, pension statements).",
+            "Apply at the Austrian consulate in your home country BEFORE travelling — processing typically takes 8–12 weeks. You cannot switch from a tourist entry to a residence permit from inside Austria.",
+            "After arriving, register your address at the Magistratisches Bezirksamt within 3 working days, then collect your Aufenthaltstitel (residence card) at MA 35 within 4 weeks. Search 'MA 35 Vienna Aufenthaltstitel' on Google for the latest application checklist."
           ],
           "officialLink": {
-            "label": "Austria Digital Nomad Visa official Ministero degli Affari Esteri"
+            "label": "Migration.gv.at — Austria's official migration portal"
           }
         }
       ]
     },
     "residency": {
-      "title": "Registration & Codice Fiscale",
-      "tip": "Get your Codice Fiscale within the first week — without it you cannot sign a rental contract, open a bank account, or register children in school.",
+      "title": "Registration & Meldezettel",
+      "tip": "File your Meldezettel within 3 working days of moving into your Vienna address — your landlord MUST sign it, and you cannot open a bank account, register a child in school, or get a health card without this proof.",
       "items": [
-        "Get your Codice Fiscale (Austrian tax code — a personal ID number required for every transaction in Austria) at any Agenzia delle Entrate (tax authority) office. Bring your passport. Takes about 20 minutes and is issued on the spot.",
-        "Register your dichiarazione di residenza (address registration) at the Ufficio Anagrafe (civil registry office within your Comune — city hall) within 90 days of arrival if you are EU/EEA. Bring your passport, Codice Fiscale, and rental contract.",
-        "Non-EU residents must apply for a Permesso di Soggiorno (residence permit) at the local Questura (police headquarters) within 8 working days of arrival. Book an appointment immediately — slots in Vienna fill up.",
-        "Apply for your SPID (Sistema Pubblico di Identità Digitale — Austria's digital identity platform for public services) after registration — required for school enrolment, healthcare registration, and many online government services.",
-        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) to get your tessera sanitaria (health card) and access Austria's SSN (Servizio Sanitario Nazionale — public health system)."
+        "Meldezettel (registration form — Austria's mandatory address registration) is filed at your local Magistratisches Bezirksamt (district registration office) within 3 working days of moving in. Bring passport, completed form, and rental contract; landlord signature required. There is no fee.",
+        "EU/EEA citizens staying longer than 3 months must additionally apply for an Anmeldebescheinigung (EU registration certificate) at MA 35 (Vienna's residence authority) within 4 months of arrival — bring passport, proof of income or employment, and proof of comprehensive health insurance.",
+        "Non-EU residents collect their Aufenthaltstitel (residence card) at MA 35 within 4 weeks of arrival, after applying at the consulate abroad. Book your MA 35 collection appointment online — slots in central Vienna fill 4–6 weeks out.",
+        "Steuernummer (Austrian tax number) is issued automatically by the Finanzamt (tax office) once you start work or self-employment — no separate registration needed for most residents.",
+        "Your Anmeldebescheinigung or Aufenthaltstitel plus your Meldezettel together serve as your daily-life ID for opening bank accounts, signing utility contracts, and enrolling children in school."
       ]
     },
     "banking": {
       "title": "Banking",
-      "tip": "You need your Codice Fiscale and proof of address before any Austrian bank will open an account — get both sorted in week one.",
+      "tip": "Bring your Meldezettel and a residency document to every bank appointment — without both, no Austrian bank will open a current account, even for EU citizens.",
       "items": [
-        "Intesa Sanpaolo and UniCredit are Austria's two largest banks and have the most accessible English-language service in Vienna. Both are standard choices for expat families.",
-        "To open an account you need: passport, Codice Fiscale, and proof of Austrian address (rental contract or utility bill). Some branches require an appointment.",
-        "N26 (Germany-based neobank) operates in Austria and is a good bridge option while waiting for a traditional account — open online with just a passport, no Austrian address required initially.",
-        "Wise and Revolut are widely used for international transfers and foreign currency spending while your Austrian banking is being set up.",
-        "Austria is more cash-reliant than northern European cities — keep $160–$215 in cash for markets, small restaurants, and taxis that do not accept cards."
+        "Erste Bank and Bank Austria (UniCredit) are Austria's two largest retail banks with the most accessible English-language service in Vienna. BAWAG and Raiffeisen are alternatives with strong digital banking.",
+        "To open an account you need: passport, Meldezettel (mandatory), residency document (Anmeldebescheinigung or Aufenthaltstitel), and proof of income or employment contract. Most branches require an appointment booked online.",
+        "N26 (Berlin-based neobank) and Revolut are widely used as bridge accounts while waiting for a traditional Austrian account — open online with just a passport and proof of address.",
+        "Wise and Revolut are the standard tools for international transfers and multi-currency spending — Austrian banks charge high fees on cross-border SEPA and SWIFT.",
+        "Austria is more cash-reliant than Germany or Scandinavia — keep €100–€200 in cash for small cafés, farmers' markets (Naschmarkt, Karmelitermarkt), and taxis that still don't accept cards."
       ]
     },
     "housing": {
       "status": "estimated",
-      "summary": "Vienna is Austria's most expensive city for housing. Family-friendly areas cluster in Porta Venezia, Isola, Brera, Navigli, and Sempione — all within easy reach of international schools and the city centre.",
+      "summary": "Vienna has Western Europe's most regulated rental market — about 60% of households rent, 30% live in subsidised Gemeindebau or Genossenschaft (cooperative) housing. Family-friendly districts cluster in Döbling (19th), Währing (18th), Hietzing (13th), Leopoldstadt (2nd), and Penzing (14th).",
       "bestAreas": [
-        "Döbling",
-        "Währing",
-        "Hietzing",
-        "Leopoldstadt",
-        "Margareten"
+        "Döbling (19th)",
+        "Währing (18th)",
+        "Hietzing (13th)",
+        "Leopoldstadt (2nd)",
+        "Penzing (14th)"
       ],
       "searchPortalsIntro": [
-        "These are local rental platforms — this is where residents rent long-term housing (cheaper than Airbnb).",
-        "Search 'Viennao' or the neighbourhood name inside each platform to filter local listings.",
-        "Tip: arrive in Vienna with a short-stay Airbnb or serviced apartment booked for the first 2–4 weeks — the rental market moves fast and you need time to view properties in person."
+        "These are local rental platforms — this is where Vienna residents rent long-term housing (cheaper than Airbnb).",
+        "Search 'Wien' (German for Vienna) plus the district number (e.g. '1190 Döbling') inside each platform to filter local listings.",
+        "Tip: arrive in Vienna with a 4–8 week serviced apartment booked — the rental market moves fast, most flats are unfurnished, and you'll need a Meldezettel to view many listings."
       ],
       "searchPortals": [
         {
-          "label": "Immobiliare.it — Austria's largest property rental platform",
-          "url": "https://www.immobiliare.it",
+          "label": "Willhaben.at — Austria's largest rental and classifieds platform",
+          "url": "https://www.willhaben.at",
           "isVerified": true
         },
         {
-          "label": "Idealista.it — major Austrian and European property portal",
-          "url": "https://www.idealista.it",
+          "label": "ImmoScout24.at — major Austrian property portal",
+          "url": "https://www.immobilienscout24.at",
           "isVerified": true
         },
         {
-          "label": "Casa.it — Austrian property portal with strong Vienna listings",
-          "url": "https://www.casa.it",
+          "label": "Der Standard Immo — Vienna newspaper rental section, often premium / family flats",
+          "url": "https://immobilien.derstandard.at",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Vienna Expats Housing' or 'Appartamenti Viennao' (community listings and direct landlord deals)",
+          "label": "Facebook groups — search: 'Vienna Expats Housing' or 'Wohnungen in Wien' (community listings, direct landlord deals)",
           "url": "https://www.google.com/search?q=Vienna+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "1-bed apartment, Porta Venezia or Isola: $1,510–$2,050/month",
-        "2-bed apartment, Brera or Navigli: $2,160–$3,025/month",
-        "3-bed apartment, Sempione or De Angeli: $2,590–$3,780/month",
-        "3-bed apartment, Porta Venezia: $2,375–$3,455/month"
+        "1-bed apartment, central districts (1st, 7th, 8th): ~$1,300–$1,800 / month",
+        "2-bed apartment, family-friendly districts (18th, 19th): ~$1,800–$2,500 / month",
+        "3-bed apartment, Döbling or Hietzing: ~$2,500–$3,800 / month",
+        "Short-stay serviced apartment for arrival: ~$2,500–$3,500 / month"
       ],
       "whatYouNeedToRent": [
         "Valid passport",
-        "Codice Fiscale (Austrian tax code — required on all rental contracts)",
-        "3 months of bank statements or employment contract",
-        "2–3 months deposit is standard in Vienna",
-        "Rental contracts are typically 4+4 years (standard) or 3+2 years (transitional) — confirm the contract type before signing"
+        "Meldezettel (registration form) — landlord usually wants you to register on their address as proof of intent",
+        "Last 3 months of bank statements OR Austrian employment contract OR remote-work contract with proof of income",
+        "Deposit (Kaution) is typically 3 months' rent, held in escrow by law",
+        "Many Vienna rentals are unfurnished (no kitchen, no light fixtures, no curtains) — confirm what's included before signing; a fully-fitted flat costs 10–15% more"
       ]
     },
     "schools": {
       "status": "curated",
-      "summary": "Vienna has the widest choice of international schools in Austria. Most have limited places and require applications well in advance — plan 12–18 months ahead.",
-      "publicSystem": "Austrian state schools are free and well structured but all instruction is in Austrian. State schools are a realistic option only if your children already speak Austrian or you are willing to enrol them in an intensive Austrian language programme first. Most expat families with English-speaking children use the international school circuit.",
-      "internationalOptions": "Vienna has a small but well-established international school sector with IB, British, and American curriculum schools, mostly located in the Porta Venezia, Brera, and northern suburban areas. Fees range from roughly $10,800 to $27,000+ per year. Places are limited — apply early.",
-      "languageNotes": "Austrian state schools teach entirely in Austrian. International schools teach in English. Children who attend state schools without prior Austrian typically need 1–2 years to reach full academic fluency.",
-      "tip": "Apply to international schools before booking your flights — most Vienna international schools have waitlists and do not reserve places without a completed application.",
+      "summary": "Vienna has the largest international school sector in Austria. Most have multi-year waitlists for popular year groups — apply 12–18 months in advance.",
+      "publicSystem": "Austrian state schools (Volksschule for ages 6–10, then Mittelschule or Gymnasium) are free, well-structured, and genuinely good — but all instruction is in German. State schools work for families willing to commit to German integration; many districts run 'Vorschule' or intensive German programmes for non-German-speaking children. Most expat families use international schools for at least the first 1–2 years, then transition some children into the public system.",
+      "internationalOptions": "Vienna has well-established IB, British, and American curriculum schools, mostly in the western suburbs (Döbling, Währing, Hietzing) and 22nd district (Donaustadt) near the UN. Fees range from roughly $14,000 to $28,000+ per year. Vienna International School (UN-affiliated), Danube International School, and AIS Vienna have the longest waitlists.",
+      "languageNotes": "Austrian state schools teach entirely in German (Austrian dialect). International schools teach in English, with German as a second language from age 6. Children placed in state schools without prior German typically need 1–2 years to reach full academic fluency — younger children (under 7) usually catch up faster.",
+      "tip": "Apply to international schools BEFORE booking your flights — most Vienna international schools require a completed application, school reports, and a placement test before they will reserve a spot. Some run 18–24 month waitlists.",
       "options": [
         {
           "type": "IB curriculum international schools",
-          "description": "The primary choice for English-speaking expat families. IB Diploma and Primary Years Programme available. Limited places per year group.",
-          "fees": "$15,120–$27,000+/year typical"
+          "description": "The primary choice for English-speaking expat families relocating to Vienna. IB Diploma, MYP, and PYP available across multiple schools. Limited places per year group, multi-year waitlists at the most established schools.",
+          "fees": "$15,000–$28,000+/year typical"
         },
         {
           "type": "British curriculum international schools",
-          "description": "British A-Level and GCSE pathway schools. Smaller in number than IB options in Vienna but well regarded.",
-          "fees": "$12,960–$23,760/year typical"
+          "description": "British A-Level and GCSE pathway schools with smaller cohorts than the IB sector but well regarded. Often easier to get into mid-year than the largest IB schools.",
+          "fees": "$13,000–$24,000/year typical"
         },
         {
-          "type": "Austrian state schools",
-          "description": "Free for all residents. All instruction is in Austrian. A realistic option for families with children who already speak Austrian or who plan a long-term stay and prioritise language integration.",
+          "type": "Austrian state schools (German immersion)",
+          "description": "Free for all registered residents. All instruction in German. A realistic option for families with children under 7, families committing to German long-term, or families on a tighter budget. Vienna runs intensive German support programmes for newly-arrived non-German-speaking children.",
           "fees": "Free (public)"
         }
       ]
     },
     "childcare": {
       "status": "estimated",
-      "summary": "Vienna has both public and private nursery options. Public asili nido (nurseries) are subsidised but heavily oversubscribed. Private nurseries are more accessible but expensive.",
+      "summary": "Vienna offers free public Kindergarten from age 1 — one of Europe's most generous early-childcare systems. Public spots in popular districts have waitlists; private bilingual options are widely available but more expensive.",
       "daycareItems": [
-        "Asilo nido (nursery/daycare — Austrian term for state-run or authorised nursery for children 0–3) accept children from 3 months old. Public asili nido are subsidised but have long waiting lists — apply as soon as your arrival date is confirmed",
-        "Private asilo nido fees: roughly $755–$1,295/month. Public asili nido fees are income-tested and significantly lower — but availability is limited",
-        "Scuola dell'infanzia (Austrian preschool for children 3–6) is free or very low cost in the state system — enrolment requires residency registration and a Codice Fiscale",
-        "Visit nurseries in person before committing — quality varies significantly between private providers"
+        "Krippe (nursery for children under 3) and Kindergarten (3–6 years) are Austria's terms for daycare. Vienna's city-run Kindergartens are FREE for all registered residents from age 1 — register via the city portal as soon as your Meldezettel is issued.",
+        "Public Kindergarten waitlists in popular districts (Döbling, Währing, central 1st–9th) run 3–6 months — apply early. Private Kindergartens accept walk-ins more easily but cost ~$700–$1,400 / month.",
+        "Bilingual (English / German) Kindergartens are common in central districts and the UN area (Donaustadt) — typical fees $900–$1,600 / month, often with a meal plan included.",
+        "Visit any Kindergarten in person before committing — staff ratios, language mix, and outdoor space vary widely between districts and providers."
       ],
       "nannyItems": [
-        "Full-time nannies charge roughly $13–$19/hr — rates in Vienna are higher than elsewhere in Austria",
-        "Many nannies in Vienna speak English, particularly those who have worked with expat families previously — ask specifically when searching",
-        "Part-time nannies and after-school childcare (for school-age children) are common arrangements among expat families",
-        "Start your nanny search at least 6–8 weeks before arrival — good candidates go quickly in Vienna's expat community"
+        "Full-time nannies in Vienna charge roughly $14–$22 / hr for English-speaking, experienced candidates — rates are higher than elsewhere in Austria",
+        "Part-time after-school care (Hort) for school-age children is widely available through the public system and most international schools",
+        "Many nannies in Vienna come from CEE countries (Slovakia, Hungary, Czechia) and speak good English plus German — confirm language fit at interview",
+        "Start your nanny search 6–8 weeks before arrival — Vienna's small expat community shares candidates quickly via Facebook groups"
       ],
       "whereToFindItems": [
-        "Babysits.com — Austrian childcare platform used by expat families in Vienna for nanny and babysitter listings",
-        "Gumtree Austria and Bakeca.it — Austrian classifieds widely used for nanny listings in Vienna",
-        "Search 'Vienna Expat Families' or 'Viennao Mamme Expat' on Google — community groups for personal recommendations and nanny introductions"
+        "Babysits.at — Austrian childcare platform widely used by expat families in Vienna for nanny and babysitter listings",
+        "Search 'Vienna Expat Families' or 'Vienna Mums' on Facebook — active groups with personal nanny recommendations and after-school care leads",
+        "International school parent networks — once your child is enrolled, the school WhatsApp/Facebook group is the fastest way to find vetted nannies and au pairs"
       ]
     },
     "healthcare": {
       "status": "estimated",
-      "tip": "Register with your local ASL (Azienda Sanitaria Locale) within the first month — this activates your access to Austria's SSN (public health system) and assigns you a GP.",
+      "tip": "Register with ÖGK (Österreichische Gesundheitskasse — Austria's public health insurance fund) within the first month of starting work or arriving with a residence permit — this activates your e-card (Austrian health card) and gives you free access to all public GPs, specialists, and hospitals.",
       "items": [
-        "Austria's SSN (Servizio Sanitario Nazionale — public national health system) covers all registered residents including EU/EEA citizens and non-EU residents with a valid Permesso di Soggiorno.",
-        "Register with your local ASL (Azienda Sanitaria Locale — local health authority) after completing your residency registration. Bring your passport, Codice Fiscale, and proof of address. You will receive a tessera sanitaria (health card) and be assigned a GP.",
-        "GP and specialist visits through the SSN require a small co-payment (called a ticket) of roughly $16–$43 per visit. Emergency care and hospitalisation are covered at no cost.",
-        "Private healthcare is widely used in Vienna for faster access and English-speaking doctors. A private GP consultation costs roughly $86–$162. International health insurance (IPMI) is recommended for non-EU residents while awaiting SSN registration.",
-        "Ospedale San Raffaele and Ospedale Fatebenefratelli are among the most recommended hospitals for families in Vienna, offering both public and private patient services."
+        "ÖGK (Österreichische Gesundheitskasse) is Austria's main public health insurance fund. It covers all employees, registered self-employed, and registered residents. Coverage is comprehensive — GPs, specialists, hospitals, and most prescriptions.",
+        "Once registered, you receive an e-card (Austrian health card with chip) — show it at every GP, specialist, and pharmacy visit. There's a small annual service fee (about €13/year) but consultations and most treatments are free.",
+        "GP visits through ÖGK have no out-of-pocket cost. Specialist referrals are usually needed and waitlists for non-urgent specialists (dermatology, orthopaedics) run 6–12 weeks in the public system.",
+        "Private healthcare (Privat) is widely used for faster specialist access and English-speaking doctors. A private GP consultation costs roughly $80–$150. Private health insurance (Zusatzversicherung) typically costs $80–$200 / month per adult and lets you skip waitlists and choose the doctor.",
+        "AKH Wien (Allgemeines Krankenhaus — Vienna's main public university hospital) is one of Europe's largest hospitals and the standard emergency / specialist destination. Rudolfinerhaus and Wiener Privatklinik are the main private hospitals for English-speaking expat families."
       ]
     },
     "safety": {
       "status": "estimated",
-      "score": 78,
-      "summary": "Vienna is a generally safe city for families but pickpocketing and petty theft in tourist and transport areas are common.",
+      "score": 88,
+      "summary": "Vienna is one of Europe's safest capitals — violent crime is rare and family neighbourhoods are calm day and night.",
       "items": [
-        "Violent crime is relatively rare in family residential areas — Porta Venezia, Isola, Brera, and Sempione are low-risk neighbourhoods",
-        "Pickpocketing is the main risk — particularly around Viennao Centrale train station, the Duomo, and busy Metro lines 2 and 3. Keep bags in front and phones out of back pockets",
-        "Vienna's air quality can be poor in winter — the Po Valley geography traps pollution; invest in air purifiers for the home if you have young children or family members with respiratory conditions",
-        "Traffic is the primary daily hazard — Vienna's driving culture is aggressive by northern European standards; teach children road awareness early",
-        "Family residential neighbourhoods (Porta Venezia, Brera, De Angeli) are well-lit, active, and safe for evening walks with children"
+        "Violent crime is rare in family residential districts — Döbling, Währing, Hietzing, Leopoldstadt, and Penzing are consistently low-risk. Vienna ranks among the world's safest capital cities.",
+        "Pickpocketing is the main risk — particularly around Stephansplatz, Schwedenplatz, Westbahnhof, and on busy U-Bahn lines U1, U2, and U4. Keep bags in front and phones out of back pockets.",
+        "Air quality in Vienna is generally good year-round — winter inversion days can briefly raise particulate levels, but nothing like Italian or Polish industrial regions.",
+        "Traffic: Vienna's driving culture is calmer than southern European cities, but Ringstrasse and Gürtel boulevards are busy — teach children to use marked crossings and trams' dedicated stops.",
+        "Family residential neighbourhoods are well-lit, walkable, and active in the evening — Vienna's regular Polizei (police) presence and 24/7 public transport make late-evening returns straightforward."
       ]
     },
     "cost": {
       "status": "estimated",
-      "rentRange": "~$2,000 / month",
-      "familyDinner": "~$58",
-      "nannyRate": "~$15 / hr",
-      "monthlyFamilyAllIn": "~$5,000–$7,500 / month"
+      "rentRange": "~$2,500 / month",
+      "familyDinner": "~$70",
+      "nannyRate": "~$18 / hr",
+      "monthlyFamilyAllIn": "~$5,500–$8,000 / month"
     },
     "sources": {
+      "visa": [
+        {
+          "label": "Migration.gv.at — Austria's official migration portal",
+          "url": "https://www.migration.gv.at",
+          "isVerified": true
+        },
+        {
+          "label": "MA 35 Vienna — Residence and Citizenship Department",
+          "url": "https://www.wien.gv.at/english/administration/civilstatus/index.html",
+          "isVerified": true
+        }
+      ],
+      "schools": [
+        {
+          "label": "Stadt Wien — Bildung und Schulen (city education portal)",
+          "url": "https://www.wien.gv.at/bildung/",
+          "isVerified": true
+        }
+      ],
+      "healthcare": [
+        {
+          "label": "ÖGK — Österreichische Gesundheitskasse (public health insurance)",
+          "url": "https://www.gesundheitskasse.at",
+          "isVerified": true
+        }
+      ],
       "cost": [
         {
           "label": "Vienna Cost of Living — Numbeo",
@@ -23169,44 +23297,50 @@
     },
     "communityLinks": [
       {
-        "label": "Search 'Vienna Expats' or 'Expat Family Vienna Austria' on Google — active community with housing, school, and settlement advice",
-        "searchQuery": "Vienna Expats Facebook group",
+        "label": "Search 'Vienna Expats' or 'Expat Family Vienna Austria' on Facebook — active group with housing, school, and settlement advice from current residents",
+        "searchQuery": "Vienna Expats Facebook group Austria",
         "url": "https://www.google.com/search?q=Vienna+Expats+Facebook+group+Austria",
+        "isVerified": true
+      },
+      {
+        "label": "Search 'Vienna Mums' on Facebook — large group for parents (English-speaking) with nanny, school, and pediatrician recommendations",
+        "searchQuery": "Vienna Mums Facebook group",
+        "url": "https://www.google.com/search?q=Vienna+Mums+Facebook+group",
         "isVerified": true
       }
     ],
     "faq": [
       {
         "question": "Is Vienna good for families?",
-        "answer": "Good — Vienna offers a high standard of living, strong private schools, excellent healthcare, and Austria's most international city environment. The main trade-offs are high cost and notoriously slow Austrian bureaucracy."
+        "answer": "Yes — Vienna consistently ranks in the global top 10 for quality of life. Strengths: low crime, free public Kindergarten from age 1, excellent public transport, abundant green space (Wienerwald, Prater, Donauinsel), and a strong international school sector. Main trade-offs are German-language daily life and slow but predictable bureaucracy."
       },
       {
         "question": "How much does a family typically need per month here?",
-        "answer": "Budget $5,500–$8,000/month for a family of four. Rent for a 3-bedroom in a family-friendly area runs $2,500–$3,800/month. International school fees of $12,000–$22,000/year are the largest additional cost."
+        "answer": "Budget ~$5,500–$8,000/month for a family of four. Rent for a 3-bedroom in family districts (Döbling, Währing, Hietzing) runs $2,500–$3,800/month. International school fees of $14,000–$22,000/year are the largest additional cost — public Kindergarten and state schools are free."
       },
       {
         "question": "Is housing hard to find here?",
-        "answer": "Competitive. Vienna has a tight rental market relative to supply. Popular family areas (Porta Venezia, Brera, Isola) move fast. Austrian landlords often require a Codice Fiscale (Austrian tax code) and local bank account before signing — hard to have as a new arrival. Budget for a furnished serviced apartment for the first 4–8 weeks."
+        "answer": "Competitive but fair. Vienna's rental market is heavily regulated — about 60% of households rent. Popular family districts move quickly, especially family-sized 3-bed flats. Most rentals are unfurnished (no kitchen, no light fixtures); budget €5,000–€10,000 for first-time setup. Plan a 4–8 week serviced apartment for arrival."
       },
       {
         "question": "Do children need international school here, or can local schools work?",
-        "answer": "International school is recommended for non-Austrian-speaking families. State schools are free but teach entirely in Austrian. Vienna has a strong international school sector at $12,000–$22,000/year. Many families use it for at least the first few years."
+        "answer": "Both are realistic. Austrian state schools are free, well-structured, and a strong long-term option — but everything is in German. Vienna runs intensive German support for newly-arrived children. International schools (IB, British, American) cost $14,000–$28,000/year and are the easier short-term path; many families start international and transition to state schools after 1–2 years of German immersion."
       },
       {
         "question": "Is healthcare easy to access as a newcomer?",
-        "answer": "Yes, once you have your Codice Fiscale (Austrian tax code) and residency. Register with the Austrian public health system (SSN — Servizio Sanitario Nazionale) at your local ASL (Azienda Sanitaria Locale — local health district office). Private health insurance at $100–$200/month per person speeds up specialist access considerably."
+        "answer": "Yes — once you're registered with ÖGK (Austria's public health insurance), you get an e-card (health card) and free access to GPs, specialists, and hospitals. Specialist waitlists in the public system run 6–12 weeks, so many families add private health insurance ($80–$200/month per adult) for faster access and English-speaking doctors."
       },
       {
         "question": "Do you need a car in Vienna?",
-        "answer": "No. Vienna has excellent metro and tram coverage. Most families in central and semi-central areas live car-free. A car is useful for weekend trips to the Austrian Lakes or mountains."
+        "answer": "No. Vienna's U-Bahn, S-Bahn, tram, and bus network is one of Europe's best — most family districts are 15–25 minutes from the centre by public transport. A car is useful for weekend trips to the Austrian Alps, Czech border, or Lake Neusiedl, but city centre parking is expensive and most residential districts have permit-only parking."
       },
       {
         "question": "How difficult is the paperwork and bureaucracy after moving?",
-        "answer": "Slow and document-heavy. Start with your Codice Fiscale at the Agenzia delle Entrate (tax office). Then register your address (Residenza) at the Municipio (municipal office). Then apply for a Permesso di Soggiorno (residence permit) if non-EU. Austrian bureaucracy is predictable but slow — allow 2–3 months for everything to resolve."
+        "answer": "Slow and document-heavy, but predictable. The order is: Meldezettel within 3 days (district office), then Anmeldebescheinigung or Aufenthaltstitel within 4 months (MA 35), then ÖGK health registration, then bank account. Allow 8–12 weeks for everything to resolve. Bring originals plus apostilled birth/marriage certificates translated by a sworn German translator."
       },
       {
         "question": "What usually surprises families after arrival?",
-        "answer": "The housing documentation requirements. Austrian landlords often ask for things that are impossible to have as a new arrival — a Codice Fiscale, Austrian bank account, and sometimes a guarantor. Arriving with a serviced apartment booked for the first 4–8 weeks while you gather documents is near-essential."
+        "answer": "Three things: (1) most flats are unfurnished — no kitchen, no light fixtures, no curtains — budget €5,000–€10,000 for setup; (2) shops close early and most are closed Sundays — plan grocery shopping accordingly; (3) the kindness of public services. Vienna's bureaucracy is slow but every office has English-speaking staff and the experience is calm and respectful."
       }
     ],
     "weather": {
@@ -23455,12 +23589,22 @@
       ],
       "searchPortals": [
         {
-          "label": "Search: \"rent apartment Copenhagen Denmark\"",
-          "url": "https://www.google.com/search?q=rent+apartment+Copenhagen+Denmark",
+          "label": "BoligPortal — Denmark's largest rental portal",
+          "url": "https://www.boligportal.dk",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search: 'Housing Copenhagen Expats' or 'Copenhagen Rentals' for direct landlord deals",
+          "label": "Lejebolig.dk — Danish rental classifieds",
+          "url": "https://www.lejebolig.dk",
+          "isVerified": true
+        },
+        {
+          "label": "DBA — general classifieds with strong rental section",
+          "url": "https://www.dba.dk",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Housing Copenhagen Expats' or 'Lejlighed København' (community listings)",
           "url": "https://www.google.com/search?q=Housing+Copenhagen+Expats+Facebook+group",
           "isVerified": true
         }
@@ -24219,9 +24363,10 @@
           "duration": "Many passports: 30–90 days per visit for tourism — not employment; exact days are stamped on entry. Never assume you can job-hunt on a tourist pass.",
           "description": "Tourism and short business visits — not employment.",
           "details": [
-            "Check ICA (Immigration & Checkpoints Authority — Singapore's border agency) rules for your passport.",
-            "Scout schools and condos, then secure a work pass before children start long-term schooling.",
-            "Overstaying is taken seriously — track permit dates."
+            "Check ICA (Immigration & Checkpoints Authority — Singapore's border agency) rules for your passport before booking — exact visa-free days vary by nationality.",
+            "Use a short stay to scout schools, neighbourhoods (East Coast, River Valley, Bukit Timah), and condos — but secure an Employment Pass before children start long-term schooling.",
+            "Overstaying is taken seriously in Singapore — track your permit dates carefully and leave before the stamped exit date.",
+            "Search 'ICA Singapore visa requirements' on Google to check the official entry rules for your passport."
           ],
           "officialLink": {
             "label": "ICA Singapore entry requirements"
@@ -24643,9 +24788,11 @@
           "duration": "Many nationalities: up to 90 days visa-free for tourism; others need a tourist visa with the allowed stay printed in the passport. Japan's Ministry of Foreign Affairs (MOFA) publishes which passport gets visa-free entry vs a visa.",
           "description": "Tourism and private visits: travel in Japan, visit neighbourhoods and schools, and handle personal errands during the stay shown on your entry or visa.",
           "details": [
-            "Tip before a longer move: use a short visit to trial commutes and school corridors — then apply for employer sponsorship (COE) or another proper route if you plan to stay.",
-            "Working without the correct status is high-risk.",
-            "Carry passports for every child at check-in."
+            "Many nationalities get 90-day visa-free entry — confirm your passport's status with Japan's Ministry of Foreign Affairs (MOFA) before booking.",
+            "Use a short visit to trial commutes (e.g. Setagaya, Minato, Meguro corridors) and school options before committing to a longer move.",
+            "Working on a tourist entry — including remote work for a foreign employer — is high-risk and not allowed under tourist status.",
+            "Carry passports for every family member, including children, at every check-in — Japanese hotels are required to record passport details for foreign guests.",
+            "Search 'MOFA Japan visa exemption countries' on Google for the official chart."
           ],
           "officialLink": {
             "label": "Japan Ministry Foreign Affairs visa"
@@ -25063,8 +25210,11 @@
           "duration": "Many Western passports: 90 days visa-free landing (not for work) — others need a visitor visa with a printed leave-by date. BOCA publishes the chart by nationality.",
           "description": "Tourism and family visits — not employment.",
           "details": [
-            "Use trips to view Tianmu, Daan, and school corridors.",
-            "Overstay penalties are strict."
+            "Many Western passports get 90 days visa-free entry — others need a visitor visa with a printed exit date. Check the Bureau of Consular Affairs (BOCA) chart for your nationality.",
+            "Use trips to view Tianmu, Da'an, and Xinyi neighbourhoods plus the international school cluster around Tianmu and Yangmingshan.",
+            "Tourist entry does not allow work — including remote work for a foreign employer — so secure an employer sponsorship before any long-term move.",
+            "Overstay penalties in Taiwan are strict — fines escalate with the length of overstay and can lead to multi-year re-entry bans.",
+            "Search 'BOCA Taiwan visa exemption' on Google for the official entry rules by passport."
           ],
           "officialLink": {
             "label": "Taiwan Bureau of Consular Affairs"
@@ -25077,9 +25227,11 @@
           "duration": "Usually 1–3 years per issue on your ARC (Alien Resident Certificate) — renewed while your employer sponsorship stays valid; exact dates are printed on the card.",
           "description": "Company sponsors labour and immigration steps.",
           "details": [
-            "HR usually guides medical checks and documentation.",
-            "Dependants require linked approvals.",
-            "Search 'Taiwan work permit employer sponsor' on Google for steps."
+            "HR at your sponsoring employer usually guides medical checks, document apostille, and the work permit application through the Ministry of Labor.",
+            "After arrival, apply for your ARC (Alien Resident Certificate — Taiwan's residence card) at the National Immigration Agency within 15 days.",
+            "Dependants apply with linked documents (marriage certificate, birth certificates — apostilled and translated) — start gathering these before the move.",
+            "Once you have an ARC, you can register with the National Health Insurance (NHI) system after 6 months of legal residence.",
+            "Search 'Taiwan work permit employer sponsor' on Google for the latest steps from the Ministry of Labor."
           ],
           "officialLink": {
             "label": "Taiwan work permit official search"
@@ -25474,8 +25626,11 @@
           "duration": "Many nationalities: 14–90 days visa-free or via eVisa — tourism only unless you hold a work pass; confirm your exact stamp on the official immigration site.",
           "description": "Scout housing and schools — not employment.",
           "details": [
-            "Check MITI / immigration pages for your nationality.",
-            "Carry onward tickets if asked."
+            "Many nationalities get 14–90 days visa-free entry or eVisa — confirm your exact entitlement on Malaysia's official Immigration Department website before flying.",
+            "Tourist entry does not allow work — including remote work for a foreign employer — secure an Employment Pass or DE Rantau Nomad Pass before any long-term move.",
+            "Carry onward tickets and proof of accommodation — Malaysian immigration officers may ask at the border, particularly for longer scouting trips.",
+            "Use a scouting trip to view Mont Kiara, Bangsar, and Damansara Heights — the three main international school catchments.",
+            "Search 'Malaysia immigration eVisa requirements' on Google for the official entry rules by passport."
           ],
           "officialLink": {
             "label": "Malaysia Immigration Department official"
@@ -25488,8 +25643,11 @@
           "duration": "Typically 1–2 years per Employment Pass approval — renewable while the job remains valid; dependant passes follow the principal pass.",
           "description": "Company files with immigration for approvals.",
           "details": [
-            "Dependants usually receive linked passes.",
-            "International school letters may be needed for enrolment."
+            "Employment Pass (EP) categories are tied to monthly salary thresholds — confirm the latest minimum on the Ministry of Human Resources site before negotiating relocation.",
+            "Dependants (spouse and children under 18) usually receive linked Dependant Pass approvals — your sponsoring employer files for both at the same time.",
+            "International schools in Mont Kiara and Bangsar usually require a copy of your EP approval letter or in-progress application before final enrolment.",
+            "Once you have your EP, you can apply for an Iqama-equivalent identity card and open a local bank account at Maybank, CIMB, or Public Bank.",
+            "Search 'Malaysia Employment Pass requirements MITI' on Google for the latest salary thresholds and document list."
           ],
           "officialLink": {
             "label": "Malaysia Employment Pass official search"
@@ -26262,7 +26420,7 @@
         "targetSection": "housing"
       },
       {
-        "label": "Keep digital and printed copies of every immigration stamp and KITAS page — same 24-hour TM30 address reporting duties apply as coastal Bali, and Ubud immigration officers check compliance regularly.",
+        "label": "Keep digital and printed copies of every immigration stamp and KITAS page — Indonesia requires you to register your address with the local kecamatan (sub-district office) within 14 days of receiving your KITAS, and Ubud immigration officers (Imigrasi Denpasar branch) check compliance regularly during inspections.",
         "targetSection": "residency"
       },
       {
@@ -26745,13 +26903,23 @@
       ],
       "searchPortals": [
         {
-          "label": "metrocuadrado.com — classifieds (root site)",
+          "label": "Metrocuadrado — Colombia's largest property portal",
           "url": "https://www.metrocuadrado.com",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — community housing leads",
-          "url": "https://www.google.com/search?q=Medellin+expat+housing+Facebook+group",
+          "label": "Fincaraíz — major Colombian rental portal",
+          "url": "https://www.fincaraiz.com.co",
+          "isVerified": true
+        },
+        {
+          "label": "Properati Colombia — additional rental inventory",
+          "url": "https://www.properati.com.co",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Medellín Expats Housing' (community listings, direct landlord deals)",
+          "url": "https://www.google.com/search?q=Medellin+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
@@ -27090,9 +27258,11 @@
           "duration": "Many passports: about 90 days visa-free per entry — some nationalities can renew once in-country for another ~90 days; the stamp in your passport is definitive. Not for salaried local work.",
           "description": "Tourism — not employment.",
           "details": [
-            "Check allowed stay for your nationality before you fly.",
-            "Scout Belgrano, Nuñez, and northern corridors for schools.",
-            "Currency and inflation move fast — verify rent currency in contracts."
+            "Many passports get about 90 days visa-free entry per stay — some nationalities (e.g. US, Canada, Australia) can extend once in-country for another ~90 days at the Dirección Nacional de Migraciones.",
+            "Tourist entry does not allow salaried local work — secure a residencia temporaria (temporary residency) for any long-term plans.",
+            "Use a scouting trip to view Belgrano, Núñez, Recoleta, and Palermo — the main family neighbourhoods near international schools.",
+            "Argentina's currency moves fast — confirm whether your rental contract is in Argentine pesos or US dollars (most expat-targeted contracts are in USD) before signing.",
+            "Search 'Argentina migraciones turista' on Google for the official entry rules by passport and current extension procedures."
           ],
           "officialLink": {
             "label": "Argentina Migraciones official"
@@ -27105,9 +27275,11 @@
           "duration": "Temporary residencia is often granted in 1–3 year slices depending on category — permanent options exist after long legal stays; your approval letter states exact validity and renewal windows.",
           "description": "File with Migraciones — often needs legal help for first submission.",
           "details": [
-            "Employer sponsorship or local income routes differ — gather apostilled documents early.",
-            "DNI (Documento Nacional de Identidad — Argentina's national ID) follows approved residency.",
-            "Dependants need linked filings."
+            "Employer-sponsored, family-tie, and rentista (passive income) routes all exist — gather apostilled documents (birth certificates, criminal record checks, marriage certificates) early as Argentina requires them for almost every category.",
+            "Apply for your DNI (Documento Nacional de Identidad — Argentina's national ID) at the Registro Nacional de las Personas (RENAPER) once your residency is approved — required for school enrolment, banking, and almost every transaction.",
+            "Dependants need linked filings (spouse, children) — apply for them at the same time as your main residency to keep timelines aligned.",
+            "Bring USD cash for the first weeks — Argentina's currency controls (cepo cambiario) and shifting blue-dollar / official-dollar rates make local banking a learning curve.",
+            "Search 'Argentina residencia temporaria migraciones' on Google for the latest category requirements."
           ],
           "officialLink": {
             "label": "Argentina residency requirements official"
@@ -27152,13 +27324,23 @@
       ],
       "searchPortals": [
         {
-          "label": "zonaprop.com.ar — classifieds (root site)",
+          "label": "Zonaprop — Argentina's largest property portal",
           "url": "https://www.zonaprop.com.ar",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — community housing leads",
-          "url": "https://www.google.com/search?q=Buenos+Aires+expat+families+housing+Facebook",
+          "label": "Argenprop — major Argentine rental portal",
+          "url": "https://www.argenprop.com",
+          "isVerified": true
+        },
+        {
+          "label": "Mercado Libre Inmuebles — strong inventory of direct-from-owner listings",
+          "url": "https://inmuebles.mercadolibre.com.ar",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Buenos Aires Expats Housing' (community listings)",
+          "url": "https://www.google.com/search?q=Buenos+Aires+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
@@ -27498,9 +27680,11 @@
           "duration": "Many passports: up to 90 days visa-free — border officer may grant less; extensions for tourism are limited and discretionary — read the stamp.",
           "description": "Tourism — confirm length at entry.",
           "details": [
-            "Review carry rules for cash and documents on official migration pages.",
-            "Visit Miraflores, La Molina, and Surco with schools in mind.",
-            "Coastal winter garúa (drizzle) lasts months — test housing ventilation."
+            "Many passports get up to 90 days visa-free entry — the border officer can grant less, so check the entry stamp in your passport before planning your stay.",
+            "Tourist extensions in Peru are limited and discretionary — do not plan a long stay on rolling tourist entries.",
+            "Use a scouting trip to view Miraflores, San Isidro, La Molina, and Surco — the main family neighbourhoods near international schools.",
+            "Coastal winter (May–November) brings months of garúa (Lima's persistent coastal drizzle) and high humidity — test housing ventilation and natural light when scouting.",
+            "Search 'Peru migraciones requisitos turista' on Google for the official entry rules by passport."
           ],
           "officialLink": {
             "label": "Peru Superintendencia Nacional Migraciones"
@@ -27513,9 +27697,11 @@
           "duration": "Depends on visa tipo — many work or family residencias are issued in multi-year chunks once approved; your carné card prints the hard expiry date.",
           "description": "Employer or family sponsorship is typical for salaried expats.",
           "details": [
-            "Antecedentes policiales (police certificates) often need apostille.",
-            "Children's school letters may reference migration status — align timelines.",
-            "Search 'Peru trabajo residencia migraciones' on Google for employer routes."
+            "Antecedentes policiales (police certificates) and birth/marriage certificates often need apostille from your home country before submission — start gathering them 2–3 months before your move.",
+            "Once approved, you receive a carné de extranjería (Peruvian foreigner ID) — required for school enrolment, banking, and healthcare registration.",
+            "Dependants (spouse and children) need linked filings — submit them at the same time as your main residency to keep timelines aligned.",
+            "International schools in La Molina and Surco may reference your migration status on enrolment forms — confirm school requirements before applying for the visa.",
+            "Search 'Peru residencia trabajo migraciones' on Google for the latest employer-sponsored route requirements."
           ],
           "officialLink": {
             "label": "Peru immigration residence official"
@@ -27560,13 +27746,23 @@
       ],
       "searchPortals": [
         {
-          "label": "urbania.pe — classifieds (root site)",
-          "url": "https://www.urbania.pe",
+          "label": "Urbania — Peru's largest property portal",
+          "url": "https://urbania.pe",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — community housing leads",
-          "url": "https://www.google.com/search?q=Lima+expat+housing+Facebook+group",
+          "label": "Adondevivir — major Peruvian rental portal",
+          "url": "https://www.adondevivir.com",
+          "isVerified": true
+        },
+        {
+          "label": "Properati Peru — additional rental inventory",
+          "url": "https://www.properati.com.pe",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Lima Expats Housing' (community listings)",
+          "url": "https://www.google.com/search?q=Lima+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
@@ -28067,7 +28263,7 @@
         "answer": "The rental market in popular suburbs like Ballantyne and Myers Park moves fast — start searching 8–10 weeks before your move and be ready to sign a lease within days of a viewing."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Most expat families use Charlotte-Mecklenburg public schools — quality varies strongly by zone. Check your address against the CMS boundary map before signing a lease; Ballantyne and south Charlotte zones consistently rank highest."
       },
       {
@@ -28448,7 +28644,7 @@
         "answer": "The rental market near RTP and in North Raleigh is competitive — start searching 8 weeks before your move and be prepared to sign quickly. Cary and Morrisville are slightly less competitive alternatives."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in Wake County work well for most expat families — quality is strong in North Raleigh, Cary, and Morrisville zones. Research your specific zone on the Wake County school assignment map before signing a lease."
       },
       {
@@ -28829,7 +29025,7 @@
         "answer": "Charleston's housing market has tightened significantly since 2020 — start searching 8–10 weeks before your move. Mount Pleasant rentals move particularly fast; West Ashley offers more inventory at slightly lower prices."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in Charleston County work well for most expat families — Mount Pleasant schools are consistently strong. Research specific zone assignments before signing a lease."
       },
       {
@@ -29211,7 +29407,7 @@
         "answer": "Greenville's rental market is less pressured than Charlotte or Raleigh — you'll find good inventory in Simpsonville, Five Forks, and Taylors, though downtown units go quickly."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Greenville County public schools work well for most expat families. Research zone assignments carefully — district quality varies, and a lease in the right zone makes a significant difference."
       },
       {
@@ -29593,7 +29789,7 @@
         "answer": "The Atlanta metro is large with plentiful inventory, but popular suburbs like Alpharetta and Dunwoody move fast. Start searching 8 weeks before your move and have a school zone map open before you commit."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in the right suburbs (Alpharetta, Dunwoody, Decatur) are excellent and serve many expat families well. Research zone assignments carefully — there is significant variation across the metro."
       },
       {
@@ -29974,7 +30170,7 @@
         "answer": "Yes — Denver's rental market is tight, particularly in desirable suburbs like Cherry Creek, Highlands Ranch, and Central Park. Start searching 8–10 weeks before your move."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in Denver suburbs work well for most expat families — Cherry Creek School District and Douglas County are consistently strong. Research zone assignments before signing a lease."
       },
       {
@@ -30355,7 +30551,7 @@
         "answer": "Nashville's rental market is competitive, particularly in Brentwood and Franklin. Start searching 8 weeks before your move; suburban inventory is better than inner Nashville but still moves quickly."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Williamson County public schools (Brentwood, Franklin) are excellent and serve most expat families well. Research zone assignments before signing a lease — there is significant variation across the metro."
       },
       {
@@ -30736,7 +30932,7 @@
         "answer": "Salt Lake City's rental market is tighter than it used to be following Silicon Slopes growth, but inventory is still better than Denver or Seattle. Draper and Sandy offer good family inventory."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in Salt Lake City's suburbs work well for most expat families. Jordan and Canyons districts consistently rank well. Research zone assignments before signing a lease."
       },
       {
@@ -31117,7 +31313,7 @@
         "answer": "Phoenix has more rental inventory than most major US cities — the market is competitive near Chandler and Scottsdale but you can typically secure a lease within 4–6 weeks."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Public schools in Chandler Unified, Scottsdale Unified, and Gilbert Public Schools are strong and serve most expat families well. Research zone assignments before signing a lease."
       },
       {
@@ -31498,7 +31694,7 @@
         "answer": "Tampa's rental market is competitive, particularly in South Tampa and Carrollwood. Start searching 8 weeks before your move; New Tampa and Wesley Chapel offer more inventory at slightly lower prices."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Hillsborough County public schools work well for most expat families. Quality varies by zone — research school assignments before committing to a lease."
       },
       {
@@ -31879,7 +32075,7 @@
         "answer": "Portland's rental market is competitive, particularly in Lake Oswego, Beaverton, and inner SE Portland. Start searching 8–10 weeks before your move. Suburban options in Beaverton offer more availability."
       },
       {
-        "question": "Do children need international school here, or can public schools work?",
+        "question": "Do children need private school here, or can public schools work?",
         "answer": "Portland Public Schools and Beaverton School District work well for most expat families. Research zone assignments and school ratings before signing a lease."
       },
       {
@@ -32496,24 +32692,39 @@
       ],
       "searchPortals": [
         {
-          "label": "Encuentra24 — Panama rentals hub root site",
+          "label": "Encuentra24 — Panama's largest classifieds platform with strong rental section",
           "url": "https://www.encuentra24.com",
           "isVerified": true
         },
         {
-          "label": "Facebook groups — search Panama City familia housing",
-          "url": "https://www.google.com/search?q=Panama+City+familia+housing+Facebook+group",
+          "label": "CompreoAlquile — major Panamanian property portal",
+          "url": "https://www.compreoalquile.com",
+          "isVerified": true
+        },
+        {
+          "label": "PanamaCompra — direct-from-owner Panama listings",
+          "url": "https://www.panamacompra.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Panama City Expats Housing' or 'Familias en Panamá' (community listings)",
+          "url": "https://www.google.com/search?q=Panama+City+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "3-bed Punta Pacífico: ~$2,900–$5,200/month",
-        "4-bed Clayton house: ~$3,900–$6,900/month"
+        "1-bed apartment, El Cangrejo or Marbella: ~$1,000–$1,500 / month",
+        "2-bed apartment, Punta Pacífica or Costa del Este: ~$1,800–$2,800 / month",
+        "3-bed apartment, Punta Pacífica high-rise: ~$2,900–$4,500 / month",
+        "4-bed family house, Clayton (near international schools): ~$3,500–$6,000 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,800–$3,500 / month"
       ],
       "whatYouNeedToRent": [
-        "Passport copies notarised",
-        "Employer carta garantía often",
-        "Two months deposits typical"
+        "Valid passport (notarised copies often requested)",
+        "Cédula (Panamanian ID for residents) or carnet de residencia (residence card) once issued",
+        "Employer carta de garantía (employer guarantee letter) or 3 months of bank statements proving income",
+        "1–2 months deposit plus first month's rent is standard",
+        "Most landlords require a 1-year minimum lease — confirm furnished vs unfurnished and which utilities are included before signing"
       ]
     },
     "schools": {
@@ -32853,24 +33064,39 @@
       ],
       "searchPortals": [
         {
-          "label": "Portal Inmobiliario — Chile property portal root",
+          "label": "Portal Inmobiliario — Chile's largest property portal",
           "url": "https://www.portalinmobiliario.com",
           "isVerified": true
         },
         {
-          "label": "Facebook — search Santiago familia housing",
-          "url": "https://www.google.com/search?q=Santiago+familia+housing+Facebook+group",
+          "label": "TocToc — major Chilean property portal with strong Santiago inventory",
+          "url": "https://www.toctoc.com",
+          "isVerified": true
+        },
+        {
+          "label": "Yapo.cl — direct-from-owner classifieds",
+          "url": "https://www.yapo.cl",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Santiago Expats Housing' or 'Arriendos Santiago' (community listings)",
+          "url": "https://www.google.com/search?q=Santiago+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "3-bed Vitacura: ~$3,900–$6,900/month",
-        "Las Condes apt: ~$2,900–$5,200/month"
+        "1-bed apartment, Providencia or Ñuñoa: ~$700–$1,100 / month",
+        "2-bed apartment, Las Condes: ~$1,400–$2,200 / month",
+        "3-bed apartment, Las Condes or Vitacura: ~$2,200–$3,500 / month",
+        "4-bed family house, Vitacura or La Dehesa (near international schools): ~$3,500–$6,500 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,500–$3,000 / month"
       ],
       "whatYouNeedToRent": [
-        "Passport+RUT photocopies often",
-        "Aval garantías sometimes",
-        "Seguro hogar slips"
+        "Valid passport plus your RUT (Rol Único Tributario — Chilean tax ID, required for almost every transaction)",
+        "Aval (Chilean co-signer/guarantor) or a deposit equivalent to 2–3 months rent if you cannot provide one — landlords usually require one or the other",
+        "3 months of bank statements or an employment contract showing income at least 3× the monthly rent",
+        "Seguro hogar (home insurance) — sometimes required by landlord, otherwise recommended",
+        "Most rental contracts run 1 year minimum — read the salida anticipada (early termination) clause carefully before signing"
       ]
     },
     "schools": {
@@ -33210,23 +33436,39 @@
       ],
       "searchPortals": [
         {
-          "label": "Mercado Libre Inmuebles Uruguay root listings",
-          "url": "https://www.mercadolibre.com.uy",
+          "label": "Mercado Libre Inmuebles Uruguay — strong direct-from-owner inventory",
+          "url": "https://inmuebles.mercadolibre.com.uy",
           "isVerified": true
         },
         {
-          "label": "Facebook — Montevideo familia renta search",
-          "url": "https://www.google.com/search?q=Montevideo+familia+renta+Facebook",
+          "label": "Infocasas — major Uruguayan property portal",
+          "url": "https://www.infocasas.com.uy",
+          "isVerified": true
+        },
+        {
+          "label": "Gallito — Uruguay's largest classifieds platform with rental section",
+          "url": "https://www.gallito.com.uy",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Montevideo Expats Housing' (community listings, direct landlord deals)",
+          "url": "https://www.google.com/search?q=Montevideo+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "3-bed Carrasco: ~$2,900–$5,900/month USD?",
-        "Rambla pocitos 2-bed: ~$2,200–$3,900/month"
+        "1-bed apartment, Pocitos or Punta Carretas: ~$700–$1,100 / month",
+        "2-bed apartment, Pocitos rambla (waterfront): ~$1,300–$2,200 / month",
+        "3-bed apartment, Carrasco: ~$2,000–$3,500 / month",
+        "4-bed family house, Carrasco (near international schools): ~$2,800–$5,000 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,500–$2,800 / month"
       ],
       "whatYouNeedToRent": [
-        "Guarantías bancarias often",
-        "Notarized passport calm"
+        "Valid passport plus your cédula uruguaya (Uruguayan ID) once issued",
+        "Garantía (rental guarantee) — typically a bank guarantee, deposit, or contracted ANDA/Porto Seguro/BHU policy. Without one, landlords often require 6 months rent upfront",
+        "3 months of bank statements or an employment contract showing income",
+        "1 month deposit plus first month's rent is standard",
+        "Standard rental contracts are 2 years — read the rescisión (early termination) clause before signing"
       ]
     },
     "schools": {
@@ -33564,24 +33806,39 @@
       ],
       "searchPortals": [
         {
-          "label": "Metrocuadrado — Colombia rentals root homepage",
+          "label": "Metrocuadrado — Colombia's largest property portal",
           "url": "https://www.metrocuadrado.com",
           "isVerified": true
         },
         {
-          "label": "Facebook Bogotá expat housing search",
-          "url": "https://www.google.com/search?q=Bogota+expat+housing+Facebook+group",
+          "label": "Fincaraíz — major Colombian rental portal with strong Bogotá inventory",
+          "url": "https://www.fincaraiz.com.co",
+          "isVerified": true
+        },
+        {
+          "label": "Properati Colombia — additional rental inventory",
+          "url": "https://www.properati.com.co",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Bogotá Expats Housing' (community listings, direct landlord deals)",
+          "url": "https://www.google.com/search?q=Bogota+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "3-bed Chapinero: COP equivalent ~$1,900–$3,500/month USD swing",
-        "Usaquén casa: ~$2,900–$5,200/month"
+        "1-bed apartment, Chapinero Alto or Quinta Camacho: ~$500–$900 / month",
+        "2-bed apartment, El Chicó or Rosales: ~$900–$1,500 / month",
+        "3-bed apartment, Chapinero or Usaquén: ~$1,500–$2,500 / month",
+        "4-bed family house, Usaquén or Cedritos (near international schools): ~$2,200–$4,000 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,200–$2,500 / month"
       ],
       "whatYouNeedToRent": [
-        "Cédula soon",
-        "Codeudor often",
-        "Insurance occasionally"
+        "Valid passport plus your cédula de extranjería (Colombian foreigner ID) once issued",
+        "Codeudor (Colombian co-signer/guarantor) or a póliza de arrendamiento (rental insurance policy) — most landlords require one or the other",
+        "3 months of bank statements or an employment contract showing income",
+        "1–2 months deposit plus first month's rent is standard",
+        "Most contracts run 1 year minimum — Colombian law allows tenants to terminate with 3 months notice plus a penalty equal to 3 months rent"
       ]
     },
     "schools": {
@@ -33851,11 +34108,11 @@
         "targetSection": "healthcare"
       },
       {
-        "label": "Your landlord is legally required to file a TM30 form (Vietnam's official address registration form) with the local cong an phuong (ward-level police station) within 24 hours of your arrival at any new address — get written confirmation this was filed. Without the TM30 receipt you cannot apply for your TRC.",
+        "label": "Your landlord is legally required to file your khai báo tạm trú (temporary residence declaration — Vietnam's mandatory address registration) with the local công an phường (ward-level police station) within 12 hours of your arrival at any new address — get a written or photographed receipt. Without this declaration on file you cannot apply for your TRC.",
         "targetSection": "residency"
       },
       {
-        "label": "Apply for your TRC (Thẻ Tạm Trú — Temporary Resident Card, Vietnam's official registration card for long-stay foreigners) at the Ho Chi Minh City Immigration Department within 30 days of arrival. Bring: passport, visa, TM30 receipt, work permit, and 2 passport photos. The TRC is required to open a bank account and enroll children in school.",
+        "label": "Apply for your TRC (Thẻ Tạm Trú — Temporary Resident Card, Vietnam's official registration card for long-stay foreigners) at the Ho Chi Minh City Immigration Department within 30 days of arrival. Bring: passport, visa, your khai báo tạm trú receipt, work permit, and 2 passport photos. The TRC is required to open a bank account and enroll children in school.",
         "targetSection": "residency"
       },
       {
@@ -33883,13 +34140,13 @@
     },
     "residency": {
       "title": "Immigration & Registration",
-      "tip": "Register your address within 24 hours of moving — your landlord must file the TM30 form (address registration) with local police; non-compliance results in fines for both parties.",
+      "tip": "Register your address within 12 hours of moving — your landlord must file your khai báo tạm trú (temporary residence declaration) with local ward police (công an phường); non-compliance results in fines for both parties. Most landlords in District 1, 2, 7 do this online via the national public service portal.",
       "items": [
-        "Your landlord must file the TM30 form (address registration form) with local police (công an phường — ward-level police station) within 24 hours of your arrival at any new address — without this, you cannot receive your TRC",
-        "Apply for your TRC (Thẻ Tạm Trú — Temporary Resident Card) at the Ho Chi Minh City Immigration Department within 30 days of arrival — bring passport, visa, TM30 registration receipt, work permit, and passport photos; TRC is required for banking and school enrollment",
+        "Your landlord must file your khai báo tạm trú (temporary residence declaration — Vietnam's address registration form) with local ward police (công an phường) within 12 hours of your arrival at any new address — without this on file, you cannot receive your TRC",
+        "Apply for your TRC (Thẻ Tạm Trú — Temporary Resident Card) at the Ho Chi Minh City Immigration Department within 30 days of arrival — bring passport, visa, khai báo tạm trú receipt, work permit, and passport photos; TRC is required for banking and school enrollment",
         "Obtain your work permit (giấy phép lao động) through your employer before starting work — your employer's HR team manages this process, which requires apostilled documents from your home country; working without a valid permit is a deportable offense",
         "Enroll your children in school with your TRC, passport, apostilled birth certificates, and prior transcripts — international schools in Districts 2 and 7 assist with the local paperwork requirements",
-        "Report your address to immigration every 90 days by visiting the immigration office or using the online reporting system at xuatnhapcanh.gov.vn — your TRC includes a specific renewal date"
+        "Re-register your khai báo tạm trú every time you move address, and track your TRC expiry date carefully — extensions must be filed before expiry at the HCMC Immigration Department or via the online portal at xuatnhapcanh.gov.vn (search 'TRC extension xuatnhapcanh' on Google for the current online form)"
       ]
     },
     "banking": {
@@ -33920,23 +34177,39 @@
       ],
       "searchPortals": [
         {
-          "label": "Batdongsan — Vietnam listings root",
+          "label": "Batdongsan — Vietnam's largest property portal",
           "url": "https://batdongsan.com.vn",
           "isVerified": true
         },
         {
-          "label": "Facebook Saigon housing",
-          "url": "https://www.google.com/search?q=Saigon+housing+expat+Facebook+group",
+          "label": "Mogi.vn — major Vietnamese rental portal",
+          "url": "https://mogi.vn",
+          "isVerified": true
+        },
+        {
+          "label": "Chợ Tốt Nhà — direct-from-owner Vietnamese classifieds",
+          "url": "https://nha.chotot.com",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Saigon Expats Housing' or 'HCMC Apartments' (direct landlord and community deals)",
+          "url": "https://www.google.com/search?q=Saigon+Expats+Housing+Facebook+group",
           "isVerified": true
         }
       ],
       "typicalPrices": [
-        "3-bed villa Thảo Điền: ~$3,900–$7,900/month?",
-        "District 7 high-rise 2-bed: ~$2,200–$3,900/month"
+        "1-bed serviced apartment, District 1 or District 3: ~$700–$1,200 / month",
+        "2-bed apartment, District 7 (near international schools): ~$1,200–$2,200 / month",
+        "3-bed apartment, Thảo Điền (District 2): ~$2,000–$3,500 / month",
+        "4-bed villa, Thảo Điền or An Phú: ~$3,500–$6,500 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,500–$3,000 / month"
       ],
       "whatYouNeedToRent": [
-        "Work permit sometimes",
-        "Deposits two months often"
+        "Valid passport with current Vietnamese visa endorsement",
+        "Work permit or residency card (thẻ tạm trú) once issued — required to register a long-term tenancy",
+        "1–2 months deposit plus first month's rent is standard; landlords usually want rent paid quarterly",
+        "Have your landlord file your khai báo tạm trú (temporary residence registration) with local police on arrival — required by law and you'll need a copy for visa renewals and bank account opening",
+        "Confirm in writing whether utilities, internet, and cleaning are included; many serviced apartments and villas in Thảo Điền bundle them"
       ]
     },
     "schools": {
@@ -34048,7 +34321,7 @@
       },
       {
         "question": "How difficult is the paperwork and bureaucracy after moving?",
-        "answer": "Moderately complex — TM30 registration, TRC application, and work permit all require coordination and multiple visits. Using a local relocation agent ($300–$600) is strongly recommended for the first 60 days to avoid compliance errors."
+        "answer": "Moderately complex — khai báo tạm trú (temporary residence declaration filed by your landlord), TRC application, and work permit all require coordination and multiple visits. Using a local relocation agent ($300–$600) is strongly recommended for the first 60 days to avoid compliance errors."
       },
       {
         "question": "What usually surprises families after arrival?",
@@ -34303,13 +34576,18 @@
         }
       ],
       "typicalPrices": [
-        "3-bed Whitefield: ₹ equivalent ~₹ USD ~ $1,350–$2,900",
-        "HSR townhouse: ~₹ $2,200–$3,900"
+        "1-bed apartment, Indiranagar or Koramangala: ~$400–$700 / month",
+        "2-bed apartment, HSR Layout or JP Nagar: ~$700–$1,200 / month",
+        "3-bed apartment, Whitefield or Sarjapur (near international schools): ~$1,200–$2,200 / month",
+        "4-bed villa, Whitefield gated community: ~$2,000–$3,500 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$1,200–$2,500 / month"
       ],
       "whatYouNeedToRent": [
-        "Passport FRRO",
-        "Police verification flatmates",
-        "Maintenance deposits"
+        "Valid passport with current Indian visa endorsement",
+        "FRRO (Foreigner Regional Registration Office) registration certificate — required if your visa stay exceeds 180 days",
+        "10 months security deposit is standard in Bengaluru (Indian norm — non-refundable in case of damages, refundable otherwise)",
+        "Employer relocation letter or 3 months of bank statements proving income",
+        "Society admission forms and police verification — gated communities require these before move-in; budget 2–4 weeks for processing"
       ]
     },
     "schools": {
@@ -34676,14 +34954,18 @@
         }
       ],
       "typicalPrices": [
-        "2-bed Bandra high-rise: ~$2,900–$6,900/month",
-        "3-bed Powai lake tower: ~$2,200–$4,900/month",
-        "Executive lease Worli Sea Face: ~$6,900–$13,900/month"
+        "1-bed apartment, Bandra West or Andheri West: ~$1,500–$2,500 / month",
+        "2-bed apartment, Bandra high-rise: ~$2,500–$4,500 / month",
+        "3-bed apartment, Powai or Lower Parel: ~$2,500–$4,500 / month",
+        "Executive lease, Worli Sea Face or Cuffe Parade: ~$5,500–$10,000 / month",
+        "Short-stay serviced apartment (first 4–8 weeks): ~$2,500–$5,000 / month"
       ],
       "whatYouNeedToRent": [
-        "Passport with visa endorsement",
-        "Employer relocation letter proving income",
-        "Society admission forms plus police verification"
+        "Valid passport with current Indian visa endorsement",
+        "FRRO (Foreigner Regional Registration Office) registration certificate — required if your visa stay exceeds 180 days",
+        "Employer relocation letter or 3 months of bank statements proving income",
+        "10 months security deposit is standard in Mumbai (Indian norm — refundable on exit minus damages)",
+        "Society admission forms and police verification — Mumbai cooperative societies require these before move-in; allow 2–4 weeks for approval"
       ]
     },
     "schools": {
