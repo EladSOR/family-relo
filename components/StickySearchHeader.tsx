@@ -5,6 +5,7 @@ import { MapPin } from "lucide-react";
 import SearchBar from "@/components/home/SearchBar";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
+import AuthButton from "@/components/auth/AuthButton";
 
 export default function StickySearchHeader() {
   return (
@@ -24,6 +25,7 @@ export default function StickySearchHeader() {
         <div className="min-w-0 flex-1">
           <SearchBar compact />
         </div>
+        <AuthButton />
       </div>
 
       {/* ── Mobile layout (<md): logo + compact bar ──────────────────────── */}
