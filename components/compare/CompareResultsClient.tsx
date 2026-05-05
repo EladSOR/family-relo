@@ -2,9 +2,11 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Lock, ArrowLeft, Share2, Check } from "lucide-react";
-import { useMemo, useState } from "react";
+import { MapPin, Lock, ArrowLeft, Share2, Check, LogIn } from "lucide-react";
+import { useMemo, useState, useEffect } from "react";
 import citiesData from "@/data/cities.json";
+import { createClient } from "@/lib/supabase/client";
+import type { User as SupabaseUser } from "@supabase/supabase-js";
 import type { Destination } from "@/lib/types";
 import {
   scoreCity,
@@ -495,6 +497,16 @@ function BlurredRow({ width = "100%" }: { width?: string }) {
 export default function CompareResultsClient() {
   const params = useSearchParams();
   const [copied, setCopied] = useState(false);
+  const [user, setUser] = useState<SupabaseUser | null | undefined>(undefined); // undefined = loading
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null));
+    const { data: listener } = supabase.auth.onAuthStateChange((_e, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => listener.subscription.unsubscribe();
+  }, []);
 
   const cityIds = (params.get("cities") ?? "").split(",").filter(Boolean);
   const budget = Number(params.get("budget") ?? 5000);
@@ -887,6 +899,23 @@ export default function CompareResultsClient() {
                   ))}
                 </ul>
 
+                {/* Not logged in — sign in prompt */}
+                {user === null && (
+                  <div className="mb-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+                    <LogIn size={16} className="shrink-0 text-slate-400" />
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-bold text-slate-700">Sign in to purchase</p>
+                      <p className="text-xs text-slate-400">Free account — takes 10 seconds</p>
+                    </div>
+                    <Link
+                      href={`/auth/login?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname + window.location.search : "/compare/results")}`}
+                      className="shrink-0 rounded-lg bg-[#FF5A5F] px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f]"
+                    >
+                      Sign in
+                    </Link>
+                  </div>
+                )}
+
                 {/* Two pricing options */}
                 <div className="grid grid-cols-2 gap-3">
                   {/* $9 single */}
@@ -904,7 +933,7 @@ export default function CompareResultsClient() {
                       disabled
                       className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-100 py-2.5 text-xs font-bold text-slate-400"
                     >
-                      Launching soon
+                      {user === undefined ? "…" : "Launching soon"}
                     </button>
                   </div>
 
@@ -928,10 +957,17 @@ export default function CompareResultsClient() {
                       disabled
                       className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-200 py-2.5 text-xs font-bold text-slate-400"
                     >
-                      Launching soon
+                      {user === undefined ? "…" : "Launching soon"}
                     </button>
                   </div>
                 </div>
+
+                {/* Signed-in note */}
+                {user && (
+                  <p className="mt-2 text-center text-[11px] text-slate-400">
+                    Signed in as <span className="font-semibold">{user.email}</span> — reports will save to your account
+                  </p>
+                )}
 
                 {/* Share nudge */}
                 <p className="mt-4 text-center text-xs text-slate-400">

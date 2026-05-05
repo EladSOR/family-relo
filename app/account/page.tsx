@@ -1,20 +1,39 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { MapPin, FileText } from "lucide-react";
+import { MapPin, FileText, Plus, ArrowRight, Package } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import SignOutButton from "@/components/auth/SignOutButton";
 
 export const metadata: Metadata = {
-  title: "My Account | Famirelo",
+  title: "My Account | FamiRelo",
   robots: { index: false },
 };
 
 export default async function AccountPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-
   if (!user) redirect("/auth/login");
+
+  // Fetch purchases + comparisons in parallel
+  const [{ data: purchases }, { data: comparisons }] = await Promise.all([
+    supabase
+      .from("purchases")
+      .select("*")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: false }),
+    supabase
+      .from("comparisons")
+      .select("*")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: false }),
+  ]);
+
+  // Credits summary across all purchases
+  const totalCredits  = (purchases ?? []).reduce((s, p) => s + p.credits_total, 0);
+  const usedCredits   = (purchases ?? []).reduce((s, p) => s + p.credits_used,  0);
+  const remaining     = totalCredits - usedCredits;
+  const hasPurchase   = totalCredits > 0;
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -33,35 +52,137 @@ export default async function AccountPage() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-3xl px-4 py-12">
+      <div className="mx-auto max-w-3xl px-4 py-10 md:py-14">
         {/* Header */}
         <div className="mb-8">
           <p className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F]">
             My account
           </p>
           <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
-            You&apos;re in
+            Welcome back
           </h1>
           <p className="mt-1 text-sm text-slate-500">{user.email}</p>
         </div>
 
-        {/* Reports */}
-        <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
-          <div className="mb-4 flex items-center gap-2">
-            <FileText size={16} className="text-slate-400" />
-            <h2 className="text-sm font-bold text-slate-800">My comparison reports</h2>
+        {/* Credits banner — only if they have a purchase */}
+        {hasPurchase && (
+          <div className="mb-6 flex items-center justify-between rounded-2xl border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-5 py-4">
+            <div className="flex items-center gap-3">
+              <Package size={18} className="shrink-0 text-[#FF5A5F]" />
+              <div>
+                <p className="text-sm font-bold text-slate-800">
+                  {remaining} report{remaining !== 1 ? "s" : ""} remaining
+                </p>
+                <p className="text-xs text-slate-500">
+                  {usedCredits} of {totalCredits} used
+                </p>
+              </div>
+            </div>
+            {remaining > 0 && (
+              <Link
+                href="/compare/build"
+                className="flex items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-4 py-2 text-xs font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
+              >
+                Build next report
+                <ArrowRight size={12} />
+              </Link>
+            )}
           </div>
-          <p className="text-sm text-slate-500">
-            You don&apos;t have any saved reports yet. Start by building a free preview — 
-            full personalized reports are coming very soon.
-          </p>
-          <Link
-            href="/compare/build"
-            className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
-          >
-            Build a free preview
-          </Link>
+        )}
+
+        {/* Saved reports */}
+        <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+          <div className="mb-5 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <FileText size={15} className="text-slate-400" />
+              <h2 className="text-sm font-bold text-slate-800">My comparison reports</h2>
+            </div>
+            {hasPurchase && remaining > 0 && (
+              <Link
+                href="/compare/build"
+                className="flex items-center gap-1 text-xs font-semibold text-[#FF5A5F] hover:underline"
+              >
+                <Plus size={12} />
+                New
+              </Link>
+            )}
+          </div>
+
+          {/* Report cards */}
+          {comparisons && comparisons.length > 0 ? (
+            <div className="space-y-3">
+              {comparisons.map((c) => (
+                <Link
+                  key={c.id}
+                  href={c.report_url}
+                  className="flex items-center justify-between rounded-xl border border-slate-100 bg-stone-50 p-4 transition-all hover:border-slate-200 hover:bg-white hover:shadow-sm"
+                >
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-bold text-slate-800">
+                      {c.city_names?.join(" · ") ?? "Comparison"}
+                    </p>
+                    <p className="mt-0.5 text-xs text-slate-400">
+                      {c.top_match && c.top_pct
+                        ? `Best match: ${c.top_match} (${c.top_pct}%)`
+                        : "View report"}
+                      {" · "}
+                      {new Date(c.created_at).toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      })}
+                    </p>
+                  </div>
+                  <ArrowRight size={14} className="ml-3 shrink-0 text-slate-400" />
+                </Link>
+              ))}
+            </div>
+          ) : (
+            /* Empty state */
+            <div className="py-4 text-center">
+              {hasPurchase ? (
+                <>
+                  <p className="mb-3 text-sm text-slate-500">
+                    No saved reports yet — build your first comparison now.
+                  </p>
+                  <Link
+                    href="/compare/build"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
+                  >
+                    Build first report
+                    <ArrowRight size={14} />
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <p className="mb-1 text-sm font-medium text-slate-600">
+                    No reports yet
+                  </p>
+                  <p className="mb-4 text-xs text-slate-400">
+                    Build a free preview — full reports unlock at launch.
+                  </p>
+                  <Link
+                    href="/compare/build"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
+                  >
+                    Build free preview
+                    <ArrowRight size={14} />
+                  </Link>
+                </>
+              )}
+            </div>
+          )}
         </div>
+
+        {/* Coming soon note — no purchase yet */}
+        {!hasPurchase && (
+          <p className="mt-5 text-center text-xs text-slate-400">
+            Full reports are launching soon.{" "}
+            <Link href="/compare" className="font-semibold text-[#FF5A5F] hover:underline">
+              See what&apos;s included →
+            </Link>
+          </p>
+        )}
       </div>
     </div>
   );
