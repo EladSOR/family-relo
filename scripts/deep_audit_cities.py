@@ -67,6 +67,23 @@ REPLACEMENT_TYPOS = [
     re.compile(r"\bSiviglia\b"),  # Italian for Seville
 ]
 
+# Marketplace platforms that are NOT real channels for finding nannies
+# in the country they were attached to. Each entry: platform substring →
+# set of country slugs where it's actually used for childcare/nanny
+# hiring. Listed here are confirmed-fabricated combinations from past
+# generations (Yad2 = goods only, Metrocuadrado = real estate only,
+# ConMuchoGusto outside Costa Rica, etc.). When you confirm a new
+# platform actually has a real childcare vertical, add it here so the
+# audit stops flagging it.
+NANNY_PLATFORM_OK = {
+    "yad2": set(),                    # Israel: NOT for nannies
+    "metrocuadrado": set(),           # Colombia: real estate ONLY
+    "conmuchogusto": {"costa-rica"},  # CR only
+    "car.gr": set(),                  # Greece: cars only
+    "ergani.gr": set(),               # Greece: government labour registry
+}
+
+
 # More precise wrong-country jargon (extends scan_country_jargon.py)
 WRONG_JARGON = {
     "Codice Fiscale": {"italy"},
@@ -245,6 +262,17 @@ def audit():
             if term in blob and country not in ok_countries:
                 issue(out, cid, "H.jargon",
                       f"'{term.strip()}' appears in {country} city (only valid for {ok_countries})")
+
+        # I. Fabricated nanny platforms — flag platforms listed in
+        # childcare.whereToFindItems that aren't real childcare channels
+        # in this country.
+        for item in c.get("childcare", {}).get("whereToFindItems", []):
+            lower = item.lower()
+            for platform, ok_countries in NANNY_PLATFORM_OK.items():
+                if platform in lower and country not in ok_countries:
+                    issue(out, cid, "I.nanny-platform",
+                          f"'{platform}' is not a real nanny channel for {country} "
+                          f"(only valid for {ok_countries or '(none)'})")
 
         # Residency + banking required objects with items[] + tip
         for sec in ("residency", "banking"):
