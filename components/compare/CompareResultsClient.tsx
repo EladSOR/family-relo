@@ -853,55 +853,93 @@ export default function CompareResultsClient() {
               </section>
             </div>
 
-            {/* Coming soon paywall card */}
-            <div className="absolute inset-0 flex items-start justify-center pt-10">
-              <div className="mx-4 w-full max-w-md rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-2xl">
-                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100">
-                  <Lock size={22} className="text-slate-500" />
-                </div>
-                <h3 className="mb-2 text-lg font-extrabold tracking-tight text-slate-900">
-                  Full report coming soon
-                </h3>
-                <p className="mb-6 text-sm leading-relaxed text-slate-500">
-                  We&apos;re adding Family Fit, Visa Analysis, Schools deep-dive,
-                  and a personalized verdict — one payment, yours forever, shareable with anyone.
-                </p>
-                <div className="mb-4 rounded-xl border border-slate-100 bg-slate-50 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                    What&apos;s included
+            {/* Paywall card */}
+            <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12">
+              <div className="mx-4 w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl md:p-8">
+
+                {/* Header */}
+                <div className="mb-5 text-center">
+                  <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-slate-100">
+                    <Lock size={20} className="text-slate-500" />
+                  </div>
+                  <h3 className="text-lg font-extrabold tracking-tight text-slate-900">
+                    Unlock your full report
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500">
+                    Family fit, visa paths, schools deep-dive &amp; a personalized verdict — yours forever.
                   </p>
-                  <ul className="mt-3 space-y-1.5 text-left text-xs font-medium text-slate-600">
-                    {[
-                      "Full family fit analysis per city",
-                      "Visa & work permit path for your situation",
-                      "Schools & childcare deep-dive",
-                      "Shareable link — send to partner or family",
-                      "Download as PDF",
-                    ].map((item) => (
-                      <li key={item} className="flex items-center gap-2">
-                        <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF5A5F]" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-                <div className="mb-5 flex items-baseline justify-center gap-2">
-                  <span className="text-3xl font-black text-slate-900">$9</span>
-                  <span className="text-sm text-slate-400">one-time · no subscription</span>
+
+                {/* What's inside */}
+                <ul className="mb-6 grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs font-medium text-slate-600">
+                  {[
+                    "Full family fit analysis",
+                    "Shareable link",
+                    "Visa & work permit path",
+                    "Download as PDF",
+                    "Schools & childcare deep-dive",
+                    "Personalized verdict",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-1.5">
+                      <Check size={11} className="shrink-0 text-[#FF5A5F]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Two pricing options */}
+                <div className="grid grid-cols-2 gap-3">
+                  {/* $9 single */}
+                  <div className="flex flex-col rounded-xl border border-slate-200 p-4">
+                    <p className="mb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                      This report
+                    </p>
+                    <div className="mb-1 flex items-baseline gap-1">
+                      <span className="text-3xl font-black text-slate-900">$9</span>
+                      <span className="text-xs text-slate-400">one-time</span>
+                    </div>
+                    <p className="mb-4 text-xs text-slate-400">1 comparison · up to 3 cities</p>
+                    <button
+                      type="button"
+                      disabled
+                      className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-100 py-2.5 text-xs font-bold text-slate-400"
+                    >
+                      Launching soon
+                    </button>
+                  </div>
+
+                  {/* $19 bundle */}
+                  <div className="flex flex-col rounded-xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-4">
+                    <div className="mb-1.5 self-start rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+                      Best value
+                    </div>
+                    <div className="mb-1 flex items-baseline gap-1">
+                      <span className="text-3xl font-black text-slate-900">$19</span>
+                      <span className="text-xs text-slate-400">one-time</span>
+                    </div>
+                    <p className="mb-1 text-xs font-semibold text-[#FF5A5F]">
+                      3 comparisons
+                    </p>
+                    <p className="mb-4 text-xs text-slate-500">
+                      Add 2 more reports for just $10 extra — save $8
+                    </p>
+                    <button
+                      type="button"
+                      disabled
+                      className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-200 py-2.5 text-xs font-bold text-slate-400"
+                    >
+                      Launching soon
+                    </button>
+                  </div>
                 </div>
-                <button
-                  type="button"
-                  disabled
-                  className="w-full cursor-not-allowed rounded-xl bg-slate-200 py-3 text-sm font-bold text-slate-400"
-                >
-                  Get full report — launching soon
-                </button>
-                <p className="mt-3 text-xs text-slate-400">
+
+                {/* Share nudge */}
+                <p className="mt-4 text-center text-xs text-slate-400">
                   Share this preview with your partner while you wait →{" "}
                   <button
                     type="button"
                     onClick={() => { navigator.clipboard.writeText(window.location.href); }}
-                    className="font-semibold text-[#FF5A5F] underline"
+                    className="cursor-pointer font-semibold text-[#FF5A5F] underline"
                   >
                     copy link
                   </button>

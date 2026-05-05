@@ -341,45 +341,87 @@ export default function CompareLandingPage() {
 
       {/* Pricing */}
       <section className="bg-white px-4 py-16">
-        <div className="mx-auto max-w-sm">
+        <div className="mx-auto max-w-2xl">
           <h2 className="mb-3 text-center text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
             Simple pricing
           </h2>
-          <p className="mb-8 text-center text-sm text-slate-400">
-            One report · up to 3 cities · yours forever.
+          <p className="mb-10 text-center text-sm text-slate-400">
+            Pay once. No subscription. Yours forever.
           </p>
 
-          <div className="rounded-2xl border border-[#FF5A5F]/25 bg-[#FF5A5F]/5 p-7 text-center shadow-sm">
-            <div className="mb-1 flex items-baseline justify-center gap-2">
-              <span className="text-6xl font-black text-slate-900">$9</span>
-              <span className="text-base text-slate-400">one-time</span>
+          <div className="grid gap-4 md:grid-cols-2">
+            {/* Single report */}
+            <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+              <div className="mb-1 flex items-baseline gap-2">
+                <span className="text-5xl font-black text-slate-900">$9</span>
+                <span className="text-sm text-slate-400">one-time</span>
+              </div>
+              <p className="mb-1 text-base font-bold text-slate-800">Single report</p>
+              <p className="mb-5 text-sm text-slate-400">One comparison · up to 3 cities</p>
+              <ul className="mb-6 flex-1 space-y-2.5 text-sm text-slate-600">
+                {[
+                  "Compare up to 3 cities",
+                  "Full personalized report",
+                  "Match scores weighted to your priorities",
+                  "Schools, visas & family fit analysis",
+                  "Shareable link — send to partner or family",
+                  "Download as PDF",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2">
+                    <Check size={13} className="shrink-0 text-[#FF5A5F]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                disabled
+                className="w-full cursor-not-allowed rounded-xl bg-slate-100 py-3 text-sm font-bold text-slate-400"
+              >
+                Launching soon
+              </button>
             </div>
-            <p className="mb-6 text-sm text-slate-500">No subscription. No account required.</p>
-            <ul className="mb-6 space-y-2.5 text-left text-sm text-slate-700">
-              {[
-                "Compare up to 3 cities",
-                "Full personalized report",
-                "Match scores weighted to your priorities",
-                "Schools, visas & family fit analysis",
-                "Shareable link — send to partner or family",
-                "Download as PDF",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <Check size={14} className="shrink-0 text-[#FF5A5F]" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <button
-              type="button"
-              disabled
-              className="w-full cursor-not-allowed rounded-xl bg-slate-200 py-3.5 text-sm font-bold text-slate-400"
-            >
-              Get full report — launching soon
-            </button>
+
+            {/* Bundle */}
+            <div className="flex flex-col rounded-2xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-7 shadow-sm">
+              <div className="mb-3 self-start rounded-full bg-[#FF5A5F] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                Best value
+              </div>
+              <div className="mb-1 flex items-baseline gap-2">
+                <span className="text-5xl font-black text-slate-900">$19</span>
+                <span className="text-sm text-slate-400">one-time</span>
+              </div>
+              <p className="mb-1 text-base font-bold text-slate-800">3-report bundle</p>
+              <p className="mb-5 text-sm text-slate-500">3 comparisons · up to 3 cities each</p>
+              <ul className="mb-6 flex-1 space-y-2.5 text-sm text-slate-700">
+                {[
+                  "Everything in Single report × 3",
+                  "Save & revisit all 3 comparisons",
+                  "Add or swap cities without repaying",
+                  "Perfect for shortlisting multiple options",
+                  "Shareable links for each report",
+                  "Download all as PDF",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2">
+                    <Check size={13} className="shrink-0 text-[#FF5A5F]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                disabled
+                className="w-full cursor-not-allowed rounded-xl bg-slate-200 py-3 text-sm font-bold text-slate-400"
+              >
+                Launching soon
+              </button>
+              <p className="mt-2.5 text-center text-[11px] text-slate-400">
+                Requires a free account to save your reports
+              </p>
+            </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-10 text-center">
             <Link
               href="/compare/build"
               className="inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-[#e84a4f] hover:shadow-xl"
@@ -388,7 +430,7 @@ export default function CompareLandingPage() {
               <ArrowRight size={16} strokeWidth={2.5} />
             </Link>
             <p className="mt-3 text-xs text-slate-400">
-              See your match scores now — full report unlocks at launch
+              See your match scores now — full reports unlock at launch
             </p>
           </div>
         </div>
