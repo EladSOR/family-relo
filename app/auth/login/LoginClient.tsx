@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { MapPin, Mail, ArrowRight, Check } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 
@@ -10,6 +11,14 @@ export default function LoginClient() {
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => {
+      if (data.user) router.replace("/account");
+    });
+  }, [router]);
 
   async function handleMagicLink(e: React.FormEvent) {
     e.preventDefault();
