@@ -7,7 +7,7 @@ import { User, LogOut } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
 
-export default function AuthButton() {
+export default function AuthButton({ compact = false }: { compact?: boolean }) {
   const [user, setUser] = useState<SupabaseUser | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
@@ -34,9 +34,14 @@ export default function AuthButton() {
     return (
       <Link
         href="/auth/login"
-        className="flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
+        className={
+          compact
+            ? "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition-all hover:bg-slate-50"
+            : "flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"
+        }
+        aria-label="Sign in"
       >
-        Sign in
+        {compact ? <User size={14} /> : "Sign in"}
       </Link>
     );
   }

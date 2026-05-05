@@ -29,19 +29,17 @@ export default function StickySearchHeader() {
       </div>
 
       {/* ── Mobile layout (<md): logo + compact bar ──────────────────────── */}
-      <div className="flex items-center gap-3 px-4 py-3 md:hidden">
+      <div className="flex items-center gap-2 px-3 py-3 md:hidden">
         <SiteHierarchyMenu variant="light" />
-        <Link href="/" aria-label="Home" className="flex shrink-0 items-center gap-1.5">
+        <Link href="/" aria-label="Home" className="flex shrink-0 items-center justify-center">
           <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
             <MapPin size={13} strokeWidth={2.5} />
-          </span>
-          <span className="text-sm font-extrabold tracking-tight text-slate-900">
-            FamiRelo
           </span>
         </Link>
         <div className="min-w-0 flex-1">
           <MobileSearchPanel />
         </div>
+        <AuthButton compact />
       </div>
 
     </header>

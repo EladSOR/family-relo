@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
+import AuthButton from "@/components/auth/AuthButton";
 
 export default function Hero() {
   const [showStickySearch, setShowStickySearch] = useState(false);
@@ -54,19 +55,17 @@ export default function Hero() {
           mobileScrolled ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3 shadow-sm">
+        <div className="flex items-center gap-2 border-b border-slate-200 bg-white px-3 py-3 shadow-sm">
           <SiteHierarchyMenu variant="light" />
-          <Link href="/" aria-label="Home" className="flex shrink-0 items-center gap-1.5">
+          <Link href="/" aria-label="Home" className="flex shrink-0 items-center justify-center">
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
               <MapPin size={13} strokeWidth={2.5} />
-            </span>
-            <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamiRelo
             </span>
           </Link>
           <div className="min-w-0 flex-1">
             <MobileSearchPanel />
           </div>
+          <AuthButton compact />
         </div>
       </div>
 
@@ -88,6 +87,9 @@ export default function Hero() {
               FamiRelo
             </span>
           </Link>
+          <div className="ml-auto">
+            <AuthButton />
+          </div>
         </nav>
 
         {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
