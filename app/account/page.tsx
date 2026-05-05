@@ -29,13 +29,13 @@ export default async function AccountPage() {
             </span>
           </Link>
           <form action="/auth/signout" method="post">
-            <Link
-              href="/"
+            <button
+              type="submit"
               className="flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-slate-600"
             >
               <LogOut size={13} />
               Sign out
-            </Link>
+            </button>
           </form>
         </div>
       </nav>
@@ -44,22 +44,23 @@ export default async function AccountPage() {
         {/* Header */}
         <div className="mb-8">
           <p className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F]">
-            Account
+            My account
           </p>
           <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
-            Welcome back
+            You&apos;re in
           </h1>
           <p className="mt-1 text-sm text-slate-500">{user.email}</p>
         </div>
 
-        {/* Reports placeholder */}
+        {/* Reports */}
         <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
           <div className="mb-4 flex items-center gap-2">
             <FileText size={16} className="text-slate-400" />
             <h2 className="text-sm font-bold text-slate-800">My comparison reports</h2>
           </div>
           <p className="text-sm text-slate-500">
-            Your purchased reports will appear here once payments are enabled.
+            You don&apos;t have any saved reports yet. Start by building a free preview — 
+            full personalized reports are coming very soon.
           </p>
           <Link
             href="/compare/build"
