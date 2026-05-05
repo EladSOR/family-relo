@@ -378,6 +378,10 @@ Every city entry **must** include `faq`: an array of exactly **8** objects `{ "q
 7. `How difficult is the paperwork and bureaucracy after moving?`
 8. `What usually surprises families after arrival?`
 
+**Allowed variants:**
+- **Q4 in English-native countries** (US / Canada / UK / Ireland / Australia / NZ): use `Do children need private school here, or can public schools work?` instead — "international school" doesn't fit those markets and "public" is the natural contrast to "private".
+- **Q6 for islands**: use `Do you need a car on [Island Name]?` (e.g. Koh Phangan, Koh Samui) — "in" reads wrong for an island name.
+
 **Answers:** City-specific, practical, 1–3 sentences each (same tone as RULE 8). Reference real trade-offs from the city’s `summary`, `cost`, and section bullets. Do **not** paste URLs into FAQ answers — plain guidance only.
 
 **FAQ #2 ↔ `cost.monthlyFamilyAllIn`:** The monthly total in the answer to question 2 must agree with `monthlyFamilyAllIn` (same order of magnitude and range). Add or adjust both together when pricing a new city.
@@ -395,6 +399,17 @@ Every city entry **must** include `faq`: an array of exactly **8** objects `{ "q
 ---
 
 ## Pre-flight checklist (run before saving a new city)
+
+> **MANDATORY — every model, every time.** A city is not "done" until both of these pass with no findings:
+>
+> ```bash
+> python3 scripts/validate_cities.py
+> python3 scripts/deep_audit_cities.py
+> ```
+>
+> If either reports issues, fix them before declaring the city complete. Do not declare success based on a `npm run build` alone — the build only checks JSON validity, not content quality.
+>
+> If the audit reports a new corruption pattern I haven't coded yet (e.g. a future Vienna/Rome-style template residue), **add a new pattern to `scripts/deep_audit_cities.py`** so the next model catches the same bug class automatically.
 
 Before completing a new city entry, verify:
 
@@ -418,4 +433,7 @@ Before completing a new city entry, verify:
 - [ ] `faq` present with **8** Q&As using the standard questions from RULE 9 (city-specific answers)
 - [ ] `weather` present with 12 `months` (run `scripts/generate_city_weather.py` after adding or moving a city)
 - [ ] No Thailand-only jargon (TM30, Thai 90-day site, Baht rents in Tokyo, etc.) unless `countrySlug` is `thailand`
+- [ ] No country-template residue from another city (e.g. Milan neighbourhoods in a Rome rewrite, Italian terms in a German city) — `deep_audit_cities.py` flags coded patterns; sample-read one section if you suspect drift
 - [ ] JSON is valid (run `python3 -c "import json; json.load(open('data/cities.json'))"`)
+- [ ] **`python3 scripts/validate_cities.py`** passes
+- [ ] **`python3 scripts/deep_audit_cities.py`** reports `No issues. Site matches Valencia standard.`
