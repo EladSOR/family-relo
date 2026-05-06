@@ -19,6 +19,37 @@ export function getLisbonPortoFaqForSchema(
   return faqItemsToSchema(getLisbonPortoFaqItems(lisbon, porto));
 }
 
+export function getGenericPairFaqForSchema(
+  a: Destination,
+  b: Destination,
+): { question: string; answer: string }[] {
+  return faqItemsToSchema(getGenericPairFaqItems(a, b));
+}
+
+/** Neutral FAQ for mixed pairs — compares table fields only, defers visas/taxes to guides. */
+export function getGenericPairFaqItems(a: Destination, b: Destination): BlogFaqItem[] {
+  return [
+    {
+      question: "Which city looks cheaper in the numbers on this page?",
+      answer: `Use the monthly all-in bands and the 3-bed rent anchors in the table—they are lifted straight from the ${a.city} and ${b.city} guides. Winner changes once you pick schools, suburbs, and commute; treat the headline figures as orientation, not a budget lock.`,
+    },
+    {
+      question: "What do the July and January climate rows mean?",
+      answer:
+        "They mirror each guide’s NASA POWER / MERRA-2 normals: typical highs, lows, and rain for those months—not a forecast for a single trip. Expand the weather cards before you judge heat, uniforms, or school-year outdoor time.",
+    },
+    {
+      question: "Where are housing portals, neighbourhood notes, and full visa wording?",
+      answer: `Each city guide linked above has searchable housing portals, childcare USD anchors, checklist items, and the full visa prose. This digest aggregates the headline cost and safety metrics so you compare both metros in one read.`,
+    },
+    {
+      question: "Is this legal, tax, or immigration advice?",
+      answer:
+        "No. Numbers and bullets mirror our guides only. Final eligibility, taxation, enrolment choices, or employer-sponsored routes need official authorities and licensed professionals tailored to your passport and income.",
+    },
+  ];
+}
+
 export function getBarcelonaMadridFaqForSchema(
   barcelona: Destination,
   madrid: Destination,
@@ -66,7 +97,7 @@ export function getLisbonPortoFaqItems(lisbon: Destination, porto: Destination):
     {
       question: "Do both cities use the same visa information?",
       answer:
-        "The national Portugal paths (including D8 for remote work) are the same; each guide has the full D8 and EU/Shengen text with consulate and official links. Your personal case still needs to match current rules.",
+        "The national Portugal paths (including D8 for remote work) are the same; each guide has the full D8 and EU/Schengen text with consulate and official links. Your personal case still needs to match current rules.",
     },
     {
       question: "Is this page enough for tax (e.g. NHR) or final visa decisions?",

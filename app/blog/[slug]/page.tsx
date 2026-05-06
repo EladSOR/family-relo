@@ -17,9 +17,15 @@ import {
 } from "@/components/blog/ComparisonPostBodies";
 import {
   getBarcelonaMadridFaqForSchema,
+  getGenericPairFaqForSchema,
   getLisbonPortoFaqForSchema,
   getValenciaLisbonFaqForSchema,
 } from "@/lib/blog/cityPairFaqs";
+import { PAIR_DIGEST_BY_SLUG } from "@/components/blog/pairDigestArticles";
+
+function isPairDigestSlug(slug: string): slug is keyof typeof PAIR_DIGEST_BY_SLUG {
+  return slug in PAIR_DIGEST_BY_SLUG;
+}
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -68,21 +74,27 @@ export default async function BlogPostPage({ params }: Props) {
   let faqs: { question: string; answer: string }[];
   let article: ReactNode;
 
-  switch (post.slug) {
-    case "valencia-vs-lisbon":
-      faqs = getValenciaLisbonFaqForSchema(d0, d1);
-      article = <ValenciaVsLisbonArticle valencia={d0} lisbon={d1} />;
-      break;
-    case "lisbon-vs-porto":
-      faqs = getLisbonPortoFaqForSchema(d0, d1);
-      article = <LisbonVsPortoArticle lisbon={d0} porto={d1} />;
-      break;
-    case "barcelona-vs-madrid":
-      faqs = getBarcelonaMadridFaqForSchema(d0, d1);
-      article = <BarcelonaVsMadridArticle barcelona={d0} madrid={d1} />;
-      break;
-    default:
-      notFound();
+  if (isPairDigestSlug(post.slug)) {
+    const PairArticle = PAIR_DIGEST_BY_SLUG[post.slug];
+    faqs = getGenericPairFaqForSchema(d0, d1);
+    article = <PairArticle a={d0} b={d1} />;
+  } else {
+    switch (post.slug) {
+      case "valencia-vs-lisbon":
+        faqs = getValenciaLisbonFaqForSchema(d0, d1);
+        article = <ValenciaVsLisbonArticle valencia={d0} lisbon={d1} />;
+        break;
+      case "lisbon-vs-porto":
+        faqs = getLisbonPortoFaqForSchema(d0, d1);
+        article = <LisbonVsPortoArticle lisbon={d0} porto={d1} />;
+        break;
+      case "barcelona-vs-madrid":
+        faqs = getBarcelonaMadridFaqForSchema(d0, d1);
+        article = <BarcelonaVsMadridArticle barcelona={d0} madrid={d1} />;
+        break;
+      default:
+        notFound();
+    }
   }
 
   return (

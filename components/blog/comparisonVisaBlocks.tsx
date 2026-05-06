@@ -90,3 +90,25 @@ export function VisaBlockPortugalD8Only({ a, b }: { a: Destination; b: Destinati
     </ul>
   );
 }
+
+/** Any pair — deep links only; wording stays neutral across mixed countries and visa regimes. */
+export function VisaBlockGenericPair({ a, b }: { a: Destination; b: Destination }) {
+  const aPath = `/${a.countrySlug}/${a.citySlug}`;
+  const bPath = `/${b.countrySlug}/${b.citySlug}`;
+  return (
+    <ul className="mt-3 list-inside list-disc space-y-2 text-base leading-relaxed text-slate-700">
+      <li>
+        <Link href={`${aPath}#visa`} className="font-semibold text-[#E84A4F] hover:underline">
+          {a.city} guide — visas & permits
+        </Link>
+        {`: each page lists routes that fit relocating families where we publish them — employment, investor, entrepreneurial, remote-work, or long-stay options — plus how to verify with official portals.`}
+      </li>
+      <li>
+        <Link href={`${bPath}#visa`} className="font-semibold text-[#E84A4F] hover:underline">
+          {b.city} guide — visas & permits
+        </Link>
+        {`: open the same section for thresholds, dependents, and the checklist items we anchor to schooling and tenancy steps in that metro.`}
+      </li>
+    </ul>
+  );
+}

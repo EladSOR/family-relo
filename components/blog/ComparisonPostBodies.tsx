@@ -6,6 +6,7 @@ import {
   VisaBlockSpainDnvAndPortugalD8,
   VisaBlockSpainDnvOnly,
 } from "./comparisonVisaBlocks";
+import { extractTypicalPrivateNurseryMonthlyBand } from "@/lib/blog/daycareBands";
 import { parseRentAnchor } from "@/lib/blog/parseBudget";
 import {
   getBarcelonaMadridFaqItems,
@@ -44,6 +45,15 @@ const BARCELONA_MADRID_RELATED = [
   { href: "/destinations", label: "Browse all destinations" },
 ] as const;
 
+function nurseryFeesCompareSentence(left: Destination, right: Destination): string {
+  const lBand = extractTypicalPrivateNurseryMonthlyBand(left);
+  const rBand = extractTypicalPrivateNurseryMonthlyBand(right);
+  if (lBand && rBand) {
+    return `${left.city} private nursery typical fees in our guide (${lBand}) vs ${right.city} (${rBand}) — same daycare bullets define these bands on each page.`;
+  }
+  return `Match the nursery "Typical fees" bullets in ${left.city} and ${right.city}; USD bands refresh with those childcare sections—not this digest.`;
+}
+
 export function ValenciaVsLisbonArticle({
   valencia,
   lisbon,
@@ -78,14 +88,27 @@ export function ValenciaVsLisbonArticle({
         vRent != null && lRent != null ? (
           <p>
             The rent line on each page is a one-line benchmark (3-bed / family context in the housing
-            section). In our data, {valencia.city}&apos;s anchor is <strong>lower</strong> (~$
-            {vRent.toLocaleString("en-US")} vs ~${lRent.toLocaleString("en-US")} / month). Many {lisbon.city}{" "}
-            families target the <strong>Cascais–Estoril corridor</strong>, where 3-beds in the guide can sit
-            above the central {lisbon.city} anchor — read the housing blocks before fixing a budget.
+            section). In our data{" "}
+            {(vRent < lRent ? valencia : lisbon).city}&apos;s anchor is <strong>lower</strong> (~$
+            {Math.min(vRent, lRent).toLocaleString("en-US")}
+            vs ~$
+            {Math.max(vRent, lRent).toLocaleString("en-US")} / month).{" "}
+            {lRent > vRent ? (
+              <>
+                Many {lisbon.city} families target the <strong>Cascais–Estoril corridor</strong>, where 3-beds in
+                the guide can sit above the central {lisbon.city} anchor — read each housing section before locking
+                a budget.
+              </>
+            ) : (
+              <>
+                Beach-adjacent and premium districts around {valencia.city} can sit above the headline anchor—read
+                each housing block before you fix a budget.
+              </>
+            )}
           </p>
         ) : null
       }
-      childcareLine={`${valencia.city} private nursery in our data ~$330–$660/month vs ${lisbon.city} ~$550–$990/month (see each guide’s childcare section).`}
+      childcareLine={nurseryFeesCompareSentence(valencia, lisbon)}
       climateNote={`${valencia.city} runs hotter in peak summer; ${lisbon.city} is milder then but wetter in late autumn in this grid. For month-by-month planning, use the weather sections on each city guide.`}
       visaBlock={<VisaBlockSpainDnvAndPortugalD8 spain={valencia} portugal={lisbon} />}
       related={VALENCIA_LISBON_RELATED}
@@ -121,15 +144,17 @@ export function LisbonVsPortoArticle({ lisbon, porto }: { lisbon: Destination; p
       rentNote={
         lRent != null && pRent != null ? (
           <p>
-            In our data, {porto.city}&apos;s 3-bed rent anchor is <strong>lower</strong> than {lisbon.city}
-            &apos;s (~${pRent.toLocaleString("en-US")} vs ~${lRent.toLocaleString("en-US")} / month on the
-            line-item cards). In practice, {lisbon.city} families often look to <strong>Cascais</strong> and the
-            coast; {porto.city} to <strong>Foz do Douro</strong> and <strong>Matosinhos</strong> — use the
-            housing section in each guide for full band tables.
+            In our data, {(pRent < lRent ? porto : lisbon).city}&apos;s 3-bed rent anchor is{" "}
+            <strong>lower</strong> than {(pRent < lRent ? lisbon : porto).city}&apos;s (~$
+            {Math.min(pRent, lRent).toLocaleString("en-US")} vs ~$
+            {Math.max(pRent, lRent).toLocaleString("en-US")}
+            / month on the cards). In practice, {lisbon.city} families often look to{" "}
+            <strong>Cascais</strong> and the coast; {porto.city} to <strong>Foz do Douro</strong> and{" "}
+            <strong>Matosinhos</strong> — housing sections carry the full band tables.
           </p>
         ) : null
       }
-      childcareLine={`${porto.city} private nursery in our data ~$440–$880/month vs ${lisbon.city} ~$550–$990/month (see each guide).`}
+      childcareLine={nurseryFeesCompareSentence(lisbon, porto)}
       climateNote={`${lisbon.city} is a bit milder in mid-summer in this grid; both get Atlantic-influenced rain in the cooler months. Check each guide’s month-by-month weather for school-year planning.`}
       visaBlock={<VisaBlockPortugalD8Only a={lisbon} b={porto} />}
       related={LISBON_PORTO_RELATED}
@@ -172,16 +197,17 @@ export function BarcelonaVsMadridArticle({
       rentNote={
         bRent != null && mRent != null ? (
           <p>
-            {madrid.city}&apos;s 3-bed rent anchor is <strong>lower</strong> than {barcelona.city}&apos;s in
-            our data (~${mRent.toLocaleString("en-US")} vs ~${bRent.toLocaleString("en-US")} / month on the
-            cost cards). {barcelona.city} families often end up in <strong>Sarrià</strong> and{" "}
-            <strong>Sant Cugat</strong> for schools; {madrid.city} in <strong>Pozuelo</strong> and{" "}
-            <strong>Las Rozas</strong> — those suburbs sit in the housing blocks, not only in the single-line
-            anchor.
+            {(mRent < bRent ? madrid : barcelona).city}&apos;s 3-bed rent anchor is <strong>lower</strong> than{" "}
+            {(mRent < bRent ? barcelona : madrid).city}&apos;s in our data (~$
+            {Math.min(mRent, bRent).toLocaleString("en-US")} vs ~$
+            {Math.max(mRent, bRent).toLocaleString("en-US")} / month on the cards). {barcelona.city} families
+            often end up in <strong>Sarrià</strong> and <strong>Sant Cugat</strong> for schools; {madrid.city} in{" "}
+            <strong>Pozuelo</strong> and <strong>Las Rozas</strong> — those suburbs sit in the housing blocks, not
+            only the single-line anchor.
           </p>
         ) : null
       }
-      childcareLine={`${barcelona.city} private nursery in our data ~$385–$770/month vs ${madrid.city} ~$330–$715/month (see each guide).`}
+      childcareLine={nurseryFeesCompareSentence(barcelona, madrid)}
       climateNote={`${barcelona.city} is coastal mediterranean; ${madrid.city} is a hotter, drier plateau summer. January lows are cooler inland in this grid. Use each guide’s full weather for heat and school pickup planning.`}
       visaBlock={<VisaBlockSpainDnvOnly a={barcelona} b={madrid} />}
       related={BARCELONA_MADRID_RELATED}

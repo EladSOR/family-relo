@@ -91,6 +91,9 @@ export type DataDigestCityComparisonArticleProps = {
   /** One short line after climate table */
   climateNote: string;
   visaBlock: ReactNode;
+  /** Override when the pair is not a single “remote work visa” story (e.g. mixed countries). */
+  visaSectionTitle?: string;
+  visaSectionIntro?: ReactNode;
   related: readonly { href: string; label: string }[];
   faq: BlogFaqItem[];
 };
@@ -104,6 +107,13 @@ export function DataDigestCityComparisonArticle({
   childcareLine,
   climateNote,
   visaBlock,
+  visaSectionTitle = "Remote work visas (headline thresholds)",
+  visaSectionIntro = (
+    <p className="mt-2 text-base leading-relaxed text-slate-700">
+      Income lines below match the visa blocks in each guide. For dependencies, family add-ons, and current
+      processing times, use the consulate and official links from those sections.
+    </p>
+  ),
   related,
   faq,
 }: DataDigestCityComparisonArticleProps) {
@@ -286,11 +296,8 @@ export function DataDigestCityComparisonArticle({
       </div>
       <p className="mt-3 text-sm leading-relaxed text-slate-600">{climateNote}</p>
 
-      <h2 className="mt-10 text-xl font-bold text-slate-900">Remote work visas (headline thresholds)</h2>
-      <p className="mt-2 text-base leading-relaxed text-slate-700">
-        Income lines below match the visa blocks in each guide. For dependencies, family add-ons, and current
-        processing times, use the consulate and official links from those sections.
-      </p>
+      <h2 className="mt-10 text-xl font-bold text-slate-900">{visaSectionTitle}</h2>
+      {visaSectionIntro}
       {visaBlock}
 
       <h2 className="mt-10 text-xl font-bold text-slate-900">Family fit in our guides</h2>
