@@ -11,7 +11,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Dubai vs Abu Dhabi: rent, budgets, school bands, childcare, safety, climate. Pulled from both UAE guides—open each for visas, housing, checklists—not legal advice.",
     publishedAt: "2026-05-15",
-    contentTypeLabel: "Data digest",
     tags: ["dubai", "abu-dhabi", "uae", "compare"],
     relatedCityIds: ["dubai-ae", "abu-dhabi-ae"],
     listTitle: "Dubai vs Abu Dhabi: rent, schools & UAE costs",
@@ -22,7 +21,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Bangkok or Chiang Mai: rent, bilingual fees, childcare, nanny lines, safety, climate. Mirrors both Thai guides—visa wording stays full-length—not advice.",
     publishedAt: "2026-05-14",
-    contentTypeLabel: "Data digest",
     tags: ["bangkok", "chiang-mai", "thailand", "compare"],
     relatedCityIds: ["bangkok-th", "chiang-mai-th"],
     listTitle: "Bangkok vs Chiang Mai: rent, schools & Thai costs",
@@ -33,7 +31,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Sydney vs Melbourne: rent anchors, budgets, school bands, nanny rates, safety, climate from each Australian guide—open pages next for visas and suburbs—not advice.",
     publishedAt: "2026-05-13",
-    contentTypeLabel: "Data digest",
     tags: ["sydney", "melbourne", "australia", "compare"],
     relatedCityIds: ["sydney-au", "melbourne-au"],
     listTitle: "Sydney vs Melbourne: rent, schools & Aussie costs",
@@ -44,7 +41,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Auckland vs Wellington: rent, budgets, school bands, childcare, safety, climate from each NZ guide—then reopen checklists on those pages.",
     publishedAt: "2026-05-12",
-    contentTypeLabel: "Data digest",
     tags: ["auckland", "wellington", "new-zealand", "compare"],
     relatedCityIds: ["auckland-nz", "wellington-nz"],
     listTitle: "Auckland vs Wellington: rent, schools & NZ costs",
@@ -55,7 +51,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Toronto vs Vancouver: rent, budgets, school brackets, childcare, safety, seasonal rows lifted from both Canadian guides. Housing portals remain on those pages.",
     publishedAt: "2026-05-11",
-    contentTypeLabel: "Data digest",
     tags: ["toronto", "vancouver", "canada", "compare"],
     relatedCityIds: ["toronto-ca", "vancouver-ca"],
     listTitle: "Toronto vs Vancouver: rent, schools & Canada costs",
@@ -66,7 +61,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Barcelona or Malaga: rent, budgets, school categories, childcare, climate, safety. Shares Spain remote-work framing; visas live on each coastal guide.",
     publishedAt: "2026-05-10",
-    contentTypeLabel: "Data digest",
     tags: ["barcelona", "malaga", "spain", "compare"],
     relatedCityIds: ["barcelona-es", "malaga-es"],
     listTitle: "Barcelona vs Malaga: rent, schools & coast life",
@@ -77,7 +71,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Valencia or Alicante: rent, budgets, school bands, nanny lines, Mediterranean climate snapshots. Mirrors both Spanish relocation guides—not legal advice.",
     publishedAt: "2026-05-09",
-    contentTypeLabel: "Data digest",
     tags: ["valencia", "alicante", "spain", "compare"],
     relatedCityIds: ["valencia-es", "alicante-es"],
     listTitle: "Valencia vs Alicante: rent, schools & family costs",
@@ -88,7 +81,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Berlin or Munich: rent, multilingual school dues, daycare cues, nanny rates, budgets, seasonal rows. Figures match both German relocation guides.",
     publishedAt: "2026-05-08",
-    contentTypeLabel: "Data digest",
     tags: ["berlin", "munich", "germany", "compare"],
     relatedCityIds: ["berlin-de", "munich-de"],
     listTitle: "Berlin vs Munich: rent, schools & Germany costs",
@@ -99,7 +91,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Amsterdam vs Zurich: rent, budgets, school brackets, childcare, safety, climate in one table. Full nuance stays on each premium European guide—not tax advice.",
     publishedAt: "2026-05-07",
-    contentTypeLabel: "Data digest",
     tags: ["amsterdam", "zurich", "netherlands", "switzerland", "compare"],
     relatedCityIds: ["amsterdam-nl", "zurich-ch"],
     listTitle: "Amsterdam vs Zurich: rent, schools & family costs",
@@ -110,7 +101,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Prague or Budapest: rent, bilingual tuition bands, budgets, nanny rates, safety, climate. Compare here, then follow each Central European guide for visas.",
     publishedAt: "2026-05-06",
-    contentTypeLabel: "Data digest",
     tags: ["prague", "budapest", "czech-republic", "hungary", "compare"],
     relatedCityIds: ["prague-cz", "budapest-hu"],
     listTitle: "Prague vs Budapest: rent, schools & Central Europe costs",
@@ -121,7 +111,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Lisbon or Porto? Compare cost of living, rent, school fees, childcare, safety, and weather for families. Portugal's capital versus the north.",
     publishedAt: "2026-04-27",
-    contentTypeLabel: "Data digest",
     tags: ["lisbon", "porto", "portugal", "compare"],
     relatedCityIds: ["lisbon-pt", "porto-pt"],
     listTitle: "Lisbon vs Porto: rent, schools & family costs",
@@ -132,7 +121,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Barcelona or Madrid with kids? Compare rent, budgets, school options, safety, and climate. Mediterranean coast versus Spain's inland capital.",
     publishedAt: "2026-04-27",
-    contentTypeLabel: "Data digest",
     tags: ["barcelona", "madrid", "spain", "compare"],
     relatedCityIds: ["barcelona-es", "madrid-es"],
     listTitle: "Barcelona vs Madrid: rent, schools & family life",
@@ -143,7 +131,6 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     metaDescription:
       "Valencia or Lisbon for family life? Compare rent, all-in costs, international schools, childcare, and safety. Spain or Portugal in one read.",
     publishedAt: "2026-01-26",
-    contentTypeLabel: "Data digest",
     tags: ["valencia", "lisbon", "spain", "portugal", "compare"],
     relatedCityIds: ["valencia-es", "lisbon-pt"],
     listTitle: "Valencia vs Lisbon: rent, schools & costs",

@@ -43,8 +43,7 @@ export default function BlogIndexPage() {
           {posts.map((p) => (
             <li key={p.slug}>
               <article className="rounded-2xl border border-stone-200 bg-white p-5 shadow-sm transition hover:border-stone-300 md:p-6">
-                <p className="text-xs text-slate-500">{p.contentTypeLabel}</p>
-                <h2 className="mt-2 text-xl font-bold text-slate-900">
+                <h2 className="text-xl font-bold text-slate-900">
                   <Link href={`/blog/${p.slug}`} className="hover:underline">
                     {p.listTitle}
                   </Link>

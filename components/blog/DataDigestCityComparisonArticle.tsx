@@ -155,8 +155,7 @@ export function DataDigestCityComparisonArticle({
         </div>
       </div>
 
-      <p className="text-xs font-medium uppercase tracking-wider text-slate-500">Data digest</p>
-      <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">{headline}</h1>
+      <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">{headline}</h1>
       <p className="mt-3 text-sm text-slate-600">
         Side-by-side rent, budgets, school fees, safety, and weather—so you can compare both cities in one
         read. Follow the links to each place for the full checklists, neighbourhoods, and visa detail.

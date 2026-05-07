@@ -6,8 +6,6 @@ export type BlogPostMeta = {
   metaDescription: string;
   /** ISO date (YYYY-MM-DD) */
   publishedAt: string;
-  /** Display label, e.g. "Data digest" */
-  contentTypeLabel: string;
   /** Optional — defaults to `publishedAt` */
   updatedAt?: string;
   tags: string[];

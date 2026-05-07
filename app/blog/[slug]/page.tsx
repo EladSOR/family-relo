@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     images: [
       {
         url: resolveFirstCityHeroForOg(post),
-        alt: `${post.listTitle} — FamiRelo data digest`,
+        alt: `${post.listTitle} — FamiRelo`,
       },
     ],
   });

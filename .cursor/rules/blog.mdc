@@ -14,7 +14,7 @@ globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/bl
 
 - Routes: `/blog` (index), `/blog/[slug]`.
 - Register every post in `lib/blog/registry.ts` with `getAllBlogPosts()` / `BLOG_POSTS`.
-- Each post: `listTitle` (H1, no brand), `title` (SERP, ends with ` | FamiRelo`, ≤ 70 characters total; target **~65–70** with keywords), `metaDescription` (≤ **165** characters, **one or two complete sentences** — write copy that already fits; `clipMetaDescription` is a last-resort trim with **no** `…`), `relatedCityIds` from `data/cities.json`, `publishedAt`, `tags`, `contentTypeLabel` (e.g. `Data digest`).
+- Each post: `listTitle` (H1, no brand), `title` (SERP, ends with ` | FamiRelo`, ≤ 70 characters total; target **~65–70** with keywords), `metaDescription` (≤ **165** characters, **one or two complete sentences** — write copy that already fits; `clipMetaDescription` is a last-resort trim with **no** `…`), `relatedCityIds` from `data/cities.json`, `publishedAt`, `tags`.
 
 ## SERP (align with `serp-metadata.mdc` and `serp-timeless.mdc`)
 
@@ -26,7 +26,7 @@ globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/bl
 
 - **Layout:** `StickySearchHeader`, `Breadcrumb` (`Home` → `Blog` → current), `min-h-screen bg-[#F5EFE8]`, `max-w-3xl` article column — same family as country/city pages.
 - **Readability:** Short paragraphs, real `<h2>` / `<h3>`, tables with `overflow-x-auto`, avoid walls of text.
-- **Byline / framing:** “Data digest” (no dates in the title/subline unless the product owner asked). **No “last reviewed {month}” in SERP/OG** — see `serp-timeless.mdc`. The article body can say figures match the city guides, without a review month in the byline.
+- **Byline / framing:** No dated byline on posts (no “last reviewed {month}” in SERP/OG) — see `serp-timeless.mdc`. The article body can say figures match the city guides, without a review month in the byline.
 - **No “what this page is not” section in the middle** of a post — stay useful. One short scope line in the intro or a single FAQ is enough for legal/careful phrasing.
 - **FAQ:** end with `BlogFaqSection` (accordion, same pattern as city guide FAQ) — not a flat `<dl>` list.
 - **Footer block:** `You might also like` (or the same phrasing) with **internal** links to relevant city/country/destinations pages.
