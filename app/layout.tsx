@@ -5,6 +5,7 @@ import { SITE_BRAND_NAME, SITE_DESCRIPTION } from "@/lib/seo/constants";
 import { getSiteUrl } from "@/lib/siteUrl";
 import MapToggle from "@/components/home/MapToggle";
 import CompareBanner from "@/components/compare/CompareBanner";
+import EmailCapture from "@/components/EmailCapture";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import "./globals.css";
@@ -67,15 +68,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <MapToggle cities={citiesData as Destination[]} />
         <CompareBanner />
         {/* pb-20 md:pb-24 clears the fixed MapToggle pill (bottom-5 / md:bottom-7 + pill height) */}
-        <footer className="border-t border-slate-100 bg-white px-4 pb-20 pt-6 text-center text-xs text-slate-400 md:pb-24">
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/" className="hover:text-slate-700">Home</Link>
-            <Link href="/compare" className="hover:text-slate-700">Compare cities</Link>
-            <Link href="/legal/privacy" className="hover:text-slate-700">Privacy Policy</Link>
-            <Link href="/legal/terms" className="hover:text-slate-700">Terms of Use</Link>
-            <a href="mailto:hello@famirelo.com" className="hover:text-slate-700">hello@famirelo.com</a>
+        <footer className="border-t border-slate-100 bg-white px-4 pb-20 pt-10 text-xs text-slate-400 md:pb-24">
+          <div className="mx-auto max-w-3xl">
+            {/* Newsletter signup */}
+            <div className="mb-8 flex flex-col items-center gap-3 text-center">
+              <p className="text-sm font-bold text-slate-700">
+                Get relocation tips for families
+              </p>
+              <p className="-mt-1 text-xs text-slate-400">
+                One email when we publish a new city guide or feature. No spam.
+              </p>
+              <EmailCapture
+                source="footer"
+                variant="footer"
+                cta="Subscribe"
+                successMsg="You're in — see you soon."
+              />
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-wrap justify-center gap-4 border-t border-slate-100 pt-6 text-center">
+              <Link href="/" className="hover:text-slate-700">Home</Link>
+              <Link href="/compare" className="hover:text-slate-700">Compare cities</Link>
+              <Link href="/legal/privacy" className="hover:text-slate-700">Privacy Policy</Link>
+              <Link href="/legal/terms" className="hover:text-slate-700">Terms of Use</Link>
+              <a href="mailto:hello@famirelo.com" className="hover:text-slate-700">hello@famirelo.com</a>
+            </div>
+            <p className="mt-3 text-center">© {new Date().getFullYear()} Famirelo. All rights reserved.</p>
           </div>
-          <p className="mt-3">© {new Date().getFullYear()} Famirelo. All rights reserved.</p>
         </footer>
       </body>
     </html>
