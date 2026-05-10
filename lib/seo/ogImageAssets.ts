@@ -24,11 +24,11 @@ export async function loadPlusJakartaFonts() {
   ];
 }
 
-/** Shared aerial background used on generated social cards (`public/og-home.png`). */
+/** Shared aerial background used on generated social cards (`public/og-home.jpg`). */
 export async function readBrandedOgBackgroundDataUrl(): Promise<string | null> {
   try {
-    const buf = await readFile(join(process.cwd(), "public/og-home.png"));
-    return `data:image/png;base64,${buf.toString("base64")}`;
+    const buf = await readFile(join(process.cwd(), "public/og-home.jpg"));
+    return `data:image/jpeg;base64,${buf.toString("base64")}`;
   } catch {
     return null;
   }
