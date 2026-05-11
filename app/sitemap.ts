@@ -2,10 +2,13 @@ import type { MetadataRoute } from "next";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import { BLOG_POSTS } from "@/lib/blog/registry";
-import { getAbsoluteSiteUrl } from "@/lib/siteUrl";
+import { getSiteUrl } from "@/lib/siteUrl";
 
-/** Resolve URLs from the live request host (e.g. famirelo.com), not the Vercel deployment hostname. */
-export const dynamic = "force-dynamic";
+/**
+ * Static at build time: avoids a function invocation per bot fetch.
+ * Site URL resolves from `NEXT_PUBLIC_SITE_URL` or `https://famirelo.com` (see siteUrl.ts).
+ */
+export const dynamic = "force-static";
 
 function lastReviewedToDate(raw: string | undefined): Date | undefined {
   if (!raw) return undefined;
@@ -15,7 +18,7 @@ function lastReviewedToDate(raw: string | undefined): Date | undefined {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = await getAbsoluteSiteUrl();
+  const base = getSiteUrl();
   const cities = citiesData as Destination[];
   const now = new Date();
 

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAbsoluteSiteUrl } from "@/lib/siteUrl";
+import { getSiteUrl } from "@/lib/siteUrl";
 
 export const dynamic = "force-static";
 
@@ -30,8 +30,8 @@ const BLOCKED_BOTS = [
   "cohere-ai",         // Cohere training
 ];
 
-export default async function robots(): Promise<MetadataRoute.Robots> {
-  const base = await getAbsoluteSiteUrl();
+export default function robots(): MetadataRoute.Robots {
+  const base = getSiteUrl();
 
   return {
     rules: [
@@ -43,6 +43,9 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
         userAgent: "*",
         allow: "/",
         disallow: ["/account", "/auth/", "/compare/build", "/compare/results", "/api/"],
+        // 10s between requests for any non-priority crawler — caps the read rate without blocking.
+        // Googlebot ignores this (uses its own Search Console rate setting), so SEO is unaffected.
+        crawlDelay: 10,
       },
     ],
     sitemap: `${base}/sitemap.xml`,
