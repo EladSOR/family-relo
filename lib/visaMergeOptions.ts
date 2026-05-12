@@ -18,6 +18,10 @@ export const SCHENGEN_SHORT_STAY_COUNTRY_SLUGS = new Set([
   "austria",
   "denmark",
   "switzerland",
+  "sweden",
+  "belgium",
+  "estonia",
+  "romania",
 ]);
 
 function schengenShortStayOption(cityName: string, countryName: string): VisaOption {

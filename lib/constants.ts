@@ -122,6 +122,22 @@ export const CITY_IMAGES: Record<string, string> = {
   "Medellín":       "https://images.unsplash.com/photo-1512250431446-d0b4b57b27ec?w=900&q=80",
   "Buenos Aires":   "https://images.unsplash.com/photo-1589909202802-8f4aadce1849?w=900&q=80",
   "Lima":           "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=900&q=80",
+  // ── Batch to 100
+  "Bucharest":         "https://images.unsplash.com/photo-1574616979112-f9f52d3747f8?w=900&q=80",
+  "Tallinn":           "https://images.unsplash.com/photo-1724178166647-dae6e9372110?w=900&q=80",
+  "Stockholm":         "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=900&q=80",
+  "Brussels":          "https://images.unsplash.com/photo-1573995890753-a4f23342db17?w=900&q=80",
+  "Tbilisi":           "https://images.unsplash.com/photo-1603350576276-24747f7bbf40?w=900&q=80",
+  "Hamburg":           "https://images.unsplash.com/photo-1473615695634-d284ec918736?w=900&q=80",
+  "The Hague":         "https://images.unsplash.com/photo-1586174035695-35ab9e19215c?w=900&q=80",
+  "Bilbao":            "https://images.unsplash.com/photo-1566993850427-6324a91bbd32?w=900&q=80",
+  "Lyon":              "https://images.unsplash.com/photo-1608123102391-9e894f392802?w=900&q=80",
+  "Naples":            "https://images.unsplash.com/photo-1609244283184-96db6d696573?w=900&q=80",
+  "Faro":              "https://images.unsplash.com/photo-1608649944716-228404a0a8bb?w=900&q=80",
+  "Boston":            "https://images.unsplash.com/photo-1565127803082-69dd82351360?w=900&q=80",
+  "San Diego":         "https://images.unsplash.com/photo-1519954352454-2d5a7353e277?w=900&q=80",
+  "Calgary":           "https://images.unsplash.com/photo-1526863336296-fac32d550655?w=900&q=80",
+
 };
 
 export const FALLBACK_IMAGE =

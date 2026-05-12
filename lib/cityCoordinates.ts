@@ -175,4 +175,20 @@ export const CITY_COORDINATES: Record<string, CityCoords> = {
   // ── India
   "bengaluru":    { lat: 12.9716, lng: 77.5946 },
   "mumbai":       { lat: 19.0760, lng: 72.8777 },
+  // ── Batch to 100
+  "bucharest":       { lat: 44.4268, lng: 26.1025 },  // Romania
+  "tallinn":         { lat: 59.4370, lng: 24.7536 },  // Estonia
+  "stockholm":       { lat: 59.3293, lng: 18.0686 },  // Sweden
+  "brussels":        { lat: 50.8503, lng: 4.3517 },  // Belgium
+  "tbilisi":         { lat: 41.7151, lng: 44.8271 },  // Georgia
+  "hamburg":         { lat: 53.5511, lng: 9.9937 },  // Germany
+  "the-hague":       { lat: 52.0705, lng: 4.3007 },  // Netherlands
+  "bilbao":          { lat: 43.2630, lng: -2.9350 },  // Spain
+  "lyon":            { lat: 45.7640, lng: 4.8357 },  // France
+  "naples":          { lat: 40.8518, lng: 14.2681 },  // Italy
+  "faro":            { lat: 37.0194, lng: -7.9304 },  // Portugal
+  "boston":          { lat: 42.3601, lng: -71.0589 },  // USA
+  "san-diego":       { lat: 32.7157, lng: -117.1611 },  // USA
+  "calgary":         { lat: 51.0447, lng: -114.0719 },  // Canada
+
 };

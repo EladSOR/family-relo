@@ -68,7 +68,7 @@ COUNTRY_CODE = {
     "united-kingdom": "GB",
     "usa": "US",
     "uruguay": "UY",
-    "vietnam": "VN",
+    "vietnam": "VN",    "romania": "RO",    "estonia": "EE",    "sweden": "SE",    "belgium": "BE",    "georgia": "GE",
 }
 
 MONTH_KEYS = [
