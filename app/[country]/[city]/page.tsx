@@ -609,7 +609,7 @@ function Section({
     <details id={id} className="group rounded-2xl bg-white shadow-sm scroll-mt-24">
 
       {/* ── Header — always visible, acts as tap target on mobile ──────── */}
-      <summary className="flex cursor-pointer select-none list-none items-center gap-3 p-3.5 [&::-webkit-details-marker]:hidden md:cursor-default md:p-6">
+      <summary className="flex cursor-pointer select-none list-none items-center gap-3 p-3.5 [&::-webkit-details-marker]:hidden md:p-6">
         <h2 className="flex min-w-0 flex-1 items-center gap-2 text-base font-bold text-slate-900">
           {icon}
           <span className="min-w-0">{title}</span>
