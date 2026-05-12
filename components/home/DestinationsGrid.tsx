@@ -6,6 +6,7 @@ interface Props {
 }
 
 export default function DestinationsGrid({ cities }: Props) {
+  const countryCount = new Set(cities.map((c) => c.countrySlug)).size;
   return (
     // Warm sand-linen background — premium, travel-inspired, not plain white.
     // z-0 keeps it strictly behind the hero section's search popovers (z-20).
@@ -18,7 +19,7 @@ export default function DestinationsGrid({ cities }: Props) {
         <div className="mb-4 flex items-center gap-3">
           <span className="h-px w-8 bg-[#FF5A5F]" />
           <p className="text-sm font-bold uppercase tracking-widest text-[#FF5A5F]">
-            {cities.length} destinations
+            {cities.length} destinations · {countryCount} countries
           </p>
         </div>
 

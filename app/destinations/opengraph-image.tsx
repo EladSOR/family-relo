@@ -12,7 +12,9 @@ export const contentType = "image/png";
 const { width: W, height: H } = OG_CARD;
 
 export default async function Image() {
-  const count = (citiesData as Destination[]).length;
+  const cities = citiesData as Destination[];
+  const count = cities.length;
+  const countryCount = new Set(cities.map((c) => c.countrySlug)).size;
   const [fonts, bgDataUrl] = await Promise.all([
     loadPlusJakartaFonts(),
     readBrandedOgBackgroundDataUrl(),
@@ -115,7 +117,7 @@ export default async function Image() {
                   backgroundColor: "#34d399",
                 }}
               />
-              {count} family-friendly cities
+              {count} destinations · {countryCount} countries
             </div>
             <div
               style={{

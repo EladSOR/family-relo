@@ -22,6 +22,7 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function DestinationsPage() {
   const cities = citiesData as Destination[];
+  const countryCount = new Set(cities.map((c) => c.countrySlug)).size;
   const siteUrl = getSiteUrl();
   const ogAbs = new URL(SITE_DESTINATIONS_OG_IMAGE, `${siteUrl}/`).href;
 
@@ -40,7 +41,7 @@ export default function DestinationsPage() {
         <div className="mb-3 flex items-center gap-3 md:mb-4">
           <span className="h-px w-8 bg-[#FF5A5F]" />
           <p className="text-sm font-bold uppercase tracking-widest text-[#FF5A5F]">
-            {cities.length} destinations
+            {cities.length} destinations · {countryCount} countries
           </p>
         </div>
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
