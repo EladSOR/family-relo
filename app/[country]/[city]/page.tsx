@@ -6,7 +6,7 @@ import {
   MapPin, Shield, Home, Utensils, Wallet,
   Stethoscope, GraduationCap, FileText, ExternalLink,
   CheckCircle2, AlertTriangle, Baby, ClipboardList,
-  BookOpen, Landmark, CreditCard, Users, ChevronDown, HelpCircle, Cloud,
+  BookOpen, Heart, Landmark, CreditCard, Users, ChevronDown, HelpCircle, Cloud,
 } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import countriesData from "@/data/countries.json";
@@ -212,7 +212,7 @@ export default async function CityPage({ params }: Props) {
         </Section>
 
         {/* ── Family fit ────────────────────────────────────────────────── */}
-        <Section title="Family fit">
+        <Section title="Family fit" icon={<Heart size={16} className="text-slate-500" />}>
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
               <p className="mb-3 text-xs font-bold uppercase tracking-wider text-green-700">Great for</p>
