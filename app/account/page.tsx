@@ -159,13 +159,13 @@ export default async function AccountPage() {
                     No reports yet
                   </p>
                   <p className="mb-4 text-xs text-slate-400">
-                    Build a free preview — full reports unlock at launch.
+                    Build a comparison — preview is free, full report is $9.
                   </p>
                   <Link
                     href="/compare/build"
                     className="inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
                   >
-                    Build free preview
+                    Build a report
                     <ArrowRight size={14} />
                   </Link>
                 </>
@@ -174,10 +174,9 @@ export default async function AccountPage() {
           )}
         </div>
 
-        {/* Coming soon note — no purchase yet */}
         {!hasPurchase && (
           <p className="mt-5 text-center text-xs text-slate-400">
-            Full reports are launching soon.{" "}
+            One-time $9 per report, $19 for a 3-report bundle.{" "}
             <Link href="/compare" className="font-semibold text-[#FF5A5F] hover:underline">
               See what&apos;s included →
             </Link>

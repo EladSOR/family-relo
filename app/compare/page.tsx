@@ -95,7 +95,7 @@ export default function CompareLandingPage() {
         <div className="mx-auto max-w-2xl">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] md:mb-6 md:px-4 md:py-2 md:text-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A5F]" />
-            Coming soon · Free preview available now
+            One-time payment · No subscription
           </div>
           <h1 className="mb-4 text-3xl font-black tracking-tight text-slate-900 md:mb-5 md:text-6xl">
             Stop guessing.{" "}
@@ -238,7 +238,7 @@ export default function CompareLandingPage() {
                   <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 shadow-md">
                     <Lock size={13} className="text-slate-400" />
                     <span className="text-xs font-bold text-slate-600">
-                      Full report — coming soon
+                      Unlock full report — $9
                     </span>
                   </div>
                 </div>
@@ -373,13 +373,12 @@ export default function CompareLandingPage() {
                   </li>
                 ))}
               </ul>
-              <button
-                type="button"
-                disabled
-                className="w-full cursor-not-allowed rounded-xl bg-slate-100 py-3 text-sm font-bold text-slate-400"
+              <Link
+                href="/compare/build"
+                className="block w-full rounded-xl bg-slate-900 py-3 text-center text-sm font-bold text-white transition-all hover:bg-slate-700"
               >
-                Launching soon
-              </button>
+                Build a report
+              </Link>
             </div>
 
             {/* Bundle */}
@@ -408,15 +407,14 @@ export default function CompareLandingPage() {
                   </li>
                 ))}
               </ul>
-              <button
-                type="button"
-                disabled
-                className="w-full cursor-not-allowed rounded-xl bg-slate-200 py-3 text-sm font-bold text-slate-400"
+              <Link
+                href="/compare/build"
+                className="block w-full rounded-xl bg-[#FF5A5F] py-3 text-center text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
               >
-                Launching soon
-              </button>
+                Build a report
+              </Link>
               <p className="mt-2.5 text-center text-[11px] text-slate-400">
-                Requires a free account to save your reports
+                Pick the bundle at checkout to save 3 reports to your account
               </p>
             </div>
           </div>
@@ -430,7 +428,7 @@ export default function CompareLandingPage() {
               <ArrowRight size={16} strokeWidth={2.5} />
             </Link>
             <p className="mt-3 text-xs text-slate-400">
-              See your match scores now — full reports unlock at launch
+              See your match scores free — unlock the full report at the end
             </p>
           </div>
         </div>
@@ -498,7 +496,7 @@ export default function CompareLandingPage() {
           </h2>
           <p className="mb-8 text-slate-500">
             Build your comparison now — see the match scores and budget fit for free.
-            Full report unlocks at launch.
+            Unlock the full report with a one-time payment.
           </p>
           <Link
             href="/compare/build"

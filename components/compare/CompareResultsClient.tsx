@@ -746,6 +746,19 @@ export default function CompareResultsClient() {
       </nav>
 
       <div className="mx-auto max-w-4xl px-4 py-6 md:py-12">
+        {/* Post-payment confirmation */}
+        {unlockedViaPayment && (
+          <div className="mb-6 flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3">
+            <Check size={16} className="shrink-0 text-emerald-600" />
+            <div className="flex-1 text-sm">
+              <p className="font-bold text-emerald-800">Payment confirmed — full report unlocked</p>
+              <p className="text-xs text-emerald-700">
+                Saved to <Link href="/account" className="font-semibold underline">your account</Link>. Receipt sent by email.
+              </p>
+            </div>
+          </div>
+        )}
+
         {/* Report header */}
         <div className="mb-6 md:mb-8">
           <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F] md:text-xs">
