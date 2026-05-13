@@ -503,6 +503,8 @@ export default function CompareResultsClient() {
   const [unlockedViaPayment, setUnlockedViaPayment] = useState(false);
   const [checkoutLoading, setCheckoutLoading] = useState<"single" | "bundle" | null>(null);
   const [payError, setPayError] = useState<string | null>(null);
+  const [credits, setCredits] = useState<number | null>(null); // null = unknown / loading
+  const [redeeming, setRedeeming] = useState(false);
 
   const snapshotRef = useRef({
     scores: [] as CityScore[],
@@ -717,6 +719,83 @@ export default function CompareResultsClient() {
     void startCheckout(autoCheckoutPlan);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id, autoCheckoutPlan]);
+
+  // ── Fetch credit balance once user is known. Refreshes after redeem.
+  useEffect(() => {
+    if (!user) {
+      setCredits(null);
+      return;
+    }
+    let cancelled = false;
+    void (async () => {
+      try {
+        const r = await fetch("/api/credits/balance", { cache: "no-store" });
+        if (!r.ok || cancelled) return;
+        const data = (await r.json()) as { remaining?: number };
+        if (typeof data.remaining === "number") setCredits(data.remaining);
+      } catch { /* ignore */ }
+    })();
+    return () => { cancelled = true; };
+  }, [user?.id]);
+
+  async function redeemCredit() {
+    if (!user || redeeming) return;
+    setPayError(null);
+    setRedeeming(true);
+
+    const snap = snapshotRef.current;
+    const reportQs = new URLSearchParams(window.location.search);
+    reportQs.delete("session_id");
+    reportQs.delete("autoCheckout");
+    reportQs.delete("preview");
+    const reportUrl = `${window.location.pathname}?${reportQs.toString()}`;
+
+    try {
+      const r = await fetch("/api/comparisons/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          // omit purchase_id → server auto-picks oldest with credits
+          city_ids: snap.scores.map((s) => s.city.id),
+          city_names: snap.scores.map((s) => s.city.city),
+          inputs: {
+            budget: snap.budget,
+            familySize: snap.familySize,
+            workSituation: snap.work,
+            priorities: snap.priorities,
+            numKids: snap.numKids,
+            kidsAge: snap.kidsAge,
+          },
+          report_url: reportUrl,
+          top_match: snap.scores[0]?.city.city,
+          top_pct: snap.scores[0]?.matchPct,
+        }),
+      });
+
+      if (r.status === 402) {
+        setPayError("No credits remaining. Purchase a new report below.");
+        setCredits(0);
+        return;
+      }
+      if (!r.ok) {
+        setPayError("Could not unlock with credit. Try again.");
+        return;
+      }
+
+      const data = (await r.json()) as { duplicate?: boolean };
+      // Only decrement local count if a credit was actually consumed.
+      if (!data.duplicate) {
+        setCredits((c) => (typeof c === "number" ? Math.max(0, c - 1) : c));
+      }
+      setUnlockedViaPayment(true);
+      reportQs.set("preview", "true");
+      router.replace(`/compare/results?${reportQs.toString()}`);
+    } catch {
+      setPayError("Network error. Try again.");
+    } finally {
+      setRedeeming(false);
+    }
+  }
 
   function handleShare() {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -1058,58 +1137,86 @@ export default function CompareResultsClient() {
                   ))}
                 </ul>
 
-                {/* Two pricing options */}
-                <div className="grid grid-cols-2 gap-3">
-                  {/* $9 single */}
-                  <div className="flex flex-col rounded-xl border border-slate-200 p-4">
-                    <p className="mb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                      This report
-                    </p>
-                    <div className="mb-1 flex items-baseline gap-1">
-                      <span className="text-3xl font-black text-slate-900">$9</span>
-                      <span className="text-xs text-slate-400">one-time</span>
+                {credits && credits > 0 ? (
+                  /* ── Returning bundle/single owner with credits ───────── */
+                  <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-5">
+                    <div className="mb-3 flex items-center gap-2">
+                      <Check size={16} className="text-emerald-600" strokeWidth={2.5} />
+                      <p className="text-sm font-bold text-emerald-800">
+                        You have {credits} report{credits !== 1 ? "s" : ""} remaining
+                      </p>
                     </div>
-                    <p className="mb-4 text-xs text-slate-400">1 comparison · up to 3 cities</p>
-                    <button
-                      type="button"
-                      disabled={user === undefined || checkoutLoading !== null}
-                      onClick={() => { void startCheckout("single"); }}
-                      className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
-                    >
-                      {checkoutLoading === "single" ? "…" : "Pay $9"}
-                    </button>
-                  </div>
-
-                  {/* $19 bundle */}
-                  <div className="flex flex-col rounded-xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-4">
-                    <div className="mb-1.5 self-start rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
-                      Best value
-                    </div>
-                    <div className="mb-1 flex items-baseline gap-1">
-                      <span className="text-3xl font-black text-slate-900">$19</span>
-                      <span className="text-xs text-slate-400">one-time</span>
-                    </div>
-                    <p className="mb-1 text-xs font-semibold text-[#FF5A5F]">
-                      3 comparisons
-                    </p>
-                    <p className="mb-4 text-xs text-slate-500">
-                      Add 2 more reports for just $10 extra — save $8
+                    <p className="mb-4 text-xs text-emerald-700/80">
+                      Use 1 credit to unlock this report — no extra charge.
                     </p>
                     <button
                       type="button"
-                      disabled={user === undefined || checkoutLoading !== null}
-                      onClick={() => { void startCheckout("bundle"); }}
-                      className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400"
+                      disabled={redeeming}
+                      onClick={() => { void redeemCredit(); }}
+                      className="w-full cursor-pointer rounded-lg bg-emerald-600 py-3 text-sm font-bold text-white transition-all hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60"
                     >
-                      {checkoutLoading === "bundle" ? "…" : "Pay $19"}
+                      {redeeming ? "Unlocking…" : "Unlock with 1 credit"}
                     </button>
+                    <p className="mt-3 text-center text-[11px] text-emerald-700/70">
+                      {credits - 1} report{credits - 1 !== 1 ? "s" : ""} will remain after this one
+                    </p>
                   </div>
-                </div>
+                ) : (
+                  /* ── New customer / out of credits: show pay buttons ───── */
+                  <>
+                    <div className="grid grid-cols-2 gap-3">
+                      {/* $9 single */}
+                      <div className="flex flex-col rounded-xl border border-slate-200 p-4">
+                        <p className="mb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                          This report
+                        </p>
+                        <div className="mb-1 flex items-baseline gap-1">
+                          <span className="text-3xl font-black text-slate-900">$9</span>
+                          <span className="text-xs text-slate-400">one-time</span>
+                        </div>
+                        <p className="mb-4 text-xs text-slate-400">1 comparison · up to 3 cities</p>
+                        <button
+                          type="button"
+                          disabled={user === undefined || checkoutLoading !== null}
+                          onClick={() => { void startCheckout("single"); }}
+                          className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
+                        >
+                          {checkoutLoading === "single" ? "…" : "Pay $9"}
+                        </button>
+                      </div>
 
-                {user === null && (
-                  <p className="mt-3 text-center text-[11px] text-slate-400">
-                    You&apos;ll sign in with your email as part of checkout — takes 10 seconds.
-                  </p>
+                      {/* $19 bundle */}
+                      <div className="flex flex-col rounded-xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-4">
+                        <div className="mb-1.5 self-start rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
+                          Best value
+                        </div>
+                        <div className="mb-1 flex items-baseline gap-1">
+                          <span className="text-3xl font-black text-slate-900">$19</span>
+                          <span className="text-xs text-slate-400">one-time</span>
+                        </div>
+                        <p className="mb-1 text-xs font-semibold text-[#FF5A5F]">
+                          3 comparisons
+                        </p>
+                        <p className="mb-4 text-xs text-slate-500">
+                          Add 2 more reports for just $10 extra — save $8
+                        </p>
+                        <button
+                          type="button"
+                          disabled={user === undefined || checkoutLoading !== null}
+                          onClick={() => { void startCheckout("bundle"); }}
+                          className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400"
+                        >
+                          {checkoutLoading === "bundle" ? "…" : "Pay $19"}
+                        </button>
+                      </div>
+                    </div>
+
+                    {user === null && (
+                      <p className="mt-3 text-center text-[11px] text-slate-400">
+                        You&apos;ll sign in with your email as part of checkout — takes 10 seconds.
+                      </p>
+                    )}
+                  </>
                 )}
 
                 {payError && (

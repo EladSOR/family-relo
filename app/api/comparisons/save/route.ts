@@ -1,17 +1,20 @@
 /**
  * POST /api/comparisons/save
  *
- * Called after a successful Stripe payment to save the unlocked comparison
- * and decrement the purchase credit.
+ * Two modes:
+ * 1. Stripe-return: client sends `purchase_id` (from verify-session). Decrements that
+ *    specific purchase, then saves the comparison. Idempotent on (purchase_id, report_url).
+ * 2. Credit redeem: client omits `purchase_id`. Server picks the oldest purchase with
+ *    credits remaining (FIFO), decrements 1, and saves. Returns 402 if no credits.
  *
  * Body: {
- *   purchase_id: string       — the purchase row to decrement
- *   city_ids:    string[]     — e.g. ['valencia-es', 'lisbon-pt']
- *   city_names:  string[]     — e.g. ['Valencia', 'Lisbon']
- *   inputs:      object       — budget, family, work, priorities, kids
- *   report_url:  string       — full /compare/results?... URL
- *   top_match:   string       — city name with highest score
- *   top_pct:     number       — match % of top city
+ *   purchase_id?: string     — optional; if omitted server auto-picks
+ *   city_ids:    string[]    — e.g. ['valencia-es', 'lisbon-pt']
+ *   city_names:  string[]    — e.g. ['Valencia', 'Lisbon']
+ *   inputs:      object      — budget, family, work, priorities, kids
+ *   report_url:  string      — full /compare/results?... URL
+ *   top_match:   string      — city name with highest score
+ *   top_pct:     number      — match % of top city
  * }
  */
 
@@ -27,19 +30,20 @@ export async function POST(req: NextRequest) {
   }
 
   const body = await req.json();
-  const { purchase_id, city_ids, city_names, inputs, report_url, top_match, top_pct } = body;
+  const { city_ids, city_names, inputs, report_url, top_match, top_pct } = body;
+  let purchase_id: string | undefined = body.purchase_id;
 
   if (!city_ids?.length || !report_url) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
-  // Idempotent: same purchase + same report URL only saves once (Stripe return + refresh).
-  if (purchase_id) {
+  // ── Idempotency: if user already has a saved row for this exact URL, return it.
+  // Covers Stripe re-return AND duplicate redeem clicks (no double-decrement).
+  {
     const { data: existingRow } = await supabase
       .from("comparisons")
       .select("id")
       .eq("user_id", user.id)
-      .eq("purchase_id", purchase_id)
       .eq("report_url", report_url)
       .maybeSingle();
 
@@ -48,30 +52,60 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Verify purchase belongs to user and has credits remaining
-  if (purchase_id) {
-    const { data: purchase } = await supabase
+  // ── Resolve purchase_id (auto-pick when missing).
+  if (!purchase_id) {
+    const { data: purchases } = await supabase
       .from("purchases")
-      .select("id, credits_total, credits_used")
-      .eq("id", purchase_id)
+      .select("id, credits_total, credits_used, created_at")
       .eq("user_id", user.id)
-      .single();
+      .order("created_at", { ascending: true });
 
-    if (!purchase) {
-      return NextResponse.json({ error: "Purchase not found" }, { status: 404 });
-    }
-    if (purchase.credits_used >= purchase.credits_total) {
-      return NextResponse.json({ error: "No credits remaining" }, { status: 403 });
-    }
+    const usable = (purchases ?? []).find(
+      (p) => p.credits_used < p.credits_total,
+    );
 
-    // Decrement credit
-    await supabase
-      .from("purchases")
-      .update({ credits_used: purchase.credits_used + 1 })
-      .eq("id", purchase_id);
+    if (!usable) {
+      return NextResponse.json(
+        { error: "No credits remaining" },
+        { status: 402 },
+      );
+    }
+    purchase_id = usable.id;
   }
 
-  // Save comparison
+  // ── Verify chosen purchase + decrement (CAS to avoid double-spend on rapid clicks).
+  const { data: purchase } = await supabase
+    .from("purchases")
+    .select("id, credits_total, credits_used")
+    .eq("id", purchase_id)
+    .eq("user_id", user.id)
+    .single();
+
+  if (!purchase) {
+    return NextResponse.json({ error: "Purchase not found" }, { status: 404 });
+  }
+  if (purchase.credits_used >= purchase.credits_total) {
+    return NextResponse.json({ error: "No credits remaining" }, { status: 402 });
+  }
+
+  const { error: decErr, count } = await supabase
+    .from("purchases")
+    .update(
+      { credits_used: purchase.credits_used + 1 },
+      { count: "exact" },
+    )
+    .eq("id", purchase_id)
+    .eq("credits_used", purchase.credits_used);
+
+  if (decErr) {
+    return NextResponse.json({ error: decErr.message }, { status: 500 });
+  }
+  if (!count) {
+    // Lost a race against another request — caller should retry.
+    return NextResponse.json({ error: "Try again" }, { status: 409 });
+  }
+
+  // ── Save the comparison row.
   const { data, error } = await supabase
     .from("comparisons")
     .insert({
