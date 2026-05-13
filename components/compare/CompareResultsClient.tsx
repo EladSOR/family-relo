@@ -2,7 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Lock, ArrowLeft, Share2, Check, LogIn } from "lucide-react";
+import { MapPin, Lock, ArrowLeft, Share2, Check } from "lucide-react";
 import { useMemo, useState, useEffect, useRef } from "react";
 import citiesData from "@/data/cities.json";
 import { createClient } from "@/lib/supabase/client";
@@ -668,12 +668,24 @@ export default function CompareResultsClient() {
   }, [sessionIdParam, user?.id, router]);
 
   async function startCheckout(plan: "single" | "bundle") {
-    if (!user) return;
     setPayError(null);
     setCheckoutLoading(plan);
+
+    // Not signed in: bounce to login. Embed `autoCheckout` so we resume after they return.
+    if (!user) {
+      const qs = new URLSearchParams(window.location.search);
+      qs.delete("session_id");
+      qs.delete("preview");
+      qs.set("autoCheckout", plan);
+      const next = `${window.location.pathname}?${qs.toString()}`;
+      router.push(`/auth/login?next=${encodeURIComponent(next)}`);
+      return;
+    }
+
     const qs = new URLSearchParams(window.location.search);
     qs.delete("session_id");
     qs.delete("preview");
+    qs.delete("autoCheckout");
     const r = await fetch("/api/stripe/create-checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -682,8 +694,10 @@ export default function CompareResultsClient() {
     const data = (await r.json().catch(() => ({}))) as { url?: string; error?: string };
     setCheckoutLoading(null);
     if (r.status === 401) {
+      const qs2 = new URLSearchParams(window.location.search);
+      qs2.set("autoCheckout", plan);
       router.push(
-        `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
+        `/auth/login?next=${encodeURIComponent(window.location.pathname + "?" + qs2.toString())}`,
       );
       return;
     }
@@ -693,6 +707,16 @@ export default function CompareResultsClient() {
     }
     setPayError(data.error ?? "Checkout unavailable. Try again soon.");
   }
+
+  // After login redirect: if `?autoCheckout=plan` is set and user is signed in, fire checkout.
+  const autoCheckoutPlan = params.get("autoCheckout");
+  useEffect(() => {
+    if (!user || !autoCheckoutPlan) return;
+    if (autoCheckoutPlan !== "single" && autoCheckoutPlan !== "bundle") return;
+    if (checkoutLoading) return;
+    void startCheckout(autoCheckoutPlan);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user?.id, autoCheckoutPlan]);
 
   function handleShare() {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -1034,23 +1058,6 @@ export default function CompareResultsClient() {
                   ))}
                 </ul>
 
-                {/* Not logged in — sign in prompt */}
-                {user === null && (
-                  <div className="mb-4 flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
-                    <LogIn size={16} className="shrink-0 text-slate-400" />
-                    <div className="flex-1 min-w-0">
-                      <p className="text-xs font-bold text-slate-700">Sign in to purchase</p>
-                      <p className="text-xs text-slate-400">Free account — takes 10 seconds</p>
-                    </div>
-                    <Link
-                      href={`/auth/login?next=${encodeURIComponent(typeof window !== "undefined" ? window.location.pathname + window.location.search : "/compare/results")}`}
-                      className="shrink-0 rounded-lg bg-[#FF5A5F] px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f]"
-                    >
-                      Sign in
-                    </Link>
-                  </div>
-                )}
-
                 {/* Two pricing options */}
                 <div className="grid grid-cols-2 gap-3">
                   {/* $9 single */}
@@ -1066,23 +1073,10 @@ export default function CompareResultsClient() {
                     <button
                       type="button"
                       disabled={user === undefined || checkoutLoading !== null}
-                      onClick={() => {
-                        if (user === undefined) return;
-                        if (!user) {
-                          router.push(
-                            `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
-                          );
-                          return;
-                        }
-                        void startCheckout("single");
-                      }}
+                      onClick={() => { void startCheckout("single"); }}
                       className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
                     >
-                      {checkoutLoading === "single"
-                        ? "…"
-                        : user === null
-                          ? "Sign in — $9"
-                          : "Pay $9"}
+                      {checkoutLoading === "single" ? "…" : "Pay $9"}
                     </button>
                   </div>
 
@@ -1104,26 +1098,19 @@ export default function CompareResultsClient() {
                     <button
                       type="button"
                       disabled={user === undefined || checkoutLoading !== null}
-                      onClick={() => {
-                        if (user === undefined) return;
-                        if (!user) {
-                          router.push(
-                            `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
-                          );
-                          return;
-                        }
-                        void startCheckout("bundle");
-                      }}
+                      onClick={() => { void startCheckout("bundle"); }}
                       className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400"
                     >
-                      {checkoutLoading === "bundle"
-                        ? "…"
-                        : user === null
-                          ? "Sign in — $19"
-                          : "Pay $19"}
+                      {checkoutLoading === "bundle" ? "…" : "Pay $19"}
                     </button>
                   </div>
                 </div>
+
+                {user === null && (
+                  <p className="mt-3 text-center text-[11px] text-slate-400">
+                    You&apos;ll sign in with your email as part of checkout — takes 10 seconds.
+                  </p>
+                )}
 
                 {payError && (
                   <p className="mt-2 text-center text-xs font-medium text-rose-600">{payError}</p>

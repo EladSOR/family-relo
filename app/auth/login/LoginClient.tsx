@@ -2,9 +2,19 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { MapPin, Mail, ArrowRight, Check } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
+
+/**
+ * Sanitize `next` to a same-site path so users can't be redirected to an external URL.
+ * Falls back to `/account` for anything weird.
+ */
+function safeNext(raw: string | null): string {
+  if (!raw) return "/account";
+  if (!raw.startsWith("/") || raw.startsWith("//")) return "/account";
+  return raw;
+}
 
 export default function LoginClient() {
   const [email, setEmail] = useState("");
@@ -12,13 +22,20 @@ export default function LoginClient() {
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+  const params = useSearchParams();
+  const next = safeNext(params.get("next"));
 
   useEffect(() => {
     const supabase = createClient();
     supabase.auth.getUser().then(({ data }) => {
-      if (data.user) router.replace("/account");
+      if (data.user) router.replace(next);
     });
-  }, [router]);
+  }, [router, next]);
+
+  function callbackUrl() {
+    const base = `${window.location.origin}/auth/callback`;
+    return next === "/account" ? base : `${base}?next=${encodeURIComponent(next)}`;
+  }
 
   async function handleMagicLink(e: React.FormEvent) {
     e.preventDefault();
@@ -30,7 +47,7 @@ export default function LoginClient() {
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim().toLowerCase(),
       options: {
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        emailRedirectTo: callbackUrl(),
       },
     });
 
@@ -47,7 +64,7 @@ export default function LoginClient() {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: callbackUrl(),
       },
     });
   }

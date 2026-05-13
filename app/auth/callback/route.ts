@@ -28,16 +28,20 @@ async function addToAudience(email: string) {
   }
 }
 
+function safeNext(raw: string | null): string {
+  if (!raw || !raw.startsWith("/") || raw.startsWith("//")) return "/account";
+  return raw;
+}
+
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/account";
+  const next = safeNext(searchParams.get("next"));
 
   if (code) {
     const supabase = await createClient();
     const { error, data } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
-      // Best-effort audience sync (never blocks redirect)
       const email = data?.user?.email;
       if (email) await addToAudience(email);
 
@@ -45,5 +49,9 @@ export async function GET(request: Request) {
     }
   }
 
-  return NextResponse.redirect(`${origin}/auth/login?error=auth_failed`);
+  // Preserve `next` so failed callbacks bring the user back to the right place after re-login.
+  const loginUrl = next === "/account"
+    ? `${origin}/auth/login?error=auth_failed`
+    : `${origin}/auth/login?error=auth_failed&next=${encodeURIComponent(next)}`;
+  return NextResponse.redirect(loginUrl);
 }
