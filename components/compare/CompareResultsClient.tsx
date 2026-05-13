@@ -1,9 +1,9 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Lock, ArrowLeft, Share2, Check, LogIn } from "lucide-react";
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect, useRef } from "react";
 import citiesData from "@/data/cities.json";
 import { createClient } from "@/lib/supabase/client";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
@@ -497,8 +497,22 @@ function BlurredRow({ width = "100%" }: { width?: string }) {
 
 export default function CompareResultsClient() {
   const params = useSearchParams();
+  const router = useRouter();
   const [copied, setCopied] = useState(false);
   const [user, setUser] = useState<SupabaseUser | null | undefined>(undefined); // undefined = loading
+  const [unlockedViaPayment, setUnlockedViaPayment] = useState(false);
+  const [checkoutLoading, setCheckoutLoading] = useState<"single" | "bundle" | null>(null);
+  const [payError, setPayError] = useState<string | null>(null);
+
+  const snapshotRef = useRef({
+    scores: [] as CityScore[],
+    budget: 5000,
+    familySize: "family" as FamilySize,
+    work: "remote" as WorkSituation,
+    priorities: [] as Priority[],
+    numKids: undefined as NumKids | undefined,
+    kidsAge: undefined as KidsAge | undefined,
+  });
 
   useEffect(() => {
     const supabase = createClient();
@@ -515,6 +529,9 @@ export default function CompareResultsClient() {
   const work = (params.get("work") ?? "remote") as WorkSituation;
   const priorities = parsePriorities(params.get("priorities") ?? "cost,safety");
   const isPreview = params.get("preview") === "true";
+  const isUnlocked = isPreview || unlockedViaPayment;
+
+  const sessionIdParam = params.get("session_id");
 
   const rawKids = params.get("kids");
   const rawKidsAge = params.get("kidsage");
@@ -538,6 +555,16 @@ export default function CompareResultsClient() {
     return cities.map((c) => scoreCity(c, inputs)).sort((a, b) => b.matchPct - a.matchPct);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.toString()]);
+
+  snapshotRef.current = {
+    scores,
+    budget,
+    familySize,
+    work,
+    priorities,
+    numKids,
+    kidsAge,
+  };
 
   const cols = scores.length;
 
@@ -572,6 +599,100 @@ export default function CompareResultsClient() {
 
   const workLabel =
     work === "remote" ? "remote work" : work === "local" ? "local job" : "freelance";
+
+  useEffect(() => {
+    if (!sessionIdParam || !user) return;
+    const sessionId: string = sessionIdParam;
+    let cancelled = false;
+
+    async function completeReturn() {
+      const snap = snapshotRef.current;
+      if (!snap.scores.length) return;
+
+      for (let i = 0; i < 12; i++) {
+        if (cancelled) return;
+        const r = await fetch(
+          `/api/stripe/verify-session?session_id=${encodeURIComponent(sessionId)}`,
+        );
+        if (r.status === 401) return;
+        if (r.status === 202) {
+          await new Promise((res) => setTimeout(res, 1000));
+          continue;
+        }
+        if (!r.ok) return;
+        const data = (await r.json()) as { pending?: boolean; purchaseId?: string };
+        if (data.pending) {
+          await new Promise((res) => setTimeout(res, 1000));
+          continue;
+        }
+        if (!data.purchaseId || cancelled) return;
+
+        const reportQs = new URLSearchParams(window.location.search);
+        reportQs.delete("session_id");
+        const reportUrl = `${window.location.pathname}?${reportQs.toString()}`;
+
+        const saveRes = await fetch("/api/comparisons/save", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            purchase_id: data.purchaseId,
+            city_ids: snap.scores.map((s) => s.city.id),
+            city_names: snap.scores.map((s) => s.city.city),
+            inputs: {
+              budget: snap.budget,
+              familySize: snap.familySize,
+              workSituation: snap.work,
+              priorities: snap.priorities,
+              numKids: snap.numKids,
+              kidsAge: snap.kidsAge,
+            },
+            report_url: reportUrl,
+            top_match: snap.scores[0]?.city.city,
+            top_pct: snap.scores[0]?.matchPct,
+          }),
+        });
+        if (cancelled) return;
+        if (saveRes.ok) {
+          setUnlockedViaPayment(true);
+          reportQs.set("preview", "true");
+          router.replace(`/compare/results?${reportQs.toString()}`);
+        }
+        return;
+      }
+    }
+
+    void completeReturn();
+    return () => {
+      cancelled = true;
+    };
+  }, [sessionIdParam, user?.id, router]);
+
+  async function startCheckout(plan: "single" | "bundle") {
+    if (!user) return;
+    setPayError(null);
+    setCheckoutLoading(plan);
+    const qs = new URLSearchParams(window.location.search);
+    qs.delete("session_id");
+    qs.delete("preview");
+    const r = await fetch("/api/stripe/create-checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ plan, reportQs: qs.toString() }),
+    });
+    const data = (await r.json().catch(() => ({}))) as { url?: string; error?: string };
+    setCheckoutLoading(null);
+    if (r.status === 401) {
+      router.push(
+        `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
+      );
+      return;
+    }
+    if (data.url) {
+      window.location.href = data.url;
+      return;
+    }
+    setPayError(data.error ?? "Checkout unavailable. Try again soon.");
+  }
 
   function handleShare() {
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -800,7 +921,7 @@ export default function CompareResultsClient() {
         </section>
 
         {/* ── Full content (preview) or Blurred paywall ─────────────────── */}
-        {isPreview ? (
+        {isUnlocked ? (
           <PreviewContent
             scores={scores}
             cols={cols}
@@ -931,10 +1052,24 @@ export default function CompareResultsClient() {
                     <p className="mb-4 text-xs text-slate-400">1 comparison · up to 3 cities</p>
                     <button
                       type="button"
-                      disabled
-                      className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-100 py-2.5 text-xs font-bold text-slate-400"
+                      disabled={user === undefined || checkoutLoading !== null}
+                      onClick={() => {
+                        if (user === undefined) return;
+                        if (!user) {
+                          router.push(
+                            `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
+                          );
+                          return;
+                        }
+                        void startCheckout("single");
+                      }}
+                      className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
                     >
-                      {user === undefined ? "…" : "Launching soon"}
+                      {checkoutLoading === "single"
+                        ? "…"
+                        : user === null
+                          ? "Sign in — $9"
+                          : "Pay $9"}
                     </button>
                   </div>
 
@@ -955,13 +1090,31 @@ export default function CompareResultsClient() {
                     </p>
                     <button
                       type="button"
-                      disabled
-                      className="mt-auto w-full cursor-not-allowed rounded-lg bg-slate-200 py-2.5 text-xs font-bold text-slate-400"
+                      disabled={user === undefined || checkoutLoading !== null}
+                      onClick={() => {
+                        if (user === undefined) return;
+                        if (!user) {
+                          router.push(
+                            `/auth/login?next=${encodeURIComponent(window.location.pathname + window.location.search)}`,
+                          );
+                          return;
+                        }
+                        void startCheckout("bundle");
+                      }}
+                      className="mt-auto w-full cursor-pointer rounded-lg bg-[#FF5A5F] py-2.5 text-xs font-bold text-white transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-400"
                     >
-                      {user === undefined ? "…" : "Launching soon"}
+                      {checkoutLoading === "bundle"
+                        ? "…"
+                        : user === null
+                          ? "Sign in — $19"
+                          : "Pay $19"}
                     </button>
                   </div>
                 </div>
+
+                {payError && (
+                  <p className="mt-2 text-center text-xs font-medium text-rose-600">{payError}</p>
+                )}
 
                 {/* Signed-in note */}
                 {user && (

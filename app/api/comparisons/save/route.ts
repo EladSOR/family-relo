@@ -33,6 +33,21 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
+  // Idempotent: same purchase + same report URL only saves once (Stripe return + refresh).
+  if (purchase_id) {
+    const { data: existingRow } = await supabase
+      .from("comparisons")
+      .select("id")
+      .eq("user_id", user.id)
+      .eq("purchase_id", purchase_id)
+      .eq("report_url", report_url)
+      .maybeSingle();
+
+    if (existingRow) {
+      return NextResponse.json({ id: existingRow.id, duplicate: true });
+    }
+  }
+
   // Verify purchase belongs to user and has credits remaining
   if (purchase_id) {
     const { data: purchase } = await supabase
