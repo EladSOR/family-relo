@@ -51,6 +51,10 @@ export async function POST(req: NextRequest) {
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
+    // Force card-only — disables Stripe Link's phone-verification step that
+    // otherwise pops before payment. Apple Pay / Google Pay still appear as
+    // device wallets on supported browsers (handled separately by Stripe).
+    payment_method_types: ["card"],
     customer_email: user.email ?? undefined,
     client_reference_id: user.id,
     line_items: [{ price: priceId, quantity: 1 }],
