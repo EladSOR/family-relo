@@ -32,6 +32,16 @@ globs: app/blog/**/*.tsx, lib/blog/**/*.ts, components/blog/**/*.tsx, lib/seo/bl
 - **Footer block:** `You might also like` (or the same phrasing) with **internal** links to relevant city/country/destinations pages.
 - **Premium:** Static digests are fine; the paid product can offer **interactivity, more dimensions, and saved comparisons** — do not make every blog post an app substitute. Point to the guides for depth.
 
+## Compare-tool CTA placement (mandatory — pick one)
+
+Every blog post must surface the personalized comparison tool. Pick the rule that matches the post type:
+
+- **City-pair comparison post** (e.g. "Dubai vs Abu Dhabi", "Lisbon vs Porto"): use the shared `DataDigestCityComparisonArticle` (or `GenericPairComparisonArticle`, which delegates to it). It **automatically inserts `<BlogCompareCallout a={a} b={b} />`** above the FAQ — both compared cities are pre-selected in the build flow via `?cities=a,b`. **Do not add a second CTA** — the inline callout + the `/blog` index promo are enough.
+- **Single-city deep dive, advice post, "best of" list, or any non-comparison post**: drop `<BlogComparePromo />` (from `@/components/blog/BlogComparePromo`) **once** between the conclusion and the "You might also like" footer. Generic copy, deep-links to `/compare`. **Do not** pre-select cities in this case — there's no canonical pair.
+- **`/blog` index page** (`app/blog/page.tsx`): keep `<BlogComparePromo />` near the top. Already in place — do not duplicate.
+
+Never use a modal, top fixed bar, or exit-intent popup for the compare CTA on the blog. The two components above are the only sanctioned placements.
+
 ## Structured data
 
 - Use `lib/seo/buildBlogArticleJsonLd.ts`: `Article` + `BreadcrumbList` + optional `FAQPage` when the page shows matching Q&A.

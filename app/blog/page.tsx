@@ -5,6 +5,7 @@ import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { SITE_SERP_TITLE_BRAND } from "@/lib/seo/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import BlogComparePromo from "@/components/blog/BlogComparePromo";
 
 const TITLE = `Family relocation: city guides & comparisons for families | ${SITE_SERP_TITLE_BRAND}`;
 
@@ -39,6 +40,12 @@ export default function BlogIndexPage() {
           day-to-day life costs, and what the weather really feels like. We put that in one place so you can
           compare, then dig into each city’s full guide.
         </p>
+
+        {/* Compare-tool promo — visible to every blog visitor regardless of
+            which post they pick. Comparison posts also have an inline city-pair
+            callout further down the page. */}
+        <BlogComparePromo />
+
         <ul className="mt-10 space-y-6">
           {posts.map((p) => (
             <li key={p.slug}>
