@@ -55,3 +55,16 @@ create policy "Users can insert own comparisons"
 create policy "Users can delete own comparisons"
   on public.comparisons for delete
   using (auth.uid() = user_id);
+
+
+-- ─────────────────────────────────────────────────────────────────────────────
+-- Explicit Data API grants (future-proofing for Supabase's Oct 30, 2026 change)
+-- where new tables in the public schema will no longer be auto-exposed to the
+-- Data API. RLS policies above still gate per-row access; these grants only
+-- determine which roles can attempt access via supabase-js / PostgREST.
+-- ─────────────────────────────────────────────────────────────────────────────
+
+grant select, insert, update, delete on table public.purchases   to authenticated;
+grant select, insert, delete         on table public.comparisons to authenticated;
+-- anon role gets no access to either table — purchases & comparisons are
+-- always tied to a signed-in user.
