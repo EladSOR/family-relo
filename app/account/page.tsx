@@ -189,6 +189,19 @@ export default async function AccountPage() {
             </Link>
           </p>
         )}
+
+        {/* Support — buyers look here first when something is wrong with a
+            purchase. Visible mailto reduces refund/chargeback rate. */}
+        <p className="mt-8 text-center text-xs text-slate-400">
+          Question about a purchase or report? Email{" "}
+          <a
+            href="mailto:hello@famirelo.com"
+            className="font-semibold text-slate-500 hover:text-[#FF5A5F] hover:underline"
+          >
+            hello@famirelo.com
+          </a>{" "}
+          — we usually reply within 24 hours.
+        </p>
       </div>
     </div>
   );

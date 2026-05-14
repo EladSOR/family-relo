@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Search, Check, ChevronRight, ArrowLeft } from "lucide-react";
+import { MapPin, Search, Check, ChevronRight, ArrowLeft, Sparkles } from "lucide-react";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import type { FamilySize, WorkSituation, Priority, KidsAge, NumKids } from "@/lib/scoring";
@@ -156,6 +156,24 @@ export default function CompareBuildClient() {
   const [work, setWork] = useState<WorkSituation>("remote");
   const [priorities, setPriorities] = useState<Priority[]>(["cost", "safety"]);
 
+  // Credit balance — shown only to logged-in users with unused bundle credits.
+  // Quietly fails (returns 0) for anonymous users; no flash of empty state.
+  const [credits, setCredits] = useState<number | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    fetch("/api/credits/balance")
+      .then((r) => (r.ok ? r.json() : { remaining: 0 }))
+      .then((d) => {
+        if (!cancelled) setCredits(d.remaining ?? 0);
+      })
+      .catch(() => {
+        if (!cancelled) setCredits(0);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const filteredCities = useMemo(() => {
     if (!query.trim()) return ALL_CITIES;
     const q = query.toLowerCase();
@@ -215,6 +233,20 @@ export default function CompareBuildClient() {
       </nav>
 
       <div className="mx-auto max-w-3xl px-4 py-8 md:py-12">
+        {/* Credit-holder banner — replaces "you'll need to pay" friction with
+            "you already paid, this one is free" reassurance. */}
+        {credits !== null && credits > 0 && (
+          <div className="mb-6 flex items-center gap-2.5 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800 md:mb-8">
+            <Sparkles size={16} className="shrink-0 text-emerald-600" />
+            <span>
+              <span className="font-bold">
+                You have {credits} credit{credits === 1 ? "" : "s"} left
+              </span>{" "}
+              from your bundle — your next report unlocks free.
+            </span>
+          </div>
+        )}
+
         {/* ── Step 1: Pick cities ─────────────────────────────────────────── */}
         {step === 1 && (
           <div>
