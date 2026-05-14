@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <MapToggle cities={citiesData as Destination[]} />
         <CompareBanner />
         {/* pb-20 md:pb-24 clears the fixed MapToggle pill (bottom-5 / md:bottom-7 + pill height) */}
-        <footer className="border-t border-slate-100 bg-white px-4 pb-20 pt-10 text-xs text-slate-400 md:pb-24">
+        <footer className="no-print border-t border-slate-100 bg-white px-4 pb-20 pt-10 text-xs text-slate-400 md:pb-24">
           <div className="mx-auto max-w-3xl">
             {/* Newsletter signup */}
             <div className="mb-8 flex flex-col items-center gap-3 text-center">

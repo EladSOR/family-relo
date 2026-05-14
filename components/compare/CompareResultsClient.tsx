@@ -2,7 +2,7 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Lock, ArrowLeft, Share2, Check } from "lucide-react";
+import { MapPin, Lock, ArrowLeft, Share2, Check, Download } from "lucide-react";
 import { useMemo, useState, useEffect, useRef } from "react";
 import citiesData from "@/data/cities.json";
 import { createClient } from "@/lib/supabase/client";
@@ -803,12 +803,19 @@ export default function CompareResultsClient() {
     });
   }
 
+  function handleDownloadPDF() {
+    // Browser print dialog has "Save as PDF" as the default destination on
+    // macOS / Chrome / Edge / Safari. Print CSS at the bottom of this file
+    // hides nav, share buttons, and paywall so the printout is just the report.
+    window.print();
+  }
+
   const cityNames = scores.map((s) => s.city.city).join(" · ");
 
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Nav */}
-      <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-8">
+      <nav className="no-print border-b border-slate-100 bg-white px-4 py-4 md:px-8">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
@@ -818,11 +825,11 @@ export default function CompareResultsClient() {
               FamiRelo
             </span>
           </Link>
-          <div className="flex items-center gap-3">
+          <div className="no-print flex items-center gap-2 md:gap-3">
             <button
               type="button"
               onClick={handleShare}
-              className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300"
+              className="flex cursor-pointer items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-600 transition-colors hover:border-slate-300"
             >
               {copied ? (
                 <>
@@ -836,9 +843,21 @@ export default function CompareResultsClient() {
                 </>
               )}
             </button>
+            {isUnlocked && (
+              <button
+                type="button"
+                onClick={handleDownloadPDF}
+                className="flex cursor-pointer items-center gap-1.5 rounded-lg border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 px-3 py-2 text-xs font-semibold text-[#FF5A5F] transition-colors hover:bg-[#FF5A5F]/10"
+                title="Opens your browser's print dialog — choose 'Save as PDF' as destination"
+              >
+                <Download size={13} />
+                <span className="hidden sm:inline">Save as PDF</span>
+                <span className="sm:hidden">PDF</span>
+              </button>
+            )}
             <Link
               href="/compare/build"
-              className="flex items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-slate-600"
+              className="hidden items-center gap-1.5 text-xs font-medium text-slate-400 hover:text-slate-600 md:flex"
             >
               <ArrowLeft size={13} />
               Edit
@@ -1103,7 +1122,7 @@ export default function CompareResultsClient() {
             </div>
 
             {/* Paywall card */}
-            <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12">
+            <div className="no-print absolute inset-0 flex items-start justify-center pt-8 md:pt-12">
               <div className="mx-4 w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl md:p-8">
 
                 {/* Header */}
@@ -1125,7 +1144,7 @@ export default function CompareResultsClient() {
                     "Full family fit analysis",
                     "Shareable link",
                     "Visa & work permit path",
-                    "Save / print as PDF",
+                    "Download as PDF",
                     "Schools & childcare deep-dive",
                     "Personalized verdict",
                   ].map((item) => (

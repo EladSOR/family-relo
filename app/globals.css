@@ -155,3 +155,25 @@ body {
   font-family: inherit;
   background: #e8eef3;
 }
+
+/* Print styles — used by "Save as PDF" button on /compare/results.
+   Hides nav, footers, paywall, share buttons so the printout is just the report. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+  /* Keep cards intact across page breaks where possible */
+  section,
+  article,
+  .print-keep-together {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  /* Strip page padding/min-height so PDF flows naturally */
+  .min-h-screen {
+    min-height: auto !important;
+  }
+}

@@ -41,7 +41,7 @@ const INCLUDED = [
   "Visa & work permit path for your situation",
   "Schools & childcare deep-dive per city",
   "Shareable link — send to your partner or family",
-  "Save or print as PDF (one-click via your browser)",
+  "Download as PDF — one click from the report",
 ];
 
 function BarPreview({ pct, color }: { pct: number; color: string }) {
@@ -365,7 +365,7 @@ export default function CompareLandingPage() {
                   "Match scores weighted to your priorities",
                   "Schools, visas & family fit analysis",
                   "Shareable link — send to partner or family",
-                  "Save / print as PDF (one-click via your browser)",
+                  "Download as PDF — one-click button",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Check size={13} className="shrink-0 text-[#FF5A5F]" />
@@ -393,7 +393,7 @@ export default function CompareLandingPage() {
                   "Add or swap cities without repaying",
                   "Perfect for shortlisting multiple options",
                   "Shareable links for each report",
-                  "Save / print all as PDF (one-click via your browser)",
+                  "Download each report as PDF — one click",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Check size={13} className="shrink-0 text-[#FF5A5F]" />
