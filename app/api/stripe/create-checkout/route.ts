@@ -51,11 +51,11 @@ export async function POST(req: NextRequest) {
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
-    // Show every payment method enabled in the Stripe Dashboard that is
-    // eligible for this customer's region/currency (cards, Apple Pay,
-    // Google Pay, Amazon Pay, Cartes Bancaires, etc.). Stripe Link is
-    // disabled at the account level, so it will not appear.
-    automatic_payment_methods: { enabled: true },
+    // No `payment_method_types` field — Stripe Checkout will surface every
+    // method enabled in the Dashboard that is eligible for this customer's
+    // region/currency/device (cards, Apple Pay, Google Pay, Amazon Pay,
+    // Cartes Bancaires, etc.). Link is disabled at the account level so it
+    // will not appear.
     customer_email: user.email ?? undefined,
     client_reference_id: user.id,
     line_items: [{ price: priceId, quantity: 1 }],
