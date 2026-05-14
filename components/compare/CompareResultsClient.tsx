@@ -7,7 +7,6 @@ import { useMemo, useState, useEffect, useRef } from "react";
 import citiesData from "@/data/cities.json";
 import { createClient } from "@/lib/supabase/client";
 import type { User as SupabaseUser } from "@supabase/supabase-js";
-import EmailCapture from "@/components/EmailCapture";
 import type { Destination } from "@/lib/types";
 import {
   scoreCity,
@@ -1230,25 +1229,9 @@ export default function CompareResultsClient() {
                   </p>
                 )}
 
-                {/* Notify me at launch */}
-                <div className="mt-5 rounded-xl border border-slate-100 bg-slate-50 p-4">
-                  <p className="mb-1 text-center text-xs font-bold text-slate-700">
-                    Want a heads-up the moment it launches?
-                  </p>
-                  <p className="mb-3 text-center text-[11px] text-slate-400">
-                    We&apos;ll send you a single email — no spam.
-                  </p>
-                  <EmailCapture
-                    source="paywall"
-                    variant="inline"
-                    cta="Notify me"
-                    successMsg="Got it — we'll email you at launch."
-                  />
-                </div>
-
                 {/* Share nudge */}
-                <p className="mt-4 text-center text-xs text-slate-400">
-                  Share this preview with your partner while you wait →{" "}
+                <p className="mt-5 text-center text-xs text-slate-400">
+                  Want to think it over? Share this preview with your partner →{" "}
                   <button
                     type="button"
                     onClick={() => { navigator.clipboard.writeText(window.location.href); }}

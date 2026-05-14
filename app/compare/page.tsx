@@ -358,7 +358,7 @@ export default function CompareLandingPage() {
               </div>
               <p className="mb-1 text-base font-bold text-slate-800">Single report</p>
               <p className="mb-5 text-sm text-slate-400">One comparison · up to 3 cities</p>
-              <ul className="mb-6 flex-1 space-y-2.5 text-sm text-slate-600">
+              <ul className="flex-1 space-y-2.5 text-sm text-slate-600">
                 {[
                   "Compare up to 3 cities",
                   "Full personalized report",
@@ -373,12 +373,6 @@ export default function CompareLandingPage() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/compare/build"
-                className="block w-full rounded-xl bg-slate-900 py-3 text-center text-sm font-bold text-white transition-all hover:bg-slate-700"
-              >
-                Build a report
-              </Link>
             </div>
 
             {/* Bundle */}
@@ -392,7 +386,7 @@ export default function CompareLandingPage() {
               </div>
               <p className="mb-1 text-base font-bold text-slate-800">3-report bundle</p>
               <p className="mb-5 text-sm text-slate-500">3 comparisons · up to 3 cities each</p>
-              <ul className="mb-6 flex-1 space-y-2.5 text-sm text-slate-700">
+              <ul className="flex-1 space-y-2.5 text-sm text-slate-700">
                 {[
                   "Everything in Single report × 3",
                   "Save & revisit all 3 comparisons",
@@ -407,19 +401,14 @@ export default function CompareLandingPage() {
                   </li>
                 ))}
               </ul>
-              <Link
-                href="/compare/build"
-                className="block w-full rounded-xl bg-[#FF5A5F] py-3 text-center text-sm font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
-              >
-                Build a report
-              </Link>
-              <p className="mt-2.5 text-center text-[11px] text-slate-400">
-                Pick the bundle at checkout to save 3 reports to your account
-              </p>
             </div>
           </div>
 
-          <div className="mt-10 text-center">
+          <p className="mt-8 text-center text-xs text-slate-400">
+            Try a free preview first — pick the plan that fits when you&apos;re ready to unlock.
+          </p>
+
+          <div className="mt-4 text-center">
             <Link
               href="/compare/build"
               className="inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-[#e84a4f] hover:shadow-xl"
