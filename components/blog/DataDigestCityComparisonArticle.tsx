@@ -4,6 +4,7 @@ import type { Destination } from "@/lib/types";
 import { resolveCityHeroImage } from "@/lib/constants";
 import { midpointMonthlyFamilyAllIn } from "@/lib/blog/parseBudget";
 import { BlogFaqSection, type BlogFaqItem } from "@/components/blog/BlogFaqSection";
+import BlogCompareCallout from "@/components/blog/BlogCompareCallout";
 
 function monthWeather(dest: Destination, monthNum: number) {
   const m = dest.weather?.months.find((x) => x.month === monthNum);
@@ -335,6 +336,8 @@ export function DataDigestCityComparisonArticle({
           </ul>
         </div>
       </div>
+
+      <BlogCompareCallout a={a} b={b} />
 
       <BlogFaqSection title="Common questions" items={faq} />
 

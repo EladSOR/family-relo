@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { MapPin, Search, Check, ChevronRight, ArrowLeft, Sparkles } from "lucide-react";
 import citiesData from "@/data/cities.json";
@@ -142,11 +142,26 @@ function OptionBtn({
 
 export default function CompareBuildClient() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [step, setStep] = useState<1 | 2>(1);
 
-  // Step 1
+  // Step 1 — pre-seed selected cities from ?cities=lisbon-pt,porto-pt query param.
+  // City-page CTAs deep-link in this way so the user lands with their current
+  // city already chipped (1 of 3 selected). Validate against known city ids
+  // and cap at 3 to match the in-flow rules.
+  const initialSelected = useMemo(() => {
+    const raw = searchParams?.get("cities") ?? "";
+    if (!raw) return [];
+    const validIds = new Set(ALL_CITIES.map((c) => c.id));
+    return raw
+      .split(",")
+      .map((s) => s.trim())
+      .filter((id) => validIds.has(id))
+      .slice(0, 3);
+  }, [searchParams]);
+
   const [query, setQuery] = useState("");
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+  const [selectedIds, setSelectedIds] = useState<string[]>(initialSelected);
 
   // Step 2
   const [budget, setBudget] = useState(BUDGET_DEFAULT);

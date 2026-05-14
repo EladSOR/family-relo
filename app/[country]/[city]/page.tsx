@@ -22,6 +22,7 @@ import { ChecklistItems } from "@/components/ChecklistItems";
 import { CityWeather } from "@/components/CityWeather";
 import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
+import CompareCityCTA from "@/components/compare/CompareCityCTA";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
 import { citySerpDescription, citySerpTitle } from "@/lib/seo/serpCopy";
@@ -513,6 +514,11 @@ export default async function CityPage({ params }: Props) {
             </dl>
           </Section>
         )}
+
+        {/* ── Compare-this-city CTA — placed after FAQ so users have already
+            absorbed the city info before being asked to commit. Pre-selects
+            this city in /compare/build. */}
+        <CompareCityCTA cityId={dest.id} cityName={dest.city} />
 
         {/* ── Official sources ──────────────────────────────────────────── */}
         {allSources.length > 0 && (

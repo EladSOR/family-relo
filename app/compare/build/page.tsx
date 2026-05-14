@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import CompareBuildClient from "@/components/compare/CompareBuildClient";
 
 export const metadata = {
@@ -6,5 +7,9 @@ export const metadata = {
 };
 
 export default function CompareBuildPage() {
-  return <CompareBuildClient />;
+  return (
+    <Suspense fallback={null}>
+      <CompareBuildClient />
+    </Suspense>
+  );
 }
