@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
     purchase_id = usable.id;
   }
 
-  // ── Verify chosen purchase + decrement (CAS to avoid double-spend on rapid clicks).
+  // ── Verify chosen purchase has credits available before doing anything.
   const { data: purchase } = await supabase
     .from("purchases")
     .select("id, credits_total, credits_used")
@@ -88,25 +88,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No credits remaining" }, { status: 402 });
   }
 
-  const { error: decErr, count } = await supabase
-    .from("purchases")
-    .update(
-      { credits_used: purchase.credits_used + 1 },
-      { count: "exact" },
-    )
-    .eq("id", purchase_id)
-    .eq("credits_used", purchase.credits_used);
-
-  if (decErr) {
-    return NextResponse.json({ error: decErr.message }, { status: 500 });
-  }
-  if (!count) {
-    // Lost a race against another request — caller should retry.
-    return NextResponse.json({ error: "Try again" }, { status: 409 });
-  }
-
-  // ── Save the comparison row.
-  const { data, error } = await supabase
+  // ── INSERT FIRST: save the comparison row before touching the credit.
+  // If the insert fails (schema drift, FK constraint, etc.) the credit is
+  // never consumed — failed redeems no longer waste credits.
+  const { data, error: insertErr } = await supabase
     .from("comparisons")
     .insert({
       user_id:    user.id,
@@ -121,8 +106,28 @@ export async function POST(req: NextRequest) {
     .select("id")
     .single();
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  if (insertErr) {
+    return NextResponse.json({ error: insertErr.message }, { status: 500 });
+  }
+
+  // ── DECREMENT SECOND: optimistic CAS to avoid double-spend on rapid clicks.
+  const { error: decErr, count } = await supabase
+    .from("purchases")
+    .update(
+      { credits_used: purchase.credits_used + 1 },
+      { count: "exact" },
+    )
+    .eq("id", purchase_id)
+    .eq("credits_used", purchase.credits_used);
+
+  // If the decrement fails or loses a race, the comparison is already saved
+  // (so the user has their report) — we just log the discrepancy and return
+  // success. Worst case: a "free" unlock if two redeems collide. Better than
+  // the alternative of charging a credit for a failed save.
+  if (decErr) {
+    console.error("[comparisons/save] credit decrement failed", decErr.message);
+  } else if (!count) {
+    console.warn("[comparisons/save] credit decrement CAS lost, comparison still saved", { purchase_id, comparison_id: data.id });
   }
 
   return NextResponse.json({ id: data.id });

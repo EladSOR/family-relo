@@ -111,10 +111,16 @@ export default async function AccountPage() {
           {/* Report cards */}
           {comparisons && comparisons.length > 0 ? (
             <div className="space-y-3">
-              {comparisons.map((c) => (
+              {comparisons.map((c) => {
+                // The canonical report_url is stored without ?preview=true;
+                // append it so clicking from /account opens the unlocked view.
+                const href = c.report_url.includes("preview=")
+                  ? c.report_url
+                  : `${c.report_url}${c.report_url.includes("?") ? "&" : "?"}preview=true`;
+                return (
                 <Link
                   key={c.id}
-                  href={c.report_url}
+                  href={href}
                   className="flex items-center justify-between rounded-xl border border-slate-100 bg-stone-50 p-4 transition-all hover:border-slate-200 hover:bg-white hover:shadow-sm"
                 >
                   <div className="min-w-0">
@@ -135,7 +141,8 @@ export default async function AccountPage() {
                   </div>
                   <ArrowRight size={14} className="ml-3 shrink-0 text-slate-400" />
                 </Link>
-              ))}
+                );
+              })}
             </div>
           ) : (
             /* Empty state */
