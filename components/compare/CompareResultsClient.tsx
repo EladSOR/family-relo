@@ -1125,7 +1125,7 @@ export default function CompareResultsClient() {
                     "Full family fit analysis",
                     "Shareable link",
                     "Visa & work permit path",
-                    "Download as PDF",
+                    "Save / print as PDF",
                     "Schools & childcare deep-dive",
                     "Personalized verdict",
                   ].map((item) => (

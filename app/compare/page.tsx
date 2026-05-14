@@ -41,7 +41,7 @@ const INCLUDED = [
   "Visa & work permit path for your situation",
   "Schools & childcare deep-dive per city",
   "Shareable link — send to your partner or family",
-  "Download as PDF",
+  "Save or print as PDF (one-click via your browser)",
 ];
 
 function BarPreview({ pct, color }: { pct: number; color: string }) {
@@ -365,7 +365,7 @@ export default function CompareLandingPage() {
                   "Match scores weighted to your priorities",
                   "Schools, visas & family fit analysis",
                   "Shareable link — send to partner or family",
-                  "Download as PDF",
+                  "Save / print as PDF (one-click via your browser)",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Check size={13} className="shrink-0 text-[#FF5A5F]" />
@@ -393,7 +393,7 @@ export default function CompareLandingPage() {
                   "Add or swap cities without repaying",
                   "Perfect for shortlisting multiple options",
                   "Shareable links for each report",
-                  "Download all as PDF",
+                  "Save / print all as PDF (one-click via your browser)",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2">
                     <Check size={13} className="shrink-0 text-[#FF5A5F]" />
@@ -465,9 +465,9 @@ export default function CompareLandingPage() {
                 <FileDown size={18} className="text-[#FF5A5F]" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Download as PDF</p>
+                <p className="font-bold text-slate-900">Save or print as PDF</p>
                 <p className="mt-0.5 text-sm text-slate-500">
-                  Keep a copy for your records or print it out.
+                  Use your browser&apos;s print to PDF (Cmd / Ctrl + P) — keep a copy or send to your partner.
                 </p>
               </div>
             </div>
