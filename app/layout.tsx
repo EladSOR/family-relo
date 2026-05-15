@@ -6,6 +6,7 @@ import { getSiteUrl } from "@/lib/siteUrl";
 import MapToggle from "@/components/home/MapToggle";
 import CompareBanner from "@/components/compare/CompareBanner";
 import EmailCapture from "@/components/EmailCapture";
+import Logo from "@/components/brand/Logo";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import "./globals.css";
@@ -70,6 +71,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* pb-20 md:pb-24 clears the fixed MapToggle pill (bottom-5 / md:bottom-7 + pill height) */}
         <footer className="no-print border-t border-slate-100 bg-white px-4 pb-20 pt-10 text-xs text-slate-400 md:pb-24">
           <div className="mx-auto max-w-3xl">
+            {/* Brand mark */}
+            <div className="mb-6 flex justify-center">
+              <Link href="/" aria-label="FamiRelo home">
+                <Logo size={26} />
+              </Link>
+            </div>
             {/* Newsletter signup */}
             <div className="mb-8 flex flex-col items-center gap-3 text-center">
               <p className="text-sm font-bold text-slate-700">

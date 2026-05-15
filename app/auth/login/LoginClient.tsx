@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
-import { MapPin, Mail, ArrowRight, Check } from "lucide-react";
+import { Mail, ArrowRight, Check } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 import { createClient } from "@/lib/supabase/client";
 
 /**
@@ -73,13 +74,8 @@ export default function LoginClient() {
     <div className="flex min-h-screen flex-col bg-slate-100">
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4">
-        <Link href="/" className="flex w-fit items-center gap-2">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-            <MapPin size={13} strokeWidth={2.5} />
-          </span>
-          <span className="text-sm font-extrabold tracking-tight text-slate-900">
-            FamiRelo
-          </span>
+        <Link href="/" className="w-fit" aria-label="FamiRelo home">
+          <Logo size={24} />
         </Link>
       </nav>
 

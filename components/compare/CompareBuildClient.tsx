@@ -3,7 +3,8 @@
 import { useState, useMemo, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Search, Check, ChevronRight, ArrowLeft, Sparkles } from "lucide-react";
+import { Search, Check, ChevronRight, ArrowLeft, Sparkles } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import type { FamilySize, WorkSituation, Priority, KidsAge, NumKids } from "@/lib/scoring";
@@ -230,13 +231,8 @@ export default function CompareBuildClient() {
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-8">
         <div className="mx-auto flex max-w-3xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={13} strokeWidth={2.5} />
-            </span>
-            <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={24} />
           </Link>
           <div className="flex items-center gap-3">
             <StepDots step={step} />

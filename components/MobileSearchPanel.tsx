@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Search, X, MapPin } from "lucide-react";
+import { Search, X } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 import Link from "next/link";
 import SearchBar from "@/components/home/SearchBar";
 
@@ -49,13 +50,8 @@ export default function MobileSearchPanel() {
 
             {/* Header row — always visible, never scrolls away */}
             <div className="flex shrink-0 items-center justify-between border-b border-slate-100 px-4 py-3.5">
-              <Link href="/" aria-label="Home" className="flex items-center gap-1.5">
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-                  <MapPin size={13} strokeWidth={2.5} />
-                </span>
-                <span className="text-sm font-extrabold tracking-tight text-slate-900">
-                  FamiRelo
-                </span>
+              <Link href="/" aria-label="FamiRelo home">
+                <Logo size={24} />
               </Link>
               <button
                 onClick={() => setOpen(false)}

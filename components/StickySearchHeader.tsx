@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin } from "lucide-react";
 import SearchBar from "@/components/home/SearchBar";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
 import AuthButton from "@/components/auth/AuthButton";
+import Logo from "@/components/brand/Logo";
 
 export default function StickySearchHeader() {
   return (
@@ -14,13 +14,8 @@ export default function StickySearchHeader() {
       {/* ── Desktop layout (md+): logo + compact search bar ─────────────── */}
       <div className="mx-auto hidden max-w-7xl items-center gap-4 px-6 py-3 md:flex">
         <SiteHierarchyMenu variant="light" />
-        <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-            <MapPin size={13} strokeWidth={2.5} />
-          </span>
-          <span className="text-sm font-extrabold tracking-tight text-slate-900">
-            FamiRelo
-          </span>
+        <Link href="/" className="shrink-0" aria-label="FamiRelo home">
+          <Logo size={24} />
         </Link>
         <div className="min-w-0 flex-1">
           <SearchBar compact />
@@ -31,10 +26,8 @@ export default function StickySearchHeader() {
       {/* ── Mobile layout (<md): logo + compact bar ──────────────────────── */}
       <div className="flex items-center gap-2 px-3 py-3 md:hidden">
         <SiteHierarchyMenu variant="light" />
-        <Link href="/" aria-label="Home" className="flex shrink-0 items-center justify-center">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-            <MapPin size={13} strokeWidth={2.5} />
-          </span>
+        <Link href="/" aria-label="FamiRelo home" className="shrink-0">
+          <Logo variant="mark" size={26} />
         </Link>
         <div className="min-w-0 flex-1">
           <MobileSearchPanel />

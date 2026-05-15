@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Compass, MapPin } from "lucide-react";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
+import Logo from "@/components/brand/Logo";
 import { SITE_SERP_TITLE_BRAND } from "@/lib/seo/constants";
 import { clipMetaDescription } from "@/lib/seo/description";
 
@@ -19,11 +20,8 @@ export default function NotFound() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-3 md:max-w-5xl md:px-6">
           <SiteHierarchyMenu variant="light" />
-          <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="FamiRelo home">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={16} strokeWidth={2.5} />
-            </span>
-            <span className="text-lg font-extrabold tracking-tight text-slate-900">FamiRelo</span>
+          <Link href="/" className="shrink-0" aria-label="FamiRelo home">
+            <Logo size={28} />
           </Link>
         </div>
       </header>

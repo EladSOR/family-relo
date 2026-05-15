@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { MapPin, FileText, Plus, ArrowRight, Package, RotateCcw } from "lucide-react";
+import { FileText, Plus, ArrowRight, Package, RotateCcw } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import SignOutButton from "@/components/auth/SignOutButton";
+import Logo from "@/components/brand/Logo";
 
 export const metadata: Metadata = {
   title: "My Account | FamiRelo",
@@ -55,13 +56,8 @@ export default async function AccountPage() {
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4">
         <div className="mx-auto flex max-w-3xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={13} strokeWidth={2.5} />
-            </span>
-            <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={24} />
           </Link>
           <SignOutButton />
         </div>

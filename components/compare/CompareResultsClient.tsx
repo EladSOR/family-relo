@@ -2,7 +2,8 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { MapPin, Lock, ArrowLeft, Share2, Check, Download } from "lucide-react";
+import { Lock, ArrowLeft, Share2, Check, Download } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 import { useMemo, useState, useEffect, useRef } from "react";
 import citiesData from "@/data/cities.json";
 import { createClient } from "@/lib/supabase/client";
@@ -817,13 +818,8 @@ export default function CompareResultsClient() {
       {/* Nav */}
       <nav className="no-print border-b border-slate-100 bg-white px-4 py-4 md:px-8">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={13} strokeWidth={2.5} />
-            </span>
-            <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={24} />
           </Link>
           <div className="no-print flex items-center gap-2 md:gap-3">
             <button

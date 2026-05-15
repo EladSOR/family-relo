@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin } from "lucide-react";
+import Logo from "@/components/brand/Logo";
 
 interface Section {
   title: string;
@@ -22,13 +22,8 @@ export default function LegalLayout({
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4">
         <div className="mx-auto flex max-w-3xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={13} strokeWidth={2.5} />
-            </span>
-            <span className="text-sm font-extrabold tracking-tight text-slate-900">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={24} />
           </Link>
           <div className="flex items-center gap-4 text-xs text-slate-400">
             <Link href="/legal/privacy" className="hover:text-slate-700">

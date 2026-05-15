@@ -2,8 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { MapPin } from "lucide-react";
 import SearchBar from "./SearchBar";
+import Logo from "@/components/brand/Logo";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
@@ -57,10 +57,8 @@ export default function Hero() {
       >
         <div className="flex items-center gap-2 border-b border-slate-200 bg-white px-3 py-3 shadow-sm">
           <SiteHierarchyMenu variant="light" />
-          <Link href="/" aria-label="Home" className="flex shrink-0 items-center justify-center">
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={13} strokeWidth={2.5} />
-            </span>
+          <Link href="/" aria-label="FamiRelo home" className="shrink-0">
+            <Logo variant="mark" size={28} />
           </Link>
           <div className="min-w-0 flex-1">
             <MobileSearchPanel />
@@ -81,13 +79,8 @@ export default function Hero() {
             below (which is also z-10 in the same stacking context). */}
         <nav className="relative z-30 flex items-center gap-3 px-6 py-5 md:gap-4 md:px-10">
           <SiteHierarchyMenu variant="onHero" />
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={16} strokeWidth={2.5} />
-            </span>
-            <span className="text-lg font-extrabold tracking-tight text-white">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={32} wordmarkClassName="text-white" />
           </Link>
           <div className="ml-auto">
             <AuthButton />

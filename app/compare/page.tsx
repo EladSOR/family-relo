@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, Check, Lock, ArrowRight, Share2, FileDown } from "lucide-react";
+import { Check, Lock, ArrowRight, Share2, FileDown } from "lucide-react";
 import CompareStickyBar from "@/components/compare/CompareStickyBar";
+import Logo from "@/components/brand/Logo";
 import { JsonLd } from "@/components/JsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 import {
@@ -137,13 +138,8 @@ export default function CompareLandingPage() {
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#FF5A5F] text-white">
-              <MapPin size={15} strokeWidth={2.5} />
-            </span>
-            <span className="text-base font-extrabold tracking-tight text-slate-900">
-              FamiRelo
-            </span>
+          <Link href="/" aria-label="FamiRelo home">
+            <Logo size={28} />
           </Link>
           <Link
             href="/compare/build"
