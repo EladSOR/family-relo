@@ -23,6 +23,7 @@ import { CityWeather } from "@/components/CityWeather";
 import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
 import CompareCityCTA from "@/components/compare/CompareCityCTA";
+import RelatedCities from "@/components/RelatedCities";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
 import { citySerpDescription, citySerpTitle } from "@/lib/seo/serpCopy";
@@ -519,6 +520,11 @@ export default async function CityPage({ params }: Props) {
             absorbed the city info before being asked to commit. Pre-selects
             this city in /compare/build. */}
         <CompareCityCTA cityId={dest.id} cityName={dest.city} />
+
+        {/* ── Cities you might also like — internal-link surface for SEO and
+            to keep families exploring instead of bouncing. Same-country first,
+            then same-continent, then top picks. */}
+        <RelatedCities current={dest} allCities={citiesData as Destination[]} />
 
         {/* ── Official sources ──────────────────────────────────────────── */}
         {allSources.length > 0 && (

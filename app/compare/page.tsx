@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, Check, Lock, ArrowRight, Share2, FileDown } from "lucide-react";
 import CompareStickyBar from "@/components/compare/CompareStickyBar";
+import { JsonLd } from "@/components/JsonLd";
+import { getSiteUrl } from "@/lib/siteUrl";
 import {
   SITE_COMPARE_DESCRIPTION,
   SITE_COMPARE_OG_IMAGE,
@@ -18,6 +20,70 @@ export const metadata: Metadata = buildPageMetadata({
   canonicalPath: "/compare",
   images: [{ url: SITE_COMPARE_OG_IMAGE, alt: SITE_COMPARE_OG_IMAGE_ALT }],
 });
+
+// Product + Offer JSON-LD so Google understands /compare is a paid product
+// (not just informational content). Helps surface price + currency in SERP
+// rich results and clarifies intent for AI search products like Perplexity.
+function buildCompareProductJsonLd() {
+  const siteUrl = getSiteUrl();
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `${siteUrl}/compare#product`,
+        name: "FamiRelo Personalized City Comparison Report",
+        description:
+          "A personalized side-by-side comparison report for up to 3 cities, weighted to a family's budget, schools, visa, and lifestyle priorities. Includes match scores, full visa & schools deep-dive, shareable link, and downloadable PDF.",
+        url: `${siteUrl}/compare`,
+        brand: { "@type": "Brand", name: "FamiRelo" },
+        category: "Family relocation planning",
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Single comparison report",
+            price: "9.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: `${siteUrl}/compare`,
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: "9.00",
+              priceCurrency: "USD",
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            "@type": "Offer",
+            name: "3-report bundle",
+            price: "19.00",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: `${siteUrl}/compare`,
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              price: "19.00",
+              priceCurrency: "USD",
+              valueAddedTaxIncluded: false,
+            },
+          },
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Compare cities",
+            item: `${siteUrl}/compare`,
+          },
+        ],
+      },
+    ],
+  } as Record<string, unknown>;
+}
 
 const SAMPLE_CITIES = [
   { name: "Valencia", country: "Spain", match: 91, fit: "Comfortable", fitStyle: "text-emerald-700 bg-emerald-50" },
@@ -67,6 +133,7 @@ function barColor(score: number) {
 export default function CompareLandingPage() {
   return (
     <div className="min-h-screen bg-stone-50 pb-20">
+      <JsonLd data={buildCompareProductJsonLd()} />
       {/* Nav */}
       <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
@@ -95,29 +162,28 @@ export default function CompareLandingPage() {
         <div className="mx-auto max-w-2xl">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] md:mb-6 md:px-4 md:py-2 md:text-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A5F]" />
-            One-time payment · No subscription
+            From $9 · pay once · no subscription
           </div>
           <h1 className="mb-4 text-3xl font-black tracking-tight text-slate-900 md:mb-5 md:text-6xl">
-            Stop guessing.{" "}
-            <span className="text-[#FF5A5F]">Compare cities</span>{" "}
-            built for your family.
+            Pick the city you&apos;ll{" "}
+            <span className="text-[#FF5A5F]">actually move to</span>
+            {" "}— weighted to your family.
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-slate-500 md:mb-10 md:text-lg">
-            Pick up to 3 cities, tell us your situation, and get a personalized
-            report with match scores, budget fit, visa paths, and schools — not
-            generic data, but weighted to{" "}
-            <em className="font-semibold not-italic text-slate-700">you</em>.
+            Compare up to 3 cities side by side and get a personalized report
+            scored against your budget, schools, visa needs, and priorities — not
+            generic blog rankings. Try a free preview before you pay.
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link
               href="/compare/build"
               className="flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-[#e84a4f] hover:shadow-xl"
             >
-              Build your free preview
+              Try a free preview
               <ArrowRight size={16} strokeWidth={2.5} />
             </Link>
             <p className="text-sm text-slate-400">
-              No account needed · See results instantly
+              No account needed · See preview instantly
             </p>
           </div>
         </div>

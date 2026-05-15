@@ -152,6 +152,18 @@ export default function SiteHierarchyMenu({ variant }: Props) {
               </li>
               <li>
                 <Link
+                  href="/compare"
+                  className="relative z-10 flex items-center justify-between rounded-md px-2 py-2.5 font-semibold text-slate-900 hover:bg-slate-100 active:bg-slate-200"
+                  onClick={() => setOpen(false)}
+                >
+                  <span>Compare cities</span>
+                  <span className="ml-2 rounded-full bg-[#FF5A5F]/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                    From $9
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog"
                   className="relative z-10 block rounded-md px-2 py-2.5 font-semibold text-slate-900 hover:bg-slate-100 active:bg-slate-200"
                   onClick={() => setOpen(false)}

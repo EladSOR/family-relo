@@ -71,6 +71,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
+      // Marketing landing for the paid comparison product. High priority so
+      // crawlers prioritise it — it was previously missing from the sitemap,
+      // which throttled GSC/Bing discovery despite the page being indexable.
+      url: `${base}/compare`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${base}/destinations`,
       lastModified: now,
       changeFrequency: "weekly",
