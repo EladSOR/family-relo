@@ -6,6 +6,9 @@ import { SITE_SERP_TITLE_BRAND } from "@/lib/seo/constants";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import BlogComparePromo from "@/components/blog/BlogComparePromo";
+import { JsonLd } from "@/components/JsonLd";
+import { buildBlogIndexJsonLd } from "@/lib/seo/siteJsonLd";
+import { getSiteUrl } from "@/lib/siteUrl";
 
 const TITLE = `Family relocation: city guides & comparisons for families | ${SITE_SERP_TITLE_BRAND}`;
 
@@ -21,8 +24,10 @@ export const metadata: Metadata = buildPageMetadata({
 
 export default function BlogIndexPage() {
   const posts = getAllBlogPosts();
+  const siteUrl = getSiteUrl();
   return (
     <main className="min-h-screen bg-[#F5EFE8]">
+      <JsonLd data={buildBlogIndexJsonLd(siteUrl, DESCRIPTION)} />
       <StickySearchHeader />
       <Breadcrumb
         items={[
