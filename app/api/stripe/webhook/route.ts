@@ -76,10 +76,14 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // ── charge.refunded → zero out remaining credits on the matching purchase
+  // ── charge.refunded → mark purchase refunded + revoke remaining credits.
   // Triggered when YOU refund (manually or via Stripe dispute resolution).
-  // We don't delete the row or revoke already-saved comparisons — the user
-  // may legitimately need those records — but we prevent any new redeems.
+  // We never delete the row or revoke already-saved comparisons — the user
+  // may legitimately need those records — but no NEW reports can be unlocked
+  // with the refunded credits.
+  //
+  // Distinguishes full vs partial refund so the UI can tell the user
+  // honestly: "1 used · 2 refunded" vs "Refunded — credits revoked".
   if (event.type === "charge.refunded") {
     const charge = event.data.object as Stripe.Charge;
     const paymentIntentId = typeof charge.payment_intent === "string"
@@ -107,7 +111,7 @@ export async function POST(req: NextRequest) {
       const admin = createAdminClient();
       const { data: purchase } = await admin
         .from("purchases")
-        .select("id, credits_total")
+        .select("id, credits_total, credits_used")
         .eq("stripe_session_id", sessionId)
         .maybeSingle();
 
@@ -116,16 +120,30 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ received: true });
       }
 
+      // Stripe sets `amount_refunded === amount` for full refunds, and a smaller
+      // value for partial refunds. We use this to distinguish UX states.
+      const isFullRefund = charge.amount_refunded >= charge.amount;
+      const refundKind: "full" | "partial" = isFullRefund ? "full" : "partial";
+
       const { error } = await admin
         .from("purchases")
-        .update({ credits_used: purchase.credits_total })
+        .update({
+          credits_used: purchase.credits_total,    // revoke remaining credits
+          refunded_at: new Date().toISOString(),
+          refund_kind: refundKind,
+          credits_used_at_refund: purchase.credits_used,
+        })
         .eq("id", purchase.id);
 
       if (error) {
-        console.error("[stripe webhook] refund credit zero-out failed", error.message);
+        console.error("[stripe webhook] refund update failed", error.message);
         return NextResponse.json({ error: error.message }, { status: 500 });
       }
-      console.log("[stripe webhook] zeroed credits for refunded purchase", purchase.id);
+      console.log("[stripe webhook] refund recorded", {
+        purchaseId: purchase.id,
+        kind: refundKind,
+        usedAtRefund: purchase.credits_used,
+      });
     } catch (e) {
       console.error("[stripe webhook] charge.refunded", e);
       return NextResponse.json({ error: "Server error" }, { status: 500 });

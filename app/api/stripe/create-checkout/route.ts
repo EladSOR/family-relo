@@ -59,6 +59,12 @@ export async function POST(req: NextRequest) {
     customer_email: user.email ?? undefined,
     client_reference_id: user.id,
     line_items: [{ price: priceId, quantity: 1 }],
+    // Pin receipt_email to the PaymentIntent. This forces Stripe to send a
+    // receipt for this purchase (and a refund email later, if refunded)
+    // regardless of the dashboard-level "Customer emails" toggle state. Bulletproof.
+    payment_intent_data: user.email
+      ? { receipt_email: user.email }
+      : undefined,
     success_url: `${origin}/compare/results?${reportQs}&session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${origin}/compare/results?${reportQs}`,
     metadata: {

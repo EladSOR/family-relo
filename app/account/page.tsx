@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { MapPin, FileText, Plus, ArrowRight, Package } from "lucide-react";
+import { MapPin, FileText, Plus, ArrowRight, Package, RotateCcw } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
 import SignOutButton from "@/components/auth/SignOutButton";
 
@@ -29,11 +29,26 @@ export default async function AccountPage() {
       .order("created_at", { ascending: false }),
   ]);
 
-  // Credits summary across all purchases
+  // Credits summary across all purchases.
+  // Refunded purchases have credits_used === credits_total (revoked) but we
+  // surface them differently in the UI so the user understands "you didn't
+  // burn through all your credits — some were refunded, not consumed."
   const totalCredits  = (purchases ?? []).reduce((s, p) => s + p.credits_total, 0);
   const usedCredits   = (purchases ?? []).reduce((s, p) => s + p.credits_used,  0);
   const remaining     = totalCredits - usedCredits;
   const hasPurchase   = totalCredits > 0;
+
+  // Refund-aware display state (looks at the most recent refunded purchase).
+  // For the simple v1 we only show one purchase's refund context — if the
+  // user has multiple purchases mixing refunded + active, the active credits
+  // are still usable (remaining > 0) and we hide the refund banner.
+  const refundedPurchase = (purchases ?? []).find((p) => p.refunded_at != null);
+  const hasActiveCredits = remaining > 0;
+  const showRefundState = !!refundedPurchase && !hasActiveCredits;
+  const refundUsedAtTime: number = refundedPurchase?.credits_used_at_refund ?? 0;
+  const refundedKind: "full" | "partial" | null = refundedPurchase?.refund_kind ?? null;
+  const refundedTotal: number = refundedPurchase?.credits_total ?? 0;
+  const refundedRevokedCount = Math.max(0, refundedTotal - refundUsedAtTime);
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -64,8 +79,46 @@ export default async function AccountPage() {
           <p className="mt-1 text-sm text-slate-500">{user.email}</p>
         </div>
 
-        {/* Credits banner — only if they have a purchase */}
-        {hasPurchase && (
+        {/* Credits banner — three states: refund-aware, active-credits, used-up */}
+        {hasPurchase && showRefundState ? (
+          // ── Refund state — explain WHY there are no credits, not just "used" ──
+          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4">
+            <div className="flex items-start gap-3">
+              <RotateCcw size={18} className="mt-0.5 shrink-0 text-amber-600" />
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-bold text-slate-800">
+                  {refundedKind === "full" && refundUsedAtTime === 0 && (
+                    <>Your purchase was refunded — no reports created</>
+                  )}
+                  {refundedKind === "full" && refundUsedAtTime > 0 && (
+                    <>
+                      Your purchase was refunded — {refundUsedAtTime} report
+                      {refundUsedAtTime === 1 ? "" : "s"} created, remaining
+                      credits revoked
+                    </>
+                  )}
+                  {refundedKind === "partial" && (
+                    <>
+                      {refundUsedAtTime} used · {refundedRevokedCount} refunded
+                    </>
+                  )}
+                </p>
+                <p className="mt-1 text-xs leading-relaxed text-slate-600">
+                  Reports you already created are still saved below — they&apos;re
+                  yours to keep. To create new reports, start a new comparison.
+                </p>
+              </div>
+              <Link
+                href="/compare/build"
+                className="flex shrink-0 items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-3 py-2 text-xs font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
+              >
+                Buy a new bundle
+                <ArrowRight size={12} />
+              </Link>
+            </div>
+          </div>
+        ) : hasPurchase ? (
+          // ── Normal state — credits remaining or fully used ──────────────────
           <div className="mb-6 flex items-center justify-between rounded-2xl border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-5 py-4">
             <div className="flex items-center gap-3">
               <Package size={18} className="shrink-0 text-[#FF5A5F]" />
@@ -78,7 +131,7 @@ export default async function AccountPage() {
                 </p>
               </div>
             </div>
-            {remaining > 0 && (
+            {remaining > 0 ? (
               <Link
                 href="/compare/build"
                 className="flex items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-4 py-2 text-xs font-bold text-white shadow-sm transition-all hover:bg-[#e84a4f]"
@@ -86,9 +139,17 @@ export default async function AccountPage() {
                 Build next report
                 <ArrowRight size={12} />
               </Link>
+            ) : (
+              <Link
+                href="/compare"
+                className="flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 transition-all hover:border-slate-300"
+              >
+                Buy more
+                <ArrowRight size={12} />
+              </Link>
             )}
           </div>
-        )}
+        ) : null}
 
         {/* Saved reports */}
         <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
