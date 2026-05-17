@@ -1,0 +1,61 @@
+name: Link health check
+
+# When this runs:
+#   • Every Monday 08:00 UTC (weekly health check)
+#   • On any PR that touches data/*.json (catch broken links before merge)
+#   • On demand (workflow_dispatch)
+#
+# On the weekly run we commit the updated report back to main so the admin
+# dashboard always reads a fresh report. On PRs we only fail/pass the check.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  pull_request:
+    paths:
+      - "data/cities.json"
+      - "data/countries.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run link checker
+        id: check
+        # Don't fail the workflow on broken links — we still want to commit
+        # the updated report so the dashboard reflects current state. The
+        # JSON report itself flags every broken link for the admin to fix.
+        run: node scripts/check-links.mjs || true
+
+      - name: Commit updated report (main branch only)
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- data/link-health-report.json; then
+            echo "No change to link-health-report.json"
+            exit 0
+          fi
+          git config user.name  "famirelo-bot"
+          git config user.email "bot@famirelo.com"
+          git add data/link-health-report.json
+          git commit -m "chore(links): refresh link-health-report"
+          git push
+
+      - name: Fail PR if any link is broken
+        if: github.event_name == 'pull_request'
+        run: |
+          BROKEN=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/link-health-report.json','utf8')).totals.broken)")
+          echo "Broken: $BROKEN"
+          if [ "$BROKEN" -gt 0 ]; then
+            echo "::error::Link check found $BROKEN broken URL(s). See report."
+            exit 1
+          fi

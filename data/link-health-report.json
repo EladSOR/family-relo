@@ -1,0 +1,12 @@
+{
+  "generatedAt": null,
+  "totals": {
+    "uniqueUrls": 0,
+    "occurrences": 0,
+    "ok": 0,
+    "redirect": 0,
+    "broken": 0
+  },
+  "broken": [],
+  "redirects": []
+}
