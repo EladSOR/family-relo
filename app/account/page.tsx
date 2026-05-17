@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Link from "next/link";
-import { FileText, Plus, ArrowRight, Package, RotateCcw } from "lucide-react";
+import { FileText, Plus, ArrowRight, Package, RotateCcw, Shield } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
+import { isAdminEmail } from "@/lib/admin/auth";
 import SignOutButton from "@/components/auth/SignOutButton";
 import Logo from "@/components/brand/Logo";
 
@@ -50,6 +51,11 @@ export default async function AccountPage() {
   const refundedKind: "full" | "partial" | null = refundedPurchase?.refund_kind ?? null;
   const refundedTotal: number = refundedPurchase?.credits_total ?? 0;
   const refundedRevokedCount = Math.max(0, refundedTotal - refundUsedAtTime);
+
+  // Admin shortcut — only rendered when the signed-in user is in ADMIN_EMAILS.
+  // Other users never see this link; even if they did, /admin/freshness 404s
+  // any non-allowlisted visitor (server-side gate in lib/admin/auth.ts).
+  const isAdmin = isAdminEmail(user.email);
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -245,6 +251,24 @@ export default async function AccountPage() {
               See what&apos;s included →
             </Link>
           </p>
+        )}
+
+        {isAdmin && (
+          <Link
+            href="/admin/freshness"
+            className="mt-6 flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm transition-all hover:border-slate-300 hover:shadow-md"
+          >
+            <div className="flex items-center gap-3">
+              <Shield size={16} className="shrink-0 text-slate-700" />
+              <div>
+                <p className="text-sm font-bold text-slate-800">Freshness admin</p>
+                <p className="text-xs text-slate-500">
+                  Review findings, scan content, manage city updates
+                </p>
+              </div>
+            </div>
+            <ArrowRight size={14} className="text-slate-400" />
+          </Link>
         )}
 
         {/* Support — buyers look here first when something is wrong with a
