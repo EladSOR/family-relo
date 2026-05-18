@@ -63,3 +63,21 @@ export const SITE_COMPARE_OG_IMAGE = "/compare/opengraph-image?v=1";
 
 export const SITE_COMPARE_OG_IMAGE_ALT =
   "Compare cities side by side: personalised match scores, budget fit, schools and visas for your family relocation";
+
+/**
+ * `/single-city` (premium feature landing) — same string for `<title>` and OG/Twitter title.
+ * Keep < 70 chars (incl. ` | FamiRelo`).
+ */
+export const SITE_SINGLE_CITY_TITLE = `Should we move here? Single-city fit report | ${SITE_SERP_TITLE_BRAND}`;
+
+export const SITE_SINGLE_CITY_OPEN_GRAPH_TITLE = SITE_SINGLE_CITY_TITLE;
+
+export const SITE_SINGLE_CITY_DESCRIPTION = clipMetaDescription(
+  "One city, deep personalised analysis: visa paths that match your profile, schools snapshot, 90-day pre-arrival checklist, and a verdict scored to your family. $7 one-time.",
+);
+
+/** `/single-city` social preview — reuse `/compare/opengraph-image` route for now. */
+export const SITE_SINGLE_CITY_OG_IMAGE = SITE_COMPARE_OG_IMAGE;
+
+export const SITE_SINGLE_CITY_OG_IMAGE_ALT =
+  "Should we move here? A personalised one-city fit report for your family: visa paths, schools, and a 90-day checklist";

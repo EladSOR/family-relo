@@ -40,7 +40,10 @@ export async function POST(req: NextRequest) {
 
     const userId = session.metadata?.supabase_user_id;
     const plan = session.metadata?.plan;
-    if (!userId || (plan !== "single" && plan !== "bundle")) {
+    if (
+      !userId ||
+      (plan !== "single" && plan !== "bundle" && plan !== "single_city")
+    ) {
       console.error("[stripe webhook] missing metadata", session.id);
       return NextResponse.json({ received: true });
     }
@@ -57,6 +60,7 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ received: true });
       }
 
+      // Both 'single' and 'single_city' grant 1 credit; only 'bundle' grants 3.
       const creditsTotal = plan === "bundle" ? 3 : 1;
       const { error } = await admin.from("purchases").insert({
         user_id: userId,

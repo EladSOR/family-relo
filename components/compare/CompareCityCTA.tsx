@@ -17,6 +17,10 @@ export default function CompareCityCTA({
   cityName: string;
 }) {
   const buildHref = `/compare/build?cities=${encodeURIComponent(cityId)}`;
+  // Deep-link into the single-city flow with this city already chosen. Users
+  // who are reading one city guide and only considering THAT city are the
+  // natural audience for the $7 report — the "compare" framing doesn't fit.
+  const singleCityHref = `/single-city/build?city=${encodeURIComponent(cityId)}`;
   return (
     <section
       aria-label={`Compare ${cityName} with other cities`}
@@ -85,6 +89,27 @@ export default function CompareCityCTA({
             From $9 · pay once · free preview first
           </p>
         </div>
+      </div>
+
+      {/* Secondary single-city CTA — same pattern, one city, $7. Visible to
+          readers who are already focused on this one city only. */}
+      <div className="mt-7 flex flex-col items-start gap-3 border-t border-[#FF5A5F]/15 pt-5 md:flex-row md:items-center md:justify-between md:gap-6">
+        <p className="text-sm leading-snug text-slate-600 md:text-base">
+          Only seriously considering <strong>{cityName}</strong>? Get a{" "}
+          <Link
+            href={singleCityHref}
+            className="font-bold text-[#FF5A5F] hover:underline"
+          >
+            personalised single-city &ldquo;Should we move here?&rdquo; report
+          </Link>{" "}
+          — verdict, visa paths ranked for you, and a 90-day checklist for $7.
+        </p>
+        <Link
+          href={singleCityHref}
+          className="shrink-0 rounded-xl border border-[#FF5A5F]/30 bg-white px-4 py-2 text-xs font-bold text-[#FF5A5F] transition-all hover:bg-[#FF5A5F]/5 md:text-sm"
+        >
+          Try the $7 report
+        </Link>
       </div>
     </section>
   );

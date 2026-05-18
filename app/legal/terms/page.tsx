@@ -58,15 +58,25 @@ const sections = [
   {
     title: "3. Informational purpose — not professional advice",
     body: (
-      <p>
-        All content on Famirelo — city guides, cost benchmarks, school information, visa summaries,
-        safety scores, comparison reports, and any other data — is provided for{" "}
-        <strong>general informational purposes only</strong>. Nothing on Famirelo constitutes legal,
-        financial, tax, immigration, investment, or medical advice. We make reasonable efforts to
-        keep information current, but conditions change and we cannot guarantee accuracy. Always
-        verify critical information with official government sources and licensed professionals
-        before making relocation or financial decisions.
-      </p>
+      <>
+        <p className="mb-3">
+          All content on Famirelo — city guides, cost benchmarks, school information, visa summaries,
+          safety scores, comparison reports, single-city &ldquo;Should we move here?&rdquo; reports,
+          and any other data, output, score, ranking, verdict, or recommendation — is provided for{" "}
+          <strong>general informational purposes only</strong>. Nothing on Famirelo constitutes legal,
+          financial, tax, immigration, investment, or medical advice.
+        </p>
+        <p>
+          Personalised reports (including but not limited to comparison reports and single-city
+          reports) use the inputs you provide to filter, rank, and present information already
+          published on the site. They are not bespoke professional advice and do not establish any
+          professional, advisory, or fiduciary relationship between you and Famirelo. We make
+          reasonable efforts to keep information current, but visa rules, school fees, rents, and
+          regulations change without notice. Always verify critical information with official
+          government sources and licensed professionals (immigration lawyers, accountants, financial
+          advisors) before making any relocation, financial, or legal decisions.
+        </p>
+      </>
     ),
   },
   {

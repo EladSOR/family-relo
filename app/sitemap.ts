@@ -80,6 +80,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.95,
     },
     {
+      // Marketing landing for the $7 single-city "Should we move here?" report.
+      // Same priority tier as /compare — these are the two paid product pages.
+      url: `${base}/single-city`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${base}/destinations`,
       lastModified: now,
       changeFrequency: "weekly",

@@ -470,6 +470,13 @@ export default function CompareLandingPage() {
             Try a free preview first — pick the plan that fits when you&apos;re ready to unlock.
           </p>
 
+          <p className="mt-3 text-center text-xs text-slate-400">
+            Just one city to evaluate? Try the{" "}
+            <Link href="/single-city" className="font-semibold text-[#FF5A5F] hover:underline">
+              single-city report for $7
+            </Link>{" "}— same depth, one city, with visa paths ranked for your profile.
+          </p>
+
           <div className="mt-4 text-center">
             <Link
               href="/compare/build"

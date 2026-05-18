@@ -58,12 +58,13 @@ export async function GET(req: NextRequest) {
   // 2. Webhook fallback. Stripe says paid, metadata matches the caller, but
   //    no purchase row exists. Write it ourselves from the Stripe session.
   const plan = session.metadata?.plan;
-  if (plan !== "single" && plan !== "bundle") {
+  if (plan !== "single" && plan !== "bundle" && plan !== "single_city") {
     // Should never happen — but guard anyway. Tell the client to keep polling
     // (in case the webhook arrives in the next second with proper metadata).
     return NextResponse.json({ pending: true }, { status: 202 });
   }
 
+  // Both 'single' and 'single_city' grant 1 credit; only 'bundle' grants 3.
   const creditsTotal = plan === "bundle" ? 3 : 1;
   const admin = createAdminClient();
 

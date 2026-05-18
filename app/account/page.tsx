@@ -158,7 +158,7 @@ export default async function AccountPage() {
           <div className="mb-5 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FileText size={15} className="text-slate-400" />
-              <h2 className="text-sm font-bold text-slate-800">My comparison reports</h2>
+              <h2 className="text-sm font-bold text-slate-800">My reports</h2>
             </div>
             {hasPurchase && remaining > 0 && (
               <Link
@@ -180,6 +180,12 @@ export default async function AccountPage() {
                 const href = c.report_url.includes("preview=")
                   ? c.report_url
                   : `${c.report_url}${c.report_url.includes("?") ? "&" : "?"}preview=true`;
+                // A single-city report is a comparisons row with exactly one
+                // city — the URL also points to /single-city/results, but the
+                // city count is the source of truth.
+                const isSingleCity =
+                  (c.city_ids?.length ?? c.city_names?.length ?? 0) === 1 ||
+                  c.report_url?.startsWith("/single-city/");
                 return (
                 <Link
                   key={c.id}
@@ -187,12 +193,19 @@ export default async function AccountPage() {
                   className="flex items-center justify-between rounded-xl border border-slate-100 bg-stone-50 p-4 transition-all hover:border-slate-200 hover:bg-white hover:shadow-sm"
                 >
                   <div className="min-w-0">
-                    <p className="truncate text-sm font-bold text-slate-800">
-                      {c.city_names?.join(" · ") ?? "Comparison"}
+                    <div className="flex items-center gap-2">
+                      <span className="rounded-full bg-slate-200 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-slate-600">
+                        {isSingleCity ? "Single-city" : "Comparison"}
+                      </span>
+                    </div>
+                    <p className="mt-1.5 truncate text-sm font-bold text-slate-800">
+                      {c.city_names?.join(" · ") ?? (isSingleCity ? "City report" : "Comparison")}
                     </p>
                     <p className="mt-0.5 text-xs text-slate-400">
                       {c.top_match && c.top_pct
-                        ? `Best match: ${c.top_match} (${c.top_pct}%)`
+                        ? isSingleCity
+                          ? `Match: ${c.top_pct}%`
+                          : `Best match: ${c.top_match} (${c.top_pct}%)`
                         : "View report"}
                       {" · "}
                       {new Date(c.created_at).toLocaleDateString("en-US", {
@@ -246,9 +259,12 @@ export default async function AccountPage() {
 
         {!hasPurchase && (
           <p className="mt-5 text-center text-xs text-slate-400">
-            One-time $9 per report, $19 for a 3-report bundle.{" "}
+            <Link href="/single-city" className="font-semibold text-[#FF5A5F] hover:underline">
+              Single-city report from $7
+            </Link>
+            {" · "}
             <Link href="/compare" className="font-semibold text-[#FF5A5F] hover:underline">
-              See what&apos;s included →
+              Compare 2-3 cities from $9
             </Link>
           </p>
         )}
