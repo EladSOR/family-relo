@@ -1174,10 +1174,13 @@ export default function SingleCityResultsClient() {
                       One-time payment · Yours forever · Email receipt
                     </p>
 
-                    {/* Bundle upsell — 3 credits, mix and match single-city OR
-                        comparison. The math: $19 = 3 reports = ~$6.33 each
-                        vs $7 for one. Clear win if you're going to look at
-                        more than one city. */}
+                    {/* Bundle upsell. We deliberately DON'T lead with a
+                        per-unit price discount — math is awkward (1×$7 vs
+                        3×$6.33 doesn't compute to anything dramatic). Real
+                        value of the bundle is flexibility: each of the 3
+                        credits can unlock either a single-city report OR a
+                        full 3-city comparison (normally $9). The 2 extra
+                        credits + comparison upgrade option are the pitch. */}
                     <div className="my-4 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                       <span className="h-px flex-1 bg-slate-200" />
                       Or
@@ -1191,20 +1194,22 @@ export default function SingleCityResultsClient() {
                       className="group relative w-full cursor-pointer rounded-xl border-2 border-[#FF5A5F]/40 bg-gradient-to-br from-[#FF5A5F]/10 to-amber-50/40 px-4 py-4 text-left transition-all hover:border-[#FF5A5F]/60 hover:from-[#FF5A5F]/15 disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       <span className="absolute -top-2 right-3 rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-sm">
-                        Best value
+                        Most flexible
                       </span>
                       <div className="flex items-baseline justify-between gap-2">
                         <span className="text-lg font-extrabold text-slate-900">
                           {checkoutLoading === "bundle" ? "…" : "Get the $19 bundle"}
                         </span>
-                        <span className="text-[11px] font-bold text-emerald-700">
-                          Save 50%
+                        <span className="text-[11px] font-bold text-slate-500">
+                          $19 · 3 reports
                         </span>
                       </div>
                       <p className="mt-1 text-xs leading-snug text-slate-600">
-                        <strong>3 reports</strong> at ~$6.33 each — mix &amp; match
-                        single-city or full comparisons. Unlock this report now,
-                        keep <strong>2 more</strong> for later (any city, any time).
+                        Unlock this single-city report now, plus{" "}
+                        <strong>2 more reports</strong> to use any time — each
+                        can be another single-city ($7 value) OR a full{" "}
+                        <strong>3-city side-by-side comparison ($9 value)</strong>.
+                        Best if you&apos;re seriously evaluating more than one place.
                       </p>
                     </button>
 
