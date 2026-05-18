@@ -1174,13 +1174,11 @@ export default function SingleCityResultsClient() {
                       One-time payment · Yours forever · Email receipt
                     </p>
 
-                    {/* Bundle upsell. We deliberately DON'T lead with a
-                        per-unit price discount — math is awkward (1×$7 vs
-                        3×$6.33 doesn't compute to anything dramatic). Real
-                        value of the bundle is flexibility: each of the 3
-                        credits can unlock either a single-city report OR a
-                        full 3-city comparison (normally $9). The 2 extra
-                        credits + comparison upgrade option are the pitch. */}
+                    {/* Bundle upsell — single line of pitch. Bundle = 3
+                        comparison reports (3 cities each); a credit can
+                        ALSO be redeemed for another single-city report,
+                        but we don't lead with that to keep the choice
+                        simple at the point of sale. */}
                     <div className="my-4 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
                       <span className="h-px flex-1 bg-slate-200" />
                       Or
@@ -1191,25 +1189,19 @@ export default function SingleCityResultsClient() {
                       type="button"
                       disabled={user === undefined || checkoutLoading !== null}
                       onClick={() => { void startCheckout("bundle"); }}
-                      className="group relative w-full cursor-pointer rounded-xl border-2 border-[#FF5A5F]/40 bg-gradient-to-br from-[#FF5A5F]/10 to-amber-50/40 px-4 py-4 text-left transition-all hover:border-[#FF5A5F]/60 hover:from-[#FF5A5F]/15 disabled:cursor-not-allowed disabled:opacity-60"
+                      className="group w-full cursor-pointer rounded-xl border-2 border-[#FF5A5F]/40 bg-[#FF5A5F]/5 px-4 py-3.5 text-left transition-all hover:border-[#FF5A5F]/60 hover:bg-[#FF5A5F]/10 disabled:cursor-not-allowed disabled:opacity-60"
                     >
-                      <span className="absolute -top-2 right-3 rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-sm">
-                        Most flexible
-                      </span>
                       <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-lg font-extrabold text-slate-900">
-                          {checkoutLoading === "bundle" ? "…" : "Get the $19 bundle"}
+                        <span className="text-base font-extrabold text-slate-900">
+                          {checkoutLoading === "bundle" ? "…" : "Compare cities instead — $19"}
                         </span>
-                        <span className="text-[11px] font-bold text-slate-500">
-                          $19 · 3 reports
+                        <span className="shrink-0 text-[11px] font-bold text-slate-500">
+                          3 reports
                         </span>
                       </div>
                       <p className="mt-1 text-xs leading-snug text-slate-600">
-                        Unlock this single-city report now, plus{" "}
-                        <strong>2 more reports</strong> to use any time — each
-                        can be another single-city ($7 value) OR a full{" "}
-                        <strong>3-city side-by-side comparison ($9 value)</strong>.
-                        Best if you&apos;re seriously evaluating more than one place.
+                        3 full comparison reports (up to 3 cities each) — better
+                        if you have a shortlist instead of one city in mind.
                       </p>
                     </button>
 
@@ -1219,19 +1211,6 @@ export default function SingleCityResultsClient() {
                         takes 10 seconds.
                       </p>
                     )}
-
-                    {/* Sideways link to /compare for people who came to
-                        single-city but realised they want 2-3 cities right now */}
-                    <p className="mt-4 border-t border-slate-100 pt-4 text-center text-[11px] text-slate-400">
-                      Want a 2-3 city comparison right now?{" "}
-                      <Link
-                        href={`/compare/build?cities=${encodeURIComponent(city.id)}`}
-                        className="font-semibold text-[#FF5A5F] hover:underline"
-                      >
-                        Try the comparison flow
-                      </Link>
-                      .
-                    </p>
                   </>
                 )}
 

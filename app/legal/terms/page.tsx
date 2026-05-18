@@ -106,7 +106,7 @@ const sections = [
     ),
   },
   {
-    title: "5. Digital products and refunds",
+    title: "5. Digital products, credits, and refunds",
     body: (
       <>
         <p className="mb-2">
@@ -128,6 +128,25 @@ const sections = [
               hello@famirelo.com
             </a>{" "}
             and we will resolve the issue or issue a refund at our sole discretion.
+          </li>
+          <li>
+            <strong>Report credits expire 12 months from the date of purchase.</strong> Some
+            purchases include one or more credits that can be redeemed to unlock reports (for
+            example, a bundle purchase). Unused credits automatically expire 12 months after the
+            purchase date and cannot be redeemed, refunded, transferred, or extended after that
+            time. We will not issue refunds for expired credits.
+          </li>
+          <li>
+            <strong>Reports already created remain accessible in your account</strong> for as long
+            as the Service is operational and your account remains in good standing, subject to
+            the rest of these Terms. You may also save reports locally (PDF download or shareable
+            link) at any time after they are unlocked.
+          </li>
+          <li>
+            We may modify, suspend, or discontinue the Service (in whole or in part) at any time.
+            If we permanently discontinue the Service, we will use commercially reasonable efforts
+            to give you advance notice and an opportunity to download any reports you have
+            already created.
           </li>
           <li>
             For subscription products (if and when offered): you may cancel at any time and will
