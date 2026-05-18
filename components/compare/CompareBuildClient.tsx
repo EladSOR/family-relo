@@ -243,7 +243,9 @@ export default function CompareBuildClient() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-3xl px-4 py-8 md:py-12">
+      {/* pb-28 reserves room for the sticky bottom action bar so the last
+          content (city grid / submit row) is never hidden behind it. */}
+      <div className="mx-auto max-w-3xl px-4 py-8 pb-28 md:py-12 md:pb-32">
         {/* Credit-holder banner — replaces "you'll need to pay" friction with
             "you already paid, this one is free" reassurance. */}
         {credits !== null && credits > 0 && (
@@ -570,7 +572,9 @@ export default function CompareBuildClient() {
               </div>
             </div>
 
-            {/* Submit row — Back on left, Submit on right */}
+            {/* In-page Submit row — kept so desktop users who reach the
+                bottom of the form still see the action without relying
+                on the sticky bar (Back lives here too). */}
             <div className="mt-6 flex items-center justify-between">
               <button
                 type="button"
@@ -591,6 +595,59 @@ export default function CompareBuildClient() {
             </div>
           </div>
         )}
+      </div>
+
+      {/* ── Sticky bottom action bar ────────────────────────────────────
+          Follows the user as they scroll the long city grid (Step 1) or
+          the questionnaire (Step 2). Without this, the in-page Next /
+          Submit button is off-screen for most of the flow and users
+          can't tell what to do next — the #1 drop-off risk on mobile.
+
+          Step 1: appears only when 2+ cities are selected ("you have a
+                  valid choice, here's how to continue").
+          Step 2: always visible (form has valid defaults from the start).
+          Hidden when results URL is being built so the screen doesn't
+          flash a stale CTA. */}
+      <div
+        className={`fixed inset-x-0 bottom-0 z-[80] border-t border-slate-200 bg-white/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.04)] transition-transform duration-200 ${
+          (step === 1 && selectedIds.length >= 2) || step === 2
+            ? "translate-y-0"
+            : "translate-y-full"
+        }`}
+      >
+        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3 md:px-6 md:py-4">
+          {/* Left: contextual status */}
+          <div className="min-w-0 flex-1">
+            {step === 1 ? (
+              <p className="truncate text-xs font-semibold text-slate-700 md:text-sm">
+                <span className="text-[#FF5A5F]">{selectedIds.length}</span>
+                {" "}of 3 selected
+                <span className="hidden text-slate-400 sm:inline">
+                  {" "}— {selectedCities.map((c) => c.city).join(" · ")}
+                </span>
+              </p>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setStep(1)}
+                className="flex items-center gap-1.5 text-xs font-medium text-slate-500 hover:text-slate-700 md:text-sm"
+              >
+                <ArrowLeft size={14} />
+                Back
+              </button>
+            )}
+          </div>
+
+          {/* Right: primary CTA */}
+          <button
+            type="button"
+            onClick={() => (step === 1 ? setStep(2) : handleSubmit())}
+            className="flex shrink-0 items-center gap-1.5 rounded-xl bg-[#FF5A5F] px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-[#e84a4f] md:gap-2 md:px-6 md:py-3"
+          >
+            {step === 1 ? "Next" : "See my comparison"}
+            <ChevronRight size={15} strokeWidth={2.5} />
+          </button>
+        </div>
       </div>
     </div>
   );
