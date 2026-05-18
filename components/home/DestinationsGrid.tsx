@@ -1,5 +1,6 @@
 import type { Destination } from "@/lib/types";
 import DestinationCard from "./DestinationCard";
+import BudgetFilter from "./BudgetFilter";
 
 interface Props {
   cities: Destination[];
@@ -35,9 +36,16 @@ export default function DestinationsGrid({ cities }: Props) {
         </p>
       </div>
 
+      {/* ── Budget filter — slider that hides cards above the user's monthly budget */}
+      {/* Client component; cards stay in the SSR DOM so SEO is unaffected (hidden via CSS only) */}
+      <BudgetFilter cities={cities} gridSelector="[data-budget-grid='home']" />
+
       {/* ── Card grid ──────────────────────────────────────────────────── */}
       {/* gap-8 on all breakpoints for generous breathing room between cards */}
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <div
+        data-budget-grid="home"
+        className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
+      >
         {cities.map((city) => (
           <DestinationCard key={city.id} city={city} />
         ))}

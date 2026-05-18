@@ -61,6 +61,7 @@ export default function DestinationCard({ city }: Props) {
           handleSurfaceClick();
         }
       }}
+      data-city-id={city.id}
       className="group relative cursor-pointer overflow-hidden rounded-2xl shadow-md outline-none focus-visible:ring-2 focus-visible:ring-[#FF5A5F] focus-visible:ring-offset-2"
     >
       {/* Crawlers: real href without wrapping the whole card in <a> (avoids nested interactive). */}

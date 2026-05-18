@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import DestinationCard from "@/components/home/DestinationCard";
+import BudgetFilter from "@/components/home/BudgetFilter";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
 import { JsonLd } from "@/components/JsonLd";
@@ -53,8 +54,17 @@ export default function DestinationsPage() {
         </p>
       </div>
 
+      {/* ── Budget filter — slider that hides cards above the user's monthly budget */}
+      {/* Cards remain in SSR DOM; only display:none toggles after hydration → SEO safe */}
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-12 xl:px-16">
+        <BudgetFilter cities={cities} gridSelector="[data-budget-grid='destinations']" />
+      </div>
+
       {/* ── Grid ───────────────────────────────────────────────────────────── */}
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 px-4 pb-20 sm:gap-6 sm:px-6 sm:pb-32 lg:grid-cols-3 lg:px-12 xl:grid-cols-4 xl:px-16 2xl:grid-cols-5">
+      <div
+        data-budget-grid="destinations"
+        className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 px-4 pb-20 sm:gap-6 sm:px-6 sm:pb-32 lg:grid-cols-3 lg:px-12 xl:grid-cols-4 xl:px-16 2xl:grid-cols-5"
+      >
         {cities.map(city => (
           <DestinationCard key={city.id} city={city} />
         ))}

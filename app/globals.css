@@ -156,6 +156,97 @@ body {
   background: #e8eef3;
 }
 
+/* ── Budget filter — dual-thumb range slider ─────────────────────────────── */
+/* Used on the homepage and /destinations to filter cards by monthly family
+   budget. Two `<input type="range">` elements are stacked in the same row;
+   the track is fully transparent (a div in BudgetFilter.tsx draws the visible
+   rail + fill), and pointer events are routed only to the thumbs so both
+   thumbs remain independently draggable. Thumb is sized for touch (28px on
+   mobile, 22px on desktop). */
+
+input[type="range"].dual-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 28px;
+  pointer-events: none;
+  outline: none;
+  /* Lets the browser keep ownership of vertical pan gestures (page scroll)
+     while the slider only intercepts horizontal drags on the thumb. Without
+     this, swiping vertically over the slider area on mobile / emulated touch
+     would stall the page. */
+  touch-action: pan-y;
+}
+
+input[type="range"].dual-thumb::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 6px;
+  border: none;
+}
+input[type="range"].dual-thumb::-moz-range-track {
+  background: transparent;
+  height: 6px;
+  border: none;
+}
+
+input[type="range"].dual-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: auto;
+  margin-top: -11px;
+  height: 28px;
+  width: 28px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #ff5a5f;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.18);
+  cursor: grab;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+input[type="range"].dual-thumb::-moz-range-thumb {
+  pointer-events: auto;
+  height: 28px;
+  width: 28px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #ff5a5f;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.18);
+  cursor: grab;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+input[type="range"].dual-thumb:active::-webkit-slider-thumb,
+input[type="range"].dual-thumb:focus-visible::-webkit-slider-thumb {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 0 4px rgba(255, 90, 95, 0.18),
+    0 1px 3px rgba(15, 23, 42, 0.18);
+  cursor: grabbing;
+}
+input[type="range"].dual-thumb:active::-moz-range-thumb,
+input[type="range"].dual-thumb:focus-visible::-moz-range-thumb {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 0 4px rgba(255, 90, 95, 0.18),
+    0 1px 3px rgba(15, 23, 42, 0.18);
+  cursor: grabbing;
+}
+input[type="range"].dual-thumb:focus-visible {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  input[type="range"].dual-thumb::-webkit-slider-thumb {
+    height: 22px;
+    width: 22px;
+    margin-top: -8px;
+  }
+  input[type="range"].dual-thumb::-moz-range-thumb {
+    height: 22px;
+    width: 22px;
+  }
+}
+
 /* Print styles — used by "Save as PDF" button on /compare/results.
    Hides nav, footers, paywall, share buttons so the printout is just the report. */
 @media print {
