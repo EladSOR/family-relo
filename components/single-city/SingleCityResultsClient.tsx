@@ -5,6 +5,7 @@ import Link from "next/link";
 import {
   Lock,
   ArrowLeft,
+  ArrowRight,
   Share2,
   Check,
   Download,
@@ -1185,6 +1186,9 @@ export default function SingleCityResultsClient() {
                       <span className="h-px flex-1 bg-slate-200" />
                     </div>
 
+                    {/* Whole card is clickable. We also include an explicit
+                        button-like CTA pill at the bottom-right so the
+                        affordance is unambiguous at a glance. */}
                     <button
                       type="button"
                       disabled={user === undefined || checkoutLoading !== null}
@@ -1193,7 +1197,7 @@ export default function SingleCityResultsClient() {
                     >
                       <div className="flex items-baseline justify-between gap-2">
                         <span className="text-base font-extrabold text-slate-900">
-                          {checkoutLoading === "bundle" ? "…" : "Compare cities instead — $19"}
+                          Compare cities instead — $19
                         </span>
                         <span className="shrink-0 text-[11px] font-bold text-slate-500">
                           3 reports
@@ -1203,6 +1207,12 @@ export default function SingleCityResultsClient() {
                         3 full comparison reports (up to 3 cities each) — better
                         if you have a shortlist instead of one city in mind.
                       </p>
+                      <div className="mt-3 flex items-center justify-end">
+                        <span className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-xs font-bold text-[#FF5A5F] shadow-sm ring-1 ring-[#FF5A5F]/30 transition-all group-hover:bg-[#FF5A5F] group-hover:text-white group-hover:ring-[#FF5A5F]">
+                          {checkoutLoading === "bundle" ? "…" : "Choose bundle"}
+                          <ArrowRight size={12} strokeWidth={2.5} />
+                        </span>
+                      </div>
                     </button>
 
                     {user === null && (
