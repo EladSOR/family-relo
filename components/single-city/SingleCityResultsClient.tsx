@@ -227,7 +227,9 @@ export default function SingleCityResultsClient() {
   const [copied, setCopied] = useState(false);
   const [user, setUser] = useState<SupabaseUser | null | undefined>(undefined);
   const [unlockedViaPayment, setUnlockedViaPayment] = useState(false);
-  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  // Tracks which plan's checkout is currently spinning ("single_city" = $7
+  // single report, "bundle" = $19 three-report bundle). null when idle.
+  const [checkoutLoading, setCheckoutLoading] = useState<"single_city" | "bundle" | null>(null);
   const [payError, setPayError] = useState<string | null>(null);
   const [credits, setCredits] = useState<number | null>(null);
   const [redeeming, setRedeeming] = useState(false);
@@ -408,15 +410,24 @@ export default function SingleCityResultsClient() {
     };
   }, [sessionIdParam, user?.id, router]);
 
-  async function startCheckout() {
+  /**
+   * Start a Stripe Checkout session.
+   *   plan = "single_city" → $7 single report (default flow)
+   *   plan = "bundle"      → $19 bundle upsell. We always pass
+   *                          returnPath = "/single-city/results" so the
+   *                          user lands back on THIS report after paying.
+   *                          1 of their 3 new credits will then unlock it
+   *                          via the auto-save flow below.
+   */
+  async function startCheckout(plan: "single_city" | "bundle") {
     setPayError(null);
-    setCheckoutLoading(true);
+    setCheckoutLoading(plan);
 
     if (!user) {
       const qs = new URLSearchParams(window.location.search);
       qs.delete("session_id");
       qs.delete("preview");
-      qs.set("autoCheckout", "single_city");
+      qs.set("autoCheckout", plan);
       const next = `${window.location.pathname}?${qs.toString()}`;
       router.push(`/auth/login?next=${encodeURIComponent(next)}`);
       return;
@@ -429,13 +440,20 @@ export default function SingleCityResultsClient() {
     const r = await fetch("/api/stripe/create-checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ plan: "single_city", reportQs: qs.toString() }),
+      body: JSON.stringify({
+        plan,
+        reportQs: qs.toString(),
+        // Keep the user on this single-city report even when buying a bundle,
+        // so the post-payment auto-save unlocks the report they were
+        // looking at instead of dropping them into an empty /compare/results.
+        returnPath: "/single-city/results",
+      }),
     });
     const data = (await r.json().catch(() => ({}))) as { url?: string; error?: string };
-    setCheckoutLoading(false);
+    setCheckoutLoading(null);
     if (r.status === 401) {
       const qs2 = new URLSearchParams(window.location.search);
-      qs2.set("autoCheckout", "single_city");
+      qs2.set("autoCheckout", plan);
       router.push(
         `/auth/login?next=${encodeURIComponent(window.location.pathname + "?" + qs2.toString())}`,
       );
@@ -448,12 +466,13 @@ export default function SingleCityResultsClient() {
     setPayError(data.error ?? "Checkout unavailable. Try again soon.");
   }
 
-  // Auto-resume checkout after login redirect.
+  // Auto-resume checkout after login redirect (for either plan).
   const autoCheckoutFlag = params.get("autoCheckout");
   useEffect(() => {
-    if (!user || autoCheckoutFlag !== "single_city") return;
+    if (!user) return;
+    if (autoCheckoutFlag !== "single_city" && autoCheckoutFlag !== "bundle") return;
     if (checkoutLoading) return;
-    void startCheckout();
+    void startCheckout(autoCheckoutFlag);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.id, autoCheckoutFlag]);
 
@@ -1142,17 +1161,52 @@ export default function SingleCityResultsClient() {
                   </div>
                 ) : (
                   <>
+                    {/* Primary CTA — the $7 single-city report */}
                     <button
                       type="button"
-                      disabled={user === undefined || checkoutLoading}
-                      onClick={() => { void startCheckout(); }}
+                      disabled={user === undefined || checkoutLoading !== null}
+                      onClick={() => { void startCheckout("single_city"); }}
                       className="w-full cursor-pointer rounded-xl bg-[#FF5A5F] py-3.5 text-base font-bold text-white shadow-md transition-all hover:bg-[#e84a4f] disabled:cursor-not-allowed disabled:opacity-60"
                     >
-                      {checkoutLoading ? "…" : "Pay $7 — unlock now"}
+                      {checkoutLoading === "single_city" ? "…" : "Pay $7 — unlock this report"}
                     </button>
                     <p className="mt-2 text-center text-[11px] text-slate-400">
                       One-time payment · Yours forever · Email receipt
                     </p>
+
+                    {/* Bundle upsell — 3 credits, mix and match single-city OR
+                        comparison. The math: $19 = 3 reports = ~$6.33 each
+                        vs $7 for one. Clear win if you're going to look at
+                        more than one city. */}
+                    <div className="my-4 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+                      <span className="h-px flex-1 bg-slate-200" />
+                      Or
+                      <span className="h-px flex-1 bg-slate-200" />
+                    </div>
+
+                    <button
+                      type="button"
+                      disabled={user === undefined || checkoutLoading !== null}
+                      onClick={() => { void startCheckout("bundle"); }}
+                      className="group relative w-full cursor-pointer rounded-xl border-2 border-[#FF5A5F]/40 bg-gradient-to-br from-[#FF5A5F]/10 to-amber-50/40 px-4 py-4 text-left transition-all hover:border-[#FF5A5F]/60 hover:from-[#FF5A5F]/15 disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <span className="absolute -top-2 right-3 rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-white shadow-sm">
+                        Best value
+                      </span>
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-lg font-extrabold text-slate-900">
+                          {checkoutLoading === "bundle" ? "…" : "Get the $19 bundle"}
+                        </span>
+                        <span className="text-[11px] font-bold text-emerald-700">
+                          Save 50%
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs leading-snug text-slate-600">
+                        <strong>3 reports</strong> at ~$6.33 each — mix &amp; match
+                        single-city or full comparisons. Unlock this report now,
+                        keep <strong>2 more</strong> for later (any city, any time).
+                      </p>
+                    </button>
 
                     {user === null && (
                       <p className="mt-3 text-center text-[11px] text-slate-400">
@@ -1161,14 +1215,15 @@ export default function SingleCityResultsClient() {
                       </p>
                     )}
 
-                    {/* Upsell to compare bundle — for people considering more cities */}
+                    {/* Sideways link to /compare for people who came to
+                        single-city but realised they want 2-3 cities right now */}
                     <p className="mt-4 border-t border-slate-100 pt-4 text-center text-[11px] text-slate-400">
-                      Comparing 2-3 cities instead? Try the{" "}
+                      Want a 2-3 city comparison right now?{" "}
                       <Link
                         href={`/compare/build?cities=${encodeURIComponent(city.id)}`}
                         className="font-semibold text-[#FF5A5F] hover:underline"
                       >
-                        comparison report from $9
+                        Try the comparison flow
                       </Link>
                       .
                     </p>

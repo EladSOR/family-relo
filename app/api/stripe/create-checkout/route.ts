@@ -13,12 +13,16 @@ function getOrigin(req: NextRequest): string {
 
 /**
  * POST /api/stripe/create-checkout
- * Body: { plan: "single" | "bundle" | "single_city", reportQs: string }
- * reportQs = query string without leading "?" (e.g. cities=a&budget=5000&...)
+ * Body: { plan: "single" | "bundle" | "single_city", reportQs: string, returnPath?: string }
+ *   reportQs   — URL query string without leading "?" (e.g. cities=a&budget=5000&...)
+ *   returnPath — optional override for where Stripe sends the user after payment.
+ *                Used by the single-city paywall when it upsells the $19 bundle:
+ *                we still want the user returned to /single-city/results (the report
+ *                they were trying to unlock), not the default /compare/results.
  *
- * Routing by plan:
- *   - "single" / "bundle" → /compare/results (comparison reports)
- *   - "single_city"       → /single-city/results ($7 "Should we move here?")
+ * Default routing by plan when returnPath is NOT set:
+ *   - "single" / "bundle" → /compare/results
+ *   - "single_city"       → /single-city/results
  */
 type Plan = "single" | "bundle" | "single_city";
 
@@ -34,6 +38,14 @@ const PLAN_RESULTS_PATH: Record<Plan, string> = {
   single_city: "/single-city/results",
 };
 
+// Allowlist for returnPath — never trust client-controlled redirect targets
+// unconditionally (open-redirect risk). Stripe Checkout success/cancel URLs
+// must point at our own report pages.
+const ALLOWED_RETURN_PATHS = new Set<string>([
+  "/compare/results",
+  "/single-city/results",
+]);
+
 export async function POST(req: NextRequest) {
   if (!process.env.STRIPE_SECRET_KEY) {
     return NextResponse.json({ error: "Payments not configured" }, { status: 503 });
@@ -48,6 +60,7 @@ export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
   const plan = body?.plan as string | undefined;
   const reportQs = typeof body?.reportQs === "string" ? body.reportQs : "";
+  const rawReturnPath = typeof body?.returnPath === "string" ? body.returnPath : "";
 
   if (plan !== "single" && plan !== "bundle" && plan !== "single_city") {
     return NextResponse.json({ error: "Invalid plan" }, { status: 400 });
@@ -63,7 +76,11 @@ export async function POST(req: NextRequest) {
 
   const origin = getOrigin(req);
   const stripe = getStripe();
-  const resultsPath = PLAN_RESULTS_PATH[plan];
+  // Honor returnPath when allowlisted (e.g. bundle upsell from single-city
+  // paywall), otherwise fall back to the plan's default results page.
+  const resultsPath = ALLOWED_RETURN_PATHS.has(rawReturnPath)
+    ? rawReturnPath
+    : PLAN_RESULTS_PATH[plan];
 
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
