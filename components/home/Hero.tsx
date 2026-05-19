@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import SearchBar from "./SearchBar";
 import Logo from "@/components/brand/Logo";
 import StickySearchHeader from "@/components/StickySearchHeader";
@@ -90,21 +91,23 @@ export default function Hero() {
         {/* ── HERO CONTENT ──────────────────────────────────────────────── */}
         <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 pb-16 pt-4 text-center md:pb-32 lg:pb-20 lg:pt-16">
 
-          {/* Trust badge */}
+          {/* Trust badge — evergreen positioning, no count. Reads as social
+              proof through identity ("made for X") without making a claim
+              that has to be updated as the product grows. */}
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm lg:mb-10 lg:px-6 lg:py-2.5 lg:text-base">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-            Trusted by 2,000+ relocating families
+            Made for relocating families
           </div>
 
           {/* Headline */}
           <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl lg:mb-7 lg:max-w-none lg:text-8xl">
-            Plan your family&apos;s move.<br />
+            Move abroad with your family.<br />
             <span className="text-white/90">Without the chaos.</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/75 md:text-lg lg:mb-4 lg:max-w-3xl lg:text-xl">
-            Everything families need to relocate — visas, schools, real costs — finally in one place.
+            Visas, schools, real costs, and safety — for families moving abroad.
           </p>
 
           {/* Trust line */}
@@ -115,6 +118,25 @@ export default function Hero() {
           {/* IntersectionObserver target — triggers desktop sticky header */}
           <div ref={heroSearchRef} className="w-full">
             <SearchBar />
+          </div>
+
+          {/* Secondary CTA — surfaces the comparison product without competing
+              with the SearchBar's "Explore" button. Sits in the gradient fade
+              area where the bg is already light stone-50, so we use dark-on-
+              light styling: solid slate-900 pill with white text. High
+              contrast against stone-50, clearly secondary to the brand-red
+              Explore button. */}
+          <div className="mt-6 flex flex-col items-center gap-3 lg:mt-8">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">
+              Or
+            </span>
+            <Link
+              href="/compare"
+              className="group inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-slate-900/20 transition-all hover:scale-[1.02] hover:bg-slate-800 active:scale-95 lg:px-7 lg:text-base"
+            >
+              Compare cities side-by-side
+              <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </div>
 
         </div>
