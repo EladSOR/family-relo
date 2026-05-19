@@ -37,9 +37,20 @@ export default function MapToggle({ cities }: Props) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Hide on /compare/* — the comparison flow has its own sticky CTA + banner,
-  // and a world map of all destinations is irrelevant on those pages.
-  const hideOnRoute = pathname?.startsWith("/compare");
+  // Hide on routes where a world map of destinations is irrelevant or where
+  // the pill would cover important content:
+  //   /compare/*    — comparison flow has its own sticky CTA + banner.
+  //   /advertise/*  — sales / form flow; pill covers form fields on mobile.
+  //   /admin/*      — internal dashboards; not for end users.
+  //   /auth/*       — sign-in flow.
+  //   /single-city/build, /single-city/results — checkout-style flows.
+  const hideOnRoute =
+    pathname?.startsWith("/compare") ||
+    pathname?.startsWith("/advertise") ||
+    pathname?.startsWith("/admin") ||
+    pathname?.startsWith("/auth") ||
+    pathname === "/single-city/build" ||
+    pathname === "/single-city/results";
 
   useEffect(() => {
     if (!open) return;
