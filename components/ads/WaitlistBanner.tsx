@@ -29,10 +29,10 @@ export default function WaitlistBanner() {
           </div>
           <div className="min-w-0">
             <p className="text-sm font-extrabold text-slate-900">
-              All slots are full — join the waitlist
+              Want to advertise on FamiRelo?
             </p>
             <p className="mt-0.5 text-[11px] leading-snug text-slate-500">
-              We'll email you the moment a slot opens. No payment until then.
+              All slots are full — join the waitlist. We'll email you when one opens. No payment until then.
             </p>
           </div>
         </div>
