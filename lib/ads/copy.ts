@@ -41,7 +41,7 @@ export const PLACEHOLDER_SLOT_2: RenderableSlot = {
 export const OPEN_SLOT: RenderableSlot = {
   position: 3,
   kind: "open",
-  brand_name: "Your brand here",
+  brand_name: "Advertise on FamiRelo",
   // Tagline doubles as billing disclosure to prevent surprise at checkout.
   tagline: `Founding rate · ${AD_BILLING_LABEL}`,
   click_url: "/advertise",

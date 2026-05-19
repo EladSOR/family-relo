@@ -22,9 +22,13 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { getStripe } from "@/lib/stripe/server";
 
 export const runtime = "nodejs";
+
+/** Total ad slots configured. The render layer (queries.ts) shows 3 cards. */
+const MAX_AD_SLOTS = 3;
 
 const MAX_BRAND = 40;
 const MAX_TAGLINE = 120;
@@ -84,6 +88,36 @@ export async function POST(req: NextRequest) {
   }
   if (!logoUrl || !logoPath) {
     return NextResponse.json({ error: "Upload your logo first" }, { status: 400 });
+  }
+
+  // ── Capacity guard ───────────────────────────────────────────────────────
+  // Refuse to create a checkout session if every slot is already taken
+  // (live or pending review). Without this the buyer could pay, the webhook
+  // would refund the subscription as oversold, and we'd have a confused user
+  // and a Stripe fee we eat. Defense-in-depth: the public open-slot CTA also
+  // hides itself in this state, but we don't trust the UI alone.
+  try {
+    const adminDb = createAdminClient();
+    const { count, error: capErr } = await adminDb
+      .from("ad_spots")
+      .select("*", { count: "exact", head: true })
+      .in("status", ["pending_review", "active"]);
+    if (capErr) {
+      console.warn("[/api/ads/create-checkout] capacity check failed", capErr.message);
+    } else if ((count ?? 0) >= MAX_AD_SLOTS) {
+      return NextResponse.json(
+        {
+          error:
+            "All ad slots are currently full. Join the waitlist on /advertise " +
+            "and we'll email you the moment a slot opens.",
+        },
+        { status: 409 },
+      );
+    }
+  } catch (e) {
+    console.warn("[/api/ads/create-checkout] capacity check threw", e);
+    // Fall through — we don't want a transient DB hiccup to block legit
+    // applicants. The webhook still has its own oversold-cancel safety net.
   }
 
   const origin = getOrigin(req);

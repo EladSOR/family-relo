@@ -28,7 +28,11 @@ export default async function SponsorStrip() {
       aria-label="Sponsored"
       className="border-t border-slate-100 bg-stone-50/60"
     >
-      <div className="mx-auto max-w-5xl px-4 py-8 md:py-10">
+      {/* Extra bottom padding on mobile so the floating "Show map" pill
+          (fixed bottom-center, ~64px tall incl. shadow) never covers the
+          last clickable card. The footer's pb-20 takes over below this on
+          desktop. */}
+      <div className="mx-auto max-w-5xl px-4 pb-24 pt-8 md:pb-10 md:pt-10">
         <div className="mb-3 flex items-center justify-between">
           <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-500">
             Sponsored

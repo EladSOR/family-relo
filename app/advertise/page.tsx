@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Sparkles, Lock, Users } from "lucide-react";
+import { Sparkles, Lock, Users, Clock } from "lucide-react";
 
 import Logo from "@/components/brand/Logo";
 import AdvertiseForm from "@/components/ads/AdvertiseForm";
+import WaitlistForm from "@/components/ads/WaitlistForm";
 import { ADVERTISE_COPY } from "@/lib/ads/copy";
 import { getRenderableSlots, getOpenSlotCount } from "@/lib/ads/queries";
 
@@ -26,17 +27,26 @@ export default async function AdvertisePage() {
     return (
       <div className="min-h-screen bg-stone-50">
         <NavBar />
-        <main className="mx-auto max-w-2xl px-4 py-16 text-center">
-          <h1 className="text-2xl font-extrabold text-slate-900">All slots are taken right now</h1>
-          <p className="mt-2 text-sm text-slate-600">
-            We keep this section small on purpose. When a current advertiser cancels, we open the next slot — drop us your email and we'll reach out.
+        <main className="mx-auto max-w-md px-4 py-12 text-center md:py-16">
+          <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5A5F]/10 text-[#FF5A5F]">
+            <Clock size={26} strokeWidth={2} />
+          </div>
+          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 md:text-3xl">
+            All ad slots are full
+          </h1>
+          <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-slate-600">
+            We keep this section deliberately small. When a current advertiser cancels we open
+            the next slot — drop your email and you'll be the first to hear.
           </p>
-          <a
-            href="mailto:hello@famirelo.com?subject=Advertise%20on%20FamiRelo%20%E2%80%94%20waitlist"
-            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#FF5A5F] px-5 py-3 text-sm font-bold text-white hover:bg-[#e84a4f]"
-          >
-            Join the waitlist →
-          </a>
+
+          <div className="mt-7">
+            <WaitlistForm source="advertise_page" />
+          </div>
+
+          <p className="mx-auto mt-6 max-w-sm text-[11px] leading-relaxed text-slate-400">
+            We don't run a payment until we have a slot for you — so you'll never need a refund
+            from being on the waitlist.
+          </p>
         </main>
       </div>
     );

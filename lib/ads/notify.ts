@@ -113,6 +113,47 @@ export async function notifyAdvertiserApproved(args: {
   }
 }
 
+/** Waitlist signup → notify the admin so they can reach out personally. */
+export async function notifyAdminWaitlist(args: {
+  email: string;
+  source: string;
+  manageUrl: string;
+}) {
+  const resend = client();
+  const to = adminAddress();
+  if (!resend || !to) {
+    console.warn("[ads/notify] waitlist email not sent — RESEND_API_KEY or ADVERTISE_NOTIFY_EMAIL missing");
+    return;
+  }
+  try {
+    await resend.emails.send({
+      from: fromAddress(),
+      to,
+      subject: `Ad waitlist signup — ${args.email}`,
+      html: `
+        <div style="font-family:system-ui,sans-serif;max-width:560px">
+          <h2 style="margin:0 0 8px">New advertiser on the waitlist</h2>
+          <p style="color:#475569;margin:0 0 16px">
+            All ad slots are currently full. Someone wants to advertise once a slot opens — reach out personally.
+          </p>
+          <table style="width:100%;border-collapse:collapse;font-size:14px">
+            <tr><td style="padding:6px 0;color:#64748b">Email</td><td style="padding:6px 0"><b>${escape(args.email)}</b></td></tr>
+            <tr><td style="padding:6px 0;color:#64748b">Source</td><td style="padding:6px 0">${escape(args.source)}</td></tr>
+          </table>
+          <p style="margin-top:24px">
+            <a href="${escape(args.manageUrl)}"
+               style="background:#0f172a;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">
+              Open admin →
+            </a>
+          </p>
+        </div>
+      `,
+    });
+  } catch (e) {
+    console.error("[ads/notify] waitlist email failed", e);
+  }
+}
+
 /** Ad rejected → tell the advertiser their refund is on the way. */
 export async function notifyAdvertiserRejected(args: {
   to: string;
