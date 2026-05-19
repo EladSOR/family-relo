@@ -1,0 +1,53 @@
+---
+description: How to ask the user (Elad) to perform manual steps
+alwaysApply: true
+---
+
+# User instructions — be short, explicit, copy-pasteable
+
+When you need the user to perform a manual step (run SQL, set an env var,
+configure Stripe, click in a dashboard, etc.), follow these rules.
+
+## Format
+
+1. **One numbered list. Keep it under 6 steps.** No prose paragraphs around it.
+2. **Every link must be a clickable URL.** Don't say "go to Supabase" — say
+   "click [Open Supabase SQL Editor](https://supabase.com/dashboard/project/_/sql/new)".
+3. **Anything they need to type or paste must be in a code block** (or a
+   `<details>` block linking to the file). No prose with "copy this".
+4. **End with one sentence: "What success looks like."** So they know when
+   they're done.
+
+## Don't
+
+- Don't reference filenames they have to open ("open `foo.sql` in your
+  editor"). Embed the contents inline OR link to GitHub raw, OR provide
+  the literal SQL/JSON/text they should paste.
+- Don't explain *why* — they don't care while they're doing the task. The
+  "why" goes in the commit message and code comments.
+- Don't say "easy" or "simple". Just give the steps.
+- Don't add "let me know when done" — assume they'll say so.
+
+## Example — bad
+
+> You'll need to run the new Supabase migration so the waitlist table
+> exists. Open Supabase, go to SQL Editor, find the file at
+> `supabase/migrations/006_ad_waitlist.sql` and run it.
+
+## Example — good
+
+> **Run this SQL in Supabase ([open SQL editor](https://supabase.com/dashboard/project/_/sql/new)):**
+>
+> ```sql
+> -- entire file contents pasted here, ready to copy
+> create table if not exists public.ad_waitlist ( ... );
+> ```
+>
+> **Done when:** you see "Success. No rows returned."
+
+## Apply this format every time you need any manual user action
+
+This includes (non-exhaustive): SQL migrations, Vercel env vars, Stripe
+dashboard config, DNS changes, Google Cloud / GA / GSC setup, Resend
+sender verification, social-image cache busts, Supabase Auth providers,
+Supabase Storage policies, anything in a third-party dashboard.

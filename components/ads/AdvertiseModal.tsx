@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { X, Sparkles, Lock, Users } from "lucide-react";
+import { X, Sparkles, Lock, Users, Clock } from "lucide-react";
 import AdvertiseForm from "./AdvertiseForm";
+import WaitlistForm from "./WaitlistForm";
 import { ADVERTISE_COPY } from "@/lib/ads/copy";
 
 /**
@@ -10,6 +11,10 @@ import { ADVERTISE_COPY } from "@/lib/ads/copy";
  *
  *   • Desktop: centered card, max-width ~640px.
  *   • Mobile:  bottom sheet, ~85% viewport height, page visible behind.
+ *
+ * Two modes:
+ *   • mode="apply"    — full ad-application form (default; slots available)
+ *   • mode="waitlist" — single-input waitlist signup (when all slots taken)
  *
  * Always shows a sticky header with the X close button so users on mobile
  * never feel trapped. Body scrolls; CTA stays visible inside the form.
@@ -20,8 +25,12 @@ import { ADVERTISE_COPY } from "@/lib/ads/copy";
  *   • Backdrop click
  */
 export default function AdvertiseModal({
-  open, onClose,
-}: { open: boolean; onClose: () => void }) {
+  open, onClose, mode = "apply",
+}: {
+  open: boolean;
+  onClose: () => void;
+  mode?: "apply" | "waitlist";
+}) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -64,7 +73,7 @@ export default function AdvertiseModal({
         {/* Sticky header — always shows X */}
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-100 bg-white/95 px-5 py-3 backdrop-blur">
           <p className="text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F]">
-            Advertise on FamiRelo
+            {mode === "waitlist" ? "Advertiser waitlist" : "Advertise on FamiRelo"}
           </p>
           <button
             type="button"
@@ -78,58 +87,98 @@ export default function AdvertiseModal({
 
         {/* Scrollable body */}
         <div className="overflow-y-auto px-5 py-5">
-          {/* Top badges */}
-          <div className="grid grid-cols-3 gap-2">
-            <Badge icon={<Users size={12} />} title={ADVERTISE_COPY.badges[0].label} sub={ADVERTISE_COPY.badges[0].sub} />
-            <Badge icon={<Lock size={12} />} title={ADVERTISE_COPY.badges[1].label} sub={ADVERTISE_COPY.badges[1].sub} />
-            <Badge icon={<Sparkles size={12} />} title={ADVERTISE_COPY.badges[2].label} sub={ADVERTISE_COPY.badges[2].sub} highlight />
-          </div>
-
-          {/* Heading + body — centered */}
-          <h2 className="mt-5 text-center text-xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-2xl">
-            {ADVERTISE_COPY.heading}
-          </h2>
-          <p className="mx-auto mt-2 max-w-md text-center text-[13px] leading-relaxed text-slate-600">
-            {ADVERTISE_COPY.body}
-          </p>
-
-          {/* Form */}
-          <div className="mt-6">
-            <AdvertiseForm compact />
-          </div>
-
-          <p className="mt-3 text-center text-[11px] leading-relaxed text-slate-400">
-            {ADVERTISE_COPY.fineprint}{" "}
-            <a
-              href="/legal/terms#advertising"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-slate-600"
-            >
-              Advertising terms apply
-            </a>
-            .
-          </p>
-
-          {/* What we don't accept — sets expectations before they pay. */}
-          <details className="mt-5 rounded-xl border border-slate-100 bg-stone-50 px-4 py-3 text-xs">
-            <summary className="cursor-pointer list-none font-bold text-slate-700 marker:hidden">
-              {ADVERTISE_COPY.notAcceptedHeading} →
-            </summary>
-            <ul className="mt-2 space-y-1 text-slate-600">
-              {ADVERTISE_COPY.notAccepted.map(item => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-rose-400" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-2 text-[11px] text-slate-400">
-              We refund in full if we reject. No back-and-forth.
-            </p>
-          </details>
+          {mode === "waitlist" ? (
+            <WaitlistBody />
+          ) : (
+            <ApplyBody />
+          )}
         </div>
       </div>
+    </div>
+  );
+}
+
+/** Default body — full ad-application flow. */
+function ApplyBody() {
+  return (
+    <>
+      {/* Top badges */}
+      <div className="grid grid-cols-3 gap-2">
+        <Badge icon={<Users size={12} />} title={ADVERTISE_COPY.badges[0].label} sub={ADVERTISE_COPY.badges[0].sub} />
+        <Badge icon={<Lock size={12} />} title={ADVERTISE_COPY.badges[1].label} sub={ADVERTISE_COPY.badges[1].sub} />
+        <Badge icon={<Sparkles size={12} />} title={ADVERTISE_COPY.badges[2].label} sub={ADVERTISE_COPY.badges[2].sub} highlight />
+      </div>
+
+      {/* Heading + body — centered */}
+      <h2 className="mt-5 text-center text-xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-2xl">
+        {ADVERTISE_COPY.heading}
+      </h2>
+      <p className="mx-auto mt-2 max-w-md text-center text-[13px] leading-relaxed text-slate-600">
+        {ADVERTISE_COPY.body}
+      </p>
+
+      {/* Form */}
+      <div className="mt-6">
+        <AdvertiseForm compact />
+      </div>
+
+      <p className="mt-3 text-center text-[11px] leading-relaxed text-slate-400">
+        {ADVERTISE_COPY.fineprint}{" "}
+        <a
+          href="/legal/terms#advertising"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-slate-600"
+        >
+          Advertising terms apply
+        </a>
+        .
+      </p>
+
+      {/* What we don't accept — sets expectations before they pay. */}
+      <details className="mt-5 rounded-xl border border-slate-100 bg-stone-50 px-4 py-3 text-xs">
+        <summary className="cursor-pointer list-none font-bold text-slate-700 marker:hidden">
+          {ADVERTISE_COPY.notAcceptedHeading} →
+        </summary>
+        <ul className="mt-2 space-y-1 text-slate-600">
+          {ADVERTISE_COPY.notAccepted.map(item => (
+            <li key={item} className="flex items-start gap-2">
+              <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-rose-400" />
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mt-2 text-[11px] text-slate-400">
+          We refund in full if we reject. No back-and-forth.
+        </p>
+      </details>
+    </>
+  );
+}
+
+/** Alt body — slim waitlist signup, used when all slots are full. */
+function WaitlistBody() {
+  return (
+    <div className="text-center">
+      <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-[#FF5A5F]/10 text-[#FF5A5F]">
+        <Clock size={20} strokeWidth={2} />
+      </div>
+      <h2 className="text-xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-2xl">
+        All ad slots are full
+      </h2>
+      <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-slate-600">
+        We keep this section deliberately small. Drop your email — we'll reach out
+        the moment a slot opens (usually within a few weeks).
+      </p>
+
+      <div className="mx-auto mt-6 max-w-sm text-left">
+        <WaitlistForm source="modal" />
+      </div>
+
+      <p className="mx-auto mt-4 max-w-sm text-[11px] leading-relaxed text-slate-400">
+        We don't run a payment until we have a slot for you — so you'll never need
+        a refund from being on the waitlist.
+      </p>
     </div>
   );
 }

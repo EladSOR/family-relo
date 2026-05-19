@@ -17,12 +17,17 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Logo from "@/components/brand/Logo";
-import { getRenderableSlots } from "@/lib/ads/queries";
+import { getRenderableSlots, getOpenSlotCount } from "@/lib/ads/queries";
 import type { RenderableSlot } from "@/lib/ads/types";
 import OpenSlotCard from "./OpenSlotCard";
+import WaitlistBanner from "./WaitlistBanner";
 
 export default async function SponsorStrip() {
   const slots = await getRenderableSlots();
+  // When 0 open slots are visible, the open-slot card disappears — without
+  // any other signal, casual visitors lose all discoverability of the
+  // advertise/waitlist flow. The WaitlistBanner under the grid restores it.
+  const isFull = getOpenSlotCount(slots) === 0;
   return (
     <section
       aria-label="Sponsored"
@@ -47,6 +52,7 @@ export default async function SponsorStrip() {
         <div className="grid gap-3 md:grid-cols-3">
           {slots.map(slot => <SlotCard key={slot.position} slot={slot} />)}
         </div>
+        {isFull && <WaitlistBanner />}
       </div>
     </section>
   );
