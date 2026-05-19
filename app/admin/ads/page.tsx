@@ -5,6 +5,7 @@ import { ExternalLink, Clock, Check } from "lucide-react";
 import { getAdminUser } from "@/lib/admin/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { AdSpot } from "@/lib/ads/types";
+import AdminNav from "@/components/admin/AdminNav";
 import AdActionButtons from "./AdActionButtons";
 
 export const metadata: Metadata = {
@@ -33,14 +34,17 @@ export default async function AdsAdminPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       <header className="border-b border-slate-100 bg-white">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5">
+        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-widest text-[#FF5A5F]">
               FamiRelo admin
             </p>
             <h1 className="text-xl font-extrabold tracking-tight text-slate-900">Ads</h1>
           </div>
-          <p className="text-xs text-slate-500">Signed in as {admin.email}</p>
+          <div className="flex items-center gap-3">
+            <AdminNav />
+            <p className="hidden text-xs text-slate-500 sm:block">Signed in as {admin.email}</p>
+          </div>
         </div>
       </header>
 
