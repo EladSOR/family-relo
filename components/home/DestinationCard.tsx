@@ -96,19 +96,19 @@ export default function DestinationCard({ city }: Props) {
           {city.cost.monthlyFamilyAllIn}
         </div>
 
-        {/* Revealed: stats + Explore */}
-        <div className={`absolute flex flex-col justify-between px-4 py-3 md:px-6 md:py-5 ${STATS_POS} transition-all duration-300 ${
+        {/* Revealed: stats + Explore — desktop pins the CTA so it never clips under rounded corners */}
+        <div className={`absolute flex flex-col justify-between px-4 py-3 md:block md:p-0 ${STATS_POS} transition-all duration-300 ${
           tapped
             ? "pointer-events-auto translate-y-0 opacity-100"
             : "pointer-events-none translate-y-3 opacity-0 md:group-hover:pointer-events-auto md:group-hover:translate-y-0 md:group-hover:opacity-100"
         }`}>
-          <div className="space-y-1.5 md:space-y-5">
+          <div className="space-y-1.5 md:absolute md:inset-x-6 md:top-0 md:bottom-[4.5rem] md:space-y-2.5 md:overflow-hidden">
             {STATS(city).map(({ label, value }) => (
-              <div key={label} className="flex flex-col gap-0 md:gap-1">
+              <div key={label} className="flex flex-col gap-0 md:gap-0.5">
                 <span className="text-xs font-semibold text-white/90 md:text-sm md:text-white/80">
                   {label}
                 </span>
-                <span className="whitespace-nowrap text-xs font-bold text-white md:text-xl md:font-extrabold">
+                <span className="whitespace-nowrap text-xs font-bold text-white md:text-lg md:font-extrabold">
                   {value}
                 </span>
               </div>
@@ -124,8 +124,8 @@ export default function DestinationCard({ city }: Props) {
             Explore
           </Link>
 
-          {/* Desktop: non-link; click bubbles to surface → router.push */}
-          <span className="hidden md:block w-full cursor-pointer overflow-hidden rounded-2xl bg-[#FF5A5F] py-3 text-center text-sm font-bold text-white hover:bg-[#e84a4f] active:scale-[0.98]">
+          {/* Desktop: pinned above card bottom; click bubbles to surface → router.push */}
+          <span className="hidden md:absolute md:inset-x-6 md:bottom-5 md:block w-auto cursor-pointer overflow-hidden rounded-2xl bg-[#FF5A5F] py-3 text-center text-sm font-bold text-white hover:bg-[#e84a4f] active:scale-[0.98]">
             <span className="block truncate">Explore {city.city}</span>
           </span>
         </div>
