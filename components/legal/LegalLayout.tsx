@@ -4,6 +4,8 @@ import Logo from "@/components/brand/Logo";
 interface Section {
   title: string;
   body: React.ReactNode;
+  /** Optional anchor id — enables deep links like /legal/terms#advertising */
+  id?: string;
 }
 
 export default function LegalLayout({
@@ -53,7 +55,7 @@ export default function LegalLayout({
         {/* Sections */}
         <div className="space-y-10">
           {sections.map((s, i) => (
-            <section key={i}>
+            <section key={i} id={s.id} className={s.id ? "scroll-mt-24" : undefined}>
               <h2 className="mb-3 text-base font-bold text-slate-900">{s.title}</h2>
               <div className="prose prose-sm prose-slate max-w-none leading-relaxed text-slate-600">
                 {s.body}

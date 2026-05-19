@@ -24,6 +24,8 @@ import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
 import CompareCityCTA from "@/components/compare/CompareCityCTA";
 import RelatedCities from "@/components/RelatedCities";
+import SponsorBanner from "@/components/ads/SponsorBanner";
+import SponsorStrip from "@/components/ads/SponsorStrip";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildCityPageJsonLd } from "@/lib/seo/cityJsonLd";
 import { citySerpDescription, citySerpTitle } from "@/lib/seo/serpCopy";
@@ -135,6 +137,10 @@ export default async function CityPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {/* Single-card sponsor banner between the hero and article body. Full
+          page width — visually distinct from the editorial content below. */}
+      <SponsorBanner />
 
       {/* ── Body ─────────────────────────────────────────────────────────── */}
       <div className="mx-auto max-w-3xl px-4 py-8 space-y-4 sm:px-6 md:py-14 md:space-y-8">
@@ -577,6 +583,11 @@ export default async function CityPage({ params }: Props) {
         )}
 
       </div>
+      {/* Sponsor strip: 3 ad slots above the global footer. Placed outside the
+          content container so it spans the full page width and visually marks
+          the end of editorial content. The third slot is the self-serve
+          "Apply to advertise" entry. */}
+      <SponsorStrip />
     </main>
   );
 }

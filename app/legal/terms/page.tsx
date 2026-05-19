@@ -257,7 +257,143 @@ const sections = [
     ),
   },
   {
-    title: "13. Changes to these Terms",
+    title: "13. Advertising program",
+    id: "advertising",
+    body: (
+      <>
+        <p className="mb-3">
+          Famirelo may sell sponsored placements on the site (the
+          &ldquo;Advertising Program&rdquo;). If you apply to run an ad, the
+          following terms apply <strong>in addition</strong> to the rest of these
+          Terms. By submitting an application and a payment, you agree to all of
+          them.
+        </p>
+
+        <p className="mb-2 font-semibold text-slate-800">Application and review</p>
+        <ul className="mb-4 list-disc space-y-1.5 pl-5">
+          <li>
+            Submitting payment does <strong>not</strong> guarantee placement.
+            Every ad is reviewed by us before it goes live.
+          </li>
+          <li>
+            Approval is at our <strong>sole discretion</strong>. We may reject any
+            ad for any reason — including reasons we choose not to disclose — and
+            we are not required to provide an explanation.
+          </li>
+          <li>
+            If we reject your ad during the initial review, we will refund the
+            full amount paid. Refunds are processed via Stripe and typically appear
+            within 5–10 business days.
+          </li>
+          <li>
+            We do not accept ads for: adult content; gambling, sportsbooks, or
+            casinos; cryptocurrency, NFTs, or token sales; multi-level marketing,
+            dropshipping, or get-rich-quick offers; loans, debt consolidation, or
+            other high-risk financial products; or any product or service we deem
+            inappropriate for our family-oriented audience. This list is not
+            exhaustive.
+          </li>
+        </ul>
+
+        <p className="mb-2 font-semibold text-slate-800">Removal after approval</p>
+        <ul className="mb-4 list-disc space-y-1.5 pl-5">
+          <li>
+            We reserve the <strong>unconditional right to remove any approved ad
+            at any time</strong>, with or without notice and with or without
+            explanation, at our sole discretion.
+          </li>
+          <li>
+            <strong>Removal without refund.</strong> We may remove an ad{" "}
+            <strong>without any refund</strong> if we determine, suspect, or
+            reasonably believe that the advertiser has engaged in any of the
+            following: changing the destination URL after approval; cloaking,
+            redirect chains, bait-and-switch, or otherwise sending traffic to a
+            page materially different from what was reviewed; making misleading,
+            deceptive, or fraudulent claims; violating applicable law or any
+            third-party rights; degrading the quality, safety, or reputation of
+            the destination after approval; failing to respond to reasonable
+            requests for information; or breaching these Terms in any way. The
+            advertiser has no claim to a refund in these circumstances.
+          </li>
+          <li>
+            <strong>Removal with prorated refund.</strong> If we remove an ad for
+            reasons unrelated to advertiser misconduct (for example, an editorial
+            decision, a redesign that retires a placement, a change in our
+            audience policy, or simply a change of mind on our part), we will
+            issue a <strong>prorated refund</strong> for the unused portion of the
+            current billing period at our discretion. We are not required to
+            provide a reason for the removal.
+          </li>
+          <li>
+            We may pause an ad temporarily without removing it (for example,
+            pending information from the advertiser). Pauses do not extend the
+            billing period and do not on their own entitle the advertiser to a
+            refund.
+          </li>
+        </ul>
+
+        <p className="mb-2 font-semibold text-slate-800">No guarantees</p>
+        <ul className="mb-4 list-disc space-y-1.5 pl-5">
+          <li>
+            We do <strong>not</strong> guarantee any specific number of
+            impressions, clicks, conversions, traffic level, or business outcome
+            from running an ad.
+          </li>
+          <li>
+            We may change the position, size, design, or location of any ad
+            placement, the number of available slots, the price of future slots,
+            or the pages on which ads appear, at any time and without prior
+            notice. Existing approved ads will continue to run until the end of
+            their current billing period or until removed under the rules above.
+          </li>
+          <li>
+            Site availability is on a commercially reasonable best-effort basis.
+            Outages, maintenance windows, and downtime do not on their own entitle
+            the advertiser to a refund or extension.
+          </li>
+        </ul>
+
+        <p className="mb-2 font-semibold text-slate-800">Advertiser warranties</p>
+        <ul className="mb-4 list-disc space-y-1.5 pl-5">
+          <li>
+            The advertiser warrants that the ad creative, brand name, tagline,
+            logo, and destination URL: (a) are accurate and not misleading; (b)
+            comply with all applicable laws, regulations, and third-party rights
+            (including trademark, copyright, and consumer-protection laws); and
+            (c) will not change materially without our prior written approval.
+          </li>
+          <li>
+            The advertiser is solely responsible for the products, services,
+            content, claims, and post-click experience offered at the destination
+            URL. Famirelo is not a party to any transaction between the
+            advertiser and a visitor.
+          </li>
+          <li>
+            The advertiser indemnifies and holds Famirelo harmless from any claim,
+            loss, or liability arising from breach of these warranties or from the
+            ad or destination.
+          </li>
+        </ul>
+
+        <p className="mb-2 font-semibold text-slate-800">Billing and cancellation</p>
+        <ul className="list-disc space-y-1.5 pl-5">
+          <li>
+            Advertising slots are billed as recurring subscriptions. The billing
+            cadence and price shown at checkout govern the subscription.
+          </li>
+          <li>
+            Advertisers may cancel at any time via Stripe&rsquo;s customer portal.
+            Cancellation stops future renewals — the ad runs until the end of the
+            current paid period unless removed under the rules above. No partial-
+            period refunds are issued on cancellation, except as provided above
+            for at-our-discretion removals.
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "14. Changes to these Terms",
     body: (
       <p>
         We may update these Terms at any time to reflect changes to our Services, legal

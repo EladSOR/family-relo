@@ -80,7 +80,13 @@ export default function EmailCapture({
 
   return (
     <div className={className}>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      {/* suppressHydrationWarning: password manager extensions (Dashlane,
+          Grammarly, LastPass) inject `data-*` attributes into form/input
+          elements before React hydrates, which Next 16 flags as a hydration
+          mismatch. The mismatch is benign — the extension always re-injects
+          on the client — so we suppress the warning on the two elements
+          extensions actually touch. */}
+      <form onSubmit={handleSubmit} className={styles.form} suppressHydrationWarning>
         <div className="relative min-w-0 flex-1">
           <Mail
             size={14}
@@ -94,6 +100,7 @@ export default function EmailCapture({
             placeholder={placeholder}
             disabled={status === "loading"}
             className={`${styles.input} pl-9`}
+            suppressHydrationWarning
           />
         </div>
         <button

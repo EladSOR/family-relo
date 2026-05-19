@@ -97,6 +97,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div className="flex flex-wrap justify-center gap-4 border-t border-slate-100 pt-6 text-center">
               <Link href="/" className="hover:text-slate-700">Home</Link>
               <Link href="/compare" className="hover:text-slate-700">Compare cities</Link>
+              <Link href="/advertise" className="hover:text-slate-700">Advertise</Link>
               <Link href="/legal/privacy" className="hover:text-slate-700">Privacy Policy</Link>
               <Link href="/legal/terms" className="hover:text-slate-700">Terms of Use</Link>
               <a href="mailto:hello@famirelo.com" className="hover:text-slate-700">hello@famirelo.com</a>
