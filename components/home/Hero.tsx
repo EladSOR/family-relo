@@ -85,7 +85,7 @@ export default function Hero() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.1) 55%, rgba(250,250,249,0) 85%, rgba(250,250,249,1) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 70%, rgba(250,250,249,0) 88%, rgba(250,250,249,1) 100%)",
           }}
         />
         <div
@@ -127,12 +127,12 @@ export default function Hero() {
           </h1>
 
           {/* Sub-headline */}
-          <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/75 md:text-lg lg:mb-4 lg:max-w-3xl lg:text-xl">
+          <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/95 drop-shadow-md md:text-lg lg:mb-4 lg:max-w-3xl lg:text-xl">
             Visas, schools, real costs, and safety — for families moving abroad.
           </p>
 
           {/* Trust line */}
-          <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/50 lg:mb-14 lg:text-base">
+          <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/80 drop-shadow-md lg:mb-14 lg:text-base">
             Built for families, by a family.
           </p>
 
