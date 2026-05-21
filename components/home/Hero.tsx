@@ -73,22 +73,18 @@ export default function Hero() {
           grid below (z-0). Desktop sticky header is z-[100]. */}
       <section className="hero-gradient relative z-20 flex min-h-screen flex-col lg:min-h-0">
 
-        {/* Two stacked overlays for text readability:
-            1. Custom-stop gradient — strong dark at the top for the H1, mostly
-               transparent through the lower-middle so the family silhouettes
-               stay visible, then a short fade to stone-50 only at the very
-               bottom so the section meets the destinations grid cleanly.
-            2. A subtle radial darkening from top so the H1 reads even on the
-               bright golden-hour sun. Both are pointer-events-none so they
-               never block interaction. */}
+        {/* Single overlay: light dark wash through the upper-mid so the H1
+            reads cleanly on the photo's already-dark sky, transparent through
+            the visual focal area (sun + horizon + road), and a short final
+            fade to stone-50 at the very bottom so the section meets the
+            destinations grid cleanly. */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 25%, rgba(0,0,0,0) 55%, rgba(250,250,249,0) 80%, rgba(250,250,249,1) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 30%, rgba(0,0,0,0) 60%, rgba(250,250,249,0) 85%, rgba(250,250,249,1) 100%)",
           }}
         />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,0.35),transparent_60%)]" />
 
         {/* ── NAV ───────────────────────────────────────────────────────────
             z-30 keeps the AuthButton dropdown above the hero content div
