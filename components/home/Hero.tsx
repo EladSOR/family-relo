@@ -73,16 +73,26 @@ export default function Hero() {
           grid below (z-0). Desktop sticky header is z-[100]. */}
       <section className="hero-gradient relative z-20 flex min-h-screen flex-col lg:min-h-0">
 
-        {/* Single overlay: light dark wash through the upper-mid so the H1
-            reads cleanly on the photo's already-dark sky, transparent through
-            the visual focal area (sun + horizon + road), and a short final
-            fade to stone-50 at the very bottom so the section meets the
-            destinations grid cleanly. */}
+        {/* Two stacked overlays for text readability:
+            1. Linear top→bottom — strong dark band through the upper third
+               where the H1 sits, transparent through the focal area, then a
+               short fade to stone-50 at the bottom so the section meets the
+               destinations grid cleanly.
+            2. Radial darken from the upper-left specifically — the sun's
+               golden glow lives there in this photo and bleeds into the H1
+               without it. Both are pointer-events-none. */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 30%, rgba(0,0,0,0) 60%, rgba(250,250,249,0) 85%, rgba(250,250,249,1) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.1) 55%, rgba(250,250,249,0) 85%, rgba(250,250,249,1) 100%)",
+          }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 50% at 25% 30%, rgba(0,0,0,0.45), transparent 70%)",
           }}
         />
 
