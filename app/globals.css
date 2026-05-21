@@ -17,29 +17,22 @@ body {
   font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* ── Animated hero gradient ───────────────────────────────────────────────── */
-
-@keyframes gradient-flow {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
+/* ── Hero cover ──────────────────────────────────────────────────────────────
+ * Cinematic landscape photo as the hero background. Falls back to a deep
+ * gradient if the image fails to load (offline, AdBlock, etc.).
+ *
+ * Sizing: `cover` fills the section and crops as needed. `center 65%` keeps
+ * the FAMILY (which sits in the lower-third of the source photo) inside
+ * the visual centre — both on tall mobile viewports and wide desktops.
+ *
+ * Text contrast is owned by the overlay <div> inside Hero.tsx, NOT here —
+ * keeping the overlay separate lets us tweak readability without touching
+ * the image.
+ */
 .hero-gradient {
-  background: linear-gradient(
-    135deg,
-    #0d1b2a,
-    #1b263b,
-    #1a0533,
-    #2c1654,
-    #203a43,
-    #2c5364,
-    #c94b4b,
-    #4b134f,
-    #0d1b2a
-  );
-  background-size: 400% 400%;
-  animation: gradient-flow 16s ease infinite;
+  background:
+    url('/hero/hero-cover.png') center 65% / cover no-repeat,
+    linear-gradient(135deg, #0d1b2a, #1a0533, #2c1654, #203a43, #2c5364);
 }
 
 /* ── Card hover stat reveal ───────────────────────────────────────────────── */
