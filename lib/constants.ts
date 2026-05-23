@@ -124,9 +124,9 @@ export const CITY_IMAGES: Record<string, string> = {
   "Lima":           "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=900&q=80",
   // ── Batch to 100
   "Bucharest":         "https://images.unsplash.com/photo-1574616979112-f9f52d3747f8?w=900&q=80",
-  "Tallinn":           "https://images.unsplash.com/photo-1724178166647-dae6e9372110?w=900&q=80",
+  "Tallinn":           "https://images.unsplash.com/photo-1759917929136-bcaae526297c?w=900&q=80",
   "Stockholm":         "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=900&q=80",
-  "Brussels":          "https://images.unsplash.com/photo-1573995890753-a4f23342db17?w=900&q=80",
+  "Brussels":          "https://images.unsplash.com/photo-1572886071978-7c60b5b3e506?w=900&q=80",
   "Tbilisi":           "https://images.unsplash.com/photo-1603350576276-24747f7bbf40?w=900&q=80",
   "Hamburg":           "https://images.unsplash.com/photo-1473615695634-d284ec918736?w=900&q=80",
   "The Hague":         "https://images.unsplash.com/photo-1586174035695-35ab9e19215c?w=900&q=80",
