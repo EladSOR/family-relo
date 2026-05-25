@@ -16,6 +16,7 @@ import { NextResponse } from "next/server";
 import { getAdminUser } from "@/lib/admin/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getStripe } from "@/lib/stripe/server";
+import { revalidatePublicAdPages } from "@/lib/ads/cache";
 import { notifyAdvertiserRejected } from "@/lib/ads/notify";
 
 export const runtime = "nodejs";
@@ -117,6 +118,8 @@ export async function POST(req: Request) {
       reason,
     });
   }
+
+  revalidatePublicAdPages();
 
   return NextResponse.json({ ok: true, refunded });
 }

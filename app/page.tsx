@@ -17,6 +17,9 @@ import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 import { buildWebSiteJsonLd } from "@/lib/seo/siteJsonLd";
 import { getSiteUrl } from "@/lib/siteUrl";
 
+/** Serve from CDN edge; refresh at most hourly unless redeployed or ad cache bust. */
+export const revalidate = 3600;
+
 export const metadata: Metadata = buildPageMetadata({
   title: SITE_HOME_TITLE,
   openGraphTitle: SITE_HOME_OPEN_GRAPH_TITLE,

@@ -6,8 +6,10 @@
  * rows), so we never accidentally leak pending or rejected ads to visitors.
  */
 
+import { unstable_cache } from "next/cache";
 import { createAdminClient } from "@/lib/supabase/admin";
 import type { RenderableSlot } from "./types";
+import { AD_SLOTS_CACHE_TAG } from "./cache";
 import {
   OPEN_SLOT,
   PLACEHOLDER_SLOT_1,
@@ -32,20 +34,20 @@ interface ActiveAdRow {
  * Failure to load (Supabase down, env vars missing) → all-placeholder fallback.
  * The site never breaks because ads are unavailable.
  */
-export async function getRenderableSlots(): Promise<RenderableSlot[]> {
-  const fallback: RenderableSlot[] = [
-    PLACEHOLDER_SLOT_1,
-    PLACEHOLDER_SLOT_2,
-    OPEN_SLOT,
-  ];
+const FALLBACK_SLOTS: RenderableSlot[] = [
+  PLACEHOLDER_SLOT_1,
+  PLACEHOLDER_SLOT_2,
+  OPEN_SLOT,
+];
 
+async function fetchRenderableSlots(): Promise<RenderableSlot[]> {
   try {
     const admin = createAdminClient();
     const { data, error } = await admin
       .from("active_ad_spots")
       .select("position, brand_name, tagline, click_url, logo_url");
 
-    if (error || !data) return fallback;
+    if (error || !data) return FALLBACK_SLOTS;
 
     const byPosition = new Map<number, ActiveAdRow>();
     for (const row of data as ActiveAdRow[]) {
@@ -69,8 +71,19 @@ export async function getRenderableSlots(): Promise<RenderableSlot[]> {
       return OPEN_SLOT;
     });
   } catch {
-    return fallback;
+    return FALLBACK_SLOTS;
   }
+}
+
+const getCachedRenderableSlots = unstable_cache(
+  fetchRenderableSlots,
+  [AD_SLOTS_CACHE_TAG],
+  { revalidate: 600, tags: [AD_SLOTS_CACHE_TAG] },
+);
+
+/** Cached ~10 min; busted immediately via `revalidatePublicAdPages()` on admin approve/reject. */
+export async function getRenderableSlots(): Promise<RenderableSlot[]> {
+  return getCachedRenderableSlots();
 }
 
 /** Are there any open (non-live) public-sale slots? Used by the badge. */

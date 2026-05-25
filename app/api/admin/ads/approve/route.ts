@@ -11,6 +11,7 @@
 import { NextResponse } from "next/server";
 import { getAdminUser } from "@/lib/admin/auth";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { revalidatePublicAdPages } from "@/lib/ads/cache";
 import { notifyAdvertiserApproved } from "@/lib/ads/notify";
 
 export const runtime = "nodejs";
@@ -56,6 +57,8 @@ export async function POST(req: Request) {
       brandName: ad.brand_name,
     });
   }
+
+  revalidatePublicAdPages();
 
   return NextResponse.json({ ok: true });
 }

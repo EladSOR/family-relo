@@ -48,6 +48,9 @@ export function generateStaticParams() {
   }));
 }
 
+/** Serve from CDN edge; refresh at most hourly unless redeployed or ad cache bust. */
+export const revalidate = 3600;
+
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 interface Props {
