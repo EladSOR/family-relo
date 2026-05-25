@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-18T11:50:06.571Z",
+  "generatedAt": "2026-05-25T11:55:52.402Z",
   "totals": {
     "uniqueUrls": 589,
     "occurrences": 1034,
-    "ok": 422,
+    "ok": 366,
     "redirect": 38,
-    "broken": 129
+    "broken": 185
   },
   "broken": [
     {
@@ -17,6 +17,16 @@
       "scopeName": "Valencia, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.asvalencia.org",
+      "label": "American School of Valencia",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "valencia-es",
+      "scopeName": "Valencia, Spain",
+      "section": "sources",
+      "path": "sources.schools.0"
     },
     {
       "url": "https://www.caxtoncollege.com",
@@ -59,6 +69,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Lisbon",
+      "label": "Lisbon Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "lisbon-pt",
+      "scopeName": "Lisbon, Portugal",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.visitdubai.com/en/visa-information",
       "label": "Dubai Virtual Working Programme visa official UAE",
       "code": 404,
@@ -99,6 +119,26 @@
       "path": "sources.schools.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Dubai",
+      "label": "Dubai Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "dubai-ae",
+      "scopeName": "Dubai, UAE",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
+      "label": "Chiang Mai Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "chiang-mai-th",
+      "scopeName": "Chiang Mai, Thailand",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.bangkokhospital-kohphangan.com",
       "label": "Bangkok Hospital Koh Phangan",
       "code": "fetch failed",
@@ -107,6 +147,16 @@
       "scopeName": "Koh Phangan, Thailand",
       "section": "sources",
       "path": "sources.healthcare.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan",
+      "label": "Koh Phangan Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "koh-phangan-th",
+      "scopeName": "Koh Phangan, Thailand",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.isssamui.com",
@@ -139,6 +189,16 @@
       "path": "sources.healthcare.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Ko-Samui",
+      "label": "Koh Samui Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "koh-samui-th",
+      "scopeName": "Koh Samui, Thailand",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest rental portal",
       "code": 403,
@@ -149,6 +209,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Barcelona",
+      "label": "Barcelona Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "barcelona-es",
+      "scopeName": "Barcelona, Spain",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest rental portal",
       "code": 403,
@@ -157,6 +227,16 @@
       "scopeName": "Madrid, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Madrid",
+      "label": "Madrid Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "madrid-es",
+      "scopeName": "Madrid, Spain",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
@@ -189,6 +269,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Porto",
+      "label": "Porto Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "porto-pt",
+      "scopeName": "Porto, Portugal",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.immobilienscout24.de",
       "label": "ImmoScout24 — Germany's largest property portal",
       "code": 401,
@@ -219,6 +309,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Berlin",
+      "label": "Berlin Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "berlin-de",
+      "scopeName": "Berlin, Germany",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.pararius.com",
       "label": "Pararius — strong rental focus, English-language interface",
       "code": 403,
@@ -227,6 +327,26 @@
       "scopeName": "Amsterdam, Netherlands",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Amsterdam",
+      "label": "Amsterdam Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "amsterdam-nl",
+      "scopeName": "Amsterdam, Netherlands",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Prague",
+      "label": "Prague Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "prague-cz",
+      "scopeName": "Prague, Czech Republic",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.gov.hu/en",
@@ -269,6 +389,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Budapest",
+      "label": "Budapest Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "budapest-hu",
+      "scopeName": "Budapest, Hungary",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.ddproperty.com",
       "label": "DDproperty — Thailand's largest property portal (English interface)",
       "code": 403,
@@ -287,6 +417,16 @@
       "scopeName": "Bangkok, Thailand",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Bangkok",
+      "label": "Bangkok Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "bangkok-th",
+      "scopeName": "Bangkok, Thailand",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.ddproperty.com",
@@ -309,14 +449,34 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Phuket",
+      "label": "Phuket Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "phuket-th",
+      "scopeName": "Phuket, Thailand",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property portal",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "athens-gr",
       "scopeName": "Athens, Greece",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.tospitimou.gr",
+      "label": "Tospitimou.gr — popular for family homes in the suburbs",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "athens-gr",
+      "scopeName": "Athens, Greece",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
@@ -329,6 +489,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Athens",
+      "label": "Athens Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "athens-gr",
+      "scopeName": "Athens, Greece",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest rental portal",
       "code": 403,
@@ -337,6 +507,16 @@
       "scopeName": "Malaga, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Malaga",
+      "label": "Malaga Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "malaga-es",
+      "scopeName": "Malaga, Spain",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.bayut.com",
@@ -349,6 +529,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Abu-Dhabi",
+      "label": "Abu Dhabi Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "abu-dhabi-ae",
+      "scopeName": "Abu Dhabi, UAE",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.domain.com.au",
       "label": "Domain.com.au — one of Australia's two largest property portals",
       "code": 404,
@@ -379,9 +569,19 @@
       "path": "sources.healthcare.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Sydney",
+      "label": "Sydney Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "sydney-au",
+      "scopeName": "Sydney, Australia",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -399,9 +599,19 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Tel-Aviv",
+      "label": "Tel Aviv Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "tel-aviv-il",
+      "scopeName": "Tel Aviv, Israel",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -419,6 +629,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Eilat",
+      "label": "Eilat Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "eilat-il",
+      "scopeName": "Eilat, Israel",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.domain.com.au",
       "label": "Domain.com.au — one of Australia's two largest property portals",
       "code": 404,
@@ -449,6 +669,16 @@
       "path": "sources.healthcare.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Melbourne",
+      "label": "Melbourne Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "melbourne-au",
+      "scopeName": "Melbourne, Australia",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.domain.com.au",
       "label": "Domain.com.au — one of Australia's two largest property portals",
       "code": 404,
@@ -477,6 +707,36 @@
       "scopeName": "Brisbane, Australia",
       "section": "sources",
       "path": "sources.healthcare.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Brisbane",
+      "label": "Brisbane Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "brisbane-au",
+      "scopeName": "Brisbane, Australia",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Auckland",
+      "label": "Auckland Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "auckland-nz",
+      "scopeName": "Auckland, New Zealand",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Wellington",
+      "label": "Wellington Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "wellington-nz",
+      "scopeName": "Wellington, New Zealand",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.immobiliare.it",
@@ -509,6 +769,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Milan",
+      "label": "Milan Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "milan-it",
+      "scopeName": "Milan, Italy",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.immobiliare.it",
       "label": "Immobiliare.it — Italy's largest property rental platform",
       "code": 403,
@@ -539,6 +809,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Florence",
+      "label": "Florence Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "florence-it",
+      "scopeName": "Florence, Italy",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest property portal",
       "code": 403,
@@ -547,6 +827,16 @@
       "scopeName": "Alicante, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Alicante",
+      "label": "Alicante Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "alicante-es",
+      "scopeName": "Alicante, Spain",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.idealista.pt",
@@ -567,6 +857,16 @@
       "scopeName": "Cascais, Portugal",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Cascais",
+      "label": "Cascais Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "cascais-pt",
+      "scopeName": "Cascais, Portugal",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.immobilienscout24.de",
@@ -599,14 +899,34 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Munich",
+      "label": "Munich Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "munich-de",
+      "scopeName": "Munich, Germany",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property rental platform",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "thessaloniki-gr",
       "scopeName": "Thessaloniki, Greece",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Thessaloniki",
+      "label": "Thessaloniki Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "thessaloniki-gr",
+      "scopeName": "Thessaloniki, Greece",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.seloger.com",
@@ -649,6 +969,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Paris",
+      "label": "Paris Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "paris-fr",
+      "scopeName": "Paris, France",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.seloger.com",
       "label": "SeLoger.com — France's largest long-term rental platform",
       "code": 403,
@@ -689,6 +1019,36 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Nice",
+      "label": "Nice Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "nice-fr",
+      "scopeName": "Nice, France",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Warsaw",
+      "label": "Warsaw Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "warsaw-pl",
+      "scopeName": "Warsaw, Poland",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Krakow",
+      "label": "Krakow Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "krakow-pl",
+      "scopeName": "Krakow, Poland",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.streeteasy.com",
       "label": "StreetEasy.com — NYC's dominant rental and sales platform with the most complete local inventory",
       "code": 403,
@@ -707,6 +1067,16 @@
       "scopeName": "New York City, USA",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/New-York",
+      "label": "New York City Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "new-york-city-us",
+      "scopeName": "New York City, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.zillow.com",
@@ -729,6 +1099,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Miami",
+      "label": "Miami Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "miami-us",
+      "scopeName": "Miami, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — comprehensive US rental and sales platform with strong DFW suburb coverage",
       "code": 403,
@@ -749,6 +1129,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Dallas",
+      "label": "Dallas Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "dallas-us",
+      "scopeName": "Dallas, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -757,6 +1147,16 @@
       "scopeName": "San Jose, Costa Rica",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/San-Jose-Costa-Rica",
+      "label": "San Jose Costa Rica Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "san-jose-cr",
+      "scopeName": "San Jose, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.migracion.go.cr",
@@ -769,6 +1169,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
+      "label": "Costa Rica cost of living — Numbeo (national reference)",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "tamarindo-cr",
+      "scopeName": "Tamarindo, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -777,6 +1187,16 @@
       "scopeName": "Heredia, Costa Rica",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
+      "label": "Costa Rica cost of living — Numbeo (national reference)",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "heredia-cr",
+      "scopeName": "Heredia, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.migracion.go.cr",
@@ -789,6 +1209,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
+      "label": "Costa Rica cost of living — Numbeo (national reference)",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "atenas-cr",
+      "scopeName": "Atenas, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -799,6 +1229,16 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
+      "label": "Costa Rica cost of living — Numbeo (national reference)",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "puerto-viejo-cr",
+      "scopeName": "Puerto Viejo, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -807,6 +1247,16 @@
       "scopeName": "Santa Teresa, Costa Rica",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Costa+Rica",
+      "label": "Costa Rica cost of living — Numbeo (national reference)",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "santa-teresa-cr",
+      "scopeName": "Santa Teresa, Costa Rica",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.rentals.ca",
@@ -829,6 +1279,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Vancouver",
+      "label": "Vancouver Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "vancouver-ca",
+      "scopeName": "Vancouver, Canada",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.rentals.ca",
       "label": "Rentals.ca — Canada's largest dedicated rental platform with strong Toronto and suburb coverage",
       "code": 403,
@@ -849,14 +1309,34 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Toronto",
+      "label": "Toronto Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "toronto-ca",
+      "scopeName": "Toronto, Canada",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — map-based rentals and sales",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Jerusalem",
+      "label": "Jerusalem — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "jerusalem-il",
+      "scopeName": "Jerusalem, Israel",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.zillow.com",
@@ -879,6 +1359,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Los-Angeles",
+      "label": "Los Angeles Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "los-angeles-us",
+      "scopeName": "Los Angeles, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — SF, Peninsula, and East Bay rentals",
       "code": 403,
@@ -887,6 +1377,26 @@
       "scopeName": "San Francisco, USA",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with transit overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-francisco-us",
+      "scopeName": "San Francisco, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/San-Francisco",
+      "label": "San Francisco Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "san-francisco-us",
+      "scopeName": "San Francisco, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.zillow.com",
@@ -909,6 +1419,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Chicago",
+      "label": "Chicago Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "chicago-us",
+      "scopeName": "Chicago, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — city and Eastside inventory",
       "code": 403,
@@ -917,6 +1437,26 @@
       "scopeName": "Seattle, USA",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with school overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "seattle-us",
+      "scopeName": "Seattle, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Seattle",
+      "label": "Seattle Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "seattle-us",
+      "scopeName": "Seattle, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.zillow.com",
@@ -939,6 +1479,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Austin",
+      "label": "Austin Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "austin-us",
+      "scopeName": "Austin, USA",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.zoopla.co.uk",
       "label": "Zoopla.co.uk — strong London inventory",
       "code": 403,
@@ -949,6 +1499,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/London",
+      "label": "London Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "london-gb",
+      "scopeName": "London, United Kingdom",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.rent.ie",
       "label": "Rent.ie — landlord-direct listings",
       "code": 403,
@@ -957,6 +1517,16 @@
       "scopeName": "Dublin, Ireland",
       "section": "housing",
       "path": "housing.searchPortals.2"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Dublin",
+      "label": "Dublin Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "dublin-ie",
+      "scopeName": "Dublin, Ireland",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://www.immobiliare.it",
@@ -989,6 +1559,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.numbeo.com/cost-of-living/in/Rome",
+      "label": "Rome Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "rome-it",
+      "scopeName": "Rome, Italy",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
       "url": "https://www.willhaben.at",
       "label": "Willhaben.at — Austria's largest rental and classifieds platform",
       "code": 404,
@@ -1009,19 +1589,9 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://www.wien.gv.at/bildung/",
-      "label": "Stadt Wien — Bildung und Schulen (city education portal)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "vienna-at",
-      "scopeName": "Vienna, Austria",
-      "section": "sources",
-      "path": "sources.schools.0"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
       "label": "Vienna Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "vienna-at",
       "scopeName": "Vienna, Austria",
@@ -1029,9 +1599,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.dba.dk",
+      "label": "DBA — general classifieds with strong rental section",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "copenhagen-dk",
+      "scopeName": "Copenhagen, Denmark",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "copenhagen-dk",
       "scopeName": "Copenhagen, Denmark",
@@ -1061,7 +1641,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Zurich",
       "label": "Zurich Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "zurich-ch",
       "scopeName": "Zurich, Switzerland",
@@ -1081,7 +1661,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Singapore",
       "label": "Singapore Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "singapore-sg",
       "scopeName": "Singapore, Singapore",
@@ -1091,7 +1671,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tokyo",
       "label": "Tokyo Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "tokyo-jp",
       "scopeName": "Tokyo, Japan",
@@ -1111,7 +1691,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
       "label": "Taipei Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "taipei-tw",
       "scopeName": "Taipei, Taiwan",
@@ -1161,12 +1741,22 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Kuala-Lumpur",
       "label": "Kuala Lumpur Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "kuala-lumpur-my",
       "scopeName": "Kuala Lumpur, Malaysia",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
     },
     {
       "url": "https://www.lamudi.co.id",
@@ -1179,14 +1769,34 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Bali",
       "label": "Bali Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "bali-id",
       "scopeName": "Bali, Indonesia",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
     },
     {
       "url": "https://www.lamudi.co.id",
@@ -1199,9 +1809,19 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Denpasar",
       "label": "Ubud area cost context — Numbeo (Denpasar)",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "ubud-id",
       "scopeName": "Ubud, Indonesia",
@@ -1221,7 +1841,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Medellín",
       "label": "Medellín Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "medellin-co",
       "scopeName": "Medellín, Colombia",
@@ -1261,7 +1881,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Buenos-Aires",
       "label": "Buenos Aires Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "buenos-aires-ar",
       "scopeName": "Buenos Aires, Argentina",
@@ -1311,7 +1931,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Lima",
       "label": "Lima Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "lima-pe",
       "scopeName": "Lima, Peru",
@@ -1341,7 +1961,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Charlotte",
       "label": "Charlotte cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "charlotte-us",
       "scopeName": "Charlotte, USA",
@@ -1371,7 +1991,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Raleigh",
       "label": "Raleigh cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "raleigh-us",
       "scopeName": "Raleigh, USA",
@@ -1401,7 +2021,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Charleston",
       "label": "Charleston cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "charleston-us",
       "scopeName": "Charleston, USA",
@@ -1431,7 +2051,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Greenville",
       "label": "Greenville cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "greenville-sc-us",
       "scopeName": "Greenville, USA",
@@ -1461,7 +2081,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Atlanta",
       "label": "Atlanta cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "atlanta-us",
       "scopeName": "Atlanta, USA",
@@ -1491,7 +2111,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Denver",
       "label": "Denver cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "denver-us",
       "scopeName": "Denver, USA",
@@ -1521,7 +2141,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Nashville",
       "label": "Nashville cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "nashville-us",
       "scopeName": "Nashville, USA",
@@ -1551,7 +2171,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Salt-Lake-City",
       "label": "Salt Lake City cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "salt-lake-city-us",
       "scopeName": "Salt Lake City, USA",
@@ -1581,7 +2201,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Phoenix",
       "label": "Phoenix cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "phoenix-us",
       "scopeName": "Phoenix, USA",
@@ -1611,7 +2231,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tampa",
       "label": "Tampa cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "tampa-us",
       "scopeName": "Tampa, USA",
@@ -1641,7 +2261,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Portland",
       "label": "Portland cost snapshot — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "portland-or-us",
       "scopeName": "Portland, USA",
@@ -1671,7 +2291,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Mexico-City",
       "label": "Mexico City cost — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "mexico-city-mx",
       "scopeName": "Mexico City, Mexico",
@@ -1701,7 +2321,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Panama-City",
       "label": "Panama City cost — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "panama-city-pa",
       "scopeName": "Panama City, Panama",
@@ -1721,7 +2341,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Santiago",
       "label": "Santiago cost — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "santiago-cl",
       "scopeName": "Santiago, Chile",
@@ -1751,7 +2371,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Montevideo",
       "label": "Montevideo Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "montevideo-uy",
       "scopeName": "Montevideo, Uruguay",
@@ -1771,7 +2391,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bogota",
       "label": "Bogota Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "bogota-co",
       "scopeName": "Bogotá, Colombia",
@@ -1791,7 +2411,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Ho-Chi-Minh-City",
       "label": "Ho Chi Minh City Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "ho-chi-minh-city-vn",
       "scopeName": "Ho Chi Minh City, Vietnam",
@@ -1811,7 +2431,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bangalore",
       "label": "Bangalore Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "bengaluru-in",
       "scopeName": "Bengaluru, India",
@@ -1831,7 +2451,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Mumbai",
       "label": "Mumbai cost — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "mumbai-in",
       "scopeName": "Mumbai, India",
@@ -1851,7 +2471,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Brussels",
       "label": "Brussels Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "brussels-be",
       "scopeName": "Brussels, Belgium",
@@ -1859,9 +2479,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.inami.fgov.be",
+      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.healthcare.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
       "label": "Bucharest Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "bucharest-ro",
       "scopeName": "Bucharest, Romania",
@@ -1901,7 +2531,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Stockholm",
       "label": "Stockholm Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "stockholm-se",
       "scopeName": "Stockholm, Sweden",
@@ -1931,7 +2561,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tallinn",
       "label": "Tallinn Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "tallinn-ee",
       "scopeName": "Tallinn, Estonia",
@@ -1941,7 +2571,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tbilisi",
       "label": "Tbilisi Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "tbilisi-ge",
       "scopeName": "Tbilisi, Georgia",
@@ -1961,7 +2591,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bilbao",
       "label": "Bilbao Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "bilbao-es",
       "scopeName": "Bilbao, Spain",
@@ -1991,7 +2621,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Boston",
       "label": "Boston Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "boston-us",
       "scopeName": "Boston, USA",
@@ -2019,6 +2649,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin — US property portal with detailed school-district information for San Diego listings",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-diego-us",
+      "scopeName": "San Diego, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.realtor.com",
       "label": "Realtor.com — additional US rental and sales inventory",
       "code": 429,
@@ -2031,7 +2671,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/San-Diego",
       "label": "San Diego Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "san-diego-us",
       "scopeName": "San Diego, USA",
@@ -2061,7 +2701,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Hamburg",
       "label": "Hamburg Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "hamburg-de",
       "scopeName": "Hamburg, Germany",
@@ -2081,7 +2721,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/The-Hague",
       "label": "The Hague Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "the-hague-nl",
       "scopeName": "The Hague, Netherlands",
@@ -2111,7 +2751,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Calgary",
       "label": "Calgary Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "calgary-ca",
       "scopeName": "Calgary, Canada",
@@ -2139,9 +2779,19 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://casa.sapo.pt",
+      "label": "Casa Sapo — additional Portuguese rental and sales inventory",
+      "code": 429,
+      "scope": "city",
+      "scopeId": "faro-pt",
+      "scopeName": "Faro, Portugal",
+      "section": "housing",
+      "path": "housing.searchPortals.3"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Faro",
       "label": "Faro Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "faro-pt",
       "scopeName": "Faro, Portugal",
@@ -2191,7 +2841,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Lyon",
       "label": "Lyon Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "lyon-fr",
       "scopeName": "Lyon, France",
@@ -2251,7 +2901,7 @@
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Naples",
       "label": "Naples Cost of Living — Numbeo",
-      "code": 429,
+      "code": 503,
       "scope": "city",
       "scopeId": "naples-it",
       "scopeName": "Naples, Italy",
@@ -2280,17 +2930,6 @@
       "scopeName": "Valencia, Spain",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://www.asvalencia.org",
-      "label": "American School of Valencia",
-      "code": 301,
-      "redirectTo": "https://asvalencia.org/",
-      "scope": "city",
-      "scopeId": "valencia-es",
-      "scopeName": "Valencia, Spain",
-      "section": "sources",
-      "path": "sources.schools.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -2788,6 +3427,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://www.yad2.co.il",
+      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+      "code": 302,
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "scope": "city",
+      "scopeId": "tel-aviv-il",
+      "scopeName": "Tel Aviv, Israel",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -2797,6 +3447,17 @@
       "scopeName": "Tel Aviv, Israel",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.yad2.co.il",
+      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+      "code": 302,
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "scope": "city",
+      "scopeId": "eilat-il",
+      "scopeName": "Eilat, Israel",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -2898,6 +3559,17 @@
       "path": "sources.visa.0"
     },
     {
+      "url": "https://www.tewhatuora.govt.nz",
+      "label": "Te Whatu Ora — Health New Zealand eligibility",
+      "code": 301,
+      "redirectTo": "https://www.healthnz.govt.nz",
+      "scope": "city",
+      "scopeId": "auckland-nz",
+      "scopeName": "Auckland, New Zealand",
+      "section": "sources",
+      "path": "sources.healthcare.0"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -2929,6 +3601,17 @@
       "scopeName": "Wellington, New Zealand",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.tewhatuora.govt.nz",
+      "label": "Te Whatu Ora — Health New Zealand",
+      "code": 301,
+      "redirectTo": "https://www.healthnz.govt.nz",
+      "scope": "city",
+      "scopeId": "wellington-nz",
+      "scopeName": "Wellington, New Zealand",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3204,6 +3887,17 @@
       "scopeName": "Toronto, Canada",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.yad2.co.il",
+      "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
+      "code": 302,
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "scope": "city",
+      "scopeId": "jerusalem-il",
+      "scopeName": "Jerusalem, Israel",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3638,7 +4332,7 @@
       "url": "https://www.portalinmobiliario.com",
       "label": "Portal Inmobiliario — Chile's largest property portal",
       "code": 302,
-      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=bb91e341-50e4-4fdb-8390-67aa4f00d675",
+      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=3641ffab-9a6d-4086-afc0-7a29f31499e3",
       "scope": "city",
       "scopeId": "santiago-cl",
       "scopeName": "Santiago, Chile",
@@ -3765,17 +4459,6 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.inami.fgov.be",
-      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
-      "code": 302,
-      "redirectTo": "https://www.inami.fgov.be/fr",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
