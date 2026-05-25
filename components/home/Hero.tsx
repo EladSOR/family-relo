@@ -121,14 +121,13 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl lg:mb-7 lg:max-w-none lg:text-8xl">
-            Move abroad with your family.<br />
-            <span className="text-white/90">Without the chaos.</span>
+          <h1 className="mb-5 max-w-4xl text-5xl font-extrabold leading-[1.1] tracking-tight text-white drop-shadow-xl md:text-7xl lg:mb-7 lg:max-w-5xl lg:text-8xl">
+            A relocation planner <span className="text-white/90">built for families</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="mx-auto mb-3 max-w-xl text-base leading-relaxed text-white/95 drop-shadow-md md:text-lg lg:mb-4 lg:max-w-3xl lg:text-xl">
-            Visas, schools, real costs, and safety — for families moving abroad.
+            Compare cities abroad by visas, schools, housing, childcare, safety, and real family costs, all in one clean guide.
           </p>
 
           {/* Trust line */}
