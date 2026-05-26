@@ -112,7 +112,7 @@ export default async function Image() {
                   backgroundColor: "#34d399",
                 }}
               />
-              Trusted by 2,000+ relocating families
+              Made for relocating families
             </div>
             <div
               style={{
@@ -125,7 +125,7 @@ export default async function Image() {
             >
               <span
                 style={{
-                  fontSize: 52,
+                  fontSize: 56,
                   lineHeight: 1.08,
                   fontFamily: '"Plus Jakarta Sans"',
                   fontWeight: 800,
@@ -134,21 +134,21 @@ export default async function Image() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.55)",
                 }}
               >
-                {`Plan your family's move.`}
+                A relocation planner
               </span>
               <span
                 style={{
-                  fontSize: 52,
+                  fontSize: 56,
                   lineHeight: 1.08,
                   fontFamily: '"Plus Jakarta Sans"',
                   fontWeight: 800,
-                  color: "#f8fafc",
+                  color: "rgba(255,255,255,0.9)",
                   letterSpacing: -1,
                   marginTop: 6,
                   textShadow: "0 2px 18px rgba(0,0,0,0.55)",
                 }}
               >
-                Without the chaos.
+                built for families.
               </span>
             </div>
             <p
@@ -165,8 +165,8 @@ export default async function Image() {
                 textShadow: "0 1px 12px rgba(0,0,0,0.45)",
               }}
             >
-              Everything families need to relocate — visas, schools, real costs — finally in one
-              place.
+              Compare cities by visas, schools, housing, childcare, safety, and real family
+              costs — all in one clean guide.
             </p>
             <p
               style={{
