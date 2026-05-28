@@ -1317,15 +1317,15 @@
     "city": "Chiang Mai",
     "country": "Thailand",
     "tagline": "Asia's most affordable family hub, surrounded by mountains",
-    "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month including a nanny and good private school. The city has a large expat community, several strong international schools, fast fibre internet, and excellent private hospitals at a fraction of Western prices. The main planning challenge is the visa — Thailand has no permanent residency path, so most families use the DTV or Thailand Elite.",
+    "summary": "Chiang Mai has been Southeast Asia's favourite long-stay destination for families and digital nomads for over a decade. The cost of living is extraordinary — a family of four can live very comfortably for $2,000–$3,000/month including a nanny and good private school. The city has a large expat community, several strong international schools, fast fibre internet, and excellent private hospitals at a fraction of Western prices. The main planning challenge is the visa — Thailand has no permanent residency path, so most families use the DTV or Thailand Privilege Visa.",
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Choose your visa: DTV (best for most families) or Thailand Elite (multi-year stability, no income requirement)",
+        "label": "Choose your visa: DTV (best for most families) or Thailand Privilege Visa (multi-year stability, no income requirement)",
         "targetSection": "visa"
       },
       {
-        "label": "Apply for the DTV at a Thai embassy before travelling — bring income proof and $15,000 in savings documentation",
+        "label": "Apply for the DTV at a Thai consulate before travelling — bring proof of remote income and ~500,000 THB (~$14,500) in savings per family member",
         "targetSection": "visa"
       },
       {
@@ -1365,68 +1365,6 @@
         "No long-term residency path — visa planning and periodic renewals are an ongoing reality",
         "Road safety is the biggest daily risk — motorbike accidents are the leading cause of expat injury",
         "Banking and admin can be frustrating without a non-immigrant visa class"
-      ]
-    },
-    "visa": {
-      "status": "verified",
-      "summary": "Thailand has no EU-style residency permit. Most expat families choose the DTV (Destination Thailand Visa) launched in 2024 — 180 days per entry, renewable, covers the whole family. The Thailand Elite Privilege Card is the zero-hassle long-term option for families who want 5–20 years of stable stays without periodic reapplication.",
-      "tip": "Apply for the DTV at least 4–6 weeks before your travel date — Thai consulates in major cities can get backed up.",
-      "options": [
-        {
-          "type": "Tourist Visa / Visa Exemption",
-          "anchor": "visa-tourist",
-          "detailTitle": "Tourist Visa — what it allows and what it does not",
-          "duration": "30–60 days",
-          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
-          "details": [
-            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office (fee: about $50).",
-            "A tourist visa (TR) applied at a Thai consulate gives 60 days + one 30-day extension.",
-            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
-            "Do not try to live in Thailand on back-to-back tourist entries — immigration actively monitors this and may deny re-entry.",
-            "Best use: first 1–3 months to scout neighbourhoods, visit schools, and decide on a long-term visa."
-          ]
-        },
-        {
-          "type": "DTV — Destination Thailand Visa",
-          "anchor": "visa-dtv",
-          "detailTitle": "DTV Visa — how to apply",
-          "duration": "180 days per entry",
-          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
-          "details": [
-            "Launched in 2024 — designed specifically for remote workers, digital nomads, and their families.",
-            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
-            "Requirement: evidence of $15,000 in savings (bank statements) — there is no fixed monthly income threshold.",
-            "Covers the visa holder and dependants (spouse and children) on the same application.",
-            "Apply at a Thai consulate or embassy in your home country — you cannot apply on arrival in Thailand.",
-            "Cost: approximately $50 per person, per entry. Much cheaper to maintain than the Elite over a few years.",
-            "No work permit is included — you are legally a visitor, not a worker. For most remote workers with foreign clients this is low risk in practice."
-          ],
-          "officialLink": {
-            "label": "Thailand Destination Thailand Visa DTV official apply",
-            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-            "isVerified": true
-          }
-        },
-        {
-          "type": "Thailand Elite Privilege Card",
-          "anchor": "visa-elite",
-          "detailTitle": "Thailand Elite — long-stay membership",
-          "duration": "5–20 years",
-          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
-          "details": [
-            "A government-backed long-stay programme valid for 5 or 10 years. Not a work permit — but widely used by remote workers.",
-            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages are available.",
-            "No income or savings requirement — just the membership fee paid upfront.",
-            "Unlimited entries and stays for the full visa period. No 90-day reapplication, no consulate visits.",
-            "Best for: families wanting maximum stability without periodic visa runs, renewals, or embassy appointments.",
-            "The 5-year package works out to about $3,000/year — compare this to the time and cost of DTV renewals for larger families."
-          ],
-          "officialLink": {
-            "label": "Thailand Privilege Card visa official",
-            "url": "https://www.thailandprivilege.com",
-            "isVerified": true
-          }
-        }
       ]
     },
     "housing": {
@@ -1552,13 +1490,13 @@
     "sources": {
       "visa": [
         {
-          "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "label": "Thai e-Visa official portal (DTV and all visa categories)",
+          "url": "https://www.thaievisa.go.th",
           "isVerified": true
         },
         {
-          "label": "Thailand Privilege Card — Official",
-          "url": "https://www.thailandprivilege.com",
+          "label": "Thailand Privilege Visa — official site search",
+          "url": "https://www.google.com/search?q=Thailand+Privilege+Visa+official+thailandprivilege.co.th",
           "isVerified": true
         }
       ],
@@ -1610,7 +1548,7 @@
       "tip": "Open your bank account in the first month — rent, school fees, and utility autopay all work more smoothly with a local account.",
       "items": [
         "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks — both have English-language apps and accept non-immigrant visa holders.",
-        "To open an account you generally need: passport, current non-immigrant visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "To open an account you generally need: passport, current non-immigrant visa (DTV or Thailand Privilege Visa), and a rental contract or utility bill as proof of address.",
         "Some Bangkok Bank branches accept tourist visa holders — worth asking, but not guaranteed.",
         "Use Wise or Revolut for receiving international income and converting to Thai Baht — fees are much lower than traditional bank wire transfers.",
         "KBank's K Plus app and Bangkok Bank Mobile both support English and handle QR payments, transfers, and bill pay well.",
@@ -1832,44 +1770,6 @@
         "Island fever is real — some families need more stimulation and city access than the island provides"
       ]
     },
-    "visa": {
-      "status": "verified",
-      "summary": "As part of Thailand, Koh Phangan falls under the same national visa rules. The DTV is the most practical long-term option for families — apply at a Thai embassy before travelling.",
-      "options": [
-        {
-          "type": "Tourist Visa / Visa Exemption",
-          "duration": "30–60 days",
-          "description": "Most Western passports receive 30 days on arrival. Extendable once at the local immigration office in Thong Sala.",
-          "anchor": "visa-tourist",
-          "detailTitle": "Tourist Visa — arrival and extension",
-          "details": [
-            "Most Western passport holders enter Thailand on a 30-day visa exemption — no advance application required.",
-            "You can extend once for 30 more days at the Koh Phangan Immigration Office in Thong Sala (cost: ~$53).",
-            "Not suitable for long-term stays — you cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
-            "Use this for an initial scouting visit only. Start your DTV application before arriving if you plan to stay."
-          ]
-        },
-        {
-          "type": "DTV — Destination Thailand Visa",
-          "duration": "180 days per entry (renewable once)",
-          "description": "Best option for families. Requires proof of remote income and $15,000 in savings. Apply from your home country or a Thai embassy abroad.",
-          "anchor": "visa-dtv",
-          "detailTitle": "DTV Visa — how to apply for Koh Phangan",
-          "details": [
-            "The DTV (Destination Thailand Visa) is a 5-year multiple-entry visa with 180-day stays, launched in 2024 for remote workers and their families.",
-            "Apply at a Thai embassy or consulate in your home country before travelling — you cannot apply on the island.",
-            "Requirements: valid passport, proof of remote income or business, and evidence of approximately $15,000 USD in savings.",
-            "On arrival, ask your landlord to file the TM30 address registration form with immigration within 24 hours of your arrival.",
-            "File a 90-day address report every 90 days — online at imm.immigration.go.th or in person at the Thong Sala Immigration Office."
-          ],
-          "officialLink": {
-            "label": "Thailand DTV e-Visa official application thaievisa",
-            "url": "https://www.thaievisa.go.th",
-            "isVerified": true
-          }
-        }
-      ]
-    },
     "housing": {
       "status": "estimated",
       "summary": "Koh Phangan is one of the most affordable places to live in Southeast Asia. A well-equipped 2–3 bedroom villa with a pool rents for $400–$900/month. Sri Thanu and Haad Yao are the family hubs.",
@@ -2014,8 +1914,13 @@
     "sources": {
       "visa": [
         {
-          "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "label": "Thai e-Visa official portal (DTV and all visa categories)",
+          "url": "https://www.thaievisa.go.th",
+          "isVerified": true
+        },
+        {
+          "label": "Thailand Privilege Visa — official site search",
+          "url": "https://www.google.com/search?q=Thailand+Privilege+Visa+official+thailandprivilege.co.th",
           "isVerified": true
         }
       ],
@@ -2249,44 +2154,6 @@
         "Island isolation — for major specialist medical needs, Bangkok remains the destination"
       ]
     },
-    "visa": {
-      "status": "verified",
-      "summary": "Koh Samui follows Thailand's national visa rules. The DTV is the best long-stay option for families — apply at a Thai embassy before travelling.",
-      "options": [
-        {
-          "type": "Tourist Visa / Visa Exemption",
-          "duration": "30–60 days",
-          "description": "Most Western passports receive 30 days on arrival, extendable once. Koh Samui has its own immigration office.",
-          "anchor": "visa-tourist",
-          "detailTitle": "Tourist Visa — arrival and extension",
-          "details": [
-            "Most Western passport holders enter Koh Samui on a 30-day visa exemption at the airport — no advance application required.",
-            "You can extend once for 30 more days at the Koh Samui Immigration Office in Na Thon (cost: ~$53). Queue early — it is busy.",
-            "Not suitable for long-term stays. You cannot open a bank account, sign a long-term lease, or enrol children in school on tourist status.",
-            "For a first scouting trip it works well — but start your DTV application before you arrive if you plan to stay."
-          ]
-        },
-        {
-          "type": "DTV — Destination Thailand Visa",
-          "duration": "180 days per entry (renewable once)",
-          "description": "Recommended for families planning extended stays. Requires proof of remote income and $15,000 in savings.",
-          "anchor": "visa-dtv",
-          "detailTitle": "DTV Visa — how to apply for Koh Samui",
-          "details": [
-            "The DTV (Destination Thailand Visa) is a 5-year multiple-entry visa with 180-day stays, launched in 2024 for remote workers and their families.",
-            "Apply at a Thai embassy or consulate in your home country before travelling — you cannot apply on the island.",
-            "Requirements: valid passport, proof of remote income or business, and evidence of approximately $15,000 USD in savings.",
-            "After arriving on Koh Samui, ask your landlord to file the TM30 address registration form with immigration within 24 hours.",
-            "You must file a 90-day address report every 90 days — do this online at imm.immigration.go.th or in person at the Na Thon Immigration Office."
-          ],
-          "officialLink": {
-            "label": "Thailand DTV e-Visa official application thaievisa",
-            "url": "https://www.thaievisa.go.th",
-            "isVerified": true
-          }
-        }
-      ]
-    },
     "housing": {
       "status": "estimated",
       "summary": "Koh Samui is more expensive than Koh Phangan or Chiang Mai, but still very affordable by Western standards. A 3-bedroom villa near Bophut or Maenam rents for $700–$1,800/month. Long-term rentals (6–12 months) often come with significant discounts.",
@@ -2431,8 +2298,13 @@
     "sources": {
       "visa": [
         {
-          "label": "DTV Visa — Royal Thai Embassy",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "label": "Thai e-Visa official portal (DTV and all visa categories)",
+          "url": "https://www.thaievisa.go.th",
+          "isVerified": true
+        },
+        {
+          "label": "Thailand Privilege Visa — official site search",
+          "url": "https://www.google.com/search?q=Thailand+Privilege+Visa+official+thailandprivilege.co.th",
           "isVerified": true
         }
       ],
@@ -5531,7 +5403,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Choose your visa route before travelling: DTV (Destination Thailand Visa, 180 days, $15,000 savings required) or Thailand Elite Privilege Card (5–20 year membership, one-time fee)",
+        "label": "Choose your visa route before travelling: DTV (Destination Thailand Visa, 180 days per entry, ~500,000 THB / ~$14,500 savings per family member) or Thailand Privilege Visa (formerly Thailand Elite — 5–20 year membership, one-time fee)",
         "targetSection": "visa"
       },
       {
@@ -5575,68 +5447,6 @@
         "Air quality (AQI) can be poor from November to March — invest in home air purifiers and check AQI daily in peak season",
         "Private schools and hospitals are excellent but costs can accumulate quickly — budget carefully",
         "Extreme heat and humidity June–October — budget for air conditioning everywhere"
-      ]
-    },
-    "visa": {
-      "status": "verified",
-      "summary": "Thailand has no EU-style residency permit for foreigners. Most expat families choose the DTV (Destination Thailand Visa, launched 2024) — 180 days per entry, renewable, covers the whole family. The Thailand Elite Privilege Card is the zero-hassle long-term option for families wanting 5–20 years of stable stays.",
-      "tip": "Apply for the DTV at least 4–6 weeks before your travel date — Thai consulates in major cities can get backed up.",
-      "options": [
-        {
-          "type": "Tourist Visa / Visa Exemption",
-          "anchor": "visa-tourist",
-          "detailTitle": "Tourist Visa — what it allows and what it does not",
-          "duration": "30–60 days",
-          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
-          "details": [
-            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office (fee: about $50).",
-            "A tourist visa (TR) applied at a Thai consulate gives 60 days plus one 30-day extension.",
-            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
-            "Do not attempt to live in Thailand on back-to-back tourist entries — Thai immigration actively monitors this pattern and may deny re-entry.",
-            "Best use: first 1–3 months to scout neighbourhoods, visit schools, and decide on a long-term visa."
-          ]
-        },
-        {
-          "type": "DTV — Destination Thailand Visa",
-          "anchor": "visa-dtv",
-          "detailTitle": "DTV Visa — how to apply",
-          "duration": "180 days per entry",
-          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
-          "details": [
-            "Launched in 2024 — designed specifically for remote workers, digital nomads, and their families.",
-            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
-            "Requirement: evidence of $15,000 in savings (bank statements) — there is no fixed monthly income threshold.",
-            "Covers the visa holder and dependants (spouse and children) on the same application.",
-            "Apply at a Thai consulate or embassy in your home country — you cannot apply on arrival in Thailand.",
-            "Cost: approximately $50 per person, per entry.",
-            "No work permit included — you are legally a visitor, not a worker. For most remote workers with foreign clients this is low practical risk."
-          ],
-          "officialLink": {
-            "label": "Thailand Destination Thailand Visa DTV official apply",
-            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-            "isVerified": true
-          }
-        },
-        {
-          "type": "Thailand Elite Privilege Card",
-          "anchor": "visa-elite",
-          "detailTitle": "Thailand Elite — long-stay membership",
-          "duration": "5–20 years",
-          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
-          "details": [
-            "A government-backed long-stay programme valid for 5, 10, or 20 years. Not a work permit — but widely used by remote workers.",
-            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages are available.",
-            "No income or savings requirement — just the membership fee paid upfront.",
-            "Unlimited entries and stays for the full visa period. No 90-day reapplication or consulate visits.",
-            "Best for families wanting maximum stability without periodic visa runs or embassy appointments.",
-            "The 5-year package works out to about $3,000/year — compare this to the time and cost of DTV renewals for larger families."
-          ],
-          "officialLink": {
-            "label": "Thailand Privilege Card visa official",
-            "url": "https://www.thailandprivilege.com",
-            "isVerified": true
-          }
-        }
       ]
     },
     "housing": {
@@ -5766,13 +5576,13 @@
     "sources": {
       "visa": [
         {
-          "label": "Thailand DTV Visa official",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "label": "Thai e-Visa official portal (DTV and all visa categories)",
+          "url": "https://www.thaievisa.go.th",
           "isVerified": true
         },
         {
-          "label": "Thailand Elite Privilege Card official",
-          "url": "https://www.thailandprivilege.com",
+          "label": "Thailand Privilege Visa — official site search",
+          "url": "https://www.google.com/search?q=Thailand+Privilege+Visa+official+thailandprivilege.co.th",
           "isVerified": true
         }
       ],
@@ -5813,7 +5623,7 @@
       "tip": "Open your bank account in the first month — rent, school fees, and utility autopay all work more smoothly with a local Thai account.",
       "items": [
         "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks — both have full English-language apps and accept DTV and non-immigrant visa holders.",
-        "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "To open an account you generally need: passport, current visa (DTV or Thailand Privilege Visa), and a rental contract or utility bill as proof of address.",
         "Some Bangkok Bank branches accept tourist visa holders — worth asking, but not guaranteed.",
         "Use Wise or Revolut for receiving international income and converting to Thai Baht — significantly lower fees than traditional international bank wire transfers.",
         "Cash is still widely used at markets, small restaurants, and local shops — keep $28–$84 on hand at all times."
@@ -5974,7 +5784,7 @@
     "lastReviewed": "2026-01",
     "actionChecklist": [
       {
-        "label": "Choose your visa route: DTV (180 days, $15,000 savings required) or Thailand Elite Privilege Card (5–20 year membership)",
+        "label": "Choose your visa route: DTV (180 days per entry, ~500,000 THB / ~$14,500 savings per family member) or Thailand Privilege Visa (formerly Thailand Elite — 5–20 year membership)",
         "targetSection": "visa"
       },
       {
@@ -6018,66 +5828,6 @@
         "There is no public transport — a car or motorbike is essential for all daily movement",
         "Monsoon season (May–October) brings heavy rain, flooding in some areas, and limited outdoor access",
         "Peak tourist season (December–April) drives up prices for food, services, and some housing"
-      ]
-    },
-    "visa": {
-      "status": "verified",
-      "summary": "Thailand has no EU-style residency permit for foreigners. Expat families in Phuket most commonly use the DTV (Destination Thailand Visa, launched 2024) or the Thailand Elite Privilege Card for long-term stable stays.",
-      "tip": "Apply for the DTV at a Thai consulate at least 4–6 weeks before your travel date — processing can be slow in some countries.",
-      "options": [
-        {
-          "type": "Tourist Visa / Visa Exemption",
-          "anchor": "visa-tourist",
-          "detailTitle": "Tourist Visa — what it allows and what it does not",
-          "duration": "30–60 days",
-          "description": "Good for a scouting trip. Not suitable for long-term stays or remote work.",
-          "details": [
-            "Most Western passports enter Thailand visa-free for 30 days on arrival — extendable once by 30 days at any immigration office.",
-            "A tourist visa (TR) applied at a Thai consulate gives 60 days plus one 30-day extension.",
-            "You cannot legally work on a tourist visa — this includes remote work for a foreign employer.",
-            "Do not attempt to live in Phuket on back-to-back tourist entries — Thai immigration monitors this actively.",
-            "Best use: 2–4 weeks scouting the Laguna/Bangtao area for housing and schools before applying for the DTV."
-          ]
-        },
-        {
-          "type": "DTV — Destination Thailand Visa",
-          "anchor": "visa-dtv",
-          "detailTitle": "DTV Visa — how to apply",
-          "duration": "180 days per entry",
-          "description": "Thailand's visa for remote workers, launched in 2024. Best option for most expat families.",
-          "details": [
-            "Launched in 2024 — designed for remote workers, digital nomads, and their families.",
-            "Stay: 180 days per entry, extendable once for another 180 days. Multi-entry for 5 years.",
-            "Requirement: evidence of $15,000 in savings (bank statements).",
-            "Covers the visa holder and dependants (spouse and children) on the same application.",
-            "Apply at a Thai consulate in your home country — you cannot apply on arrival in Thailand.",
-            "Cost: approximately $50 per person, per entry."
-          ],
-          "officialLink": {
-            "label": "Thailand Destination Thailand Visa DTV official apply",
-            "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-            "isVerified": true
-          }
-        },
-        {
-          "type": "Thailand Elite Privilege Card",
-          "anchor": "visa-elite",
-          "detailTitle": "Thailand Elite — long-stay membership",
-          "duration": "5–20 years",
-          "description": "Government-issued long-stay membership. No income or savings requirements — just a one-time fee.",
-          "details": [
-            "A government-backed long-stay programme valid for 5, 10, or 20 years.",
-            "Cost: approximately $15,000–$30,000 per person depending on the package. Family packages available.",
-            "No income or savings requirement — just the membership fee paid upfront.",
-            "Unlimited entries and stays for the full visa period. No 90-day reapplication or consulate visits.",
-            "Best for families wanting long-term stability without periodic visa renewals."
-          ],
-          "officialLink": {
-            "label": "Thailand Privilege Card visa official",
-            "url": "https://www.thailandprivilege.com",
-            "isVerified": true
-          }
-        }
       ]
     },
     "housing": {
@@ -6202,13 +5952,13 @@
     "sources": {
       "visa": [
         {
-          "label": "Thailand DTV Visa official",
-          "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
+          "label": "Thai e-Visa official portal (DTV and all visa categories)",
+          "url": "https://www.thaievisa.go.th",
           "isVerified": true
         },
         {
-          "label": "Thailand Elite Privilege Card official",
-          "url": "https://www.thailandprivilege.com",
+          "label": "Thailand Privilege Visa — official site search",
+          "url": "https://www.google.com/search?q=Thailand+Privilege+Visa+official+thailandprivilege.co.th",
           "isVerified": true
         }
       ],
@@ -6249,7 +5999,7 @@
       "tip": "Open your bank account in the first month — school fees and rent autopay work more smoothly with a local Thai account.",
       "items": [
         "Bangkok Bank and Kasikorn Bank (KBank) are the most expat-friendly banks in Phuket — both have branches in the Laguna area and English-speaking staff.",
-        "To open an account you generally need: passport, current visa (DTV or Elite), and a rental contract or utility bill as proof of address.",
+        "To open an account you generally need: passport, current visa (DTV or Thailand Privilege Visa), and a rental contract or utility bill as proof of address.",
         "Wise is widely used by Phuket expats for receiving foreign income and converting to Thai Baht — significantly lower fees than traditional bank wire transfers.",
         "Cash is essential in Phuket — many local markets, food stalls, and small shops are cash-only. Keep $28–$84 on hand at all times.",
         "ATMs are widely available in Laguna, Patong, and Phuket Town — most charge a ~$6 withdrawal fee for foreign cards; Wise and Revolut reduce this impact."

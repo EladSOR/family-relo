@@ -44,6 +44,13 @@ export const VISA_GLOSSARY: Record<string, string> = {
   "90-day report":
     "Thailand's periodic check-in for long-stay visa holders — not Indonesia's system; ignore Thai sites when planning Indonesia.",
   DTV: "Destination Thailand Visa — long-stay route aimed at remote workers and visitors; rules and fees change — confirm officially.",
+  "Thailand Privilege Visa":
+    "Thailand's government-backed long-stay membership programme (rebranded from Thailand Elite in October 2023). One-time fee, no income or savings proof, valid 5–20 years depending on tier (Bronze, Gold, Platinum, Diamond, Reserve).",
+  "Thailand Privilege":
+    "Thailand's government-backed long-stay membership programme (rebranded from Thailand Elite in October 2023). One-time fee, no income or savings proof, valid 5–20 years.",
+  "Thailand Elite":
+    "Old name for the Thailand Privilege Visa — officially rebranded in October 2023, but the legacy 'Elite' name is still in common use.",
+  TR: "Tourist Visa (R-class) issued by a Thai consulate before travel — gives 60 days on arrival plus one 30-day extension, longer than the visa-free exemption on arrival.",
   KITAS:
     "Indonesia limited stay permit (popular name) — temporary residence tied to work, family, or other sponsored categories; validity is printed on your permit.",
   KITAP:
