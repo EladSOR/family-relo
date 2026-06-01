@@ -504,40 +504,6 @@ export default function SingleCityResultsClient() {
     window.print();
   }
 
-  // ── Auto-checkout pending state ──────────────────────────────────────────
-  // When the user arrives with ?autoCheckout=... (returning from login), we
-  // know the next render is going to immediately redirect them to Stripe.
-  // Rendering the full report behind that redirect causes a 700ms-2s flicker
-  // of the report content. We render a clean "Taking you to checkout..."
-  // overlay instead, and only fall back to the report if the redirect errors.
-  const isAutoCheckoutPending =
-    !!autoCheckoutFlag &&
-    (autoCheckoutFlag === "single_city" || autoCheckoutFlag === "bundle") &&
-    !payError;
-
-  if (isAutoCheckoutPending) {
-    return (
-      <div className="flex min-h-screen flex-col bg-stone-50">
-        <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-8">
-          <div className="mx-auto flex max-w-4xl items-center">
-            <Logo size={24} />
-          </div>
-        </nav>
-        <div className="flex flex-1 items-center justify-center px-4">
-          <div className="text-center">
-            <div className="mx-auto mb-5 h-10 w-10 animate-spin rounded-full border-[3px] border-slate-200 border-t-[#FF5A5F]" />
-            <p className="text-base font-bold text-slate-800 md:text-lg">
-              Taking you to secure checkout…
-            </p>
-            <p className="mt-1.5 text-sm text-slate-500">
-              Hang tight — you&apos;ll be redirected to Stripe in a moment.
-            </p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   // ── Computed view data ───────────────────────────────────────────────────
   const verdict = verdictForPct(score.matchPct);
   const visaOptions = city.visa?.options ?? [];
@@ -573,6 +539,41 @@ export default function SingleCityResultsClient() {
         priorityWeight(b.targetSection) - priorityWeight(a.targetSection),
     );
   }, [city, priorities]);
+
+  // ── Auto-checkout pending state ──────────────────────────────────────────
+  // When the user arrives with ?autoCheckout=... (returning from login), we
+  // know the next render is going to immediately redirect them to Stripe.
+  // Rendering the full report behind that redirect causes a 700ms-2s flicker
+  // of the report content. We render a clean "Taking you to checkout..."
+  // overlay instead, and only fall back to the report if the redirect errors.
+  // (Placed after all hooks so we don't violate the Rules of Hooks.)
+  const isAutoCheckoutPending =
+    !!autoCheckoutFlag &&
+    (autoCheckoutFlag === "single_city" || autoCheckoutFlag === "bundle") &&
+    !payError;
+
+  if (isAutoCheckoutPending) {
+    return (
+      <div className="flex min-h-screen flex-col bg-stone-50">
+        <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-8">
+          <div className="mx-auto flex max-w-4xl items-center">
+            <Logo size={24} />
+          </div>
+        </nav>
+        <div className="flex flex-1 items-center justify-center px-4">
+          <div className="text-center">
+            <div className="mx-auto mb-5 h-10 w-10 animate-spin rounded-full border-[3px] border-slate-200 border-t-[#FF5A5F]" />
+            <p className="text-base font-bold text-slate-800 md:text-lg">
+              Taking you to secure checkout…
+            </p>
+            <p className="mt-1.5 text-sm text-slate-500">
+              Hang tight — you&apos;ll be redirected to Stripe in a moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-stone-50">
