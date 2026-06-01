@@ -9,6 +9,7 @@ import StickySearchHeader from "@/components/StickySearchHeader";
 import MobileSearchPanel from "@/components/MobileSearchPanel";
 import SiteHierarchyMenu from "@/components/SiteHierarchyMenu";
 import AuthButton from "@/components/auth/AuthButton";
+import ProductHuntBadge from "@/components/brand/ProductHuntBadge";
 
 export default function Hero() {
   const [showStickySearch, setShowStickySearch] = useState(false);
@@ -131,9 +132,11 @@ export default function Hero() {
           </p>
 
           {/* Trust line */}
-          <p className="mx-auto mb-11 max-w-xl text-sm font-medium text-white/80 drop-shadow-md lg:mb-14 lg:text-base">
+          <p className="mx-auto mb-6 max-w-xl text-sm font-medium text-white/80 drop-shadow-md lg:mb-8 lg:text-base">
             Built for families, by a family.
           </p>
+
+          <ProductHuntBadge variant="hero" className="mb-8 lg:mb-10" />
 
           {/* IntersectionObserver target — triggers desktop sticky header */}
           <div ref={heroSearchRef} className="w-full">

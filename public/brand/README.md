@@ -24,6 +24,8 @@ All files in this folder are downloadable. After deploy they're also live at
 | `apple-touch-icon-180.png` | 180×180 | iOS home-screen shortcut (white card + centered pin) |
 | `favicon-32.png` | 32×32 | Older-browser favicon fallback |
 | `favicon-16.png` | 16×16 | Smallest favicon (browser tab) |
+| `product-hunt-mark.svg` | 240×240 | Official PH “P in circle” mark ([Product Hunt branding](https://www.producthunt.com/branding)) |
+| `product-hunt-wordmark-white.png` | ~156×56 | Official white horizontal wordmark for orange launch CTAs |
 
 ### Brand colors
 

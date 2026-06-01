@@ -142,3 +142,8 @@ export const CITY_IMAGES: Record<string, string> = {
 
 export const FALLBACK_IMAGE =
   "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&q=80";
+
+// ── Product Hunt ──────────────────────────────────────────────────────────────
+/** Live launch / product hub — update post slug here if PH assigns a different /posts/ URL. */
+export const PRODUCT_HUNT_LAUNCH_URL =
+  "https://www.producthunt.com/products/famirelo-family-relocation-planner?launch=famirelo-family-relocation-planner";

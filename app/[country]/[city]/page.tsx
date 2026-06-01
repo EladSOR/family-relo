@@ -23,6 +23,7 @@ import { CityWeather } from "@/components/CityWeather";
 import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
 import CompareCityCTA from "@/components/compare/CompareCityCTA";
+import ProductHuntBadge from "@/components/brand/ProductHuntBadge";
 import RelatedCities from "@/components/RelatedCities";
 import SponsorBanner from "@/components/ads/SponsorBanner";
 import SponsorStrip from "@/components/ads/SponsorStrip";
@@ -124,7 +125,11 @@ export default async function CityPage({ params }: Props) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
-          <div className="absolute right-6 top-6 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
+          <div className="absolute left-5 top-5 z-10 md:left-8 md:top-6">
+            <ProductHuntBadge variant="cityHero" />
+          </div>
+
+          <div className="absolute right-6 top-6 z-10 rounded-full bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-md">
             Reviewed {dest.lastReviewed}
           </div>
 

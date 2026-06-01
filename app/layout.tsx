@@ -7,6 +7,7 @@ import MapToggle from "@/components/home/MapToggle";
 import CompareBanner from "@/components/compare/CompareBanner";
 import EmailCapture from "@/components/EmailCapture";
 import Logo from "@/components/brand/Logo";
+import ProductHuntBadge from "@/components/brand/ProductHuntBadge";
 import citiesData from "@/data/cities.json";
 import type { Destination } from "@/lib/types";
 import "./globals.css";
@@ -91,6 +92,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 cta="Subscribe"
                 successMsg="You're in — see you soon."
               />
+            </div>
+
+            <div className="mb-6 flex justify-center">
+              <ProductHuntBadge variant="footer" />
             </div>
 
             {/* Links */}
