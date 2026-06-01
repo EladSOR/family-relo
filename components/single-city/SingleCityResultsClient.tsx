@@ -316,6 +316,7 @@ export default function SingleCityResultsClient() {
     secondary: "ages 13+",
   };
 
+  // Chip form — used as a standalone metadata pill (e.g. "Family · 1 kid ages 5–12").
   const familyLabel =
     familySize === "solo"
       ? "Solo"
@@ -324,6 +325,18 @@ export default function SingleCityResultsClient() {
         : numKids && kidsAge
           ? `Family · ${numKids === 3 ? "3+" : numKids} kid${numKids > 1 ? "s" : ""} ${kidsAgeLabel[kidsAge]}`
           : "Family with kids";
+
+  // Sentence form — used inside prose, e.g. "Worth considering for families with 1 child ages 5–12".
+  // Important: the chip form's `·` separator reads as garbage English when interpolated
+  // into a sentence, so we keep a separate sentence-friendly version.
+  const familyPhrase =
+    familySize === "solo"
+      ? "solo movers"
+      : familySize === "couple"
+        ? "couples"
+        : numKids && kidsAge
+          ? `families with ${numKids === 3 ? "3+" : numKids} ${numKids === 1 ? "child" : "children"} ${kidsAgeLabel[kidsAge]}`
+          : "families with kids";
 
   const workLabel =
     work === "remote" ? "remote work" : work === "local" ? "local job" : "freelance";
@@ -866,7 +879,7 @@ export default function SingleCityResultsClient() {
           <div className="grid gap-5 md:grid-cols-2">
             <div>
               <p className="mb-3 text-[11px] font-bold uppercase tracking-wider text-emerald-600">
-                What works for {familyLabel.toLowerCase()}
+                What works for {familyPhrase}
               </p>
               <ul className="space-y-2.5">
                 {city.familyFit.bestFor.slice(0, 4).map((item) => (
@@ -1131,7 +1144,7 @@ export default function SingleCityResultsClient() {
                 Final read
               </p>
               <h2 className="mb-3 text-xl font-extrabold tracking-tight text-slate-900 md:text-2xl">
-                {verdict.label} for {familyLabel.toLowerCase()} at{" "}
+                {verdict.label} for {familyPhrase} at{" "}
                 {formatBudget(budget)}/mo
               </h2>
               <p className="text-sm leading-relaxed text-slate-700 md:text-base">

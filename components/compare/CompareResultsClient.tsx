@@ -139,6 +139,7 @@ function PreviewContent({
   cols,
   budget,
   familyLabel,
+  familyPhrase,
   workLabel,
   work,
   passport,
@@ -147,6 +148,7 @@ function PreviewContent({
   cols: number;
   budget: number;
   familyLabel: string;
+  familyPhrase: string;
   workLabel: string;
   work: WorkSituation;
   passport: PassportTier;
@@ -165,7 +167,7 @@ function PreviewContent({
           Family fit analysis
         </h2>
         <p className="mb-6 text-sm text-slate-500">
-          How each city matches a {familyLabel.toLowerCase()} on {workLabel}.
+          How each city fits {familyPhrase} on {workLabel}.
         </p>
 
         <div className={`grid gap-5 ${gridCls}`}>
@@ -434,7 +436,7 @@ function PreviewContent({
         </h2>
         <p className="mb-6 text-sm leading-relaxed text-slate-600">
           Based on your <strong>{formatBudget(budget)}/mo budget</strong>,{" "}
-          <strong>{familyLabel.toLowerCase()}</strong> situation, and{" "}
+          <strong>{familyLabel}</strong>, and{" "}
           <strong>{workLabel}</strong>, here&apos;s how each city stacks up:
         </p>
 
@@ -684,6 +686,7 @@ export default function CompareResultsClient() {
     secondary: "ages 13+",
   };
 
+  // Chip form — standalone metadata pill (e.g. "Family · 1 kid ages 5–12").
   const familyLabel =
     familySize === "solo"
       ? "Solo"
@@ -692,6 +695,18 @@ export default function CompareResultsClient() {
         : numKids && kidsAge
           ? `Family · ${numKids === 3 ? "3+" : numKids} kid${numKids > 1 ? "s" : ""} ${kidsAgeLabel[kidsAge]}`
           : "Family with kids";
+
+  // Sentence form — used inside prose. The chip's `·` separator reads as
+  // garbage English when interpolated into a sentence, so we keep a separate
+  // sentence-friendly version (always plural to fit "for X" / "fits X").
+  const familyPhrase =
+    familySize === "solo"
+      ? "solo movers"
+      : familySize === "couple"
+        ? "couples"
+        : numKids && kidsAge
+          ? `families with ${numKids === 3 ? "3+" : numKids} ${numKids === 1 ? "child" : "children"} ${kidsAgeLabel[kidsAge]}`
+          : "families with kids";
 
   const workLabel =
     work === "remote" ? "remote work" : work === "local" ? "local job" : "freelance";
@@ -1184,6 +1199,7 @@ export default function CompareResultsClient() {
             cols={cols}
             budget={budget}
             familyLabel={familyLabel}
+            familyPhrase={familyPhrase}
             workLabel={workLabel}
             work={work}
             passport={passport}
