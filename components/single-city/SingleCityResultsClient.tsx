@@ -16,6 +16,8 @@ import {
   Wallet,
   GraduationCap,
   Heart,
+  ChevronDown,
+  Sparkles,
 } from "lucide-react";
 import Logo from "@/components/brand/Logo";
 import { useMemo, useState, useEffect, useRef } from "react";
@@ -149,6 +151,53 @@ function BlurredRow({ width = "100%" }: { width?: string }) {
       className="h-4 rounded-md bg-slate-200"
       style={{ width }}
     />
+  );
+}
+
+/**
+ * Lightweight collapsible block used inside paid-report sections.
+ *
+ * Why: this paid report can otherwise drop a wall of text on the user —
+ * especially on mobile, where 4 visa cards × 4 long bullets each renders
+ * as ~50 lines of dense prose. Hiding secondary detail behind a tap keeps
+ * the page scannable while still giving the user every word if they want it.
+ */
+function Disclosure({
+  label,
+  children,
+  defaultOpen = false,
+  tone = "default",
+}: {
+  label: string;
+  children: React.ReactNode;
+  defaultOpen?: boolean;
+  tone?: "default" | "accent";
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  const headerTone =
+    tone === "accent"
+      ? "text-[#FF5A5F] hover:bg-[#FF5A5F]/5"
+      : "text-slate-700 hover:bg-slate-50";
+  return (
+    <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className={`flex w-full cursor-pointer items-center justify-between gap-3 px-3.5 py-2.5 text-left text-xs font-bold transition-colors md:text-sm ${headerTone}`}
+      >
+        <span>{label}</span>
+        <ChevronDown
+          size={14}
+          className={`shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+      {open && (
+        <div className="border-t border-slate-100 bg-stone-50/40 px-3.5 py-3">
+          {children}
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -879,62 +928,108 @@ export default function SingleCityResultsClient() {
                 </p>
               ) : (
                 <div className="space-y-4">
-                  {rankedVisaOptions.slice(0, 4).map((opt, i) => (
-                    <div
-                      key={opt.anchor ?? opt.type ?? i}
-                      className={`rounded-xl border p-4 md:p-5 ${
-                        i === 0 && topReasoning
-                          ? "border-[#FF5A5F]/30 bg-[#FF5A5F]/5"
-                          : "border-slate-100 bg-stone-50/40"
-                      }`}
-                    >
-                      <div className="mb-2 flex items-start justify-between gap-3">
-                        <div className="min-w-0">
-                          <p className="text-sm font-extrabold text-slate-900 md:text-base">
-                            {opt.type}
-                          </p>
-                          {opt.duration && (
-                            <p className="mt-0.5 text-xs text-slate-500">
-                              Duration: {opt.duration}
+                  {rankedVisaOptions.slice(0, 4).map((opt, i) => {
+                    const isTop = i === 0 && !!topReasoning;
+                    const stepCount = opt.details?.length ?? 0;
+                    return (
+                      <div
+                        key={opt.anchor ?? opt.type ?? i}
+                        className={`rounded-xl border p-4 md:p-5 ${
+                          isTop
+                            ? "border-[#FF5A5F]/30 bg-[#FF5A5F]/5"
+                            : "border-slate-200 bg-white"
+                        }`}
+                      >
+                        {/* Header: title + duration pill + match badge */}
+                        <div className="mb-2 flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <p className="text-sm font-extrabold text-slate-900 md:text-base">
+                              {opt.type}
                             </p>
+                            {opt.duration && (
+                              <span className="mt-1 inline-block rounded-md bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-600">
+                                {opt.duration}
+                              </span>
+                            )}
+                          </div>
+                          {isTop && (
+                            <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-[#FF5A5F]/30 bg-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                              <Sparkles size={10} strokeWidth={2.5} />
+                              Best match
+                            </span>
                           )}
                         </div>
-                        {i === 0 && topReasoning && (
-                          <span className="shrink-0 rounded-full border border-[#FF5A5F]/30 bg-white px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
-                            Most likely match
-                          </span>
+
+                        {/* Description (1-paragraph what is this visa) */}
+                        {opt.description && (
+                          <p className="mb-3 text-sm leading-snug text-slate-700">
+                            {opt.description}
+                          </p>
+                        )}
+
+                        {/* Why this is the top match (only top card) */}
+                        {isTop && topReasoning && (
+                          <div className="mb-3 rounded-lg bg-white p-3">
+                            <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                              Why this matches you
+                            </p>
+                            <p className="text-xs leading-snug text-slate-700 md:text-sm">
+                              {topReasoning}
+                            </p>
+                          </div>
+                        )}
+                        {isTop && topAdvisory && (
+                          <p className="mb-3 rounded-lg border border-amber-100 bg-amber-50 px-3 py-2 text-xs leading-snug text-amber-800">
+                            {topAdvisory}
+                          </p>
+                        )}
+
+                        {/* "How to apply" steps — inline for top card, collapsed for the rest */}
+                        {stepCount > 0 && (
+                          <>
+                            {isTop ? (
+                              <div>
+                                <p className="mb-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                                  How to apply
+                                </p>
+                                <ol className="space-y-2">
+                                  {opt.details!.slice(0, 4).map((d, di) => (
+                                    <li
+                                      key={di}
+                                      className="flex items-start gap-2.5 text-xs leading-snug text-slate-700 md:text-sm"
+                                    >
+                                      <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#FF5A5F]/10 text-[9px] font-bold text-[#FF5A5F]">
+                                        {di + 1}
+                                      </span>
+                                      <span>{d}</span>
+                                    </li>
+                                  ))}
+                                </ol>
+                              </div>
+                            ) : (
+                              <Disclosure
+                                label={`See how to apply (${Math.min(stepCount, 4)} step${stepCount === 1 ? "" : "s"})`}
+                              >
+                                <ol className="space-y-2">
+                                  {opt.details!.slice(0, 4).map((d, di) => (
+                                    <li
+                                      key={di}
+                                      className="flex items-start gap-2.5 text-xs leading-snug text-slate-700 md:text-sm"
+                                    >
+                                      <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-slate-200 text-[9px] font-bold text-slate-600">
+                                        {di + 1}
+                                      </span>
+                                      <span>{d}</span>
+                                    </li>
+                                  ))}
+                                </ol>
+                              </Disclosure>
+                            )}
+                          </>
                         )}
                       </div>
-                      {opt.description && (
-                        <p className="mb-3 text-sm leading-snug text-slate-700">
-                          {opt.description}
-                        </p>
-                      )}
-                      {i === 0 && topReasoning && (
-                        <p className="mb-3 rounded-lg bg-white px-3 py-2 text-xs leading-snug text-[#FF5A5F]">
-                          {topReasoning}
-                        </p>
-                      )}
-                      {i === 0 && topAdvisory && (
-                        <p className="mb-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs leading-snug text-slate-600">
-                          {topAdvisory}
-                        </p>
-                      )}
-                      {opt.details && opt.details.length > 0 && (
-                        <ul className="space-y-1.5">
-                          {opt.details.slice(0, 4).map((d, di) => (
-                            <li
-                              key={di}
-                              className="flex items-start gap-2 text-xs leading-snug text-slate-600 md:text-sm"
-                            >
-                              <span className="mt-1.5 inline-block h-1 w-1 shrink-0 rounded-full bg-slate-400" />
-                              {d}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
 
@@ -959,19 +1054,41 @@ export default function SingleCityResultsClient() {
                   Based on what the {city.city} market typically offers expat
                   families.
                 </p>
-                <div className="space-y-3">
-                  <p className="text-sm leading-relaxed text-slate-700">
-                    {city.schools.summary}
-                  </p>
-                  <p className="text-sm leading-relaxed text-slate-700">
-                    {city.schools.internationalOptions}
-                  </p>
-                  {city.schools.tip && (
-                    <div className="rounded-lg border border-amber-100 bg-amber-50 px-3 py-2.5 text-sm font-medium leading-snug text-amber-900">
-                      ⚡ {city.schools.tip}
+
+                {/* The tip is the most actionable thing the user can take away.
+                    Promote it to the top so it isn't buried at the end. */}
+                {city.schools.tip && (
+                  <div className="mb-3 flex items-start gap-2.5 rounded-lg border border-amber-100 bg-amber-50 px-3.5 py-3">
+                    <span className="text-base leading-none">⚡</span>
+                    <div>
+                      <p className="mb-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700">
+                        Do this first
+                      </p>
+                      <p className="text-sm font-medium leading-snug text-amber-900">
+                        {city.schools.tip}
+                      </p>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
+
+                <Disclosure
+                  label={`Read full ${city.city} school market overview`}
+                  tone="accent"
+                >
+                  <div className="space-y-3">
+                    <p className="text-sm leading-relaxed text-slate-700">
+                      {city.schools.summary}
+                    </p>
+                    <p className="text-sm leading-relaxed text-slate-700">
+                      {city.schools.internationalOptions}
+                    </p>
+                    {city.schools.languageNotes && (
+                      <p className="text-sm leading-relaxed text-slate-700">
+                        {city.schools.languageNotes}
+                      </p>
+                    )}
+                  </div>
+                </Disclosure>
               </section>
             )}
 
