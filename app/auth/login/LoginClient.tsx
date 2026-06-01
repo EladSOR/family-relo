@@ -26,11 +26,29 @@ export default function LoginClient() {
   const params = useSearchParams();
   const next = safeNext(params.get("next"));
 
+  // Two reasons we redirect away from the login screen:
+  // 1. The user is already signed in when they land here (initial check).
+  // 2. The user signs in elsewhere in the same browser — most commonly,
+  //    they click the magic link from Gmail web in a sibling tab. Without
+  //    this listener, the ORIGINAL tab keeps showing the "Check your email"
+  //    screen forever and the user reports "it brought me back to
+  //    registration" because they only look at the stale tab.
+  //
+  //    Supabase syncs SIGNED_IN events across tabs in the same browser via
+  //    BroadcastChannel, so subscribing here is enough — no polling needed.
   useEffect(() => {
     const supabase = createClient();
+
     supabase.auth.getUser().then(({ data }) => {
       if (data.user) router.replace(next);
     });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
+      if ((event === "SIGNED_IN" || event === "INITIAL_SESSION") && session?.user) {
+        router.replace(next);
+      }
+    });
+    return () => listener.subscription.unsubscribe();
   }, [router, next]);
 
   function callbackUrl() {
@@ -96,6 +114,16 @@ export default function LoginClient() {
                   We sent a sign-in link to{" "}
                   <span className="font-semibold text-slate-700">{email}</span>.
                   Click the link to continue — no password needed.
+                </p>
+                {/* Cross-device guidance: opening the link in a different
+                    browser or device than where the user started means the
+                    original session can't pick up the auth automatically.
+                    Tell them up-front so they don't end up confused. */}
+                <p className="mt-4 rounded-lg border border-slate-100 bg-slate-50 px-3 py-2.5 text-[11px] leading-relaxed text-slate-500">
+                  <strong className="text-slate-700">Tip:</strong> open the email on{" "}
+                  <strong className="text-slate-700">this device</strong> for the
+                  smoothest experience — you&apos;ll be brought back here
+                  automatically and sent to checkout if you started a purchase.
                 </p>
                 <button
                   type="button"

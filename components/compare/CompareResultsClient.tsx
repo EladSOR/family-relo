@@ -907,6 +907,39 @@ export default function CompareResultsClient() {
 
   const cityNames = scores.map((s) => s.city.city).join(" · ");
 
+  // When the user returns from login with ?autoCheckout=..., the next render
+  // immediately fires startCheckout and redirects to Stripe. Without this
+  // guard, the full report flashes on screen for 700ms–2s before the redirect.
+  // We show a clean "Taking you to checkout" overlay instead, and only fall
+  // back to the report if the redirect errored.
+  const isAutoCheckoutPending =
+    !!autoCheckoutPlan &&
+    (autoCheckoutPlan === "single" || autoCheckoutPlan === "bundle") &&
+    !payError;
+
+  if (isAutoCheckoutPending) {
+    return (
+      <div className="flex min-h-screen flex-col bg-stone-50">
+        <nav className="border-b border-slate-100 bg-white px-4 py-4 md:px-8">
+          <div className="mx-auto flex max-w-4xl items-center">
+            <Logo size={24} />
+          </div>
+        </nav>
+        <div className="flex flex-1 items-center justify-center px-4">
+          <div className="text-center">
+            <div className="mx-auto mb-5 h-10 w-10 animate-spin rounded-full border-[3px] border-slate-200 border-t-[#FF5A5F]" />
+            <p className="text-base font-bold text-slate-800 md:text-lg">
+              Taking you to secure checkout…
+            </p>
+            <p className="mt-1.5 text-sm text-slate-500">
+              Hang tight — you&apos;ll be redirected to Stripe in a moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Nav */}
