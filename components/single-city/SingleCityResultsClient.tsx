@@ -34,7 +34,9 @@ import {
   type WorkSituation,
   type KidsAge,
   type NumKids,
+  type PassportTier,
 } from "@/lib/scoring";
+import { rankVisaOptions } from "@/lib/visaRanking";
 
 const ALL_CITIES = citiesData as Destination[];
 
@@ -138,76 +140,6 @@ function verdictForPct(pct: number): {
   };
 }
 
-/**
- * Highlight which visa option is the most-likely fit, based on the user's
- * work situation. We never *hide* options — we just rank them so the most
- * relevant one is first with a "Most likely match" badge.
- *
- * Framing: this is filtering, not advice. The label says "matches your
- * profile" not "we recommend." The user still sees every option the city
- * curates.
- */
-function rankVisaOptions(
-  options: VisaOption[],
-  work: WorkSituation,
-): { ranked: VisaOption[]; topReasoning: string | null } {
-  if (!options.length) return { ranked: [], topReasoning: null };
-
-  function tag(opt: VisaOption): string {
-    return (
-      (opt.anchor ?? "") + " " + (opt.type ?? "") + " " + (opt.description ?? "")
-    ).toLowerCase();
-  }
-
-  const scored = options.map((opt) => {
-    const t = tag(opt);
-    let score = 0;
-
-    // Remote workers / freelancers map strongly to digital-nomad visas
-    if (work === "remote" || work === "freelance") {
-      if (
-        /digital.?nomad|dnv|d8|dtv|remote/.test(t) ||
-        opt.anchor === "visa-dnv" ||
-        opt.anchor === "visa-d8" ||
-        opt.anchor === "visa-dtv"
-      ) {
-        score += 10;
-      }
-    }
-    // Local-job seekers map to employment / work permits
-    if (work === "local") {
-      if (/work.?permit|employment|sponsored|skilled/.test(t)) score += 10;
-    }
-
-    // EU citizens always start with free movement if applicable
-    if (opt.anchor === "visa-eu") score += 4;
-
-    // Penalize tourist-only routes (they're not a relocation path)
-    if (opt.anchor === "visa-tourist" || /tourist|visa.?on.?arrival/.test(t)) {
-      score -= 4;
-    }
-
-    return { opt, score };
-  });
-
-  scored.sort((a, b) => b.score - a.score);
-  const ranked = scored.map((s) => s.opt);
-
-  const top = scored[0];
-  if (!top || top.score <= 0) return { ranked, topReasoning: null };
-
-  let reasoning: string;
-  if (work === "remote" || work === "freelance") {
-    reasoning =
-      "Matches your profile (remote / freelance work). Confirm the savings or income threshold before applying.";
-  } else if (work === "local") {
-    reasoning =
-      "Matches your profile (local job). Typically requires an employer sponsor — start there before applying.";
-  } else {
-    reasoning = "Most relevant route based on your inputs.";
-  }
-  return { ranked, topReasoning: reasoning };
-}
 
 // ── Sub-components ────────────────────────────────────────────────────────────
 
@@ -259,6 +191,12 @@ export default function SingleCityResultsClient() {
   const budget = Number(params.get("budget") ?? 5000);
   const familySize = (params.get("family") ?? "family") as FamilySize;
   const work = (params.get("work") ?? "remote") as WorkSituation;
+  const passport = (() => {
+    const raw = params.get("passport");
+    return raw && ["eu", "tier1", "other"].includes(raw)
+      ? (raw as PassportTier)
+      : ("other" as PassportTier);
+  })();
   const priorities = parsePriorities(params.get("priorities") ?? "cost,safety");
   const isPreview = params.get("preview") === "true";
   const isUnlocked = isPreview || unlockedViaPayment;
@@ -569,10 +507,11 @@ export default function SingleCityResultsClient() {
   // ── Computed view data ───────────────────────────────────────────────────
   const verdict = verdictForPct(score.matchPct);
   const visaOptions = city.visa?.options ?? [];
-  const { ranked: rankedVisaOptions, topReasoning } = rankVisaOptions(
-    visaOptions,
-    work,
-  );
+  const {
+    ranked: rankedVisaOptions,
+    topReasoning,
+    topAdvisory,
+  } = rankVisaOptions(visaOptions, work, passport, city.countrySlug);
   const headroom = budget - score.budgetMid;
 
   // Personalised checklist — reorder so the user's top priority sections
@@ -941,6 +880,11 @@ export default function SingleCityResultsClient() {
                           {topReasoning}
                         </p>
                       )}
+                      {i === 0 && topAdvisory && (
+                        <p className="mb-3 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs leading-snug text-slate-600">
+                          {topAdvisory}
+                        </p>
+                      )}
                       {opt.details && opt.details.length > 0 && (
                         <ul className="space-y-1.5">
                           {opt.details.slice(0, 4).map((d, di) => (
@@ -1163,6 +1107,15 @@ export default function SingleCityResultsClient() {
                 ) : (
                   <>
                     {/* Primary CTA — the $7 single-city report */}
+                    <p className="mb-1 flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                      <span>Launch price</span>
+                      <span className="text-base font-extrabold normal-case tracking-normal text-slate-900">
+                        $7
+                      </span>
+                      <span className="text-base font-bold normal-case tracking-normal text-slate-300 line-through">
+                        $14
+                      </span>
+                    </p>
                     <button
                       type="button"
                       disabled={user === undefined || checkoutLoading !== null}
@@ -1196,13 +1149,19 @@ export default function SingleCityResultsClient() {
                       className="group w-full cursor-pointer rounded-xl border-2 border-[#FF5A5F]/40 bg-[#FF5A5F]/5 px-4 py-3.5 text-left transition-all hover:border-[#FF5A5F]/60 hover:bg-[#FF5A5F]/10 disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       <div className="flex items-baseline justify-between gap-2">
-                        <span className="text-base font-extrabold text-slate-900">
+                        <span className="flex items-baseline gap-2 text-base font-extrabold text-slate-900">
                           Compare cities instead — $19
+                          <span className="text-sm font-bold text-slate-300 line-through">
+                            $39
+                          </span>
                         </span>
                         <span className="shrink-0 text-[11px] font-bold text-slate-500">
                           3 reports
                         </span>
                       </div>
+                      <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                        Launch price
+                      </p>
                       <p className="mt-1 text-xs leading-snug text-slate-600">
                         3 full comparison reports (up to 3 cities each) — better
                         if you have a shortlist instead of one city in mind.

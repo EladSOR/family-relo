@@ -5,6 +5,7 @@ import type { Destination } from "@/lib/types";
 import DestinationCard from "@/components/home/DestinationCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import PersonalizedReportBanner from "@/components/upsell/PersonalizedReportBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { resolveCityHeroImage } from "@/lib/constants";
 import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
@@ -83,6 +84,13 @@ export default async function CountryPage({ params }: Props) {
         <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-500">
           Hand-picked family-friendly cities with real data on visa routes, schools, and childcare.
         </p>
+      </div>
+
+      {/* ── Personalized report banner ────────────────────────────────────
+          Renders only when the user filled family/duration in the hero
+          search bar. Echoes inputs back to make the form feel real. */}
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-12 xl:px-16">
+        <PersonalizedReportBanner />
       </div>
 
       {/* ── City grid ────────────────────────────────────────────────────── */}

@@ -5,6 +5,7 @@ import DestinationCard from "@/components/home/DestinationCard";
 import BudgetFilter from "@/components/home/BudgetFilter";
 import Breadcrumb from "@/components/Breadcrumb";
 import StickySearchHeader from "@/components/StickySearchHeader";
+import PersonalizedReportBanner from "@/components/upsell/PersonalizedReportBanner";
 import { JsonLd } from "@/components/JsonLd";
 import {
   SITE_DESTINATIONS_DESCRIPTION,
@@ -52,6 +53,14 @@ export default function DestinationsPage() {
         <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-500">
           Every city is hand-picked for safety, schools, and childcare costs.
         </p>
+      </div>
+
+      {/* ── Personalized report banner ────────────────────────────────────
+          Renders only when the user filled family/duration in the hero
+          search bar. Sits above the budget filter so it's the first thing
+          they see after Explore. */}
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-12 xl:px-16">
+        <PersonalizedReportBanner />
       </div>
 
       {/* ── Budget filter — slider that hides cards above the user's monthly budget */}

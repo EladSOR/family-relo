@@ -85,8 +85,11 @@ export default function CompareCityCTA({
               className="transition-transform group-hover:translate-x-0.5"
             />
           </Link>
-          <p className="text-center text-[11px] font-medium text-slate-400 md:text-right">
-            From $9 · pay once · free preview first
+          <p className="flex flex-wrap items-baseline justify-center gap-1 text-[11px] font-medium text-slate-400 md:justify-end">
+            <span>Launch price · from</span>
+            <span className="text-xs font-extrabold text-slate-700">$9</span>
+            <span className="font-bold text-slate-300 line-through">$18</span>
+            <span>· pay once</span>
           </p>
         </div>
       </div>
@@ -102,7 +105,9 @@ export default function CompareCityCTA({
           >
             personalised single-city &ldquo;Should we move here?&rdquo; report
           </Link>{" "}
-          — verdict, visa paths ranked for you, and a 90-day checklist for $7.
+          — verdict, visa paths ranked for you, and a 90-day checklist.
+          Launch price <strong className="text-slate-900">$7</strong>{" "}
+          <span className="font-bold text-slate-300 line-through">$14</span>.
         </p>
         <Link
           href={singleCityHref}

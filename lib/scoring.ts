@@ -9,6 +9,24 @@ export type Priority = "cost" | "safety" | "schools" | "weather" | "lifestyle";
 export type KidsAge = "preschool" | "primary" | "secondary";
 export type NumKids = 1 | 2 | 3;
 
+/**
+ * Coarse passport-strength buckets used by the visa ranker.
+ *
+ * Kept deliberately small (3 buckets) — most visa policies are tier-based,
+ * not country-by-country, and a short list keeps the picker fast and clear.
+ * Cosmetic-only buckets (e.g. "Other strong passport", "Israel") were
+ * removed because they scored identically to the bucket they fold into.
+ *
+ * Buckets:
+ *   - "eu"     → EU/EEA passport (free movement inside the EU/EEA)
+ *   - "tier1"  → US, UK, Canada, Australia, NZ, Japan, Korea, Singapore,
+ *                Israel — strong passports with broad short-stay visa-free
+ *                tourism, but still need a proper visa for long stays.
+ *   - "other"  → Everywhere else — typically must apply formally for any
+ *                stay over the short-tourist window.
+ */
+export type PassportTier = "eu" | "tier1" | "other";
+
 export interface UserInputs {
   budget: number;
   familySize: FamilySize;

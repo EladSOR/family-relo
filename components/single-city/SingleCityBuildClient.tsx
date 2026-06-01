@@ -13,8 +13,27 @@ import type {
   Priority,
   KidsAge,
   NumKids,
+  PassportTier,
 } from "@/lib/scoring";
 import { PRIORITY_LABELS, PRIORITY_ICONS } from "@/lib/scoring";
+
+const PASSPORT_OPTIONS: { value: PassportTier; label: string; sub: string }[] = [
+  {
+    value: "eu",
+    label: "EU / EEA",
+    sub: "Move freely between EU/EEA countries — no visa needed for any stay",
+  },
+  {
+    value: "tier1",
+    label: "US / UK / CA / AU / NZ",
+    sub: "Plus Japan, Korea, Singapore, Israel — visa-free for tourism, but long stays still need a proper visa",
+  },
+  {
+    value: "other",
+    label: "Other / not sure",
+    sub: "We'll rank visa routes by your work situation only",
+  },
+];
 
 const ALL_CITIES = citiesData as Destination[];
 const ALL_PRIORITIES: Priority[] = ["cost", "safety", "schools", "weather", "lifestyle"];
@@ -36,12 +55,14 @@ function buildResultsUrl(
   priorities: Priority[],
   numKids: NumKids,
   kidsAge: KidsAge,
+  passport: PassportTier,
 ): string {
   const params = new URLSearchParams({
     city: cityId,
     budget: String(budget),
     family: familySize,
     work,
+    passport,
     priorities: priorities.join(","),
   });
   if (familySize === "family") {
@@ -156,6 +177,7 @@ export default function SingleCityBuildClient() {
   const [numKids, setNumKids] = useState<NumKids>(1);
   const [kidsAge, setKidsAge] = useState<KidsAge>("primary");
   const [work, setWork] = useState<WorkSituation>("remote");
+  const [passport, setPassport] = useState<PassportTier>("other");
   const [priorities, setPriorities] = useState<Priority[]>(["cost", "safety"]);
 
   // Credit balance — shown only when the user already paid for a bundle and
@@ -207,6 +229,7 @@ export default function SingleCityBuildClient() {
       priorities,
       numKids,
       kidsAge,
+      passport,
     );
     router.push(url);
   }
@@ -450,6 +473,39 @@ export default function SingleCityBuildClient() {
                   <OptionBtn active={work === "freelance"} onClick={() => setWork("freelance")}>
                     Freelance
                   </OptionBtn>
+                </div>
+              </div>
+
+              {/* Passport — drives visa eligibility ranking */}
+              <div>
+                <label className="mb-1 block text-sm font-bold text-slate-800">
+                  Your passport
+                </label>
+                <p className="mb-3 text-xs text-slate-400">
+                  We use this to rank visa paths by what you&apos;re actually eligible for.
+                </p>
+                <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                  {PASSPORT_OPTIONS.map(({ value, label, sub }) => (
+                    <button
+                      key={value}
+                      type="button"
+                      onClick={() => setPassport(value)}
+                      className={`flex flex-col items-start rounded-xl border px-4 py-3 text-left transition-all duration-150 ${
+                        passport === value
+                          ? "border-[#FF5A5F] bg-[#FF5A5F]/5"
+                          : "border-slate-200 bg-white hover:border-slate-300"
+                      }`}
+                    >
+                      <span
+                        className={`text-sm font-semibold ${
+                          passport === value ? "text-[#FF5A5F]" : "text-slate-700"
+                        }`}
+                      >
+                        {label}
+                      </span>
+                      <span className="text-xs text-slate-400">{sub}</span>
+                    </button>
+                  ))}
                 </div>
               </div>
 

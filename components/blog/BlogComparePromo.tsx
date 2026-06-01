@@ -63,8 +63,11 @@ export default function BlogComparePromo() {
               className="transition-transform group-hover:translate-x-0.5"
             />
           </Link>
-          <p className="text-center text-[10px] font-medium text-slate-400 md:text-right">
-            From $9 · pay once · free preview
+          <p className="flex flex-wrap items-baseline justify-center gap-1 text-[10px] font-medium text-slate-400 md:justify-end">
+            <span>Launch price · from</span>
+            <span className="text-xs font-extrabold text-slate-700">$9</span>
+            <span className="font-bold text-slate-300 line-through">$18</span>
+            <span>· pay once</span>
           </p>
         </div>
       </div>

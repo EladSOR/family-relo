@@ -43,7 +43,7 @@ function buildSingleCityProductJsonLd() {
         "@id": `${siteUrl}/single-city#product`,
         name: 'FamiRelo "Should we move here?" Single-City Report',
         description:
-          "A personalised single-city fit report for families. Includes a match score, verdict, visa paths ranked for your work situation, schools snapshot, budget reality check, and a personalised 90-day pre-arrival checklist. One-time $7. Downloadable PDF and shareable link.",
+          "A personalised single-city fit report for families. Includes a match score, verdict, visa paths ranked for your passport and work situation, schools snapshot, budget reality check, and a personalised 90-day pre-arrival checklist. One-time $7 launch price. Downloadable PDF and shareable link.",
         url: `${siteUrl}/single-city`,
         brand: { "@type": "Brand", name: "FamiRelo" },
         category: "Family relocation planning",
@@ -83,7 +83,7 @@ const INCLUDED = [
   "Verdict: strong fit / worth considering / be cautious",
   "Score breakdown: cost, safety, schools, weather, lifestyle",
   "Budget reality check — your $ vs. typical local family budget",
-  "Visa paths ranked for your work situation",
+  "Visa paths ranked for your passport + work situation",
   "Schools snapshot tailored to your kids' ages",
   "Personalised 90-day pre-arrival checklist",
   "Shareable link + downloadable PDF — yours forever",
@@ -115,7 +115,10 @@ export default function SingleCityLandingPage() {
         <div className="mx-auto max-w-2xl">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] md:mb-6 md:px-4 md:py-2 md:text-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A5F]" />
-            $7 · pay once · no subscription
+            <span className="uppercase tracking-wider">Launch price</span>
+            <span className="text-base font-extrabold md:text-lg">$7</span>
+            <span className="text-[#FF5A5F]/50 line-through">$14</span>
+            <span className="text-[#FF5A5F]/70">· pay once</span>
           </div>
           <h1 className="mb-4 text-3xl font-black tracking-tight text-slate-900 md:mb-5 md:text-6xl">
             <span className="text-[#FF5A5F]">Should we move here?</span>
@@ -264,7 +267,7 @@ export default function SingleCityLandingPage() {
               {
                 Icon: Plane,
                 title: "Visa paths that match your profile",
-                desc: "Filtered and ranked for your work situation (remote, local, freelance). Top match flagged.",
+                desc: "Ranked for your passport and work situation. EU citizens see free-movement guidance; everyone else gets the most realistic long-term route flagged with the next step to verify.",
               },
               {
                 Icon: Check,
@@ -310,7 +313,7 @@ export default function SingleCityLandingPage() {
               {
                 num: "02",
                 title: "Tell us about you",
-                desc: "Budget, family size, work situation, kids' ages, and what matters most. Takes 30 seconds.",
+                desc: "Budget, family size, passport, work situation, kids' ages, and what matters most. Takes 30 seconds.",
               },
               {
                 num: "03",
@@ -375,8 +378,12 @@ export default function SingleCityLandingPage() {
           </p>
 
           <div className="rounded-2xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-7 shadow-sm">
-            <div className="mb-1 flex items-baseline gap-2">
+            <p className="mb-1 text-xs font-bold uppercase tracking-wider text-[#FF5A5F]">
+              Launch price
+            </p>
+            <div className="mb-1 flex items-baseline gap-3">
               <span className="text-5xl font-black text-slate-900">$7</span>
+              <span className="text-2xl font-bold text-slate-300 line-through">$14</span>
               <span className="text-sm text-slate-400">one-time</span>
             </div>
             <p className="mb-1 text-base font-bold text-slate-800">
@@ -405,7 +412,7 @@ export default function SingleCityLandingPage() {
           <p className="mt-6 text-center text-xs text-slate-400">
             Considering 2-3 cities instead? Try the{" "}
             <Link href="/compare" className="font-semibold text-[#FF5A5F] hover:underline">
-              side-by-side comparison report from $9
+              side-by-side comparison report — launch price from $9 (regular $18)
             </Link>
             .
           </p>

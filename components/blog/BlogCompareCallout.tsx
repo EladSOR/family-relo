@@ -55,8 +55,11 @@ export default function BlogCompareCallout({
           />
         </Link>
       </div>
-      <p className="mt-3 text-center text-[11px] font-medium text-slate-400 md:text-right">
-        From $9 · pay once · free preview first
+      <p className="mt-3 flex flex-wrap items-baseline justify-center gap-1 text-[11px] font-medium text-slate-400 md:justify-end">
+        <span>Launch price · from</span>
+        <span className="text-xs font-extrabold text-slate-700">$9</span>
+        <span className="font-bold text-slate-300 line-through">$18</span>
+        <span>· pay once · free preview first</span>
       </p>
     </aside>
   );

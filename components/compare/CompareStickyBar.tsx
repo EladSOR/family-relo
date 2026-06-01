@@ -33,8 +33,11 @@ export default function CompareStickyBar() {
             <p className="text-sm font-bold text-slate-900">
               City Comparison Reports
             </p>
-            <p className="text-xs text-slate-500">
-              From $9 · Pay once · No subscription
+            <p className="flex items-baseline gap-1.5 text-xs text-slate-500">
+              <span>Launch price · from</span>
+              <span className="text-sm font-extrabold text-slate-900">$9</span>
+              <span className="font-bold text-slate-300 line-through">$18</span>
+              <span>· Pay once</span>
             </p>
           </div>
           <Link

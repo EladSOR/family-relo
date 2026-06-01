@@ -35,7 +35,7 @@ function buildCompareProductJsonLd() {
         "@id": `${siteUrl}/compare#product`,
         name: "FamiRelo Personalized City Comparison Report",
         description:
-          "A personalized side-by-side comparison report for up to 3 cities, weighted to a family's budget, schools, visa, and lifestyle priorities. Includes match scores, full visa & schools deep-dive, shareable link, and downloadable PDF.",
+          "A personalized side-by-side comparison report for up to 3 cities, weighted to a family's budget, schools, visa, and lifestyle priorities. Includes match scores, visa paths ranked for your passport and work situation, schools deep-dive, shareable link, and downloadable PDF.",
         url: `${siteUrl}/compare`,
         brand: { "@type": "Brand", name: "FamiRelo" },
         category: "Family relocation planning",
@@ -105,7 +105,7 @@ const INCLUDED = [
   "Score breakdown: cost, safety, schools, weather, lifestyle",
   "Budget fit analysis — what your money gets you",
   "Full family fit analysis (strengths & trade-offs)",
-  "Visa & work permit path for your situation",
+  "Visa & work permit path ranked for your passport + situation",
   "Schools & childcare deep-dive per city",
   "Shareable link — send to your partner or family",
   "Download as PDF — one click from the report",
@@ -158,7 +158,10 @@ export default function CompareLandingPage() {
         <div className="mx-auto max-w-2xl">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#FF5A5F]/20 bg-[#FF5A5F]/5 px-3 py-1.5 text-xs font-semibold text-[#FF5A5F] md:mb-6 md:px-4 md:py-2 md:text-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF5A5F]" />
-            From $9 · pay once · no subscription
+            <span className="uppercase tracking-wider">Launch price · from</span>
+            <span className="text-base font-extrabold md:text-lg">$9</span>
+            <span className="text-[#FF5A5F]/50 line-through">$18</span>
+            <span className="text-[#FF5A5F]/70">· pay once</span>
           </div>
           <h1 className="mb-4 text-3xl font-black tracking-tight text-slate-900 md:mb-5 md:text-6xl">
             Pick the city you&apos;ll{" "}
@@ -326,7 +329,7 @@ export default function CompareLandingPage() {
               {
                 num: "02",
                 title: "Tell us about you",
-                desc: "Budget, family size, work situation, and what matters most. Takes 30 seconds.",
+                desc: "Budget, family size, passport, work situation, and what matters most. Takes 30 seconds.",
               },
               {
                 num: "03",
@@ -414,8 +417,12 @@ export default function CompareLandingPage() {
           <div className="grid gap-4 md:grid-cols-2">
             {/* Single report */}
             <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
-              <div className="mb-1 flex items-baseline gap-2">
+              <p className="mb-1 text-xs font-bold uppercase tracking-wider text-[#FF5A5F]">
+                Launch price
+              </p>
+              <div className="mb-1 flex items-baseline gap-3">
                 <span className="text-5xl font-black text-slate-900">$9</span>
+                <span className="text-2xl font-bold text-slate-300 line-through">$18</span>
                 <span className="text-sm text-slate-400">one-time</span>
               </div>
               <p className="mb-1 text-base font-bold text-slate-800">Single report</p>
@@ -439,11 +446,17 @@ export default function CompareLandingPage() {
 
             {/* Bundle */}
             <div className="flex flex-col rounded-2xl border border-[#FF5A5F]/30 bg-[#FF5A5F]/5 p-7 shadow-sm">
-              <div className="mb-3 self-start rounded-full bg-[#FF5A5F] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
-                Best value
+              <div className="mb-3 flex items-center gap-2 self-start">
+                <span className="rounded-full bg-[#FF5A5F] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                  Best value
+                </span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                  Launch price
+                </span>
               </div>
-              <div className="mb-1 flex items-baseline gap-2">
+              <div className="mb-1 flex items-baseline gap-3">
                 <span className="text-5xl font-black text-slate-900">$19</span>
+                <span className="text-2xl font-bold text-slate-300 line-through">$39</span>
                 <span className="text-sm text-slate-400">one-time</span>
               </div>
               <p className="mb-1 text-base font-bold text-slate-800">3-report bundle</p>
@@ -473,7 +486,7 @@ export default function CompareLandingPage() {
           <p className="mt-3 text-center text-xs text-slate-400">
             Just one city to evaluate? Try the{" "}
             <Link href="/single-city" className="font-semibold text-[#FF5A5F] hover:underline">
-              single-city report for $7
+              single-city report — launch price $7 (regular $14)
             </Link>{" "}— same depth, one city, with visa paths ranked for your profile.
           </p>
 

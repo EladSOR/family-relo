@@ -20,7 +20,9 @@ import {
   type WorkSituation,
   type KidsAge,
   type NumKids,
+  type PassportTier,
 } from "@/lib/scoring";
+import { rankVisaOptions } from "@/lib/visaRanking";
 
 const ALL_CITIES = citiesData as Destination[];
 
@@ -138,12 +140,16 @@ function PreviewContent({
   budget,
   familyLabel,
   workLabel,
+  work,
+  passport,
 }: {
   scores: CityScore[];
   cols: number;
   budget: number;
   familyLabel: string;
   workLabel: string;
+  work: WorkSituation;
+  passport: PassportTier;
 }) {
   const gridCls = cols === 2 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 md:grid-cols-3";
 
@@ -333,6 +339,88 @@ function PreviewContent({
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Visa path (passport-aware) ───────────────────────────────────── */}
+      {/*
+        Each card shows the single most-likely visa route for THIS user
+        (passport + work situation), plus the 1-line reasoning the ranker
+        produced. We don't dump the whole visa list here — that's what
+        the per-city page is for. The goal of compare is "which city has
+        the easiest path for me?", not "show me every visa option".
+      */}
+      <section className="mb-8 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm md:p-8">
+        <h2 className="mb-1 text-base font-bold text-slate-900">
+          Most likely visa path
+        </h2>
+        <p className="mb-6 text-sm text-slate-500">
+          Ranked for your passport and work situation. Detailed steps live on each city page.
+        </p>
+
+        <div className={`grid gap-5 ${gridCls}`}>
+          {scores.map((s) => {
+            const visaOpts = s.city.visa?.options ?? [];
+            const { ranked, topReasoning, topAdvisory } = rankVisaOptions(
+              visaOpts,
+              work,
+              passport,
+              s.city.countrySlug,
+            );
+            const top = ranked[0];
+
+            return (
+              <div
+                key={s.city.id}
+                className="rounded-xl border border-slate-100 bg-stone-50/50 p-5"
+              >
+                <p className="mb-3 text-base font-extrabold text-slate-900">
+                  {s.city.city}
+                </p>
+
+                {top ? (
+                  <>
+                    <p className="mb-1 text-[11px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                      Most likely match
+                    </p>
+                    <p className="mb-1 text-sm font-semibold text-slate-800">
+                      {top.type}
+                    </p>
+                    {top.duration && (
+                      <p className="mb-2 text-xs text-slate-500">
+                        Duration: {top.duration}
+                      </p>
+                    )}
+                    {top.description && (
+                      <p className="mb-3 text-sm leading-snug text-slate-600">
+                        {top.description}
+                      </p>
+                    )}
+                    {topReasoning && (
+                      <p className="mb-2 rounded-lg bg-white px-3 py-2 text-xs leading-snug text-[#FF5A5F]">
+                        {topReasoning}
+                      </p>
+                    )}
+                    {topAdvisory && (
+                      <p className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs leading-snug text-slate-600">
+                        {topAdvisory}
+                      </p>
+                    )}
+                    <Link
+                      href={`/${s.city.countrySlug}/${s.city.citySlug}#visa`}
+                      className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#FF5A5F] hover:underline"
+                    >
+                      See full visa options →
+                    </Link>
+                  </>
+                ) : (
+                  <p className="text-sm text-slate-500">
+                    Visa details coming soon for this city — see the country page for general guidance.
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -529,6 +617,12 @@ export default function CompareResultsClient() {
   const budget = Number(params.get("budget") ?? 5000);
   const familySize = (params.get("family") ?? "family") as FamilySize;
   const work = (params.get("work") ?? "remote") as WorkSituation;
+  const passport = (() => {
+    const raw = params.get("passport");
+    return raw && ["eu", "tier1", "other"].includes(raw)
+      ? (raw as PassportTier)
+      : ("other" as PassportTier);
+  })();
   const priorities = parsePriorities(params.get("priorities") ?? "cost,safety");
   const isPreview = params.get("preview") === "true";
   const isUnlocked = isPreview || unlockedViaPayment;
@@ -1058,6 +1152,8 @@ export default function CompareResultsClient() {
             budget={budget}
             familyLabel={familyLabel}
             workLabel={workLabel}
+            work={work}
+            passport={passport}
           />
         ) : (
           <div className="relative">
@@ -1184,9 +1280,13 @@ export default function CompareResultsClient() {
                         <p className="mb-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">
                           This report
                         </p>
-                        <div className="mb-1 flex items-baseline gap-1">
+                        <p className="mb-0.5 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                          Launch price
+                        </p>
+                        <div className="mb-1 flex items-baseline gap-1.5">
                           <span className="text-3xl font-black text-slate-900">$9</span>
-                          <span className="text-xs text-slate-400">one-time</span>
+                          <span className="text-base font-bold text-slate-300 line-through">$18</span>
+                          <span className="ml-1 text-xs text-slate-400">one-time</span>
                         </div>
                         <p className="mb-4 text-xs text-slate-400">1 comparison · up to 3 cities</p>
                         <button
@@ -1204,9 +1304,13 @@ export default function CompareResultsClient() {
                         <div className="mb-1.5 self-start rounded-full bg-[#FF5A5F] px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide text-white">
                           Best value
                         </div>
-                        <div className="mb-1 flex items-baseline gap-1">
+                        <p className="mb-0.5 text-[10px] font-bold uppercase tracking-wider text-[#FF5A5F]">
+                          Launch price
+                        </p>
+                        <div className="mb-1 flex items-baseline gap-1.5">
                           <span className="text-3xl font-black text-slate-900">$19</span>
-                          <span className="text-xs text-slate-400">one-time</span>
+                          <span className="text-base font-bold text-slate-300 line-through">$39</span>
+                          <span className="ml-1 text-xs text-slate-400">one-time</span>
                         </div>
                         <p className="mb-1 text-xs font-semibold text-[#FF5A5F]">
                           3 comparisons

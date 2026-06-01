@@ -136,10 +136,15 @@ export default function CompareBanner() {
                   ? `Should you move to ${matchedCity?.city ?? "this city"}?`
                   : "Compare cities for your family"}
               </p>
-              <p className="text-[10px] font-semibold uppercase tracking-wider text-[#FF5A5F]">
-                {isSingleCity
-                  ? "$7 · pay once · free preview"
-                  : "From $9 · pay once · free preview"}
+              <p className="flex flex-wrap items-baseline gap-1 text-[10px] font-semibold uppercase tracking-wider text-[#FF5A5F]">
+                <span>Launch price{isSingleCity ? "" : " · from"}</span>
+                <span className="text-xs font-extrabold normal-case tracking-normal">
+                  ${isSingleCity ? "7" : "9"}
+                </span>
+                <span className="text-xs font-bold normal-case tracking-normal text-[#FF5A5F]/50 line-through">
+                  ${isSingleCity ? "14" : "18"}
+                </span>
+                <span>· pay once</span>
               </p>
             </div>
           </div>
