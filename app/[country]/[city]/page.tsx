@@ -23,6 +23,7 @@ import { CityWeather } from "@/components/CityWeather";
 import { HealthcareInsuranceCard } from "@/components/HealthcareInsuranceCard";
 import { JsonLd } from "@/components/JsonLd";
 import CompareCityCTA from "@/components/compare/CompareCityCTA";
+import PersonalizedReportBanner from "@/components/upsell/PersonalizedReportBanner";
 import ProductHuntBadge from "@/components/brand/ProductHuntBadge";
 import RelatedCities from "@/components/RelatedCities";
 import SponsorBanner from "@/components/ads/SponsorBanner";
@@ -149,6 +150,16 @@ export default async function CityPage({ params }: Props) {
       {/* Single-card sponsor banner between the hero and article body. Full
           page width — visually distinct from the editorial content below. */}
       <SponsorBanner />
+
+      {/* Personalized $7 report banner — only renders when the user set
+          family / duration in the search bar. Promotes the single-city report
+          (NOT the comparison) because on a city page the user is deciding
+          about THIS one city, not shopping across many. */}
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <PersonalizedReportBanner
+          singleCity={{ cityId: dest.id, cityName: dest.city }}
+        />
+      </div>
 
       {/* ── Body ─────────────────────────────────────────────────────────── */}
       <div className="mx-auto max-w-3xl px-4 py-8 space-y-4 sm:px-6 md:py-14 md:space-y-8">
