@@ -150,6 +150,41 @@ If a bullet fails any of these, rewrite it.
 
 ---
 
+## RULE 6 — No fabricated or unverifiable claims (all countries, all sections)
+
+Never invent claims you cannot verify — especially statements about **what people or families do**. This is the single fastest way to produce hollow, "bullshit" copy. It applies to every city and country, not just one region.
+
+### Banned: invented audience-behavior claims
+
+Do not assert what families/people/expats *do, choose, prefer, or feel* unless it is a genuine, well-known fact. The most common offenders appear in `relatedDestinationGuide.context` and section intros:
+
+```
+// ❌ BANNED — invented behaviour, no source, pure filler
+"Beer Sheva is an hour from Tel Aviv — many families compare the two."
+"Many families read the capital guide alongside this page."
+"Families often pair this guide with San José."
+"Eilat families often compare notes with Tel Aviv relocations."
+
+// ✅ GOOD — state the verifiable fact + what the other guide covers
+"Beer Sheva is about an hour by train or car from the Tel Aviv metro. The Tel Aviv guide covers the country's widest range of jobs and international schools, useful if you're weighing the Negev's lower costs against the coast."
+```
+
+**Rule for `relatedDestinationGuide.context`:** state (1) the real geographic/administrative relationship between the two places, and (2) what the linked guide *covers* and *when it's useful to the reader*. Never claim that "families compare", "cross-shop", "pair", "read alongside", or "compare notes" between the two.
+
+### Note on the allowed hedge "many families"
+
+`"many families"` is still allowed as a hedge for **genuinely common, verifiable realities** (e.g. "many families use private hospitals because there is no public option for foreigners"). It is **not** a licence to invent cross-city comparison behaviour. If the sentence is about people choosing between two of *our* guides, it is fabricated — rewrite it as a factual description of what the other guide covers.
+
+### General test before writing any sentence
+
+1. **Is it true and checkable?** If you cannot point to a real, well-known fact, don't state it.
+2. **Am I inventing motivation or behaviour?** ("families compare / prefer / love / flock to / cross-shop") — if yes, replace with a factual description.
+3. **Would it survive an editor asking "says who?"** If not, cut it or make it factual.
+
+This rule is enforced by `scripts/deep_audit_cities.py` (category `J.fabricated-claim`), which scans `relatedDestinationGuide.context` for invented comparison behaviour.
+
+---
+
 ## Applies to
 
 - All entries in `data/cities.json`

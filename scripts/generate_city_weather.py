@@ -84,6 +84,7 @@ DAYS_PER_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 # Open-Meteo sometimes misses very small localities — use verified WGS84 coordinates.
 MANUAL_COORDS: dict[str, tuple[float, float]] = {
     "santa-teresa-cr": (9.6463, -85.1684),  # Santa Teresa, Puntarenas
+    "beer-sheva-il": (31.2518, 34.7913),  # Beer Sheva, Negev
 }
 
 POWER_URL = "https://power.larc.nasa.gov/api/temporal/climatology/point"

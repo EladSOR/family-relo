@@ -84,6 +84,43 @@ NANNY_PLATFORM_OK = {
 }
 
 
+# Approved relatedDestinationGuide pairs (new-city-generation.mdc RULE 6b).
+# relatedDestinationGuide is ONLY for an area→parent-hub relationship (a
+# suburb, metro-coast municipality, beach town in a capital's service orbit,
+# or a town on an island). It must NEVER link two self-standing cities just
+# because they are geographically near. Each approved pair is
+#   (city_id) -> (related countrySlug, related citySlug)
+# Adding a pair here is a deliberate, reviewed decision. Any
+# relatedDestinationGuide not on this list is flagged (category K).
+APPROVED_RELATED_GUIDES = {
+    "cascais-pt":       ("portugal", "lisbon"),
+    "tamarindo-cr":     ("costa-rica", "san-jose"),
+    "heredia-cr":       ("costa-rica", "san-jose"),
+    "atenas-cr":        ("costa-rica", "san-jose"),
+    "puerto-viejo-cr":  ("costa-rica", "san-jose"),
+    "santa-teresa-cr":  ("costa-rica", "san-jose"),
+    "bali-id":          ("indonesia", "ubud"),
+    "ubud-id":          ("indonesia", "bali"),
+}
+
+
+# Fabricated audience-behaviour claims (content-quality.mdc RULE 6).
+# These assert what families/people DO when comparing two of our guides —
+# unverifiable filler. Scoped to relatedDestinationGuide.context, where the
+# pattern is most common. "many families" alone is an allowed hedge elsewhere,
+# so we only flag it here when paired with cross-guide comparison verbs.
+FABRICATED_BEHAVIOUR = [
+    re.compile(r"compare the two", re.IGNORECASE),
+    re.compile(r"compare notes", re.IGNORECASE),
+    re.compile(r"cross-?shop", re.IGNORECASE),
+    re.compile(r"\b(often|usually|typically|frequently|commonly)\s+pair\b", re.IGNORECASE),
+    re.compile(r"\bpair this guide\b", re.IGNORECASE),
+    re.compile(r"read .{0,40}? guide alongside", re.IGNORECASE),
+    re.compile(r"\bfamilies (often|still|usually|typically|frequently|commonly)\b", re.IGNORECASE),
+    re.compile(r"many families (compare|read|pair|cross)", re.IGNORECASE),
+]
+
+
 # More precise wrong-country jargon (extends scan_country_jargon.py)
 WRONG_JARGON = {
     "Codice Fiscale": {"italy"},
@@ -273,6 +310,30 @@ def audit():
                     issue(out, cid, "I.nanny-platform",
                           f"'{platform}' is not a real nanny channel for {country} "
                           f"(only valid for {ok_countries or '(none)'})")
+
+        # J. Fabricated audience-behaviour claims in relatedDestinationGuide.context
+        rdg = c.get("relatedDestinationGuide")
+        if isinstance(rdg, dict):
+            ctx = rdg.get("context", "") or ""
+            for pat in FABRICATED_BEHAVIOUR:
+                m = pat.search(ctx)
+                if m:
+                    issue(out, cid, "J.fabricated-claim",
+                          f"relatedDestinationGuide.context invents audience behaviour: "
+                          f"'{m.group(0)}' — state the geographic fact + what the linked guide covers instead")
+
+            # K. relatedDestinationGuide must be an approved area→parent-hub pair.
+            # Never link two independent cities by mere geographic proximity.
+            pair = (rdg.get("countrySlug"), rdg.get("citySlug"))
+            approved = APPROVED_RELATED_GUIDES.get(cid)
+            if approved is None:
+                issue(out, cid, "K.related-guide",
+                      f"relatedDestinationGuide → {pair} is not in APPROVED_RELATED_GUIDES. "
+                      f"This field is ONLY for an area→parent-hub relationship, never two "
+                      f"independent cities linked by geography. Omit it, or add the reviewed pair to the allowlist.")
+            elif approved != pair:
+                issue(out, cid, "K.related-guide",
+                      f"relatedDestinationGuide → {pair} does not match approved pair {approved}.")
 
         # Residency + banking required objects with items[] + tip
         for sec in ("residency", "banking"):

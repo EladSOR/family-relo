@@ -8257,12 +8257,6 @@
     "country": "Israel",
     "tagline": "Red Sea resort city — desert heat, compact living, and a slower pace than central Israel",
     "summary": "Eilat is Israel's southernmost city on the Red Sea — a hot desert climate, coral reefs and outdoor life, and an economy centred on tourism, hospitality, and logistics. Families come for a beach-town lifestyle, remote-friendly work, or Red Sea outdoor culture without Tel Aviv's scale. Trade-offs are intense summer heat, fewer English-medium school options than in central Israel, isolation from the main job and specialist-care clusters (Beersheba and Tel Aviv are the usual referral hubs), and the same national security awareness as elsewhere in the country.",
-    "relatedDestinationGuide": {
-      "countrySlug": "israel",
-      "citySlug": "tel-aviv",
-      "label": "Tel Aviv",
-      "context": "Most international schools and many headquarters jobs sit in central Israel — Eilat families often compare notes with Tel Aviv relocations and use domestic flights when they need metro services or visits."
-    },
     "lastReviewed": "2026-04",
     "actionChecklist": [
       {
@@ -8668,6 +8662,419 @@
         "Mean daily highs reach about 32°C or more in Apr, May, Jun, Jul, Aug, Sep, Oct — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
         "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
         "Winter nights can dip near freezing (Jan, Feb) — reliable home heating and warm layers for school commutes matter for children."
+      ]
+    }
+  },
+  {
+    "id": "beer-sheva-il",
+    "citySlug": "beer-sheva",
+    "countrySlug": "israel",
+    "city": "Beer Sheva",
+    "country": "Israel",
+    "tagline": "The capital of the Negev — Israel's most affordable big city, anchored by a major university and a growing tech and cyber scene",
+    "summary": "Beer Sheva is the largest city in southern Israel and the main hub of the Negev desert. It is not a traditional international-relocation destination — most newcomers are drawn by how far their money goes (housing costs a fraction of Tel Aviv's), by Ben-Gurion University, and by the slowly growing tech presence around the Gav-Yam Negev cyber park and the army's relocation of technology and intelligence units to the city. There is a small, welcoming English-speaking (Anglo) community, but no international or English-medium schools — children attend Hebrew-language schools. The other trade-offs are a hot desert climate, a quieter scene than the coast, and the same Hebrew-first bureaucracy and national security awareness as the rest of Israel.",
+    "lastReviewed": "2026-06",
+    "actionChecklist": [
+      {
+        "label": "Check your visa status — most Western passport holders enter Israel visa-free for 90 days; a B/1 work visa requires Israeli employer sponsorship",
+        "targetSection": "visa"
+      },
+      {
+        "label": "Start your housing search early — newer family areas (Ramot, Neve Ze'ev, the Old City) and university-adjacent flats turn over quickly at the start of the academic year",
+        "targetSection": "housing"
+      },
+      {
+        "label": "Apply for your Mispar Zehut (מספר זהות — Israeli ID number) at the Ministry of Interior — required for banking, healthcare, and school enrolment",
+        "targetSection": "residency"
+      },
+      {
+        "label": "Plan schooling before you sign a lease — there are no international or English-medium schools, so most families enrol in Hebrew-language public schools and add private English tutoring",
+        "targetSection": "schools"
+      },
+      {
+        "label": "Join a Kupat Holim (קופת חולים — health fund) once you have your Israeli ID number — Israel's public healthcare system covering GP, specialists, and hospital care",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Arrange private IPMI (International Private Medical Insurance) as a bridge until your Kupat Holim membership is active",
+        "targetSection": "healthcare"
+      },
+      {
+        "label": "Open an Israeli bank account (Hapoalim, Leumi, or Discount) once you have your residency number — start early because the process takes time",
+        "targetSection": "banking"
+      },
+      {
+        "label": "Review your government's current travel advisory before moving and keep your family's emergency plan current",
+        "targetSection": "safety"
+      }
+    ],
+    "familyFit": {
+      "bestFor": [
+        "Families relocating for Ben-Gurion University, Soroka Medical Center, the Gav-Yam Negev cyber park, or army technology units moving to the Negev",
+        "Households who want far lower housing costs than Tel Aviv or Jerusalem while staying inside Israel's systems",
+        "Parents comfortable with Hebrew-language schooling and willing to budget for private English tutoring",
+        "Those who prefer a quieter, lower-density city with quick access to Negev nature and the desert"
+      ],
+      "watchOutFor": [
+        "Summers are very hot and dry — plan air-conditioning, hydration, and limited midday outdoor time for children",
+        "There are no international or English-medium schools — children attend Hebrew-language schools, so plan language support from day one",
+        "The cultural and dining scene is quieter than the coast — some families travel north for variety",
+        "National security awareness and Hebrew-only bureaucracy match the rest of Israel — local help is valuable at government offices"
+      ]
+    },
+    "visa": {
+      "status": "verified",
+      "summary": "Most Western passport holders enter Israel visa-free for up to 90 days. Long-term residence requires either a B/1 work visa (employer-sponsored) or oleh status (available under the Law of Return). Non-resident expats typically arrive on a B/1 work visa sponsored by their Israeli employer.",
+      "tip": "Start the B/1 work visa process well in advance — the Israeli Ministry of Interior processing typically takes 2–4 months from a complete submission.",
+      "options": [
+        {
+          "type": "Visa-free entry (tourist)",
+          "anchor": "visa-tourist",
+          "detailTitle": "Visa-free tourist entry — what it covers",
+          "duration": "Up to 90 days",
+          "description": "Most Western passport holders enter Israel visa-free. Good for a scouting trip — no right to work or long-term residency.",
+          "details": [
+            "Citizens of the US, UK, EU, Australia, Canada, and most other Western countries enter Israel visa-free for up to 90 days.",
+            "No right to work on visa-free entry — working for an Israeli employer without a B/1 visa is not permitted.",
+            "Cannot be converted to residency from inside Israel — you must apply at the Israeli Ministry of Interior or consulate before arriving.",
+            "Good use: spend time around Ramot, Neve Ze'ev, the university quarter, and the Old City to test school runs, heat tolerance, and daily logistics before committing.",
+            "Check your government's current travel advisory before booking — conditions change and entry requirements should always be confirmed ahead of travel."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Foreign Affairs visa information official"
+          }
+        },
+        {
+          "type": "B/1 Work Visa (employer-sponsored)",
+          "anchor": "visa-il-work",
+          "detailTitle": "B/1 Work Visa — how to apply",
+          "duration": "1 year, renewable",
+          "description": "Requires sponsorship by a licensed Israeli employer. The primary long-term route for tech, university, and corporate expats.",
+          "details": [
+            "Your Israeli employer must apply to the Israeli Population and Immigration Authority for a work permit on your behalf before you can apply for the B/1 visa.",
+            "Required documents: valid passport, employer sponsorship letter, employment contract, and private health insurance valid in Israel.",
+            "Apply at the Israeli consulate or embassy in your home country. Processing typically takes 2–4 months from a complete submission.",
+            "The B/1 visa is tied to your specific employer — if you change jobs, the new employer must apply for a new work permit.",
+            "Family members (spouse and children) receive a B/2 dependent visa under your B/1, allowing residence in Israel but not independent employment."
+          ],
+          "officialLink": {
+            "label": "Israel Ministry of Interior work visa B1 official requirements"
+          }
+        }
+      ]
+    },
+    "residency": {
+      "title": "Residency & Mispar Zehut",
+      "tip": "Engage a relocation agent or a Hebrew-speaking fixer for your first appointments — Beer Sheva uses the same national rules as Tel Aviv, but queues and forms are easier with local help.",
+      "items": [
+        "Temporary residents receive a Mispar Zehut (מספר זהות — Israeli ID number) from the Ministry of Interior (Misrad HaPnim — משרד הפנים). This number is required for almost every formal transaction: banking, healthcare, school enrolment, and contracts.",
+        "Apply for your Mispar Zehut at your nearest Ministry of Interior office. Bring your passport, visa page, employment contract, and rental agreement. Expect to wait several weeks for the physical ID document.",
+        "Families eligible under the Law of Return (Jewish heritage) can apply for Aliyah — full Israeli citizenship — which immediately grants full residency rights, access to Kupat Holim, and government absorption benefits.",
+        "Non-citizen temporary residents must renew their B/1 visa annually through their employer — make sure your employer's HR team manages this renewal calendar.",
+        "Your Israeli ID number also serves as your tax ID for all local financial and government purposes."
+      ]
+    },
+    "banking": {
+      "title": "Banking",
+      "tip": "Israeli banks are slow to open accounts for new arrivals — start the process in your first week and expect 2–4 weeks before the account is fully active.",
+      "items": [
+        "Bank Hapoalim (בנק הפועלים) and Bank Leumi (בנק לאומי) are the two largest banks in Israel and the most commonly used by expat families. Discount Bank (בנק דיסקונט) is a strong alternative with a more modern digital experience.",
+        "You need your Mispar Zehut (Israeli ID number), passport, visa, rental contract, and employment contract to open an account. Some banks additionally require an introductory letter from your employer.",
+        "The process is slow — expect multiple visits and 2–4 weeks from first application to a fully working account. Use Wise or Revolut as a bridge while waiting.",
+        "Most financial transactions in Beer Sheva are done by bank transfer or direct debit (הוראת קבע) — rent, school fees, and utilities typically require a local Israeli bank account within 4–6 weeks of arrival.",
+        "Wise is widely used by expats for receiving foreign income in USD or EUR and converting into ILS (Israeli New Shekel — ₪) at a competitive rate."
+      ]
+    },
+    "housing": {
+      "status": "estimated",
+      "summary": "Beer Sheva is one of the most affordable cities in Israel for families. Newer family neighbourhoods like Ramot and Neve Ze'ev offer modern apartments with parking and parks, while the revitalised Old City and university quarter suit students and younger households. Rents are a fraction of Tel Aviv's.",
+      "bestAreas": [
+        "Ramot",
+        "Neve Ze'ev",
+        "Old City (Ha'Ir Ha'Atika)",
+        "Nahal Ashan",
+        "University quarter"
+      ],
+      "searchPortalsIntro": [
+        "These are local rental platforms — this is where residents rent long-term housing (cheaper than short-stay sites).",
+        "Search 'Beer Sheva' (or בארשבע) plus the neighbourhood name inside each platform to filter local listings.",
+        "Tip: inventory tightens around the start of the academic year (September–October) when students arrive — start early and keep guarantor paperwork ready."
+      ],
+      "searchPortals": [
+        {
+          "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+          "url": "https://www.yad2.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Madlan.co.il — Israeli property portal with map-based search",
+          "url": "https://www.madlan.co.il",
+          "isVerified": true
+        },
+        {
+          "label": "Facebook groups — search: 'Beer Sheva Anglo' or 'Olim Beer Sheva' (direct landlord leads)",
+          "url": "https://www.google.com/search?q=Beer+Sheva+Anglo+housing+Facebook+group",
+          "isVerified": true
+        }
+      ],
+      "typicalPrices": [
+        "1-bed apartment, city centre or university quarter: ~$650–$1,000/month",
+        "2-bed apartment, Ramot or Neve Ze'ev: ~$1,000–$1,400/month",
+        "3-bed apartment, newer family neighbourhoods: ~$1,300–$1,900/month",
+        "Larger house or garden apartment, Ramot: ~$1,800–$2,700/month"
+      ],
+      "whatYouNeedToRent": [
+        "Valid passport and Israeli ID number (Mispar Zehut)",
+        "2–3 months of personal bank statements",
+        "Employment contract or income proof",
+        "Israeli guarantor or bank guarantee — most landlords require a local guarantor; a bank guarantee is accepted as an alternative",
+        "2–3 months deposit — common in Israeli leases",
+        "Rental contracts are in Hebrew — use a registered translator or relocation agent to review before signing"
+      ]
+    },
+    "schools": {
+      "status": "curated",
+      "summary": "Beer Sheva runs Hebrew-language public schools like the rest of Israel. There are no international or English-medium schools, and no English–Hebrew bilingual schools — children of newcomers attend Hebrew-language state schools. Anglo families typically add private English tutoring or after-school enrichment to keep up English literacy.",
+      "publicSystem": "Israeli public schools are free and open to all residents. Instruction is entirely in Hebrew — realistic mainly when children are young enough to pick up the language quickly, or when you budget for intensive tutoring. Ulpan (intensive Hebrew programmes) exists for older children and adults.",
+      "internationalOptions": "There are no international or English-medium schools in Beer Sheva, and the one bilingual school in the region teaches in Hebrew and Arabic, not English. Families who need a full English-language curriculum look to the Tel Aviv area. Locally, the realistic path is a Hebrew-language state school plus private English tutoring.",
+      "languageNotes": "Hebrew is the language of instruction in every local school. English is taught as a subject and is widely spoken on campus at Ben-Gurion University, but it is not a substitute for classroom Hebrew. Private English or Hebrew tutoring for newly arrived children typically costs roughly $35–$65/hr.",
+      "tip": "Connect with Beer Sheva's Anglo community before you move — parents there share which state schools and ganim (kindergartens) work well for newly arrived English-speaking children.",
+      "searchContext": "in Beer Sheva, Israel",
+      "options": [
+        {
+          "type": "Hebrew-language state schools (mamlachti)",
+          "description": "Free secular state schools — the default for newcomers and most realistic for younger children with a tutoring plan and patience for the first year.",
+          "fees": "Free (public)"
+        },
+        {
+          "type": "Religious state schools (mamlachti-dati)",
+          "description": "Free religious-track state schools, common in parts of the city — match the track to your family before choosing a neighbourhood.",
+          "fees": "Free (public)"
+        }
+      ]
+    },
+    "childcare": {
+      "status": "estimated",
+      "summary": "Israel's early-years rules apply in Beer Sheva: gan (גן — preschool) for ages 3–6, metaplot (מטפלות — licensed home daycare) and maon (מעון — nursery) for younger babies.",
+      "daycareItems": [
+        "Gan (גן — preschool) is mandatory and free for ages 3–6 under Israeli law — the local authority allocates a place based on your registered address",
+        "For under-3s, a metaplet (מטפלת — a licensed home daycare provider) is common. Licensed metaplot accept up to five children in a home setting. Typical cost: ~$430–$760/month",
+        "Private nurseries (maon — מעון) accept children from three months old. Fees: ~$600–$1,150/month — generally cheaper than Tel Aviv or Jerusalem",
+        "The Israeli government provides a subsidised daycare voucher (Shal) for children aged three months to three years — eligibility and amount vary by family income; search 'Bituach Leumi Shal voucher' on Google for current rules"
+      ],
+      "nannyItems": [
+        "Nannies and sitters typically charge ~$9–$18/hr — English-speaking caregivers may sit at the upper end",
+        "Full-time live-out nannies often cost ~$1,400–$2,400/month in Beer Sheva — lower than the coast but still meaningful in the household budget",
+        "Students from Ben-Gurion University are a common source of part-time babysitting — many are reliable and flexible around academic terms",
+        "Start your search four to six weeks before arrival — word-of-mouth in parent chats fills roles quickly"
+      ],
+      "whereToFindItems": [
+        "Search 'Beer Sheva Anglo parents' or 'Olim families Beer Sheva' on Facebook for English-speaking parent groups and nanny referrals",
+        "Israeli relocation agencies — most maintain vetted childcare referral lists for incoming families and can suggest English-comfortable local nannies",
+        "Ben-Gurion University noticeboards and student groups — a practical channel for reliable part-time babysitting"
+      ]
+    },
+    "healthcare": {
+      "status": "estimated",
+      "summary": "Beer Sheva is southern Israel's main medical hub thanks to Soroka Medical Center, so families have strong hospital access once registered with a Kupat Holim.",
+      "tip": "Kupat Holim membership requires a Mispar Zehut (Israeli ID number) — arrange private insurance as a bridge until your residency documents are in place.",
+      "items": [
+        "Israel's public healthcare runs through four Kupat Holim (קופת חולים — health funds): Clalit, Maccabi, Meuhedet, and Leumit. All cover GP visits, specialists, hospitals, and prescriptions from the national health basket once you are registered.",
+        "Kupat Holim membership requires a Mispar Zehut and formal residency — B/1 workers usually become eligible after Ministry of Interior registration.",
+        "Until Kupat Holim is active, carry IPMI (International Private Medical Insurance) — Cigna Global, AXA, and Allianz Care are common choices for newly arrived expats.",
+        "Soroka Medical Center is the largest hospital in southern Israel and the main referral centre for the whole Negev — a major advantage of living in Beer Sheva is having advanced care in the city itself.",
+        "Confirm which Kupat Holim clinics and paediatricians serve your neighbourhood when you register — clinics are spread across Ramot, Neve Ze'ev, and the city centre."
+      ]
+    },
+    "safety": {
+      "status": "estimated",
+      "score": 78,
+      "summary": "Day-to-day life in Beer Sheva is calm for a mid-size city, but desert heat and Israel's national security context still require preparation.",
+      "items": [
+        "Petty theft and the usual urban property crime exist — use normal awareness with bags, phones, and parked cars, especially near the central bus station and markets.",
+        "Heat stress is a real risk from late spring through early autumn — schedule children's outdoor play for mornings or evenings and never leave kids in parked cars.",
+        "National alert systems (Red Alert / Tzeva Adom — צבע אדום) and shelter norms apply — download the Home Front Command app (Pikud HaOref) and know your building's protected space (mamad — ממ\"ד).",
+        "Check your home government's travel advisory — southern Israel can see periodic escalation, and guidance changes with regional events.",
+        "Newer family neighbourhoods (Ramot, Neve Ze'ev) are quiet and residential; the area around the old central bus station warrants more caution at night."
+      ]
+    },
+    "cost": {
+      "status": "estimated",
+      "rentRange": "~$1,500 / month",
+      "familyDinner": "~$55",
+      "nannyRate": "~$11 / hr",
+      "monthlyFamilyAllIn": "~$4,500–$6,500 / month"
+    },
+    "sources": {
+      "visa": [
+        {
+          "label": "Israel Ministry of Foreign Affairs — Visa information",
+          "url": "https://www.gov.il/en/departments/ministry_of_foreign_affairs",
+          "isVerified": true
+        }
+      ],
+      "schools": [],
+      "cost": [
+        {
+          "label": "Beer Sheva Cost of Living — Numbeo",
+          "url": "https://www.numbeo.com/cost-of-living/in/Beer-Sheva",
+          "isVerified": true
+        }
+      ],
+      "weather": [
+        {
+          "label": "NASA POWER — Climatology API (methodology)",
+          "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+          "isVerified": true
+        },
+        {
+          "label": "MERRA-2 reanalysis (meteorological source)",
+          "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+          "isVerified": true
+        }
+      ]
+    },
+    "communityLinks": [
+      {
+        "label": "Search 'Beer Sheva Anglo' or 'Olim Beer Sheva' on Google — English-speaking communities for families in the Negev",
+        "searchQuery": "Beer Sheva Anglo Olim parents",
+        "url": "https://www.google.com/search?q=Beer+Sheva+Anglo+Olim+Facebook+group",
+        "isVerified": true
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Beer Sheva good for families?",
+        "answer": "Yes for families relocating for Ben-Gurion University, Soroka Medical Center, or the Negev tech park, and for those who want far lower costs than the coast. Less ideal if you need English-medium schooling or a busy cultural scene — compare honestly with Tel Aviv before you commit."
+      },
+      {
+        "question": "How much does a family typically need per month here?",
+        "answer": "Roughly $4,500–$6,500/month all-in is typical for a family of four — Beer Sheva is one of the cheaper Israeli cities, with rent well below Tel Aviv or Jerusalem."
+      },
+      {
+        "question": "Is housing hard to find here?",
+        "answer": "Generally easier and cheaper than the coast, but inventory tightens around the September–October academic-year start. Start a few weeks ahead with guarantor paperwork ready."
+      },
+      {
+        "question": "Do children need international school here, or can local schools work?",
+        "answer": "There are no international or English-medium schools in Beer Sheva, so children attend Hebrew-language state schools. This works best for younger children, and most Anglo families add private English tutoring; families needing a full English curriculum look to the Tel Aviv area."
+      },
+      {
+        "question": "Is healthcare easy to access as a newcomer?",
+        "answer": "Yes, relatively — Beer Sheva hosts Soroka Medical Center, the main hospital for all of southern Israel. Register with a Kupat Holim as soon as you have a Mispar Zehut and keep private insurance until then."
+      },
+      {
+        "question": "Do you need a car in Beer Sheva?",
+        "answer": "Helpful but not essential. The city has buses and a train station with fast links to the Tel Aviv metro, and many neighbourhoods are walkable. A car makes school runs, desert trips, and big grocery shops easier."
+      },
+      {
+        "question": "How difficult is the paperwork and bureaucracy after moving?",
+        "answer": "Similar to the rest of Israel — Hebrew forms, Ministry of Interior queues, and slow bank onboarding. Hire translation help for your first week if you can."
+      },
+      {
+        "question": "What usually surprises families after arrival?",
+        "answer": "How much the desert heat shapes daily scheduling, and how far your housing budget stretches compared with Tel Aviv — many families are surprised by the space they can afford."
+      }
+    ],
+    "weather": {
+      "status": "verified",
+      "dataSeries": "MERRA-2 (NASA POWER)",
+      "normalsPeriod": "2001–2020",
+      "gridLatitude": 31.252,
+      "gridLongitude": 34.791,
+      "disclaimer": "These values are long-term monthly climatologies from NASA POWER (MERRA-2 reanalysis) for the nearest model grid cell to these coordinates — not a single city-centre weather station. Spatial resolution is about 50 km; coastal belts, hills, and dense urban cores can differ. Precipitation is corrected MERRA-2 rainfall; rainy-day counts are approximated from monthly totals.",
+      "months": [
+        {
+          "month": 1,
+          "highC": 22.9,
+          "lowC": 1.8,
+          "rainMm": 59.2,
+          "rainDays": 5.0
+        },
+        {
+          "month": 2,
+          "highC": 26.6,
+          "lowC": 2.8,
+          "rainMm": 42.0,
+          "rainDays": 4.0
+        },
+        {
+          "month": 3,
+          "highC": 30.8,
+          "lowC": 4.4,
+          "rainMm": 26.7,
+          "rainDays": 2.0
+        },
+        {
+          "month": 4,
+          "highC": 35.6,
+          "lowC": 7.3,
+          "rainMm": 14.7,
+          "rainDays": 1.0
+        },
+        {
+          "month": 5,
+          "highC": 39.3,
+          "lowC": 10.7,
+          "rainMm": 4.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 6,
+          "highC": 40.2,
+          "lowC": 14.5,
+          "rainMm": 0.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 7,
+          "highC": 40.4,
+          "lowC": 18.0,
+          "rainMm": 0.6,
+          "rainDays": 1.0
+        },
+        {
+          "month": 8,
+          "highC": 39.7,
+          "lowC": 18.9,
+          "rainMm": 0.3,
+          "rainDays": 1.0
+        },
+        {
+          "month": 9,
+          "highC": 38.9,
+          "lowC": 16.6,
+          "rainMm": 1.8,
+          "rainDays": 1.0
+        },
+        {
+          "month": 10,
+          "highC": 36.8,
+          "lowC": 13.3,
+          "rainMm": 11.5,
+          "rainDays": 1.0
+        },
+        {
+          "month": 11,
+          "highC": 30.5,
+          "lowC": 7.5,
+          "rainMm": 31.2,
+          "rainDays": 3.0
+        },
+        {
+          "month": 12,
+          "highC": 25.1,
+          "lowC": 3.7,
+          "rainMm": 47.7,
+          "rainDays": 4.0
+        }
+      ],
+      "familyHighlights": [
+        "Warmest month on average: Jul (mean daily high ~40°C); coolest: Jan (mean daily low ~2°C).",
+        "Most rainfall on average: Jan (~59 mm total); driest: Jun (~0 mm).",
+        "Mean daily highs reach about 32°C or more in Apr, May, Jun, Jul, Aug, Sep, Oct — plan air-conditioning, shade, and limited midday outdoor time for babies and young children.",
+        "Peak months can average above 35°C for daily highs — schedule playgrounds, walks, and errands for mornings or evenings when possible.",
+        "Winter nights can dip near freezing (Jan) — reliable home heating and warm layers for school commutes matter for children."
       ]
     }
   },
@@ -16133,7 +16540,7 @@
       "countrySlug": "costa-rica",
       "citySlug": "san-jose",
       "label": "San Jose",
-      "context": "Tamarindo is in Guanacaste, not Greater San José. For Central Valley school density, DIMEX paperwork rhythms, and private-hospital depth, many families read the capital guide alongside this beach-town page."
+      "context": "Tamarindo is in Guanacaste, not Greater San José. The capital guide covers Central Valley school density, DIMEX paperwork rhythms, and private-hospital depth if you're weighing the beach town against the central hub."
     },
     "actionChecklist": [
       {
@@ -16569,7 +16976,7 @@
       "countrySlug": "costa-rica",
       "citySlug": "san-jose",
       "label": "San Jose",
-      "context": "Heredia is its own city in the Central Valley (not a district inside San José). Many families still cross-shop Escazú–Santa Ana schooling and capital services described in the San José guide."
+      "context": "Heredia is its own city in the Central Valley (not a district inside San José). The San José guide covers Escazú–Santa Ana schooling and capital services if you're comparing options across the Central Valley."
     },
     "actionChecklist": [
       {
@@ -17439,7 +17846,7 @@
       "countrySlug": "costa-rica",
       "citySlug": "san-jose",
       "label": "San Jose",
-      "context": "Puerto Viejo is on the Caribbean coast, far from the capital. Families often pair this guide with San José for Central Valley schools, private hospitals, and the rhythm of DIMEX-driven onboarding."
+      "context": "Puerto Viejo is on the Caribbean coast, far from the capital. The San José guide covers Central Valley schools, private hospitals, and DIMEX-driven onboarding if you need services the coast doesn't offer."
     },
     "actionChecklist": [
       {
@@ -17875,7 +18282,7 @@
       "countrySlug": "costa-rica",
       "citySlug": "san-jose",
       "label": "San Jose",
-      "context": "Santa Teresa is not part of San José — it is a beach community on the Nicoya Peninsula. Many families still compare flights, specialist care, and Central Valley schooling with the capital hub."
+      "context": "Santa Teresa is not part of San José — it is a beach community on the Nicoya Peninsula. The San José guide covers flight connections, specialist care, and Central Valley schooling if you need the capital hub's depth."
     },
     "actionChecklist": [
       {

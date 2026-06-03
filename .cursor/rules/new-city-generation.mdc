@@ -321,6 +321,25 @@ If the site already has a guide for a **nearby hub** (capital, metro core) that 
 
 **Related guide in the UI:** the city page renders `relatedDestinationGuide` as **inline prose + link** after the summary — not a boxed card. Keep `context` to one or two short sentences.
 
+### ⛔ Only an area→parent-hub relationship qualifies — never link two independent cities
+
+`relatedDestinationGuide` exists for **one** relationship: a **searchable area that is genuinely part of, or a satellite of, a larger hub we already cover** (a suburb, a metro-coast municipality, a beach town in a capital's service orbit, a town on an island). The link tells the reader "this place sits inside/next to that metro; the hub guide covers services this smaller place leans on."
+
+It is **not** for connecting two **self-standing cities** just because they are in the same country or look close on a map. You usually **do not know the real nature of the relationship** (commute patterns, whether residents treat them as alternatives, job/school overlap). Asserting one is a fabricated claim (see `content-quality.mdc` RULE 6) and a recipe for ridiculous mistakes.
+
+```json
+// ❌ WRONG — two independent cities linked by mere geography
+// Beer Sheva and Eilat are full cities, not satellites of Tel Aviv. OMIT the field.
+"relatedDestinationGuide": { "citySlug": "tel-aviv", "label": "Tel Aviv", "context": "an hour from the Tel Aviv metro…" }
+
+// ✅ RIGHT — a beach town in the capital's service orbit → the capital hub
+"relatedDestinationGuide": { "citySlug": "san-jose", "label": "San Jose", "context": "Tamarindo is in Guanacaste, not Greater San José. The capital guide covers Central Valley schools and private-hospital depth…" }
+```
+
+**Default: omit `relatedDestinationGuide`.** For two independent cities in the same country, add nothing — country-level navigation already lets users browse and pick. Only add the field when the place is a real area/satellite of the linked hub, and the audit allowlist below is updated.
+
+**Enforcement:** every `relatedDestinationGuide` pair must appear in the `APPROVED_RELATED_GUIDES` allowlist in `scripts/deep_audit_cities.py`. Adding a new pair is a deliberate, reviewed step — the audit (category `K.related-guide`) flags any pair that is not on the list, so a casual geo link cannot slip in.
+
 ---
 
 ## RULE 7 — Visa: all options must be interactive

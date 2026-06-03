@@ -216,6 +216,11 @@ export default async function CityPage({ params }: Props) {
           </p>
         ) : null}
 
+        {/* ── Explore more in the same country — a single link to the country
+            hub page (not city-to-city links). Neutral navigation + internal
+            linking for SEO; makes no claim relating the cities. */}
+        <CountryExploreLink current={dest} allCities={citiesData as Destination[]} />
+
         {/* ── Action checklist ──────────────────────────────────────────── */}
         <Section title="Action checklist" icon={<ClipboardList size={16} className="text-slate-500" />}>
           <p className="mb-1 text-sm text-slate-500">
@@ -692,6 +697,40 @@ function Section({
       </div>
 
     </details>
+  );
+}
+
+/**
+ * "Explore more family guides in {country}" — a single link to the country hub
+ * page (e.g. /israel), not links to each individual city. Placed in the upper
+ * text for SEO (above-the-fold internal link) and to help readers explore.
+ *
+ * This is NOT a `relatedDestinationGuide`: it makes no claim that the cities are
+ * related or comparable — it is plain country-level navigation. Renders only
+ * when we cover at least one other city in the same country.
+ */
+function CountryExploreLink({
+  current,
+  allCities,
+}: {
+  current: Destination;
+  allCities: Destination[];
+}) {
+  const hasSiblings = allCities.some(
+    (c) => c.countrySlug === current.countrySlug && c.id !== current.id,
+  );
+
+  if (!hasSiblings) return null;
+
+  return (
+    <p className="text-sm leading-relaxed text-slate-500">
+      <Link
+        href={`/${current.countrySlug}`}
+        className="font-medium text-[#E84A4F] hover:underline"
+      >
+        Explore more family guides in {current.country} →
+      </Link>
+    </p>
   );
 }
 
