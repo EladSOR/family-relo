@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-25T11:55:52.402Z",
+  "generatedAt": "2026-06-08T12:33:43.936Z",
   "totals": {
-    "uniqueUrls": 589,
-    "occurrences": 1034,
-    "ok": 366,
-    "redirect": 38,
-    "broken": 185
+    "uniqueUrls": 592,
+    "occurrences": 1039,
+    "ok": 368,
+    "redirect": 40,
+    "broken": 184
   },
   "broken": [
     {
@@ -19,16 +19,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.asvalencia.org",
-      "label": "American School of Valencia",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "valencia-es",
-      "scopeName": "Valencia, Spain",
-      "section": "sources",
-      "path": "sources.schools.0"
-    },
-    {
       "url": "https://www.caxtoncollege.com",
       "label": "Caxton College",
       "code": "fetch failed",
@@ -37,6 +27,16 @@
       "scopeName": "Valencia, Spain",
       "section": "sources",
       "path": "sources.schools.1"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Valencia",
+      "label": "Valencia Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "valencia-es",
+      "scopeName": "Valencia, Spain",
+      "section": "sources",
+      "path": "sources.cost.0"
     },
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
@@ -351,7 +351,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary White Card remote worker visa official",
-      "code": "fetch failed",
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -381,7 +381,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary government official portal",
-      "code": "fetch failed",
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -481,7 +481,7 @@
     {
       "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
       "label": "Greece Digital Nomad Visa — Enterprise Greece",
-      "code": 404,
+      "code": 503,
       "scope": "city",
       "scopeId": "athens-gr",
       "scopeName": "Athens, Greece",
@@ -581,7 +581,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 403,
+      "code": 520,
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -611,7 +611,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 403,
+      "code": 520,
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -635,6 +635,36 @@
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
+      "section": "sources",
+      "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.madlan.co.il",
+      "label": "Madlan.co.il — Israeli property portal with map-based search",
+      "code": 520,
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.gov.il/en/departments/ministry_of_foreign_affairs",
+      "label": "Israel Ministry of Foreign Affairs — Visa information",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
+      "url": "https://www.numbeo.com/cost-of-living/in/Beer-Sheva",
+      "label": "Beer Sheva Cost of Living — Numbeo",
+      "code": 503,
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
       "section": "sources",
       "path": "sources.cost.0"
     },
@@ -1321,7 +1351,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — map-based rentals and sales",
-      "code": 403,
+      "code": 520,
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -1599,16 +1629,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.dba.dk",
-      "label": "DBA — general classifieds with strong rental section",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "copenhagen-dk",
-      "scopeName": "Copenhagen, Denmark",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
       "code": 503,
@@ -1677,16 +1697,6 @@
       "scopeName": "Tokyo, Japan",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.591.com.tw",
-      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "taipei-tw",
-      "scopeName": "Taipei, Taiwan",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
@@ -1839,6 +1849,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.cancilleria.gov.co/tramites_servicios/visa",
+      "label": "Colombia Cancillería — visas (official)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "medellin-co",
+      "scopeName": "Medellín, Colombia",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Medellín",
       "label": "Medellín Cost of Living — Numbeo",
       "code": 503,
@@ -1857,6 +1877,16 @@
       "scopeName": "Buenos Aires, Argentina",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.argenprop.com",
+      "label": "Argenprop — major Argentine rental portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "buenos-aires-ar",
+      "scopeName": "Buenos Aires, Argentina",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://inmuebles.mercadolibre.com.ar",
@@ -2389,6 +2419,16 @@
       "path": "housing.searchPortals.2"
     },
     {
+      "url": "https://www.cancilleria.gov.co/tramites_servicios/visa",
+      "label": "Colombia Cancillería visas",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bogota-co",
+      "scopeName": "Bogotá, Colombia",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Bogota",
       "label": "Bogota Numbeo",
       "code": 503,
@@ -2459,16 +2499,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.immoweb.be",
-      "label": "Immoweb — Belgium's largest property portal",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Brussels",
       "label": "Brussels Cost of Living — Numbeo",
       "code": 503,
@@ -2477,16 +2507,6 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.inami.fgov.be",
-      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
@@ -2537,6 +2557,16 @@
       "scopeName": "Stockholm, Sweden",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.1177.se",
+      "label": "1177 Vårdguiden (Swedish public health portal)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "stockholm-se",
+      "scopeName": "Stockholm, Sweden",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.kv.ee",
@@ -2779,16 +2809,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://casa.sapo.pt",
-      "label": "Casa Sapo — additional Portuguese rental and sales inventory",
-      "code": 429,
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "housing",
-      "path": "housing.searchPortals.3"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Faro",
       "label": "Faro Cost of Living — Numbeo",
       "code": 503,
@@ -2932,6 +2952,17 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.asvalencia.org",
+      "label": "American School of Valencia",
+      "code": 301,
+      "redirectTo": "https://asvalencia.org/",
+      "scope": "city",
+      "scopeId": "valencia-es",
+      "scopeName": "Valencia, Spain",
+      "section": "sources",
+      "path": "sources.schools.0"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -2998,50 +3029,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "Thailand Destination Thailand Visa DTV official apply",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "visa",
-      "path": "visa.options.1.officialLink"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Privilege Card visa official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "visa",
-      "path": "visa.options.2.officialLink"
-    },
-    {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "DTV Visa — Royal Thai Embassy",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Privilege Card — Official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "sources",
-      "path": "sources.visa.1"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3053,17 +3040,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "DTV Visa — Royal Thai Embassy",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "koh-phangan-th",
-      "scopeName": "Koh Phangan, Thailand",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3073,17 +3049,6 @@
       "scopeName": "Koh Phangan, Thailand",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "DTV Visa — Royal Thai Embassy",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "koh-samui-th",
-      "scopeName": "Koh Samui, Thailand",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3240,50 +3205,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "Thailand Destination Thailand Visa DTV official apply",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "bangkok-th",
-      "scopeName": "Bangkok, Thailand",
-      "section": "visa",
-      "path": "visa.options.1.officialLink"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Privilege Card visa official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "bangkok-th",
-      "scopeName": "Bangkok, Thailand",
-      "section": "visa",
-      "path": "visa.options.2.officialLink"
-    },
-    {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "Thailand DTV Visa official",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "bangkok-th",
-      "scopeName": "Bangkok, Thailand",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Elite Privilege Card official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "bangkok-th",
-      "scopeName": "Bangkok, Thailand",
-      "section": "sources",
-      "path": "sources.visa.1"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3293,50 +3214,6 @@
       "scopeName": "Bangkok, Thailand",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "Thailand Destination Thailand Visa DTV official apply",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "phuket-th",
-      "scopeName": "Phuket, Thailand",
-      "section": "visa",
-      "path": "visa.options.1.officialLink"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Privilege Card visa official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "phuket-th",
-      "scopeName": "Phuket, Thailand",
-      "section": "visa",
-      "path": "visa.options.2.officialLink"
-    },
-    {
-      "url": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa",
-      "label": "Thailand DTV Visa official",
-      "code": 301,
-      "redirectTo": "https://www.thaiembassy.com/thailand-visa/destination-thailand-visa-faq",
-      "scope": "city",
-      "scopeId": "phuket-th",
-      "scopeName": "Phuket, Thailand",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
-      "url": "https://www.thailandprivilege.com",
-      "label": "Thailand Elite Privilege Card official",
-      "code": 301,
-      "redirectTo": "https://siamlegal.thailandprivilege.com/",
-      "scope": "city",
-      "scopeId": "phuket-th",
-      "scopeName": "Phuket, Thailand",
-      "section": "sources",
-      "path": "sources.visa.1"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3430,7 +3307,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=4d0d0f67-e289-47c6-bc75-dac326eb6136&ssb=09841360244&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=0590da4b-bhcz-4fdb-b68a-ff3f4a942714&ssk=support@shieldsquare.com&ssm=12465191817955363104005842542819&ssn=dba5dae0bc39fba197c69d47b42169de66c2fed65ef9-cad4-471f-8d7a51&sso=72b8b648-790803ff1d3e8630705b4bf9b89bcc5ecc7cd46a29425845&ssp=88831082381780926369178097285496605&ssq=27310392197536156911121975306111836152484&ssr=MTQ1LjEzMi4xMDIuMTc5&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmZWQ2NWVmOS1jYWQ0LTQ3MWYtODY0OC03OTA4MDNmZjFkM2UxLTE3ODA5MjE5NzU4NTcwLTAwMzc4NWY5OWEwYTMzMGEzNTgxMCIsInJkIjoieWFkMi5jby5pbCIsInV6bXgiOiI3ZjkwMDBiOTVmYzAxNy03MzQ1LTRkODMtYWFhZi1mMGY0NDFkYWVhYTQxLTE3ODA5MjE5NzU4NTcwLTcwNTg2M2YyYjlhNjkyM2IxMCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3452,7 +3329,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=4d0d0f67-e289-47c6-bc75-dac326eb6136&ssb=09841360244&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=0590da4b-bhcz-4fdb-b68a-ff3f4a942714&ssk=support@shieldsquare.com&ssm=12465191817955363104005842542819&ssn=dba5dae0bc39fba197c69d47b42169de66c2fed65ef9-cad4-471f-8d7a51&sso=72b8b648-790803ff1d3e8630705b4bf9b89bcc5ecc7cd46a29425845&ssp=88831082381780926369178097285496605&ssq=27310392197536156911121975306111836152484&ssr=MTQ1LjEzMi4xMDIuMTc5&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmZWQ2NWVmOS1jYWQ0LTQ3MWYtODY0OC03OTA4MDNmZjFkM2UxLTE3ODA5MjE5NzU4NTcwLTAwMzc4NWY5OWEwYTMzMGEzNTgxMCIsInJkIjoieWFkMi5jby5pbCIsInV6bXgiOiI3ZjkwMDBiOTVmYzAxNy03MzQ1LTRkODMtYWFhZi1mMGY0NDFkYWVhYTQxLTE3ODA5MjE5NzU4NTcwLTcwNTg2M2YyYjlhNjkyM2IxMCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3467,6 +3344,28 @@
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.yad2.co.il",
+      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
+      "code": 302,
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=4d0d0f67-e289-47c6-bc75-dac326eb6136&ssb=09841360244&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=0590da4b-bhcz-4fdb-b68a-ff3f4a942714&ssk=support@shieldsquare.com&ssm=12465191817955363104005842542819&ssn=dba5dae0bc39fba197c69d47b42169de66c2fed65ef9-cad4-471f-8d7a51&sso=72b8b648-790803ff1d3e8630705b4bf9b89bcc5ecc7cd46a29425845&ssp=88831082381780926369178097285496605&ssq=27310392197536156911121975306111836152484&ssr=MTQ1LjEzMi4xMDIuMTc5&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmZWQ2NWVmOS1jYWQ0LTQ3MWYtODY0OC03OTA4MDNmZjFkM2UxLTE3ODA5MjE5NzU4NTcwLTAwMzc4NWY5OWEwYTMzMGEzNTgxMCIsInJkIjoieWFkMi5jby5pbCIsInV6bXgiOiI3ZjkwMDBiOTVmYzAxNy03MzQ1LTRkODMtYWFhZi1mMGY0NDFkYWVhYTQxLTE3ODA5MjE5NzU4NTcwLTcwNTg2M2YyYjlhNjkyM2IxMCJ9",
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 301,
+      "redirectTo": "/gmao-products/merra-2/",
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
       "section": "sources",
       "path": "sources.weather.1"
     },
@@ -3892,7 +3791,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9e0874e3-8087-4ae1-8baf-0632d90d9c31&ssb=94763326797&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=8af70e24-bhcz-4d27-b744-92fd7fae5611&ssk=support@shieldsquare.com&ssm=70364142319592148101917231327776&ssn=f8fd21a3f2004bd0852d596ec9fa1261f99e4d8e7080-d1f1-4ca5-9358dc&sso=691e63ee-9f6eae30ed0091d712bf30f2722b0b0f94e48e313925c023&ssp=01027599321779730491177971234575533&ssq=13322631009817016311910098904037640522533&ssr=NTIuMTU5LjIyNi4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2Y5MDAwZjcwNzRkOWEtMWYxMC00NTlmLWJkZGUtYmRmMzQ2ZmI3ZTNiMS0xNzc5NzEwMDk4NTYyMC1iZWY1ZjlkNDVkMTgyODk0MTAiLCJfX3V6bWYiOiI3ZjkwMDA0ZDhlNzA4MC1kMWYxLTRjYTUtOTNlZS05ZjZlYWUzMGVkMDAxLTE3Nzk3MTAwOTg1NjIwLTAwMzBjNDEyYWIwYzcxMzAwN2ExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=4d0d0f67-e289-47c6-bc75-dac326eb6136&ssb=09841360244&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=0590da4b-bhcz-4fdb-b68a-ff3f4a942714&ssk=support@shieldsquare.com&ssm=12465191817955363104005842542819&ssn=dba5dae0bc39fba197c69d47b42169de66c2fed65ef9-cad4-471f-8d7a51&sso=72b8b648-790803ff1d3e8630705b4bf9b89bcc5ecc7cd46a29425845&ssp=88831082381780926369178097285496605&ssq=27310392197536156911121975306111836152484&ssr=MTQ1LjEzMi4xMDIuMTc5&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBmZWQ2NWVmOS1jYWQ0LTQ3MWYtODY0OC03OTA4MDNmZjFkM2UxLTE3ODA5MjE5NzU4NTcwLTAwMzc4NWY5OWEwYTMzMGEzNTgxMCIsInJkIjoieWFkMi5jby5pbCIsInV6bXgiOiI3ZjkwMDBiOTVmYzAxNy03MzQ1LTRkODMtYWFhZi1mMGY0NDFkYWVhYTQxLTE3ODA5MjE5NzU4NTcwLTcwNTg2M2YyYjlhNjkyM2IxMCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -4002,7 +3901,7 @@
       "url": "https://www.migration.gv.at",
       "label": "Migration.gv.at — Austria's official migration portal",
       "code": 307,
-      "redirectTo": "https://www.migration.gv.at/de/willkommen/?no_cache=1",
+      "redirectTo": "http://www.migration.gv.at/de/willkommen/?no_cache=1",
       "scope": "city",
       "scopeId": "vienna-at",
       "scopeName": "Vienna, Austria",
@@ -4107,6 +4006,17 @@
       "scopeName": "Tokyo, Japan",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.591.com.tw",
+      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
+      "code": 302,
+      "redirectTo": "https://www.591.com.tw",
+      "scope": "city",
+      "scopeId": "taipei-tw",
+      "scopeName": "Taipei, Taiwan",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4332,7 +4242,7 @@
       "url": "https://www.portalinmobiliario.com",
       "label": "Portal Inmobiliario — Chile's largest property portal",
       "code": 302,
-      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=3641ffab-9a6d-4086-afc0-7a29f31499e3",
+      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=5ae47a58-88ca-4d20-b816-2ba7820658c5",
       "scope": "city",
       "scopeId": "santiago-cl",
       "scopeName": "Santiago, Chile",
@@ -4428,6 +4338,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://www.immoweb.be",
+      "label": "Immoweb — Belgium's largest property portal",
+      "code": 302,
+      "redirectTo": "https://www.immoweb.be/en",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.logic-immo.be",
       "label": "Logic-Immo — major Belgian rental and sales portal",
       "code": 301,
@@ -4459,6 +4380,17 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.inami.fgov.be",
+      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
+      "code": 302,
+      "redirectTo": "https://www.inami.fgov.be/fr",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
