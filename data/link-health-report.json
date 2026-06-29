@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-22T13:40:08.066Z",
+  "generatedAt": "2026-06-29T12:35:28.558Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 372,
-    "redirect": 37,
-    "broken": 183
+    "ok": 374,
+    "redirect": 38,
+    "broken": 180
   },
   "broken": [
     {
@@ -17,16 +17,6 @@
       "scopeName": "Valencia, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.asvalencia.org",
-      "label": "American School of Valencia",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "valencia-es",
-      "scopeName": "Valencia, Spain",
-      "section": "sources",
-      "path": "sources.schools.0"
     },
     {
       "url": "https://www.caxtoncollege.com",
@@ -107,16 +97,6 @@
       "scopeName": "Dubai, UAE",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae",
-      "label": "UAE Virtual Working Programme — Official",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "dubai-ae",
-      "scopeName": "Dubai, UAE",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://www.kingsdubai.com",
@@ -1609,16 +1589,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.dba.dk",
-      "label": "DBA — general classifieds with strong rental section",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "copenhagen-dk",
-      "scopeName": "Copenhagen, Denmark",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
       "code": 503,
@@ -1687,16 +1657,6 @@
       "scopeName": "Tokyo, Japan",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.591.com.tw",
-      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "taipei-tw",
-      "scopeName": "Taipei, Taiwan",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
@@ -2249,6 +2209,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.vivanuncios.com.mx",
+      "label": "Vivanuncios — classified rentals",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "mexico-city-mx",
+      "scopeName": "Mexico City, Mexico",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.gob.mx/inm",
       "label": "Mexico INM — migracion official",
       "code": 403,
@@ -2439,6 +2409,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.immovlan.be",
+      "label": "Immovlan — additional Belgian rental and sales inventory",
+      "code": "fetch failed",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Brussels",
       "label": "Brussels Cost of Living — Numbeo",
       "code": 503,
@@ -2447,16 +2427,6 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.inami.fgov.be",
-      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
@@ -2659,6 +2629,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.ebay-kleinanzeigen.de",
+      "label": "eBay Kleinanzeigen — direct-from-owner German classifieds (no agent fee)",
+      "code": 410,
+      "scope": "city",
+      "scopeId": "hamburg-de",
+      "scopeName": "Hamburg, Germany",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Hamburg",
       "label": "Hamburg Cost of Living — Numbeo",
       "code": 503,
@@ -2737,16 +2717,6 @@
       "scopeName": "Faro, Portugal",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://casa.sapo.pt",
-      "label": "Casa Sapo — additional Portuguese rental and sales inventory",
-      "code": 429,
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "housing",
-      "path": "housing.searchPortals.3"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Faro",
@@ -2890,6 +2860,17 @@
       "scopeName": "Valencia, Spain",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.asvalencia.org",
+      "label": "American School of Valencia",
+      "code": 301,
+      "redirectTo": "https://asvalencia.org/",
+      "scope": "city",
+      "scopeId": "valencia-es",
+      "scopeName": "Valencia, Spain",
+      "section": "sources",
+      "path": "sources.schools.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3236,7 +3217,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=d59daa00-21e9-4149-bda0-34d2c8c7a08d&ssb=16638369662&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=e5933344-bhcz-4e45-ae96-b81778016e85&ssk=support@shieldsquare.com&ssm=72946186800762281100455077387730&ssn=1c6c8af7ccb0db977d0c3b6b1d98b104ea66e4aedf80-d90e-48c1-8120fe&sso=6b33e905-c9974a1aba50d99dc9d5e50fb9c25cff5b7c466964ba45c2&ssp=41434340081782162186178213735059239&ssq=71978393554758122299235547321608240985250&ssr=MTcyLjIwOC4xNTQuMTk=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlNGFlZGY4MC1kOTBlLTQ4YzEtODkwNS1jOTk3NGExYWJhNTAxLTE3ODIxMzU1NDczNDUwLTAwNDM4NjYyMDZkMDUxMGM4ZWUxMCIsInV6bXgiOiI3ZjkwMDBmYmUwYjZjNy0xMzgzLTRlNzgtYmE0Yy1kMDMyMzNkMzBjNDYxLTE3ODIxMzU1NDczNDUwLTY4NDM1ZWNlYzJjNmM4ZjMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3258,7 +3239,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=d59daa00-21e9-4149-bda0-34d2c8c7a08d&ssb=16638369662&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=e5933344-bhcz-4e45-ae96-b81778016e85&ssk=support@shieldsquare.com&ssm=72946186800762281100455077387730&ssn=1c6c8af7ccb0db977d0c3b6b1d98b104ea66e4aedf80-d90e-48c1-8120fe&sso=6b33e905-c9974a1aba50d99dc9d5e50fb9c25cff5b7c466964ba45c2&ssp=41434340081782162186178213735059239&ssq=71978393554758122299235547321608240985250&ssr=MTcyLjIwOC4xNTQuMTk=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlNGFlZGY4MC1kOTBlLTQ4YzEtODkwNS1jOTk3NGExYWJhNTAxLTE3ODIxMzU1NDczNDUwLTAwNDM4NjYyMDZkMDUxMGM4ZWUxMCIsInV6bXgiOiI3ZjkwMDBmYmUwYjZjNy0xMzgzLTRlNzgtYmE0Yy1kMDMyMzNkMzBjNDYxLTE3ODIxMzU1NDczNDUwLTY4NDM1ZWNlYzJjNmM4ZjMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3280,7 +3261,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=d59daa00-21e9-4149-bda0-34d2c8c7a08d&ssb=16638369662&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=e5933344-bhcz-4e45-ae96-b81778016e85&ssk=support@shieldsquare.com&ssm=72946186800762281100455077387730&ssn=1c6c8af7ccb0db977d0c3b6b1d98b104ea66e4aedf80-d90e-48c1-8120fe&sso=6b33e905-c9974a1aba50d99dc9d5e50fb9c25cff5b7c466964ba45c2&ssp=41434340081782162186178213735059239&ssq=71978393554758122299235547321608240985250&ssr=MTcyLjIwOC4xNTQuMTk=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlNGFlZGY4MC1kOTBlLTQ4YzEtODkwNS1jOTk3NGExYWJhNTAxLTE3ODIxMzU1NDczNDUwLTAwNDM4NjYyMDZkMDUxMGM4ZWUxMCIsInV6bXgiOiI3ZjkwMDBmYmUwYjZjNy0xMzgzLTRlNzgtYmE0Yy1kMDMyMzNkMzBjNDYxLTE3ODIxMzU1NDczNDUwLTY4NDM1ZWNlYzJjNmM4ZjMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3629,6 +3610,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "san-jose-cr",
+      "scopeName": "San Jose, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3638,6 +3630,17 @@
       "scopeName": "San Jose, Costa Rica",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "tamarindo-cr",
+      "scopeName": "Tamarindo, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3651,6 +3654,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "heredia-cr",
+      "scopeName": "Heredia, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3660,6 +3674,17 @@
       "scopeName": "Heredia, Costa Rica",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "atenas-cr",
+      "scopeName": "Atenas, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3673,6 +3698,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "puerto-viejo-cr",
+      "scopeName": "Puerto Viejo, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3682,6 +3718,17 @@
       "scopeName": "Puerto Viejo, Costa Rica",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://costarica.craigslist.org",
+      "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
+      "code": 301,
+      "redirectTo": "https://www.craigslist.org/area/costarica",
+      "scope": "city",
+      "scopeId": "santa-teresa-cr",
+      "scopeName": "Santa Teresa, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3720,7 +3767,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=d59daa00-21e9-4149-bda0-34d2c8c7a08d&ssb=16638369662&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=e5933344-bhcz-4e45-ae96-b81778016e85&ssk=support@shieldsquare.com&ssm=72946186800762281100455077387730&ssn=1c6c8af7ccb0db977d0c3b6b1d98b104ea66e4aedf80-d90e-48c1-8120fe&sso=6b33e905-c9974a1aba50d99dc9d5e50fb9c25cff5b7c466964ba45c2&ssp=41434340081782162186178213735059239&ssq=71978393554758122299235547321608240985250&ssr=MTcyLjIwOC4xNTQuMTk=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBlNGFlZGY4MC1kOTBlLTQ4YzEtODkwNS1jOTk3NGExYWJhNTAxLTE3ODIxMzU1NDczNDUwLTAwNDM4NjYyMDZkMDUxMGM4ZWUxMCIsInV6bXgiOiI3ZjkwMDBmYmUwYjZjNy0xMzgzLTRlNzgtYmE0Yy1kMDMyMzNkMzBjNDYxLTE3ODIxMzU1NDczNDUwLTY4NDM1ZWNlYzJjNmM4ZjMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -3935,6 +3982,17 @@
       "scopeName": "Tokyo, Japan",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.591.com.tw",
+      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
+      "code": 302,
+      "redirectTo": "https://www.591.com.tw",
+      "scope": "city",
+      "scopeId": "taipei-tw",
+      "scopeName": "Taipei, Taiwan",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4157,17 +4215,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.portalinmobiliario.com",
-      "label": "Portal Inmobiliario — Chile's largest property portal",
-      "code": 302,
-      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=a4b92e12-b332-4ab7-9911-613410cff53c",
-      "scope": "city",
-      "scopeId": "santiago-cl",
-      "scopeName": "Santiago, Chile",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://www.extranjeria.gob.cl",
       "label": "Chile Extranjeria official",
       "code": 301,
@@ -4278,17 +4325,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://www.immovlan.be",
-      "label": "Immovlan — additional Belgian rental and sales inventory",
-      "code": 302,
-      "redirectTo": "https://immovlan.be:443/",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4298,6 +4334,17 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.inami.fgov.be",
+      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
+      "code": 302,
+      "redirectTo": "https://www.inami.fgov.be/fr",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4452,17 +4499,6 @@
       "scopeName": "San Diego, USA",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.ebay-kleinanzeigen.de",
-      "label": "eBay Kleinanzeigen — direct-from-owner German classifieds (no agent fee)",
-      "code": 301,
-      "redirectTo": "https://www.kleinanzeigen.de/?utm_source=ekde",
-      "scope": "city",
-      "scopeId": "hamburg-de",
-      "scopeName": "Hamburg, Germany",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://wunderflats.com",
