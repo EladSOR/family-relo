@@ -28,6 +28,19 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_BRAND_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      // Large image previews are required for Google Discover eligibility;
+      // unrestricted snippet/video length lets Google show fuller SERP snippets.
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     type: "website",
     siteName: SITE_BRAND_NAME,

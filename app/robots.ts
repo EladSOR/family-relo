@@ -42,10 +42,19 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/account", "/auth/", "/compare/build", "/compare/results", "/api/"],
-        // 10s between requests for any non-priority crawler — caps the read rate without blocking.
-        // Googlebot ignores this (uses its own Search Console rate setting), so SEO is unaffected.
-        crawlDelay: 10,
+        disallow: [
+          "/account",
+          "/auth/",
+          "/admin/",
+          "/compare/build",
+          "/compare/results",
+          "/single-city/build",
+          "/single-city/results",
+          "/advertise/success",
+          "/api/",
+        ],
+        // No crawl-delay: Googlebot ignores it anyway, but Bing honours it —
+        // a delay of 10s throttled Bing to ~8.6k pages/day and slowed indexing.
       },
     ],
     sitemap: `${base}/sitemap.xml`,

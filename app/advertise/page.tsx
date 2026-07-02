@@ -7,13 +7,14 @@ import AdvertiseForm from "@/components/ads/AdvertiseForm";
 import WaitlistForm from "@/components/ads/WaitlistForm";
 import { ADVERTISE_COPY } from "@/lib/ads/copy";
 import { getRenderableSlots, getOpenSlotCount } from "@/lib/ads/queries";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Advertise on FamiRelo — founding rate ($99/month)",
   description:
     "Reach families actively planning a relocation. Limited ad slots. Founding rate $99/month — locked in for life.",
-  robots: { index: true, follow: true },
-};
+  canonicalPath: "/advertise",
+});
 
 export const dynamic = "force-dynamic";
 

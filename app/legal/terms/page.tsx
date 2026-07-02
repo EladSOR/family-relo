@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
+import { buildPageMetadata } from "@/lib/seo/buildPageMetadata";
 
-export const metadata: Metadata = {
-  title: "Terms of Use | Famirelo",
+export const metadata: Metadata = buildPageMetadata({
+  title: "Terms of Use | FamiRelo",
   description: "The terms that govern your use of Famirelo.",
-  robots: { index: true },
-};
+  canonicalPath: "/legal/terms",
+});
 
 const LAST_UPDATED = "May 2026";
 
