@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-29T12:35:28.558Z",
+  "generatedAt": "2026-07-06T12:07:14.863Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 374,
+    "ok": 369,
     "redirect": 38,
-    "broken": 180
+    "broken": 185
   },
   "broken": [
     {
@@ -451,12 +451,22 @@
     {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property portal",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "athens-gr",
       "scopeName": "Athens, Greece",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.tospitimou.gr",
+      "label": "Tospitimou.gr — popular for family homes in the suburbs",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "athens-gr",
+      "scopeName": "Athens, Greece",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
@@ -921,7 +931,7 @@
     {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property rental platform",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "thessaloniki-gr",
       "scopeName": "Thessaloniki, Greece",
@@ -1389,6 +1399,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with transit overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-francisco-us",
+      "scopeName": "San Francisco, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/San-Francisco",
       "label": "San Francisco Cost of Living — Numbeo",
       "code": 503,
@@ -1437,6 +1457,16 @@
       "scopeName": "Seattle, USA",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with school overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "seattle-us",
+      "scopeName": "Seattle, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Seattle",
@@ -1719,6 +1749,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
+    },
+    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term house and villa listings",
       "code": 403,
@@ -1727,6 +1767,16 @@
       "scopeName": "Bali, Indonesia",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bali",
@@ -1739,6 +1789,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
+    },
+    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term villa inventory",
       "code": 403,
@@ -1747,6 +1807,16 @@
       "scopeName": "Ubud, Indonesia",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Denpasar",
@@ -1797,6 +1867,16 @@
       "scopeName": "Buenos Aires, Argentina",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.argenprop.com",
+      "label": "Argenprop — major Argentine rental portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "buenos-aires-ar",
+      "scopeName": "Buenos Aires, Argentina",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://inmuebles.mercadolibre.com.ar",
@@ -1897,6 +1977,16 @@
       "scopeName": "Charlotte, USA",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.google.com/search?q=relocating+to+Charlotte",
+      "label": "Search 'relocating to Charlotte' on Google",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "charlotte-us",
+      "scopeName": "Charlotte, USA",
+      "section": "communityLinks",
+      "path": "communityLinks.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Charlotte",
@@ -2589,6 +2679,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin — US property portal with detailed school-district information for San Diego listings",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-diego-us",
+      "scopeName": "San Diego, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.realtor.com",
       "label": "Realtor.com — additional US rental and sales inventory",
       "code": 429,
@@ -3217,7 +3317,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=dce751c1-56b7-440d-8d37-00e40d46e009&ssb=84167309419&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=06efbe90-bhcz-47b1-9c24-5219c6604fb7&ssk=support@shieldsquare.com&ssm=43322045321243540107974996199571&ssn=254662b124e62ae8a8564396c62cdb38b0080534748c-559a-487e-8ea195&sso=f2fb8714-06d7564004248fc8382b96bb78240276eb3cedf85ee24be4&ssp=04416971871783360912178333473680958&ssq=54472283958822393659339588251066892594872&ssr=NC4yMzYuMTU4LjUz&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDAwNTM0NzQ4Yy01NTlhLTQ4N2UtODcxNC0wNmQ3NTY0MDA0MjQxLTE3ODMzMzk1ODgwNzIwLTAwNGIwNDk1OGRiNmJmNmFmMWMxMCIsInV6bXgiOiI3ZjkwMDA1OGVhMTRiOC03ZjI3LTRkMGYtOTMzZi1jNDU0NDY2NWMyZGIxLTE3ODMzMzk1ODgwNzIwLTE3ZDFhMzY0MGJmODdhNjExMCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3239,7 +3339,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=dce751c1-56b7-440d-8d37-00e40d46e009&ssb=84167309419&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=06efbe90-bhcz-47b1-9c24-5219c6604fb7&ssk=support@shieldsquare.com&ssm=43322045321243540107974996199571&ssn=254662b124e62ae8a8564396c62cdb38b0080534748c-559a-487e-8ea195&sso=f2fb8714-06d7564004248fc8382b96bb78240276eb3cedf85ee24be4&ssp=04416971871783360912178333473680958&ssq=54472283958822393659339588251066892594872&ssr=NC4yMzYuMTU4LjUz&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDAwNTM0NzQ4Yy01NTlhLTQ4N2UtODcxNC0wNmQ3NTY0MDA0MjQxLTE3ODMzMzk1ODgwNzIwLTAwNGIwNDk1OGRiNmJmNmFmMWMxMCIsInV6bXgiOiI3ZjkwMDA1OGVhMTRiOC03ZjI3LTRkMGYtOTMzZi1jNDU0NDY2NWMyZGIxLTE3ODMzMzk1ODgwNzIwLTE3ZDFhMzY0MGJmODdhNjExMCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3261,7 +3361,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=dce751c1-56b7-440d-8d37-00e40d46e009&ssb=84167309419&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=06efbe90-bhcz-47b1-9c24-5219c6604fb7&ssk=support@shieldsquare.com&ssm=43322045321243540107974996199571&ssn=254662b124e62ae8a8564396c62cdb38b0080534748c-559a-487e-8ea195&sso=f2fb8714-06d7564004248fc8382b96bb78240276eb3cedf85ee24be4&ssp=04416971871783360912178333473680958&ssq=54472283958822393659339588251066892594872&ssr=NC4yMzYuMTU4LjUz&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDAwNTM0NzQ4Yy01NTlhLTQ4N2UtODcxNC0wNmQ3NTY0MDA0MjQxLTE3ODMzMzk1ODgwNzIwLTAwNGIwNDk1OGRiNmJmNmFmMWMxMCIsInV6bXgiOiI3ZjkwMDA1OGVhMTRiOC03ZjI3LTRkMGYtOTMzZi1jNDU0NDY2NWMyZGIxLTE3ODMzMzk1ODgwNzIwLTE3ZDFhMzY0MGJmODdhNjExMCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3767,7 +3867,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=f5d42212-ae5f-41a5-884b-7c8bd9c98c6d&ssb=16283352872&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=4d53e385-bhcz-4106-a6da-ab04261ee90f&ssk=support@shieldsquare.com&ssm=51271748250637064104290945428771&ssn=f44b6b6c50376a0e1cb76d8267c0288ca2a79aec09fc-5995-4cba-8dfb94&sso=4d8f6991-8219d184307fab87018f415f7cce3314191c35ac3a750590&ssp=50580935961782757656178276586512168&ssq=74712973649078928630436490729301784106407&ssr=NjQuMjM2LjE3Ni4yMDE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5YWVjMDlmYy01OTk1LTRjYmEtODk5MS04MjE5ZDE4NDMwN2YxLTE3ODI3MzY0OTAwODUwLTAwNDJhZjQxYzYwYmUzZDU1ODAxMCIsInV6bXgiOiI3ZjkwMDBkYjhlZTU5ZC0yNjViLTRhYTctOGRmNC04ODM1NDBjNTNiNTIxLTE3ODI3MzY0OTAwODUwLWM0MGJiZGQ3M2I2N2MxMjQxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=dce751c1-56b7-440d-8d37-00e40d46e009&ssb=84167309419&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=06efbe90-bhcz-47b1-9c24-5219c6604fb7&ssk=support@shieldsquare.com&ssm=43322045321243540107974996199571&ssn=254662b124e62ae8a8564396c62cdb38b0080534748c-559a-487e-8ea195&sso=f2fb8714-06d7564004248fc8382b96bb78240276eb3cedf85ee24be4&ssp=04416971871783360912178333473680958&ssq=54472283958822393659339588251066892594872&ssr=NC4yMzYuMTU4LjUz&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDAwNTM0NzQ4Yy01NTlhLTQ4N2UtODcxNC0wNmQ3NTY0MDA0MjQxLTE3ODMzMzk1ODgwNzIwLTAwNGIwNDk1OGRiNmJmNmFmMWMxMCIsInV6bXgiOiI3ZjkwMDA1OGVhMTRiOC03ZjI3LTRkMGYtOTMzZi1jNDU0NDY2NWMyZGIxLTE3ODMzMzk1ODgwNzIwLTE3ZDFhMzY0MGJmODdhNjExMCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
