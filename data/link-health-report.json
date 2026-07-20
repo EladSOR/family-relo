@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-13T11:02:10.041Z",
+  "generatedAt": "2026-07-20T10:52:04.732Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
     "ok": 369,
-    "redirect": 35,
-    "broken": 188
+    "redirect": 37,
+    "broken": 186
   },
   "broken": [
     {
@@ -331,7 +331,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary White Card remote worker visa official",
-      "code": "fetch failed",
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -361,7 +361,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary government official portal",
-      "code": "fetch failed",
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -561,7 +561,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -591,7 +591,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -621,7 +621,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -1331,7 +1331,7 @@
     {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — map-based rentals and sales",
-      "code": 520,
+      "code": 403,
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -2499,16 +2499,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.immovlan.be",
-      "label": "Immovlan — additional Belgian rental and sales inventory",
-      "code": "fetch failed",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Brussels",
       "label": "Brussels Cost of Living — Numbeo",
       "code": 503,
@@ -2517,16 +2507,6 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.inami.fgov.be",
-      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
@@ -2607,6 +2587,16 @@
       "scopeName": "Tallinn, Estonia",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.place.ge",
+      "label": "Place.ge — additional Georgian rental inventory",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "tbilisi-ge",
+      "scopeName": "Tbilisi, Georgia",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tbilisi",
@@ -2777,16 +2767,6 @@
       "scopeName": "The Hague, Netherlands",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.zorgverzekeringslijn.nl",
-      "label": "Zorgverzekeringslijn (Dutch Health Insurance Authority)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "the-hague-nl",
-      "scopeName": "The Hague, Netherlands",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.rentfaster.ca",
@@ -3358,7 +3338,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=58b19613-d4b3-467f-a366-4d215b2dbdee&ssb=02542320864&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=46e4b7e7-bhcz-427b-9cc1-2ea9ba04f7da&ssk=support@shieldsquare.com&ssm=99011779170649805101324050767815&ssn=d2dbdd5eb4a421fac59e866b61b62383ee2f2ee7fbb1-82b4-4c2f-80d944&sso=92b39981-59ef2f579727966910fe94669a3cdb9b4d782244c128958d&ssp=50457856581783961145178396465480513&ssq=00729764046712818471540467194156479766218&ssr=NjguMjIwLjYwLjU=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAyZWU3ZmJiMS04MmI0LTRjMmYtODk4MS01OWVmMmY1Nzk3MjcxLTE3ODM5NDA0Njc0NDUwLTAwNDY2NjFjZmE1MDk0MWVlMDExMCIsInV6bXgiOiI3ZjkwMDBlYjYwNzM1ZC1iZTE1LTQxNGMtOTFmNS02ZDU5MTJkYjdmNjkxLTE3ODM5NDA0Njc0NDUwLWRhMTNiOWI3ZGQ5ZDZjNmExMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=453c31c8-360d-4a92-a306-748660ace472&ssb=27447371677&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=93d95e97-bhcz-475a-90b6-8359d584126b&ssk=support@shieldsquare.com&ssm=81067531558709590108629541295863&ssn=a86108619c365c190d590d1eeeeaf3c54736687a29de-807a-46ed-927f7a&sso=78de278a-12fec362a8dd36206b8de9ac23abfcc6bb5305002cfe74d1&ssp=04064593181784529229178457367056301&ssq=53851064468443122792044684634299098507988&ssr=MTcyLjE4My4xMzIuNzA=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMTJkZDcwNDMtMDQzNS00NWIwLWIzOTItM2FjYmE4YmRhMDY3MS0xNzg0NTQ0Njg0OTY2MC0xZjBiZWY0MGFkMzFmOWI4MTAiLCJfX3V6bWYiOiI3ZjkwMDA2ODdhMjlkZS04MDdhLTQ2ZWQtOTc4YS0xMmZlYzM2MmE4ZGQxLTE3ODQ1NDQ2ODQ5NjYwLTAwNDA4NWE3MTMyMGFmMzUxZTkxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3380,7 +3360,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=58b19613-d4b3-467f-a366-4d215b2dbdee&ssb=02542320864&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=46e4b7e7-bhcz-427b-9cc1-2ea9ba04f7da&ssk=support@shieldsquare.com&ssm=99011779170649805101324050767815&ssn=d2dbdd5eb4a421fac59e866b61b62383ee2f2ee7fbb1-82b4-4c2f-80d944&sso=92b39981-59ef2f579727966910fe94669a3cdb9b4d782244c128958d&ssp=50457856581783961145178396465480513&ssq=00729764046712818471540467194156479766218&ssr=NjguMjIwLjYwLjU=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAyZWU3ZmJiMS04MmI0LTRjMmYtODk4MS01OWVmMmY1Nzk3MjcxLTE3ODM5NDA0Njc0NDUwLTAwNDY2NjFjZmE1MDk0MWVlMDExMCIsInV6bXgiOiI3ZjkwMDBlYjYwNzM1ZC1iZTE1LTQxNGMtOTFmNS02ZDU5MTJkYjdmNjkxLTE3ODM5NDA0Njc0NDUwLWRhMTNiOWI3ZGQ5ZDZjNmExMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=453c31c8-360d-4a92-a306-748660ace472&ssb=27447371677&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=93d95e97-bhcz-475a-90b6-8359d584126b&ssk=support@shieldsquare.com&ssm=81067531558709590108629541295863&ssn=a86108619c365c190d590d1eeeeaf3c54736687a29de-807a-46ed-927f7a&sso=78de278a-12fec362a8dd36206b8de9ac23abfcc6bb5305002cfe74d1&ssp=04064593181784529229178457367056301&ssq=53851064468443122792044684634299098507988&ssr=MTcyLjE4My4xMzIuNzA=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMTJkZDcwNDMtMDQzNS00NWIwLWIzOTItM2FjYmE4YmRhMDY3MS0xNzg0NTQ0Njg0OTY2MC0xZjBiZWY0MGFkMzFmOWI4MTAiLCJfX3V6bWYiOiI3ZjkwMDA2ODdhMjlkZS04MDdhLTQ2ZWQtOTc4YS0xMmZlYzM2MmE4ZGQxLTE3ODQ1NDQ2ODQ5NjYwLTAwNDA4NWE3MTMyMGFmMzUxZTkxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3402,7 +3382,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=58b19613-d4b3-467f-a366-4d215b2dbdee&ssb=02542320864&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=46e4b7e7-bhcz-427b-9cc1-2ea9ba04f7da&ssk=support@shieldsquare.com&ssm=99011779170649805101324050767815&ssn=d2dbdd5eb4a421fac59e866b61b62383ee2f2ee7fbb1-82b4-4c2f-80d944&sso=92b39981-59ef2f579727966910fe94669a3cdb9b4d782244c128958d&ssp=50457856581783961145178396465480513&ssq=00729764046712818471540467194156479766218&ssr=NjguMjIwLjYwLjU=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAyZWU3ZmJiMS04MmI0LTRjMmYtODk4MS01OWVmMmY1Nzk3MjcxLTE3ODM5NDA0Njc0NDUwLTAwNDY2NjFjZmE1MDk0MWVlMDExMCIsInV6bXgiOiI3ZjkwMDBlYjYwNzM1ZC1iZTE1LTQxNGMtOTFmNS02ZDU5MTJkYjdmNjkxLTE3ODM5NDA0Njc0NDUwLWRhMTNiOWI3ZGQ5ZDZjNmExMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=453c31c8-360d-4a92-a306-748660ace472&ssb=27447371677&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=93d95e97-bhcz-475a-90b6-8359d584126b&ssk=support@shieldsquare.com&ssm=81067531558709590108629541295863&ssn=a86108619c365c190d590d1eeeeaf3c54736687a29de-807a-46ed-927f7a&sso=78de278a-12fec362a8dd36206b8de9ac23abfcc6bb5305002cfe74d1&ssp=04064593181784529229178457367056301&ssq=53851064468443122792044684634299098507988&ssr=MTcyLjE4My4xMzIuNzA=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMTJkZDcwNDMtMDQzNS00NWIwLWIzOTItM2FjYmE4YmRhMDY3MS0xNzg0NTQ0Njg0OTY2MC0xZjBiZWY0MGFkMzFmOWI4MTAiLCJfX3V6bWYiOiI3ZjkwMDA2ODdhMjlkZS04MDdhLTQ2ZWQtOTc4YS0xMmZlYzM2MmE4ZGQxLTE3ODQ1NDQ2ODQ5NjYwLTAwNDA4NWE3MTMyMGFmMzUxZTkxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3908,7 +3888,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=58b19613-d4b3-467f-a366-4d215b2dbdee&ssb=02542320864&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=46e4b7e7-bhcz-427b-9cc1-2ea9ba04f7da&ssk=support@shieldsquare.com&ssm=99011779170649805101324050767815&ssn=d2dbdd5eb4a421fac59e866b61b62383ee2f2ee7fbb1-82b4-4c2f-80d944&sso=92b39981-59ef2f579727966910fe94669a3cdb9b4d782244c128958d&ssp=50457856581783961145178396465480513&ssq=00729764046712818471540467194156479766218&ssr=NjguMjIwLjYwLjU=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAyZWU3ZmJiMS04MmI0LTRjMmYtODk4MS01OWVmMmY1Nzk3MjcxLTE3ODM5NDA0Njc0NDUwLTAwNDY2NjFjZmE1MDk0MWVlMDExMCIsInV6bXgiOiI3ZjkwMDBlYjYwNzM1ZC1iZTE1LTQxNGMtOTFmNS02ZDU5MTJkYjdmNjkxLTE3ODM5NDA0Njc0NDUwLWRhMTNiOWI3ZGQ5ZDZjNmExMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=453c31c8-360d-4a92-a306-748660ace472&ssb=27447371677&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=93d95e97-bhcz-475a-90b6-8359d584126b&ssk=support@shieldsquare.com&ssm=81067531558709590108629541295863&ssn=a86108619c365c190d590d1eeeeaf3c54736687a29de-807a-46ed-927f7a&sso=78de278a-12fec362a8dd36206b8de9ac23abfcc6bb5305002cfe74d1&ssp=04064593181784529229178457367056301&ssq=53851064468443122792044684634299098507988&ssr=MTcyLjE4My4xMzIuNzA=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2Y5MDAwMTJkZDcwNDMtMDQzNS00NWIwLWIzOTItM2FjYmE4YmRhMDY3MS0xNzg0NTQ0Njg0OTY2MC0xZjBiZWY0MGFkMzFmOWI4MTAiLCJfX3V6bWYiOiI3ZjkwMDA2ODdhMjlkZS04MDdhLTQ2ZWQtOTc4YS0xMmZlYzM2MmE4ZGQxLTE3ODQ1NDQ2ODQ5NjYwLTAwNDA4NWE3MTMyMGFmMzUxZTkxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -4444,6 +4424,17 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.immovlan.be",
+      "label": "Immovlan — additional Belgian rental and sales inventory",
+      "code": 301,
+      "redirectTo": "https://immovlan.be/",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4453,6 +4444,17 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.inami.fgov.be",
+      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
+      "code": 302,
+      "redirectTo": "https://www.inami.fgov.be/fr",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4519,17 +4521,6 @@
       "scopeName": "Tbilisi, Georgia",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://www.place.ge",
-      "label": "Place.ge — additional Georgian rental inventory",
-      "code": 302,
-      "redirectTo": "https://place.ge/",
-      "scope": "city",
-      "scopeId": "tbilisi-ge",
-      "scopeName": "Tbilisi, Georgia",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4662,6 +4653,17 @@
       "scopeName": "The Hague, Netherlands",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.zorgverzekeringslijn.nl",
+      "label": "Zorgverzekeringslijn (Dutch Health Insurance Authority)",
+      "code": 301,
+      "redirectTo": "https://www.skgz.nl/",
+      "scope": "city",
+      "scopeId": "the-hague-nl",
+      "scopeName": "The Hague, Netherlands",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
