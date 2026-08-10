@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-03T11:24:47.001Z",
+  "generatedAt": "2026-08-10T09:18:15.137Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
     "ok": 368,
-    "redirect": 40,
-    "broken": 184
+    "redirect": 39,
+    "broken": 185
   },
   "broken": [
     {
@@ -67,16 +67,6 @@
       "scopeName": "Lisbon, Portugal",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.visitdubai.com/en/visa-information",
-      "label": "Dubai Virtual Working Programme visa official UAE",
-      "code": 404,
-      "scope": "city",
-      "scopeId": "dubai-ae",
-      "scopeName": "Dubai, UAE",
-      "section": "visa",
-      "path": "visa.options.1.officialLink"
     },
     {
       "url": "https://www.bayut.com",
@@ -1889,6 +1879,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://inmuebles.mercadolibre.com.ar",
+      "label": "Mercado Libre Inmuebles — strong inventory of direct-from-owner listings",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "buenos-aires-ar",
+      "scopeName": "Buenos Aires, Argentina",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Argentina immigration official — migracion.go.cr",
       "code": 403,
@@ -2379,6 +2379,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://inmuebles.mercadolibre.com.uy",
+      "label": "Mercado Libre Inmuebles Uruguay — strong direct-from-owner inventory",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "montevideo-uy",
+      "scopeName": "Montevideo, Uruguay",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.gallito.com.uy",
       "label": "Gallito — Uruguay's largest classifieds platform with rental section",
       "code": 403,
@@ -2779,6 +2789,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.cbe.ab.ca",
+      "label": "Calgary Board of Education (CBE) school finder",
+      "code": "fetch failed",
+      "scope": "city",
+      "scopeId": "calgary-ca",
+      "scopeName": "Calgary, Canada",
+      "section": "sources",
+      "path": "sources.schools.0"
+    },
+    {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
       "code": "fetch failed",
@@ -2797,16 +2817,6 @@
       "scopeName": "Faro, Portugal",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://casa.sapo.pt",
-      "label": "Casa Sapo — additional Portuguese rental and sales inventory",
-      "code": 429,
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "housing",
-      "path": "housing.searchPortals.3"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Faro",
@@ -3318,7 +3328,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=ad26ad1d-d5d1-49e4-b872-46af1457e758&ssb=59789357934&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=5979f63c-bhcz-47a9-82ab-22856ca6bc0c&ssk=support@shieldsquare.com&ssm=21555028071130662107821428454550&ssn=864caffa0ae877c9504e112cacf113691b243754fe8a-32a7-46d6-a7222d&sso=34e3aa06-d3a19b8dd52b53669340117e6fd5ff0fe22a129ad2790c8a&ssp=41155000841785738929178576101795150&ssq=67413495624621079686456246146563892186304&ssr=MTMuODMuMTA3LjE0Ng==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzNzU0ZmU4YS0zMmE3LTQ2ZDYtYWEwNi1kM2ExOWI4ZGQ1MmIxLTE3ODU3NTYyNDY1MzIwLTAwNDA0OWRmMzFhMDIyZjcwMzMxMCIsInV6bXgiOiI3ZjkwMDAwYTlhZTY3NC03NDg1LTRmOWQtYTM2YS1jMDVjNTMwYzc2OTIxLTE3ODU3NTYyNDY1MzIwLTg0ZDBiNzJlOWVkYTU4MDMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=1729a7e5-ecbe-4c5b-b5bc-7d998710694a&ssb=60412300620&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=68781a63-bhcz-47a8-b647-b9b7aa735952&ssk=support@shieldsquare.com&ssm=42853685992360051109774977804525&ssn=3056369b0de57575db31a121b255e0bfc9f033f7821a-0439-4392-afa132&sso=9aee5377-e0eccaa95e170cac8e513d92066a357469a4aa5dcbe7ea66&ssp=06450839341786371395178635550877164&ssq=78803025345573909646353455510959599182983&ssr=NDguMjE3LjE3Ny4yMzE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzM2Y3ODIxYS0wNDM5LTQzOTItYTM3Ny1lMGVjY2FhOTVlMTcxLTE3ODYzNTM0NTU2NzMwLTAwNGYzYTU1M2UxZjllMzNiNGExMCIsInV6bXgiOiI3ZjkwMDAxZjIwM2E0OC04YjY4LTRiZTMtYTlhYi0zZDhlNzg2ZTliNjkxLTE3ODYzNTM0NTU2NzMwLTk3ZTVjZTg5MjBlYzA2ZDYxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3340,7 +3350,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=ad26ad1d-d5d1-49e4-b872-46af1457e758&ssb=59789357934&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=5979f63c-bhcz-47a9-82ab-22856ca6bc0c&ssk=support@shieldsquare.com&ssm=21555028071130662107821428454550&ssn=864caffa0ae877c9504e112cacf113691b243754fe8a-32a7-46d6-a7222d&sso=34e3aa06-d3a19b8dd52b53669340117e6fd5ff0fe22a129ad2790c8a&ssp=41155000841785738929178576101795150&ssq=67413495624621079686456246146563892186304&ssr=MTMuODMuMTA3LjE0Ng==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzNzU0ZmU4YS0zMmE3LTQ2ZDYtYWEwNi1kM2ExOWI4ZGQ1MmIxLTE3ODU3NTYyNDY1MzIwLTAwNDA0OWRmMzFhMDIyZjcwMzMxMCIsInV6bXgiOiI3ZjkwMDAwYTlhZTY3NC03NDg1LTRmOWQtYTM2YS1jMDVjNTMwYzc2OTIxLTE3ODU3NTYyNDY1MzIwLTg0ZDBiNzJlOWVkYTU4MDMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=1729a7e5-ecbe-4c5b-b5bc-7d998710694a&ssb=60412300620&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=68781a63-bhcz-47a8-b647-b9b7aa735952&ssk=support@shieldsquare.com&ssm=42853685992360051109774977804525&ssn=3056369b0de57575db31a121b255e0bfc9f033f7821a-0439-4392-afa132&sso=9aee5377-e0eccaa95e170cac8e513d92066a357469a4aa5dcbe7ea66&ssp=06450839341786371395178635550877164&ssq=78803025345573909646353455510959599182983&ssr=NDguMjE3LjE3Ny4yMzE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzM2Y3ODIxYS0wNDM5LTQzOTItYTM3Ny1lMGVjY2FhOTVlMTcxLTE3ODYzNTM0NTU2NzMwLTAwNGYzYTU1M2UxZjllMzNiNGExMCIsInV6bXgiOiI3ZjkwMDAxZjIwM2E0OC04YjY4LTRiZTMtYTlhYi0zZDhlNzg2ZTliNjkxLTE3ODYzNTM0NTU2NzMwLTk3ZTVjZTg5MjBlYzA2ZDYxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3362,7 +3372,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=ad26ad1d-d5d1-49e4-b872-46af1457e758&ssb=59789357934&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=5979f63c-bhcz-47a9-82ab-22856ca6bc0c&ssk=support@shieldsquare.com&ssm=21555028071130662107821428454550&ssn=864caffa0ae877c9504e112cacf113691b243754fe8a-32a7-46d6-a7222d&sso=34e3aa06-d3a19b8dd52b53669340117e6fd5ff0fe22a129ad2790c8a&ssp=41155000841785738929178576101795150&ssq=67413495624621079686456246146563892186304&ssr=MTMuODMuMTA3LjE0Ng==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzNzU0ZmU4YS0zMmE3LTQ2ZDYtYWEwNi1kM2ExOWI4ZGQ1MmIxLTE3ODU3NTYyNDY1MzIwLTAwNDA0OWRmMzFhMDIyZjcwMzMxMCIsInV6bXgiOiI3ZjkwMDAwYTlhZTY3NC03NDg1LTRmOWQtYTM2YS1jMDVjNTMwYzc2OTIxLTE3ODU3NTYyNDY1MzIwLTg0ZDBiNzJlOWVkYTU4MDMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=1729a7e5-ecbe-4c5b-b5bc-7d998710694a&ssb=60412300620&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=68781a63-bhcz-47a8-b647-b9b7aa735952&ssk=support@shieldsquare.com&ssm=42853685992360051109774977804525&ssn=3056369b0de57575db31a121b255e0bfc9f033f7821a-0439-4392-afa132&sso=9aee5377-e0eccaa95e170cac8e513d92066a357469a4aa5dcbe7ea66&ssp=06450839341786371395178635550877164&ssq=78803025345573909646353455510959599182983&ssr=NDguMjE3LjE3Ny4yMzE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzM2Y3ODIxYS0wNDM5LTQzOTItYTM3Ny1lMGVjY2FhOTVlMTcxLTE3ODYzNTM0NTU2NzMwLTAwNGYzYTU1M2UxZjllMzNiNGExMCIsInV6bXgiOiI3ZjkwMDAxZjIwM2E0OC04YjY4LTRiZTMtYTlhYi0zZDhlNzg2ZTliNjkxLTE3ODYzNTM0NTU2NzMwLTk3ZTVjZTg5MjBlYzA2ZDYxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3868,7 +3878,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=ad26ad1d-d5d1-49e4-b872-46af1457e758&ssb=59789357934&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=5979f63c-bhcz-47a9-82ab-22856ca6bc0c&ssk=support@shieldsquare.com&ssm=21555028071130662107821428454550&ssn=864caffa0ae877c9504e112cacf113691b243754fe8a-32a7-46d6-a7222d&sso=34e3aa06-d3a19b8dd52b53669340117e6fd5ff0fe22a129ad2790c8a&ssp=41155000841785738929178576101795150&ssq=67413495624621079686456246146563892186304&ssr=MTMuODMuMTA3LjE0Ng==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzNzU0ZmU4YS0zMmE3LTQ2ZDYtYWEwNi1kM2ExOWI4ZGQ1MmIxLTE3ODU3NTYyNDY1MzIwLTAwNDA0OWRmMzFhMDIyZjcwMzMxMCIsInV6bXgiOiI3ZjkwMDAwYTlhZTY3NC03NDg1LTRmOWQtYTM2YS1jMDVjNTMwYzc2OTIxLTE3ODU3NTYyNDY1MzIwLTg0ZDBiNzJlOWVkYTU4MDMxMCIsInJkIjoieWFkMi5jby5pbCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=1729a7e5-ecbe-4c5b-b5bc-7d998710694a&ssb=60412300620&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=68781a63-bhcz-47a8-b647-b9b7aa735952&ssk=support@shieldsquare.com&ssm=42853685992360051109774977804525&ssn=3056369b0de57575db31a121b255e0bfc9f033f7821a-0439-4392-afa132&sso=9aee5377-e0eccaa95e170cac8e513d92066a357469a4aa5dcbe7ea66&ssp=06450839341786371395178635550877164&ssq=78803025345573909646353455510959599182983&ssr=NDguMjE3LjE3Ny4yMzE=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAzM2Y3ODIxYS0wNDM5LTQzOTItYTM3Ny1lMGVjY2FhOTVlMTcxLTE3ODYzNTM0NTU2NzMwLTAwNGYzYTU1M2UxZjllMzNiNGExMCIsInV6bXgiOiI3ZjkwMDAxZjIwM2E0OC04YjY4LTRiZTMtYTlhYi0zZDhlNzg2ZTliNjkxLTE3ODYzNTM0NTU2NzMwLTk3ZTVjZTg5MjBlYzA2ZDYxMCIsInJkIjoieWFkMi5jby5pbCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -4316,6 +4326,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://www.portalinmobiliario.com",
+      "label": "Portal Inmobiliario — Chile's largest property portal",
+      "code": 302,
+      "redirectTo": "https://www.portalinmobiliario.com/gz/account-verification?go=https%3A%2F%2Fwww.portalinmobiliario.com%2F&tid=0a283756-0863-47e6-b642-ee1c29179aa4",
+      "scope": "city",
+      "scopeId": "santiago-cl",
+      "scopeName": "Santiago, Chile",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4325,17 +4346,6 @@
       "scopeName": "Santiago, Chile",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://inmuebles.mercadolibre.com.uy",
-      "label": "Mercado Libre Inmuebles Uruguay — strong direct-from-owner inventory",
-      "code": 302,
-      "redirectTo": "https://www.mercadolibre.com.uy/gz/account-verification?go=https%3A%2F%2Finmuebles.mercadolibre.com.uy%2F&tid=9dc6ca42-3dc5-4abc-aebe-d3ec68a8e30c",
-      "scope": "city",
-      "scopeId": "montevideo-uy",
-      "scopeName": "Montevideo, Uruguay",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4688,17 +4698,6 @@
       "scopeName": "Calgary, Canada",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.cbe.ab.ca",
-      "label": "Calgary Board of Education (CBE) school finder",
-      "code": 302,
-      "redirectTo": "https://www.cbe.ab.ca/Pages/default.aspx",
-      "scope": "city",
-      "scopeId": "calgary-ca",
-      "scopeName": "Calgary, Canada",
-      "section": "sources",
-      "path": "sources.schools.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
