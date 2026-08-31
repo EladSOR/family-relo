@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-24T08:48:38.358Z",
+  "generatedAt": "2026-08-31T15:48:58.160Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 368,
-    "redirect": 39,
-    "broken": 185
+    "ok": 367,
+    "redirect": 38,
+    "broken": 187
   },
   "broken": [
     {
@@ -299,6 +299,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.pararius.com",
+      "label": "Pararius — strong rental focus, English-language interface",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "amsterdam-nl",
+      "scopeName": "Amsterdam, Netherlands",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Amsterdam",
       "label": "Amsterdam Cost of Living — Numbeo",
       "code": 503,
@@ -321,7 +331,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary White Card remote worker visa official",
-      "code": "The operation was aborted due to timeout",
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -351,7 +361,7 @@
     {
       "url": "https://www.gov.hu/en",
       "label": "Hungary government official portal",
-      "code": "The operation was aborted due to timeout",
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "budapest-hu",
       "scopeName": "Budapest, Hungary",
@@ -1589,6 +1599,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://immobilien.derstandard.at",
+      "label": "Der Standard Immo — Vienna newspaper rental section, often premium / family flats",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "vienna-at",
+      "scopeName": "Vienna, Austria",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
       "label": "Vienna Cost of Living — Numbeo",
       "code": 503,
@@ -2339,6 +2359,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.portalinmobiliario.com",
+      "label": "Portal Inmobiliario — Chile's largest property portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "santiago-cl",
+      "scopeName": "Santiago, Chile",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.toctoc.com",
       "label": "TocToc — major Chilean property portal with strong Santiago inventory",
       "code": 403,
@@ -2459,16 +2489,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://indianvisaonline.gov.in",
-      "label": "India Bureau of Immigration",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "bengaluru-in",
-      "scopeName": "Bengaluru, India",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Bangalore",
       "label": "Bangalore Numbeo",
       "code": 503,
@@ -2487,16 +2507,6 @@
       "scopeName": "Mumbai, India",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://indianvisaonline.gov.in",
-      "label": "Indian eVisa / immigration portal — official indianvisaonline.gov.in",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "mumbai-in",
-      "scopeName": "Mumbai, India",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Mumbai",
@@ -2747,6 +2757,16 @@
       "scopeName": "Hamburg, Germany",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.pararius.com",
+      "label": "Pararius — major Dutch rental portal with strong The Hague coverage",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "the-hague-nl",
+      "scopeName": "The Hague, Netherlands",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/The-Hague",
@@ -3160,17 +3180,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.pararius.com",
-      "label": "Pararius — strong rental focus, English-language interface",
-      "code": 301,
-      "redirectTo": "/english",
-      "scope": "city",
-      "scopeId": "amsterdam-nl",
-      "scopeName": "Amsterdam, Netherlands",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3339,7 +3348,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=7a59ae36-237f-4e9f-a7ef-5caceb9df52d&ssb=94460398717&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=6306ea40-bhcz-4d3a-8835-db530a6596c7&ssk=support@shieldsquare.com&ssm=98873139271662830107177394511474&ssn=70641474f7d3cdbf8722d5685d8fc5949c8cbe4a5e4b-8f8a-4310-81c596&sso=c6b1d6ef-c94f6cc2c5c9f9f572059035bef58c0812e8a727bd6d6b63&ssp=28854806961787558727178758141150963&ssq=83950156125774236630861257480646014807379&ssr=MTcyLjIxNS4yMTcuNjc=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzhkMGIxYmUtOWYxMi00YjAzLWE4MDUtMDk4MjZmMjUzMmVkMS0xNzg3NTYxMjU3MTQwMC0wMDJlYzQ3MWU4MmFmM2Y3YTExMTAiLCJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBiZTRhNWU0Yi04ZjhhLTQzMTAtODZlZi1jOTRmNmNjMmM1YzkxLTE3ODc1NjEyNTcxNDAwLTAwNGZjMDIzMWU4M2IwN2RlMWMxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3361,7 +3370,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=7a59ae36-237f-4e9f-a7ef-5caceb9df52d&ssb=94460398717&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=6306ea40-bhcz-4d3a-8835-db530a6596c7&ssk=support@shieldsquare.com&ssm=98873139271662830107177394511474&ssn=70641474f7d3cdbf8722d5685d8fc5949c8cbe4a5e4b-8f8a-4310-81c596&sso=c6b1d6ef-c94f6cc2c5c9f9f572059035bef58c0812e8a727bd6d6b63&ssp=28854806961787558727178758141150963&ssq=83950156125774236630861257480646014807379&ssr=MTcyLjIxNS4yMTcuNjc=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzhkMGIxYmUtOWYxMi00YjAzLWE4MDUtMDk4MjZmMjUzMmVkMS0xNzg3NTYxMjU3MTQwMC0wMDJlYzQ3MWU4MmFmM2Y3YTExMTAiLCJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBiZTRhNWU0Yi04ZjhhLTQzMTAtODZlZi1jOTRmNmNjMmM1YzkxLTE3ODc1NjEyNTcxNDAwLTAwNGZjMDIzMWU4M2IwN2RlMWMxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3383,7 +3392,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=7a59ae36-237f-4e9f-a7ef-5caceb9df52d&ssb=94460398717&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=6306ea40-bhcz-4d3a-8835-db530a6596c7&ssk=support@shieldsquare.com&ssm=98873139271662830107177394511474&ssn=70641474f7d3cdbf8722d5685d8fc5949c8cbe4a5e4b-8f8a-4310-81c596&sso=c6b1d6ef-c94f6cc2c5c9f9f572059035bef58c0812e8a727bd6d6b63&ssp=28854806961787558727178758141150963&ssq=83950156125774236630861257480646014807379&ssr=MTcyLjIxNS4yMTcuNjc=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzhkMGIxYmUtOWYxMi00YjAzLWE4MDUtMDk4MjZmMjUzMmVkMS0xNzg3NTYxMjU3MTQwMC0wMDJlYzQ3MWU4MmFmM2Y3YTExMTAiLCJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBiZTRhNWU0Yi04ZjhhLTQzMTAtODZlZi1jOTRmNmNjMmM1YzkxLTE3ODc1NjEyNTcxNDAwLTAwNGZjMDIzMWU4M2IwN2RlMWMxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3889,7 +3898,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=7a59ae36-237f-4e9f-a7ef-5caceb9df52d&ssb=94460398717&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=6306ea40-bhcz-4d3a-8835-db530a6596c7&ssk=support@shieldsquare.com&ssm=98873139271662830107177394511474&ssn=70641474f7d3cdbf8722d5685d8fc5949c8cbe4a5e4b-8f8a-4310-81c596&sso=c6b1d6ef-c94f6cc2c5c9f9f572059035bef58c0812e8a727bd6d6b63&ssp=28854806961787558727178758141150963&ssq=83950156125774236630861257480646014807379&ssr=MTcyLjIxNS4yMTcuNjc=&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzhkMGIxYmUtOWYxMi00YjAzLWE4MDUtMDk4MjZmMjUzMmVkMS0xNzg3NTYxMjU3MTQwMC0wMDJlYzQ3MWU4MmFmM2Y3YTExMTAiLCJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBiZTRhNWU0Yi04ZjhhLTQzMTAtODZlZi1jOTRmNmNjMmM1YzkxLTE3ODc1NjEyNTcxNDAwLTAwNGZjMDIzMWU4M2IwN2RlMWMxMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -4654,17 +4663,6 @@
       "scopeName": "Hamburg, Germany",
       "section": "sources",
       "path": "sources.healthcare.0"
-    },
-    {
-      "url": "https://www.pararius.com",
-      "label": "Pararius — major Dutch rental portal with strong The Hague coverage",
-      "code": 301,
-      "redirectTo": "/english",
-      "scope": "city",
-      "scopeId": "the-hague-nl",
-      "scopeName": "The Hague, Netherlands",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.kamernet.nl",
