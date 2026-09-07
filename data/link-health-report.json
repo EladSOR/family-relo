@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-31T15:48:58.160Z",
+  "generatedAt": "2026-09-07T14:00:08.390Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 367,
-    "redirect": 38,
-    "broken": 187
+    "ok": 368,
+    "redirect": 36,
+    "broken": 188
   },
   "broken": [
     {
@@ -1279,16 +1279,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.zolo.ca",
-      "label": "Zolo.ca — Canadian real estate platform with a good Vancouver rental and sales section",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "vancouver-ca",
-      "scopeName": "Vancouver, Canada",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Vancouver",
       "label": "Vancouver Cost of Living — Numbeo",
       "code": 503,
@@ -1307,16 +1297,6 @@
       "scopeName": "Toronto, Canada",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.zolo.ca",
-      "label": "Zolo.ca — Canadian real estate platform with strong Greater Toronto Area coverage",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "toronto-ca",
-      "scopeName": "Toronto, Canada",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Toronto",
@@ -1689,6 +1669,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.591.com.tw",
+      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "taipei-tw",
+      "scopeName": "Taipei, Taiwan",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
       "label": "Taipei Cost of Living — Numbeo",
       "code": 503,
@@ -1871,7 +1861,7 @@
     {
       "url": "https://www.argenprop.com",
       "label": "Argenprop — major Argentine rental portal",
-      "code": 403,
+      "code": 405,
       "scope": "city",
       "scopeId": "buenos-aires-ar",
       "scopeName": "Buenos Aires, Argentina",
@@ -2527,6 +2517,16 @@
       "scopeName": "Brussels, Belgium",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.inami.fgov.be",
+      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
@@ -3348,7 +3348,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9203b440-9741-40b5-ba83-651293eeb83f&ssb=19748365897&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=b4fba7ad-bhcz-4ae2-afbf-84a812d93b28&ssk=support@shieldsquare.com&ssm=03154502031135354101969200065404&ssn=3049760e96ec30ec0e7806e65ea1ce67f73783c335e6-4d44-472f-8154f9&sso=3e80c554-e70c5d720aae0ae60e668fd894f49df905995ddddd292509&ssp=69283523041788734850178876419611314&ssq=17357448956047678165789560476382780181846&ssr=NzQuMjM1LjE1MS4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2ZjMDAwODhiNmI0ZjgtNDAxNS00YjJiLTk2YjAtOGMwZWE1NzE2MGFhMS0xNzg4Nzg5NTYwNTE5MC0wMDRjNWRhOWFkODVmM2M1MzdlMTAiLCJfX3V6bWYiOiI3ZjkwMDA4M2MzMzVlNi00ZDQ0LTQ3MmYtODU1NC1lNzBjNWQ3MjBhYWUxLTE3ODg3ODk1NjA1MTkwLTAwNGM4OGYzNjdjOTcxYzY5YjAxMCJ9",
       "scope": "city",
       "scopeId": "tel-aviv-il",
       "scopeName": "Tel Aviv, Israel",
@@ -3370,7 +3370,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9203b440-9741-40b5-ba83-651293eeb83f&ssb=19748365897&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=b4fba7ad-bhcz-4ae2-afbf-84a812d93b28&ssk=support@shieldsquare.com&ssm=03154502031135354101969200065404&ssn=3049760e96ec30ec0e7806e65ea1ce67f73783c335e6-4d44-472f-8154f9&sso=3e80c554-e70c5d720aae0ae60e668fd894f49df905995ddddd292509&ssp=69283523041788734850178876419611314&ssq=17357448956047678165789560476382780181846&ssr=NzQuMjM1LjE1MS4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2ZjMDAwODhiNmI0ZjgtNDAxNS00YjJiLTk2YjAtOGMwZWE1NzE2MGFhMS0xNzg4Nzg5NTYwNTE5MC0wMDRjNWRhOWFkODVmM2M1MzdlMTAiLCJfX3V6bWYiOiI3ZjkwMDA4M2MzMzVlNi00ZDQ0LTQ3MmYtODU1NC1lNzBjNWQ3MjBhYWUxLTE3ODg3ODk1NjA1MTkwLTAwNGM4OGYzNjdjOTcxYzY5YjAxMCJ9",
       "scope": "city",
       "scopeId": "eilat-il",
       "scopeName": "Eilat, Israel",
@@ -3392,7 +3392,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9203b440-9741-40b5-ba83-651293eeb83f&ssb=19748365897&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=b4fba7ad-bhcz-4ae2-afbf-84a812d93b28&ssk=support@shieldsquare.com&ssm=03154502031135354101969200065404&ssn=3049760e96ec30ec0e7806e65ea1ce67f73783c335e6-4d44-472f-8154f9&sso=3e80c554-e70c5d720aae0ae60e668fd894f49df905995ddddd292509&ssp=69283523041788734850178876419611314&ssq=17357448956047678165789560476382780181846&ssr=NzQuMjM1LjE1MS4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2ZjMDAwODhiNmI0ZjgtNDAxNS00YjJiLTk2YjAtOGMwZWE1NzE2MGFhMS0xNzg4Nzg5NTYwNTE5MC0wMDRjNWRhOWFkODVmM2M1MzdlMTAiLCJfX3V6bWYiOiI3ZjkwMDA4M2MzMzVlNi00ZDQ0LTQ3MmYtODU1NC1lNzBjNWQ3MjBhYWUxLTE3ODg3ODk1NjA1MTkwLTAwNGM4OGYzNjdjOTcxYzY5YjAxMCJ9",
       "scope": "city",
       "scopeId": "beer-sheva-il",
       "scopeName": "Beer Sheva, Israel",
@@ -3898,7 +3898,7 @@
       "url": "https://www.yad2.co.il",
       "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
       "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=fae44c3e-3dd5-4276-b943-a7be4f0ba0cb&ssb=89227313466&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=2750abc2-bhcz-4ba6-b0a6-d171a7bba2d6&ssk=support@shieldsquare.com&ssm=72704256274298285102608122253254&ssn=9766e58d1d5f11ef525f1d5eb07eb63a7fb4a776bb9d-8f5f-4e25-9c2683&sso=8fa78c07-06be1a7d4d6e644b409e9bb9d03c5519b539a0e6e4c162cf&ssp=87685382151788127147178816629511723&ssq=07958649129864629781691298956665582255740&ssr=NDguMjE0LjU0LjEwNQ==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDBhNzc2YmI5ZC04ZjVmLTRlMjUtOWMwNy0wNmJlMWE3ZDRkNmUxLTE3ODgxOTEyOTg5MzUwLTAwNDBjMjc3ODI1NTExY2ViOGMxMCIsInV6bXgiOiI3ZmMwMDBiNzdiNzkwMy04MTc1LTRmMTMtOWI2Ni1mMTM2NDkxMjU2ZDkxLTE3ODgxOTEyOTg5MzUwLTAwMzdjODE4OTIyMGFiNTYyMGExMCJ9",
+      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=9203b440-9741-40b5-ba83-651293eeb83f&ssb=19748365897&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=b4fba7ad-bhcz-4ae2-afbf-84a812d93b28&ssk=support@shieldsquare.com&ssm=03154502031135354101969200065404&ssn=3049760e96ec30ec0e7806e65ea1ce67f73783c335e6-4d44-472f-8154f9&sso=3e80c554-e70c5d720aae0ae60e668fd894f49df905995ddddd292509&ssp=69283523041788734850178876419611314&ssq=17357448956047678165789560476382780181846&ssr=NzQuMjM1LjE1MS4z&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJ1em14IjoiN2ZjMDAwODhiNmI0ZjgtNDAxNS00YjJiLTk2YjAtOGMwZWE1NzE2MGFhMS0xNzg4Nzg5NTYwNTE5MC0wMDRjNWRhOWFkODVmM2M1MzdlMTAiLCJfX3V6bWYiOiI3ZjkwMDA4M2MzMzVlNi00ZDQ0LTQ3MmYtODU1NC1lNzBjNWQ3MjBhYWUxLTE3ODg3ODk1NjA1MTkwLTAwNGM4OGYzNjdjOTcxYzY5YjAxMCJ9",
       "scope": "city",
       "scopeId": "jerusalem-il",
       "scopeName": "Jerusalem, Israel",
@@ -4113,17 +4113,6 @@
       "scopeName": "Tokyo, Japan",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.591.com.tw",
-      "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
-      "code": 302,
-      "redirectTo": "https://www.591.com.tw",
-      "scope": "city",
-      "scopeId": "taipei-tw",
-      "scopeName": "Taipei, Taiwan",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4467,17 +4456,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.inami.fgov.be",
-      "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
-      "code": 302,
-      "redirectTo": "https://www.inami.fgov.be/fr",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.healthcare.0"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4546,7 +4524,7 @@
     {
       "url": "https://www.place.ge",
       "label": "Place.ge — additional Georgian rental inventory",
-      "code": 302,
+      "code": 301,
       "redirectTo": "https://place.ge/",
       "scope": "city",
       "scopeId": "tbilisi-ge",
