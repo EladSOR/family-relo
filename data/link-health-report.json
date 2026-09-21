@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-14T14:44:22.310Z",
+  "generatedAt": "2026-09-21T14:51:37.706Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 367,
-    "redirect": 38,
-    "broken": 187
+    "ok": 365,
+    "redirect": 37,
+    "broken": 190
   },
   "broken": [
     {
@@ -31,7 +31,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": "fetch failed",
+      "code": 403,
       "scope": "city",
       "scopeId": "lisbon-pt",
       "scopeName": "Lisbon, Portugal",
@@ -51,7 +51,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Visa — Official",
-      "code": "fetch failed",
+      "code": 403,
       "scope": "city",
       "scopeId": "lisbon-pt",
       "scopeName": "Lisbon, Portugal",
@@ -221,7 +221,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": "fetch failed",
+      "code": 403,
       "scope": "city",
       "scopeId": "porto-pt",
       "scopeName": "Porto, Portugal",
@@ -241,7 +241,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Visa — Official",
-      "code": "fetch failed",
+      "code": 403,
       "scope": "city",
       "scopeId": "porto-pt",
       "scopeName": "Porto, Portugal",
@@ -1909,6 +1909,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://urbania.pe",
+      "label": "Urbania — Peru's largest property portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "lima-pe",
+      "scopeName": "Lima, Peru",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.adondevivir.com",
       "label": "Adondevivir — major Peruvian rental portal",
       "code": 403,
@@ -2539,6 +2549,16 @@
       "path": "sources.healthcare.0"
     },
     {
+      "url": "https://www.hemnet.se",
+      "label": "Hemnet — Sweden's largest property portal (mainly buying but with rental section)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "stockholm-se",
+      "scopeName": "Stockholm, Sweden",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://bostad.blocket.se",
       "label": "Blocket Bostad — Sweden's largest second-hand rental portal",
       "code": 429,
@@ -2811,7 +2831,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": "fetch failed",
+      "code": 403,
       "scope": "city",
       "scopeId": "faro-pt",
       "scopeName": "Faro, Portugal",
@@ -2847,6 +2867,16 @@
       "scopeName": "Faro, Portugal",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.sns24.gov.pt",
+      "label": "SNS 24 (Portuguese national health service portal)",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "faro-pt",
+      "scopeName": "Faro, Portugal",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.seloger.com",
@@ -3345,17 +3375,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.yad2.co.il",
-      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
-      "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=87e98d8d-1d34-40c9-b108-7162a06641ea&ssb=42602366671&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=adcb42fc-bhcz-49e6-a139-968c6ce18987&ssk=support@shieldsquare.com&ssm=69597678425625212102046235558916&ssn=0ecf14011e1d3d106286e5a272cbc590947a94d0243e-19c6-4046-ba59c0&sso=035b4669-a7161b81666551bf8c6189e19b49b90440f3119a7009752c&ssp=17670110361789361138178938723901065&ssq=92322399701450687902397014610857939241730&ssr=MjAuMTA5LjM2LjIyOA==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5NGQwMjQzZS0xOWM2LTQwNDYtYjY2OS1hNzE2MWI4MTY2NjUxLTE3ODkzOTcwMTQyMzkwLTAwNDVhOWUwOWMyNjdiNjUxYzExMCIsInV6bXgiOiI3ZmMwMDBhNzM1OTY2MC1hNzAyLTQ3OWQtOGFjYy0zMTc2OWYwZjIwNjYxLTE3ODkzOTcwMTQyMzkwLTAwNTI4MjA3ZGI4M2QxYTFjZTIxMCJ9",
-      "scope": "city",
-      "scopeId": "tel-aviv-il",
-      "scopeName": "Tel Aviv, Israel",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3367,17 +3386,6 @@
       "path": "sources.weather.1"
     },
     {
-      "url": "https://www.yad2.co.il",
-      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
-      "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=87e98d8d-1d34-40c9-b108-7162a06641ea&ssb=42602366671&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=adcb42fc-bhcz-49e6-a139-968c6ce18987&ssk=support@shieldsquare.com&ssm=69597678425625212102046235558916&ssn=0ecf14011e1d3d106286e5a272cbc590947a94d0243e-19c6-4046-ba59c0&sso=035b4669-a7161b81666551bf8c6189e19b49b90440f3119a7009752c&ssp=17670110361789361138178938723901065&ssq=92322399701450687902397014610857939241730&ssr=MjAuMTA5LjM2LjIyOA==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5NGQwMjQzZS0xOWM2LTQwNDYtYjY2OS1hNzE2MWI4MTY2NjUxLTE3ODkzOTcwMTQyMzkwLTAwNDVhOWUwOWMyNjdiNjUxYzExMCIsInV6bXgiOiI3ZmMwMDBhNzM1OTY2MC1hNzAyLTQ3OWQtOGFjYy0zMTc2OWYwZjIwNjYxLTE3ODkzOTcwMTQyMzkwLTAwNTI4MjA3ZGI4M2QxYTFjZTIxMCJ9",
-      "scope": "city",
-      "scopeId": "eilat-il",
-      "scopeName": "Eilat, Israel",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -3387,17 +3395,6 @@
       "scopeName": "Eilat, Israel",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.yad2.co.il",
-      "label": "Yad2.co.il (יד2) — Israel's largest property classifieds platform",
-      "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=87e98d8d-1d34-40c9-b108-7162a06641ea&ssb=42602366671&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=adcb42fc-bhcz-49e6-a139-968c6ce18987&ssk=support@shieldsquare.com&ssm=69597678425625212102046235558916&ssn=0ecf14011e1d3d106286e5a272cbc590947a94d0243e-19c6-4046-ba59c0&sso=035b4669-a7161b81666551bf8c6189e19b49b90440f3119a7009752c&ssp=17670110361789361138178938723901065&ssq=92322399701450687902397014610857939241730&ssr=MjAuMTA5LjM2LjIyOA==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5NGQwMjQzZS0xOWM2LTQwNDYtYjY2OS1hNzE2MWI4MTY2NjUxLTE3ODkzOTcwMTQyMzkwLTAwNDVhOWUwOWMyNjdiNjUxYzExMCIsInV6bXgiOiI3ZmMwMDBhNzM1OTY2MC1hNzAyLTQ3OWQtOGFjYy0zMTc2OWYwZjIwNjYxLTE3ODkzOTcwMTQyMzkwLTAwNTI4MjA3ZGI4M2QxYTFjZTIxMCJ9",
-      "scope": "city",
-      "scopeId": "beer-sheva-il",
-      "scopeName": "Beer Sheva, Israel",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3893,17 +3890,6 @@
       "scopeName": "Toronto, Canada",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.yad2.co.il",
-      "label": "Yad2.co.il (יד2) — largest Israeli property classifieds",
-      "code": 302,
-      "redirectTo": "https://validate.perfdrive.com/ccb4768f5e2ea98586d13473d71efc83/?ssa=87e98d8d-1d34-40c9-b108-7162a06641ea&ssb=42602366671&ssc=https%3A%2F%2Fwww.yad2.co.il%2F&ssi=adcb42fc-bhcz-49e6-a139-968c6ce18987&ssk=support@shieldsquare.com&ssm=69597678425625212102046235558916&ssn=0ecf14011e1d3d106286e5a272cbc590947a94d0243e-19c6-4046-ba59c0&sso=035b4669-a7161b81666551bf8c6189e19b49b90440f3119a7009752c&ssp=17670110361789361138178938723901065&ssq=92322399701450687902397014610857939241730&ssr=MjAuMTA5LjM2LjIyOA==&sst=FamiRelo-LinkChecker/1.0 (+https://famirelo.com)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InlhZDIuY28uaWwiLCJfX3V6bWYiOiI3ZjkwMDA5NGQwMjQzZS0xOWM2LTQwNDYtYjY2OS1hNzE2MWI4MTY2NjUxLTE3ODkzOTcwMTQyMzkwLTAwNDVhOWUwOWMyNjdiNjUxYzExMCIsInV6bXgiOiI3ZmMwMDBhNzM1OTY2MC1hNzAyLTQ3OWQtOGFjYy0zMTc2OWYwZjIwNjYxLTE3ODkzOTcwMTQyMzkwLTAwNTI4MjA3ZGI4M2QxYTFjZTIxMCJ9",
-      "scope": "city",
-      "scopeId": "jerusalem-il",
-      "scopeName": "Jerusalem, Israel",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
