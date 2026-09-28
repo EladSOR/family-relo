@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-21T14:51:37.706Z",
+  "generatedAt": "2026-09-28T16:24:05.837Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 365,
+    "ok": 366,
     "redirect": 37,
-    "broken": 190
+    "broken": 189
   },
   "broken": [
     {
@@ -759,16 +759,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.idealista.it",
-      "label": "Idealista.it — major Italian and European property portal",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "milan-it",
-      "scopeName": "Milan, Italy",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
-    },
-    {
       "url": "https://www.casa.it",
       "label": "Casa.it — Italian property portal with strong Milan listings",
       "code": 403,
@@ -797,16 +787,6 @@
       "scopeName": "Florence, Italy",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.idealista.it",
-      "label": "Idealista.it — major Italian and European property portal",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "florence-it",
-      "scopeName": "Florence, Italy",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.casa.it",
@@ -1149,6 +1129,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "san-jose-cr",
+      "scopeName": "San Jose, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -1169,6 +1159,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "tamarindo-cr",
+      "scopeName": "Tamarindo, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -1187,6 +1187,16 @@
       "scopeName": "Tamarindo, Costa Rica",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "heredia-cr",
+      "scopeName": "Heredia, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://www.migracion.go.cr",
@@ -1209,6 +1219,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "atenas-cr",
+      "scopeName": "Atenas, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -1229,6 +1249,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "puerto-viejo-cr",
+      "scopeName": "Puerto Viejo, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.migracion.go.cr",
       "label": "Costa Rica immigration official — migracion.go.cr",
       "code": 403,
@@ -1247,6 +1277,16 @@
       "scopeName": "Puerto Viejo, Costa Rica",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "santa-teresa-cr",
+      "scopeName": "Santa Teresa, Costa Rica",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://www.migracion.go.cr",
@@ -1547,16 +1587,6 @@
       "scopeName": "Rome, Italy",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.idealista.it",
-      "label": "Idealista.it — major Italian and European property portal",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "rome-it",
-      "scopeName": "Rome, Italy",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.casa.it",
@@ -2319,6 +2349,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.encuentra24.com",
+      "label": "Encuentra24 — Panama's largest classifieds platform with strong rental section",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "panama-city-pa",
+      "scopeName": "Panama City, Panama",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.compreoalquile.com",
       "label": "CompreoAlquile — major Panamanian property portal",
       "code": 403,
@@ -2327,16 +2367,6 @@
       "scopeName": "Panama City, Panama",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://www.panamacompra.com",
-      "label": "PanamaCompra — direct-from-owner Panama listings",
-      "code": "fetch failed",
-      "scope": "city",
-      "scopeId": "panama-city-pa",
-      "scopeName": "Panama City, Panama",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.migracion.gob.pa",
@@ -2377,6 +2407,16 @@
       "scopeName": "Santiago, Chile",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.yapo.cl",
+      "label": "Yapo.cl — direct-from-owner classifieds",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "santiago-cl",
+      "scopeName": "Santiago, Chile",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.extranjeria.gob.cl",
@@ -2869,16 +2909,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.sns24.gov.pt",
-      "label": "SNS 24 (Portuguese national health service portal)",
-      "code": 405,
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "sources",
-      "path": "sources.healthcare.0"
-    },
-    {
       "url": "https://www.seloger.com",
       "label": "SeLoger — France's largest rental and property portal",
       "code": 403,
@@ -2957,16 +2987,6 @@
       "scopeName": "Naples, Italy",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.idealista.it",
-      "label": "Idealista Italia — major Italian rental and sales portal",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "naples-it",
-      "scopeName": "Naples, Italy",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.casa.it",
