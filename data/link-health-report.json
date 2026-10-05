@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T16:24:05.837Z",
+  "generatedAt": "2026-10-05T16:44:56.888Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
@@ -759,6 +759,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.idealista.it",
+      "label": "Idealista.it — major Italian and European property portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "milan-it",
+      "scopeName": "Milan, Italy",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.casa.it",
       "label": "Casa.it — Italian property portal with strong Milan listings",
       "code": 403,
@@ -787,6 +797,16 @@
       "scopeName": "Florence, Italy",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.idealista.it",
+      "label": "Idealista.it — major Italian and European property portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "florence-it",
+      "scopeName": "Florence, Italy",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.casa.it",
@@ -1589,6 +1609,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.idealista.it",
+      "label": "Idealista.it — major Italian and European property portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "rome-it",
+      "scopeName": "Rome, Italy",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.casa.it",
       "label": "Casa.it — Italian property portal with strong Rome listings",
       "code": 403,
@@ -1627,16 +1657,6 @@
       "scopeName": "Vienna, Austria",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://immobilien.derstandard.at",
-      "label": "Der Standard Immo — Vienna newspaper rental section, often premium / family flats",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "vienna-at",
-      "scopeName": "Vienna, Austria",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
@@ -2987,6 +3007,16 @@
       "scopeName": "Naples, Italy",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.idealista.it",
+      "label": "Idealista Italia — major Italian rental and sales portal",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "naples-it",
+      "scopeName": "Naples, Italy",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.casa.it",
