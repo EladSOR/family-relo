@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-05T16:44:56.888Z",
+  "generatedAt": "2026-10-12T17:19:22.870Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 366,
+    "ok": 365,
     "redirect": 37,
-    "broken": 189
+    "broken": 190
   },
   "broken": [
     {
@@ -2679,6 +2679,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.haigekassa.ee",
+      "label": "Eesti Haigekassa (Estonian Health Insurance Fund)",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "tallinn-ee",
+      "scopeName": "Tallinn, Estonia",
+      "section": "sources",
+      "path": "sources.healthcare.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Tbilisi",
       "label": "Tbilisi Cost of Living — Numbeo",
       "code": 503,
@@ -4371,6 +4381,17 @@
       "path": "sources.weather.1"
     },
     {
+      "url": "https://www.panamacompra.com",
+      "label": "PanamaCompra — direct-from-owner Panama listings",
+      "code": 301,
+      "redirectTo": "https://blackwellpresbyterian.org/",
+      "scope": "city",
+      "scopeId": "panama-city-pa",
+      "scopeName": "Panama City, Panama",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4556,17 +4577,6 @@
       "scopeName": "Tallinn, Estonia",
       "section": "sources",
       "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.haigekassa.ee",
-      "label": "Eesti Haigekassa (Estonian Health Insurance Fund)",
-      "code": 301,
-      "redirectTo": "https://tervisekassa.ee/",
-      "scope": "city",
-      "scopeId": "tallinn-ee",
-      "scopeName": "Tallinn, Estonia",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.ss.ge",
