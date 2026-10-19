@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T17:19:22.870Z",
+  "generatedAt": "2026-10-19T15:18:50.865Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 365,
+    "ok": 364,
     "redirect": 37,
-    "broken": 190
+    "broken": 191
   },
   "broken": [
     {
@@ -1657,6 +1657,16 @@
       "scopeName": "Vienna, Austria",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://immobilien.derstandard.at",
+      "label": "Der Standard Immo — Vienna newspaper rental section, often premium / family flats",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "vienna-at",
+      "scopeName": "Vienna, Austria",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
