@@ -44,7 +44,7 @@ export default function DestinationsGrid({ cities }: Props) {
       {/* gap-8 on all breakpoints for generous breathing room between cards */}
       <div
         data-budget-grid="home"
-        className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
+        className="mx-auto grid max-w-[1400px] grid-cols-2 gap-3 sm:gap-6 min-[600px]:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5"
       >
         {cities.map((city) => (
           <DestinationCard key={city.id} city={city} />
