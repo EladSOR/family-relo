@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-19T15:18:50.865Z",
+  "generatedAt": "2026-10-26T14:51:57.157Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 364,
-    "redirect": 37,
-    "broken": 191
+    "ok": 361,
+    "redirect": 38,
+    "broken": 193
   },
   "broken": [
     {
@@ -91,7 +91,7 @@
     {
       "url": "https://www.kingsdubai.com",
       "label": "Kings' School Dubai",
-      "code": 521,
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "dubai-ae",
       "scopeName": "Dubai, UAE",
@@ -107,6 +107,16 @@
       "scopeName": "Dubai, UAE",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.cmis.ac.th",
+      "label": "Chiang Mai International School (CMIS)",
+      "code": "fetch failed",
+      "scope": "city",
+      "scopeId": "chiang-mai-th",
+      "scopeName": "Chiang Mai, Thailand",
+      "section": "sources",
+      "path": "sources.schools.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
@@ -1679,6 +1689,26 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.nyidanmark.dk/en-GB",
+      "label": "SIRI — Danish work and residence permits official",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "copenhagen-dk",
+      "scopeName": "Copenhagen, Denmark",
+      "section": "visa",
+      "path": "visa.options.1.officialLink"
+    },
+    {
+      "url": "https://www.nyidanmark.dk/en-GB",
+      "label": "SIRI — Danish Immigration Service official",
+      "code": "The operation was aborted due to timeout",
+      "scope": "city",
+      "scopeId": "copenhagen-dk",
+      "scopeName": "Copenhagen, Denmark",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
       "code": 503,
@@ -1901,7 +1931,7 @@
     {
       "url": "https://www.cancilleria.gov.co/tramites_servicios/visa",
       "label": "Colombia Cancillería — visas (official)",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "medellin-co",
       "scopeName": "Medellín, Colombia",
@@ -2511,7 +2541,7 @@
     {
       "url": "https://www.cancilleria.gov.co/tramites_servicios/visa",
       "label": "Colombia Cancillería visas",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "bogota-co",
       "scopeName": "Bogotá, Colombia",
@@ -3118,7 +3148,7 @@
       "url": "https://www.remax.pt",
       "label": "Remax Portugal — good for family homes in Cascais and Oeiras",
       "code": 301,
-      "redirectTo": "/pt",
+      "redirectTo": "https://remax.pt/",
       "scope": "city",
       "scopeId": "lisbon-pt",
       "scopeName": "Lisbon, Portugal",
@@ -3250,7 +3280,7 @@
       "url": "https://www.remax.pt",
       "label": "Remax Portugal — good for family homes in Foz and Matosinhos",
       "code": 301,
-      "redirectTo": "/pt",
+      "redirectTo": "https://remax.pt/",
       "scope": "city",
       "scopeId": "porto-pt",
       "scopeName": "Porto, Portugal",
@@ -3267,6 +3297,28 @@
       "scopeName": "Porto, Portugal",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+      "label": "Germany work permit Aufenthaltserlaubnis official apply",
+      "code": 301,
+      "redirectTo": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+      "scope": "city",
+      "scopeId": "berlin-de",
+      "scopeName": "Berlin, Germany",
+      "section": "visa",
+      "path": "visa.options.1.officialLink"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+      "label": "Germany work and freelancer visas — Make it in Germany (official)",
+      "code": 301,
+      "redirectTo": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+      "scope": "city",
+      "scopeId": "berlin-de",
+      "scopeName": "Berlin, Germany",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -3685,6 +3737,28 @@
       "scopeName": "Cascais, Portugal",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+      "label": "Germany work permit Aufenthaltserlaubnis official make-it-in-germany.com",
+      "code": 301,
+      "redirectTo": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+      "scope": "city",
+      "scopeId": "munich-de",
+      "scopeName": "Munich, Germany",
+      "section": "visa",
+      "path": "visa.options.1.officialLink"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+      "label": "Germany work permit — make-it-in-germany.com",
+      "code": 301,
+      "redirectTo": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+      "scope": "city",
+      "scopeId": "munich-de",
+      "scopeName": "Munich, Germany",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4686,6 +4760,17 @@
       "scopeName": "San Diego, USA",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
+      "label": "Germany work permit Aufenthaltserlaubnis official apply",
+      "code": 301,
+      "redirectTo": "https://www.make-it-in-germany.com/en/visa-recognition/visa-types/qualified-professionals",
+      "scope": "city",
+      "scopeId": "hamburg-de",
+      "scopeName": "Hamburg, Germany",
+      "section": "visa",
+      "path": "visa.options.1.officialLink"
     },
     {
       "url": "https://wunderflats.com",
