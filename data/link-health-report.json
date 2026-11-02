@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T14:51:57.157Z",
+  "generatedAt": "2026-11-02T17:44:30.146Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
@@ -91,7 +91,7 @@
     {
       "url": "https://www.kingsdubai.com",
       "label": "Kings' School Dubai",
-      "code": "The operation was aborted due to timeout",
+      "code": 521,
       "scope": "city",
       "scopeId": "dubai-ae",
       "scopeName": "Dubai, UAE",
@@ -1689,26 +1689,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.nyidanmark.dk/en-GB",
-      "label": "SIRI — Danish work and residence permits official",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "copenhagen-dk",
-      "scopeName": "Copenhagen, Denmark",
-      "section": "visa",
-      "path": "visa.options.1.officialLink"
-    },
-    {
-      "url": "https://www.nyidanmark.dk/en-GB",
-      "label": "SIRI — Danish Immigration Service official",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "copenhagen-dk",
-      "scopeName": "Copenhagen, Denmark",
-      "section": "sources",
-      "path": "sources.visa.0"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
       "code": 503,
@@ -2767,6 +2747,16 @@
       "scopeName": "Boston, USA",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.bostonpads.com",
+      "label": "Boston Pads — Boston-specific rental platform with apartment broker network",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "boston-us",
+      "scopeName": "Boston, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.realtor.com",
@@ -4729,17 +4719,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://www.bostonpads.com",
-      "label": "Boston Pads — Boston-specific rental platform with apartment broker network",
-      "code": 301,
-      "redirectTo": "https://bostonpads.com/",
-      "scope": "city",
-      "scopeId": "boston-us",
-      "scopeName": "Boston, USA",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
       "label": "MERRA-2 reanalysis (meteorological source)",
       "code": 301,
@@ -4859,6 +4838,17 @@
       "scopeName": "Faro, Portugal",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.sns24.gov.pt",
+      "label": "SNS 24 (Portuguese national health service portal)",
+      "code": 301,
+      "redirectTo": "https://www.sns24.gov.pt/pt/inicio",
+      "scope": "city",
+      "scopeId": "faro-pt",
+      "scopeName": "Faro, Portugal",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
