@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { Map as MapIcon, X } from "lucide-react";
@@ -35,6 +35,8 @@ const WorldMap = dynamic(() => import("./WorldMap"), {
  */
 export default function MapToggle({ cities }: Props) {
   const [open, setOpen] = useState(false);
+  const [overSponsor, setOverSponsor] = useState(false);
+  const pillRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
   // Hide on routes where a world map of destinations is irrelevant or where
@@ -70,6 +72,37 @@ export default function MapToggle({ cities }: Props) {
     };
   }, [open]);
 
+  // Fade the pill out while it sits over a "Sponsored" block so it never
+  // covers an ad / Advertise card (e.g. city pages on short landscape screens).
+  useEffect(() => {
+    if (open || hideOnRoute) return;
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const pill = pillRef.current;
+      if (!pill) return;
+      const p = pill.getBoundingClientRect();
+      const hit = Array.from(
+        document.querySelectorAll('section[aria-label="Sponsored"]'),
+      ).some((s) => {
+        const r = s.getBoundingClientRect();
+        return r.top < p.bottom && r.bottom > p.top;
+      });
+      setOverSponsor(hit);
+    };
+    const schedule = () => {
+      if (!raf) raf = requestAnimationFrame(check);
+    };
+    check();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [open, hideOnRoute, pathname]);
+
   if (hideOnRoute) return null;
 
   return (
@@ -80,10 +113,15 @@ export default function MapToggle({ cities }: Props) {
           is open — the overlay has its own close affordance. */}
       {!open && (
         <button
+          ref={pillRef}
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Show world map of destinations"
-          className="fixed bottom-5 left-1/2 z-[80] flex -translate-x-1/2 items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white shadow-[0_6px_24px_rgba(15,23,42,0.35)] transition-transform hover:scale-[1.03] active:scale-[0.98] md:bottom-7 md:px-6 md:py-3.5 md:text-base"
+          aria-hidden={overSponsor || undefined}
+          tabIndex={overSponsor ? -1 : undefined}
+          className={`fixed bottom-5 left-1/2 z-[80] flex -translate-x-1/2 items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-bold text-white shadow-[0_6px_24px_rgba(15,23,42,0.35)] transition-[transform,opacity] hover:scale-[1.03] active:scale-[0.98] md:bottom-7 md:px-6 md:py-3.5 md:text-base${
+            overSponsor ? " pointer-events-none opacity-0" : ""
+          }`}
         >
           <MapIcon size={16} strokeWidth={2.5} />
           <span>Show map</span>
