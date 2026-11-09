@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-02T17:44:30.146Z",
+  "generatedAt": "2026-11-09T18:07:53.873Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 361,
-    "redirect": 38,
-    "broken": 193
+    "ok": 366,
+    "redirect": 39,
+    "broken": 187
   },
   "broken": [
     {
@@ -17,16 +17,6 @@
       "scopeName": "Valencia, Spain",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.numbeo.com/cost-of-living/in/Valencia",
-      "label": "Valencia Cost of Living — Numbeo",
-      "code": 503,
-      "scope": "city",
-      "scopeId": "valencia-es",
-      "scopeName": "Valencia, Spain",
-      "section": "sources",
-      "path": "sources.cost.0"
     },
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
@@ -59,16 +49,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://www.numbeo.com/cost-of-living/in/Lisbon",
-      "label": "Lisbon Cost of Living — Numbeo",
-      "code": 503,
-      "scope": "city",
-      "scopeId": "lisbon-pt",
-      "scopeName": "Lisbon, Portugal",
-      "section": "sources",
-      "path": "sources.cost.0"
-    },
-    {
       "url": "https://www.bayut.com",
       "label": "Bayut — UAE's largest property portal",
       "code": 401,
@@ -99,16 +79,6 @@
       "path": "sources.schools.1"
     },
     {
-      "url": "https://www.numbeo.com/cost-of-living/in/Dubai",
-      "label": "Dubai Cost of Living — Numbeo",
-      "code": 503,
-      "scope": "city",
-      "scopeId": "dubai-ae",
-      "scopeName": "Dubai, UAE",
-      "section": "sources",
-      "path": "sources.cost.0"
-    },
-    {
       "url": "https://www.cmis.ac.th",
       "label": "Chiang Mai International School (CMIS)",
       "code": "fetch failed",
@@ -119,16 +89,6 @@
       "path": "sources.schools.1"
     },
     {
-      "url": "https://www.numbeo.com/cost-of-living/in/Chiang-Mai",
-      "label": "Chiang Mai Cost of Living — Numbeo",
-      "code": 503,
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "sources",
-      "path": "sources.cost.0"
-    },
-    {
       "url": "https://www.bangkokhospital-kohphangan.com",
       "label": "Bangkok Hospital Koh Phangan",
       "code": "fetch failed",
@@ -137,16 +97,6 @@
       "scopeName": "Koh Phangan, Thailand",
       "section": "sources",
       "path": "sources.healthcare.0"
-    },
-    {
-      "url": "https://www.numbeo.com/cost-of-living/in/Ko-Pha-ngan",
-      "label": "Koh Phangan Cost of Living — Numbeo",
-      "code": 503,
-      "scope": "city",
-      "scopeId": "koh-phangan-th",
-      "scopeName": "Koh Phangan, Thailand",
-      "section": "sources",
-      "path": "sources.cost.0"
     },
     {
       "url": "https://www.isssamui.com",
@@ -1829,6 +1779,16 @@
       "path": "visa.options.0.officialLink"
     },
     {
+      "url": "https://www.rumah123.com",
+      "label": "Rumah123 — Indonesian sales and rental portal (homepage — search Bali inside the site)",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
+    },
+    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term house and villa listings",
       "code": 403,
@@ -1867,6 +1827,16 @@
       "scopeName": "Ubud, Indonesia",
       "section": "visa",
       "path": "visa.options.0.officialLink"
+    },
+    {
+      "url": "https://www.rumah123.com",
+      "label": "Rumah123 — filter for Ubud / Gianyar inside the site",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "housing",
+      "path": "housing.searchPortals.0"
     },
     {
       "url": "https://www.lamudi.co.id",
@@ -2489,16 +2459,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.gallito.com.uy",
-      "label": "Gallito — Uruguay's largest classifieds platform with rental section",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "montevideo-uy",
-      "scopeName": "Montevideo, Uruguay",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Montevideo",
       "label": "Montevideo Numbeo",
       "code": 503,
@@ -2697,16 +2657,6 @@
       "scopeName": "Tallinn, Estonia",
       "section": "sources",
       "path": "sources.cost.0"
-    },
-    {
-      "url": "https://www.haigekassa.ee",
-      "label": "Eesti Haigekassa (Estonian Health Insurance Fund)",
-      "code": "The operation was aborted due to timeout",
-      "scope": "city",
-      "scopeId": "tallinn-ee",
-      "scopeName": "Tallinn, Estonia",
-      "section": "sources",
-      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Tbilisi",
@@ -4651,6 +4601,17 @@
       "scopeName": "Tallinn, Estonia",
       "section": "sources",
       "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.haigekassa.ee",
+      "label": "Eesti Haigekassa (Estonian Health Insurance Fund)",
+      "code": 301,
+      "redirectTo": "https://tervisekassa.ee/",
+      "scope": "city",
+      "scopeId": "tallinn-ee",
+      "scopeName": "Tallinn, Estonia",
+      "section": "sources",
+      "path": "sources.healthcare.0"
     },
     {
       "url": "https://www.ss.ge",
