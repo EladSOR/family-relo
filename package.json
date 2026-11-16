@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "find .next/static -name '*.map' -type f -delete",
     "start": "next start",
     "lint": "eslint",
     "validate-cities": "node scripts/validate-cities.mjs",
