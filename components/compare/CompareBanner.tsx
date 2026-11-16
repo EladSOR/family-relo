@@ -78,8 +78,35 @@ export default function CompareBanner() {
     try {
       const dismissed = localStorage.getItem(DISMISS_KEY);
       if (!dismissed) {
-        const t = setTimeout(() => setVisible(true), 2500);
-        return () => clearTimeout(t);
+        let t: ReturnType<typeof setTimeout> | undefined;
+        const show = () => {
+          t = setTimeout(() => setVisible(true), 2500);
+        };
+
+        // Touch screens that are short or wider than a phone (foldables,
+        // landscape phones, tablets): the floating card would sit on top of
+        // the hero search form, so wait until the reader has scrolled past
+        // the first screen before showing it. Regular portrait phones and
+        // desktop keep the original timing.
+        const deferUntilScroll = window.matchMedia(
+          "(pointer: coarse) and ((max-height: 719px) or (min-width: 440px))",
+        ).matches;
+        if (!deferUntilScroll) {
+          show();
+          return () => clearTimeout(t);
+        }
+        const onScroll = () => {
+          if (window.scrollY > window.innerHeight) {
+            window.removeEventListener("scroll", onScroll);
+            show();
+          }
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+        return () => {
+          window.removeEventListener("scroll", onScroll);
+          clearTimeout(t);
+        };
       }
     } catch {
       // localStorage not available (SSR safety)
