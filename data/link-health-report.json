@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-09T18:07:53.873Z",
+  "generatedAt": "2026-11-16T17:49:47.400Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 366,
+    "ok": 370,
     "redirect": 39,
-    "broken": 187
+    "broken": 183
   },
   "broken": [
     {
@@ -61,7 +61,7 @@
     {
       "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae",
       "label": "UAE Virtual Working Programme — Official",
-      "code": 404,
+      "code": "The operation was aborted due to timeout",
       "scope": "city",
       "scopeId": "dubai-ae",
       "scopeName": "Dubai, UAE",
@@ -351,7 +351,7 @@
     {
       "url": "https://www.hipflat.com",
       "label": "Hipflat — Bangkok-focused rental portal",
-      "code": 403,
+      "code": 401,
       "scope": "city",
       "scopeId": "bangkok-th",
       "scopeName": "Bangkok, Thailand",
@@ -381,7 +381,7 @@
     {
       "url": "https://www.hipflat.com",
       "label": "Hipflat — Thai rental portal with strong Phuket inventory",
-      "code": 403,
+      "code": 401,
       "scope": "city",
       "scopeId": "phuket-th",
       "scopeName": "Phuket, Thailand",
@@ -401,22 +401,12 @@
     {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property portal",
-      "code": 403,
+      "code": 404,
       "scope": "city",
       "scopeId": "athens-gr",
       "scopeName": "Athens, Greece",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.tospitimou.gr",
-      "label": "Tospitimou.gr — popular for family homes in the suburbs",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "athens-gr",
-      "scopeName": "Athens, Greece",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
@@ -881,7 +871,7 @@
     {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property rental platform",
-      "code": 403,
+      "code": 404,
       "scope": "city",
       "scopeId": "thessaloniki-gr",
       "scopeName": "Thessaloniki, Greece",
@@ -999,6 +989,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.gov.pl/web/mswia-en",
+      "label": "Poland official government portal — gov.pl",
+      "code": "fetch failed",
+      "scope": "city",
+      "scopeId": "warsaw-pl",
+      "scopeName": "Warsaw, Poland",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Warsaw",
       "label": "Warsaw Cost of Living — Numbeo",
       "code": 503,
@@ -1007,6 +1007,16 @@
       "scopeName": "Warsaw, Poland",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://www.gov.pl/web/mswia-en",
+      "label": "Poland official government portal — gov.pl",
+      "code": "fetch failed",
+      "scope": "city",
+      "scopeId": "krakow-pl",
+      "scopeName": "Krakow, Poland",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Krakow",
@@ -1409,16 +1419,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.redfin.com",
-      "label": "Redfin.com — map search with transit overlays",
-      "code": 405,
-      "scope": "city",
-      "scopeId": "san-francisco-us",
-      "scopeName": "San Francisco, USA",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/San-Francisco",
       "label": "San Francisco Cost of Living — Numbeo",
       "code": 503,
@@ -1467,16 +1467,6 @@
       "scopeName": "Seattle, USA",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://www.redfin.com",
-      "label": "Redfin.com — map search with school overlays",
-      "code": 405,
-      "scope": "city",
-      "scopeId": "seattle-us",
-      "scopeName": "Seattle, USA",
-      "section": "housing",
-      "path": "housing.searchPortals.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Seattle",
@@ -1619,16 +1609,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://immobilien.derstandard.at",
-      "label": "Der Standard Immo — Vienna newspaper rental section, often premium / family flats",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "vienna-at",
-      "scopeName": "Vienna, Austria",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.numbeo.com/cost-of-living/in/Vienna",
       "label": "Vienna Cost of Living — Numbeo",
       "code": 503,
@@ -1649,6 +1629,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://www.sem.admin.ch/sem/en/home.html",
+      "label": "SEM — State Secretariat for Migration official",
+      "code": 404,
+      "scope": "city",
+      "scopeId": "zurich-ch",
+      "scopeName": "Zurich, Switzerland",
+      "section": "visa",
+      "path": "visa.options.1.officialLink"
+    },
+    {
       "url": "https://www.comparis.ch",
       "label": "Comparis.ch — listings with insurance tools",
       "code": 403,
@@ -1667,6 +1657,16 @@
       "scopeName": "Zurich, Switzerland",
       "section": "housing",
       "path": "housing.searchPortals.2"
+    },
+    {
+      "url": "https://www.sem.admin.ch/sem/en/home.html",
+      "label": "SEM — Swiss migration official",
+      "code": 404,
+      "scope": "city",
+      "scopeId": "zurich-ch",
+      "scopeName": "Zurich, Switzerland",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Zurich",
@@ -1769,26 +1769,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.imigrasi.go.id",
-      "label": "Indonesia Directorate General of Immigration — official",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "bali-id",
-      "scopeName": "Bali, Indonesia",
-      "section": "visa",
-      "path": "visa.options.0.officialLink"
-    },
-    {
-      "url": "https://www.rumah123.com",
-      "label": "Rumah123 — Indonesian sales and rental portal (homepage — search Bali inside the site)",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "bali-id",
-      "scopeName": "Bali, Indonesia",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term house and villa listings",
       "code": 403,
@@ -1797,16 +1777,6 @@
       "scopeName": "Bali, Indonesia",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://www.imigrasi.go.id",
-      "label": "Indonesia Directorate General of Immigration — official",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "bali-id",
-      "scopeName": "Bali, Indonesia",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bali",
@@ -1819,26 +1789,6 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.imigrasi.go.id",
-      "label": "Indonesia Directorate General of Immigration — official",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "ubud-id",
-      "scopeName": "Ubud, Indonesia",
-      "section": "visa",
-      "path": "visa.options.0.officialLink"
-    },
-    {
-      "url": "https://www.rumah123.com",
-      "label": "Rumah123 — filter for Ubud / Gianyar inside the site",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "ubud-id",
-      "scopeName": "Ubud, Indonesia",
-      "section": "housing",
-      "path": "housing.searchPortals.0"
-    },
-    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term villa inventory",
       "code": 403,
@@ -1847,16 +1797,6 @@
       "scopeName": "Ubud, Indonesia",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://www.imigrasi.go.id",
-      "label": "Indonesia Directorate General of Immigration — official",
-      "code": 403,
-      "scope": "city",
-      "scopeId": "ubud-id",
-      "scopeName": "Ubud, Indonesia",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Denpasar",
@@ -1911,7 +1851,7 @@
     {
       "url": "https://www.argenprop.com",
       "label": "Argenprop — major Argentine rental portal",
-      "code": 405,
+      "code": 403,
       "scope": "city",
       "scopeId": "buenos-aires-ar",
       "scopeName": "Buenos Aires, Argentina",
@@ -2521,7 +2461,7 @@
     {
       "url": "https://www.magicbricks.com",
       "label": "MagicBricks — India's largest property portal; search Bengaluru for a broad range of listings",
-      "code": 503,
+      "code": 403,
       "scope": "city",
       "scopeId": "bengaluru-in",
       "scopeName": "Bengaluru, India",
@@ -2541,7 +2481,7 @@
     {
       "url": "https://www.magicbricks.com",
       "label": "MagicBricks — India's largest property portal; search Mumbai for the broadest range of listings",
-      "code": 503,
+      "code": 403,
       "scope": "city",
       "scopeId": "mumbai-in",
       "scopeName": "Mumbai, India",
@@ -2749,16 +2689,6 @@
       "path": "housing.searchPortals.0"
     },
     {
-      "url": "https://www.redfin.com",
-      "label": "Redfin — US property portal with detailed school-district information for San Diego listings",
-      "code": 405,
-      "scope": "city",
-      "scopeId": "san-diego-us",
-      "scopeName": "San Diego, USA",
-      "section": "housing",
-      "path": "housing.searchPortals.2"
-    },
-    {
       "url": "https://www.realtor.com",
       "label": "Realtor.com — additional US rental and sales inventory",
       "code": 429,
@@ -2897,16 +2827,6 @@
       "scopeName": "Faro, Portugal",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://casa.sapo.pt",
-      "label": "Casa Sapo — additional Portuguese rental and sales inventory",
-      "code": 429,
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "housing",
-      "path": "housing.searchPortals.3"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Faro",
@@ -3116,17 +3036,6 @@
       "scopeName": "Dubai, UAE",
       "section": "visa",
       "path": "visa.options.2.officialLink"
-    },
-    {
-      "url": "https://www.khda.gov.ae/en/inspectionreports",
-      "label": "KHDA School Ratings — Official",
-      "code": 301,
-      "redirectTo": "https://web.khda.gov.ae/en",
-      "scope": "city",
-      "scopeId": "dubai-ae",
-      "scopeName": "Dubai, UAE",
-      "section": "sources",
-      "path": "sources.schools.0"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
@@ -4518,7 +4427,7 @@
       "url": "https://www.logic-immo.be",
       "label": "Logic-Immo — major Belgian rental and sales portal",
       "code": 301,
-      "redirectTo": "https://www.zimmo.be/fr/logic-immo",
+      "redirectTo": "https://www.zimmo.be/fr",
       "scope": "city",
       "scopeId": "brussels-be",
       "scopeName": "Brussels, Belgium",
@@ -4755,6 +4664,17 @@
       "scopeName": "The Hague, Netherlands",
       "section": "housing",
       "path": "housing.searchPortals.2"
+    },
+    {
+      "url": "https://www.holland2stay.com",
+      "label": "Holland2Stay — relocation-friendly Dutch rental platform popular with international staff",
+      "code": 301,
+      "redirectTo": "https://codomo.eu/en?from=holland2stay",
+      "scope": "city",
+      "scopeId": "the-hague-nl",
+      "scopeName": "The Hague, Netherlands",
+      "section": "housing",
+      "path": "housing.searchPortals.3"
     },
     {
       "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
