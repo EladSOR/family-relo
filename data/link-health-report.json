@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-16T17:49:47.400Z",
+  "generatedAt": "2026-11-23T19:48:27.001Z",
   "totals": {
     "uniqueUrls": 592,
     "occurrences": 1039,
-    "ok": 370,
-    "redirect": 39,
-    "broken": 183
+    "ok": 368,
+    "redirect": 38,
+    "broken": 186
   },
   "broken": [
     {
@@ -19,9 +19,19 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "valencia-es",
+      "scopeName": "Valencia, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": 403,
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "lisbon-pt",
       "scopeName": "Lisbon, Portugal",
@@ -41,12 +51,22 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Visa — Official",
-      "code": 403,
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "lisbon-pt",
       "scopeName": "Lisbon, Portugal",
       "section": "sources",
       "path": "sources.visa.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "lisbon-pt",
+      "scopeName": "Lisbon, Portugal",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.bayut.com",
@@ -61,7 +81,7 @@
     {
       "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-working-outside-the-uae",
       "label": "UAE Virtual Working Programme — Official",
-      "code": "The operation was aborted due to timeout",
+      "code": 404,
       "scope": "city",
       "scopeId": "dubai-ae",
       "scopeName": "Dubai, UAE",
@@ -79,6 +99,16 @@
       "path": "sources.schools.1"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "dubai-ae",
+      "scopeName": "Dubai, UAE",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.cmis.ac.th",
       "label": "Chiang Mai International School (CMIS)",
       "code": "fetch failed",
@@ -89,6 +119,16 @@
       "path": "sources.schools.1"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "chiang-mai-th",
+      "scopeName": "Chiang Mai, Thailand",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.bangkokhospital-kohphangan.com",
       "label": "Bangkok Hospital Koh Phangan",
       "code": "fetch failed",
@@ -97,6 +137,16 @@
       "scopeName": "Koh Phangan, Thailand",
       "section": "sources",
       "path": "sources.healthcare.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "koh-phangan-th",
+      "scopeName": "Koh Phangan, Thailand",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.isssamui.com",
@@ -139,6 +189,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "koh-samui-th",
+      "scopeName": "Koh Samui, Thailand",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest rental portal",
       "code": 403,
@@ -157,6 +217,16 @@
       "scopeName": "Barcelona, Spain",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "barcelona-es",
+      "scopeName": "Barcelona, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.idealista.com",
@@ -179,9 +249,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "madrid-es",
+      "scopeName": "Madrid, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": 403,
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "porto-pt",
       "scopeName": "Porto, Portugal",
@@ -201,7 +281,7 @@
     {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Visa — Official",
-      "code": 403,
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "porto-pt",
       "scopeName": "Porto, Portugal",
@@ -217,6 +297,16 @@
       "scopeName": "Porto, Portugal",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "porto-pt",
+      "scopeName": "Porto, Portugal",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immobilienscout24.de",
@@ -259,6 +349,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "berlin-de",
+      "scopeName": "Berlin, Germany",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.pararius.com",
       "label": "Pararius — strong rental focus, English-language interface",
       "code": 403,
@@ -279,6 +379,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "amsterdam-nl",
+      "scopeName": "Amsterdam, Netherlands",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Prague",
       "label": "Prague Cost of Living — Numbeo",
       "code": 503,
@@ -287,6 +397,16 @@
       "scopeName": "Prague, Czech Republic",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "prague-cz",
+      "scopeName": "Prague, Czech Republic",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.gov.hu/en",
@@ -339,6 +459,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "budapest-hu",
+      "scopeName": "Budapest, Hungary",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.ddproperty.com",
       "label": "DDproperty — Thailand's largest property portal (English interface)",
       "code": 403,
@@ -351,7 +481,7 @@
     {
       "url": "https://www.hipflat.com",
       "label": "Hipflat — Bangkok-focused rental portal",
-      "code": 401,
+      "code": 403,
       "scope": "city",
       "scopeId": "bangkok-th",
       "scopeName": "Bangkok, Thailand",
@@ -369,6 +499,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bangkok-th",
+      "scopeName": "Bangkok, Thailand",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.ddproperty.com",
       "label": "DDproperty — Thailand's largest property portal",
       "code": 403,
@@ -381,7 +521,7 @@
     {
       "url": "https://www.hipflat.com",
       "label": "Hipflat — Thai rental portal with strong Phuket inventory",
-      "code": 401,
+      "code": 403,
       "scope": "city",
       "scopeId": "phuket-th",
       "scopeName": "Phuket, Thailand",
@@ -399,14 +539,34 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "phuket-th",
+      "scopeName": "Phuket, Thailand",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property portal",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "athens-gr",
       "scopeName": "Athens, Greece",
       "section": "housing",
       "path": "housing.searchPortals.0"
+    },
+    {
+      "url": "https://www.tospitimou.gr",
+      "label": "Tospitimou.gr — popular for family homes in the suburbs",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "athens-gr",
+      "scopeName": "Athens, Greece",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
     },
     {
       "url": "https://www.enterprisegreece.gov.gr/en/invest-in-greece/live-in-greece/digital-nomad-visa",
@@ -429,6 +589,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "athens-gr",
+      "scopeName": "Athens, Greece",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest rental portal",
       "code": 403,
@@ -449,6 +619,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "malaga-es",
+      "scopeName": "Malaga, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.bayut.com",
       "label": "Bayut.com — UAE's most used property portal",
       "code": 401,
@@ -467,6 +647,16 @@
       "scopeName": "Abu Dhabi, UAE",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "abu-dhabi-ae",
+      "scopeName": "Abu Dhabi, UAE",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.domain.com.au",
@@ -509,6 +699,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "sydney-au",
+      "scopeName": "Sydney, Australia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
       "code": 403,
@@ -537,6 +737,16 @@
       "scopeName": "Tel Aviv, Israel",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tel-aviv-il",
+      "scopeName": "Tel Aviv, Israel",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.madlan.co.il",
@@ -569,6 +779,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "eilat-il",
+      "scopeName": "Eilat, Israel",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — Israeli property portal with map-based search",
       "code": 403,
@@ -597,6 +817,16 @@
       "scopeName": "Beer Sheva, Israel",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "beer-sheva-il",
+      "scopeName": "Beer Sheva, Israel",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.domain.com.au",
@@ -639,6 +869,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "melbourne-au",
+      "scopeName": "Melbourne, Australia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.domain.com.au",
       "label": "Domain.com.au — one of Australia's two largest property portals",
       "code": 404,
@@ -679,6 +919,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "brisbane-au",
+      "scopeName": "Brisbane, Australia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Auckland",
       "label": "Auckland Cost of Living — Numbeo",
       "code": 503,
@@ -689,6 +939,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "auckland-nz",
+      "scopeName": "Auckland, New Zealand",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Wellington",
       "label": "Wellington Cost of Living — Numbeo",
       "code": 503,
@@ -697,6 +957,16 @@
       "scopeName": "Wellington, New Zealand",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "wellington-nz",
+      "scopeName": "Wellington, New Zealand",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immobiliare.it",
@@ -739,6 +1009,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "milan-it",
+      "scopeName": "Milan, Italy",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.immobiliare.it",
       "label": "Immobiliare.it — Italy's largest property rental platform",
       "code": 403,
@@ -779,6 +1059,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "florence-it",
+      "scopeName": "Florence, Italy",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.idealista.com",
       "label": "Idealista — Spain's largest property portal",
       "code": 403,
@@ -797,6 +1087,16 @@
       "scopeName": "Alicante, Spain",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "alicante-es",
+      "scopeName": "Alicante, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.idealista.pt",
@@ -827,6 +1127,16 @@
       "scopeName": "Cascais, Portugal",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "cascais-pt",
+      "scopeName": "Cascais, Portugal",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immobilienscout24.de",
@@ -869,9 +1179,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "munich-de",
+      "scopeName": "Munich, Germany",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.spitogatos.gr",
       "label": "Spitogatos.gr — Greece's largest property rental platform",
-      "code": 404,
+      "code": 403,
       "scope": "city",
       "scopeId": "thessaloniki-gr",
       "scopeName": "Thessaloniki, Greece",
@@ -887,6 +1207,16 @@
       "scopeName": "Thessaloniki, Greece",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "thessaloniki-gr",
+      "scopeName": "Thessaloniki, Greece",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.seloger.com",
@@ -939,6 +1269,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "paris-fr",
+      "scopeName": "Paris, France",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.seloger.com",
       "label": "SeLoger.com — France's largest long-term rental platform",
       "code": 403,
@@ -989,14 +1329,14 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.gov.pl/web/mswia-en",
-      "label": "Poland official government portal — gov.pl",
-      "code": "fetch failed",
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
       "scope": "city",
-      "scopeId": "warsaw-pl",
-      "scopeName": "Warsaw, Poland",
+      "scopeId": "nice-fr",
+      "scopeName": "Nice, France",
       "section": "sources",
-      "path": "sources.visa.0"
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Warsaw",
@@ -1009,14 +1349,14 @@
       "path": "sources.cost.0"
     },
     {
-      "url": "https://www.gov.pl/web/mswia-en",
-      "label": "Poland official government portal — gov.pl",
-      "code": "fetch failed",
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
       "scope": "city",
-      "scopeId": "krakow-pl",
-      "scopeName": "Krakow, Poland",
+      "scopeId": "warsaw-pl",
+      "scopeName": "Warsaw, Poland",
       "section": "sources",
-      "path": "sources.visa.0"
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Krakow",
@@ -1027,6 +1367,16 @@
       "scopeName": "Krakow, Poland",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "krakow-pl",
+      "scopeName": "Krakow, Poland",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.streeteasy.com",
@@ -1059,6 +1409,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "new-york-city-us",
+      "scopeName": "New York City, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — comprehensive US rental and sales platform with strong Miami coverage",
       "code": 403,
@@ -1087,6 +1447,16 @@
       "scopeName": "Miami, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "miami-us",
+      "scopeName": "Miami, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -1119,6 +1489,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "dallas-us",
+      "scopeName": "Dallas, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.encuentra24.com",
       "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
       "code": 403,
@@ -1149,6 +1529,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "san-jose-cr",
+      "scopeName": "San Jose, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.encuentra24.com",
       "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
       "code": 403,
@@ -1177,6 +1567,16 @@
       "scopeName": "Tamarindo, Costa Rica",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tamarindo-cr",
+      "scopeName": "Tamarindo, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.encuentra24.com",
@@ -1209,6 +1609,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "heredia-cr",
+      "scopeName": "Heredia, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.encuentra24.com",
       "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
       "code": 403,
@@ -1237,6 +1647,16 @@
       "scopeName": "Atenas, Costa Rica",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "atenas-cr",
+      "scopeName": "Atenas, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.encuentra24.com",
@@ -1269,6 +1689,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "puerto-viejo-cr",
+      "scopeName": "Puerto Viejo, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.encuentra24.com",
       "label": "Encuentra24.com — Costa Rica property classifieds (search San Jose, Escazu, or Santa Ana inside the site)",
       "code": 403,
@@ -1297,6 +1727,16 @@
       "scopeName": "Santa Teresa, Costa Rica",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "santa-teresa-cr",
+      "scopeName": "Santa Teresa, Costa Rica",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.rentals.ca",
@@ -1329,6 +1769,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "vancouver-ca",
+      "scopeName": "Vancouver, Canada",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.rentals.ca",
       "label": "Rentals.ca — Canada's largest dedicated rental platform with strong Toronto and suburb coverage",
       "code": 403,
@@ -1359,6 +1809,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "toronto-ca",
+      "scopeName": "Toronto, Canada",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.madlan.co.il",
       "label": "Madlan.co.il — map-based rentals and sales",
       "code": 403,
@@ -1377,6 +1837,16 @@
       "scopeName": "Jerusalem, Israel",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "jerusalem-il",
+      "scopeName": "Jerusalem, Israel",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -1409,6 +1879,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "los-angeles-us",
+      "scopeName": "Los Angeles, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — SF, Peninsula, and East Bay rentals",
       "code": 403,
@@ -1419,6 +1899,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with transit overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-francisco-us",
+      "scopeName": "San Francisco, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/San-Francisco",
       "label": "San Francisco Cost of Living — Numbeo",
       "code": 503,
@@ -1427,6 +1917,16 @@
       "scopeName": "San Francisco, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "san-francisco-us",
+      "scopeName": "San Francisco, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -1459,6 +1959,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "chicago-us",
+      "scopeName": "Chicago, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — city and Eastside inventory",
       "code": 403,
@@ -1469,6 +1979,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin.com — map search with school overlays",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "seattle-us",
+      "scopeName": "Seattle, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Seattle",
       "label": "Seattle Cost of Living — Numbeo",
       "code": 503,
@@ -1477,6 +1997,16 @@
       "scopeName": "Seattle, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "seattle-us",
+      "scopeName": "Seattle, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -1509,6 +2039,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "austin-us",
+      "scopeName": "Austin, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zoopla.co.uk",
       "label": "Zoopla.co.uk — strong London inventory",
       "code": 403,
@@ -1529,6 +2069,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "london-gb",
+      "scopeName": "London, United Kingdom",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.rent.ie",
       "label": "Rent.ie — landlord-direct listings",
       "code": 403,
@@ -1547,6 +2097,16 @@
       "scopeName": "Dublin, Ireland",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "dublin-ie",
+      "scopeName": "Dublin, Ireland",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immobiliare.it",
@@ -1589,6 +2149,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "rome-it",
+      "scopeName": "Rome, Italy",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.willhaben.at",
       "label": "Willhaben.at — Austria's largest rental and classifieds platform",
       "code": 404,
@@ -1619,6 +2189,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "vienna-at",
+      "scopeName": "Vienna, Austria",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Copenhagen",
       "label": "Copenhagen Cost of Living — Numbeo",
       "code": 503,
@@ -1627,6 +2207,16 @@
       "scopeName": "Copenhagen, Denmark",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "copenhagen-dk",
+      "scopeName": "Copenhagen, Denmark",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.sem.admin.ch/sem/en/home.html",
@@ -1679,6 +2269,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "zurich-ch",
+      "scopeName": "Zurich, Switzerland",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.propertyguru.com.sg",
       "label": "PropertyGuru Singapore — rental and sale listings (search district or school name inside the site)",
       "code": 403,
@@ -1699,6 +2299,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "singapore-sg",
+      "scopeName": "Singapore, Singapore",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Tokyo",
       "label": "Tokyo Cost of Living — Numbeo",
       "code": 503,
@@ -1709,6 +2319,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tokyo-jp",
+      "scopeName": "Tokyo, Japan",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Taipei",
       "label": "Taipei Cost of Living — Numbeo",
       "code": 503,
@@ -1717,6 +2337,16 @@
       "scopeName": "Taipei, Taiwan",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "taipei-tw",
+      "scopeName": "Taipei, Taiwan",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.iproperty.com.my",
@@ -1769,6 +2399,26 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "kuala-lumpur-my",
+      "scopeName": "Kuala Lumpur, Malaysia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
+    },
+    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term house and villa listings",
       "code": 403,
@@ -1777,6 +2427,16 @@
       "scopeName": "Bali, Indonesia",
       "section": "housing",
       "path": "housing.searchPortals.1"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
     },
     {
       "url": "https://www.numbeo.com/cost-of-living/in/Bali",
@@ -1789,6 +2449,26 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bali-id",
+      "scopeName": "Bali, Indonesia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "visa",
+      "path": "visa.options.0.officialLink"
+    },
+    {
       "url": "https://www.lamudi.co.id",
       "label": "Lamudi Indonesia — long-term villa inventory",
       "code": 403,
@@ -1799,6 +2479,16 @@
       "path": "housing.searchPortals.1"
     },
     {
+      "url": "https://www.imigrasi.go.id",
+      "label": "Indonesia Directorate General of Immigration — official",
+      "code": 403,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "sources",
+      "path": "sources.visa.0"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Denpasar",
       "label": "Ubud area cost context — Numbeo (Denpasar)",
       "code": 503,
@@ -1807,6 +2497,16 @@
       "scopeName": "Ubud, Indonesia",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "ubud-id",
+      "scopeName": "Ubud, Indonesia",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.properati.com.co",
@@ -1839,6 +2539,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "medellin-co",
+      "scopeName": "Medellín, Colombia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zonaprop.com.ar",
       "label": "Zonaprop — Argentina's largest property portal",
       "code": 403,
@@ -1851,7 +2561,7 @@
     {
       "url": "https://www.argenprop.com",
       "label": "Argenprop — major Argentine rental portal",
-      "code": 403,
+      "code": 405,
       "scope": "city",
       "scopeId": "buenos-aires-ar",
       "scopeName": "Buenos Aires, Argentina",
@@ -1887,6 +2597,16 @@
       "scopeName": "Buenos Aires, Argentina",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "buenos-aires-ar",
+      "scopeName": "Buenos Aires, Argentina",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://urbania.pe",
@@ -1939,6 +2659,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "lima-pe",
+      "scopeName": "Lima, Peru",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -1967,6 +2697,16 @@
       "scopeName": "Charlotte, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "charlotte-us",
+      "scopeName": "Charlotte, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -1999,6 +2739,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "raleigh-us",
+      "scopeName": "Raleigh, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -2027,6 +2777,16 @@
       "scopeName": "Charleston, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "charleston-us",
+      "scopeName": "Charleston, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -2059,6 +2819,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "greenville-sc-us",
+      "scopeName": "Greenville, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -2087,6 +2857,16 @@
       "scopeName": "Atlanta, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "atlanta-us",
+      "scopeName": "Atlanta, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -2119,6 +2899,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "denver-us",
+      "scopeName": "Denver, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -2147,6 +2937,16 @@
       "scopeName": "Nashville, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "nashville-us",
+      "scopeName": "Nashville, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -2179,6 +2979,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "salt-lake-city-us",
+      "scopeName": "Salt Lake City, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -2207,6 +3017,16 @@
       "scopeName": "Phoenix, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "phoenix-us",
+      "scopeName": "Phoenix, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -2239,6 +3059,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tampa-us",
+      "scopeName": "Tampa, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.zillow.com",
       "label": "Zillow.com — rentals (filter by neighbourhood ZIP inside the site)",
       "code": 403,
@@ -2269,6 +3099,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "portland-or-us",
+      "scopeName": "Portland, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.vivanuncios.com.mx",
       "label": "Vivanuncios — classified rentals",
       "code": 403,
@@ -2297,6 +3137,16 @@
       "scopeName": "Mexico City, Mexico",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "mexico-city-mx",
+      "scopeName": "Mexico City, Mexico",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.encuentra24.com",
@@ -2337,6 +3187,16 @@
       "scopeName": "Panama City, Panama",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "panama-city-pa",
+      "scopeName": "Panama City, Panama",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.portalinmobiliario.com",
@@ -2389,6 +3249,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "santiago-cl",
+      "scopeName": "Santiago, Chile",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://inmuebles.mercadolibre.com.uy",
       "label": "Mercado Libre Inmuebles Uruguay — strong direct-from-owner inventory",
       "code": 403,
@@ -2407,6 +3277,16 @@
       "scopeName": "Montevideo, Uruguay",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "montevideo-uy",
+      "scopeName": "Montevideo, Uruguay",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.properati.com.co",
@@ -2439,6 +3319,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bogota-co",
+      "scopeName": "Bogotá, Colombia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://batdongsan.com.vn",
       "label": "Batdongsan — Vietnam's largest property portal",
       "code": 403,
@@ -2459,9 +3349,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "ho-chi-minh-city-vn",
+      "scopeName": "Ho Chi Minh City, Vietnam",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.magicbricks.com",
       "label": "MagicBricks — India's largest property portal; search Bengaluru for a broad range of listings",
-      "code": 403,
+      "code": 503,
       "scope": "city",
       "scopeId": "bengaluru-in",
       "scopeName": "Bengaluru, India",
@@ -2479,9 +3379,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bengaluru-in",
+      "scopeName": "Bengaluru, India",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.magicbricks.com",
       "label": "MagicBricks — India's largest property portal; search Mumbai for the broadest range of listings",
-      "code": 403,
+      "code": 503,
       "scope": "city",
       "scopeId": "mumbai-in",
       "scopeName": "Mumbai, India",
@@ -2499,6 +3409,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "mumbai-in",
+      "scopeName": "Mumbai, India",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Brussels",
       "label": "Brussels Cost of Living — Numbeo",
       "code": 503,
@@ -2509,6 +3429,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "brussels-be",
+      "scopeName": "Brussels, Belgium",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Bucharest",
       "label": "Bucharest Cost of Living — Numbeo",
       "code": 503,
@@ -2517,6 +3447,16 @@
       "scopeName": "Bucharest, Romania",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bucharest-ro",
+      "scopeName": "Bucharest, Romania",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.cnas.ro",
@@ -2569,6 +3509,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "stockholm-se",
+      "scopeName": "Stockholm, Sweden",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.kv.ee",
       "label": "KV.ee — Estonia's largest property portal",
       "code": 403,
@@ -2599,6 +3549,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tallinn-ee",
+      "scopeName": "Tallinn, Estonia",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.numbeo.com/cost-of-living/in/Tbilisi",
       "label": "Tbilisi Cost of Living — Numbeo",
       "code": 503,
@@ -2607,6 +3567,16 @@
       "scopeName": "Tbilisi, Georgia",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "tbilisi-ge",
+      "scopeName": "Tbilisi, Georgia",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.idealista.com",
@@ -2627,6 +3597,16 @@
       "scopeName": "Bilbao, Spain",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "bilbao-es",
+      "scopeName": "Bilbao, Spain",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.zillow.com",
@@ -2669,6 +3649,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "boston-us",
+      "scopeName": "Boston, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.mahealthconnector.org",
       "label": "Massachusetts Health Connector (state health insurance marketplace)",
       "code": 403,
@@ -2689,6 +3679,16 @@
       "path": "housing.searchPortals.0"
     },
     {
+      "url": "https://www.redfin.com",
+      "label": "Redfin — US property portal with detailed school-district information for San Diego listings",
+      "code": 405,
+      "scope": "city",
+      "scopeId": "san-diego-us",
+      "scopeName": "San Diego, USA",
+      "section": "housing",
+      "path": "housing.searchPortals.2"
+    },
+    {
       "url": "https://www.realtor.com",
       "label": "Realtor.com — additional US rental and sales inventory",
       "code": 429,
@@ -2707,6 +3707,16 @@
       "scopeName": "San Diego, USA",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "san-diego-us",
+      "scopeName": "San Diego, USA",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immobilienscout24.de",
@@ -2749,6 +3759,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "hamburg-de",
+      "scopeName": "Hamburg, Germany",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.pararius.com",
       "label": "Pararius — major Dutch rental portal with strong The Hague coverage",
       "code": 403,
@@ -2767,6 +3787,16 @@
       "scopeName": "The Hague, Netherlands",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "the-hague-nl",
+      "scopeName": "The Hague, Netherlands",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.realtor.ca",
@@ -2809,9 +3839,19 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "calgary-ca",
+      "scopeName": "Calgary, Canada",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
       "label": "Portugal D8 Digital Nomad Visa official requirements",
-      "code": 403,
+      "code": "fetch failed",
       "scope": "city",
       "scopeId": "faro-pt",
       "scopeName": "Faro, Portugal",
@@ -2837,6 +3877,16 @@
       "scopeName": "Faro, Portugal",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "faro-pt",
+      "scopeName": "Faro, Portugal",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.seloger.com",
@@ -2887,6 +3937,16 @@
       "scopeName": "Lyon, France",
       "section": "sources",
       "path": "sources.cost.0"
+    },
+    {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "lyon-fr",
+      "scopeName": "Lyon, France",
+      "section": "sources",
+      "path": "sources.weather.1"
     },
     {
       "url": "https://www.ac-lyon.fr",
@@ -2949,6 +4009,16 @@
       "path": "sources.cost.0"
     },
     {
+      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
+      "label": "MERRA-2 reanalysis (meteorological source)",
+      "code": 502,
+      "scope": "city",
+      "scopeId": "naples-it",
+      "scopeName": "Naples, Italy",
+      "section": "sources",
+      "path": "sources.weather.1"
+    },
+    {
       "url": "https://www.aslnapoli1centro.it",
       "label": "ASL Napoli (local health authority)",
       "code": "fetch failed",
@@ -2994,17 +4064,6 @@
       "path": "sources.schools.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "valencia-es",
-      "scopeName": "Valencia, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.remax.pt",
       "label": "Remax Portugal — good for family homes in Cascais and Oeiras",
       "code": 301,
@@ -3014,17 +4073,6 @@
       "scopeName": "Lisbon, Portugal",
       "section": "housing",
       "path": "housing.searchPortals.3"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "lisbon-pt",
-      "scopeName": "Lisbon, Portugal",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://icp.gov.ae/en/services/golden-visa",
@@ -3038,48 +4086,15 @@
       "path": "visa.options.2.officialLink"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
+      "url": "https://www.khda.gov.ae/en/inspectionreports",
+      "label": "KHDA School Ratings — Official",
       "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
+      "redirectTo": "https://web.khda.gov.ae/en",
       "scope": "city",
       "scopeId": "dubai-ae",
       "scopeName": "Dubai, UAE",
       "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "chiang-mai-th",
-      "scopeName": "Chiang Mai, Thailand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "koh-phangan-th",
-      "scopeName": "Koh Phangan, Thailand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "koh-samui-th",
-      "scopeName": "Koh Samui, Thailand",
-      "section": "sources",
-      "path": "sources.weather.1"
+      "path": "sources.schools.0"
     },
     {
       "url": "https://www.fotocasa.es",
@@ -3093,17 +4108,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "barcelona-es",
-      "scopeName": "Barcelona, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.fotocasa.es",
       "label": "Fotocasa — strong secondary market",
       "code": 302,
@@ -3113,17 +4117,6 @@
       "scopeName": "Madrid, Spain",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "madrid-es",
-      "scopeName": "Madrid, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.remax.pt",
@@ -3135,17 +4128,6 @@
       "scopeName": "Porto, Portugal",
       "section": "housing",
       "path": "housing.searchPortals.3"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "porto-pt",
-      "scopeName": "Porto, Portugal",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
@@ -3170,28 +4152,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "berlin-de",
-      "scopeName": "Berlin, Germany",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "amsterdam-nl",
-      "scopeName": "Amsterdam, Netherlands",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.mvcr.cz/mvcren/article/employee-card.aspx",
       "label": "Czech Employee Card Zaměstnanecká karta official requirements",
       "code": 301,
@@ -3214,17 +4174,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "prague-cz",
-      "scopeName": "Prague, Czech Republic",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.otthonterkep.hu",
       "label": "Otthontérkép — major Hungarian rental portal",
       "code": 301,
@@ -3234,50 +4183,6 @@
       "scopeName": "Budapest, Hungary",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "budapest-hu",
-      "scopeName": "Budapest, Hungary",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bangkok-th",
-      "scopeName": "Bangkok, Thailand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "phuket-th",
-      "scopeName": "Phuket, Thailand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "athens-gr",
-      "scopeName": "Athens, Greece",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.fotocasa.es",
@@ -3291,28 +4196,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "malaga-es",
-      "scopeName": "Malaga, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "abu-dhabi-ae",
-      "scopeName": "Abu Dhabi, UAE",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.flatmates.com.au",
       "label": "Flatmates.com.au — useful for furnished short-term rooms while searching for a full family property",
       "code": 301,
@@ -3333,50 +4216,6 @@
       "scopeName": "Sydney, Australia",
       "section": "sources",
       "path": "sources.visa.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "sydney-au",
-      "scopeName": "Sydney, Australia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tel-aviv-il",
-      "scopeName": "Tel Aviv, Israel",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "eilat-il",
-      "scopeName": "Eilat, Israel",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "beer-sheva-il",
-      "scopeName": "Beer Sheva, Israel",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.flatmates.com.au",
@@ -3401,17 +4240,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "melbourne-au",
-      "scopeName": "Melbourne, Australia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.flatmates.com.au",
       "label": "Flatmates.com.au — useful for furnished short-term rooms while searching for a full family property",
       "code": 301,
@@ -3432,17 +4260,6 @@
       "scopeName": "Brisbane, Australia",
       "section": "sources",
       "path": "sources.visa.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "brisbane-au",
-      "scopeName": "Brisbane, Australia",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.trademe.co.nz/property",
@@ -3478,17 +4295,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "auckland-nz",
-      "scopeName": "Auckland, New Zealand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.trademe.co.nz/property",
       "label": "TradeMe Property — New Zealand's largest property rental platform",
       "code": 301,
@@ -3522,39 +4328,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "wellington-nz",
-      "scopeName": "Wellington, New Zealand",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "milan-it",
-      "scopeName": "Milan, Italy",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "florence-it",
-      "scopeName": "Florence, Italy",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.fotocasa.es",
       "label": "Fotocasa — major Spanish property portal with strong Alicante listings",
       "code": 302,
@@ -3564,28 +4337,6 @@
       "scopeName": "Alicante, Spain",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "alicante-es",
-      "scopeName": "Alicante, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "cascais-pt",
-      "scopeName": "Cascais, Portugal",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
@@ -3610,50 +4361,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "munich-de",
-      "scopeName": "Munich, Germany",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "thessaloniki-gr",
-      "scopeName": "Thessaloniki, Greece",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "paris-fr",
-      "scopeName": "Paris, France",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "nice-fr",
-      "scopeName": "Nice, France",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.gratka.pl",
       "label": "Gratka.pl — secondary Polish property portal with good family-sized flat coverage",
       "code": 301,
@@ -3663,17 +4370,6 @@
       "scopeName": "Warsaw, Poland",
       "section": "housing",
       "path": "housing.searchPortals.2"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "warsaw-pl",
-      "scopeName": "Warsaw, Poland",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.gratka.pl",
@@ -3687,50 +4383,6 @@
       "path": "housing.searchPortals.2"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "krakow-pl",
-      "scopeName": "Krakow, Poland",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "new-york-city-us",
-      "scopeName": "New York City, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "miami-us",
-      "scopeName": "Miami, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "dallas-us",
-      "scopeName": "Dallas, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://costarica.craigslist.org",
       "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
       "code": 301,
@@ -3740,17 +4392,6 @@
       "scopeName": "San Jose, Costa Rica",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "san-jose-cr",
-      "scopeName": "San Jose, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://costarica.craigslist.org",
@@ -3764,17 +4405,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tamarindo-cr",
-      "scopeName": "Tamarindo, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://costarica.craigslist.org",
       "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
       "code": 301,
@@ -3784,17 +4414,6 @@
       "scopeName": "Heredia, Costa Rica",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "heredia-cr",
-      "scopeName": "Heredia, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://costarica.craigslist.org",
@@ -3808,17 +4427,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "atenas-cr",
-      "scopeName": "Atenas, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://costarica.craigslist.org",
       "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
       "code": 301,
@@ -3830,17 +4438,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "puerto-viejo-cr",
-      "scopeName": "Puerto Viejo, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://costarica.craigslist.org",
       "label": "Craigslist Costa Rica — long-term rentals and shares (costarica.craigslist.org)",
       "code": 301,
@@ -3850,149 +4447,6 @@
       "scopeName": "Santa Teresa, Costa Rica",
       "section": "housing",
       "path": "housing.searchPortals.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "santa-teresa-cr",
-      "scopeName": "Santa Teresa, Costa Rica",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "vancouver-ca",
-      "scopeName": "Vancouver, Canada",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "toronto-ca",
-      "scopeName": "Toronto, Canada",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "jerusalem-il",
-      "scopeName": "Jerusalem, Israel",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "los-angeles-us",
-      "scopeName": "Los Angeles, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "san-francisco-us",
-      "scopeName": "San Francisco, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "chicago-us",
-      "scopeName": "Chicago, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "seattle-us",
-      "scopeName": "Seattle, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "austin-us",
-      "scopeName": "Austin, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "london-gb",
-      "scopeName": "London, United Kingdom",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "dublin-ie",
-      "scopeName": "Dublin, Ireland",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "rome-it",
-      "scopeName": "Rome, Italy",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://www.migration.gv.at",
-      "label": "Migration.gv.at — Austria's official migration portal",
-      "code": 307,
-      "redirectTo": "http://www.migration.gv.at/de/willkommen/?no_cache=1",
-      "scope": "city",
-      "scopeId": "vienna-at",
-      "scopeName": "Vienna, Austria",
-      "section": "sources",
-      "path": "sources.visa.0"
     },
     {
       "url": "https://www.wien.gv.at/english/administration/civilstatus/index.html",
@@ -4017,28 +4471,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "vienna-at",
-      "scopeName": "Vienna, Austria",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "copenhagen-dk",
-      "scopeName": "Copenhagen, Denmark",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.homegate.ch",
       "label": "Homegate.ch — major Swiss rental portal",
       "code": 301,
@@ -4048,28 +4480,6 @@
       "scopeName": "Zurich, Switzerland",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "zurich-ch",
-      "scopeName": "Zurich, Switzerland",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "singapore-sg",
-      "scopeName": "Singapore, Singapore",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.isa.go.jp/en/",
@@ -4083,17 +4493,6 @@
       "path": "sources.visa.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tokyo-jp",
-      "scopeName": "Tokyo, Japan",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.591.com.tw",
       "label": "591 — Taiwan rentals and sales (search Taipei districts inside the site)",
       "code": 302,
@@ -4103,215 +4502,6 @@
       "scopeName": "Taipei, Taiwan",
       "section": "housing",
       "path": "housing.searchPortals.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "taipei-tw",
-      "scopeName": "Taipei, Taiwan",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "kuala-lumpur-my",
-      "scopeName": "Kuala Lumpur, Malaysia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bali-id",
-      "scopeName": "Bali, Indonesia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "ubud-id",
-      "scopeName": "Ubud, Indonesia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "medellin-co",
-      "scopeName": "Medellín, Colombia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "buenos-aires-ar",
-      "scopeName": "Buenos Aires, Argentina",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "lima-pe",
-      "scopeName": "Lima, Peru",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "charlotte-us",
-      "scopeName": "Charlotte, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "raleigh-us",
-      "scopeName": "Raleigh, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "charleston-us",
-      "scopeName": "Charleston, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "greenville-sc-us",
-      "scopeName": "Greenville, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "atlanta-us",
-      "scopeName": "Atlanta, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "denver-us",
-      "scopeName": "Denver, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "nashville-us",
-      "scopeName": "Nashville, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "salt-lake-city-us",
-      "scopeName": "Salt Lake City, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "phoenix-us",
-      "scopeName": "Phoenix, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tampa-us",
-      "scopeName": "Tampa, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "portland-or-us",
-      "scopeName": "Portland, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "mexico-city-mx",
-      "scopeName": "Mexico City, Mexico",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.panamacompra.com",
@@ -4325,50 +4515,6 @@
       "path": "housing.searchPortals.2"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "panama-city-pa",
-      "scopeName": "Panama City, Panama",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "santiago-cl",
-      "scopeName": "Santiago, Chile",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "montevideo-uy",
-      "scopeName": "Montevideo, Uruguay",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bogota-co",
-      "scopeName": "Bogotá, Colombia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://nha.chotot.com",
       "label": "Chợ Tốt Nhà — direct-from-owner Vietnamese classifieds",
       "code": 301,
@@ -4378,39 +4524,6 @@
       "scopeName": "Ho Chi Minh City, Vietnam",
       "section": "housing",
       "path": "housing.searchPortals.2"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "ho-chi-minh-city-vn",
-      "scopeName": "Ho Chi Minh City, Vietnam",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bengaluru-in",
-      "scopeName": "Bengaluru, India",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "mumbai-in",
-      "scopeName": "Mumbai, India",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.immoweb.be",
@@ -4446,17 +4559,6 @@
       "path": "housing.searchPortals.2"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "brussels-be",
-      "scopeName": "Brussels, Belgium",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.inami.fgov.be",
       "label": "INAMI/RIZIV (Belgian National Institute for Health and Disability Insurance)",
       "code": 302,
@@ -4468,28 +4570,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bucharest-ro",
-      "scopeName": "Bucharest, Romania",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "stockholm-se",
-      "scopeName": "Stockholm, Sweden",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.kinnisvara24.ee",
       "label": "Kinnisvara24 — additional Estonian rental inventory",
       "code": 301,
@@ -4499,17 +4579,6 @@
       "scopeName": "Tallinn, Estonia",
       "section": "housing",
       "path": "housing.searchPortals.2"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tallinn-ee",
-      "scopeName": "Tallinn, Estonia",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.haigekassa.ee",
@@ -4545,17 +4614,6 @@
       "path": "housing.searchPortals.2"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "tbilisi-ge",
-      "scopeName": "Tbilisi, Georgia",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.fotocasa.es",
       "label": "Fotocasa — major Spanish rental and sales portal",
       "code": 302,
@@ -4567,17 +4625,6 @@
       "path": "housing.searchPortals.1"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "bilbao-es",
-      "scopeName": "Bilbao, Spain",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.osakidetza.euskadi.eus",
       "label": "Osakidetza (Basque Health Service)",
       "code": 301,
@@ -4587,28 +4634,6 @@
       "scopeName": "Bilbao, Spain",
       "section": "sources",
       "path": "sources.healthcare.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "boston-us",
-      "scopeName": "Boston, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "san-diego-us",
-      "scopeName": "San Diego, USA",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals",
@@ -4631,17 +4656,6 @@
       "scopeName": "Hamburg, Germany",
       "section": "housing",
       "path": "housing.searchPortals.3"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "hamburg-de",
-      "scopeName": "Hamburg, Germany",
-      "section": "sources",
-      "path": "sources.weather.1"
     },
     {
       "url": "https://www.tk.de",
@@ -4677,17 +4691,6 @@
       "path": "housing.searchPortals.3"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "the-hague-nl",
-      "scopeName": "The Hague, Netherlands",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.zorgverzekeringslijn.nl",
       "label": "Zorgverzekeringslijn (Dutch Health Insurance Authority)",
       "code": 301,
@@ -4699,28 +4702,6 @@
       "path": "sources.healthcare.0"
     },
     {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "calgary-ca",
-      "scopeName": "Calgary, Canada",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "faro-pt",
-      "scopeName": "Faro, Portugal",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
       "url": "https://www.sns24.gov.pt",
       "label": "SNS 24 (Portuguese national health service portal)",
       "code": 301,
@@ -4730,28 +4711,6 @@
       "scopeName": "Faro, Portugal",
       "section": "sources",
       "path": "sources.healthcare.0"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "lyon-fr",
-      "scopeName": "Lyon, France",
-      "section": "sources",
-      "path": "sources.weather.1"
-    },
-    {
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "label": "MERRA-2 reanalysis (meteorological source)",
-      "code": 301,
-      "redirectTo": "/gmao-products/merra-2/",
-      "scope": "city",
-      "scopeId": "naples-it",
-      "scopeName": "Naples, Italy",
-      "section": "sources",
-      "path": "sources.weather.1"
     }
   ]
 }
